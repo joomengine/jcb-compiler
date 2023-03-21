@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "2f7b1998-bb93-4055-ae82-aa659ce8a37f",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Placeholder",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Placeholder",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "CompilerPlaceholder"
+        },
+        "use_selection1": {
+            "use": "ca111518-e47c-4049-b1b2-cb010f23866f",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Placeholder",
+    "description": "Compiler Placeholder Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

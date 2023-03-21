@@ -1,0 +1,90 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "3b6895da-d9eb-4164-90b1-4632a4cc2474",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Data",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Customview.Data",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "59895f37-50c8-4af3-9dad-230e18841953",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "39ea8150-f124-4e47-909d-641bf1c96d5e",
+            "as": "Templatelayout"
+        },
+        "use_selection7": {
+            "use": "05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46",
+            "as": "Dynamicget"
+        },
+        "use_selection8": {
+            "use": "0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "29455d3b-df2b-4e41-8684-1608060e37a4",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "3283a89c-329a-47fb-a011-0df6c31a5c73",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "489da602-27c7-418c-bf59-1d45ad42bdcc",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "592aed4e-2c5f-4fc5-8f7a-409203d1af82",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "ebe3287d-bfa0-4519-b663-f442f4dea432",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "f02fb1df-f4b6-4be1-9595-2e72084a5e6e",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection17": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customview.Data",
+    "description": "Admin Custom View Data Class\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;"
+}

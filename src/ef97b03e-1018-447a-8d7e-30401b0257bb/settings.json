@@ -1,0 +1,33 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "ef97b03e-1018-447a-8d7e-30401b0257bb",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Joomlaplugins",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Joomlaplugins",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "766a9524-37df-4604-91a7-b98a6150ee26",
+            "as": "Plugin"
+        },
+        "use_selection2": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Joomlaplugins",
+    "description": "Model  Joomla Plugins Class\r\n\r\n@since 3.2.0"
+}

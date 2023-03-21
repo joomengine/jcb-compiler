@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "97698747-c2ce-4e09-a470-acf6d8e86281",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "PlaceholderInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Component.PlaceholderInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Component.PlaceholderInterface",
+    "description": "Component Placeholder Interface\r\n\r\n@since 3.2.0"
+}

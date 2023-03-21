@@ -1,0 +1,21 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Line",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Line",
+    "type": "abstract class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Line",
+    "description": "The Debug Line Number Factory\r\n\r\n@since 3.2.0"
+}

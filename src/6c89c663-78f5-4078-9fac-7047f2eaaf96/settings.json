@@ -1,0 +1,37 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "6c89c663-78f5-4078-9fac-7047f2eaaf96",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Structure",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component.Structure",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component.Structure",
+    "description": "Build\/Create Component Structure\r\n\r\n@since  3.2.0"
+}

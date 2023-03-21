@@ -1,0 +1,24 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "4b86f62e-ce41-4325-a11a-08148807d0df",
+    "implements": [
+        "20ed72b0-fcac-4344-aee1-8a65e3bf221d"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Event",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.JoomlaThree.Event",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "640b5352-fb09-425f-a26e-cd44eda03f15",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.JoomlaThree.Event",
+    "description": "Compiler Events\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\Registry\\Registry;"
+}

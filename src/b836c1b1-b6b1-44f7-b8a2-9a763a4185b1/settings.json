@@ -1,0 +1,64 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
+    "implements": [
+        "1133c2d7-ba7e-4c95-8cde-01f084d04682"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Power",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Power",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "30c5b4c2-f75f-4d15-869a-f8bfedd87358",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "ce8cf834-6bac-44fb-941c-861f7e046cc0",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection7": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power",
+    "description": "Compiler Power\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;"
+}

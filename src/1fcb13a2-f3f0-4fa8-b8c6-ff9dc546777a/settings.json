@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "ExternalInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Customcode.ExternalInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Customcode.ExternalInterface",
+    "description": "Customcode External Interface\r\n\r\n@since 3.2.0"
+}

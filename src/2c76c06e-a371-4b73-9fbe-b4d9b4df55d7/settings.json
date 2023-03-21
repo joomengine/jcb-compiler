@@ -1,0 +1,23 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Builder",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Builder",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Builder",
+    "description": "Builder Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

@@ -1,0 +1,30 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "9127e428-5dee-46cb-b3a9-ab5b91ea6df3",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Modifieddate",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Modifieddate",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Modifieddate",
+    "description": "Model - Get Modified Date\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;"
+}

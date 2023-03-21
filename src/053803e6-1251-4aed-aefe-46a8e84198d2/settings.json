@@ -1,0 +1,58 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "053803e6-1251-4aed-aefe-46a8e84198d2",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Paths",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Customcode.Extractor.Paths",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "30c5b4c2-f75f-4d15-869a-f8bfedd87358",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection5": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
+            "as": "ComponentPlaceholder"
+        },
+        "use_selection8": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "d33b9278-c409-4aec-a047-b72f56712391",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode.Extractor.Paths",
+    "description": "Compiler Custom Code Paths\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Filesystem\\Folder;"
+}

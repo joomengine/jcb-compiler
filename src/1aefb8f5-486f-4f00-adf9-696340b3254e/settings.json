@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "1aefb8f5-486f-4f00-adf9-696340b3254e",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "InstallInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Extension.InstallInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Extension.InstallInterface",
+    "description": "The properties an extension should have to be passed to the InstallScript class\r\n\r\n@since 3.2.0"
+}

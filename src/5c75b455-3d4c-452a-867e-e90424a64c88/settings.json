@@ -1,0 +1,34 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "5c75b455-3d4c-452a-867e-e90424a64c88",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "File",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.File",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.File",
+    "description": "File helper\r\n\r\n@since  3.2.0",
+    "head": "use Joomla\\CMS\\Filesystem\\File as JoomlaFile;"
+}

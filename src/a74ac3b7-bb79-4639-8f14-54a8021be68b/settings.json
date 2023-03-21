@@ -1,0 +1,55 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "a74ac3b7-bb79-4639-8f14-54a8021be68b",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Customcode",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Customcode",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "CompilerCustomcode"
+        },
+        "use_selection1": {
+            "use": "33bdc535-0ff1-40c8-bb22-b5d44f1731c4",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1cef0266-99e2-40d8-919f-c2ce32226b0a",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "797579e8-b272-41ed-91de-428cb0b3e089",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "7c07c9d6-34cd-4491-934a-ef0a83f414c0",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "01411bb1-fdd6-4cca-84d7-1b62d93c70c1",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "053803e6-1251-4aed-aefe-46a8e84198d2",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Customcode",
+    "description": "Compiler Custom Code Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

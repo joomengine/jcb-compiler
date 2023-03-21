@@ -1,0 +1,29 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "268b85ef-49f3-4c39-8187-bb12e38d19ee",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Dynamicpath",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Dynamicpath",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "e0c8c931-52a0-4171-9909-e8769505bb1f",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Dynamicpath",
+    "description": "Compiler Utilities Dynamic Path\r\n\r\n@since 3.2.0"
+}

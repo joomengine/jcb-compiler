@@ -1,0 +1,39 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "1d929017-a5de-4e0f-9b5a-838934857e26",
+    "implements": [
+        "2e6731ba-3a03-4836-b2c2-4e50e38cb890"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "InstallScript",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Extension.JoomlaThree.InstallScript",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "1aefb8f5-486f-4f00-adf9-696340b3254e",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Extension.JoomlaThree.InstallScript",
+    "description": "Loading the Extension Installation Script Class\r\n\r\n@since 3.2.0"
+}

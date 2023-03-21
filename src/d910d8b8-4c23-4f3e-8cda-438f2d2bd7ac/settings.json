@@ -1,0 +1,112 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+    "implements": [
+        "caf33c5d-858c-4f9a-894f-ab302ec5445a"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Factory",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Factory",
+    "type": "abstract class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "4d8f38ef-8f3a-463d-8678-0bf087ac6815",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "42ceff0b-226d-42ff-9ffa-3d5935890337",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4815e1c7-a433-443d-a112-d1e03d7df84b",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "0601fee8-d51e-4af0-9ad3-b5f8700c4a45",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "23f2ca33-440a-4941-8e9a-4bc67522c0cb",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "ea5ed06e-72ae-4906-9167-1cc0fa32fe69",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "b94aaedb-6774-4739-a63f-8f87141a85db",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "63782f74-7b03-4745-aa40-0adf8ed4e704",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "9f00e793-86f8-4ef9-b775-a3eb129f83c0",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "2f7b1998-bb93-4055-ae82-aa659ce8a37f",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "a74ac3b7-bb79-4639-8f14-54a8021be68b",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "de01527a-6586-46ea-92e7-11ea3de1cedb",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "8a63e87b-b39b-4a15-8044-9b2a2f4fb61c",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "2dd1289a-4000-43cc-8c62-77ff32de56bf",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "253317c7-3c3b-48a0-aec8-8af5e7a86504",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "87faa133-4cac-4816-ae41-5c3f9a2f76aa",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "fff3255d-c493-4c21-a48f-73b3ebf8ba05",
+            "as": "default"
+        },
+        "use_selection17": {
+            "use": "ed9591cb-0a03-400a-bf47-eaf78ab19b9d",
+            "as": "default"
+        },
+        "use_selection18": {
+            "use": "c6c30d66-3106-44eb-9272-b2cf7ec74613",
+            "as": "default"
+        },
+        "use_selection19": {
+            "use": "295186de-5954-4a65-a4c1-2f79ef305743",
+            "as": "default"
+        },
+        "use_selection20": {
+            "use": "9eba241c-af90-42dd-ae05-92ff4d8391d3",
+            "as": "default"
+        },
+        "use_selection21": {
+            "use": "516f93b8-5fff-41c6-aeaf-2d93180a12cc",
+            "as": "default"
+        },
+        "use_selection22": {
+            "use": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Factory",
+    "description": "Compiler Factory\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;"
+}

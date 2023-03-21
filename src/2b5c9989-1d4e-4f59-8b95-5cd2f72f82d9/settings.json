@@ -1,0 +1,18 @@
+{
+    "add_head": "0",
+    "extends": "c6bbc3ee-58e7-4463-adba-5c5ae839ee36",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9",
+    "implements": [
+        "78527c29-24ad-4735-ad4c-ec33a4952d9b"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Mysql",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Builder.Update.Mysql",
+    "type": "class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Builder.Update.Mysql",
+    "description": "Compiler Builder Update Mysql\r\n\r\n@since 3.2.0"
+}

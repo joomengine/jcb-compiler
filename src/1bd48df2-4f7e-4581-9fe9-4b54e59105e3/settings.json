@@ -1,0 +1,52 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+    "implements": [
+        "2cc8517d-1105-4697-9743-048b4b7c089c"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Gui",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Customcode.Gui",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "9ef0eb24-aae4-4f5a-99af-d724db44808f",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection6": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "ca111518-e47c-4049-b1b2-cb010f23866f",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode.Gui",
+    "description": "Compiler Gui Custom Code\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;"
+}

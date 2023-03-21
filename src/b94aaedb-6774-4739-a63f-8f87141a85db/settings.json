@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "b94aaedb-6774-4739-a63f-8f87141a85db",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Event",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Event",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "4b86f62e-ce41-4325-a11a-08148807d0df",
+            "as": "J3Event"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Event",
+    "description": "Event Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;\r\nuse Joomla\\CMS\\Version;"
+}

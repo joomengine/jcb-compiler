@@ -1,0 +1,49 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "17a728e9-d6cf-4060-9efb-241b0ff2f981",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Historycomponent",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Historycomponent",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4325745f-da1f-4d4d-a591-3189fe8c06e5",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "b80296eb-4718-4ed3-894d-69f3ac293733",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Historycomponent",
+    "description": "Model Component History Class\r\n\r\n@since 3.2.0"
+}

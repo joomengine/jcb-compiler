@@ -1,0 +1,48 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
+    "implements": [
+        "97698747-c2ce-4e09-a470-acf6d8e86281"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Placeholder",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component.Placeholder",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection5": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component.Placeholder",
+    "description": "Get a Components Global Placeholders\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;"
+}

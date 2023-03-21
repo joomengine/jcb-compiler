@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "fbc58009-fa16-4d49-a0dd-419c3b62d42f",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Mapperdoubleinterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Mapperdoubleinterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Interfaces.Mapperdoubleinterface",
+    "description": "The Double Mapper Interface"
+}

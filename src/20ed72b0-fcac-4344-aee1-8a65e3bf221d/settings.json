@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "EventInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.EventInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.EventInterface",
+    "description": "Compiler Events Interface\r\n\r\n@since 3.2.0"
+}

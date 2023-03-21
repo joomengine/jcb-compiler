@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "b84e947d-2a13-44f7-ac0f-3902ae55ae0c",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Files",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Files",
+    "type": "class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Files",
+    "description": "Compiler Utilities Files Bucket\r\n\r\n@since 3.2.0"
+}

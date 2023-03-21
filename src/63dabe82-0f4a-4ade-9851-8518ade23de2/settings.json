@@ -1,0 +1,65 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "63dabe82-0f4a-4ade-9851-8518ade23de2",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Settings",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component.Settings",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "268b85ef-49f3-4c39-8187-bb12e38d19ee",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "cdc9b06d-8333-4fa7-ab4d-b810dd90f95f",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component.Settings",
+    "description": "Compiler Component (Joomla Version) Settings\r\n\r\n@since 3.2.0"
+}

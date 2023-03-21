@@ -1,0 +1,41 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Field",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Field",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "ce826b66-0f2d-43da-8005-41b8e4cb21ee",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "eb33420d-359d-44a5-852e-613aef1feaae",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "8c018533-e967-4bf2-9bd9-9e92966fcb5e",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field",
+    "description": "Compiler Field\r\n\r\n@since 3.2.0"
+}

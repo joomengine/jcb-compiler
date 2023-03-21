@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "4815e1c7-a433-443d-a112-d1e03d7df84b",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Database",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Database",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06f8eada-d59b-441c-b287-0aea1793da5a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "524eb8f6-38d4-47dc-92ad-98b94e099ac0",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Database",
+    "description": "Database Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

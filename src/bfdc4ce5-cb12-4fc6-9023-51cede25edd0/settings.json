@@ -1,0 +1,33 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "bfdc4ce5-cb12-4fc6-9023-51cede25edd0",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Joomlamodules",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Joomlamodules",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "cb11e8d9-69c2-4095-831c-59908ea402e7",
+            "as": "Module"
+        },
+        "use_selection2": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Joomlamodules",
+    "description": "Model  Joomla Modules Class\r\n\r\n@since 3.2.0"
+}

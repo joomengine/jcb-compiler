@@ -1,0 +1,38 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "cfe62a32-8818-4bfb-8751-2f1e109b5336",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Dashboard",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component.Dashboard",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component.Dashboard",
+    "description": "Compiler Component Dynamic Dashboard\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Application\\CMSApplication;"
+}

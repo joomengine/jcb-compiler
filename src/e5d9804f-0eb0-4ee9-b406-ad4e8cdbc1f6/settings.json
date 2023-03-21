@@ -1,0 +1,21 @@
+{
+    "add_head": "0",
+    "extends": "b84e947d-2a13-44f7-ac0f-3902ae55ae0c",
+    "extends_custom": "",
+    "guid": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Registry",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Registry",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Registry",
+    "description": "Compiler Registry\r\n\r\n@since 3.2.0"
+}

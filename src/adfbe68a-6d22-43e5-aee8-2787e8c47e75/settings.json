@@ -1,0 +1,24 @@
+{
+    "add_head": "0",
+    "extends": "44a3367c-f9e4-406b-b396-0f452bde0f03",
+    "extends_custom": "",
+    "guid": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+    "implements": [
+        "fbc58009-fa16-4d49-a0dd-419c3b62d42f",
+        "78527c29-24ad-4735-ad4c-ec33a4952d9b"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Content",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Content",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Content",
+    "description": "Compiler Content\r\n\r\n@since 3.2.0"
+}

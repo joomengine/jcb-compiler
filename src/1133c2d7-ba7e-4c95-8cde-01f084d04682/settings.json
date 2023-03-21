@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "1133c2d7-ba7e-4c95-8cde-01f084d04682",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "PowerInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.PowerInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.PowerInterface",
+    "description": "Compiler Power Interface\r\n\r\n@since 3.2.0"
+}

@@ -1,0 +1,175 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "0601fee8-d51e-4af0-9ad3-b5f8700c4a45",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Model",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Model",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "f37ee8b7-2909-4319-bdf8-769bd7635490",
+            "as": "ServerLoad"
+        },
+        "use_selection1": {
+            "use": "ef97b03e-1018-447a-8d7e-30401b0257bb",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "bfdc4ce5-cb12-4fc6-9023-51cede25edd0",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "17a728e9-d6cf-4060-9efb-241b0ff2f981",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "e0e24173-a808-4dd5-8e26-de971d014f86",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "592aed4e-2c5f-4fc5-8f7a-409203d1af82",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "29455d3b-df2b-4e41-8684-1608060e37a4",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "3283a89c-329a-47fb-a011-0df6c31a5c73",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "489da602-27c7-418c-bf59-1d45ad42bdcc",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "79740ee8-4d10-4b51-9ff5-18e1386ec1c6",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "59895f37-50c8-4af3-9dad-230e18841953",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "e0075978-315d-4807-8507-ce9c6922a885",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "0dabc67c-abec-4541-82bf-279abd3c9be1",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "6dfbf568-f3cd-4ea7-af04-6859447b5462",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "35191b0c-f7f3-44d6-8ec1-c816b997bd4e",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "d4b418a7-bf9b-4768-969d-e07c36916fd2",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "5f8e8fa6-3793-44af-882d-9cfb209434e9",
+            "as": "default"
+        },
+        "use_selection17": {
+            "use": "4f575bd6-de97-41f8-80d6-259c8a6dd9ad",
+            "as": "default"
+        },
+        "use_selection18": {
+            "use": "037c7274-fb16-455d-989a-bf1da022620b",
+            "as": "default"
+        },
+        "use_selection19": {
+            "use": "ebe3287d-bfa0-4519-b663-f442f4dea432",
+            "as": "default"
+        },
+        "use_selection20": {
+            "use": "0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7",
+            "as": "default"
+        },
+        "use_selection21": {
+            "use": "c20a63e0-0eeb-4424-9d08-b1bf0f049dfe",
+            "as": "default"
+        },
+        "use_selection22": {
+            "use": "e79842d3-51b7-4282-93c7-3487cd8b61ab",
+            "as": "default"
+        },
+        "use_selection23": {
+            "use": "dfd3c893-0296-46eb-9ae4-a0348713cd8f",
+            "as": "default"
+        },
+        "use_selection24": {
+            "use": "ae1fa148-91be-4f80-89a9-69d91ba9d575",
+            "as": "default"
+        },
+        "use_selection25": {
+            "use": "a8eb2fb1-88ed-4af8-842d-898eb915b588",
+            "as": "default"
+        },
+        "use_selection26": {
+            "use": "55e61314-ba10-4e2b-92dd-b44adebabce9",
+            "as": "default"
+        },
+        "use_selection27": {
+            "use": "e6a64c41-405e-4bbc-9722-27402c22bbea",
+            "as": "default"
+        },
+        "use_selection28": {
+            "use": "b80296eb-4718-4ed3-894d-69f3ac293733",
+            "as": "default"
+        },
+        "use_selection29": {
+            "use": "143ac6ea-b64f-4331-9a97-31e3fce2bb69",
+            "as": "default"
+        },
+        "use_selection30": {
+            "use": "fa8c1125-d370-4cb6-a7ff-eb32193c198c",
+            "as": "default"
+        },
+        "use_selection31": {
+            "use": "cebdcccb-24c5-46db-92de-63453852dcb8",
+            "as": "default"
+        },
+        "use_selection32": {
+            "use": "e50cbac5-9c9d-4fd4-aa7a-5e830719ed26",
+            "as": "default"
+        },
+        "use_selection33": {
+            "use": "a6e1227c-1efe-407d-84ef-03c6989a6a88",
+            "as": "default"
+        },
+        "use_selection34": {
+            "use": "af5beb21-214a-44f6-9090-7ea24c22e649",
+            "as": "default"
+        },
+        "use_selection35": {
+            "use": "f4578c04-a81e-4218-b80d-b0612196eaf0",
+            "as": "default"
+        },
+        "use_selection36": {
+            "use": "9127e428-5dee-46cb-b3a9-ab5b91ea6df3",
+            "as": "default"
+        },
+        "use_selection37": {
+            "use": "53cf9828-7ad4-4856-aac1-7c4c67bd3121",
+            "as": "default"
+        },
+        "use_selection38": {
+            "use": "1d0fd857-12ec-4f47-ab1c-124d85748e24",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Model",
+    "description": "Model Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

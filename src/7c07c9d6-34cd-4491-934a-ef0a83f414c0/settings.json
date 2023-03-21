@@ -1,0 +1,35 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "7c07c9d6-34cd-4491-934a-ef0a83f414c0",
+    "implements": [
+        "a3c515f5-4adf-4eb3-b637-0a1add550da6"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "LockBase",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Customcode.LockBase",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection3": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode.LockBase",
+    "description": "Compiler Custom Code Base64\r\n\r\n@since 3.2.0"
+}

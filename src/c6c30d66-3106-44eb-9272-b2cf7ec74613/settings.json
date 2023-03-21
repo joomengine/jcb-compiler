@@ -1,0 +1,59 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "c6c30d66-3106-44eb-9272-b2cf7ec74613",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Field",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Field",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+            "as": "CompilerField"
+        },
+        "use_selection1": {
+            "use": "ce826b66-0f2d-43da-8005-41b8e4cb21ee",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "eb33420d-359d-44a5-852e-613aef1feaae",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "8c018533-e967-4bf2-9bd9-9e92966fcb5e",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "c871fb4a-4c33-4302-bb79-a9cd7ef4a557",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "a356d103-74f3-49ca-8e4f-3bd37746f089",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "99368a6f-2f64-4d4e-ad3a-544d4020ecc6",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "24da9672-e47f-4bb1-b6c0-0ebfc17f0957",
+            "as": "J3CoreValidation"
+        },
+        "use_selection9": {
+            "use": "b9f05dc4-d23a-499a-a826-9749b81818ed",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Field",
+    "description": "Compiler Field\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

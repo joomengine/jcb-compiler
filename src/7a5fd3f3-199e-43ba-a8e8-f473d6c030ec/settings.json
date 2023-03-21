@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "7a5fd3f3-199e-43ba-a8e8-f473d6c030ec",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "FieldHelper",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.FieldHelper",
+    "type": "abstract class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.FieldHelper",
+    "description": "The Field Helper\r\n\r\n@since 3.2.0"
+}

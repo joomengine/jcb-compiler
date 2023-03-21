@@ -1,0 +1,109 @@
+```
+██████╗  ██████╗ ██╗    ██╗███████╗██████╗
+██╔══██╗██╔═══██╗██║    ██║██╔════╝██╔══██╗
+██████╔╝██║   ██║██║ █╗ ██║█████╗  ██████╔╝
+██╔═══╝ ██║   ██║██║███╗██║██╔══╝  ██╔══██╗
+██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
+╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
+```
+# class Utilities (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+```uml
+@startuml
+class Utilities  #Gold {
+  + register(Container $container) : void
+  + getFolder(Container $container) : Folder
+  + getFile(Container $container) : File
+  + getCounter(Container $container) : Counter
+  + getPaths(Container $container) : Paths
+  + getFiles(Container $container) : Files
+  + getConstantpaths(Container $container) : Constantpaths
+  + getDynamicpath(Container $container) : Dynamicpath
+  + getPathfix(Container $container) : Pathfix
+  + getStructure(Container $container) : Structure
+}
+
+note right of Utilities::register
+  Registers the service provider with a DI container.
+
+  since: 3.2.0
+  return: void
+end note
+
+note left of Utilities::getFolder
+  Get the Compiler Folder
+
+  since: 3.2.0
+  return: Folder
+end note
+
+note right of Utilities::getFile
+  Get the Compiler File
+
+  since: 3.2.0
+  return: File
+end note
+
+note left of Utilities::getCounter
+  Get the Compiler Counter
+
+  since: 3.2.0
+  return: Counter
+end note
+
+note right of Utilities::getPaths
+  Get the Compiler Paths
+
+  since: 3.2.0
+  return: Paths
+end note
+
+note left of Utilities::getFiles
+  Get the Compiler Files Bucket
+
+  since: 3.2.0
+  return: Files
+end note
+
+note right of Utilities::getConstantpaths
+  Get the Constant Paths
+
+  since: 3.2.0
+  return: Constantpaths
+end note
+
+note left of Utilities::getDynamicpath
+  Get the Compiler Dynamic Path
+
+  since: 3.2.0
+  return: Dynamicpath
+end note
+
+note right of Utilities::getPathfix
+  Get the Compiler Path Fixer
+
+  since: 3.2.0
+  return: Pathfix
+end note
+
+note left of Utilities::getStructure
+  Get the Compiler Structure Dynamic Builder
+
+  since: 3.2.0
+  return: Structure
+end note
+ 
+@enduml
+```
+
+---
+```
+     ██╗ ██████╗██████╗
+     ██║██╔════╝██╔══██╗
+     ██║██║     ██████╔╝
+██   ██║██║     ██╔══██╗
+╚█████╔╝╚██████╗██████╔╝
+ ╚════╝  ╚═════╝╚═════╝
+```
+> Build with [Joomla Component Builder](https://git.vdm.dev/joomla/Component-Builder)
+

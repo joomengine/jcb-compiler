@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "b9f05dc4-d23a-499a-a826-9749b81818ed",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "CoreValidationInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Field.CoreValidationInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Field.CoreValidationInterface",
+    "description": "Field Joomla Core Validation Interface\r\n\r\n@since 3.2.0"
+}

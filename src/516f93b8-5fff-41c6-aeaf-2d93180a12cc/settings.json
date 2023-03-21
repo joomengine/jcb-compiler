@@ -1,0 +1,59 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "516f93b8-5fff-41c6-aeaf-2d93180a12cc",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Utilities",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Utilities",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "5c75b455-3d4c-452a-867e-e90424a64c88",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "e0c8c931-52a0-4171-9909-e8769505bb1f",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "268b85ef-49f3-4c39-8187-bb12e38d19ee",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "cdc9b06d-8333-4fa7-ab4d-b810dd90f95f",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "1efdded5-d6c8-452c-8f37-0374483a7b3f",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Utilities",
+    "description": "Utilities Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

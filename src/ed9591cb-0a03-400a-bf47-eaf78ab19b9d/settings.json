@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "ed9591cb-0a03-400a-bf47-eaf78ab19b9d",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Extension",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Extension",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "2e6731ba-3a03-4836-b2c2-4e50e38cb890",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "1d929017-a5de-4e0f-9b5a-838934857e26",
+            "as": "J3InstallScript"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Extension",
+    "description": "Extension Script Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

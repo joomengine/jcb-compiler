@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "a3c515f5-4adf-4eb3-b637-0a1add550da6",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "LockBaseInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Customcode.LockBaseInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Customcode.LockBaseInterface",
+    "description": "Customcode LockBase Interface\r\n\r\n@since 3.2.0"
+}

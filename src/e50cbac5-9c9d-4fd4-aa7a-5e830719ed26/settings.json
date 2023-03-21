@@ -1,0 +1,37 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "e50cbac5-9c9d-4fd4-aa7a-5e830719ed26",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Sqltweaking",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Sqltweaking",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Sqltweaking",
+    "description": "Model Sql Tweaking Class\r\n\r\n@since 3.2.0"
+}

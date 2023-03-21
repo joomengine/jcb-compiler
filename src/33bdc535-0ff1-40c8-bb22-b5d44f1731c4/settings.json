@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "33bdc535-0ff1-40c8-bb22-b5d44f1731c4",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "CustomcodeInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.CustomcodeInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.CustomcodeInterface",
+    "description": "Compiler Customcode Interface\r\n\r\n@since 3.2.0"
+}

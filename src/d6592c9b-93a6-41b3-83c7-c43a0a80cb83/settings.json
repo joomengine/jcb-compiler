@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "d6592c9b-93a6-41b3-83c7-c43a0a80cb83",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "LanguageInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.LanguageInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.LanguageInterface",
+    "description": "Compiler Language Interface\r\n\r\n@since 3.2.0"
+}

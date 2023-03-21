@@ -1,0 +1,53 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "9387215f-a965-4421-acf3-5e8f9d11382f",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Name",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Field.Name",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a8935cbe-7701-40dc-bfd5-675f2d600954",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "9ef0eb24-aae4-4f5a-99af-d724db44808f",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "8c018533-e967-4bf2-9bd9-9e92966fcb5e",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field.Name",
+    "description": "Compiler Field Name\r\n\r\n@since 3.2.0"
+}

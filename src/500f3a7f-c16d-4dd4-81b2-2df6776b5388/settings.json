@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Placefix",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Placefix",
+    "type": "abstract class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Placefix",
+    "description": "The Placeholder Prefix and Suffix Factory\r\n\r\n@since 3.2.0"
+}

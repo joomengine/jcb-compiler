@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "b591855d-d106-4fe5-90ad-8e706f6267cf",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Minify",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Minify",
+    "type": "abstract class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "70530246-2903-4c02-af9a-61182e4d97b8",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "ef6438c4-76db-4aa1-bb15-bc97583bcd2e",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Minify",
+    "description": "Compiler Minifier\r\n\r\n@since 3.2.0"
+}

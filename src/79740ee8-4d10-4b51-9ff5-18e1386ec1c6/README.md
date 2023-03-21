@@ -1,0 +1,66 @@
+```
+██████╗  ██████╗ ██╗    ██╗███████╗██████╗
+██╔══██╗██╔═══██╗██║    ██║██╔════╝██╔══██╗
+██████╔╝██║   ██║██║ █╗ ██║█████╗  ██████╔╝
+██╔═══╝ ██║   ██║██║███╗██║██╔══╝  ██╔══██╗
+██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
+╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
+```
+# class Dynamicget (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+```uml
+@startuml
+class Dynamicget  #Gold {
+  # array $jointer
+  # array $operator
+  # array $guiMapper
+  # Config $config
+  # Registry $registry
+  # Customcode $customcode
+  # Gui $gui
+  # Placeholder $placeholder
+  # Selection $selection
+  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + set(object $item, string $view_code, ...) : void
+}
+
+note right of Dynamicget::__construct
+  Constructor
+
+  since: 3.2.0
+  
+  arguments:
+    ?Config $config = null
+    ?Registry $registry = null
+    ?Customcode $customcode = null
+    ?Gui $gui = null
+    ?Placeholder $placeholder = null
+    ?Selection $selection = null
+end note
+
+note right of Dynamicget::set
+  Set Dynamic Get
+
+  since: 3.2.0
+  return: void
+  
+  arguments:
+    object $item
+    string $view_code
+    string $context
+end note
+ 
+@enduml
+```
+
+---
+```
+     ██╗ ██████╗██████╗
+     ██║██╔════╝██╔══██╗
+     ██║██║     ██████╔╝
+██   ██║██║     ██╔══██╗
+╚█████╔╝╚██████╗██████╔╝
+ ╚════╝  ╚═════╝╚═════╝
+```
+> Build with [Joomla Component Builder](https://git.vdm.dev/joomla/Component-Builder)
+

@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "fff3255d-c493-4c21-a48f-73b3ebf8ba05",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Templatelayout",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Templatelayout",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "39ea8150-f124-4e47-909d-641bf1c96d5e",
+            "as": "TemplatelayoutData "
+        },
+        "use_selection1": {
+            "use": "f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c",
+            "as": "AliasData"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Templatelayout",
+    "description": "Compiler Templatelayout\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

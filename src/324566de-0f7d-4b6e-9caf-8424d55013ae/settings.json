@@ -1,0 +1,74 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "324566de-0f7d-4b6e-9caf-8424d55013ae",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Structure",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Power.Structure",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "5c75b455-3d4c-452a-867e-e90424a64c88",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power.Structure",
+    "description": "Power Structure Builder Class\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;"
+}

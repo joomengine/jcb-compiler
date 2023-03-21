@@ -1,0 +1,17 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "caf33c5d-858c-4f9a-894f-ab302ec5445a",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "FactoryInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.FactoryInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Interfaces.FactoryInterface",
+    "description": "The Container Factory Interface",
+    "head": "use Joomla\\DI\\Container;"
+}

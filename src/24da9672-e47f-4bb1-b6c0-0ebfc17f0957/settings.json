@@ -1,0 +1,24 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "24da9672-e47f-4bb1-b6c0-0ebfc17f0957",
+    "implements": [
+        "b9f05dc4-d23a-499a-a826-9749b81818ed"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "CoreValidation",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Field.JoomlaThree.CoreValidation",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field.JoomlaThree.CoreValidation",
+    "description": "Core Joomla Field Validation Rules\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Filesystem\\Folder;"
+}

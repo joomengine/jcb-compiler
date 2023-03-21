@@ -1,0 +1,56 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+    "implements": [
+        "33bdc535-0ff1-40c8-bb22-b5d44f1731c4"
+    ],
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Customcode",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Customcode",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection4": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "d33b9278-c409-4aec-a047-b72f56712391",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "1cef0266-99e2-40d8-919f-c2ce32226b0a",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode",
+    "description": "Compiler Custom Code\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;"
+}

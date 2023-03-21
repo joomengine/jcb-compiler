@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "f02fb1df-f4b6-4be1-9595-2e72084a5e6e",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Unique",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Unique",
+    "type": "abstract class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Unique",
+    "description": "Compiler Creating an Unique Code\/String\r\n\r\n@since 3.2.0"
+}

@@ -1,0 +1,41 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "489da602-27c7-418c-bf59-1d45ad42bdcc",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Phpcustomview",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Phpcustomview",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "39ea8150-f124-4e47-909d-641bf1c96d5e",
+            "as": "Templatelayout"
+        },
+        "use_selection5": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Phpcustomview",
+    "description": "Model PHP Custom View Class\r\n\r\n@since 3.2.0"
+}

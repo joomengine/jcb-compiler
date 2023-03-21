@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "81de8f57-dd9c-4a17-964f-848cd4a0743b",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Cryptinterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Cryptinterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Interfaces.Cryptinterface",
+    "description": "The Crypt Interface"
+}

@@ -1,0 +1,45 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "ebe3287d-bfa0-4519-b663-f442f4dea432",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Custombuttons",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Custombuttons",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "39ea8150-f124-4e47-909d-641bf1c96d5e",
+            "as": "Templatelayout"
+        },
+        "use_selection4": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Custombuttons",
+    "description": "Model Custom Buttons Class\r\n\r\n@since 3.2.0"
+}

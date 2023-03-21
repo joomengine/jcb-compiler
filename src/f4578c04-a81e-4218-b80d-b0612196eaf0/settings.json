@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "f4578c04-a81e-4218-b80d-b0612196eaf0",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Filesfolders",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Filesfolders",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Filesfolders",
+    "description": "Model Files & Folders Class\r\n\r\n@since 3.2.0"
+}

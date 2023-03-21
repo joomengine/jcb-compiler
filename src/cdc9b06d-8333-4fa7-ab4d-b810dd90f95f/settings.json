@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "cdc9b06d-8333-4fa7-ab4d-b810dd90f95f",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Pathfix",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Pathfix",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Pathfix",
+    "description": "Compiler Path Fix\r\n\r\n@since 3.2.0"
+}

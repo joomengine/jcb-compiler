@@ -1,0 +1,31 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "ea5ed06e-72ae-4906-9167-1cc0fa32fe69",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Compiler",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Compiler",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "bfd1d6d5-56c1-4fe9-9fee-1c5910e1f5d8",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Compiler",
+    "description": "Compiler Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

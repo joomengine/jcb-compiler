@@ -1,0 +1,37 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "eb33420d-359d-44a5-852e-613aef1feaae",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "TypeName",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Field.TypeName",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a8935cbe-7701-40dc-bfd5-675f2d600954",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field.TypeName",
+    "description": "Compiler Field Type Name\r\n\r\n@since 3.2.0"
+}

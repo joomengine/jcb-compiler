@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "2cc8517d-1105-4697-9743-048b4b7c089c",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "GuiInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Customcode.GuiInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Customcode.GuiInterface",
+    "description": "Customcode Gui Interface\r\n\r\n@since 3.2.0"
+}

@@ -1,0 +1,62 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "673954d3-78d3-445a-b99f-4b40d617c882",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Structuresingle",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component.Structuresingle",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component.Structuresingle",
+    "description": "Single Files and Folders Builder Class\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Filesystem\\Folder;\r\nuse Joomla\\CMS\\Filesystem\\File;"
+}

@@ -1,0 +1,27 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "9f00e793-86f8-4ef9-b775-a3eb129f83c0",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Language",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Language",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "CompilerLanguage"
+        },
+        "use_selection1": {
+            "use": "d33b9278-c409-4aec-a047-b72f56712391",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Language",
+    "description": "Compiler Language Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

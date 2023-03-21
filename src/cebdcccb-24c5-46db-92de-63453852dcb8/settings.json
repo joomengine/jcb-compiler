@@ -1,0 +1,45 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "cebdcccb-24c5-46db-92de-63453852dcb8",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Adminviews",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Adminviews",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "cef2815b-f72b-402a-b769-f028f676692d",
+            "as": "Adminview"
+        },
+        "use_selection2": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Adminviews",
+    "description": "Model Admin Views Class\r\n\r\n@since 3.2.0"
+}

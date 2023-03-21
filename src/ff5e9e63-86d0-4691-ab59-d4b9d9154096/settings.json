@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "ff5e9e63-86d0-4691-ab59-d4b9d9154096",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Plantuml",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Power.Plantuml",
+    "type": "class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power.Plantuml",
+    "description": "Compiler Power Plantuml Builder\r\n@since 3.2.0"
+}

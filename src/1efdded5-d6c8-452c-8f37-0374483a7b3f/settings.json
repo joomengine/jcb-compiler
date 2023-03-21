@@ -1,0 +1,50 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "1efdded5-d6c8-452c-8f37-0374483a7b3f",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Structure",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Structure",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "5c75b455-3d4c-452a-867e-e90424a64c88",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Structure",
+    "description": "Compiler Utilities To Build Structure\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Filesystem\\File as JoomlaFile;\r\nuse Joomla\\CMS\\Filesystem\\Folder;"
+}

@@ -1,0 +1,23 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "Registry",
+    "guid": "23f2ca33-440a-4941-8e9a-4bc67522c0cb",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Mapper",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Mapper",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Mapper",
+    "description": "Mapper Service Provider\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}

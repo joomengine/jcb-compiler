@@ -1,0 +1,29 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Readme",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Power.Repo.Readme",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "ff5e9e63-86d0-4691-ab59-d4b9d9154096",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power.Repo.Readme",
+    "description": "Compiler Power Repo Readme\r\n@since 3.2.0"
+}

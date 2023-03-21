@@ -1,0 +1,22 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "53cf9828-7ad4-4856-aac1-7c4c67bd3121",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Createdate",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Createdate",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Createdate",
+    "description": "Model - Get Create Date\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;"
+}

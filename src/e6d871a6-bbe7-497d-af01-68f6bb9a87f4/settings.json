@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Counter",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.Counter",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Counter",
+    "description": "Compiler Utilities Counter\r\n\r\n@since 3.2.0"
+}

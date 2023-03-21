@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "2ad31f74-f579-499d-b98b-c4f54fd615dd",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "LoadInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.LoadInterface",
+    "type": "interface",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Interfaces.LoadInterface",
+    "description": "Database Load Interface\r\n\r\n@since 3.2.0"
+}

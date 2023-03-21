@@ -1,0 +1,33 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "037c7274-fb16-455d-989a-bf1da022620b",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Customimportscripts",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Customimportscripts",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "640b5352-fb09-425f-a26e-cd44eda03f15",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Customimportscripts",
+    "description": "Model Custom Import Scripts Class\r\n\r\n@since 3.2.0"
+}

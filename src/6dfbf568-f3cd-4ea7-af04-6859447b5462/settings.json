@@ -1,0 +1,37 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "6dfbf568-f3cd-4ea7-af04-6859447b5462",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Historyadminview",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Historyadminview",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4325745f-da1f-4d4d-a591-3189fe8c06e5",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "b80296eb-4718-4ed3-894d-69f3ac293733",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Historyadminview",
+    "description": "Model Admin View History Class\r\n\r\n@since 3.2.0"
+}

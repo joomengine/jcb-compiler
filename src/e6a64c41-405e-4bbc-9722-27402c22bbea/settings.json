@@ -1,0 +1,66 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "e6a64c41-405e-4bbc-9722-27402c22bbea",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Fields",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Model.Fields",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "4325745f-da1f-4d4d-a591-3189fe8c06e5",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "FieldName"
+        },
+        "use_selection7": {
+            "use": "b80296eb-4718-4ed3-894d-69f3ac293733",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "7a5fd3f3-199e-43ba-a8e8-f473d6c030ec",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Model.Fields",
+    "description": "Model Fields Class\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Application\\CMSApplication;"
+}

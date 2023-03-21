@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "extends": "b84e947d-2a13-44f7-ac0f-3902ae55ae0c",
+    "extends_custom": "",
+    "guid": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Component",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Component",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
+            "as": "Compiler"
+        },
+        "use_selection1": {
+            "use": "ef9578e5-4c9d-46bf-866f-3a94bdc7b753",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component",
+    "description": "Compiler Component\r\n\r\n@since 3.2.0"
+}

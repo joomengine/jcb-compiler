@@ -1,0 +1,31 @@
+{
+    "add_head": "1",
+    "extends": "0",
+    "extends_custom": "",
+    "guid": "87faa133-4cac-4816-ae41-5c3f9a2f76aa",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Customview",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.Customview",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "3b6895da-d9eb-4164-90b1-4632a4cc2474",
+            "as": "CustomviewData"
+        },
+        "use_selection1": {
+            "use": "05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46",
+            "as": "DynamicgetData"
+        },
+        "use_selection2": {
+            "use": "5b021139-dad0-4e9b-882a-2b4d807795af",
+            "as": "DynamicgetSelection"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Customview",
+    "description": "Compiler Customview\r\n\r\n@since 3.2.0",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;"
+}
