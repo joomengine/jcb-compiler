@@ -345,7 +345,7 @@ class Structure
 		// check if we should add the dynamic folder moving script to the installer script
 		if (!$this->registry->get('set_move_folders_install_script'))
 		{
-			// add the setDynamicF0ld3rs() method to the install scipt.php file
+			// add the setDynamicF0ld3rs() method to the install script.php file
 			$this->registry->set('set_move_folders_install_script', true);
 
 			// set message that this was done (will still add a tutorial link later)
@@ -409,6 +409,10 @@ class Structure
 				// set the super power php file
 				$this->createFile($bom . PHP_EOL . Placefix::_h('POWERCODE') . PHP_EOL,
 					$path, 'code.php', $power->key);
+
+				// set the super power php RAW file
+				$this->createFile(Placefix::_h('CODEPOWER'),
+					$path, 'code.power', $power->key);
 
 				// set the super power json file
 				$this->createFile(Placefix::_h('POWERLINKER'), $path,

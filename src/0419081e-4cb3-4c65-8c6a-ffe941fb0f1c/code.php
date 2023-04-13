@@ -271,6 +271,9 @@ class Infusion
 					// POWERCODE
 					$this->content->set_($power->key, 'POWERCODE', $this->code($power));
 
+					// CODEPOWER
+					$this->content->set_($power->key, 'CODEPOWER', $this->raw($power));
+
 					// POWERLINKER
 					$this->content->set_($power->key, 'POWERLINKER', $this->linker($power));
 
@@ -363,6 +366,24 @@ class Infusion
 		$code[] = '}' . PHP_EOL;
 
 		return $this->placeholder->update(implode(PHP_EOL, $code), $this->content->active);
+	}
+
+	/**
+	 * Get the Raw (unchanged) Power code
+	 *
+	 * @param object    $power A power object.
+	 *
+	 * @return string
+	 * @since 3.2.0
+	 */
+	private function raw(object &$power): string
+	{
+		// add the raw main code if set
+		if (isset($power->raw_class_code) && StringHelper::check($power->raw_class_code))
+		{
+			return $power->raw_class_code;
+		}
+		return '';
 	}
 
 	/**

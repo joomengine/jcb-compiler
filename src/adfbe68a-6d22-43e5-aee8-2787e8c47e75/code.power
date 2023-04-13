@@ -1,0 +1,38 @@
+	/**
+	 * Model the key
+	 *
+	 * @param   string   $key  The key to model
+	 *
+	 * @return  string
+	 * @since 3.2.0
+	 */
+	protected function key(string $key): string
+	{
+		return Placefix::_h($key);
+	}
+
+	/**
+	 * Model the first key
+	 *
+	 * @param   string   $key  The first key to model
+	 *
+	 * @return  string
+	 * @since 3.2.0
+	 */
+	protected function firstKey(string $key): string
+	{
+		return $key;
+	}
+
+	/**
+	 * Model the second key
+	 *
+	 * @param   string   $key  The second key to model
+	 *
+	 * @return  string
+	 * @since 3.2.0
+	 */
+	protected function secondKey(string $key): string
+	{
+		return Placefix::_h($key);
+	}

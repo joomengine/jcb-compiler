@@ -13,6 +13,7 @@
 class Power  #Gold {
   + register(Container $container) : void
   + getPowers(Container $container) : Powers
+  + getGrep(Container $container) : Grep
   + getAutoloader(Container $container) : Autoloader
   + getInfusion(Container $container) : Infusion
   + getStructure(Container $container) : Structure
@@ -36,49 +37,56 @@ note left of Power::getPowers
   return: Powers
 end note
 
-note right of Power::getAutoloader
+note right of Power::getGrep
+  Get the Grep
+
+  since: 3.2.0
+  return: Grep
+end note
+
+note left of Power::getAutoloader
   Get the Compiler Autoloader
 
   since: 3.2.0
   return: Autoloader
 end note
 
-note left of Power::getInfusion
+note right of Power::getInfusion
   Get the Compiler Power Infusion
 
   since: 3.2.0
   return: Infusion
 end note
 
-note right of Power::getStructure
+note left of Power::getStructure
   Get the Compiler Power Structure Builder
 
   since: 3.2.0
   return: Structure
 end note
 
-note left of Power::getParser
+note right of Power::getParser
   Get the Compiler Power Parser
 
   since: 3.2.0
   return: Parser
 end note
 
-note right of Power::getPlantuml
+note left of Power::getPlantuml
   Get the Compiler Power Plantuml Builder
 
   since: 3.2.0
   return: Plantuml
 end note
 
-note left of Power::getRepoReadme
+note right of Power::getRepoReadme
   Get the Compiler Power Repo Readme Builder
 
   since: 3.2.0
   return: RepoReadme
 end note
 
-note right of Power::getReposReadme
+note left of Power::getReposReadme
   Get the Compiler Power Repos Readme Builder
 
   since: 3.2.0

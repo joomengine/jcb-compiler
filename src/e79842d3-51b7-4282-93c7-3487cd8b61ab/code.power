@@ -1,0 +1,61 @@
+	/**
+	 * The areas add array
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 */
+	protected array $areas = [
+		'css_view', 'css_views'
+	];
+
+	/**
+	 * Compiler Customcode Dispenser
+	 *
+	 * @var    Dispenser
+	 * @since 3.2.0
+	 */
+	protected Dispenser $dispenser;
+
+	/**
+	 * Constructor
+	 *
+	 * @param Dispenser|null     $dispenser      The compiler customcode dispenser
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct(?Dispenser $dispenser = null)
+	{
+		$this->dispenser = $dispenser ?: Compiler::_('Customcode.Dispenser');
+	}
+
+	/**
+	 * Set Admin View Css
+	 *
+	 * @param   object  $item  The item data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		foreach ($this->areas as $area)
+		{
+			if (isset($item->{'add_' . $area})
+				&& $item->{'add_' . $area} == 1
+				&& StringHelper::check($item->{$area}))
+			{
+				$this->dispenser->set(
+					$item->{$area},
+					$area,
+					$item->name_single_code,
+					null,
+					['prefix' => PHP_EOL],
+					true,
+					true,
+					true
+				);
+
+				unset($item->{$area});
+			}
+		}
+	}

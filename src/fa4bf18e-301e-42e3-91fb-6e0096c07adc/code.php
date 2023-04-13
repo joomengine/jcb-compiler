@@ -58,6 +58,17 @@ class Config extends BaseConfig
 	}
 
 	/**
+	 * get Gitea Access Token
+	 *
+	 * @return  string  the access token
+	 * @since 3.2.0
+	 */
+	protected function getGiteatoken(): ?string
+	{
+		return $this->params->get('access.token');
+	}
+
+	/**
 	 * get add contributors switch
 	 *
 	 * @return  bool  Add contributors switch
@@ -568,6 +579,39 @@ class Config extends BaseConfig
 	}
 
 	/**
+	 * Get super power approved paths
+	 *
+	 * @return  array The approved paths to the repositories on Gitea
+	 * @since 3.2.0
+	 */
+	protected function getApprovedpaths(): array
+	{
+		$default = (object) ['owner' => 'joomla', 'repo' => 'super-powers', 'branch' => 'master'];
+
+		if (!$this->add_own_powers)
+		{
+			return [$default];
+		}
+
+		$paths = $this->params->get('approved_paths');
+
+		$approved = [];
+		if (!empty($paths))
+		{
+			foreach ($paths as $path)
+			{
+				// we make sure to get only the objects
+				$approved[] = $path;
+			}
+		}
+
+		// finally we add the default
+		$approved[] = $default;
+
+		return $approved;
+	}
+
+	/**
 	 * get bom path
 	 *
 	 * @return  string  The bom path
@@ -708,6 +752,22 @@ class Config extends BaseConfig
 		$value = $this->input->post->get('powers_repository', 2, 'INT');
 
 		return $value == 2 ? $default : (bool) $value;
+	}
+
+	/**
+	 * Get switch to add own super powers
+	 *
+	 * @return  bool  Switch to add own super powers
+	 * @since 3.2.0
+	 */
+	protected function getAddownpowers(): bool
+	{
+		if ($this->add_super_powers)
+		{
+			return (bool) $this->params->get('super_powers_repositories', 0);
+		}
+
+		return false;
 	}
 
 	/**

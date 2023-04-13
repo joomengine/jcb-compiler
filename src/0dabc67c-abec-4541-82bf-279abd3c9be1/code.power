@@ -1,0 +1,21 @@
+	/**
+	 * Set the local tabs
+	 *
+	 * @param   object  $item  The view data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		$item->addpermissions = (isset($item->addpermissions)
+			&& JsonHelper::check($item->addpermissions))
+			? json_decode((string) $item->addpermissions, true) : null;
+
+		if (ArrayHelper::check($item->addpermissions))
+		{
+			$item->permissions = array_values($item->addpermissions);
+		}
+
+		unset($item->addpermissions);
+	}

@@ -1,0 +1,20 @@
+	/**
+	 * load all the powers linked to this component
+	 *
+	 * @param array   $guids    The global unique ids of the linked powers
+	 *
+	 * @return void
+	 * @since 3.2.0
+	 */
+	public function load(array $guids);
+
+	/**
+	 * Get a power
+	 *
+	 * @param string   $guid    The global unique id of the power
+	 * @param int        $build    Force build switch (to override global switch)
+	 *
+	 * @return mixed
+	 * @since 3.2.0
+	 */
+	public function get(string $guid, int $build = 0);

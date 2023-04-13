@@ -1,0 +1,59 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(Config::class, 'Config')
+			->share('Config', [$this, 'getConfig'], true);
+
+		$container->alias(Registry::class, 'Registry')
+			->share('Registry', [$this, 'getRegistry'], true);
+
+		$container->alias(Table::class, 'Table')
+			->share('Table', [$this, 'getTable'], true);
+	}
+
+	/**
+	 * Get the Compiler Configurations
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Config
+	 * @since 3.2.0
+	 */
+	public function getConfig(Container $container): Config
+	{
+		return new Config();
+	}
+
+	/**
+	 * Get the Compiler Registry
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Registry
+	 * @since 3.2.0
+	 */
+	public function getRegistry(Container $container): Registry
+	{
+		return new Registry();
+	}
+
+	/**
+	 * Get the Table
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Table
+	 * @since 3.2.0
+	 */
+	public function getTable(Container $container): Table
+	{
+		return new Table();
+	}
+

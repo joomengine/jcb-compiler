@@ -1,0 +1,31 @@
+	/**
+	 * Constructor
+	 *
+	 * @param Data|null       $component    The component data class.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct(?Data $component = null)
+	{
+		$component = $component ?: Compiler::_('Component.Data');
+
+		parent::__construct($component->get());
+	}
+
+	/**
+	 * getting any valid value
+	 *
+	 * @param   string       $path     The value's key/path name
+	 *
+	 * @since 3.2.0
+	 */
+	public function __get(string $path)
+	{
+		// check if it has been set
+		if (($value = $this->get($path, '__N0T_S3T_Y3T_')) !== '__N0T_S3T_Y3T_')
+		{
+			return $value;
+		}
+
+		return null;
+	}

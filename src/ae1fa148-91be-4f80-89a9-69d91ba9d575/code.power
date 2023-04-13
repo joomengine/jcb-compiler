@@ -1,0 +1,46 @@
+	/**
+	 * The compiler registry
+	 *
+	 * @var    Registry
+	 * @since 3.2.0
+	 */
+	protected Registry $registry;
+
+	/**
+	 * Constructor
+	 *
+	 * @param Registry|null    $registry     The compiler registry object.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct(?Registry $registry = null)
+	{
+		$this->registry = $registry ?: Compiler::_('Registry');
+	}
+
+	/**
+	 * Set the linked views
+	 *
+	 * @param   object  $item  The view data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		$item->addlinked_views  = (isset($item->addlinked_views)
+			&& JsonHelper::check($item->addlinked_views))
+			? json_decode((string) $item->addlinked_views, true) : null;
+
+		if (ArrayHelper::check($item->addlinked_views))
+		{
+			// setup linked views to global data sets
+			$this->registry->set('builder.linked_admin_views.' . $item->name_single_code,
+				array_values(
+					$item->addlinked_views
+				)
+			);
+		}
+
+		unset($item->addlinked_views);
+	}

@@ -1,0 +1,26 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(Content::class, 'Content')
+			->share('Content', [$this, 'getContent'], true);
+	}
+
+	/**
+	 * Get the Compiler Content
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Content
+	 * @since 3.2.0
+	 */
+	public function getContent(Container $container): Content
+	{
+		return new Content();
+	}

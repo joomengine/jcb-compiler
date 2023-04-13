@@ -1,0 +1,49 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(CompilerPlaceholder::class, 'Placeholder')
+			->share('Placeholder', [$this, 'getPlaceholder'], true);
+
+		$container->alias(Reverse::class, 'Placeholder.Reverse')
+			->share('Placeholder.Reverse', [$this, 'getPlaceholderReverse'], true);
+	}
+
+	/**
+	 * Get the Compiler Placeholder
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  CompilerPlaceholder
+	 * @since 3.2.0
+	 */
+	public function getPlaceholder(Container $container): CompilerPlaceholder
+	{
+		return new CompilerPlaceholder(
+			$container->get('Config')
+		);
+	}
+
+	/**
+	 * Get the Compiler Placeholder Reverse
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Worker
+	 * @since 3.2.0
+	 */
+	public function getPlaceholderReverse(Container $container): Reverse
+	{
+		return new Reverse(
+			$container->get('Config'),
+			$container->get('Placeholder'),
+			$container->get('Language'),
+			$container->get('Language.Extractor')
+		);
+	}

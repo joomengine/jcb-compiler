@@ -1,0 +1,26 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(Mysql::class, 'Builder.Update.Mysql')
+			->share('Builder.Update.Mysql', [$this, 'getMysql'], true);
+	}
+
+	/**
+	 * Get the Compiler Builder Mysql
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Mysql
+	 * @since 3.2.0
+	 */
+	public function getMysql(Container $container): Mysql
+	{
+		return new Mysql();
+	}

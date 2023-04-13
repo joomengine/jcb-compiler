@@ -1,0 +1,16 @@
+{
+    "add_head": "0",
+    "extends": "0",
+    "extends_custom": "JoomlaRegistry",
+    "guid": "e0c8c931-52a0-4171-9909-e8769505bb1f",
+    "implements": null,
+    "implements_custom": "",
+    "load_selection": null,
+    "name": "Constantpaths",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Utilities.Constantpaths",
+    "type": "class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Utilities.Constantpaths",
+    "description": "Utilities Constant Paths\r\n\r\n@since 3.2.0"
+}

@@ -13,6 +13,7 @@
 class Config  #Gold {
   # JoomlaRegistry $config
   + __construct(?Input $input = null, ?JoomlaRegistry $params = null, ...)
+  # getGiteatoken() : ?string
   # getAddcontributors() : bool
   # getAddajax() : bool
   # getAddsiteajax() : bool
@@ -50,6 +51,7 @@ class Config  #Gold {
   # getCompilerpath() : string
   # getJcbpowerspath() : string
   # getLocalpowersrepositorypath() : string
+  # getApprovedpaths() : array
   # getBompath() : string
   # getCustomfolderpath() : string
   # getAddassetstablefix() : int
@@ -59,6 +61,7 @@ class Config  #Gold {
   # getAddplaceholders() : bool
   # getAddpower() : bool
   # getAddsuperpowers() : bool
+  # getAddownpowers() : bool
   # getBuildtarget() : string
   # getCryptiontypes() : array
   # getBasicencryption() : bool
@@ -83,263 +86,277 @@ note right of Config::__construct
     ?JoomlaRegistry $config = null
 end note
 
-note left of Config::getAddcontributors
+note left of Config::getGiteatoken
+  get Gitea Access Token
+
+  since: 3.2.0
+  return: ?string
+end note
+
+note right of Config::getAddcontributors
   get add contributors switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getAddajax
+note left of Config::getAddajax
   get Add Ajax Switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getAddsiteajax
+note right of Config::getAddsiteajax
   get Add Site Ajax Switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getAddeximport
+note left of Config::getAddeximport
   get add eximport
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getAddcheckin
+note right of Config::getAddcheckin
   get add checkin
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getComponentid
+note left of Config::getComponentid
   get posted component id
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getComponentversion
+note right of Config::getComponentversion
   get component version
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getComponentcodename
+note left of Config::getComponentcodename
   get components code name
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getComponentcontext
+note right of Config::getComponentcontext
   get component context
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getComponentcodenamelength
+note left of Config::getComponentcodenamelength
   get component code name length
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getJoomlaversion
+note right of Config::getJoomlaversion
   get posted Joomla version
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getJoomlaversions
+note left of Config::getJoomlaversions
   get Joomla versions
 
   since: 3.2.0
   return: array
 end note
 
-note left of Config::getJoomlaversionname
+note right of Config::getJoomlaversionname
   get posted Joomla version name
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getSetjoomlafields
+note left of Config::getSetjoomlafields
   set joomla fields
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getShowadvancedoptions
+note right of Config::getShowadvancedoptions
   get show advanced options switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getIndentationvalue
+note left of Config::getIndentationvalue
   get indentation value
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getAddbuilddate
+note right of Config::getAddbuilddate
   get add build date switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getBuilddate
+note left of Config::getBuilddate
   get build date
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getBackup
+note right of Config::getBackup
   get posted backup switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getRepository
+note left of Config::getRepository
   get posted repository switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getDebuglinenr
+note right of Config::getDebuglinenr
   get posted debuglinenr switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getMinify
+note left of Config::getMinify
   get posted minify switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getRemovelinebreaks
+note right of Config::getRemovelinebreaks
   get posted remove line breaks switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getTidy
+note left of Config::getTidy
   get system tidy state
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getSettidywarning
+note right of Config::getSettidywarning
   add tidy warning
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getSettaghistory
+note left of Config::getSettaghistory
   get history tag switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getLangtag
+note right of Config::getLangtag
   get language tag
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangprefix
+note left of Config::getLangprefix
   get language prefix
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getLangtarget
+note right of Config::getLangtarget
   get language target
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangstringtargets
+note left of Config::getLangstringtargets
   get language string targets
 
   since: 3.2.0
   return: array
 end note
 
-note left of Config::getLangstringkeytargets
+note right of Config::getLangstringkeytargets
   get language string targets (by key name)
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getFieldbuildertype
+note left of Config::getFieldbuildertype
   get field builder type
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getDefaultfields
+note right of Config::getDefaultfields
   get default fields
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getTmppath
+note left of Config::getTmppath
   get temporary path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getCompilerpath
+note right of Config::getCompilerpath
   get compiler path
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getJcbpowerspath
+note left of Config::getJcbpowerspath
   get jcb powers path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getLocalpowersrepositorypath
+note right of Config::getLocalpowersrepositorypath
   Get local super powers repository path
 
   since: 3.2.0
   return: string
+end note
+
+note left of Config::getApprovedpaths
+  Get super power approved paths
+
+  since: 3.2.0
+  return: array
 end note
 
 note right of Config::getBompath
@@ -405,77 +422,84 @@ note right of Config::getAddsuperpowers
   return: bool
 end note
 
-note left of Config::getBuildtarget
+note left of Config::getAddownpowers
+  Get switch to add own super powers
+
+  since: 3.2.0
+  return: bool
+end note
+
+note right of Config::getBuildtarget
   get switch build target switch
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getCryptiontypes
+note left of Config::getCryptiontypes
   get encryption types
 
   since: 3.2.0
   return: array
 end note
 
-note left of Config::getBasicencryption
+note right of Config::getBasicencryption
   get basic encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getMediumencryption
+note left of Config::getMediumencryption
   get medium encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getWhmcsencryption
+note right of Config::getWhmcsencryption
   get whmcs encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getRemovesitefolder
+note left of Config::getRemovesitefolder
   Should we remove the site folder
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getRemovesiteeditfolder
+note right of Config::getRemovesiteeditfolder
   Should we remove the site edit folder
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getUikit
+note left of Config::getUikit
   The Uikit switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getGooglechart
+note right of Config::getGooglechart
   The google chart switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getFootable
+note left of Config::getFootable
   The footable switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getFootableversion
+note right of Config::getFootableversion
   The footable version
 
   since: 3.2.0

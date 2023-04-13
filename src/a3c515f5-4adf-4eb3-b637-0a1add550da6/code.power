@@ -1,0 +1,9 @@
+	/**
+	 * Set a string as bsae64 (basic)
+	 *
+	 * @param   string  $script  The code string
+	 *
+	 * @return  string
+	 * @since 3.2.0
+	 */
+	public function set(string $script): string;

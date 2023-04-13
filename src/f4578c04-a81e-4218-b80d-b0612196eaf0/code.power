@@ -1,0 +1,53 @@
+	/**
+	 * Compiler Files Folders
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 */
+	protected array $keys = [
+		'files' => 'files',
+		'folders' => 'folders',
+		'urls' => 'urls',
+		'filesfullpath' => 'files',
+		'foldersfullpath' => 'folders'
+	];
+
+	/**
+	 * Set the file and folder data
+	 *
+	 * @param   object  $item  The item data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		foreach ($this->keys as $target => $value)
+		{
+			// set the add target data
+			$item->{'add' . $target} = (isset($item->{'add' . $target}) &&
+				JsonHelper::check($item->{'add' . $target})) ?
+					json_decode((string) $item->{'add' . $target}, true) : null;
+
+			// only continue if there are values
+			if (ArrayHelper::check($item->{'add' . $target}))
+			{
+				if (isset($item->{$value})
+					&& ArrayHelper::check($item->{$value}))
+				{
+					foreach ($item->{'add' . $target} as $taget)
+					{
+						$item->{$value}[] = $taget;
+					}
+				}
+				else
+				{
+					$item->{$value} = array_values(
+						$item->{'add' . $target}
+					);
+				}
+			}
+
+			unset($item->{'add' . $target});
+		}
+	}

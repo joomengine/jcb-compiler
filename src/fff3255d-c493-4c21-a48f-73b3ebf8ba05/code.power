@@ -1,0 +1,53 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(TemplatelayoutData::class, 'Templatelayout.Data')
+			->share('Templatelayout.Data', [$this, 'getTemplatelayoutData'], true);
+
+		$container->alias(AliasData::class, 'Alias.Data')
+			->share('Alias.Data', [$this, 'getAliasData'], true);
+	}
+
+	/**
+	 * Get the Compiler Templatelayout Data
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  TemplatelayoutData
+	 * @since 3.2.0
+	 */
+	public function getTemplatelayoutData(Container $container): TemplatelayoutData
+	{
+		return new TemplatelayoutData(
+			$container->get('Config'),
+			$container->get('Registry'),
+			$container->get('Alias.Data')
+		);
+	}
+
+	/**
+	 * Get the Compiler Alias Data
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  AliasData
+	 * @since 3.2.0
+	 */
+	public function getAliasData(Container $container): AliasData
+	{
+		return new AliasData(
+			$container->get('Config'),
+			$container->get('Registry'),
+			$container->get('Customcode'),
+			$container->get('Customcode.Gui'),
+			$container->get('Model.Loader'),
+			$container->get('Model.Libraries')
+		);
+	}

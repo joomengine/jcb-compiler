@@ -1,0 +1,107 @@
+	/**
+	 * Global Compiler Container
+	 *
+	 * @var     Container
+	 * @since 3.2.0
+	 **/
+	protected static $container = null;
+
+	/**
+	 * Current Joomla Version Being Build
+	 *
+	 * @var     int
+	 * @since 3.2.0
+	 **/
+	protected static $JoomlaVersion;
+
+	/**
+	 * Get any class from the compiler container
+	 *
+	 * @param   string  $key  The container class key
+	 *
+	 * @return  mixed
+	 * @since 3.2.0
+	 */
+	public static function _($key)
+	{
+		return self::getContainer()->get($key);
+	}
+
+	/**
+	 * Get version specific class from the compiler container
+	 *
+	 * @param   string  $key  The container class key
+	 *
+	 * @return  mixed
+	 * @since 3.2.0
+	 */
+	public static function _J($key)
+	{
+		if (empty(self::$JoomlaVersion))
+		{
+			self::$JoomlaVersion = self::getContainer()->get('Config')->joomla_version;
+		}
+
+		return self::getContainer()->get('J' . self::$JoomlaVersion . '.' . $key);
+	}
+
+	/**
+	 * Get the global compiler container
+	 *
+	 * @return  Container
+	 * @since 3.2.0
+	 */
+	public static function getContainer(): Container
+	{
+		if (!self::$container)
+		{
+			self::$container = self::createContainer();
+		}
+
+		return self::$container;
+	}
+
+	/**
+	 * Create a container object
+	 *
+	 * @return  Container
+	 * @since 3.2.0
+	 */
+	protected static function createContainer(): Container
+	{
+		return (new Container())
+			->registerServiceProvider(new Crypt())
+			->registerServiceProvider(new Server())
+			->registerServiceProvider(new Database())
+			->registerServiceProvider(new Model())
+			->registerServiceProvider(new Mapper())
+			->registerServiceProvider(new Compiler())
+			->registerServiceProvider(new Event())
+			->registerServiceProvider(new History())
+			->registerServiceProvider(new Language())
+			->registerServiceProvider(new Placeholder())
+			->registerServiceProvider(new Customcode())
+			->registerServiceProvider(new Power())
+			->registerServiceProvider(new Component())
+			->registerServiceProvider(new Adminview())
+			->registerServiceProvider(new Library())
+			->registerServiceProvider(new Customview())
+			->registerServiceProvider(new Templatelayout())
+			->registerServiceProvider(new Extension())
+			->registerServiceProvider(new Field())
+			->registerServiceProvider(new Joomlamodule())
+			->registerServiceProvider(new Joomlaplugin())
+			->registerServiceProvider(new Utilities())
+			->registerServiceProvider(new Builder())
+			->registerServiceProvider(new Gitea())
+			->registerServiceProvider(new GiteaUtilities())
+			->registerServiceProvider(new GiteaSettings())
+			->registerServiceProvider(new GiteaOrg())
+			->registerServiceProvider(new GiteaUser())
+			->registerServiceProvider(new GiteaRepo())
+			->registerServiceProvider(new GiteaPackage())
+			->registerServiceProvider(new GiteaIssue())
+			->registerServiceProvider(new GiteNotifi())
+			->registerServiceProvider(new GiteaMisc())
+			->registerServiceProvider(new GiteaAdmin());
+	}

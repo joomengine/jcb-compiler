@@ -321,7 +321,6 @@ class Plantuml
 	{
 		$plant_uml = "";
 		$note_count = count($notes);
-		$note_index = 0;
 
 		$positions = ['right', 'left'];
 		$position_index = 0;
@@ -341,8 +340,6 @@ class Plantuml
 			$plant_uml .= "\nnote $position of {$area}\n";
 			$plant_uml .= "  " . implode("\n  ", $note) . "\n";
 			$plant_uml .= "end note\n";
-
-			$note_index++;
 		}
 
 		return $plant_uml;

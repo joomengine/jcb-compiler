@@ -1,0 +1,10 @@
+	/**
+	 * Get Item History object
+	 *
+	 * @param   string  $type  The type of item
+	 * @param   int     $id    The item ID
+	 *
+	 * @return  ?object    The history item object
+	 * @since 3.2.0
+	 */
+	public function get(string $type, int $id): ?object;

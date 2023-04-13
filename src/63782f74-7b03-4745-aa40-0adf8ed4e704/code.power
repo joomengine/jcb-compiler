@@ -1,0 +1,57 @@
+	/**
+	 * Current Joomla Version We are IN
+	 *
+	 * @var     int
+	 * @since 3.2.0
+	 **/
+	protected $currentVersion;
+
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(J3History::class, 'J3.History')
+			->share('J3.History', [$this, 'getJ3History'], true);
+
+		$container->alias(HistoryInterface::class, 'History')
+			->share('History', [$this, 'getHistory'], true);
+	}
+
+	/**
+	 * Get the History
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  HistoryInterface
+	 * @since 3.2.0
+	 */
+	public function getHistory(Container $container): HistoryInterface
+	{
+		if (empty($this->currentVersion))
+		{
+			$this->currentVersion = Version::MAJOR_VERSION;
+		}
+
+		return $container->get('J' . $this->currentVersion . '.History');
+	}
+
+	/**
+	 * Get the Joomla 3 History
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J3History
+	 * @since 3.2.0
+	 */
+	public function getJ3History(Container $container): J3History
+	{
+		return new J3History(
+			$container->get('Config')
+		);
+	}

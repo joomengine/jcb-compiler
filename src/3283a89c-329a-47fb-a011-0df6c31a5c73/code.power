@@ -1,0 +1,50 @@
+	/**
+	 * The areas add array
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 */
+	protected array $areas = ['css_document', 'css'];
+
+	/**
+	 * Compiler Customcode Class
+	 *
+	 * @var    Customcode
+	 * @since 3.2.0
+	 */
+	protected Customcode $customcode;
+
+	/**
+	 * Constructor
+	 *
+	 * @param Customcode|null      $customcode    The compiler customcode object.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct(?Customcode $customcode = null)
+	{
+		$this->customcode = $customcode ?: Compiler::_('Customcode');
+	}
+
+	/**
+	 * Set Css code
+	 *
+	 * @param   object     $item  The item data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		foreach ($this->areas as $area)
+		{
+			if (isset($item->{'add_' . $area})
+				&& $item->{'add_' . $area} == 1
+				&& StringHelper::check($item->{$area}))
+			{
+				$item->{$area} = $this->customcode->update(
+					base64_decode((string) $item->{$area})
+				);
+			}
+		}
+	}

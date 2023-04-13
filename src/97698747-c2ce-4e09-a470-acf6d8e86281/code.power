@@ -1,0 +1,8 @@
+	/**
+	 * get all System Placeholders
+	 *
+	 * @return  array The global placeholders
+	 *
+	 * @since 3.2.0
+	 */
+	public function get(): array;

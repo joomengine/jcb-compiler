@@ -1,0 +1,7 @@
+	/**
+	 * get the custom code from the local files
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function run();

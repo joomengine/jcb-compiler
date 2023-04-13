@@ -15,6 +15,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Power as Powers;
+use VDM\Joomla\Componentbuilder\Power\Grep;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Infusion;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Autoloader;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Structure;
@@ -43,6 +44,9 @@ class Power implements ServiceProviderInterface
 	{
 		$container->alias(Powers::class, 'Power')
 			->share('Power', [$this, 'getPowers'], true);
+
+		$container->alias(Grep::class, 'Power.Grep')
+			->share('Grep', [$this, 'getGrep'], true);
 
 		$container->alias(Autoloader::class, 'Power.Autoloader')
 			->share('Power.Autoloader', [$this, 'getAutoloader'], true);
@@ -82,6 +86,19 @@ class Power implements ServiceProviderInterface
 			$container->get('Customcode'),
 			$container->get('Customcode.Gui')
 		);
+	}
+
+	/**
+	 * Get the Grep
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Grep
+	 * @since 3.2.0
+	 */
+	public function getGrep(Container $container): Grep
+	{
+		return new Grep();
 	}
 
 	/**

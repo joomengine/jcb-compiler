@@ -43,9 +43,14 @@ This repository contains an index (see below) of all the approved powers within 
   - **interface LoadInterface** | [Details](src/2ad31f74-f579-499d-b98b-c4f54fd615dd) | [Code](src/2ad31f74-f579-499d-b98b-c4f54fd615dd/code.php) | [Settings](src/2ad31f74-f579-499d-b98b-c4f54fd615dd/settings.json) | [2ad31f74-f579-499d-b98b-c4f54fd615dd](src/2ad31f74-f579-499d-b98b-c4f54fd615dd)
   - **interface Mapperdoubleinterface** | [Details](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f) | [Code](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/code.php) | [Settings](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/settings.json) | [fbc58009-fa16-4d49-a0dd-419c3b62d42f](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f)
   - **interface Mappersingleinterface** | [Details](src/78527c29-24ad-4735-ad4c-ec33a4952d9b) | [Code](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/code.php) | [Settings](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/settings.json) | [78527c29-24ad-4735-ad4c-ec33a4952d9b](src/78527c29-24ad-4735-ad4c-ec33a4952d9b)
-  - **interface ModelInterface** | [Details](src/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff) | [Code](src/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff/code.php) | [Settings](src/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff/settings.json) | [8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff](src/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff)
   - **interface Serverinterface** | [Details](src/86ac0760-26f5-4746-9c7f-ce77860f80f8) | [Code](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/code.php) | [Settings](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/settings.json) | [86ac0760-26f5-4746-9c7f-ce77860f80f8](src/86ac0760-26f5-4746-9c7f-ce77860f80f8)
   - **interface Tableinterface** | [Details](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf) | [Code](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf/code.php) | [Settings](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf/settings.json) | [2da6d6c4-eb29-4d69-8bc2-36d96e916adf](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf)
+- **Namespace**: [VDM\Joomla\Componentbuilder\Power](#vdm-joomla-componentbuilder-power)
+
+  - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | [6784dd52-0909-451a-a872-9a942a023c68](src/6784dd52-0909-451a-a872-9a942a023c68)
+- **Namespace**: [VDM\Joomla\Componentbuilder\Utilities](#vdm-joomla-componentbuilder-utilities)
+
+  - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | [e0c8c931-52a0-4171-9909-e8769505bb1f](src/e0c8c931-52a0-4171-9909-e8769505bb1f)
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Adminview](#vdm-joomla-componentbuilder-compiler-adminview)
 
   - **class Data** | [Details](src/cef2815b-f72b-402a-b769-f028f676692d) | [Code](src/cef2815b-f72b-402a-b769-f028f676692d/code.php) | [Settings](src/cef2815b-f72b-402a-b769-f028f676692d/settings.json) | [cef2815b-f72b-402a-b769-f028f676692d](src/cef2815b-f72b-402a-b769-f028f676692d)
@@ -194,7 +199,6 @@ This repository contains an index (see below) of all the approved powers within 
   - **abstract class FieldHelper** | [Details](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec) | [Code](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/code.php) | [Settings](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/settings.json) | [7a5fd3f3-199e-43ba-a8e8-f473d6c030ec](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec)
   - **abstract class Indent** | [Details](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6) | [Code](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/code.php) | [Settings](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/settings.json) | [a68c010b-e92e-47d5-8a44-d23cfddeb6c6](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6)
   - **abstract class Line** | [Details](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222) | [Code](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/code.php) | [Settings](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/settings.json) | [4e6ff11d-bebf-42f5-8fd7-b2f882857222](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222)
-  - **abstract class Minify** | [Details](src/b591855d-d106-4fe5-90ad-8e706f6267cf) | [Code](src/b591855d-d106-4fe5-90ad-8e706f6267cf/code.php) | [Settings](src/b591855d-d106-4fe5-90ad-8e706f6267cf/settings.json) | [b591855d-d106-4fe5-90ad-8e706f6267cf](src/b591855d-d106-4fe5-90ad-8e706f6267cf)
   - **abstract class Placefix** | [Details](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388) | [Code](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/code.php) | [Settings](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/settings.json) | [500f3a7f-c16d-4dd4-81b2-2df6776b5388](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388)
   - **abstract class Unique** | [Details](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e) | [Code](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/code.php) | [Settings](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/settings.json) | [f02fb1df-f4b6-4be1-9595-2e72084a5e6e](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e)
   - **class Counter** | [Details](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4) | [Code](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/code.php) | [Settings](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/settings.json) | [e6d871a6-bbe7-497d-af01-68f6bb9a87f4](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4)
@@ -266,6 +270,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
   class Config  #Gold {
     # JoomlaRegistry $config
     + __construct()
+    # getGiteatoken() : ?string
     # getAddcontributors() : bool
     # getAddajax() : bool
     # getAddsiteajax() : bool
@@ -303,6 +308,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
     # getCompilerpath() : string
     # getJcbpowerspath() : string
     # getLocalpowersrepositorypath() : string
+    # getApprovedpaths() : array
     # getBompath() : string
     # getCustomfolderpath() : string
     # getAddassetstablefix() : int
@@ -312,6 +318,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
     # getAddplaceholders() : bool
     # getAddpower() : bool
     # getAddsuperpowers() : bool
+    # getAddownpowers() : bool
     # getBuildtarget() : string
     # getCryptiontypes() : array
     # getBasicencryption() : bool
@@ -464,9 +471,11 @@ namespace VDM\Joomla\Componentbuilder\Interfaces #Olive {
   }
 
   interface InsertInterface  #Lavender {
+    + defaults() : void
     + rows() : bool
     + items() : bool
     + row() : bool
+    + item() : bool
   }
 
   interface LoadInterface  #Lavender {
@@ -495,13 +504,6 @@ namespace VDM\Joomla\Componentbuilder\Interfaces #Olive {
     + remove() : void
   }
 
-  interface ModelInterface  #Lavender {
-    + value() : mixed
-    + item() : ?object
-    + items() : ?array
-    + last() : ?int
-  }
-
   interface Serverinterface  #Lavender {
     + set() : self
     + move() : bool
@@ -514,6 +516,56 @@ namespace VDM\Joomla\Componentbuilder\Interfaces #Olive {
     + tables() : array
     + exist() : bool
     + fields() : ?array
+  }
+}
+
+
+@enduml
+```
+
+## VDM Joomla Componentbuilder Power
+> namespace VDM\Joomla\Componentbuilder\Power
+```uml
+@startuml
+
+namespace VDM\Joomla\Componentbuilder\Power #Olive {
+
+
+  class Grep << (F,LightGreen) >> #Green {
+    + string $path
+    + ?array $paths
+    # Contents $contents
+    # CMSApplication $app
+    + __construct()
+    + get() : ?object
+    - searchLocal() : ?object
+    - searchRemote() : ?object
+    - getLocal() : ?object
+    - getRemote() : ?object
+    - init() : void
+    - localIndex() : void
+    - remoteIndex() : void
+    - loadRemoteFile() : mixed
+    - getCode() : ?string
+    - getLicense() : ?string
+  }
+}
+
+
+@enduml
+```
+
+## VDM Joomla Componentbuilder Utilities
+> namespace VDM\Joomla\Componentbuilder\Utilities
+```uml
+@startuml
+
+namespace VDM\Joomla\Componentbuilder\Utilities #Olive {
+
+
+  class Constantpaths  #Gold {
+    # array $paths
+    + get() : array|string|null
   }
 }
 
@@ -1607,6 +1659,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Power #LightGreen {
     - setPowers() : void
     - index() : string
     - code() : string
+    - raw() : string
     - linker() : string
   }
 
@@ -1832,6 +1885,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service #LightGreen {
   class Power  #Gold {
     + register() : void
     + getPowers() : Powers
+    + getGrep() : Grep
     + getAutoloader() : Autoloader
     + getInfusion() : Infusion
     + getStructure() : Structure
@@ -1909,11 +1963,6 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Utilities #LightGreen {
     + {static} _() : string
     - {static} add() : bool
     - {static} init() : void
-  }
-
-  abstract Minify  #Orange {
-    + {static} js() : string
-    + {static} css() : string
   }
 
   abstract Placefix  #Orange {

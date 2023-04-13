@@ -1,0 +1,54 @@
+	/**
+	 * Compiler Joomla Plugin Data Class
+	 *
+	 * @var    Plugin
+	 * @since 3.2.0
+	 */
+	protected Plugin $plugin;
+
+	/**
+	 * Constructor
+	 *
+	 * @param Plugin|null      $plugin    The compiler Joomla plugin data object.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct(?Plugin $plugin = null)
+	{
+		$this->plugin = $plugin ?: Compiler::_('Joomlaplugin.Data');
+	}
+
+	/**
+	 * Set Joomla Plugins
+	 *
+	 * @param   object     $item  The item data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		// get all plugins
+		$item->addjoomla_plugins = (isset($item->addjoomla_plugins)
+			&& JsonHelper::check($item->addjoomla_plugins))
+			? json_decode((string) $item->addjoomla_plugins, true) : null;
+
+		if (ArrayHelper::check($item->addjoomla_plugins))
+		{
+			$joomla_plugins = array_map(
+				function ($array) use (&$item) {
+					// only load the plugins whose target association calls for it
+					if (!isset($array['target']) || $array['target'] != 2)
+					{
+						return $this->plugin->set(
+							$array['plugin'], $item
+						);
+					}
+
+					return null;
+				}, array_values($item->addjoomla_plugins)
+			);
+		}
+
+		unset($item->addjoomla_plugins);
+	}

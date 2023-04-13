@@ -28,6 +28,7 @@ class Infusion  #Gold {
   - setPowers() : void
   - index(array $powers) : string
   - code(object $power) : string
+  - raw(object $power) : string
   - linker(object $power) : string
 }
 
@@ -90,7 +91,14 @@ note right of Infusion::code
   return: string
 end note
 
-note left of Infusion::linker
+note left of Infusion::raw
+  Get the Raw (unchanged) Power code
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Infusion::linker
   Get the Power Linker
 
   since: 3.2.0

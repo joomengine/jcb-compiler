@@ -1,0 +1,60 @@
+	/**
+	 * Check if any values are set in the active array
+	 *
+	 * @return  bool  Returns true if the active array is not empty, false otherwise
+	 * @since   3.2.0
+	 */
+	public function isActive(): bool;
+
+	/**
+	 * Set content
+	 *
+	 * @param   string  $key    The main string key
+	 * @param   mixed   $value  The values to set
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(string $key, $value);
+
+	/**
+	 * Get content
+	 *
+	 * @param   string  $key    The main string key
+	 * @param   mixed   $value  The values to set
+	 *
+	 * @return  mixed
+	 * @since 3.2.0
+	 */
+	public function get(string $key);
+
+	/**
+	 * Does key exist
+	 *
+	 * @param   string  $key    The main string key
+	 *
+	 * @return  bool
+	 * @since 3.2.0
+	 */
+	public function exist(string $key): bool;
+
+	/**
+	 * Add content
+	 *
+	 * @param   string  $key    The main string key
+	 * @param   mixed   $value  The values to set
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function add(string $key, $value);
+
+	/**
+	 * Remove content
+	 *
+	 * @param   string     $key     The main string key
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function remove(string $key);

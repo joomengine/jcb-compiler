@@ -1,0 +1,55 @@
+	/**
+	 * Current Joomla Version We are IN
+	 *
+	 * @var     int
+	 * @since 3.2.0
+	 **/
+	protected $currentVersion;
+
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(J3Event::class, 'J3.Event')
+			->share('J3.Event', [$this, 'getJ3Event'], true);
+
+		$container->alias(EventInterface::class, 'Event')
+			->share('Event', [$this, 'getEvent'], true);
+	}
+
+	/**
+	 * Get the Event
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  EventInterface
+	 * @since 3.2.0
+	 */
+	public function getEvent(Container $container): EventInterface
+	{
+		if (empty($this->currentVersion))
+		{
+			$this->currentVersion = Version::MAJOR_VERSION;
+		}
+
+		return $container->get('J' . $this->currentVersion . '.Event');
+	}
+
+	/**
+	 * Get the Joomla 3 Event
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J3Event
+	 * @since 3.2.0
+	 */
+	public function getJ3Event(Container $container): J3Event
+	{
+		return new J3Event();
+	}

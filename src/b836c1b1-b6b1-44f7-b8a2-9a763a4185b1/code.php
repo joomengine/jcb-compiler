@@ -925,6 +925,11 @@ class Power implements PowerInterface
 	{
 		if (StringHelper::check($this->active[$guid]->main_class_code))
 		{
+			// keep this back for super powers ( we need the unchanged code in the super powers )
+			$this->active[$guid]->raw_class_code = base64_decode(
+				(string) $this->active[$guid]->main_class_code
+			);
+
 			// set GUI mapper field
 			$guiMapper['field'] = 'main_class_code';
 
@@ -932,9 +937,7 @@ class Power implements PowerInterface
 			$this->active[$guid]->main_class_code = $this->gui->set(
 				$this->placeholder->update_(
 					$this->customcode->update(
-						base64_decode(
-							(string) $this->active[$guid]->main_class_code
-						)
+						$this->active[$guid]->raw_class_code
 					)
 				),
 				$guiMapper
@@ -966,6 +969,13 @@ class Power implements PowerInterface
 
 				// update all paths
 				$this->active[$guid]->super_power_paths = array_map(function($path) use($global_path, $guid) {
+
+					// remove branch
+					if (($pos = strpos($path, ':')) !== false)
+					{
+						$path = substr($path, 0, $pos);
+					}
+
 					// set the repo path
 					$repo = $global_path . '/' . $path;
 

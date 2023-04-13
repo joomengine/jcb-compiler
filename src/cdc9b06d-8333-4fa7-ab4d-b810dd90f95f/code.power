@@ -1,0 +1,33 @@
+	/**
+	 * Fix the path to work in the JCB script <-- (main issue here)
+	 *	Since we need / slash in all paths, for the JCB script even if it is Windows
+	 *	and since MS works with both forward and back slashes
+	 *	we just convert all slashes to forward slashes
+	 * 
+	 * THIS is just my hack (fix) if you know a better way! speak-up!
+	 * 
+	 * @param   mixed  $values   the array of paths or the path as a string
+	 * @param   array  $targets  paths to target
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(&$values, array $targets = [])
+	{
+		// if multiple to gets searched and fixed
+		if (ArrayHelper::check($values) && ArrayHelper::check($targets))
+		{
+			foreach ($targets as $target)
+			{
+				if (isset($values[$target]))
+				{
+					$this->set($values[$target], $targets);
+				}
+			}
+		}
+		// if just a string
+		elseif (StringHelper::check($values) && strpos((string) $values, '\\') !== false)
+		{
+			$values = str_replace('\\', '/', (string) $values);
+		}
+	}

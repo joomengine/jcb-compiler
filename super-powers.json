@@ -44,15 +44,6 @@
         "path": "src\/2da6d6c4-eb29-4d69-8bc2-36d96e916adf",
         "guid": "2da6d6c4-eb29-4d69-8bc2-36d96e916adf"
     },
-    "8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff": {
-        "name": "ModelInterface",
-        "type": "interface",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Interfaces",
-        "code": "src\/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff\/code.php",
-        "settings": "src\/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff\/settings.json",
-        "path": "src\/8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff",
-        "guid": "8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff"
-    },
     "4815e1c7-a433-443d-a112-d1e03d7df84b": {
         "name": "Database",
         "type": "class",
@@ -61,15 +52,6 @@
         "settings": "src\/4815e1c7-a433-443d-a112-d1e03d7df84b\/settings.json",
         "path": "src\/4815e1c7-a433-443d-a112-d1e03d7df84b",
         "guid": "4815e1c7-a433-443d-a112-d1e03d7df84b"
-    },
-    "b591855d-d106-4fe5-90ad-8e706f6267cf": {
-        "name": "Minify",
-        "type": "abstract class",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Utilities",
-        "code": "src\/b591855d-d106-4fe5-90ad-8e706f6267cf\/code.php",
-        "settings": "src\/b591855d-d106-4fe5-90ad-8e706f6267cf\/settings.json",
-        "path": "src\/b591855d-d106-4fe5-90ad-8e706f6267cf",
-        "guid": "b591855d-d106-4fe5-90ad-8e706f6267cf"
     },
     "fa4bf18e-301e-42e3-91fb-6e0096c07adc": {
         "name": "Config",
@@ -980,6 +962,15 @@
         "path": "src\/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
         "guid": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1"
     },
+    "6784dd52-0909-451a-a872-9a942a023c68": {
+        "name": "Grep",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Power",
+        "code": "src\/6784dd52-0909-451a-a872-9a942a023c68\/code.php",
+        "settings": "src\/6784dd52-0909-451a-a872-9a942a023c68\/settings.json",
+        "path": "src\/6784dd52-0909-451a-a872-9a942a023c68",
+        "guid": "6784dd52-0909-451a-a872-9a942a023c68"
+    },
     "4e6ff11d-bebf-42f5-8fd7-b2f882857222": {
         "name": "Line",
         "type": "abstract class",
@@ -1123,6 +1114,15 @@
         "settings": "src\/de01527a-6586-46ea-92e7-11ea3de1cedb\/settings.json",
         "path": "src\/de01527a-6586-46ea-92e7-11ea3de1cedb",
         "guid": "de01527a-6586-46ea-92e7-11ea3de1cedb"
+    },
+    "e0c8c931-52a0-4171-9909-e8769505bb1f": {
+        "name": "Constantpaths",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Utilities",
+        "code": "src\/e0c8c931-52a0-4171-9909-e8769505bb1f\/code.php",
+        "settings": "src\/e0c8c931-52a0-4171-9909-e8769505bb1f\/settings.json",
+        "path": "src\/e0c8c931-52a0-4171-9909-e8769505bb1f",
+        "guid": "e0c8c931-52a0-4171-9909-e8769505bb1f"
     },
     "268b85ef-49f3-4c39-8187-bb12e38d19ee": {
         "name": "Dynamicpath",

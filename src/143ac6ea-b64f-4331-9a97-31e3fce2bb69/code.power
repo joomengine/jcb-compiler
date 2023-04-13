@@ -1,0 +1,43 @@
+	/**
+	 * Set the local tabs
+	 *
+	 * @param   object  $item  The view data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item)
+	{
+		$item->addtabs = (isset($item->addtabs)
+			&& JsonHelper::check($item->addtabs))
+			? json_decode((string) $item->addtabs, true) : null;
+
+		if (ArrayHelper::check($item->addtabs))
+		{
+			$nr = 1;
+			foreach ($item->addtabs as $tab)
+			{
+				$item->tabs[$nr] = trim((string) $tab['name']);
+				$nr++;
+			}
+		}
+
+		// if Details tab is not set, then set it here
+		if (!isset($item->tabs[1]))
+		{
+			$item->tabs[1] = 'Details';
+		}
+
+		// always make sure that publishing is lowercase
+		if (($removeKey = array_search(
+				'publishing', array_map('strtolower', $item->tabs)
+			)) !== false)
+		{
+			$item->tabs[$removeKey] = 'publishing';
+		}
+
+		// make sure to set the publishing tab (just in case we need it)
+		$item->tabs[15] = 'publishing';
+
+		unset($item->addtabs);
+	}

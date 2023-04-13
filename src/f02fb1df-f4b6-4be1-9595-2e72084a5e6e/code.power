@@ -1,0 +1,69 @@
+	/**
+	 * Unique Code/Strings
+	 *
+	 * @var array
+	 * @since 3.2.0
+	 */
+	protected static array $unique = [];
+
+	/**
+	 * Unique Areas Code/Strings
+	 *
+	 * @var array
+	 * @since 3.2.0
+	 */
+	protected static array $areas = [];
+
+	/**
+	 * Creating an unique local key
+	 *
+	 * @param   int       $size    The key size
+	 *
+	 * @return  string  The unique local key
+	 *
+	 */
+	public static function get($size): string
+	{
+		$unique = (isset(self::$unique[$size])) ? end(self::$unique[$size]) : null;
+
+		if(!$unique)
+		{
+			$unique = substr("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv", 0, $size);
+
+			self::$unique[$size] = [];
+		}
+
+		while(in_array($unique, self::$unique[$size]))
+		{
+			$unique++;
+		}
+
+		self::$unique[$size][] = $unique;
+
+		return $unique;
+	}
+
+	/**
+	 * Creating an Unique Code
+	 * 
+	 * @param   string  $code
+	 * @param   string  $target
+	 *
+	 * @return  string
+	 * @since 3.2.0
+	 */
+	public static function code(string $code, string $target = 'both'): string
+	{
+		if (!isset(self::$areas[$target])
+			|| !in_array(
+				$code, self::$areas[$target]
+			))
+		{
+			self::$areas[$target][] = $code;
+
+			return $code;
+		}
+
+		// make sure it is unique
+		return self::code($code . self::get(1));
+	}
