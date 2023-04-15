@@ -110,7 +110,7 @@ note left of Power::setNamespace
 end note
 
 note right of Power::setUseSelection
-  Set Use Classess
+  Set Use Classes
 
   since: 3.2.0
   return: void

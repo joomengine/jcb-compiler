@@ -1,12 +1,11 @@
 {
     "add_head": "1",
+    "add_licensing_template": "2",
     "extends": "0",
-    "extends_custom": "",
     "guid": "01411bb1-fdd6-4cca-84d7-1b62d93c70c1",
     "implements": [
         "6da2afa5-6087-46dd-80a0-74c6434bcb18"
     ],
-    "implements_custom": "",
     "load_selection": null,
     "name": "Extractor",
     "power_version": "1.0.0",
@@ -56,5 +55,7 @@
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode.Extractor",
     "description": "Compiler Custom Code Extractor\r\n\r\nThe custom script placeholders - we use the (xxx) to avoid detection it should be (***)\r\n##################################--->  PHP\/JS  ---####################################\r\n\r\nNew Insert Code        = \/xxx[INSERT>$$$$]xxx\/                \/xxx[\/INSERT>$$$$]xxx\/\r\nNew Replace Code    = \/xxx[REPLACE>$$$$]xxx\/               \/xxx[\/REPLACE>$$$$]xxx\/\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ when JCB adds it back \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nJCB Add Inserted Code    = \/xxx[INSERTED$$$$]xxx\/\/xx23xx\/          \/xxx[\/INSERTED$$$$]xxx\/\r\nJCB Add Replaced Code    = \/xxx[REPLACED$$$$]xxx\/\/xx25xx\/          \/xxx[\/REPLACED$$$$]xxx\/\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ changeing existing custom code \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nUpdate Inserted Code    = \/xxx[INSERTED>$$$$]xxx\/\/xx23xx\/        \/xxx[\/INSERTED>$$$$]xxx\/\r\nUpdate Replaced Code    = \/xxx[REPLACED>$$$$]xxx\/\/xx25xx\/        \/xxx[\/REPLACED>$$$$]xxx\/\r\n\r\nThe custom script placeholders - we use the (==) to avoid detection it should be (--)\r\n###################################--->  HTML  ---#####################################\r\n\r\nNew Insert Code        = !==[INSERT>$$$$]==>                 !==[\/INSERT>$$$$]==>\r\nNew Replace Code    = !==[REPLACE>$$$$]==>                !==[\/REPLACE>$$$$]==>\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ when JCB adds it back \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nJCB Add Inserted Code    =         \r\nJCB Add Replaced Code    =         \r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ changeing existing custom code \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nUpdate Inserted Code    = !==[INSERTED>$$$$]==>      !==[\/INSERTED>$$$$]==>\r\nUpdate Replaced Code    = !==[REPLACED>$$$$]==>      !==[\/REPLACED>$$$$]==>\r\n\r\n\/\/\/\/\/\/\/\/23 is the ID of the code in the system don't change it!!!!!!!!!!!!!!!!!!!!!!!!!!\r\n\r\nMore info read: https:\/\/git.vdm.dev\/joomla\/Component-Builder\/wiki\/TIPS:-Custom-Code\r\n\r\n@since 3.2.0",
-    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\CMS\\Filesystem\\Folder;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;"
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\CMS\\Filesystem\\Folder;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;",
+    "composer": ""
 }

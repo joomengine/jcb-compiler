@@ -528,7 +528,7 @@ class Power implements PowerInterface
 	}
 
 	/**
-	 * Set Use Classess
+	 * Set Use Classes
 	 *
 	 * @param string  $guid  The global unique id of the power
 	 * @param array   $use   The use array
@@ -659,6 +659,11 @@ class Power implements PowerInterface
 				}
 			}
 		}
+		else
+		{
+			// reserve composer values for the linker
+			$this->active[$guid]->unchanged_composer = '';
+		}
 	}
 
 	/**
@@ -688,9 +693,13 @@ class Power implements PowerInterface
 				if ($implement == -1
 					&& StringHelper::check($this->active[$guid]->implements_custom))
 				{
+					// reserve implements custom for the linker
+					$this->active[$guid]->unchanged_implements_custom = $this->active[$guid]->implements_custom;
+
 					$this->active[$guid]->implement_names[] = $this->placeholder->update_(
 						$this->customcode->update($this->active[$guid]->implements_custom)
 					);
+
 					// just add this once
 					unset($this->active[$guid]->implements_custom);
 				}
@@ -728,9 +737,13 @@ class Power implements PowerInterface
 		if ($this->active[$guid]->extends == -1
 			&& StringHelper::check($this->active[$guid]->extends_custom))
 		{
+			// reserve extends custom for the linker
+			$this->active[$guid]->unchanged_extends_custom = $this->active[$guid]->extends_custom;
+
 			$this->active[$guid]->extends_name = $this->placeholder->update_(
 				$this->customcode->update($this->active[$guid]->extends_custom)
 			);
+
 			// just add once
 			unset($this->active[$guid]->extends_custom);
 		}
@@ -856,13 +869,16 @@ class Power implements PowerInterface
 			// set GUI mapper field
 			$guiMapper['field'] = 'licensing_template';
 
+			// reserve licensing template for the linker
+			$this->active[$guid]->unchanged_licensing_template = base64_decode(
+				(string) $this->active[$guid]->licensing_template
+			);
+
 			// base64 Decode code
 			$this->active[$guid]->licensing_template = $this->gui->set(
 				$this->placeholder->update_(
 					$this->customcode->update(
-						base64_decode(
-							(string) $this->active[$guid]->licensing_template
-						)
+						$this->active[$guid]->unchanged_licensing_template
 					)
 				),
 				$guiMapper
@@ -872,6 +888,7 @@ class Power implements PowerInterface
 		{
 			$this->active[$guid]->add_licensing_template = 1;
 			$this->active[$guid]->licensing_template = '';
+			$this->active[$guid]->unchanged_licensing_template = '';
 		}
 	}
 
@@ -891,17 +908,17 @@ class Power implements PowerInterface
 			// set GUI mapper field
 			$guiMapper['field'] = 'head';
 
-			$head = base64_decode(
+			// reserve header for the linker
+			$this->active[$guid]->unchanged_head = base64_decode(
 				(string) $this->active[$guid]->head
 			);
-
-			// reserve header for the linker
-			$this->active[$guid]->unchanged_head = $head;
 
 			// base64 Decode code
 			$this->active[$guid]->head = $this->gui->set(
 				$this->placeholder->update_(
-					$this->customcode->update($head)
+					$this->customcode->update(
+						$this->active[$guid]->unchanged_head
+					)
 				),
 				$guiMapper
 			) . PHP_EOL;
@@ -909,6 +926,7 @@ class Power implements PowerInterface
 		else
 		{
 			$this->active[$guid]->head = '';
+			$this->active[$guid]->unchanged_head = '';
 		}
 	}
 
@@ -925,8 +943,8 @@ class Power implements PowerInterface
 	{
 		if (StringHelper::check($this->active[$guid]->main_class_code))
 		{
-			// keep this back for super powers ( we need the unchanged code in the super powers )
-			$this->active[$guid]->raw_class_code = base64_decode(
+			// reserve main class code for the linker
+			$this->active[$guid]->unchanged_main_class_code = base64_decode(
 				(string) $this->active[$guid]->main_class_code
 			);
 
@@ -937,7 +955,7 @@ class Power implements PowerInterface
 			$this->active[$guid]->main_class_code = $this->gui->set(
 				$this->placeholder->update_(
 					$this->customcode->update(
-						$this->active[$guid]->raw_class_code
+						$this->active[$guid]->unchanged_main_class_code
 					)
 				),
 				$guiMapper
@@ -985,6 +1003,7 @@ class Power implements PowerInterface
 						'type' => $this->active[$guid]->type,
 						'namespace' => $this->active[$guid]->_namespace,
 						'code' => 'src/' . $guid . '/code.php',
+						'power' => 'src/' . $guid . '/code.power',
 						'settings' => 'src/' . $guid . '/settings.json',
 						'path' => 'src/' . $guid,
 						'guid' => $guid

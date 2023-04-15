@@ -150,17 +150,15 @@
 		}
 
 		// get the settings
-		if (($settings = FileHelper::getContent($this->full_path . '/' . $path->local->{$guid}->settings, null)) !== null &&
+		if (($settings = FileHelper::getContent($path->full_path . '/' . $path->local->{$guid}->settings, null)) !== null &&
 			JsonHelper::check($settings))
 		{
 			$power = json_decode($settings);
 
 			// get the code
-			if (($code = FileHelper::getContent($this->full_path . '/' . $path->local->{$guid}->code, null)) !== null)
+			if (($code = FileHelper::getContent($path->full_path . '/' . $path->local->{$guid}->power, null)) !== null)
 			{
-				$power->main_class_code = $this->getCode($code);
-				$power->licensing_template = $this->getLicense($code);
-
+				$power->main_class_code = $code;
 				return $power;
 			}
 		}
@@ -189,11 +187,9 @@
 			isset($power->guid))
 		{
 			// get the code
-			if (($code = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->code, $path->branch)) !== null)
+			if (($code = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->power, $path->branch)) !== null)
 			{
-				$power->main_class_code = $this->getCode($code);
-				$power->licensing_template = $this->getLicense($code);
-
+				$power->main_class_code = $code;
 				return $power;
 			}
 		}
@@ -233,7 +229,7 @@
 					// set local path
 					if ($this->path && Folder::exists($this->path . '/' . $path->path))
 					{
-						$this->full_path = $this->path . '/' . $path->path;
+						$path->full_path = $this->path . '/' . $path->path;
 					}
 				}
 				else
@@ -262,12 +258,12 @@
 	 */
 	private function localIndex(object &$path)
 	{
-		if (isset($path->local) || !isset($this->full_path))
+		if (isset($path->local) || !isset($path->full_path))
 		{
 			return;
 		}
 
-		if (($content = FileHelper::getContent($this->full_path . '/super-powers.json', null)) !== null &&
+		if (($content = FileHelper::getContent($path->full_path . '/super-powers.json', null)) !== null &&
 			JsonHelper::check($content))
 		{
 			$path->local = json_decode($content);
@@ -336,82 +332,4 @@
 		}
 
 		return $data;
-	}
-
-	/**
-	 * Get the class body
-	 *
-	 * @param string $code The class
-	 *
-	 * @return string|null The class body, or null if not found
-	 **/
-	private function getCode($code): ?string
-	{
-		// Match class, final class, abstract class, interface, and trait
-		$pattern = '/(?:class|final class|abstract class|interface|trait)\s+[a-zA-Z0-9_]+\s*(?:extends\s+[a-zA-Z0-9_]+\s*)?(?:implements\s+[a-zA-Z0-9_]+(?:\s*,\s*[a-zA-Z0-9_]+)*)?\s*\{/s';
-
-		// Split the input code based on the class declaration pattern
-		$parts = preg_split($pattern, $code, 2, PREG_SPLIT_DELIM_CAPTURE);
-		$body = $parts[1] ?? '';
-
-		if ($body !== '')
-		{
-			// Remove leading and trailing white space
-			$body = trim($body);
-
-			// Remove the first opening curly brace if it exists
-			if (mb_substr($body, 0, 1) === '{')
-			{
-				$body = mb_substr($body, 1);
-			}
-
-			// Remove the last closing curly brace if it exists
-			if (mb_substr($body, -1) === '}')
-			{
-				$body = mb_substr($body, 0, -1);
-			}
-
-			return $body;
-		}
-
-		// No class body found, return null
-		return null;
-	}
-
-	/**
-	 * Get the class license
-	 *
-	 * @param string $code The class
-	 *
-	 * @return string|null The class license, or null if not found
-	 **/
-	private function getLicense($code): ?string
-	{
-		// Check if the file starts with '<?php'
-		if (substr($code, 0, 5) !== '<?php')
-		{
-			return null;
-		}
-
-		// Trim the '<?php' part
-		$code = ltrim(substr($code, 5));
-
-		// Check if the next part starts with '/*'
-		if (substr($code, 0, 2) !== '/*')
-		{
-			return null;
-		}
-
-		// Find the position of the closing comment '*/'
-		$endCommentPos = strpos($code, '*/');
-
-		// If the closing comment '*/' is found, extract and return the license
-		if ($endCommentPos !== false)
-		{
-			$license = substr($code, 2, $endCommentPos - 2);
-			return trim($license);
-		}
-
-		// No license found, return null
-		return null;
 	}

@@ -1,10 +1,9 @@
 {
     "add_head": "1",
+    "add_licensing_template": "2",
     "extends": "9769f3b2-17bf-4f20-b54b-3a4ebe572b36",
-    "extends_custom": "",
     "guid": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
     "implements": null,
-    "implements_custom": "",
     "load_selection": {
         "load_selection0": {
             "load": "b591855d-d106-4fe5-90ad-8e706f6267cf"
@@ -26,5 +25,7 @@
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Config",
     "description": "Compiler Configurations\r\n\r\n\tAll these functions are accessed via the direct name without the get:\r\n\texample: $this->component_code_name calls: $this->getComponentcodename()\r\n\r\n\tAll values once called are cached, yet can be updated directly:\r\n\texample: $this->component_code_name = 'new_code_name'; \/\/ be warned!\r\n\r\n@since 3.2.0",
-    "head": "use Joomla\\Registry\\Registry as JoomlaRegistry;\r\nuse Joomla\\CMS\\Factory as JoomlaFactory;"
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\Registry\\Registry as JoomlaRegistry;\r\nuse Joomla\\CMS\\Factory as JoomlaFactory;",
+    "composer": ""
 }

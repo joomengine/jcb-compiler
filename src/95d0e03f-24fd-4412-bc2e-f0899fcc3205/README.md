@@ -12,6 +12,8 @@
 @startuml
 class Parser << (F,LightGreen) >> #Green {
   + code(string $code) : array
+  + getClassCode(string $code) : ?string
+  + getClassLicense(string $code) : ?string
   - properties(string $code) : ?array
   - methods(string $code) : ?array
   - extractDocBlock(string $code, string $declaration) : ?string
@@ -31,6 +33,20 @@ note right of Parser::code
 
   since: 3.2.0
   return: array
+end note
+
+note left of Parser::getClassCode
+  Get the class body
+
+  since: 3.2.0
+  return: ?string
+end note
+
+note right of Parser::getClassLicense
+  Get the class license
+
+  since: 3.2.0
+  return: ?string
 end note
 
 note left of Parser::properties

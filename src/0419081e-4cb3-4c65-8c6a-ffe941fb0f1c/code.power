@@ -81,18 +81,21 @@
 		'unchanged_composer' => 'composer',
 		'unchanged_description' => 'description',
 		'extends' => 'extends',
-		'extends_custom' => 'extends_custom',
+		'unchanged_extends_custom' => 'extends_custom',
 		'guid' => 'guid',
 		'unchanged_head' => 'head',
 		'use_selection' => 'use_selection',
 		'implements' => 'implements',
-		'implements_custom' => 'implements_custom',
+		'unchanged_implements_custom' => 'implements_custom',
 		'load_selection' => 'load_selection',
 		'name' => 'name',
 		'power_version' => 'power_version',
 		'system_name' => 'system_name',
 		'type' => 'type',
-		'unchanged_namespace' => 'namespace'
+		'unchanged_namespace' => 'namespace',
+		'unchanged_composer' => 'composer',
+		'add_licensing_template' => 'add_licensing_template',
+		'unchanged_licensing_template' => 'licensing_template'
 	];
 
 	/**
@@ -344,9 +347,9 @@
 	private function raw(object &$power): string
 	{
 		// add the raw main code if set
-		if (isset($power->raw_class_code) && StringHelper::check($power->raw_class_code))
+		if (isset($power->unchanged_main_class_code) && StringHelper::check($power->unchanged_main_class_code))
 		{
-			return $power->raw_class_code;
+			return $power->unchanged_main_class_code;
 		}
 		return '';
 	}

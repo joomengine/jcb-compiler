@@ -1,10 +1,9 @@
 {
     "add_head": "0",
+    "add_licensing_template": "2",
     "extends": "b84e947d-2a13-44f7-ac0f-3902ae55ae0c",
-    "extends_custom": "JoomlaRegistry",
     "guid": "1d967151-7c20-4ca7-9400-65233cdcd4db",
     "implements": null,
-    "implements_custom": "",
     "load_selection": null,
     "name": "Files",
     "power_version": "1.0.0",
@@ -12,5 +11,8 @@
     "type": "class",
     "use_selection": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Files",
-    "description": "Compiler Utilities Files Bucket\r\n\r\n@since 3.2.0"
+    "description": "Compiler Utilities Files Bucket\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
 }

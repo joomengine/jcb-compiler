@@ -546,8 +546,6 @@ namespace VDM\Joomla\Componentbuilder\Power #Olive {
     - localIndex() : void
     - remoteIndex() : void
     - loadRemoteFile() : mixed
-    - getCode() : ?string
-    - getLicense() : ?string
   }
 }
 
@@ -1610,6 +1608,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Power #LightGreen {
 
   class Parser << (F,LightGreen) >> #Green {
     + code() : array
+    + getClassCode() : ?string
+    + getClassLicense() : ?string
     - properties() : ?array
     - methods() : ?array
     - extractDocBlock() : ?string

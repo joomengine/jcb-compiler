@@ -15,6 +15,86 @@
 	}
 
 	/**
+	 * Get the class body
+	 *
+	 * @param string $code The class as a string
+	 *
+	 * @return string|null The class body, or null if not found
+	 * @since 3.2.0
+	 **/
+	public function getClassCode(string $code): ?string
+	{
+		// Match class, final class, abstract class, interface, and trait
+		$pattern = '/(?:class|final class|abstract class|interface|trait)\s+[a-zA-Z0-9_]+\s*(?:extends\s+[a-zA-Z0-9_]+\s*)?(?:implements\s+[a-zA-Z0-9_]+(?:\s*,\s*[a-zA-Z0-9_]+)*)?\s*\{/s';
+
+		// Split the input code based on the class declaration pattern
+		$parts = preg_split($pattern, $code, 2, PREG_SPLIT_DELIM_CAPTURE);
+		$body = $parts[1] ?? '';
+
+		if ($body !== '')
+		{
+			// Remove leading and trailing white space
+			$body = trim($body);
+
+			// Remove the first opening curly brace if it exists
+			if (mb_substr($body, 0, 1) === '{')
+			{
+				$body = mb_substr($body, 1);
+			}
+
+			// Remove the last closing curly brace if it exists
+			if (mb_substr($body, -1) === '}')
+			{
+				$body = mb_substr($body, 0, -1);
+			}
+
+			return $body;
+		}
+
+		// No class body found, return null
+		return null;
+	}
+
+	/**
+	 * Get the class license
+	 *
+	 * @param string $code The class as a string
+	 *
+	 * @return string|null The class license, or null if not found
+	 * @since 3.2.0
+	 **/
+	public function getClassLicense(string $code): ?string
+	{
+		// Check if the file starts with '<?php'
+		if (substr($code, 0, 5) !== '<?php')
+		{
+			return null;
+		}
+
+		// Trim the '<?php' part
+		$code = ltrim(substr($code, 5));
+
+		// Check if the next part starts with '/*'
+		if (substr($code, 0, 2) !== '/*')
+		{
+			return null;
+		}
+
+		// Find the position of the closing comment '*/'
+		$endCommentPos = strpos($code, '*/');
+
+		// If the closing comment '*/' is found, extract and return the license
+		if ($endCommentPos !== false)
+		{
+			$license = substr($code, 2, $endCommentPos - 2);
+			return trim($license);
+		}
+
+		// No license found, return null
+		return null;
+	}
+
+	/**
 	 * Extracts properties declarations and other details from the given code.
 	 *
 	 * @param string  $code  The code containing class properties

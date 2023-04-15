@@ -1,10 +1,9 @@
 {
     "add_head": "0",
+    "add_licensing_template": "2",
     "extends": "b84e947d-2a13-44f7-ac0f-3902ae55ae0c",
-    "extends_custom": "",
     "guid": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
     "implements": null,
-    "implements_custom": "",
     "load_selection": null,
     "name": "Component",
     "power_version": "1.0.0",
@@ -21,5 +20,8 @@
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Component",
-    "description": "Compiler Component\r\n\r\n@since 3.2.0"
+    "description": "Compiler Component\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
 }

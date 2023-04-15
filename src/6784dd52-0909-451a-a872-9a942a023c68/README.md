@@ -25,8 +25,6 @@ class Grep << (F,LightGreen) >> #Green {
   - localIndex(object $path) : void
   - remoteIndex(object $path) : void
   - loadRemoteFile(string $owner, string $repo, ...) : mixed
-  - getCode(string $code) : ?string
-  - getLicense(string $code) : ?string
 }
 
 note right of Grep::__construct
@@ -108,18 +106,6 @@ note left of Grep::loadRemoteFile
     string $repo
     string $path
     ?string $branch
-end note
-
-note right of Grep::getCode
-  Get the class body
-
-  return: ?string
-end note
-
-note left of Grep::getLicense
-  Get the class license
-
-  return: ?string
 end note
  
 @enduml

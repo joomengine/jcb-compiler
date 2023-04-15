@@ -1,12 +1,11 @@
 {
     "add_head": "1",
+    "add_licensing_template": "2",
     "extends": "0",
-    "extends_custom": "",
     "guid": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
     "implements": [
         "1133c2d7-ba7e-4c95-8cde-01f084d04682"
     ],
-    "implements_custom": "",
     "load_selection": null,
     "name": "Power",
     "power_version": "1.0.0",
@@ -60,5 +59,7 @@
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power",
     "description": "Compiler Power\r\n\r\n@since 3.2.0",
-    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;"
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;",
+    "composer": ""
 }
