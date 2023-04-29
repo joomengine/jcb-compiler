@@ -16,7 +16,7 @@ class Grep << (F,LightGreen) >> #Green {
   # Contents $contents
   # CMSApplication $app
   + __construct(string $path, array $paths, ...)
-  + get(string $guid, array $order = ['Local', 'Remote']) : ?object
+  + get(string $guid, array $order = ['local', 'remote']) : ?object
   - searchLocal(string $guid) : ?object
   - searchRemote(string $guid) : ?object
   - getLocal(object $path, string $guid) : ?object
@@ -25,6 +25,7 @@ class Grep << (F,LightGreen) >> #Green {
   - localIndex(object $path) : void
   - remoteIndex(object $path) : void
   - loadRemoteFile(string $owner, string $repo, ...) : mixed
+  - getFunctionName(string $name) : ?string
 }
 
 note right of Grep::__construct
@@ -106,6 +107,13 @@ note left of Grep::loadRemoteFile
     string $repo
     string $path
     ?string $branch
+end note
+
+note right of Grep::getFunctionName
+  Get function name
+
+  since: 3.2.0
+  return: ?string
 end note
  
 @enduml

@@ -14,6 +14,8 @@ class Parser << (F,LightGreen) >> #Green {
   + code(string $code) : array
   + getClassCode(string $code) : ?string
   + getClassLicense(string $code) : ?string
+  + getUseStatements(string $code) : ?array
+  + getTraits(string $code) : ?array
   - properties(string $code) : ?array
   - methods(string $code) : ?array
   - extractDocBlock(string $code, string $declaration) : ?string
@@ -47,6 +49,20 @@ note right of Parser::getClassLicense
 
   since: 3.2.0
   return: ?string
+end note
+
+note left of Parser::getUseStatements
+  Extracts the first consecutive `use` statements from the given PHP class.
+
+  since: 3.2.0
+  return: ?array
+end note
+
+note right of Parser::getTraits
+  Extracts trait use statements from the given code.
+
+  since: 3.2.0
+  return: ?array
 end note
 
 note left of Parser::properties

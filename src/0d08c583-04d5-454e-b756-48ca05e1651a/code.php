@@ -124,7 +124,7 @@ class Readme
 		foreach ($powers as $guid => $power)
 		{
 			$power_object = $this->power->get($guid);
-			if (is_array($power_object->parsed_class_code))
+			if (isset($power_object->parsed_class_code) && is_array($power_object->parsed_class_code))
 			{
 				// add to the sort bucket
 				$classes[] = [
@@ -232,7 +232,9 @@ class Readme
 		return [
 			'interface' => 1,
 			'abstract' => 2,
+			'abstract class' => 2,
 			'final' => 3,
+			'final class' => 3,
 			'class' => 4,
 			'trait' => 5
 		];

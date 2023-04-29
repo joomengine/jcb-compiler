@@ -26,6 +26,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Gui;
+use VDM\Joomla\Componentbuilder\Power\Super as Superpower;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\PowerInterface;
 
 
@@ -85,6 +86,14 @@ class Power implements PowerInterface
 	protected array $state = [];
 
 	/**
+	 * The state of retry to loaded powers
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 **/
+	protected array $retry = [];
+
+	/**
 	 * Compiler Config
 	 *
 	 * @var    Config
@@ -117,6 +126,14 @@ class Power implements PowerInterface
 	protected Gui $gui;
 
 	/**
+	 * The JCB Superpower class
+	 *
+	 * @var    Superpower
+	 * @since 3.2.0
+	 **/
+	protected Superpower $superpower;
+
+	/**
 	 * Database object to query local DB
 	 *
 	 * @var    \JDatabaseDriver
@@ -139,6 +156,7 @@ class Power implements PowerInterface
 	 * @param Placeholder|null        $placeholder  The compiler placeholder object.
 	 * @param Customcode|null         $customcode   The compiler customcode object.
 	 * @param Gui|null                $gui          The compiler customcode gui object.
+	 * @param Superpower|null         $superpower   The JCB superpower object.
 	 * @param \JDatabaseDriver|null   $db           The Database Driver object.
 	 * @param CMSApplication|null     $app          The CMS Application object.
 	 *
@@ -146,13 +164,14 @@ class Power implements PowerInterface
 	 * @since 3.2.0
 	 */
 	public function __construct(?Config $config = null, ?Placeholder $placeholder = null,
-		?Customcode $customcode = null, ?Gui $gui = null,
+		?Customcode $customcode = null, ?Gui $gui = null, ?Superpower $superpower = null,
 		?\JDatabaseDriver $db = null, ?CMSApplication $app = null)
 	{
 		$this->config = $config ?: Compiler::_('Config');
 		$this->placeholder = $placeholder ?: Compiler::_('Placeholder');
 		$this->customcode = $customcode ?: Compiler::_('Customcode');
 		$this->gui = $gui ?: Compiler::_('Customcode.Gui');
+		$this->superpower = $superpower ?: Compiler::_('Superpower');
 		$this->db = $db ?: Factory::getDbo();
 		$this->app = $app ?: Factory::getApplication();
 	}
@@ -325,6 +344,20 @@ class Power implements PowerInterface
 		// only if guid is valid
 		if ($this->isGuidValid($guid))
 		{
+			// now we search for it via the super power paths
+			if (empty($this->retry[$guid]) && $this->superpower->load($guid, ['remote', 'local']))
+			{
+				// we found it and it was loaded into the database
+				unset($this->state[$guid]);
+				unset($this->active[$guid]);
+
+				// we make sure that this retry only happen once! (just in-case...)
+				$this->retry[$guid] = true;
+
+				// so we try to load it again
+				return $this->set($guid);
+			}
+
 			$this->app->enqueueMessage(
 				Text::sprintf('COM_COMPONENTBUILDER_PPOWER_BGUIDSB_NOT_FOUNDP', $guid),
 				'Error'
@@ -1021,6 +1054,5 @@ class Power implements PowerInterface
 		$this->active[$guid]->approved_paths = null;
 		$this->active[$guid]->approved = null;
 	}
-
 }
 

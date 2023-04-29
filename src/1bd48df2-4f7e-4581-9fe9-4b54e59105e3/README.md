@@ -13,6 +13,7 @@
 class Gui  #Gold {
   # Config $config
   # Reverse $reverse
+  # Parser $parser
   # \JDatabaseDriver $db
   # CMSApplication $app
   + __construct(?Config $config = null, ?Reverse $reverse = null, ...)
@@ -29,6 +30,7 @@ note right of Gui::__construct
   arguments:
     ?Config $config = null
     ?Reverse $reverse = null
+    ?Parser $parser = null
     ?\JDatabaseDriver $db = null
     ?CMSApplication $app = null
 end note

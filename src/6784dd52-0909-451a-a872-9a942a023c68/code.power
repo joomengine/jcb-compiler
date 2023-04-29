@@ -1,7 +1,7 @@
 	/**
 	 * The local path
 	 *
-	 * @var    array
+	 * @var    string
 	 * @since 3.2.0
 	 **/
 	public string $path;
@@ -33,10 +33,10 @@
 	/**
 	 * Constructor.
 	 *
-	 * @param string          $path      The the local path
-	 * @param array           $paths     The the approved paths
-	 * @param Contents        $contents  The Gitea Repository Contents object.
-	 * @param CMSApplication|null     $app          The CMS Application object.
+	 * @param string                 $path      The local path
+	 * @param array                  $paths     The approved paths
+	 * @param Contents               $contents  The Gitea Repository Contents object.
+	 * @param CMSApplication|null    $app       The CMS Application object.
 	 *
 	 * @throws \Exception
 	 * @since 3.2.0
@@ -54,20 +54,21 @@
 	/**
 	 * Get a power
 	 *
-	 * @param string    $guid    The global unique id of the power
-	 * @param array    $order    The search order
+	 * @param string   $guid    The global unique id of the power
+	 * @param array    $order   The search order
 	 *
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	public function get(string $guid, $order = ['Local', 'Remote']): ?object
+	public function get(string $guid, array $order = ['local', 'remote']): ?object
 	{
 		// we can only search if we have paths
 		if (is_array($this->paths) && $this->paths !== [])
 		{
 			foreach ($order as $target)
 			{
-				if (($power = $this->{'search' . $target}($guid)) !== null)
+				if (($function_name = $this->getFunctionName($target)) !== null &&
+					($power = $this->{$function_name}($guid)) !== null)
 				{
 					return $power;
 				}
@@ -332,4 +333,19 @@
 		}
 
 		return $data;
+	}
+
+	/**
+	 * Get function name
+	 *
+	 * @param string     $name The targeted function name
+	 *
+	 * @return string|null
+	 * @since 3.2.0
+	 */
+	private function getFunctionName(string $name): ?string
+	{
+		$function_name = 'search' . ucfirst(strtolower($name));
+
+		return method_exists($this, $function_name) ? $function_name : null;
 	}

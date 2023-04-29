@@ -18,6 +18,7 @@ class Customcode  #Gold {
   # Config $config
   # Placeholder $placeholder
   # Extractor $extractor
+  # Power $power
   # External $external
   # $db
   + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
@@ -38,6 +39,7 @@ note right of Customcode::__construct
     ?Config $config = null
     ?Placeholder $placeholder = null
     ?Extractor $extractor = null
+    ?Power $power = null
     ?External $external = null
     ?\JDatabaseDriver $db = null
 end note

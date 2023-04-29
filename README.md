@@ -48,6 +48,8 @@ This repository contains an index (see below) of all the approved powers within 
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power](#vdm-joomla-componentbuilder-power)
 
   - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | [6784dd52-0909-451a-a872-9a942a023c68](src/6784dd52-0909-451a-a872-9a942a023c68)
+  - **final class Model** | [Details](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5) | [Code](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/code.php) | [Settings](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/settings.json) | [7c1fb50f-8fb1-4627-8705-6fedf7182ca5](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5)
+  - **final class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | [3ab0eba9-f37b-4b37-aec1-2e78067f2aff](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff)
 - **Namespace**: [VDM\Joomla\Componentbuilder\Utilities](#vdm-joomla-componentbuilder-utilities)
 
   - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | [e0c8c931-52a0-4171-9909-e8769505bb1f](src/e0c8c931-52a0-4171-9909-e8769505bb1f)
@@ -163,6 +165,8 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Reverse** | [Details](src/ca111518-e47c-4049-b1b2-cb010f23866f) | [Code](src/ca111518-e47c-4049-b1b2-cb010f23866f/code.php) | [Settings](src/ca111518-e47c-4049-b1b2-cb010f23866f/settings.json) | [ca111518-e47c-4049-b1b2-cb010f23866f](src/ca111518-e47c-4049-b1b2-cb010f23866f)
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Power](#vdm-joomla-componentbuilder-compiler-power)
 
+  - **final class Extractor** | [Details](src/eeb03266-22fd-45bb-953a-961bb6be3a54) | [Code](src/eeb03266-22fd-45bb-953a-961bb6be3a54/code.php) | [Settings](src/eeb03266-22fd-45bb-953a-961bb6be3a54/settings.json) | [eeb03266-22fd-45bb-953a-961bb6be3a54](src/eeb03266-22fd-45bb-953a-961bb6be3a54)
+  - **final class Injector** | [Details](src/763d137c-42bc-4282-98d8-cc5c0654985f) | [Code](src/763d137c-42bc-4282-98d8-cc5c0654985f/code.php) | [Settings](src/763d137c-42bc-4282-98d8-cc5c0654985f/settings.json) | [763d137c-42bc-4282-98d8-cc5c0654985f](src/763d137c-42bc-4282-98d8-cc5c0654985f)
   - **final class Parser** | [Details](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205) | [Code](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/code.php) | [Settings](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/settings.json) | [95d0e03f-24fd-4412-bc2e-f0899fcc3205](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205)
   - **class Autoloader** | [Details](src/6e64917c-d687-4ef3-a655-811319f5a81e) | [Code](src/6e64917c-d687-4ef3-a655-811319f5a81e/code.php) | [Settings](src/6e64917c-d687-4ef3-a655-811319f5a81e/settings.json) | [6e64917c-d687-4ef3-a655-811319f5a81e](src/6e64917c-d687-4ef3-a655-811319f5a81e)
   - **class Infusion** | [Details](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c) | [Code](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/code.php) | [Settings](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/settings.json) | [0419081e-4cb3-4c65-8c6a-ffe941fb0f1c](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c)
@@ -208,6 +212,10 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Pathfix** | [Details](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f) | [Code](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/code.php) | [Settings](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/settings.json) | [cdc9b06d-8333-4fa7-ab4d-b810dd90f95f](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f)
   - **class Paths** | [Details](src/6f20369a-8536-4870-a1a3-cda254c939c8) | [Code](src/6f20369a-8536-4870-a1a3-cda254c939c8/code.php) | [Settings](src/6f20369a-8536-4870-a1a3-cda254c939c8/settings.json) | [6f20369a-8536-4870-a1a3-cda254c939c8](src/6f20369a-8536-4870-a1a3-cda254c939c8)
   - **class Structure** | [Details](src/1efdded5-d6c8-452c-8f37-0374483a7b3f) | [Code](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/code.php) | [Settings](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/settings.json) | [1efdded5-d6c8-452c-8f37-0374483a7b3f](src/1efdded5-d6c8-452c-8f37-0374483a7b3f)
+- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Database](#vdm-joomla-componentbuilder-power-database)
+
+  - **final class Insert** | [Details](src/380bb7a3-cdcc-4336-a699-5070cbf521a5) | [Code](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/code.php) | [Settings](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/settings.json) | [380bb7a3-cdcc-4336-a699-5070cbf521a5](src/380bb7a3-cdcc-4336-a699-5070cbf521a5)
+  - **final class Update** | [Details](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3) | [Code](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/code.php) | [Settings](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/settings.json) | [e543c123-b1d9-4a0b-83b2-a9d371da5ff3](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3)
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Builder\Update](#vdm-joomla-componentbuilder-compiler-builder-update)
 
   - **class Mysql** | [Details](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9) | [Code](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/code.php) | [Settings](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/settings.json) | [2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9)
@@ -346,6 +354,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
     # Config $config
     # Placeholder $placeholder
     # Extractor $extractor
+    # Power $power
     # External $external
     # $db
     + __construct()
@@ -412,10 +421,12 @@ namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
     + array $superpowers
     # string $fixUrl
     # array $state
+    # array $retry
     # Config $config
     # Placeholder $placeholder
     # Customcode $customcode
     # Gui $gui
+    # Superpower $superpower
     # \JDatabaseDriver $db
     # CMSApplication $app
     + __construct()
@@ -546,6 +557,25 @@ namespace VDM\Joomla\Componentbuilder\Power #Olive {
     - localIndex() : void
     - remoteIndex() : void
     - loadRemoteFile() : mixed
+    - getFunctionName() : ?string
+  }
+
+  class Model << (F,LightGreen) >> #Green {
+    + value() : mixed
+    # validateBefore() : bool
+    # validateAfter() : bool
+    # getTable() : string
+  }
+
+  class Super << (F,LightGreen) >> #Green {
+    # Grep $grep
+    # Insert $insert
+    # Update $update
+    + __construct()
+    + load() : bool
+    - insert() : bool
+    - update() : bool
+    - action() : string
   }
 }
 
@@ -803,6 +833,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Customcode #LightGreen {
     + __construct()
     + set() : bool
     + get() : mixed
+    # initHub() : void
+    # setHub() : void
   }
 
   class External  #Gold {
@@ -848,6 +880,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Customcode #LightGreen {
   class Gui  #Gold {
     # Config $config
     # Reverse $reverse
+    # Parser $parser
     # \JDatabaseDriver $db
     # CMSApplication $app
     + __construct()
@@ -1588,9 +1621,14 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Placeholder #LightGreen {
     # Placeholder $placeholder
     # Language $language
     # Extractor $extractor
+    # Power $power
     + __construct()
     + engine() : string
     # setReverse() : string
+    # reverseSuperPowers() : string
+    # getReversePower() : ?array
+    # reverseLanguage() : string
+    # reverseCustomCode() : string
   }
 }
 
@@ -1606,10 +1644,46 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Placeholder #LightGreen {
 namespace VDM\Joomla\Componentbuilder\Compiler\Power #LightGreen {
 
 
+  class Extractor << (F,LightGreen) >> #Green {
+    # array $powers
+    # \JDatabaseDriver $db
+    + __construct()
+    + get_() : ?array
+    + get() : ?array
+    + reverse() : ?array
+    + search() : void
+    # load() : void
+    # map() : ?array
+    # filter() : ?array
+    # namespaces() : ?array
+  }
+
+  class Injector << (F,LightGreen) >> #Green {
+    # Power $power
+    # Extractor $extractor
+    # Parser $parser
+    # Placeholder $placeholder
+    # array $map
+    # array $useStatements
+    # array $traits
+    + __construct()
+    + power() : string
+    # update() : string
+    # inspect() : ?string
+    # getName() : ?string
+    # getUniqueName() : string
+    # removeLastSpace() : string
+    # addUseStatements() : string
+    # addLines() : string
+    # addLinesAfterDefinedLine() : string
+  }
+
   class Parser << (F,LightGreen) >> #Green {
     + code() : array
     + getClassCode() : ?string
     + getClassLicense() : ?string
+    + getUseStatements() : ?array
+    + getTraits() : ?array
     - properties() : ?array
     - methods() : ?array
     - extractDocBlock() : ?string
@@ -1766,6 +1840,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service #LightGreen {
     + register() : void
     + getLoad() : Load
     + getInsert() : Insert
+    + getUpdate() : Update
   }
 
   class Event  #Gold {
@@ -1885,6 +1960,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service #LightGreen {
   class Power  #Gold {
     + register() : void
     + getPowers() : Powers
+    + getSuperpower() : Superpower
     + getGrep() : Grep
     + getAutoloader() : Autoloader
     + getInfusion() : Infusion
@@ -1893,6 +1969,11 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service #LightGreen {
     + getPlantuml() : Plantuml
     + getRepoReadme() : RepoReadme
     + getReposReadme() : ReposReadme
+    + getExtractor() : Extractor
+    + getInjector() : Injector
+    + getModel() : Model
+    + getInsert() : Insert
+    + getUpdate() : Update
   }
 
   class Templatelayout  #Gold {
@@ -2069,6 +2150,41 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Utilities #LightGreen {
     - getFileDetails() : ?array
     - getPath() : ?string
     - getNewName() : string
+  }
+}
+
+
+@enduml
+```
+
+## VDM Joomla Componentbuilder Power Database
+> namespace VDM\Joomla\Componentbuilder\Power\Database
+```uml
+@startuml
+
+namespace VDM\Joomla\Componentbuilder\Power\Database #LightGreen {
+
+
+  class Insert << (F,LightGreen) >> #Green {
+    # Model $model
+    # Database $database
+    + __construct()
+    + value() : bool
+    + row() : bool
+    + rows() : bool
+    + item() : bool
+    + items() : bool
+  }
+
+  class Update << (F,LightGreen) >> #Green {
+    # Model $model
+    # Database $database
+    + __construct()
+    + value() : bool
+    + row() : bool
+    + rows() : bool
+    + item() : bool
+    + items() : bool
   }
 }
 

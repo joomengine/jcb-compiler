@@ -1,0 +1,27 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
+    "implements": null,
+    "load_selection": null,
+    "name": "Update",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Power.Database.Update",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "7c1fb50f-8fb1-4627-8705-6fedf7182ca5",
+            "as": "Model"
+        },
+        "use_selection1": {
+            "use": "cce56585-58b0-4f72-a92c-e2635ea52d83",
+            "as": "Database"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Power.Database.Update",
+    "description": "Power Database Update\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

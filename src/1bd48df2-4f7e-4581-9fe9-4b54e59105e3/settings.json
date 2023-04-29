@@ -43,6 +43,10 @@
         "use_selection7": {
             "use": "ca111518-e47c-4049-b1b2-cb010f23866f",
             "as": "default"
+        },
+        "use_selection8": {
+            "use": "95d0e03f-24fd-4412-bc2e-f0899fcc3205",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Customcode.Gui",

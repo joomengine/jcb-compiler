@@ -19,6 +19,10 @@
         "use_selection1": {
             "use": "524eb8f6-38d4-47dc-92ad-98b94e099ac0",
             "as": "default"
+        },
+        "use_selection2": {
+            "use": "cce56585-58b0-4f72-a92c-e2635ea52d83",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Database",

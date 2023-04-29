@@ -55,6 +55,10 @@
         "use_selection10": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
+        },
+        "use_selection11": {
+            "use": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
+            "as": "Superpower"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power",

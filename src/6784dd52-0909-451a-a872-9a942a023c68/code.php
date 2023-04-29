@@ -22,11 +22,12 @@ use VDM\Joomla\Utilities\JsonHelper;
 
 
 /**
- * Power Grep
- *        The Grep feature will try to find your power in the repositories listed in the global
- *        Options of JCB in the super powers tab, and if it can't be found there will try the global core
- *        Super powers of JCB. All searches are performed according the the [algorithm:cascading]
- *        See documentation for more details: https://git.vdm.dev/joomla/super-powers/wiki
+ * Global Resource Empowerment Platform
+ * 
+ *    The Grep feature will try to find your power in the repositories listed in the global
+ *    Options of JCB in the super powers tab, and if it can't be found there will try the global core
+ *    Super powers of JCB. All searches are performed according the the [algorithm:cascading]
+ *    See documentation for more details: https://git.vdm.dev/joomla/super-powers/wiki
  * 
  * @since 3.2.0
  */
@@ -35,7 +36,7 @@ final class Grep
 	/**
 	 * The local path
 	 *
-	 * @var    array
+	 * @var    string
 	 * @since 3.2.0
 	 **/
 	public string $path;
@@ -67,10 +68,10 @@ final class Grep
 	/**
 	 * Constructor.
 	 *
-	 * @param string          $path      The the local path
-	 * @param array           $paths     The the approved paths
-	 * @param Contents        $contents  The Gitea Repository Contents object.
-	 * @param CMSApplication|null     $app          The CMS Application object.
+	 * @param string                 $path      The local path
+	 * @param array                  $paths     The approved paths
+	 * @param Contents               $contents  The Gitea Repository Contents object.
+	 * @param CMSApplication|null    $app       The CMS Application object.
 	 *
 	 * @throws \Exception
 	 * @since 3.2.0
@@ -88,20 +89,21 @@ final class Grep
 	/**
 	 * Get a power
 	 *
-	 * @param string    $guid    The global unique id of the power
-	 * @param array    $order    The search order
+	 * @param string   $guid    The global unique id of the power
+	 * @param array    $order   The search order
 	 *
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	public function get(string $guid, $order = ['Local', 'Remote']): ?object
+	public function get(string $guid, array $order = ['local', 'remote']): ?object
 	{
 		// we can only search if we have paths
 		if (is_array($this->paths) && $this->paths !== [])
 		{
 			foreach ($order as $target)
 			{
-				if (($power = $this->{'search' . $target}($guid)) !== null)
+				if (($function_name = $this->getFunctionName($target)) !== null &&
+					($power = $this->{$function_name}($guid)) !== null)
 				{
 					return $power;
 				}
@@ -368,5 +370,19 @@ final class Grep
 		return $data;
 	}
 
+	/**
+	 * Get function name
+	 *
+	 * @param string     $name The targeted function name
+	 *
+	 * @return string|null
+	 * @since 3.2.0
+	 */
+	private function getFunctionName(string $name): ?string
+	{
+		$function_name = 'search' . ucfirst(strtolower($name));
+
+		return method_exists($this, $function_name) ? $function_name : null;
+	}
 }
 

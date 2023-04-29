@@ -118,6 +118,86 @@ final class Parser
 	}
 
 	/**
+	 * Extracts the first consecutive `use` statements from the given PHP class.
+	 *
+	 * @param string $code The PHP class as a string
+	 *
+	 * @return array|null An array of consecutive `use` statements
+	 * @since 3.2.0
+	 */
+	public function getUseStatements(string $code): ?array
+	{
+		// Match class, final class, abstract class, interface, and trait
+		$pattern = '/(?:class|final class|abstract class|interface|trait)\s+[a-zA-Z0-9_]+\s*(?:extends\s+[a-zA-Z0-9_]+\s*)?(?:implements\s+[a-zA-Z0-9_]+(?:\s*,\s*[a-zA-Z0-9_]+)*)?\s*\{/s';
+
+		// Split the input code based on the class declaration pattern
+		$parts = preg_split($pattern, $code, 2, PREG_SPLIT_DELIM_CAPTURE);
+		$header = $parts[0] ?? '';
+
+		$use_statements = [];
+		$found_first_use = false;
+
+		if ($header !== '')
+		{
+			$lines = explode(PHP_EOL, $header);
+
+			foreach ($lines as $line)
+			{
+				if (strpos($line, 'use ') === 0)
+				{
+					$use_statements[] = trim($line);
+					$found_first_use = true;
+				}
+				elseif ($found_first_use && trim($line) === '')
+				{
+					break;
+				}
+			}
+		}
+
+		return $found_first_use ? $use_statements : null;
+	}
+
+	/**
+	 * Extracts trait use statements from the given code.
+	 *
+	 * @param string  $code  The code containing class traits
+	 *
+	 * @return array|null An array of trait names
+	 * @since 3.2.0
+	 */
+	public function getTraits(string $code): ?array
+	{
+		// regex to target trait use statements
+		$traitPattern = '/^\s*use\s+[\p{L}0-9\\\\_]+(?:\s*,\s*[\p{L}0-9\\\\_]+)*\s*;/mu';
+
+		preg_match_all($traitPattern, $code, $matches, PREG_SET_ORDER);
+
+		if ($matches != [])
+		{
+			$traitNames = [];
+
+			foreach ($matches as $n => $match)
+			{
+				$declaration = $match[0] ?? null;
+
+				if ($declaration !== null)
+				{
+					$names = preg_replace('/\s*use\s+/', '', $declaration);
+					$names = preg_replace('/\s*;/', '', $names);
+					$names = preg_split('/\s*,\s*/', $names);
+
+					$traitNames = array_merge($traitNames, $names);
+				}
+			}
+
+			return $traitNames;
+		}
+
+		return null;
+	}
+
+	/**
 	 * Extracts properties declarations and other details from the given code.
 	 *
 	 * @param string  $code  The code containing class properties

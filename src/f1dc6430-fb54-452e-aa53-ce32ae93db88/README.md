@@ -20,6 +20,8 @@ class Dispenser  #Gold {
   + __construct(?Placeholder $placeholder = null, ?Customcode $customcode = null, ...)
   + set(string $script, string $first, ...) : bool
   + get(string $first, string $second, ...) : mixed
+  # initHub(string $first, ?string $second = null, ...) : void
+  # setHub(string $script, string $first, ...) : void
 }
 
 note right of Dispenser::__construct
@@ -69,6 +71,35 @@ note right of Dispenser::get
     bool $unset = false
     mixed|null $default = null
     string $suffix = ''
+end note
+
+note right of Dispenser::initHub
+  Make sure the hub arrays are all set
+default: false
+
+  since: 3.2.0
+  return: void
+  
+  arguments:
+    string $first
+    ?string $second = null
+    ?string $third = null
+    bool $add = false
+end note
+
+note right of Dispenser::setHub
+  Set a script in the hub
+default: false
+
+  since: 3.2.0
+  return: void
+  
+  arguments:
+    string $script
+    string $first
+    ?string $second = null
+    ?string $third = null
+    bool $add = false
 end note
  
 @enduml

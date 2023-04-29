@@ -15,9 +15,14 @@ class Reverse  #Gold {
   # Placeholder $placeholder
   # Language $language
   # Extractor $extractor
+  # Power $power
   + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
   + engine(string $string, array $placeholders, ...) : string
   # setReverse(string $updateString, string $string, ...) : string
+  # reverseSuperPowers(string $updateString, string $string, ...) : string
+  # getReversePower(array $powers, array $useStatements) : ?array
+  # reverseLanguage(string $updateString, string $string, ...) : string
+  # reverseCustomCode(string $updateString, string $string) : string
 }
 
 note right of Reverse::__construct
@@ -30,6 +35,7 @@ note right of Reverse::__construct
     ?Placeholder $placeholder = null
     ?Language $language = null
     ?Extractor $extractor = null
+    ?Power $power = null
 end note
 
 note right of Reverse::engine
@@ -45,9 +51,42 @@ note right of Reverse::engine
     ?int $id = null
     string $field = 'code'
     string $table = 'custom_code'
+    ?array $useStatements = null
 end note
 
 note right of Reverse::setReverse
+  Reverse engineer the dynamic language, and super powers
+
+  since: 3.2.0
+  return: string
+  
+  arguments:
+    string $updateString
+    string $string
+    string $target
+    ?array $useStatements
+end note
+
+note right of Reverse::reverseSuperPowers
+  Set the super powers keys for the reveres process
+
+  since: 3.2.0
+  return: string
+  
+  arguments:
+    string $updateString
+    string $string
+    ?array $useStatements
+end note
+
+note right of Reverse::getReversePower
+  Set the super powers keys for the reveres process
+
+  since: 3.2.0
+  return: ?array
+end note
+
+note right of Reverse::reverseLanguage
   Set the language strings for the reveres process
 
   since: 3.2.0
@@ -57,6 +96,13 @@ note right of Reverse::setReverse
     string $updateString
     string $string
     string $target
+end note
+
+note right of Reverse::reverseCustomCode
+  Set the custom code placeholder for the reveres process
+
+  since: 3.2.0
+  return: string
 end note
  
 @enduml

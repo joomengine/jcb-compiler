@@ -16,37 +16,61 @@
             "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
             "as": "Powers"
         },
-        "use_selection8": {
+        "use_selection1": {
             "use": "6784dd52-0909-451a-a872-9a942a023c68",
             "as": "default"
         },
-        "use_selection1": {
+        "use_selection2": {
+            "use": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
+            "as": "Superpower"
+        },
+        "use_selection3": {
             "use": "0419081e-4cb3-4c65-8c6a-ffe941fb0f1c",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection4": {
             "use": "6e64917c-d687-4ef3-a655-811319f5a81e",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection5": {
             "use": "324566de-0f7d-4b6e-9caf-8424d55013ae",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection6": {
             "use": "95d0e03f-24fd-4412-bc2e-f0899fcc3205",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection7": {
             "use": "ff5e9e63-86d0-4691-ab59-d4b9d9154096",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection8": {
             "use": "efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5",
             "as": "RepoReadme"
         },
-        "use_selection7": {
+        "use_selection9": {
             "use": "0d08c583-04d5-454e-b756-48ca05e1651a",
             "as": "ReposReadme"
+        },
+        "use_selection10": {
+            "use": "eeb03266-22fd-45bb-953a-961bb6be3a54",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "763d137c-42bc-4282-98d8-cc5c0654985f",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "7c1fb50f-8fb1-4627-8705-6fedf7182ca5",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "380bb7a3-cdcc-4336-a699-5070cbf521a5",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Power",

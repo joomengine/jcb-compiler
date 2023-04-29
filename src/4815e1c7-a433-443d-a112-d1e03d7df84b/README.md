@@ -14,6 +14,7 @@ class Database  #Gold {
   + register(Container $container) : void
   + getLoad(Container $container) : Load
   + getInsert(Container $container) : Insert
+  + getUpdate(Container $container) : Update
 }
 
 note right of Database::register
@@ -35,6 +36,13 @@ note right of Database::getInsert
 
   since: 3.2.0
   return: Insert
+end note
+
+note right of Database::getUpdate
+  Get the Core Update Database
+
+  since: 3.2.0
+  return: Update
 end note
  
 @enduml

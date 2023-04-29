@@ -17,10 +17,12 @@ class Power  #Gold {
   + array $superpowers
   # string $fixUrl
   # array $state
+  # array $retry
   # Config $config
   # Placeholder $placeholder
   # Customcode $customcode
   # Gui $gui
+  # Superpower $superpower
   # \JDatabaseDriver $db
   # CMSApplication $app
   + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
@@ -56,6 +58,7 @@ note right of Power::__construct
     ?Placeholder $placeholder = null
     ?Customcode $customcode = null
     ?Gui $gui = null
+    ?Superpower $superpower = null
     ?\JDatabaseDriver $db = null
     ?CMSApplication $app = null
 end note

@@ -16,6 +16,7 @@ use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Power as Powers;
 use VDM\Joomla\Componentbuilder\Power\Grep;
+use VDM\Joomla\Componentbuilder\Power\Super as Superpower;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Infusion;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Autoloader;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Structure;
@@ -23,6 +24,11 @@ use VDM\Joomla\Componentbuilder\Compiler\Power\Parser;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Plantuml;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repo\Readme as RepoReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repos\Readme as ReposReadme;
+use VDM\Joomla\Componentbuilder\Compiler\Power\Extractor;
+use VDM\Joomla\Componentbuilder\Compiler\Power\Injector;
+use VDM\Joomla\Componentbuilder\Power\Model;
+use VDM\Joomla\Componentbuilder\Power\Database\Insert;
+use VDM\Joomla\Componentbuilder\Power\Database\Update;
 
 
 /**
@@ -45,8 +51,11 @@ class Power implements ServiceProviderInterface
 		$container->alias(Powers::class, 'Power')
 			->share('Power', [$this, 'getPowers'], true);
 
+		$container->alias(Superpower::class, 'Superpower')
+			->share('Superpower', [$this, 'getSuperpower'], true);
+
 		$container->alias(Grep::class, 'Power.Grep')
-			->share('Grep', [$this, 'getGrep'], true);
+			->share('Power.Grep', [$this, 'getGrep'], true);
 
 		$container->alias(Autoloader::class, 'Power.Autoloader')
 			->share('Power.Autoloader', [$this, 'getAutoloader'], true);
@@ -68,6 +77,21 @@ class Power implements ServiceProviderInterface
 
 		$container->alias(ReposReadme::class, 'Power.Repos.Readme')
 			->share('Power.Repos.Readme', [$this, 'getReposReadme'], true);
+
+		$container->alias(Extractor::class, 'Power.Extractor')
+			->share('Power.Extractor', [$this, 'getExtractor'], true);
+
+		$container->alias(Injector::class, 'Power.Injector')
+			->share('Power.Injector', [$this, 'getInjector'], true);
+
+		$container->alias(Model::class, 'Power.Model')
+			->share('Power.Model', [$this, 'getModel'], true);
+
+		$container->alias(Insert::class, 'Power.Insert')
+			->share('Power.Insert', [$this, 'getInsert'], true);
+
+		$container->alias(Update::class, 'Power.Update')
+			->share('Power.Update', [$this, 'getUpdate'], true);
 	}
 
 	/**
@@ -89,6 +113,23 @@ class Power implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get the Superpower
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Superpower
+	 * @since 3.2.0
+	 */
+	public function getSuperpower(Container $container): Superpower
+	{
+		return new Superpower(
+			$container->get('Power.Grep'),
+			$container->get('Power.Insert'),
+			$container->get('Power.Update')
+		);
+	}
+
+	/**
 	 * Get the Grep
 	 *
 	 * @param   Container  $container  The DI container.
@@ -98,7 +139,11 @@ class Power implements ServiceProviderInterface
 	 */
 	public function getGrep(Container $container): Grep
 	{
-		return new Grep();
+		return new Grep(
+			$container->get('Config')->local_powers_repository_path,
+			$container->get('Config')->approved_paths,
+			$container->get('Gitea.Repository.Contents')
+		);
 	}
 
 	/**
@@ -222,5 +267,82 @@ class Power implements ServiceProviderInterface
 		);
 	}
 
+	/**
+	 * Get the Compiler Power Extractor
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Extractor
+	 * @since 3.2.0
+	 */
+	public function getExtractor(Container $container): Extractor
+	{
+		return new Extractor();
+	}
+
+	/**
+	 * Get the Compiler Power Injector
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Injector
+	 * @since 3.2.0
+	 */
+	public function getInjector(Container $container): Injector
+	{
+		return new Injector(
+			$container->get('Power'),
+			$container->get('Power.Extractor'),
+			$container->get('Power.Parser'),
+			$container->get('Placeholder')
+		);
+	}
+
+	/**
+	 * Get the Power Model
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Model
+	 * @since 3.2.0
+	 */
+	public function getModel(Container $container): Model
+	{
+		return new Model(
+			$container->get('Table')
+		);
+	}
+
+	/**
+	 * Get the Power Insert
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Insert
+	 * @since 3.2.0
+	 */
+	public function getInsert(Container $container): Insert
+	{
+		return new Insert(
+			$container->get('Power.Model'),
+			$container->get('Insert')
+		);
+	}
+
+	/**
+	 * Get the Power Update
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Update
+	 * @since 3.2.0
+	 */
+	public function getUpdate(Container $container): Update
+	{
+		return new Update(
+			$container->get('Power.Model'),
+			$container->get('Update')
+		);
+	}
 }
 
