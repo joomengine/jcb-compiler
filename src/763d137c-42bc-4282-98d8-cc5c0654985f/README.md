@@ -10,7 +10,7 @@
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 ```uml
 @startuml
-class Injector << (F,LightGreen) >> #Green {
+class Injector << (F,LightGreen) >> #RoyalBlue {
   # Power $power
   # Extractor $extractor
   # Parser $parser

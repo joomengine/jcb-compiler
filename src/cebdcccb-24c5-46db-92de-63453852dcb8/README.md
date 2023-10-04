@@ -11,22 +11,24 @@
 ```uml
 @startuml
 class Adminviews  #Gold {
-  # Adminview $admin
-  # Registry $registry
   # Config $config
-  + __construct(?Adminview $admin = null, ?Registry $registry = null, ...)
+  # Admin $admin
+  # SiteEditView $siteeditview
+  # AdminFilterType $adminfiltertype
+  + __construct(Config $config, Admin $admin, ...)
   + set(object $item) : void
 }
 
 note right of Adminviews::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Adminview $admin = null
-    ?Registry $registry = null
-    ?Config $config = null
+    Config $config
+    Admin $admin
+    SiteEditView $siteeditview
+    AdminFilterType $adminfiltertype
 end note
 
 note right of Adminviews::set

@@ -19,6 +19,10 @@
         "use_selection1": {
             "use": "d33b9278-c409-4aec-a047-b72f56712391",
             "as": "default"
+        },
+        "use_selection2": {
+            "use": "4ad7020e-39ab-49ba-977b-de6084944502",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Language",

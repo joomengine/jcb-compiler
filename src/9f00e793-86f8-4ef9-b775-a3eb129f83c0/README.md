@@ -12,8 +12,9 @@
 @startuml
 class Language  #Gold {
   + register(Container $container) : void
-  + getLanguage(Container $container) : CompilerLanguage
-  + getLanguageExtractor(Container $container) : Extractor
+  + getCompilerLanguage(Container $container) : CompilerLanguage
+  + getExtractor(Container $container) : Extractor
+  + getFieldset(Container $container) : Fieldset
 }
 
 note right of Language::register
@@ -23,18 +24,25 @@ note right of Language::register
   return: void
 end note
 
-note right of Language::getLanguage
-  Get the Compiler Language
+note right of Language::getCompilerLanguage
+  Get The Language Class.
 
   since: 3.2.0
   return: CompilerLanguage
 end note
 
-note right of Language::getLanguageExtractor
-  Get the Compiler Language Extractor
+note right of Language::getExtractor
+  Get The Extractor Class.
 
   since: 3.2.0
   return: Extractor
+end note
+
+note right of Language::getFieldset
+  Get The Fieldset Class.
+
+  since: 3.2.0
+  return: Fieldset
 end note
  
 @enduml

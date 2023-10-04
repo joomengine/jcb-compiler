@@ -1,0 +1,81 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "44d039b9-d293-481b-b560-23a6e7a63962",
+    "implements": [
+        "2d27c436-4d8e-4692-8382-d9e97af2231c"
+    ],
+    "load_selection": null,
+    "name": "FieldString",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.FieldString",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "12df35ad-2d44-4c4c-a7d5-a3350932a520",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "eb33420d-359d-44a5-852e-613aef1feaae",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "7f515c18-d019-4d2d-9852-b2dc970985b3",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "6dced3d9-7d10-4ea1-bcf6-a5e6af4b9c96",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "9ef0eb24-aae4-4f5a-99af-d724db44808f",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.FieldString",
+    "description": "Field String Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

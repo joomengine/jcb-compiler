@@ -44,8 +44,8 @@
 		$container->alias(Injector::class, 'Power.Injector')
 			->share('Power.Injector', [$this, 'getInjector'], true);
 
-		$container->alias(Model::class, 'Power.Model')
-			->share('Power.Model', [$this, 'getModel'], true);
+		$container->alias(Upsert::class, 'Power.Model.Upsert')
+			->share('Power.Model.Upsert', [$this, 'getModelUpsert'], true);
 
 		$container->alias(Insert::class, 'Power.Insert')
 			->share('Power.Insert', [$this, 'getInsert'], true);
@@ -259,16 +259,16 @@
 	}
 
 	/**
-	 * Get the Power Model
+	 * Get the Power Model Upsert
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  Model
+	 * @return  Upsert
 	 * @since 3.2.0
 	 */
-	public function getModel(Container $container): Model
+	public function getModelUpsert(Container $container): Upsert
 	{
-		return new Model(
+		return new Upsert(
 			$container->get('Table')
 		);
 	}
@@ -284,7 +284,7 @@
 	public function getInsert(Container $container): Insert
 	{
 		return new Insert(
-			$container->get('Power.Model'),
+			$container->get('Power.Model.Upsert'),
 			$container->get('Insert')
 		);
 	}
@@ -300,7 +300,7 @@
 	public function getUpdate(Container $container): Update
 	{
 		return new Update(
-			$container->get('Power.Model'),
+			$container->get('Power.Model.Upsert'),
 			$container->get('Update')
 		);
 	}

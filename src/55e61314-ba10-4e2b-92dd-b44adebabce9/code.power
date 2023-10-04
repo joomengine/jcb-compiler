@@ -15,17 +15,27 @@
 	protected FieldName $fieldName;
 
 	/**
+	 * Compiler Field Groups
+	 *
+	 * @var    FieldGroups
+	 * @since 3.2.0
+	 */
+	protected FieldGroups $fieldGroups;
+
+	/**
 	 * Constructor
 	 *
-	 * @param TypeName|null     $typeName     The compiler type name object.
-	 * @param FieldName|null    $fieldName    The compiler field name object.
+	 * @param TypeName|null     $typeName      The compiler type name object.
+	 * @param FieldName|null    $fieldName     The compiler field name object.
+	 * @param FieldGroups|null  $fieldGroups   The compiler field groups object.
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(?TypeName $typeName = null, ?FieldName $fieldName = null)
+	public function __construct(?TypeName $typeName = null, ?FieldName $fieldName = null, ?FieldGroups $fieldGroups = null)
 	{
 		$this->typeName = $typeName ?: Compiler::_('Field.Type.Name');
 		$this->fieldName = $fieldName ?: Compiler::_('Field.Name');
+		$this->fieldGroups = $fieldGroups ?: Compiler::_('Field.Groups');
 	}
 
 	/**
@@ -112,7 +122,7 @@
 							$conditionValue['match_xml'] = $fieldValue['settings']->xml;
 
 							// if custom field load field being extended
-							if (!FieldHelper::check($type))
+							if (!$this->fieldGroups->check($type))
 							{
 								$conditionValue['match_extends'] = GetHelper::between(
 									$fieldValue['settings']->xml,

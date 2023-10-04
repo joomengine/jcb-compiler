@@ -11,22 +11,18 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
+            "use": "9d74d613-5ef7-4cf1-9f12-64f0a8e19806",
+            "as": "BuilderCustomAlias"
         },
         "use_selection1": {
-            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
-            "as": "default"
-        },
-        "use_selection2": {
             "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
             "as": "FieldName"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         }

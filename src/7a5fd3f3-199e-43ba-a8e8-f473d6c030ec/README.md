@@ -11,13 +11,19 @@
 ```uml
 @startuml
 abstract FieldHelper  #Orange {
-  + {static} check(string $type, string $option = 'default') : bool
+  + {static} getValue(string $xml, string $get, ...) : string
 }
 
-note right of FieldHelper::check
-  Field Checker
+note right of FieldHelper::getValue
+  Get a field value from the XML stored string
 
-  return: bool
+  since: 3.2.0
+  return: string
+  
+  arguments:
+    string $xml
+    string $get
+    string $confirmation = ''
 end note
  
 @enduml

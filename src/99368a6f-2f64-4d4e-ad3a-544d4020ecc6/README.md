@@ -11,13 +11,14 @@
 ```uml
 @startuml
 class DatabaseName  #Gold {
+  # Lists $lists
   # Registry $registry
-  + __construct(?Registry $registry = null)
+  + __construct(Lists $lists, Registry $registry)
   + get(string $nameListCode, int $fieldId, ...) : ?string
 }
 
 note right of DatabaseName::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
 end note

@@ -15,27 +15,29 @@ class Dynamicget  #Gold {
   # array $operator
   # array $guiMapper
   # Config $config
-  # Registry $registry
+  # SiteDynamicGet $sitedynamicget
+  # SiteMainGet $sitemainget
   # Customcode $customcode
   # Gui $gui
   # Placeholder $placeholder
   # Selection $selection
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, SiteDynamicGet $sitedynamicget, ...)
   + set(object $item, string $view_code, ...) : void
 }
 
 note right of Dynamicget::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Placeholder $placeholder = null
-    ?Selection $selection = null
+    Config $config
+    SiteDynamicGet $sitedynamicget
+    SiteMainGet $sitemainget
+    Customcode $customcode
+    Gui $gui
+    Placeholder $placeholder
+    Selection $selection
 end note
 
 note right of Dynamicget::set

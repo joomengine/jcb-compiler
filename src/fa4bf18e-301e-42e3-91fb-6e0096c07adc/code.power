@@ -31,7 +31,50 @@
 	 */
 	protected function getGiteatoken(): ?string
 	{
-		return $this->params->get('access.token');
+		return $this->custom_gitea_token ?? $this->params->get('gitea_token');
+	}
+
+	/**
+	 * get Add Custom Gitea URL
+	 *
+	 * @return  int  the add switch
+	 * @since 3.2.0
+	 */
+	protected function getAddcustomgiteaurl(): int
+	{
+		return $this->params->get('add_custom_gitea_url', 1);
+	}
+
+	/**
+	 * get Custom Gitea URL
+	 *
+	 * @return  string  the custom gitea url
+	 * @since 3.2.0
+	 */
+	protected function getCustomgiteaurl(): ?string
+	{
+		if ($this->add_custom_gitea_url == 2)
+		{
+			return $this->params->get('custom_gitea_url');
+		}
+
+		return null;
+	}
+
+	/**
+	 * get Custom Gitea Access Token
+	 *
+	 * @return  string  the custom access token
+	 * @since 3.2.0
+	 */
+	protected function getCustomgiteatoken(): ?string
+	{
+		if ($this->add_custom_gitea_url == 2)
+		{
+			return $this->params->get('custom_gitea_token');
+		}
+
+		return null;
 	}
 
 	/**

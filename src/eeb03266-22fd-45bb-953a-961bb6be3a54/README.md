@@ -10,7 +10,7 @@
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 ```uml
 @startuml
-class Extractor << (F,LightGreen) >> #Green {
+class Extractor << (F,LightGreen) >> #RoyalBlue {
   # array $powers
   # \JDatabaseDriver $db
   + __construct(?\JDatabaseDriver $db = null)

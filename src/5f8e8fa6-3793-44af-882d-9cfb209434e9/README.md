@@ -11,14 +11,14 @@
 ```uml
 @startuml
 class Customalias  #Gold {
-  # Registry $registry
-  # FieldName $fieldName
-  + __construct(?Registry $registry = null, ?FieldName $fieldName = null)
+  # BuilderCustomAlias $customalias
+  # FieldName $fieldname
+  + __construct(BuilderCustomAlias $customalias, FieldName $fieldname)
   + set(object $item) : void
 }
 
 note right of Customalias::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
 end note

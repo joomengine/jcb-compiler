@@ -10,7 +10,7 @@
 > namespace: **VDM\Joomla\Componentbuilder\Power**
 ```uml
 @startuml
-class Super << (F,LightGreen) >> #Green {
+class Super << (F,LightGreen) >> #RoyalBlue {
   # Grep $grep
   # Insert $insert
   # Update $update

@@ -13,21 +13,21 @@
 class Ajaxadmin  #Gold {
   # array $guiMapper
   # Config $config
-  # Registry $registry
+  # SiteEditView $siteeditview
   # Dispenser $dispenser
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, SiteEditView $siteeditview, ...)
   + set(object $item, string $table = 'admin_view') : void
 }
 
 note right of Ajaxadmin::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Dispenser $dispenser = null
+    Config $config
+    SiteEditView $siteeditview
+    Dispenser $dispenser
 end note
 
 note right of Ajaxadmin::set

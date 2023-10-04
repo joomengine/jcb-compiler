@@ -1,0 +1,50 @@
+{
+    "add_head": "1",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "a7101bbc-3c81-4b52-a4aa-522291f7594b",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Generator",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Power.Service.Generator",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "505801ac-d3e2-44c6-a300-9a57a96170c6",
+            "as": "PowerGenerator"
+        },
+        "use_selection1": {
+            "use": "9c2fdd98-ce4e-4b97-a2f8-ee6990bdcbf7",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "8a2a3ee5-6ce2-4604-91e2-01f770228960",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "50302fce-62b4-48ae-a692-9cc4595ce74c",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "c72692b0-0a0f-412a-b05b-80002cbf886a",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "369ae3f5-90db-43b9-aba9-ce5c83311c4e",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "5d4278f0-7db2-498f-872a-c974bd8ce334",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Power.Service.Generator",
+    "description": "Generator Service Provider\r\n\r\n@since 3.2.0",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

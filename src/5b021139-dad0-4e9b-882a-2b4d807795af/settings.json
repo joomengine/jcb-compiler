@@ -11,15 +11,15 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
+        "use_selection1": {
+            "use": "8f46f85d-7921-44e9-a40e-dc4f01c5d43a",
+            "as": "default"
+        },
         "use_selection2": {
-            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "use": "52de0ac8-bb9d-4a45-bd2a-a44c48c17ffe",
             "as": "default"
         },
         "use_selection3": {

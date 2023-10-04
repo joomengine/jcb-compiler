@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Placeholder (Details)
+# final class Placeholder (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Placeholder  #Gold {
+class Placeholder << (F,LightGreen) >> #RoyalBlue {
   # $placeholders
   # $config
   # $db

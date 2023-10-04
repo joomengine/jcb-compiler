@@ -10,8 +10,8 @@
 > namespace: **VDM\Joomla\Componentbuilder\Power**
 ```uml
 @startuml
-class Grep << (F,LightGreen) >> #Green {
-  + string $path
+class Grep << (F,LightGreen) >> #RoyalBlue {
+  + ?string $path
   + ?array $paths
   # Contents $contents
   # CMSApplication $app

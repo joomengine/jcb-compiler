@@ -93,6 +93,7 @@
 			->registerServiceProvider(new Joomlaplugin())
 			->registerServiceProvider(new Utilities())
 			->registerServiceProvider(new Builder())
+			->registerServiceProvider(new Creator())
 			->registerServiceProvider(new Gitea())
 			->registerServiceProvider(new GiteaUtilities())
 			->registerServiceProvider(new GiteaSettings())

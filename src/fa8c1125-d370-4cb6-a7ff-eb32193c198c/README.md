@@ -12,25 +12,25 @@
 @startuml
 class Customtabs  #Gold {
   # Config $config
-  # Registry $registry
+  # BuilderCustomTabs $buildercustomtabs
   # Language $language
   # Placeholder $placeholder
   # Customcode $customcode
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, BuilderCustomTabs $buildercustomtabs, ...)
   + set(object $item) : void
 }
 
 note right of Customtabs::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Language $language = null
-    ?Placeholder $placeholder = null
-    ?Customcode $customcode = null
+    Config $config
+    BuilderCustomTabs $buildercustomtabs
+    Language $language
+    Placeholder $placeholder
+    Customcode $customcode
 end note
 
 note right of Customtabs::set

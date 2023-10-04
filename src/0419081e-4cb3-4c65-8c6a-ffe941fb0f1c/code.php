@@ -113,7 +113,6 @@ class Infusion
 	 **/
 	protected array $linker = [
 		'add_head' => 'add_head',
-		'unchanged_composer' => 'composer',
 		'unchanged_description' => 'description',
 		'extends' => 'extends',
 		'unchanged_extends_custom' => 'extends_custom',
@@ -232,8 +231,17 @@ class Infusion
 					array(&$context, &$path, &$key, &$powers)
 				);
 
+				// we add and all missing powers
+				if (isset($this->power->old_superpowers[$path]))
+				{
+					$this->mergePowers($powers, $this->power->old_superpowers[$path]);
+				}
+
 				// POWERREADME
 				$this->content->set_($key, 'POWERREADME', $this->reposreadme->get($powers));
+
+				// sort all powers
+				$this->sortPowers($powers);
 
 				// POWERINDEX
 				$this->content->set_($key, 'POWERINDEX', $this->index($powers));
@@ -245,6 +253,34 @@ class Infusion
 				);
 			}
 		}
+	}
+
+	/**
+	 * Merge the old missing powers found in local repository back into the index
+	 *
+	 * @return void
+	 * @since 3.2.0
+	 */
+	private function mergePowers(array &$powers, array &$old)
+	{
+		foreach ($old as $guid => $values)
+		{
+			if (!isset($powers[$guid]))
+			{
+				$powers[$guid] = $values;
+			}
+		}
+	}
+
+	/**
+	 * Sort Powers
+	 *
+	 * @return void
+	 * @since 3.2.0
+	 */
+	private function sortPowers(array &$powers)
+	{
+		ksort($powers, SORT_STRING);
 	}
 
 	/**

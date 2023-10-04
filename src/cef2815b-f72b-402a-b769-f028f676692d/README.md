@@ -11,62 +11,61 @@
 ```uml
 @startuml
 class Data  #Gold {
-  # array $data
   # Config $config
-  # Registry $registry
-  # EventInterface $event
+  # Event $event
   # Placeholder $placeholder
   # Dispenser $dispenser
   # Customtabs $customtabs
   # Tabs $tabs
   # Fields $fields
-  # Historyadminview $history
+  # History $history
   # Permissions $permissions
   # Conditions $conditions
   # Relations $relations
   # Linkedviews $linkedviews
-  # Javascriptadminview $javascript
-  # Cssadminview $css
-  # Phpadminview $php
+  # Javascript $javascript
+  # Css $css
+  # Php $php
   # Custombuttons $custombuttons
   # Customimportscripts $customimportscripts
-  # Ajaxadmin $ajax
+  # Ajax $ajax
   # Customalias $customalias
   # Sql $sql
   # Mysqlsettings $mysqlsettings
+  # SiteEditView $siteeditview
   # \JDatabaseDriver $db
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, Event $event, ...)
   + get(int $id) : ?object
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?EventInterface $event = null
-    ?Placeholder $placeholder = null
-    ?Dispenser $dispenser = null
-    ?Customtabs $customtabs = null
-    ?Tabs $tabs = null
-    ?Fields $fields = null
-    ?Historyadminview $history = null
-    ?Permissions $permissions = null
-    ?Conditions $conditions = null
-    Relations $relations = null
-    ?Linkedviews $linkedviews = null
-    ?Javascriptadminview $javascript = null
-    ?Cssadminview $css = null
-    ?Phpadminview $php = null
-    ?Custombuttons $custombuttons = null
-    ?Customimportscripts $customimportscripts = null
-    ?Ajaxadmin $ajax = null
-    ?Customalias $customalias = null
-    ?Sql $sql = null
-    ?Mysqlsettings $mysqlsettings = null
+    Config $config
+    Event $event
+    Placeholder $placeholder
+    Dispenser $dispenser
+    Customtabs $customtabs
+    Tabs $tabs
+    Fields $fields
+    History $history
+    Permissions $permissions
+    Conditions $conditions
+    Relations $relations
+    Linkedviews $linkedviews
+    Javascript $javascript
+    Css $css
+    Php $php
+    Custombuttons $custombuttons
+    Customimportscripts $customimportscripts
+    Ajax $ajax
+    Customalias $customalias
+    Sql $sql
+    Mysqlsettings $mysqlsettings
+    SiteEditView $siteeditview
     ?\JDatabaseDriver $db = null
 end note
 

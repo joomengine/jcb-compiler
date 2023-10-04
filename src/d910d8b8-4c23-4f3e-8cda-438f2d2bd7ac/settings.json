@@ -104,11 +104,15 @@
             "use": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
             "as": "default"
         },
-        "use_selection24": {
-            "use": "71acf8d6-32b8-4173-8277-eb9cda29fd64",
+        "use_selection34": {
+            "use": "8fdd604f-53e7-4a91-9935-afcfd2f6ac1b",
             "as": "default"
         },
         "use_selection23": {
+            "use": "71acf8d6-32b8-4173-8277-eb9cda29fd64",
+            "as": "default"
+        },
+        "use_selection24": {
             "use": "6edf0cf3-c2b0-45c9-84d2-c6ef1c5d434c",
             "as": "GiteaUtilities"
         },

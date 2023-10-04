@@ -6,7 +6,16 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-> Error adding class diagram
+# class Files (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: **BaseRegistry**
+```uml
+@startuml
+class Files  #Gold {
+}
+ 
+@enduml
+```
 
 ---
 ```

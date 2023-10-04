@@ -13,21 +13,23 @@
 class Selection  #Gold {
   # array $name
   # Config $config
-  # Registry $registry
+  # GetAsLookup $getaslookup
+  # SiteFields $sitefields
   # \JDatabaseDriver $db
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, GetAsLookup $getaslookup, ...)
   + get(string $methodKey, string $viewCode, ...) : ?array
   # name(int $id) : string
 }
 
 note right of Selection::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
+    Config $config
+    GetAsLookup $getaslookup
+    SiteFields $sitefields
     ?\JDatabaseDriver $db = null
 end note
 

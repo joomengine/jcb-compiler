@@ -15,6 +15,8 @@ class Field  #Gold {
   + register(Container $container) : void
   + getField(Container $container) : CompilerField
   + getData(Container $container) : Data
+  + getGroups(Container $container) : Groups
+  + getAttributes(Container $container) : Attributes
   + getValidation(Container $container) : Validation
   + getJ3CoreValidation(Container $container) : J3CoreValidation
   + getCoreValidation(Container $container) : CoreValidationInterface
@@ -23,6 +25,7 @@ class Field  #Gold {
   + getFieldTypeName(Container $container) : TypeName
   + getFieldUniqueName(Container $container) : UniqueName
   + getFieldDatabaseName(Container $container) : DatabaseName
+  + getInputButton(Container $container) : InputButton
 }
 
 note right of Field::register
@@ -44,6 +47,20 @@ note right of Field::getData
 
   since: 3.2.0
   return: Data
+end note
+
+note left of Field::getGroups
+  Get the Compiler Field Groups
+
+  since: 3.2.0
+  return: Groups
+end note
+
+note right of Field::getAttributes
+  Get the Compiler Field Attributes
+
+  since: 3.2.0
+  return: Attributes
 end note
 
 note left of Field::getValidation
@@ -100,6 +117,13 @@ note right of Field::getFieldDatabaseName
 
   since: 3.2.0
   return: DatabaseName
+end note
+
+note left of Field::getInputButton
+  Get The InputButton Class.
+
+  since: 3.2.0
+  return: InputButton
 end note
  
 @enduml

@@ -217,7 +217,7 @@
 			) !== false
 			&& (strpos($licenseChecker, 'gpl') !== false
 			|| strpos(
-				$licenseChecker, 'General public license'
+				$licenseChecker, 'general public license'
 			) !== false))
 		{
 			return true;

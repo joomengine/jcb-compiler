@@ -24,7 +24,7 @@ class Power  #Gold {
   + getReposReadme(Container $container) : ReposReadme
   + getExtractor(Container $container) : Extractor
   + getInjector(Container $container) : Injector
-  + getModel(Container $container) : Model
+  + getModelUpsert(Container $container) : Upsert
   + getInsert(Container $container) : Insert
   + getUpdate(Container $container) : Update
 }
@@ -120,11 +120,11 @@ note right of Power::getInjector
   return: Injector
 end note
 
-note left of Power::getModel
-  Get the Power Model
+note left of Power::getModelUpsert
+  Get the Power Model Upsert
 
   since: 3.2.0
-  return: Model
+  return: Upsert
 end note
 
 note right of Power::getInsert

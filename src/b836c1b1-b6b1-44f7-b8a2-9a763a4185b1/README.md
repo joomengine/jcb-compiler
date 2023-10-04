@@ -39,7 +39,7 @@ class Power  #Gold {
   - setImplements(string $guid, array $use) : void
   - setExtend(string $guid, array $use) : void
   - setUseAs(string $guid, array $use, ...) : void
-  - getCleanNamespace(string $namespace, bool $removeNumbers = true) : string
+  - getCleanNamespace(string $namespace) : string
   - getUseNamespace(string $namespace, string $as = 'default') : string
   - addToHeader(string $guid, string $string) : void
   - setLicensingTemplate(string $guid, array $guiMapper) : void

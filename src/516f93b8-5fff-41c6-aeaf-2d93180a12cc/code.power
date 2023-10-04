@@ -34,6 +34,9 @@
 
 		$container->alias(Structure::class, 'Utilities.Structure')
 			->share('Utilities.Structure', [$this, 'getStructure'], true);
+
+		$container->alias(Xml::class, 'Utilities.Xml')
+			->share('Utilities.Xml', [$this, 'getXml'], true);
 	}
 
 	/**
@@ -169,5 +172,20 @@
 			$container->get('Utilities.Counter'),
 			$container->get('Utilities.File'),
 			$container->get('Utilities.Files')
+		);
+	}
+
+	/**
+	 * Get the Compiler Xml Helper
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Xml
+	 * @since 3.2.0
+	 */
+	public function getXml(Container $container): Xml
+	{
+		return new Xml(
+			$container->get('Config')
 		);
 	}

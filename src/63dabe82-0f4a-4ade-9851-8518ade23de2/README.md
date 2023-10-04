@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Settings (Details)
+# final class Settings (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Settings  #Gold {
+class Settings << (F,LightGreen) >> #RoyalBlue {
   # array $standardFolders
   # array $standardRootFiles
   # ?object $data

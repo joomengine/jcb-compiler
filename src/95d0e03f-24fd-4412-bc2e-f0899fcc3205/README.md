@@ -10,7 +10,7 @@
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 ```uml
 @startuml
-class Parser << (F,LightGreen) >> #Green {
+class Parser << (F,LightGreen) >> #RoyalBlue {
   + code(string $code) : array
   + getClassCode(string $code) : ?string
   + getClassLicense(string $code) : ?string
@@ -19,6 +19,7 @@ class Parser << (F,LightGreen) >> #Green {
   - properties(string $code) : ?array
   - methods(string $code) : ?array
   - extractDocBlock(string $code, string $declaration) : ?string
+  - extractMethodBody(string $code, int $startPos) : ?string
   - extractFunctionArgumentDetails(?string $comment, ?string $arguments) : ?array
   - extractReturnType(?string $returnType, ?string $comment) : ?string
   - extractArgTypesFromComment(string $comment) : ?array
@@ -86,63 +87,70 @@ note left of Parser::extractDocBlock
   return: ?string
 end note
 
-note right of Parser::extractFunctionArgumentDetails
+note right of Parser::extractMethodBody
+  Extracts method body based on starting position of method declaration.
+
+  since: 3.2.0
+  return: ?string
+end note
+
+note left of Parser::extractFunctionArgumentDetails
   Extracts the function argument details.
 
   since: 3.2.0
   return: ?array
 end note
 
-note left of Parser::extractReturnType
+note right of Parser::extractReturnType
   Extracts the function return type.
 
   since: 3.2.0
   return: ?string
 end note
 
-note right of Parser::extractArgTypesFromComment
+note left of Parser::extractArgTypesFromComment
   Extracts argument types from a given comment.
 
   since: 3.2.0
   return: ?array
 end note
 
-note left of Parser::extractArgTypesArguments
+note right of Parser::extractArgTypesArguments
   Extracts argument types from a given declaration.
 
   since: 3.2.0
   return: ?array
 end note
 
-note right of Parser::extractReturnTypeFromComment
+note left of Parser::extractReturnTypeFromComment
   Extracts return type from a given declaration.
 
   since: 3.2.0
   return: ?string
 end note
 
-note left of Parser::extractSinceVersion
+note right of Parser::extractSinceVersion
   Extracts the version number from the @since tag in the given comment.
 
   since: 3.2.0
   return: ?string
 end note
 
-note right of Parser::extractDeprecatedVersion
+note left of Parser::extractDeprecatedVersion
   Extracts the version number from the deprecated tag in the given comment.
 
   since: 3.2.0
   return: ?string
 end note
 
-note left of Parser::removeWhiteSpaceFromComment
+note right of Parser::removeWhiteSpaceFromComment
   Remove all white space from each line of the comment
 
   since: 3.2.0
   return: string
 end note
 
-note right of Parser::mergeArgumentTypes
+note left of Parser::mergeArgumentTypes
   Merges the types from the comments and the arguments.
 
   since: 3.2.0

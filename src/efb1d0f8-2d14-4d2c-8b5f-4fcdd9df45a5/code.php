@@ -77,6 +77,10 @@ class Readme
 		{
 			$readme[] = "# " . $power->type . " " . $power->code_name . " (Details)";
 			$readme[] = "> namespace: **" . $power->_namespace . "**";
+			if ($power->extends != 0)
+			{
+				$readme[] = "> extends: **" . $power->extends_name . "**";
+			}
 			$readme[] = "```uml\n@startuml" . $this->plantuml->classDetailedDiagram(
 				['name' => $power->code_name, 'type' => $power->type],
 				$power->parsed_class_code
@@ -84,7 +88,15 @@ class Readme
 		}
 		else
 		{
-			$readme[] = "> Error adding class diagram";
+			$readme[] = "# " . $power->type . " " . $power->code_name . " (Details)";
+			$readme[] = "> namespace: **" . $power->_namespace . "**";
+			if ($power->extends != 0)
+			{
+				$readme[] = "> extends: **" . $power->extends_name . "**";
+			}
+			$readme[] = "```uml\n@startuml" . $this->plantuml->classDetailedDiagram(
+					['name' => $power->code_name, 'type' => $power->type], []
+				) . " \n@enduml\n```";
 		}
 
 		// yes you can remove this, but why?

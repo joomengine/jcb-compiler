@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
-use VDM\Joomla\Componentbuilder\Interfaces\Mapperdoubleinterface;
+use VDM\Joomla\Componentbuilder\Interfaces\Mapperdoublejoininterface;
 use VDM\Joomla\Componentbuilder\Interfaces\Mappersingleinterface;
 use VDM\Joomla\Componentbuilder\Abstraction\Mapper;
 
@@ -23,7 +23,7 @@ use VDM\Joomla\Componentbuilder\Abstraction\Mapper;
  * 
  * @since 3.2.0
  */
-class Content extends Mapper implements Mapperdoubleinterface, Mappersingleinterface
+class Content extends Mapper implements Mapperdoublejoininterface, Mappersingleinterface
 {
 	/**
 	 * Model the key

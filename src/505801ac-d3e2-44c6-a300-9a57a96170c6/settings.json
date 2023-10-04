@@ -1,0 +1,27 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "505801ac-d3e2-44c6-a300-9a57a96170c6",
+    "implements": null,
+    "load_selection": null,
+    "name": "Generator",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Power.Generator",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "9c2fdd98-ce4e-4b97-a2f8-ee6990bdcbf7",
+            "as": "ClassInjector"
+        },
+        "use_selection1": {
+            "use": "8a2a3ee5-6ce2-4604-91e2-01f770228960",
+            "as": "ServiceProvider"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Power.Generator",
+    "description": "Power code Generator of JCB\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

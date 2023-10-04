@@ -8,6 +8,7 @@
 ```
 # class Content (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: **Mapper**
 ```uml
 @startuml
 class Content  #Gold {

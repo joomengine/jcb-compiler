@@ -6,11 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Component (Details)
+# final class Component (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: **BaseRegistry**
 ```uml
 @startuml
-class Component  #Gold {
+class Component << (F,LightGreen) >> #RoyalBlue {
   + __construct(?Data $component = null)
   + __get(string $path)
 }

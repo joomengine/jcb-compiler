@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Structure (Details)
+# final class Structure (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Structure  #Gold {
+class Structure << (F,LightGreen) >> #RoyalBlue {
   # Settings $settings
   # Paths $paths
   # Folder $folder

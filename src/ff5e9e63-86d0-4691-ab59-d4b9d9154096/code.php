@@ -419,7 +419,7 @@ class Plantuml
 	{
 		$class_colors = [
 			'class' => 'Gold',
-			'final' => 'RoyalBlue',
+			'final class' => 'RoyalBlue',
 			'abstract class' => 'Orange',
 			'interface' => 'Lavender',
 			'trait' => 'Turquoise'

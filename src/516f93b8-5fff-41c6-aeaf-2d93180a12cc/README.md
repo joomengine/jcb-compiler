@@ -21,6 +21,7 @@ class Utilities  #Gold {
   + getDynamicpath(Container $container) : Dynamicpath
   + getPathfix(Container $container) : Pathfix
   + getStructure(Container $container) : Structure
+  + getXml(Container $container) : Xml
 }
 
 note right of Utilities::register
@@ -91,6 +92,13 @@ note left of Utilities::getStructure
 
   since: 3.2.0
   return: Structure
+end note
+
+note right of Utilities::getXml
+  Get the Compiler Xml Helper
+
+  since: 3.2.0
+  return: Xml
 end note
  
 @enduml

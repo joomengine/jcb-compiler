@@ -25,6 +25,8 @@ class Infusion  #Gold {
   + set() : void
   - parsePowers() : void
   - setSuperPowers() : void
+  - mergePowers($powers, $old) : void
+  - sortPowers($powers) : void
   - setPowers() : void
   - index(array $powers) : string
   - code(object $power) : string
@@ -65,6 +67,20 @@ end note
 
 note left of Infusion::setSuperPowers
   Set the Super Powers details
+
+  since: 3.2.0
+  return: void
+end note
+
+note right of Infusion::mergePowers
+  Merge the old missing powers found in local repository back into the index
+
+  since: 3.2.0
+  return: void
+end note
+
+note left of Infusion::sortPowers
+  Sort Powers
 
   since: 3.2.0
   return: void

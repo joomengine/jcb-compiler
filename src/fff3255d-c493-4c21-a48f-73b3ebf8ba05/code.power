@@ -16,7 +16,7 @@
 	}
 
 	/**
-	 * Get the Compiler Templatelayout Data
+	 * Get The Data Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -27,13 +27,14 @@
 	{
 		return new TemplatelayoutData(
 			$container->get('Config'),
-			$container->get('Registry'),
+			$container->get('Compiler.Builder.Layout.Data'),
+			$container->get('Compiler.Builder.Template.Data'),
 			$container->get('Alias.Data')
 		);
 	}
 
 	/**
-	 * Get the Compiler Alias Data
+	 * Get The Data Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *

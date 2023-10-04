@@ -24,14 +24,14 @@ note right of Templatelayout::register
 end note
 
 note right of Templatelayout::getTemplatelayoutData
-  Get the Compiler Templatelayout Data
+  Get The Data Class.
 
   since: 3.2.0
   return: TemplatelayoutData
 end note
 
 note right of Templatelayout::getAliasData
-  Get the Compiler Alias Data
+  Get The Data Class.
 
   since: 3.2.0
   return: AliasData

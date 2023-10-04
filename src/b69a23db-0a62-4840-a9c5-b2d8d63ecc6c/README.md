@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Structuremultiple (Details)
+# final class Structuremultiple (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Structuremultiple  #Gold {
+class Structuremultiple << (F,LightGreen) >> #RoyalBlue {
   # Config $config
   # Registry $registry
   # Settings $settings

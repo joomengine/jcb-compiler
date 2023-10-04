@@ -64,6 +64,14 @@ class Counter
 	public int $field = 0;
 
 	/**
+	 * The access size
+	 *
+	 * @var     int
+	 * @since 3.2.0
+	 */
+	public int $accessSize = 0;
+
+	/**
 	 * The seconds counter
 	 *
 	 * @var     int
@@ -398,6 +406,5 @@ class Counter
 		$this->projectWeekTime  = round($this->actualTotalDays / 5, 1);
 		$this->projectMonthTime = round($this->actualTotalDays / 24, 1);
 	}
-
 }
 

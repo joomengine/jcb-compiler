@@ -1,0 +1,30 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(Contents::class, 'Gitea.Repository.Contents')
+			->share('Gitea.Repository.Contents', [$this, 'getContents'], true);
+	}
+
+	/**
+	 * Get the Contents class
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Contents
+	 * @since 3.2.0
+	 */
+	public function getContents(Container $container): Contents
+	{
+		return new Contents(
+			$container->get('Gitea.Utilities.Http'),
+			$container->get('Gitea.Dynamic.Uri'),
+			$container->get('Gitea.Utilities.Response')
+		);
+	}

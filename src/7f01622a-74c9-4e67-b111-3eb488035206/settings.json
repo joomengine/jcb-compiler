@@ -1,0 +1,63 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "7f01622a-74c9-4e67-b111-3eb488035206",
+    "implements": null,
+    "load_selection": null,
+    "name": "Permission",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.Permission",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "5e3d856d-8174-4131-b4e9-9328066438e1",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "480d11b9-783b-45d5-bce1-b0c2fcaad08a",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "2528f2bb-6ebc-4d55-9a9d-23ef58534c1a",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "94f4939f-82cc-4196-802b-1346ce5c7f99",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "a601888d-12b6-427f-94ae-95004206e24e",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "e046b530-47fe-406f-b45a-b5eec8cbb238",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.Permission",
+    "description": "Permission Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

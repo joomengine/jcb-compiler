@@ -12,9 +12,9 @@
 namespace VDM\Joomla\Componentbuilder\Power;
 
 
+use VDM\Joomla\Componentbuilder\Power\Grep;
 use VDM\Joomla\Componentbuilder\Power\Database\Insert;
 use VDM\Joomla\Componentbuilder\Power\Database\Update;
-use VDM\Joomla\Componentbuilder\Power\Grep;
 use VDM\Joomla\Utilities\GuidHelper;
 
 

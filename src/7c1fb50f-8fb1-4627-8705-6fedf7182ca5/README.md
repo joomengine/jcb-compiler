@@ -6,18 +6,19 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Model (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Power**
+# final class Upsert (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Power\Model**
+> extends: **AbstractionModel**
 ```uml
 @startuml
-class Model << (F,LightGreen) >> #Green {
+class Upsert << (F,LightGreen) >> #RoyalBlue {
   + value(mixed $value, string $field, ...) : mixed
   # validateBefore(mixed $value, ?string $field = null, ...) : bool
   # validateAfter(mixed $value, ?string $field = null, ...) : bool
   # getTable() : string
 }
 
-note right of Model::value
+note right of Upsert::value
   Model the value
 Example: $this->value(value, 'field_key', 'table_name');
 
@@ -30,7 +31,7 @@ Example: $this->value(value, 'field_key', 'table_name');
     ?string $table = null
 end note
 
-note right of Model::validateBefore
+note right of Upsert::validateBefore
   Validate before the value is modelled
 
   since: 3.2.0
@@ -42,7 +43,7 @@ note right of Model::validateBefore
     ?string $table = null
 end note
 
-note right of Model::validateAfter
+note right of Upsert::validateAfter
   Validate after the value is modelled
 
   since: 3.2.0
@@ -54,7 +55,7 @@ note right of Model::validateAfter
     ?string $table = null
 end note
 
-note right of Model::getTable
+note right of Upsert::getTable
   Get the current active table
 
   since: 3.2.0

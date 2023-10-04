@@ -35,7 +35,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
  * 
  * @since 3.2.0
  */
-class Structuresingle
+final class Structuresingle
 {
 	/**
 	 * The new name
@@ -256,7 +256,7 @@ class Structuresingle
 			) !== false
 			&& (strpos($licenseChecker, 'gpl') !== false
 			|| strpos(
-				$licenseChecker, 'General public license'
+				$licenseChecker, 'general public license'
 			) !== false))
 		{
 			return true;
@@ -619,6 +619,5 @@ class Structuresingle
 			);
 		}
 	}
-
 }
 

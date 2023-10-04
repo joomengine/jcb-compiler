@@ -13,6 +13,7 @@
 class Adminview  #Gold {
   + register(Container $container) : void
   + getAdminviewData(Container $container) : AdminviewData
+  + getAdminviewPermission(Container $container) : Permission
 }
 
 note right of Adminview::register
@@ -27,6 +28,13 @@ note right of Adminview::getAdminviewData
 
   since: 3.2.0
   return: AdminviewData
+end note
+
+note right of Adminview::getAdminviewPermission
+  Get the Compiler Adminview Permission
+
+  since: 3.2.0
+  return: Permission
 end note
  
 @enduml

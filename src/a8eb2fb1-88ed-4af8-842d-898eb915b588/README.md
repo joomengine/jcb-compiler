@@ -12,23 +12,27 @@
 @startuml
 class Relations  #Gold {
   # Config $config
-  # Registry $registry
   # Language $language
   # Customcode $customcode
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  # ListJoin $listjoin
+  # ListHeadOverride $listheadoverride
+  # FieldRelations $fieldrelations
+  + __construct(Config $config, Language $language, ...)
   + set(object $item) : void
 }
 
 note right of Relations::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Language $language = null
-    ?Customcode $customcode = null
+    Config $config
+    Language $language
+    Customcode $customcode
+    ListJoin $listjoin
+    ListHeadOverride $listheadoverride
+    FieldRelations $fieldrelations
 end note
 
 note right of Relations::set

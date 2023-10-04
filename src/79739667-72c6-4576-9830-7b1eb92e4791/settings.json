@@ -1,0 +1,77 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "79739667-72c6-4576-9830-7b1eb92e4791",
+    "implements": [
+        "d44f3294-6b68-4d85-a617-15fb772b7d14"
+    ],
+    "load_selection": null,
+    "name": "FieldsetXML",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.FieldsetXML",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4ad7020e-39ab-49ba-977b-de6084944502",
+            "as": "Language"
+        },
+        "use_selection3": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection4": {
+            "use": "a85451d3-a5c5-446a-90ae-0cf715a16d94",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "4801f8b0-4a4a-4eda-8f0e-cf77f042c35e",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "961a2a2e-9f95-4b5f-b1c0-62ee783f9c66",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "e38a5276-6664-4bc6-8002-0562fcc248f8",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "f052eeef-5112-4efe-98c8-8c7db69dc2d1",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "a0f032db-2242-41df-8e4a-5e9e6f88201d",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "f6ba34a2-0cd7-4dc1-ab67-75e962a5045b",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.FieldsetXML",
+    "description": "Fieldset XML Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

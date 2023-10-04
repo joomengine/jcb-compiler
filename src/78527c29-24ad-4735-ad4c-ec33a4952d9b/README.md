@@ -15,7 +15,7 @@ interface Mappersingleinterface  #Lavender {
   + set(string $key, mixed $value) : void
   + get(string $key) : mixed
   + exist(string $key) : bool
-  + add(string $key, mixed $value) : void
+  + add(string $key, mixed $value, ...) : void
   + remove(string $key) : void
 }
 
@@ -52,6 +52,11 @@ note right of Mappersingleinterface::add
 
   since: 3.2.0
   return: void
+  
+  arguments:
+    string $key
+    mixed $value
+    bool $array = false
 end note
 
 note right of Mappersingleinterface::remove

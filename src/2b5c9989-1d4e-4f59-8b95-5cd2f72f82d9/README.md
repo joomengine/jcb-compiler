@@ -6,15 +6,16 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Mysql (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder\Update**
+# class UpdateMysql (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
+> extends: **MapperSingle**
 ```uml
 @startuml
-class Mysql  #Gold {
+class UpdateMysql  #Gold {
   # key(string $key) : string
 }
 
-note right of Mysql::key
+note right of UpdateMysql::key
   Model the key
 
   since: 3.2.0

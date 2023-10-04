@@ -12,21 +12,23 @@
 @startuml
 class Data  #Gold {
   # Config $config
-  # Registry $registry
-  # Aliasdata $alias
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  # LayoutData $layoutdata
+  # TemplateData $templatedata
+  # Aliasdata $aliasdata
+  + __construct(Config $config, LayoutData $layoutdata, ...)
   + set(string $content, string $view, ...) : bool
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Aliasdata $alias = null
+    Config $config
+    LayoutData $layoutdata
+    TemplateData $templatedata
+    Aliasdata $aliasdata
 end note
 
 note right of Data::set

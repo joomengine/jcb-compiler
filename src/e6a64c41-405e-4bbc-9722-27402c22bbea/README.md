@@ -17,6 +17,7 @@ class Fields  #Gold {
   # Customcode $customcode
   # Field $field
   # FieldName $fieldName
+  # FieldGroups $fieldGroups
   # UpdateSql $updateSql
   # CMSApplication $app
   + __construct(?Config $config = null, ?Registry $registry = null, ...)
@@ -35,6 +36,7 @@ note right of Fields::__construct
     ?Customcode $customcode = null
     ?Field $field = null
     ?FieldName $fieldName = null
+    ?FieldGroups $fieldGroups = null
     ?UpdateSql $updateSql = null
     ?CMSApplication $app = null
 end note

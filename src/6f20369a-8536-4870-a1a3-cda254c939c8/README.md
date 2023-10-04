@@ -8,6 +8,7 @@
 ```
 # class Paths (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: **MapperSingle**
 ```uml
 @startuml
 class Paths  #Gold {

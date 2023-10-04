@@ -18,18 +18,16 @@ class Readme  #Gold {
   - readmeBuilder($powers) : string
   - readmeModel(array $classes) : string
   - generateIndex(array $classes) : string
-  - generateDiagramBucket(array $classes) : string
   - defineTypeOrder() : array
   - sortClasses(array $classes, array $typeOrder) : void
   - compareNamespace(array $a, array $b) : int
   - compareType(array $a, array $b, ...) : int
   - compareName(array $a, array $b) : int
-  - generateNamespaceDiagram(string $current_namespace, string $diagrams) : string
-  - indexLinkPower(string $power) : string
-  - linkPowerRepo(string $power) : string
-  - linkPowerCode(string $power) : string
-  - linkPowerSettings(string $power) : string
-  - linkPowerGuid(string $power) : string
+  - indexLinkPower(array $power) : string
+  - linkPowerRepo(array $power) : string
+  - linkPowerCode(array $power) : string
+  - linkPowerSettings(array $power) : string
+  - linkPowerSPK(array $power) : string
 }
 
 note right of Readme::__construct
@@ -65,34 +63,28 @@ note right of Readme::generateIndex
   return: string
 end note
 
-note left of Readme::generateDiagramBucket
-  Generate the diagram bucket string for classes
-
-  return: string
-end note
-
-note right of Readme::defineTypeOrder
+note left of Readme::defineTypeOrder
   Define the order of types for sorting purposes
 
   since: 3.2.0
   return: array
 end note
 
-note left of Readme::sortClasses
+note right of Readme::sortClasses
   Sort the flattened array using a single sorting function
 
   since: 3.2.0
   return: void
 end note
 
-note right of Readme::compareNamespace
+note left of Readme::compareNamespace
   Compare the namespace of two classes
 
   since: 3.2.0
   return: int
 end note
 
-note left of Readme::compareType
+note right of Readme::compareType
   Compare the type of two classes
 
   since: 3.2.0
@@ -104,17 +96,11 @@ note left of Readme::compareType
     array $typeOrder
 end note
 
-note right of Readme::compareName
+note left of Readme::compareName
   Compare the name of two classes
 
   since: 3.2.0
   return: int
-end note
-
-note left of Readme::generateNamespaceDiagram
-  Generate a namespace diagram string
-
-  return: string
 end note
 
 note right of Readme::indexLinkPower
@@ -145,8 +131,8 @@ note left of Readme::linkPowerSettings
   return: string
 end note
 
-note right of Readme::linkPowerGuid
-  Build the Link with GUID text to the power in this repository
+note right of Readme::linkPowerSPK
+  Get the SuperPowerKey (SPK)
 
   since: 3.2.0
   return: string

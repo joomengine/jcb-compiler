@@ -39,7 +39,7 @@ final class Grep
 	 * @var    string
 	 * @since 3.2.0
 	 **/
-	public string $path;
+	public ?string $path;
 
 	/**
 	 * All approved paths
@@ -241,11 +241,6 @@ final class Grep
 	 */
 	private function init()
 	{
-		if (!Folder::exists($this->path))
-		{
-			$this->path = null;
-		}
-
 		if (is_array($this->paths) && $this->paths !== [])
 		{
 			foreach ($this->paths as $n => &$path)
@@ -273,15 +268,7 @@ final class Grep
 					unset($this->paths[$n]);
 				}
 			}
-
-			// if we still have paths
-			if ($this->paths !== [])
-			{
-				return;
-			}
 		}
-
-		$this->paths = null;
 	}
 
 	/**

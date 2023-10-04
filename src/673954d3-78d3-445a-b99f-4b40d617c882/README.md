@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Structuresingle (Details)
+# final class Structuresingle (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Structuresingle  #Gold {
+class Structuresingle << (F,LightGreen) >> #RoyalBlue {
   # string $newName
   # string $currentFullPath
   # string $packageFullPath

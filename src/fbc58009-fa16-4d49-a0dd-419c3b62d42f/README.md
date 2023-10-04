@@ -11,22 +11,22 @@
 ```uml
 @startuml
 interface Mapperdoubleinterface  #Lavender {
-  + isActive_(string $firstKey = null) : bool
-  + set_(string $firstKey, string $secondKey, ...) : void
-  + get_(string $firstKey, ?string $secondKey = null) : mixed
-  + exist_(string $firstKey, ?string $secondKey = null) : bool
-  + add_(string $firstKey, string $secondKey, ...) : void
-  + remove_(string $firstKey, ?string $secondKey = null) : void
+  + isActive(string $firstKey = null) : bool
+  + set(string $firstKey, string $secondKey, ...) : void
+  + get(string $firstKey, ?string $secondKey = null) : mixed
+  + exist(string $firstKey, ?string $secondKey = null) : bool
+  + add(string $firstKey, string $secondKey, ...) : void
+  + remove(string $firstKey, ?string $secondKey = null) : void
 }
 
-note right of Mapperdoubleinterface::isActive_
+note right of Mapperdoubleinterface::isActive
   Check if any values are set in the active array.
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Mapperdoubleinterface::set_
+note right of Mapperdoubleinterface::set
   Set dynamic content
 
   since: 3.2.0
@@ -38,21 +38,21 @@ note right of Mapperdoubleinterface::set_
     mixed $value
 end note
 
-note right of Mapperdoubleinterface::get_
+note right of Mapperdoubleinterface::get
   Get dynamic content
 
   since: 3.2.0
   return: mixed
 end note
 
-note right of Mapperdoubleinterface::exist_
+note right of Mapperdoubleinterface::exist
   Does keys exist
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Mapperdoubleinterface::add_
+note right of Mapperdoubleinterface::add
   Add dynamic content
 
   since: 3.2.0
@@ -62,9 +62,10 @@ note right of Mapperdoubleinterface::add_
     string $firstKey
     string $secondKey
     mixed $value
+    bool $array = false
 end note
 
-note right of Mapperdoubleinterface::remove_
+note right of Mapperdoubleinterface::remove
   Remove dynamic content
 
   since: 3.2.0

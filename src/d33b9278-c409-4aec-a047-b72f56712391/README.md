@@ -15,9 +15,9 @@ class Extractor  #Gold {
   + array $langMismatch
   + array $langMatch
   # Config $config
-  # Placeholder $placeholder
   # Language $language
-  + __construct(?Config $config = null, ?Language $language = null, ...)
+  # Placeholder $placeholder
+  + __construct(Config $config, Language $language, ...)
   + engine(string $content) : string
 }
 
@@ -27,9 +27,9 @@ note right of Extractor::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Language $language = null
-    ?Placeholder $placeholder = null
+    Config $config
+    Language $language
+    Placeholder $placeholder
 end note
 
 note right of Extractor::engine

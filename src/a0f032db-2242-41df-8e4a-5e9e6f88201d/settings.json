@@ -1,0 +1,47 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "a0f032db-2242-41df-8e4a-5e9e6f88201d",
+    "implements": null,
+    "load_selection": null,
+    "name": "Layout",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.Layout",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "66b7b5f8-60d6-427a-9f8c-84c11a3d6780",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "d645881c-ae8c-4828-a217-6bad98cd3b44",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a90a2495-9c26-446c-867e-9ee8f42fb6af",
+            "as": "BuilderLayout"
+        },
+        "use_selection4": {
+            "use": "9cdff2af-bd1b-452f-810e-d034b9720d2a",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "0f141480-afe6-41fb-996c-2a4e566a2f0d",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.Layout",
+    "description": "Layout Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

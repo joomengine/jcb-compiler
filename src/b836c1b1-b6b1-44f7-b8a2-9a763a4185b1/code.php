@@ -70,6 +70,14 @@ class Power implements PowerInterface
 	public array $superpowers = [];
 
 	/**
+	 * Old super powers found in the local repos
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 **/
+	public array $old_superpowers = [];
+
+	/**
 	 * The url to the power, if there is an error.
 	 *
 	 * @var   string
@@ -668,12 +676,12 @@ class Power implements PowerInterface
 								{
 									$as = trim(trim($namespace_as[1], ';'));
 								}
-								$namespace = $this->getCleanNamespace($namespace_as[0], false);
+								$namespace = $this->getCleanNamespace($namespace_as[0]);
 							}
 							else
 							{
 								// trim possible use or ; added to the namespace
-								$namespace = $this->getCleanNamespace($_namespace['use'], false);
+								$namespace = $this->getCleanNamespace($_namespace['use']);
 							}
 
 							// check if still valid
@@ -841,10 +849,10 @@ class Power implements PowerInterface
 	 * @return string
 	 * @since 3.2.0
 	 */
-	private function getCleanNamespace(string $namespace, bool $removeNumbers = true): string
+	private function getCleanNamespace(string $namespace): string
 	{
 		// trim possible (use) or (;) or (starting or ending \) added to the namespace
-		return NamespaceHelper::safe(str_replace(['use ', ';'], '', $namespace), $removeNumbers);
+		return NamespaceHelper::safe(str_replace(['use ', ';'], '', $namespace));
 	}
 
 	/**
@@ -994,6 +1002,11 @@ class Power implements PowerInterface
 				$guiMapper
 			);
 		}
+		else
+		{
+			$this->active[$guid]->unchanged_main_class_code = '';
+			$this->active[$guid]->main_class_code = '';
+		}
 	}
 
 	/**
@@ -1030,6 +1043,9 @@ class Power implements PowerInterface
 					// set the repo path
 					$repo = $global_path . '/' . $path;
 
+					// set SuperPowerKey (spk)
+					$spk = 'Super_'.'_' . str_replace('-', '_', $guid) . '_'.'_Power';
+
 					// set the global super power
 					$this->superpowers[$repo][$guid] = [
 						'name' => $this->active[$guid]->code_name,
@@ -1039,6 +1055,7 @@ class Power implements PowerInterface
 						'power' => 'src/' . $guid . '/code.power',
 						'settings' => 'src/' . $guid . '/settings.json',
 						'path' => 'src/' . $guid,
+						'spk' => $spk,
 						'guid' => $guid
 					];
 

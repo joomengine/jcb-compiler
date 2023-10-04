@@ -11,7 +11,7 @@
 ```uml
 @startuml
 class TypeName  #Gold {
-  + get(object $field) : string
+  + get(array $field) : string
 }
 
 note right of TypeName::get

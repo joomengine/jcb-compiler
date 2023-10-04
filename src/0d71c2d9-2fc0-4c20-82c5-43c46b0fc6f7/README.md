@@ -12,8 +12,11 @@
 @startuml
 class Loader  #Gold {
   # Config $config
-  # Registry $registry
-  + __construct(?Config $config = null, ?Registry $registry = null)
+  # FootableScripts $footablescripts
+  # GoogleChart $googlechart
+  # GetModule $getmodule
+  # UikitComp $uikitcomp
+  + __construct(Config $config, FootableScripts $footablescripts, ...)
   + set(string $key, string $content, ...) : void
   + uikit(string $key, string $content) : void
   # getFootableScripts(string $content) : bool
@@ -22,9 +25,16 @@ class Loader  #Gold {
 }
 
 note right of Loader::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
+  
+  arguments:
+    Config $config
+    FootableScripts $footablescripts
+    GoogleChart $googlechart
+    GetModule $getmodule
+    UikitComp $uikitcomp
 end note
 
 note right of Loader::set

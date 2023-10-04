@@ -15,6 +15,10 @@
         "use_selection0": {
             "use": "cef2815b-f72b-402a-b769-f028f676692d",
             "as": "AdminviewData"
+        },
+        "use_selection1": {
+            "use": "a85451d3-a5c5-446a-90ae-0cf715a16d94",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Adminview",

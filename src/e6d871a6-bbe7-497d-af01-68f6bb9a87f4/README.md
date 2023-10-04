@@ -16,6 +16,7 @@ class Counter  #Gold {
   + int $page
   + int $line
   + int $field
+  + int $accessSize
   # int $seconds
   # float $actualSeconds
   # int $folderSeconds

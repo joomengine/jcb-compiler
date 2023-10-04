@@ -8,7 +8,7 @@
     "name": "Component",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Component",
-    "type": "class",
+    "type": "final class",
     "use_selection": {
         "use_selection0": {
             "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",

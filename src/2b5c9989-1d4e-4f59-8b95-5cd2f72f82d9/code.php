@@ -9,7 +9,7 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Builder\Update;
+namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Interfaces\Mappersingleinterface;
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperSingle;
  * 
  * @since 3.2.0
  */
-class Mysql extends MapperSingle implements Mappersingleinterface
+class UpdateMysql extends MapperSingle implements Mappersingleinterface
 {
 	/**
 	 * Model the key

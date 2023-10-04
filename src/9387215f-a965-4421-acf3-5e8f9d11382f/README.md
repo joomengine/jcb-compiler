@@ -11,23 +11,23 @@
 ```uml
 @startuml
 class Name  #Gold {
-  # Registry $registry
   # array $unique
   # Placeholder $placeholder
-  # UniqueName $uniqueName
-  + __construct(?Placeholder $placeholder = null, ?UniqueName $uniqueName = null, ...)
+  # UniqueName $uniquename
+  # CategoryOtherName $categoryothername
+  + __construct(Placeholder $placeholder, UniqueName $uniquename, ...)
   + get(array $field, ?string $listViewName = null, ...) : string
 }
 
 note right of Name::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Placeholder $placeholder = null
-    ?UniqueName $uniqueName = null
-    ?Registry $registry = null
+    Placeholder $placeholder
+    UniqueName $uniquename
+    CategoryOtherName $categoryothername
 end note
 
 note right of Name::get

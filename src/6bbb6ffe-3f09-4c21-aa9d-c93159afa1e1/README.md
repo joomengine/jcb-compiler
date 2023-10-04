@@ -16,6 +16,7 @@ class Folder  #Gold {
   + __construct(?Counter $counter = null, ?File $file = null)
   + create(string $path, bool $addHtml = true) : void
   + remove(string $path, ?array $ignore = null) : bool
+  # shouldIgnore(string $basePath, string $filePath, ...) : bool
 }
 
 note right of Folder::__construct
@@ -36,6 +37,18 @@ note right of Folder::remove
 
   since: 3.2.0
   return: bool
+end note
+
+note right of Folder::shouldIgnore
+  Check if the current path should be ignored.
+
+  since: 3.2.0
+  return: bool
+  
+  arguments:
+    string $basePath
+    string $filePath
+    ?array $ignore = null
 end note
  
 @enduml

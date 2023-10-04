@@ -51,6 +51,10 @@
         "use_selection9": {
             "use": "1efdded5-d6c8-452c-8f37-0374483a7b3f",
             "as": "default"
+        },
+        "use_selection10": {
+            "use": "f6ba34a2-0cd7-4dc1-ab67-75e962a5045b",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Utilities",

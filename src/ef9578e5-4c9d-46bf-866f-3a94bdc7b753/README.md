@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Data (Details)
+# final class Data (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Data  #Gold {
+class Data << (F,LightGreen) >> #RoyalBlue {
   # Config $config
   # EventInterface $event
   # Placeholder $placeholder

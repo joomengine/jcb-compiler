@@ -10,16 +10,16 @@
     "system_name": "JCB.Power.Super",
     "type": "final class",
     "use_selection": {
+        "use_selection2": {
+            "use": "6784dd52-0909-451a-a872-9a942a023c68",
+            "as": "default"
+        },
         "use_selection0": {
             "use": "380bb7a3-cdcc-4336-a699-5070cbf521a5",
             "as": "default"
         },
         "use_selection1": {
             "use": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
-            "as": "default"
-        },
-        "use_selection2": {
-            "use": "6784dd52-0909-451a-a872-9a942a023c68",
             "as": "default"
         },
         "use_selection3": {

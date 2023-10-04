@@ -23,2415 +23,365 @@ This repository contains an index (see below) of all the approved powers within 
 
 # Index of powers
 
+- **Namespace**: [VDM\Joomla\Componentbuilder\Abstraction](#vdm-joomla-componentbuilder-abstraction)
+
+  - **abstract class BaseConfig** | [Details](src/9769f3b2-17bf-4f20-b54b-3a4ebe572b36) | [Code](src/9769f3b2-17bf-4f20-b54b-3a4ebe572b36/code.php) | [Settings](src/9769f3b2-17bf-4f20-b54b-3a4ebe572b36/settings.json) | Super__9769f3b2_17bf_4f20_b54b_3a4ebe572b36__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler](#vdm-joomla-componentbuilder-compiler)
 
-  - **abstract class Factory** | [Details](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac) | [Code](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/code.php) | [Settings](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/settings.json) | [d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac)
-  - **class Component** | [Details](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0) | [Code](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/code.php) | [Settings](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/settings.json) | [e2472b22-a329-44d8-b4a2-ae3ba99e17a0](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0)
-  - **class Config** | [Details](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc) | [Code](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/code.php) | [Settings](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/settings.json) | [fa4bf18e-301e-42e3-91fb-6e0096c07adc](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc)
-  - **class Content** | [Details](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75) | [Code](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75/code.php) | [Settings](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75/settings.json) | [adfbe68a-6d22-43e5-aee8-2787e8c47e75](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75)
-  - **class Customcode** | [Details](src/313b43c4-98c3-4f62-9177-2d73ec8eba31) | [Code](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/code.php) | [Settings](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/settings.json) | [313b43c4-98c3-4f62-9177-2d73ec8eba31](src/313b43c4-98c3-4f62-9177-2d73ec8eba31)
-  - **class Field** | [Details](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75) | [Code](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/code.php) | [Settings](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/settings.json) | [d7ba2d5d-10b6-470d-978d-9f91ea65ee75](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75)
-  - **class Language** | [Details](src/8eee7df5-2775-41a9-9372-c46c5939a252) | [Code](src/8eee7df5-2775-41a9-9372-c46c5939a252/code.php) | [Settings](src/8eee7df5-2775-41a9-9372-c46c5939a252/settings.json) | [8eee7df5-2775-41a9-9372-c46c5939a252](src/8eee7df5-2775-41a9-9372-c46c5939a252)
-  - **class Placeholder** | [Details](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c) | [Code](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/code.php) | [Settings](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/settings.json) | [06453ada-e370-49f0-b262-e3f5a8ed0c2c](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c)
-  - **class Power** | [Details](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1) | [Code](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/code.php) | [Settings](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/settings.json) | [b836c1b1-b6b1-44f7-b8a2-9a763a4185b1](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1)
-  - **class Registry** | [Details](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6) | [Code](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/code.php) | [Settings](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/settings.json) | [e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6)
+  - **abstract class Factory** | [Details](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac) | [Code](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/code.php) | [Settings](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/settings.json) | Super__d910d8b8_4c23_4f3e_8cda_438f2d2bd7ac__Power
+  - **final class Component** | [Details](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0) | [Code](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/code.php) | [Settings](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/settings.json) | Super__e2472b22_a329_44d8_b4a2_ae3ba99e17a0__Power
+  - **class Config** | [Details](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc) | [Code](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/code.php) | [Settings](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/settings.json) | Super__fa4bf18e_301e_42e3_91fb_6e0096c07adc__Power
+  - **class Content** | [Details](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75) | [Code](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75/code.php) | [Settings](src/adfbe68a-6d22-43e5-aee8-2787e8c47e75/settings.json) | Super__adfbe68a_6d22_43e5_aee8_2787e8c47e75__Power
+  - **class Customcode** | [Details](src/313b43c4-98c3-4f62-9177-2d73ec8eba31) | [Code](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/code.php) | [Settings](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/settings.json) | Super__313b43c4_98c3_4f62_9177_2d73ec8eba31__Power
+  - **class Field** | [Details](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75) | [Code](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/code.php) | [Settings](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/settings.json) | Super__d7ba2d5d_10b6_470d_978d_9f91ea65ee75__Power
+  - **class Language** | [Details](src/8eee7df5-2775-41a9-9372-c46c5939a252) | [Code](src/8eee7df5-2775-41a9-9372-c46c5939a252/code.php) | [Settings](src/8eee7df5-2775-41a9-9372-c46c5939a252/settings.json) | Super__8eee7df5_2775_41a9_9372_c46c5939a252__Power
+  - **class Placeholder** | [Details](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c) | [Code](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/code.php) | [Settings](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/settings.json) | Super__06453ada_e370_49f0_b262_e3f5a8ed0c2c__Power
+  - **class Power** | [Details](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1) | [Code](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/code.php) | [Settings](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/settings.json) | Super__b836c1b1_b6b1_44f7_b8a2_9a763a4185b1__Power
+  - **class Registry** | [Details](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6) | [Code](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/code.php) | [Settings](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/settings.json) | Super__e5d9804f_0eb0_4ee9_b406_ad4e8cdbc1f6__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Interfaces](#vdm-joomla-componentbuilder-interfaces)
 
-  - **interface Cryptinterface** | [Details](src/81de8f57-dd9c-4a17-964f-848cd4a0743b) | [Code](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/code.php) | [Settings](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/settings.json) | [81de8f57-dd9c-4a17-964f-848cd4a0743b](src/81de8f57-dd9c-4a17-964f-848cd4a0743b)
-  - **interface FactoryInterface** | [Details](src/caf33c5d-858c-4f9a-894f-ab302ec5445a) | [Code](src/caf33c5d-858c-4f9a-894f-ab302ec5445a/code.php) | [Settings](src/caf33c5d-858c-4f9a-894f-ab302ec5445a/settings.json) | [caf33c5d-858c-4f9a-894f-ab302ec5445a](src/caf33c5d-858c-4f9a-894f-ab302ec5445a)
-  - **interface InsertInterface** | [Details](src/ad12ca1c-d3ce-4e7f-88c5-c6c92bdedc48) | [Code](src/ad12ca1c-d3ce-4e7f-88c5-c6c92bdedc48/code.php) | [Settings](src/ad12ca1c-d3ce-4e7f-88c5-c6c92bdedc48/settings.json) | [ad12ca1c-d3ce-4e7f-88c5-c6c92bdedc48](src/ad12ca1c-d3ce-4e7f-88c5-c6c92bdedc48)
-  - **interface LoadInterface** | [Details](src/2ad31f74-f579-499d-b98b-c4f54fd615dd) | [Code](src/2ad31f74-f579-499d-b98b-c4f54fd615dd/code.php) | [Settings](src/2ad31f74-f579-499d-b98b-c4f54fd615dd/settings.json) | [2ad31f74-f579-499d-b98b-c4f54fd615dd](src/2ad31f74-f579-499d-b98b-c4f54fd615dd)
-  - **interface Mapperdoubleinterface** | [Details](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f) | [Code](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/code.php) | [Settings](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/settings.json) | [fbc58009-fa16-4d49-a0dd-419c3b62d42f](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f)
-  - **interface Mappersingleinterface** | [Details](src/78527c29-24ad-4735-ad4c-ec33a4952d9b) | [Code](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/code.php) | [Settings](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/settings.json) | [78527c29-24ad-4735-ad4c-ec33a4952d9b](src/78527c29-24ad-4735-ad4c-ec33a4952d9b)
-  - **interface Serverinterface** | [Details](src/86ac0760-26f5-4746-9c7f-ce77860f80f8) | [Code](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/code.php) | [Settings](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/settings.json) | [86ac0760-26f5-4746-9c7f-ce77860f80f8](src/86ac0760-26f5-4746-9c7f-ce77860f80f8)
-  - **interface Tableinterface** | [Details](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf) | [Code](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf/code.php) | [Settings](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf/settings.json) | [2da6d6c4-eb29-4d69-8bc2-36d96e916adf](src/2da6d6c4-eb29-4d69-8bc2-36d96e916adf)
+  - **interface Cryptinterface** | [Details](src/81de8f57-dd9c-4a17-964f-848cd4a0743b) | [Code](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/code.php) | [Settings](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/settings.json) | Super__81de8f57_dd9c_4a17_964f_848cd4a0743b__Power
+  - **interface Mapperdoubleinterface** | [Details](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f) | [Code](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/code.php) | [Settings](src/fbc58009-fa16-4d49-a0dd-419c3b62d42f/settings.json) | Super__fbc58009_fa16_4d49_a0dd_419c3b62d42f__Power
+  - **interface Mappersingleinterface** | [Details](src/78527c29-24ad-4735-ad4c-ec33a4952d9b) | [Code](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/code.php) | [Settings](src/78527c29-24ad-4735-ad4c-ec33a4952d9b/settings.json) | Super__78527c29_24ad_4735_ad4c_ec33a4952d9b__Power
+  - **interface Serverinterface** | [Details](src/86ac0760-26f5-4746-9c7f-ce77860f80f8) | [Code](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/code.php) | [Settings](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/settings.json) | Super__86ac0760_26f5_4746_9c7f_ce77860f80f8__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power](#vdm-joomla-componentbuilder-power)
 
-  - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | [6784dd52-0909-451a-a872-9a942a023c68](src/6784dd52-0909-451a-a872-9a942a023c68)
-  - **final class Model** | [Details](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5) | [Code](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/code.php) | [Settings](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/settings.json) | [7c1fb50f-8fb1-4627-8705-6fedf7182ca5](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5)
-  - **final class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | [3ab0eba9-f37b-4b37-aec1-2e78067f2aff](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff)
+  - **abstract class Factory** | [Details](src/a5734b9e-a72d-494c-bc72-c3bc7506015f) | [Code](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/code.php) | [Settings](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/settings.json) | Super__a5734b9e_a72d_494c_bc72_c3bc7506015f__Power
+  - **final class Generator** | [Details](src/505801ac-d3e2-44c6-a300-9a57a96170c6) | [Code](src/505801ac-d3e2-44c6-a300-9a57a96170c6/code.php) | [Settings](src/505801ac-d3e2-44c6-a300-9a57a96170c6/settings.json) | Super__505801ac_d3e2_44c6_a300_9a57a96170c6__Power
+  - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | Super__6784dd52_0909_451a_a872_9a942a023c68__Power
+  - **final class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | Super__3ab0eba9_f37b_4b37_aec1_2e78067f2aff__Power
+  - **class Config** | [Details](src/be4ccfae-65a9-401e-bdbe-637d8c226954) | [Code](src/be4ccfae-65a9-401e-bdbe-637d8c226954/code.php) | [Settings](src/be4ccfae-65a9-401e-bdbe-637d8c226954/settings.json) | Super__be4ccfae_65a9_401e_bdbe_637d8c226954__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Utilities](#vdm-joomla-componentbuilder-utilities)
 
-  - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | [e0c8c931-52a0-4171-9909-e8769505bb1f](src/e0c8c931-52a0-4171-9909-e8769505bb1f)
+  - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | Super__e0c8c931_52a0_4171_9909_e8769505bb1f__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Adminview](#vdm-joomla-componentbuilder-compiler-adminview)
 
-  - **class Data** | [Details](src/cef2815b-f72b-402a-b769-f028f676692d) | [Code](src/cef2815b-f72b-402a-b769-f028f676692d/code.php) | [Settings](src/cef2815b-f72b-402a-b769-f028f676692d/settings.json) | [cef2815b-f72b-402a-b769-f028f676692d](src/cef2815b-f72b-402a-b769-f028f676692d)
+  - **final class Permission** | [Details](src/a85451d3-a5c5-446a-90ae-0cf715a16d94) | [Code](src/a85451d3-a5c5-446a-90ae-0cf715a16d94/code.php) | [Settings](src/a85451d3-a5c5-446a-90ae-0cf715a16d94/settings.json) | Super__a85451d3_a5c5_446a_90ae_0cf715a16d94__Power
+  - **class Data** | [Details](src/cef2815b-f72b-402a-b769-f028f676692d) | [Code](src/cef2815b-f72b-402a-b769-f028f676692d/code.php) | [Settings](src/cef2815b-f72b-402a-b769-f028f676692d/settings.json) | Super__cef2815b_f72b_402a_b769_f028f676692d__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Alias](#vdm-joomla-componentbuilder-compiler-alias)
 
-  - **class Data** | [Details](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c) | [Code](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c/code.php) | [Settings](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c/settings.json) | [f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c)
+  - **class Data** | [Details](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c) | [Code](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c/code.php) | [Settings](src/f05ac28d-44f4-4e6d-a1be-5c8ae6baf69c/settings.json) | Super__f05ac28d_44f4_4e6d_a1be_5c8ae6baf69c__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Builder](#vdm-joomla-componentbuilder-compiler-builder)
+
+  - **final class AccessSwitch** | [Details](src/e38a5276-6664-4bc6-8002-0562fcc248f8) | [Code](src/e38a5276-6664-4bc6-8002-0562fcc248f8/code.php) | [Settings](src/e38a5276-6664-4bc6-8002-0562fcc248f8/settings.json) | Super__e38a5276_6664_4bc6_8002_0562fcc248f8__Power
+  - **final class AccessSwitchList** | [Details](src/81212121-ad5c-43c5-b046-f2650864f690) | [Code](src/81212121-ad5c-43c5-b046-f2650864f690/code.php) | [Settings](src/81212121-ad5c-43c5-b046-f2650864f690/settings.json) | Super__81212121_ad5c_43c5_b046_f2650864f690__Power
+  - **final class AdminFilterType** | [Details](src/9481caa2-6d04-4598-8320-543a93927243) | [Code](src/9481caa2-6d04-4598-8320-543a93927243/code.php) | [Settings](src/9481caa2-6d04-4598-8320-543a93927243/settings.json) | Super__9481caa2_6d04_4598_8320_543a93927243__Power
+  - **final class Alias** | [Details](src/fe87df7f-b65f-4778-8875-6122ab6b025f) | [Code](src/fe87df7f-b65f-4778-8875-6122ab6b025f/code.php) | [Settings](src/fe87df7f-b65f-4778-8875-6122ab6b025f/settings.json) | Super__fe87df7f_b65f_4778_8875_6122ab6b025f__Power
+  - **final class BaseSixFour** | [Details](src/b8b474d4-30e3-4b5a-9988-3adb3450998c) | [Code](src/b8b474d4-30e3-4b5a-9988-3adb3450998c/code.php) | [Settings](src/b8b474d4-30e3-4b5a-9988-3adb3450998c/settings.json) | Super__b8b474d4_30e3_4b5a_9988_3adb3450998c__Power
+  - **final class Category** | [Details](src/007177eb-d39d-4093-8840-07a38811c502) | [Code](src/007177eb-d39d-4093-8840-07a38811c502/code.php) | [Settings](src/007177eb-d39d-4093-8840-07a38811c502/settings.json) | Super__007177eb_d39d_4093_8840_07a38811c502__Power
+  - **final class CategoryCode** | [Details](src/b24f5184-7e7c-448d-9475-ff3f998f70c3) | [Code](src/b24f5184-7e7c-448d-9475-ff3f998f70c3/code.php) | [Settings](src/b24f5184-7e7c-448d-9475-ff3f998f70c3/settings.json) | Super__b24f5184_7e7c_448d_9475_ff3f998f70c3__Power
+  - **final class CategoryOtherName** | [Details](src/a1e551a9-8369-48c9-a076-4e5beb65e0df) | [Code](src/a1e551a9-8369-48c9-a076-4e5beb65e0df/code.php) | [Settings](src/a1e551a9-8369-48c9-a076-4e5beb65e0df/settings.json) | Super__a1e551a9_8369_48c9_a076_4e5beb65e0df__Power
+  - **final class CheckBox** | [Details](src/8561f1f6-96c7-4e54-8869-0132116d57ce) | [Code](src/8561f1f6-96c7-4e54-8869-0132116d57ce/code.php) | [Settings](src/8561f1f6-96c7-4e54-8869-0132116d57ce/settings.json) | Super__8561f1f6_96c7_4e54_8869_0132116d57ce__Power
+  - **final class ComponentFields** | [Details](src/3230dd65-6590-4043-9bb8-bebd6d8224b2) | [Code](src/3230dd65-6590-4043-9bb8-bebd6d8224b2/code.php) | [Settings](src/3230dd65-6590-4043-9bb8-bebd6d8224b2/settings.json) | Super__3230dd65_6590_4043_9bb8_bebd6d8224b2__Power
+  - **final class CustomAlias** | [Details](src/9d74d613-5ef7-4cf1-9f12-64f0a8e19806) | [Code](src/9d74d613-5ef7-4cf1-9f12-64f0a8e19806/code.php) | [Settings](src/9d74d613-5ef7-4cf1-9f12-64f0a8e19806/settings.json) | Super__9d74d613_5ef7_4cf1_9f12_64f0a8e19806__Power
+  - **final class CustomField** | [Details](src/87d1da23-08d6-4fbf-bd0d-b746da240b8a) | [Code](src/87d1da23-08d6-4fbf-bd0d-b746da240b8a/code.php) | [Settings](src/87d1da23-08d6-4fbf-bd0d-b746da240b8a/settings.json) | Super__87d1da23_08d6_4fbf_bd0d_b746da240b8a__Power
+  - **final class CustomFieldLinks** | [Details](src/a4857c60-680c-4e0c-ae8f-9250a7b5e317) | [Code](src/a4857c60-680c-4e0c-ae8f-9250a7b5e317/code.php) | [Settings](src/a4857c60-680c-4e0c-ae8f-9250a7b5e317/settings.json) | Super__a4857c60_680c_4e0c_ae8f_9250a7b5e317__Power
+  - **final class CustomList** | [Details](src/202f748a-516b-4782-962e-ac9725c3cac4) | [Code](src/202f748a-516b-4782-962e-ac9725c3cac4/code.php) | [Settings](src/202f748a-516b-4782-962e-ac9725c3cac4/settings.json) | Super__202f748a_516b_4782_962e_ac9725c3cac4__Power
+  - **final class CustomTabs** | [Details](src/9551b683-67b6-4367-bb14-4b016def37e3) | [Code](src/9551b683-67b6-4367-bb14-4b016def37e3/code.php) | [Settings](src/9551b683-67b6-4367-bb14-4b016def37e3/settings.json) | Super__9551b683_67b6_4367_bb14_4b016def37e3__Power
+  - **final class DatabaseKeys** | [Details](src/0d8db719-39a6-48b4-85a6-2f97e784e588) | [Code](src/0d8db719-39a6-48b4-85a6-2f97e784e588/code.php) | [Settings](src/0d8db719-39a6-48b4-85a6-2f97e784e588/settings.json) | Super__0d8db719_39a6_48b4_85a6_2f97e784e588__Power
+  - **final class DatabaseTables** | [Details](src/b3c36de1-9b18-4ea8-8383-6ab8f0e33996) | [Code](src/b3c36de1-9b18-4ea8-8383-6ab8f0e33996/code.php) | [Settings](src/b3c36de1-9b18-4ea8-8383-6ab8f0e33996/settings.json) | Super__b3c36de1_9b18_4ea8_8383_6ab8f0e33996__Power
+  - **final class DatabaseUniqueGuid** | [Details](src/58b7f907-4195-4ca3-886c-17877be59887) | [Code](src/58b7f907-4195-4ca3-886c-17877be59887/code.php) | [Settings](src/58b7f907-4195-4ca3-886c-17877be59887/settings.json) | Super__58b7f907_4195_4ca3_886c_17877be59887__Power
+  - **final class DatabaseUniqueKeys** | [Details](src/ce0899a9-6271-4fc4-800a-697c122bb112) | [Code](src/ce0899a9-6271-4fc4-800a-697c122bb112/code.php) | [Settings](src/ce0899a9-6271-4fc4-800a-697c122bb112/settings.json) | Super__ce0899a9_6271_4fc4_800a_697c122bb112__Power
+  - **final class DoNotEscape** | [Details](src/0d9d3294-0bed-4c44-b1a1-e172f62cafb2) | [Code](src/0d9d3294-0bed-4c44-b1a1-e172f62cafb2/code.php) | [Settings](src/0d9d3294-0bed-4c44-b1a1-e172f62cafb2/settings.json) | Super__0d9d3294_0bed_4c44_b1a1_e172f62cafb2__Power
+  - **final class DynamicFields** | [Details](src/1ae9a8e8-59f7-4844-a08d-9a4dce4be076) | [Code](src/1ae9a8e8-59f7-4844-a08d-9a4dce4be076/code.php) | [Settings](src/1ae9a8e8-59f7-4844-a08d-9a4dce4be076/settings.json) | Super__1ae9a8e8_59f7_4844_a08d_9a4dce4be076__Power
+  - **final class ExtensionCustomFields** | [Details](src/e9b6b06b-f600-4f9d-984d-79c70ae7ae92) | [Code](src/e9b6b06b-f600-4f9d-984d-79c70ae7ae92/code.php) | [Settings](src/e9b6b06b-f600-4f9d-984d-79c70ae7ae92/settings.json) | Super__e9b6b06b_f600_4f9d_984d_79c70ae7ae92__Power
+  - **final class FieldGroupControl** | [Details](src/d5530adf-c809-45a9-87fc-7cecd3d972d8) | [Code](src/d5530adf-c809-45a9-87fc-7cecd3d972d8/code.php) | [Settings](src/d5530adf-c809-45a9-87fc-7cecd3d972d8/settings.json) | Super__d5530adf_c809_45a9_87fc_7cecd3d972d8__Power
+  - **final class FieldNames** | [Details](src/961a2a2e-9f95-4b5f-b1c0-62ee783f9c66) | [Code](src/961a2a2e-9f95-4b5f-b1c0-62ee783f9c66/code.php) | [Settings](src/961a2a2e-9f95-4b5f-b1c0-62ee783f9c66/settings.json) | Super__961a2a2e_9f95_4b5f_b1c0_62ee783f9c66__Power
+  - **final class FieldRelations** | [Details](src/a090a472-eb3d-4086-a6d5-4215e1b1851f) | [Code](src/a090a472-eb3d-4086-a6d5-4215e1b1851f/code.php) | [Settings](src/a090a472-eb3d-4086-a6d5-4215e1b1851f/settings.json) | Super__a090a472_eb3d_4086_a6d5_4215e1b1851f__Power
+  - **final class Filter** | [Details](src/e4e65c5b-00ec-439c-96bf-3153c3a73398) | [Code](src/e4e65c5b-00ec-439c-96bf-3153c3a73398/code.php) | [Settings](src/e4e65c5b-00ec-439c-96bf-3153c3a73398/settings.json) | Super__e4e65c5b_00ec_439c_96bf_3153c3a73398__Power
+  - **final class FootableScripts** | [Details](src/dba0776e-e582-4f73-af3e-e7ed17bc34b3) | [Code](src/dba0776e-e582-4f73-af3e-e7ed17bc34b3/code.php) | [Settings](src/dba0776e-e582-4f73-af3e-e7ed17bc34b3/settings.json) | Super__dba0776e_e582_4f73_af3e_e7ed17bc34b3__Power
+  - **final class GetAsLookup** | [Details](src/8f46f85d-7921-44e9-a40e-dc4f01c5d43a) | [Code](src/8f46f85d-7921-44e9-a40e-dc4f01c5d43a/code.php) | [Settings](src/8f46f85d-7921-44e9-a40e-dc4f01c5d43a/settings.json) | Super__8f46f85d_7921_44e9_a40e_dc4f01c5d43a__Power
+  - **final class GetModule** | [Details](src/c7b6f0d5-ec47-4166-915c-e78d49b4fb63) | [Code](src/c7b6f0d5-ec47-4166-915c-e78d49b4fb63/code.php) | [Settings](src/c7b6f0d5-ec47-4166-915c-e78d49b4fb63/settings.json) | Super__c7b6f0d5_ec47_4166_915c_e78d49b4fb63__Power
+  - **final class GoogleChart** | [Details](src/507ab90f-7d64-4697-9815-d96f5d1d1185) | [Code](src/507ab90f-7d64-4697-9815-d96f5d1d1185/code.php) | [Settings](src/507ab90f-7d64-4697-9815-d96f5d1d1185/settings.json) | Super__507ab90f_7d64_4697_9815_d96f5d1d1185__Power
+  - **final class HasPermissions** | [Details](src/e54965e7-34fd-481e-b40c-4da089afec5a) | [Code](src/e54965e7-34fd-481e-b40c-4da089afec5a/code.php) | [Settings](src/e54965e7-34fd-481e-b40c-4da089afec5a/settings.json) | Super__e54965e7_34fd_481e_b40c_4da089afec5a__Power
+  - **final class HiddenFields** | [Details](src/0b45357f-b077-4337-92f3-65c1e19d36cd) | [Code](src/0b45357f-b077-4337-92f3-65c1e19d36cd/code.php) | [Settings](src/0b45357f-b077-4337-92f3-65c1e19d36cd/settings.json) | Super__0b45357f_b077_4337_92f3_65c1e19d36cd__Power
+  - **final class History** | [Details](src/2cb33994-052e-42dd-adbc-3ea9f932816f) | [Code](src/2cb33994-052e-42dd-adbc-3ea9f932816f/code.php) | [Settings](src/2cb33994-052e-42dd-adbc-3ea9f932816f/settings.json) | Super__2cb33994_052e_42dd_adbc_3ea9f932816f__Power
+  - **final class IntegerFields** | [Details](src/952423ba-015a-4104-89a4-030695aa4d15) | [Code](src/952423ba-015a-4104-89a4-030695aa4d15/code.php) | [Settings](src/952423ba-015a-4104-89a4-030695aa4d15/settings.json) | Super__952423ba_015a_4104_89a4_030695aa4d15__Power
+  - **final class ItemsMethodEximportString** | [Details](src/1f086665-c007-4085-b363-3a118659ff1b) | [Code](src/1f086665-c007-4085-b363-3a118659ff1b/code.php) | [Settings](src/1f086665-c007-4085-b363-3a118659ff1b/settings.json) | Super__1f086665_c007_4085_b363_3a118659ff1b__Power
+  - **final class ItemsMethodListString** | [Details](src/972c4de9-6f6f-463b-8eea-cc7cbdb96aba) | [Code](src/972c4de9-6f6f-463b-8eea-cc7cbdb96aba/code.php) | [Settings](src/972c4de9-6f6f-463b-8eea-cc7cbdb96aba/settings.json) | Super__972c4de9_6f6f_463b_8eea_cc7cbdb96aba__Power
+  - **final class JsonItem** | [Details](src/45652787-9085-4c67-914f-0da25ae62646) | [Code](src/45652787-9085-4c67-914f-0da25ae62646/code.php) | [Settings](src/45652787-9085-4c67-914f-0da25ae62646/settings.json) | Super__45652787_9085_4c67_914f_0da25ae62646__Power
+  - **final class JsonItemArray** | [Details](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb) | [Code](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb/code.php) | [Settings](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb/settings.json) | Super__6b386f2e_3eb1_4f60_81af_a90c8da1ffeb__Power
+  - **final class JsonString** | [Details](src/bb26cf63-69a5-4c43-b2df-43284c9d907d) | [Code](src/bb26cf63-69a5-4c43-b2df-43284c9d907d/code.php) | [Settings](src/bb26cf63-69a5-4c43-b2df-43284c9d907d/settings.json) | Super__bb26cf63_69a5_4c43_b2df_43284c9d907d__Power
+  - **final class Layout** | [Details](src/a90a2495-9c26-446c-867e-9ee8f42fb6af) | [Code](src/a90a2495-9c26-446c-867e-9ee8f42fb6af/code.php) | [Settings](src/a90a2495-9c26-446c-867e-9ee8f42fb6af/settings.json) | Super__a90a2495_9c26_446c_867e_9ee8f42fb6af__Power
+  - **final class LayoutData** | [Details](src/7415fdb4-5719-40b7-b01f-05588e968b47) | [Code](src/7415fdb4-5719-40b7-b01f-05588e968b47/code.php) | [Settings](src/7415fdb4-5719-40b7-b01f-05588e968b47/settings.json) | Super__7415fdb4_5719_40b7_b01f_05588e968b47__Power
+  - **final class LibraryManager** | [Details](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8) | [Code](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8/code.php) | [Settings](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8/settings.json) | Super__e696927b_e8f4_4cfc_9d25_215db4e3c7a8__Power
+  - **final class ListFieldClass** | [Details](src/c8c5d364-d2bf-41c0-8c64-6b6fed1a28b6) | [Code](src/c8c5d364-d2bf-41c0-8c64-6b6fed1a28b6/code.php) | [Settings](src/c8c5d364-d2bf-41c0-8c64-6b6fed1a28b6/settings.json) | Super__c8c5d364_d2bf_41c0_8c64_6b6fed1a28b6__Power
+  - **final class ListHeadOverride** | [Details](src/7506a35c-fa32-44ab-bd41-363439b20b82) | [Code](src/7506a35c-fa32-44ab-bd41-363439b20b82/code.php) | [Settings](src/7506a35c-fa32-44ab-bd41-363439b20b82/settings.json) | Super__7506a35c_fa32_44ab_bd41_363439b20b82__Power
+  - **final class ListJoin** | [Details](src/597663e1-1c02-43e8-aea5-f2161e38ac7f) | [Code](src/597663e1-1c02-43e8-aea5-f2161e38ac7f/code.php) | [Settings](src/597663e1-1c02-43e8-aea5-f2161e38ac7f/settings.json) | Super__597663e1_1c02_43e8_aea5_f2161e38ac7f__Power
+  - **final class Lists** | [Details](src/4a857023-2d96-4649-9ed5-910d0329854d) | [Code](src/4a857023-2d96-4649-9ed5-910d0329854d/code.php) | [Settings](src/4a857023-2d96-4649-9ed5-910d0329854d/settings.json) | Super__4a857023_2d96_4649_9ed5_910d0329854d__Power
+  - **final class MainTextField** | [Details](src/c6de9da0-1a73-4c73-b355-7fe02efe4c9d) | [Code](src/c6de9da0-1a73-4c73-b355-7fe02efe4c9d/code.php) | [Settings](src/c6de9da0-1a73-4c73-b355-7fe02efe4c9d/settings.json) | Super__c6de9da0_1a73_4c73_b355_7fe02efe4c9d__Power
+  - **final class MetaData** | [Details](src/f052eeef-5112-4efe-98c8-8c7db69dc2d1) | [Code](src/f052eeef-5112-4efe-98c8-8c7db69dc2d1/code.php) | [Settings](src/f052eeef-5112-4efe-98c8-8c7db69dc2d1/settings.json) | Super__f052eeef_5112_4efe_98c8_8c7db69dc2d1__Power
+  - **final class ModelBasicField** | [Details](src/a5189bfe-6d15-4452-9fa5-e3e57f7fa791) | [Code](src/a5189bfe-6d15-4452-9fa5-e3e57f7fa791/code.php) | [Settings](src/a5189bfe-6d15-4452-9fa5-e3e57f7fa791/settings.json) | Super__a5189bfe_6d15_4452_9fa5_e3e57f7fa791__Power
+  - **final class ModelExpertField** | [Details](src/b8a92303-8543-4d88-a83c-ece300eaba6d) | [Code](src/b8a92303-8543-4d88-a83c-ece300eaba6d/code.php) | [Settings](src/b8a92303-8543-4d88-a83c-ece300eaba6d/settings.json) | Super__b8a92303_8543_4d88_a83c_ece300eaba6d__Power
+  - **final class ModelExpertFieldInitiator** | [Details](src/3468b447-a929-4c28-84a1-f2c3a27e3127) | [Code](src/3468b447-a929-4c28-84a1-f2c3a27e3127/code.php) | [Settings](src/3468b447-a929-4c28-84a1-f2c3a27e3127/settings.json) | Super__3468b447_a929_4c28_84a1_f2c3a27e3127__Power
+  - **final class ModelMediumField** | [Details](src/b0b26749-5e2c-4b56-8982-48172f2531fa) | [Code](src/b0b26749-5e2c-4b56-8982-48172f2531fa/code.php) | [Settings](src/b0b26749-5e2c-4b56-8982-48172f2531fa/settings.json) | Super__b0b26749_5e2c_4b56_8982_48172f2531fa__Power
+  - **final class ModelWhmcsField** | [Details](src/28cac2bb-df04-454f-b4d6-923b573eb94e) | [Code](src/28cac2bb-df04-454f-b4d6-923b573eb94e/code.php) | [Settings](src/28cac2bb-df04-454f-b4d6-923b573eb94e/settings.json) | Super__28cac2bb_df04_454f_b4d6_923b573eb94e__Power
+  - **final class MovedPublishingFields** | [Details](src/9cdff2af-bd1b-452f-810e-d034b9720d2a) | [Code](src/9cdff2af-bd1b-452f-810e-d034b9720d2a/code.php) | [Settings](src/9cdff2af-bd1b-452f-810e-d034b9720d2a/settings.json) | Super__9cdff2af_bd1b_452f_810e_d034b9720d2a__Power
+  - **final class MysqlTableSetting** | [Details](src/9ff6d6cd-afea-4f15-a67b-fd132d386989) | [Code](src/9ff6d6cd-afea-4f15-a67b-fd132d386989/code.php) | [Settings](src/9ff6d6cd-afea-4f15-a67b-fd132d386989/settings.json) | Super__9ff6d6cd_afea_4f15_a67b_fd132d386989__Power
+  - **final class NewPublishingFields** | [Details](src/0f141480-afe6-41fb-996c-2a4e566a2f0d) | [Code](src/0f141480-afe6-41fb-996c-2a4e566a2f0d/code.php) | [Settings](src/0f141480-afe6-41fb-996c-2a4e566a2f0d/settings.json) | Super__0f141480_afe6_41fb_996c_2a4e566a2f0d__Power
+  - **final class OrderZero** | [Details](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780) | [Code](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780/code.php) | [Settings](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780/settings.json) | Super__66b7b5f8_60d6_427a_9f8c_84c11a3d6780__Power
+  - **final class OtherFilter** | [Details](src/9d1eec29-f304-4b08-a3e7-8b2d6b1f4a1f) | [Code](src/9d1eec29-f304-4b08-a3e7-8b2d6b1f4a1f/code.php) | [Settings](src/9d1eec29-f304-4b08-a3e7-8b2d6b1f4a1f/settings.json) | Super__9d1eec29_f304_4b08_a3e7_8b2d6b1f4a1f__Power
+  - **final class OtherGroup** | [Details](src/bf92e1c1-3d5e-4e9d-a585-c79e1468df33) | [Code](src/bf92e1c1-3d5e-4e9d-a585-c79e1468df33/code.php) | [Settings](src/bf92e1c1-3d5e-4e9d-a585-c79e1468df33/settings.json) | Super__bf92e1c1_3d5e_4e9d_a585_c79e1468df33__Power
+  - **final class OtherJoin** | [Details](src/46b02edb-427e-4c26-a5cb-279828eb4433) | [Code](src/46b02edb-427e-4c26-a5cb-279828eb4433/code.php) | [Settings](src/46b02edb-427e-4c26-a5cb-279828eb4433/settings.json) | Super__46b02edb_427e_4c26_a5cb_279828eb4433__Power
+  - **final class OtherOrder** | [Details](src/3f83fe11-1ef6-4020-bd73-f3bb58cefe3a) | [Code](src/3f83fe11-1ef6-4020-bd73-f3bb58cefe3a/code.php) | [Settings](src/3f83fe11-1ef6-4020-bd73-f3bb58cefe3a/settings.json) | Super__3f83fe11_1ef6_4020_bd73_f3bb58cefe3a__Power
+  - **final class OtherQuery** | [Details](src/74595661-236d-4aa1-99f3-358d093000be) | [Code](src/74595661-236d-4aa1-99f3-358d093000be/code.php) | [Settings](src/74595661-236d-4aa1-99f3-358d093000be/settings.json) | Super__74595661_236d_4aa1_99f3_358d093000be__Power
+  - **final class OtherWhere** | [Details](src/fd885c23-88dd-440a-9b05-d02a2b2962f9) | [Code](src/fd885c23-88dd-440a-9b05-d02a2b2962f9/code.php) | [Settings](src/fd885c23-88dd-440a-9b05-d02a2b2962f9/settings.json) | Super__fd885c23_88dd_440a_9b05_d02a2b2962f9__Power
+  - **final class PermissionAction** | [Details](src/2528f2bb-6ebc-4d55-9a9d-23ef58534c1a) | [Code](src/2528f2bb-6ebc-4d55-9a9d-23ef58534c1a/code.php) | [Settings](src/2528f2bb-6ebc-4d55-9a9d-23ef58534c1a/settings.json) | Super__2528f2bb_6ebc_4d55_9a9d_23ef58534c1a__Power
+  - **final class PermissionComponent** | [Details](src/94f4939f-82cc-4196-802b-1346ce5c7f99) | [Code](src/94f4939f-82cc-4196-802b-1346ce5c7f99/code.php) | [Settings](src/94f4939f-82cc-4196-802b-1346ce5c7f99/settings.json) | Super__94f4939f_82cc_4196_802b_1346ce5c7f99__Power
+  - **final class PermissionCore** | [Details](src/5e3d856d-8174-4131-b4e9-9328066438e1) | [Code](src/5e3d856d-8174-4131-b4e9-9328066438e1/code.php) | [Settings](src/5e3d856d-8174-4131-b4e9-9328066438e1/settings.json) | Super__5e3d856d_8174_4131_b4e9_9328066438e1__Power
+  - **final class PermissionDashboard** | [Details](src/e046b530-47fe-406f-b45a-b5eec8cbb238) | [Code](src/e046b530-47fe-406f-b45a-b5eec8cbb238/code.php) | [Settings](src/e046b530-47fe-406f-b45a-b5eec8cbb238/settings.json) | Super__e046b530_47fe_406f_b45a_b5eec8cbb238__Power
+  - **final class PermissionGlobalAction** | [Details](src/a601888d-12b6-427f-94ae-95004206e24e) | [Code](src/a601888d-12b6-427f-94ae-95004206e24e/code.php) | [Settings](src/a601888d-12b6-427f-94ae-95004206e24e/settings.json) | Super__a601888d_12b6_427f_94ae_95004206e24e__Power
+  - **final class PermissionViews** | [Details](src/480d11b9-783b-45d5-bce1-b0c2fcaad08a) | [Code](src/480d11b9-783b-45d5-bce1-b0c2fcaad08a/code.php) | [Settings](src/480d11b9-783b-45d5-bce1-b0c2fcaad08a/settings.json) | Super__480d11b9_783b_45d5_bce1_b0c2fcaad08a__Power
+  - **final class ScriptMediaSwitch** | [Details](src/17bf80af-3609-4f36-a520-be1a339c278b) | [Code](src/17bf80af-3609-4f36-a520-be1a339c278b/code.php) | [Settings](src/17bf80af-3609-4f36-a520-be1a339c278b/settings.json) | Super__17bf80af_3609_4f36_a520_be1a339c278b__Power
+  - **final class ScriptUserSwitch** | [Details](src/9042fac6-5ca5-4ebe-94fe-cf9b0718ed36) | [Code](src/9042fac6-5ca5-4ebe-94fe-cf9b0718ed36/code.php) | [Settings](src/9042fac6-5ca5-4ebe-94fe-cf9b0718ed36/settings.json) | Super__9042fac6_5ca5_4ebe_94fe_cf9b0718ed36__Power
+  - **final class Search** | [Details](src/2e764839-8ec6-4726-af50-b5678e0714a4) | [Code](src/2e764839-8ec6-4726-af50-b5678e0714a4/code.php) | [Settings](src/2e764839-8ec6-4726-af50-b5678e0714a4/settings.json) | Super__2e764839_8ec6_4726_af50_b5678e0714a4__Power
+  - **final class SelectionTranslation** | [Details](src/d8e46d2c-d63e-4b92-80a2-d17638a7ae9e) | [Code](src/d8e46d2c-d63e-4b92-80a2-d17638a7ae9e/code.php) | [Settings](src/d8e46d2c-d63e-4b92-80a2-d17638a7ae9e/settings.json) | Super__d8e46d2c_d63e_4b92_80a2_d17638a7ae9e__Power
+  - **final class SiteDecrypt** | [Details](src/c0e46033-5ade-4829-88b7-ca160d36a4d1) | [Code](src/c0e46033-5ade-4829-88b7-ca160d36a4d1/code.php) | [Settings](src/c0e46033-5ade-4829-88b7-ca160d36a4d1/settings.json) | Super__c0e46033_5ade_4829_88b7_ca160d36a4d1__Power
+  - **final class SiteDynamicGet** | [Details](src/ec0682ee-9166-48f8-951b-9b763792c1d1) | [Code](src/ec0682ee-9166-48f8-951b-9b763792c1d1/code.php) | [Settings](src/ec0682ee-9166-48f8-951b-9b763792c1d1/settings.json) | Super__ec0682ee_9166_48f8_951b_9b763792c1d1__Power
+  - **final class SiteEditView** | [Details](src/abdb7d20-a15e-42d8-bd91-7b09514df7f2) | [Code](src/abdb7d20-a15e-42d8-bd91-7b09514df7f2/code.php) | [Settings](src/abdb7d20-a15e-42d8-bd91-7b09514df7f2/settings.json) | Super__abdb7d20_a15e_42d8_bd91_7b09514df7f2__Power
+  - **final class SiteFieldData** | [Details](src/33f5131e-4a5b-414b-95dd-d22227c2666d) | [Code](src/33f5131e-4a5b-414b-95dd-d22227c2666d/code.php) | [Settings](src/33f5131e-4a5b-414b-95dd-d22227c2666d/settings.json) | Super__33f5131e_4a5b_414b_95dd_d22227c2666d__Power
+  - **final class SiteFieldDecodeFilter** | [Details](src/d393c946-4481-43fa-b737-449119dd0a63) | [Code](src/d393c946-4481-43fa-b737-449119dd0a63/code.php) | [Settings](src/d393c946-4481-43fa-b737-449119dd0a63/settings.json) | Super__d393c946_4481_43fa_b737_449119dd0a63__Power
+  - **final class SiteFields** | [Details](src/52de0ac8-bb9d-4a45-bd2a-a44c48c17ffe) | [Code](src/52de0ac8-bb9d-4a45-bd2a-a44c48c17ffe/code.php) | [Settings](src/52de0ac8-bb9d-4a45-bd2a-a44c48c17ffe/settings.json) | Super__52de0ac8_bb9d_4a45_bd2a_a44c48c17ffe__Power
+  - **final class SiteMainGet** | [Details](src/17fa7789-a7d1-465e-b733-8c8d53f5ca1b) | [Code](src/17fa7789-a7d1-465e-b733-8c8d53f5ca1b/code.php) | [Settings](src/17fa7789-a7d1-465e-b733-8c8d53f5ca1b/settings.json) | Super__17fa7789_a7d1_465e_b733_8c8d53f5ca1b__Power
+  - **final class Sort** | [Details](src/94e0beae-7daa-43b2-81b9-0bde390a76d8) | [Code](src/94e0beae-7daa-43b2-81b9-0bde390a76d8/code.php) | [Settings](src/94e0beae-7daa-43b2-81b9-0bde390a76d8/settings.json) | Super__94e0beae_7daa_43b2_81b9_0bde390a76d8__Power
+  - **final class TabCounter** | [Details](src/d645881c-ae8c-4828-a217-6bad98cd3b44) | [Code](src/d645881c-ae8c-4828-a217-6bad98cd3b44/code.php) | [Settings](src/d645881c-ae8c-4828-a217-6bad98cd3b44/settings.json) | Super__d645881c_ae8c_4828_a217_6bad98cd3b44__Power
+  - **final class Tags** | [Details](src/8ca30d59-e56a-4cdd-bd8c-d9aad28f5903) | [Code](src/8ca30d59-e56a-4cdd-bd8c-d9aad28f5903/code.php) | [Settings](src/8ca30d59-e56a-4cdd-bd8c-d9aad28f5903/settings.json) | Super__8ca30d59_e56a_4cdd_bd8c_d9aad28f5903__Power
+  - **final class TemplateData** | [Details](src/8591f6db-dd3c-4a63-9b3f-574c0ec74ade) | [Code](src/8591f6db-dd3c-4a63-9b3f-574c0ec74ade/code.php) | [Settings](src/8591f6db-dd3c-4a63-9b3f-574c0ec74ade/settings.json) | Super__8591f6db_dd3c_4a63_9b3f_574c0ec74ade__Power
+  - **final class Title** | [Details](src/6a1dddb3-a955-425e-b713-8ef81f256035) | [Code](src/6a1dddb3-a955-425e-b713-8ef81f256035/code.php) | [Settings](src/6a1dddb3-a955-425e-b713-8ef81f256035/settings.json) | Super__6a1dddb3_a955_425e_b713_8ef81f256035__Power
+  - **final class UikitComp** | [Details](src/54ec57f6-2fc3-42e5-975e-1fabeacb845d) | [Code](src/54ec57f6-2fc3-42e5-975e-1fabeacb845d/code.php) | [Settings](src/54ec57f6-2fc3-42e5-975e-1fabeacb845d/settings.json) | Super__54ec57f6_2fc3_42e5_975e_1fabeacb845d__Power
+  - **class UpdateMysql** | [Details](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9) | [Code](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/code.php) | [Settings](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/settings.json) | Super__2b5c9989_1d4e_4f59_8b95_5cd2f72f82d9__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Component](#vdm-joomla-componentbuilder-compiler-component)
 
-  - **class Dashboard** | [Details](src/cfe62a32-8818-4bfb-8751-2f1e109b5336) | [Code](src/cfe62a32-8818-4bfb-8751-2f1e109b5336/code.php) | [Settings](src/cfe62a32-8818-4bfb-8751-2f1e109b5336/settings.json) | [cfe62a32-8818-4bfb-8751-2f1e109b5336](src/cfe62a32-8818-4bfb-8751-2f1e109b5336)
-  - **class Data** | [Details](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753) | [Code](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753/code.php) | [Settings](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753/settings.json) | [ef9578e5-4c9d-46bf-866f-3a94bdc7b753](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753)
-  - **class Placeholder** | [Details](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb) | [Code](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb/code.php) | [Settings](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb/settings.json) | [aecc17ba-0b0f-4e5c-ae43-71be063a3dcb](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb)
-  - **class Settings** | [Details](src/63dabe82-0f4a-4ade-9851-8518ade23de2) | [Code](src/63dabe82-0f4a-4ade-9851-8518ade23de2/code.php) | [Settings](src/63dabe82-0f4a-4ade-9851-8518ade23de2/settings.json) | [63dabe82-0f4a-4ade-9851-8518ade23de2](src/63dabe82-0f4a-4ade-9851-8518ade23de2)
-  - **class Structure** | [Details](src/6c89c663-78f5-4078-9fac-7047f2eaaf96) | [Code](src/6c89c663-78f5-4078-9fac-7047f2eaaf96/code.php) | [Settings](src/6c89c663-78f5-4078-9fac-7047f2eaaf96/settings.json) | [6c89c663-78f5-4078-9fac-7047f2eaaf96](src/6c89c663-78f5-4078-9fac-7047f2eaaf96)
-  - **class Structuremultiple** | [Details](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c) | [Code](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c/code.php) | [Settings](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c/settings.json) | [b69a23db-0a62-4840-a9c5-b2d8d63ecc6c](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c)
-  - **class Structuresingle** | [Details](src/673954d3-78d3-445a-b99f-4b40d617c882) | [Code](src/673954d3-78d3-445a-b99f-4b40d617c882/code.php) | [Settings](src/673954d3-78d3-445a-b99f-4b40d617c882/settings.json) | [673954d3-78d3-445a-b99f-4b40d617c882](src/673954d3-78d3-445a-b99f-4b40d617c882)
+  - **final class Dashboard** | [Details](src/cfe62a32-8818-4bfb-8751-2f1e109b5336) | [Code](src/cfe62a32-8818-4bfb-8751-2f1e109b5336/code.php) | [Settings](src/cfe62a32-8818-4bfb-8751-2f1e109b5336/settings.json) | Super__cfe62a32_8818_4bfb_8751_2f1e109b5336__Power
+  - **final class Data** | [Details](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753) | [Code](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753/code.php) | [Settings](src/ef9578e5-4c9d-46bf-866f-3a94bdc7b753/settings.json) | Super__ef9578e5_4c9d_46bf_866f_3a94bdc7b753__Power
+  - **final class Placeholder** | [Details](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb) | [Code](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb/code.php) | [Settings](src/aecc17ba-0b0f-4e5c-ae43-71be063a3dcb/settings.json) | Super__aecc17ba_0b0f_4e5c_ae43_71be063a3dcb__Power
+  - **final class Settings** | [Details](src/63dabe82-0f4a-4ade-9851-8518ade23de2) | [Code](src/63dabe82-0f4a-4ade-9851-8518ade23de2/code.php) | [Settings](src/63dabe82-0f4a-4ade-9851-8518ade23de2/settings.json) | Super__63dabe82_0f4a_4ade_9851_8518ade23de2__Power
+  - **final class Structure** | [Details](src/6c89c663-78f5-4078-9fac-7047f2eaaf96) | [Code](src/6c89c663-78f5-4078-9fac-7047f2eaaf96/code.php) | [Settings](src/6c89c663-78f5-4078-9fac-7047f2eaaf96/settings.json) | Super__6c89c663_78f5_4078_9fac_7047f2eaaf96__Power
+  - **final class Structuremultiple** | [Details](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c) | [Code](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c/code.php) | [Settings](src/b69a23db-0a62-4840-a9c5-b2d8d63ecc6c/settings.json) | Super__b69a23db_0a62_4840_a9c5_b2d8d63ecc6c__Power
+  - **final class Structuresingle** | [Details](src/673954d3-78d3-445a-b99f-4b40d617c882) | [Code](src/673954d3-78d3-445a-b99f-4b40d617c882/code.php) | [Settings](src/673954d3-78d3-445a-b99f-4b40d617c882/settings.json) | Super__673954d3_78d3_445a_b99f_4b40d617c882__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Creator](#vdm-joomla-componentbuilder-compiler-creator)
+
+  - **final class Builders** | [Details](src/55278140-80d5-4168-8241-d64515c4b35e) | [Code](src/55278140-80d5-4168-8241-d64515c4b35e/code.php) | [Settings](src/55278140-80d5-4168-8241-d64515c4b35e/settings.json) | Super__55278140_80d5_4168_8241_d64515c4b35e__Power
+  - **final class CustomFieldTypeFile** | [Details](src/6dced3d9-7d10-4ea1-bcf6-a5e6af4b9c96) | [Code](src/6dced3d9-7d10-4ea1-bcf6-a5e6af4b9c96/code.php) | [Settings](src/6dced3d9-7d10-4ea1-bcf6-a5e6af4b9c96/settings.json) | Super__6dced3d9_7d10_4ea1_bcf6_a5e6af4b9c96__Power
+  - **final class FieldAsString** | [Details](src/f48764e0-16c6-459c-8576-af7616f3b720) | [Code](src/f48764e0-16c6-459c-8576-af7616f3b720/code.php) | [Settings](src/f48764e0-16c6-459c-8576-af7616f3b720/settings.json) | Super__f48764e0_16c6_459c_8576_af7616f3b720__Power
+  - **final class FieldDynamic** | [Details](src/4801f8b0-4a4a-4eda-8f0e-cf77f042c35e) | [Code](src/4801f8b0-4a4a-4eda-8f0e-cf77f042c35e/code.php) | [Settings](src/4801f8b0-4a4a-4eda-8f0e-cf77f042c35e/settings.json) | Super__4801f8b0_4a4a_4eda_8f0e_cf77f042c35e__Power
+  - **final class FieldString** | [Details](src/44d039b9-d293-481b-b560-23a6e7a63962) | [Code](src/44d039b9-d293-481b-b560-23a6e7a63962/code.php) | [Settings](src/44d039b9-d293-481b-b560-23a6e7a63962/settings.json) | Super__44d039b9_d293_481b_b560_23a6e7a63962__Power
+  - **final class FieldXML** | [Details](src/ac691a05-5630-4002-b166-dedec3fb0fcb) | [Code](src/ac691a05-5630-4002-b166-dedec3fb0fcb/code.php) | [Settings](src/ac691a05-5630-4002-b166-dedec3fb0fcb/settings.json) | Super__ac691a05_5630_4002_b166_dedec3fb0fcb__Power
+  - **final class FieldsetDynamic** | [Details](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba) | [Code](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba/code.php) | [Settings](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba/settings.json) | Super__b5986fab_17ca_4236_8c0c_81ebd2bb82ba__Power
+  - **final class FieldsetString** | [Details](src/05448890-e324-41a0-b6db-d804bfc241cc) | [Code](src/05448890-e324-41a0-b6db-d804bfc241cc/code.php) | [Settings](src/05448890-e324-41a0-b6db-d804bfc241cc/settings.json) | Super__05448890_e324_41a0_b6db_d804bfc241cc__Power
+  - **final class FieldsetXML** | [Details](src/79739667-72c6-4576-9830-7b1eb92e4791) | [Code](src/79739667-72c6-4576-9830-7b1eb92e4791/code.php) | [Settings](src/79739667-72c6-4576-9830-7b1eb92e4791/settings.json) | Super__79739667_72c6_4576_9830_7b1eb92e4791__Power
+  - **final class Layout** | [Details](src/a0f032db-2242-41df-8e4a-5e9e6f88201d) | [Code](src/a0f032db-2242-41df-8e4a-5e9e6f88201d/code.php) | [Settings](src/a0f032db-2242-41df-8e4a-5e9e6f88201d/settings.json) | Super__a0f032db_2242_41df_8e4a_5e9e6f88201d__Power
+  - **final class Permission** | [Details](src/7f01622a-74c9-4e67-b111-3eb488035206) | [Code](src/7f01622a-74c9-4e67-b111-3eb488035206/code.php) | [Settings](src/7f01622a-74c9-4e67-b111-3eb488035206/settings.json) | Super__7f01622a_74c9_4e67_b111_3eb488035206__Power
+  - **final class SiteFieldData** | [Details](src/15b4addf-bf6b-4691-9c92-858c7de9c2c1) | [Code](src/15b4addf-bf6b-4691-9c92-858c7de9c2c1/code.php) | [Settings](src/15b4addf-bf6b-4691-9c92-858c7de9c2c1/settings.json) | Super__15b4addf_bf6b_4691_9c92_858c7de9c2c1__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Customcode](#vdm-joomla-componentbuilder-compiler-customcode)
 
-  - **class Dispenser** | [Details](src/f1dc6430-fb54-452e-aa53-ce32ae93db88) | [Code](src/f1dc6430-fb54-452e-aa53-ce32ae93db88/code.php) | [Settings](src/f1dc6430-fb54-452e-aa53-ce32ae93db88/settings.json) | [f1dc6430-fb54-452e-aa53-ce32ae93db88](src/f1dc6430-fb54-452e-aa53-ce32ae93db88)
-  - **class External** | [Details](src/1cef0266-99e2-40d8-919f-c2ce32226b0a) | [Code](src/1cef0266-99e2-40d8-919f-c2ce32226b0a/code.php) | [Settings](src/1cef0266-99e2-40d8-919f-c2ce32226b0a/settings.json) | [1cef0266-99e2-40d8-919f-c2ce32226b0a](src/1cef0266-99e2-40d8-919f-c2ce32226b0a)
-  - **class Extractor** | [Details](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1) | [Code](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1/code.php) | [Settings](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1/settings.json) | [01411bb1-fdd6-4cca-84d7-1b62d93c70c1](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1)
-  - **class Gui** | [Details](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3) | [Code](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3/code.php) | [Settings](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3/settings.json) | [1bd48df2-4f7e-4581-9fe9-4b54e59105e3](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3)
-  - **class Hash** | [Details](src/797579e8-b272-41ed-91de-428cb0b3e089) | [Code](src/797579e8-b272-41ed-91de-428cb0b3e089/code.php) | [Settings](src/797579e8-b272-41ed-91de-428cb0b3e089/settings.json) | [797579e8-b272-41ed-91de-428cb0b3e089](src/797579e8-b272-41ed-91de-428cb0b3e089)
-  - **class LockBase** | [Details](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0) | [Code](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0/code.php) | [Settings](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0/settings.json) | [7c07c9d6-34cd-4491-934a-ef0a83f414c0](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0)
+  - **class Dispenser** | [Details](src/f1dc6430-fb54-452e-aa53-ce32ae93db88) | [Code](src/f1dc6430-fb54-452e-aa53-ce32ae93db88/code.php) | [Settings](src/f1dc6430-fb54-452e-aa53-ce32ae93db88/settings.json) | Super__f1dc6430_fb54_452e_aa53_ce32ae93db88__Power
+  - **class External** | [Details](src/1cef0266-99e2-40d8-919f-c2ce32226b0a) | [Code](src/1cef0266-99e2-40d8-919f-c2ce32226b0a/code.php) | [Settings](src/1cef0266-99e2-40d8-919f-c2ce32226b0a/settings.json) | Super__1cef0266_99e2_40d8_919f_c2ce32226b0a__Power
+  - **class Extractor** | [Details](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1) | [Code](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1/code.php) | [Settings](src/01411bb1-fdd6-4cca-84d7-1b62d93c70c1/settings.json) | Super__01411bb1_fdd6_4cca_84d7_1b62d93c70c1__Power
+  - **class Gui** | [Details](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3) | [Code](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3/code.php) | [Settings](src/1bd48df2-4f7e-4581-9fe9-4b54e59105e3/settings.json) | Super__1bd48df2_4f7e_4581_9fe9_4b54e59105e3__Power
+  - **class Hash** | [Details](src/797579e8-b272-41ed-91de-428cb0b3e089) | [Code](src/797579e8-b272-41ed-91de-428cb0b3e089/code.php) | [Settings](src/797579e8-b272-41ed-91de-428cb0b3e089/settings.json) | Super__797579e8_b272_41ed_91de_428cb0b3e089__Power
+  - **class LockBase** | [Details](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0) | [Code](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0/code.php) | [Settings](src/7c07c9d6-34cd-4491-934a-ef0a83f414c0/settings.json) | Super__7c07c9d6_34cd_4491_934a_ef0a83f414c0__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Customview](#vdm-joomla-componentbuilder-compiler-customview)
 
-  - **class Data** | [Details](src/3b6895da-d9eb-4164-90b1-4632a4cc2474) | [Code](src/3b6895da-d9eb-4164-90b1-4632a4cc2474/code.php) | [Settings](src/3b6895da-d9eb-4164-90b1-4632a4cc2474/settings.json) | [3b6895da-d9eb-4164-90b1-4632a4cc2474](src/3b6895da-d9eb-4164-90b1-4632a4cc2474)
+  - **class Data** | [Details](src/3b6895da-d9eb-4164-90b1-4632a4cc2474) | [Code](src/3b6895da-d9eb-4164-90b1-4632a4cc2474/code.php) | [Settings](src/3b6895da-d9eb-4164-90b1-4632a4cc2474/settings.json) | Super__3b6895da_d9eb_4164_90b1_4632a4cc2474__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Dynamicget](#vdm-joomla-componentbuilder-compiler-dynamicget)
 
-  - **class Data** | [Details](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46) | [Code](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46/code.php) | [Settings](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46/settings.json) | [05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46)
-  - **class Selection** | [Details](src/5b021139-dad0-4e9b-882a-2b4d807795af) | [Code](src/5b021139-dad0-4e9b-882a-2b4d807795af/code.php) | [Settings](src/5b021139-dad0-4e9b-882a-2b4d807795af/settings.json) | [5b021139-dad0-4e9b-882a-2b4d807795af](src/5b021139-dad0-4e9b-882a-2b4d807795af)
+  - **class Data** | [Details](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46) | [Code](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46/code.php) | [Settings](src/05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46/settings.json) | Super__05c49a1f_ba5b_4be1_b3d0_4a74c42f7a46__Power
+  - **class Selection** | [Details](src/5b021139-dad0-4e9b-882a-2b4d807795af) | [Code](src/5b021139-dad0-4e9b-882a-2b4d807795af/code.php) | [Settings](src/5b021139-dad0-4e9b-882a-2b4d807795af/settings.json) | Super__5b021139_dad0_4e9b_882a_2b4d807795af__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Field](#vdm-joomla-componentbuilder-compiler-field)
 
-  - **class Customcode** | [Details](src/a356d103-74f3-49ca-8e4f-3bd37746f089) | [Code](src/a356d103-74f3-49ca-8e4f-3bd37746f089/code.php) | [Settings](src/a356d103-74f3-49ca-8e4f-3bd37746f089/settings.json) | [a356d103-74f3-49ca-8e4f-3bd37746f089](src/a356d103-74f3-49ca-8e4f-3bd37746f089)
-  - **class Data** | [Details](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee) | [Code](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee/code.php) | [Settings](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee/settings.json) | [ce826b66-0f2d-43da-8005-41b8e4cb21ee](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee)
-  - **class DatabaseName** | [Details](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6) | [Code](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6/code.php) | [Settings](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6/settings.json) | [99368a6f-2f64-4d4e-ad3a-544d4020ecc6](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6)
-  - **class Name** | [Details](src/9387215f-a965-4421-acf3-5e8f9d11382f) | [Code](src/9387215f-a965-4421-acf3-5e8f9d11382f/code.php) | [Settings](src/9387215f-a965-4421-acf3-5e8f9d11382f/settings.json) | [9387215f-a965-4421-acf3-5e8f9d11382f](src/9387215f-a965-4421-acf3-5e8f9d11382f)
-  - **class TypeName** | [Details](src/eb33420d-359d-44a5-852e-613aef1feaae) | [Code](src/eb33420d-359d-44a5-852e-613aef1feaae/code.php) | [Settings](src/eb33420d-359d-44a5-852e-613aef1feaae/settings.json) | [eb33420d-359d-44a5-852e-613aef1feaae](src/eb33420d-359d-44a5-852e-613aef1feaae)
-  - **class UniqueName** | [Details](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e) | [Code](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e/code.php) | [Settings](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e/settings.json) | [8c018533-e967-4bf2-9bd9-9e92966fcb5e](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e)
-  - **class Validation** | [Details](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557) | [Code](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557/code.php) | [Settings](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557/settings.json) | [c871fb4a-4c33-4302-bb79-a9cd7ef4a557](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557)
+  - **final class Attributes** | [Details](src/7f515c18-d019-4d2d-9852-b2dc970985b3) | [Code](src/7f515c18-d019-4d2d-9852-b2dc970985b3/code.php) | [Settings](src/7f515c18-d019-4d2d-9852-b2dc970985b3/settings.json) | Super__7f515c18_d019_4d2d_9852_b2dc970985b3__Power
+  - **final class Groups** | [Details](src/12df35ad-2d44-4c4c-a7d5-a3350932a520) | [Code](src/12df35ad-2d44-4c4c-a7d5-a3350932a520/code.php) | [Settings](src/12df35ad-2d44-4c4c-a7d5-a3350932a520/settings.json) | Super__12df35ad_2d44_4c4c_a7d5_a3350932a520__Power
+  - **final class InputButton** | [Details](src/c600f58c-3fe2-4d2d-b711-2660eab6effe) | [Code](src/c600f58c-3fe2-4d2d-b711-2660eab6effe/code.php) | [Settings](src/c600f58c-3fe2-4d2d-b711-2660eab6effe/settings.json) | Super__c600f58c_3fe2_4d2d_b711_2660eab6effe__Power
+  - **class Customcode** | [Details](src/a356d103-74f3-49ca-8e4f-3bd37746f089) | [Code](src/a356d103-74f3-49ca-8e4f-3bd37746f089/code.php) | [Settings](src/a356d103-74f3-49ca-8e4f-3bd37746f089/settings.json) | Super__a356d103_74f3_49ca_8e4f_3bd37746f089__Power
+  - **class Data** | [Details](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee) | [Code](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee/code.php) | [Settings](src/ce826b66-0f2d-43da-8005-41b8e4cb21ee/settings.json) | Super__ce826b66_0f2d_43da_8005_41b8e4cb21ee__Power
+  - **class DatabaseName** | [Details](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6) | [Code](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6/code.php) | [Settings](src/99368a6f-2f64-4d4e-ad3a-544d4020ecc6/settings.json) | Super__99368a6f_2f64_4d4e_ad3a_544d4020ecc6__Power
+  - **class Name** | [Details](src/9387215f-a965-4421-acf3-5e8f9d11382f) | [Code](src/9387215f-a965-4421-acf3-5e8f9d11382f/code.php) | [Settings](src/9387215f-a965-4421-acf3-5e8f9d11382f/settings.json) | Super__9387215f_a965_4421_acf3_5e8f9d11382f__Power
+  - **class TypeName** | [Details](src/eb33420d-359d-44a5-852e-613aef1feaae) | [Code](src/eb33420d-359d-44a5-852e-613aef1feaae/code.php) | [Settings](src/eb33420d-359d-44a5-852e-613aef1feaae/settings.json) | Super__eb33420d_359d_44a5_852e_613aef1feaae__Power
+  - **class UniqueName** | [Details](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e) | [Code](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e/code.php) | [Settings](src/8c018533-e967-4bf2-9bd9-9e92966fcb5e/settings.json) | Super__8c018533_e967_4bf2_9bd9_9e92966fcb5e__Power
+  - **class Validation** | [Details](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557) | [Code](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557/code.php) | [Settings](src/c871fb4a-4c33-4302-bb79-a9cd7ef4a557/settings.json) | Super__c871fb4a_4c33_4302_bb79_a9cd7ef4a557__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces](#vdm-joomla-componentbuilder-compiler-interfaces)
 
-  - **interface CustomcodeInterface** | [Details](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4) | [Code](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4/code.php) | [Settings](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4/settings.json) | [33bdc535-0ff1-40c8-bb22-b5d44f1731c4](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4)
-  - **interface EventInterface** | [Details](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d) | [Code](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d/code.php) | [Settings](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d/settings.json) | [20ed72b0-fcac-4344-aee1-8a65e3bf221d](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d)
-  - **interface GetScriptInterface** | [Details](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890) | [Code](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890/code.php) | [Settings](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890/settings.json) | [2e6731ba-3a03-4836-b2c2-4e50e38cb890](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890)
-  - **interface HistoryInterface** | [Details](src/4325745f-da1f-4d4d-a591-3189fe8c06e5) | [Code](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/code.php) | [Settings](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/settings.json) | [4325745f-da1f-4d4d-a591-3189fe8c06e5](src/4325745f-da1f-4d4d-a591-3189fe8c06e5)
-  - **interface LanguageInterface** | [Details](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83) | [Code](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/code.php) | [Settings](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/settings.json) | [d6592c9b-93a6-41b3-83c7-c43a0a80cb83](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83)
-  - **interface PlaceholderInterface** | [Details](src/a6cdd935-c038-4a54-8446-54bed87f003c) | [Code](src/a6cdd935-c038-4a54-8446-54bed87f003c/code.php) | [Settings](src/a6cdd935-c038-4a54-8446-54bed87f003c/settings.json) | [a6cdd935-c038-4a54-8446-54bed87f003c](src/a6cdd935-c038-4a54-8446-54bed87f003c)
-  - **interface PowerInterface** | [Details](src/1133c2d7-ba7e-4c95-8cde-01f084d04682) | [Code](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/code.php) | [Settings](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/settings.json) | [1133c2d7-ba7e-4c95-8cde-01f084d04682](src/1133c2d7-ba7e-4c95-8cde-01f084d04682)
+  - **interface CustomcodeInterface** | [Details](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4) | [Code](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4/code.php) | [Settings](src/33bdc535-0ff1-40c8-bb22-b5d44f1731c4/settings.json) | Super__33bdc535_0ff1_40c8_bb22_b5d44f1731c4__Power
+  - **interface EventInterface** | [Details](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d) | [Code](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d/code.php) | [Settings](src/20ed72b0-fcac-4344-aee1-8a65e3bf221d/settings.json) | Super__20ed72b0_fcac_4344_aee1_8a65e3bf221d__Power
+  - **interface GetScriptInterface** | [Details](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890) | [Code](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890/code.php) | [Settings](src/2e6731ba-3a03-4836-b2c2-4e50e38cb890/settings.json) | Super__2e6731ba_3a03_4836_b2c2_4e50e38cb890__Power
+  - **interface HistoryInterface** | [Details](src/4325745f-da1f-4d4d-a591-3189fe8c06e5) | [Code](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/code.php) | [Settings](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/settings.json) | Super__4325745f_da1f_4d4d_a591_3189fe8c06e5__Power
+  - **interface LanguageInterface** | [Details](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83) | [Code](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/code.php) | [Settings](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/settings.json) | Super__d6592c9b_93a6_41b3_83c7_c43a0a80cb83__Power
+  - **interface PlaceholderInterface** | [Details](src/a6cdd935-c038-4a54-8446-54bed87f003c) | [Code](src/a6cdd935-c038-4a54-8446-54bed87f003c/code.php) | [Settings](src/a6cdd935-c038-4a54-8446-54bed87f003c/settings.json) | Super__a6cdd935_c038_4a54_8446_54bed87f003c__Power
+  - **interface PowerInterface** | [Details](src/1133c2d7-ba7e-4c95-8cde-01f084d04682) | [Code](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/code.php) | [Settings](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/settings.json) | Super__1133c2d7_ba7e_4c95_8cde_01f084d04682__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\JoomlaThree](#vdm-joomla-componentbuilder-compiler-joomlathree)
 
-  - **class Event** | [Details](src/4b86f62e-ce41-4325-a11a-08148807d0df) | [Code](src/4b86f62e-ce41-4325-a11a-08148807d0df/code.php) | [Settings](src/4b86f62e-ce41-4325-a11a-08148807d0df/settings.json) | [4b86f62e-ce41-4325-a11a-08148807d0df](src/4b86f62e-ce41-4325-a11a-08148807d0df)
-  - **class History** | [Details](src/87db51b9-1126-4c21-858b-53dbd3a68b61) | [Code](src/87db51b9-1126-4c21-858b-53dbd3a68b61/code.php) | [Settings](src/87db51b9-1126-4c21-858b-53dbd3a68b61/settings.json) | [87db51b9-1126-4c21-858b-53dbd3a68b61](src/87db51b9-1126-4c21-858b-53dbd3a68b61)
+  - **class Event** | [Details](src/4b86f62e-ce41-4325-a11a-08148807d0df) | [Code](src/4b86f62e-ce41-4325-a11a-08148807d0df/code.php) | [Settings](src/4b86f62e-ce41-4325-a11a-08148807d0df/settings.json) | Super__4b86f62e_ce41_4325_a11a_08148807d0df__Power
+  - **class History** | [Details](src/87db51b9-1126-4c21-858b-53dbd3a68b61) | [Code](src/87db51b9-1126-4c21-858b-53dbd3a68b61/code.php) | [Settings](src/87db51b9-1126-4c21-858b-53dbd3a68b61/settings.json) | Super__87db51b9_1126_4c21_858b_53dbd3a68b61__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlamodule](#vdm-joomla-componentbuilder-compiler-joomlamodule)
 
-  - **class Data** | [Details](src/cb11e8d9-69c2-4095-831c-59908ea402e7) | [Code](src/cb11e8d9-69c2-4095-831c-59908ea402e7/code.php) | [Settings](src/cb11e8d9-69c2-4095-831c-59908ea402e7/settings.json) | [cb11e8d9-69c2-4095-831c-59908ea402e7](src/cb11e8d9-69c2-4095-831c-59908ea402e7)
-  - **class Structure** | [Details](src/071c7cff-4c88-4b80-bd99-066c572dcb71) | [Code](src/071c7cff-4c88-4b80-bd99-066c572dcb71/code.php) | [Settings](src/071c7cff-4c88-4b80-bd99-066c572dcb71/settings.json) | [071c7cff-4c88-4b80-bd99-066c572dcb71](src/071c7cff-4c88-4b80-bd99-066c572dcb71)
+  - **class Data** | [Details](src/cb11e8d9-69c2-4095-831c-59908ea402e7) | [Code](src/cb11e8d9-69c2-4095-831c-59908ea402e7/code.php) | [Settings](src/cb11e8d9-69c2-4095-831c-59908ea402e7/settings.json) | Super__cb11e8d9_69c2_4095_831c_59908ea402e7__Power
+  - **class Structure** | [Details](src/071c7cff-4c88-4b80-bd99-066c572dcb71) | [Code](src/071c7cff-4c88-4b80-bd99-066c572dcb71/code.php) | [Settings](src/071c7cff-4c88-4b80-bd99-066c572dcb71/settings.json) | Super__071c7cff_4c88_4b80_bd99_066c572dcb71__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin](#vdm-joomla-componentbuilder-compiler-joomlaplugin)
 
-  - **class Data** | [Details](src/766a9524-37df-4604-91a7-b98a6150ee26) | [Code](src/766a9524-37df-4604-91a7-b98a6150ee26/code.php) | [Settings](src/766a9524-37df-4604-91a7-b98a6150ee26/settings.json) | [766a9524-37df-4604-91a7-b98a6150ee26](src/766a9524-37df-4604-91a7-b98a6150ee26)
-  - **class Structure** | [Details](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff) | [Code](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/code.php) | [Settings](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/settings.json) | [a900b836-f2eb-4f13-8f28-b7cac839c7ff](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff)
+  - **class Data** | [Details](src/766a9524-37df-4604-91a7-b98a6150ee26) | [Code](src/766a9524-37df-4604-91a7-b98a6150ee26/code.php) | [Settings](src/766a9524-37df-4604-91a7-b98a6150ee26/settings.json) | Super__766a9524_37df_4604_91a7_b98a6150ee26__Power
+  - **class Structure** | [Details](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff) | [Code](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/code.php) | [Settings](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/settings.json) | Super__a900b836_f2eb_4f13_8f28_b7cac839c7ff__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Language](#vdm-joomla-componentbuilder-compiler-language)
 
-  - **class Extractor** | [Details](src/d33b9278-c409-4aec-a047-b72f56712391) | [Code](src/d33b9278-c409-4aec-a047-b72f56712391/code.php) | [Settings](src/d33b9278-c409-4aec-a047-b72f56712391/settings.json) | [d33b9278-c409-4aec-a047-b72f56712391](src/d33b9278-c409-4aec-a047-b72f56712391)
+  - **class Extractor** | [Details](src/d33b9278-c409-4aec-a047-b72f56712391) | [Code](src/d33b9278-c409-4aec-a047-b72f56712391/code.php) | [Settings](src/d33b9278-c409-4aec-a047-b72f56712391/settings.json) | Super__d33b9278_c409_4aec_a047_b72f56712391__Power
+  - **class Fieldset** | [Details](src/4ad7020e-39ab-49ba-977b-de6084944502) | [Code](src/4ad7020e-39ab-49ba-977b-de6084944502/code.php) | [Settings](src/4ad7020e-39ab-49ba-977b-de6084944502/settings.json) | Super__4ad7020e_39ab_49ba_977b_de6084944502__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Library](#vdm-joomla-componentbuilder-compiler-library)
 
-  - **class Data** | [Details](src/7175c1cd-2071-4cd7-b499-23881e168c3f) | [Code](src/7175c1cd-2071-4cd7-b499-23881e168c3f/code.php) | [Settings](src/7175c1cd-2071-4cd7-b499-23881e168c3f/settings.json) | [7175c1cd-2071-4cd7-b499-23881e168c3f](src/7175c1cd-2071-4cd7-b499-23881e168c3f)
-  - **class Structure** | [Details](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7) | [Code](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7/code.php) | [Settings](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7/settings.json) | [d3ce5763-4d00-4245-a175-54fc2e80e9b7](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7)
+  - **class Data** | [Details](src/7175c1cd-2071-4cd7-b499-23881e168c3f) | [Code](src/7175c1cd-2071-4cd7-b499-23881e168c3f/code.php) | [Settings](src/7175c1cd-2071-4cd7-b499-23881e168c3f/settings.json) | Super__7175c1cd_2071_4cd7_b499_23881e168c3f__Power
+  - **class Structure** | [Details](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7) | [Code](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7/code.php) | [Settings](src/d3ce5763-4d00-4245-a175-54fc2e80e9b7/settings.json) | Super__d3ce5763_4d00_4245_a175_54fc2e80e9b7__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model](#vdm-joomla-componentbuilder-compiler-model)
 
-  - **class Adminviews** | [Details](src/cebdcccb-24c5-46db-92de-63453852dcb8) | [Code](src/cebdcccb-24c5-46db-92de-63453852dcb8/code.php) | [Settings](src/cebdcccb-24c5-46db-92de-63453852dcb8/settings.json) | [cebdcccb-24c5-46db-92de-63453852dcb8](src/cebdcccb-24c5-46db-92de-63453852dcb8)
-  - **class Ajaxadmin** | [Details](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad) | [Code](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad/code.php) | [Settings](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad/settings.json) | [4f575bd6-de97-41f8-80d6-259c8a6dd9ad](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad)
-  - **class Ajaxcustomview** | [Details](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82) | [Code](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82/code.php) | [Settings](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82/settings.json) | [592aed4e-2c5f-4fc5-8f7a-409203d1af82](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82)
-  - **class Conditions** | [Details](src/55e61314-ba10-4e2b-92dd-b44adebabce9) | [Code](src/55e61314-ba10-4e2b-92dd-b44adebabce9/code.php) | [Settings](src/55e61314-ba10-4e2b-92dd-b44adebabce9/settings.json) | [55e61314-ba10-4e2b-92dd-b44adebabce9](src/55e61314-ba10-4e2b-92dd-b44adebabce9)
-  - **class Createdate** | [Details](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121) | [Code](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121/code.php) | [Settings](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121/settings.json) | [53cf9828-7ad4-4856-aac1-7c4c67bd3121](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121)
-  - **class Cssadminview** | [Details](src/e79842d3-51b7-4282-93c7-3487cd8b61ab) | [Code](src/e79842d3-51b7-4282-93c7-3487cd8b61ab/code.php) | [Settings](src/e79842d3-51b7-4282-93c7-3487cd8b61ab/settings.json) | [e79842d3-51b7-4282-93c7-3487cd8b61ab](src/e79842d3-51b7-4282-93c7-3487cd8b61ab)
-  - **class Csscustomview** | [Details](src/3283a89c-329a-47fb-a011-0df6c31a5c73) | [Code](src/3283a89c-329a-47fb-a011-0df6c31a5c73/code.php) | [Settings](src/3283a89c-329a-47fb-a011-0df6c31a5c73/settings.json) | [3283a89c-329a-47fb-a011-0df6c31a5c73](src/3283a89c-329a-47fb-a011-0df6c31a5c73)
-  - **class Customadminviews** | [Details](src/e0e24173-a808-4dd5-8e26-de971d014f86) | [Code](src/e0e24173-a808-4dd5-8e26-de971d014f86/code.php) | [Settings](src/e0e24173-a808-4dd5-8e26-de971d014f86/settings.json) | [e0e24173-a808-4dd5-8e26-de971d014f86](src/e0e24173-a808-4dd5-8e26-de971d014f86)
-  - **class Customalias** | [Details](src/5f8e8fa6-3793-44af-882d-9cfb209434e9) | [Code](src/5f8e8fa6-3793-44af-882d-9cfb209434e9/code.php) | [Settings](src/5f8e8fa6-3793-44af-882d-9cfb209434e9/settings.json) | [5f8e8fa6-3793-44af-882d-9cfb209434e9](src/5f8e8fa6-3793-44af-882d-9cfb209434e9)
-  - **class Custombuttons** | [Details](src/ebe3287d-bfa0-4519-b663-f442f4dea432) | [Code](src/ebe3287d-bfa0-4519-b663-f442f4dea432/code.php) | [Settings](src/ebe3287d-bfa0-4519-b663-f442f4dea432/settings.json) | [ebe3287d-bfa0-4519-b663-f442f4dea432](src/ebe3287d-bfa0-4519-b663-f442f4dea432)
-  - **class Customimportscripts** | [Details](src/037c7274-fb16-455d-989a-bf1da022620b) | [Code](src/037c7274-fb16-455d-989a-bf1da022620b/code.php) | [Settings](src/037c7274-fb16-455d-989a-bf1da022620b/settings.json) | [037c7274-fb16-455d-989a-bf1da022620b](src/037c7274-fb16-455d-989a-bf1da022620b)
-  - **class Customtabs** | [Details](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c) | [Code](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/code.php) | [Settings](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/settings.json) | [fa8c1125-d370-4cb6-a7ff-eb32193c198c](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c)
-  - **class Dynamicget** | [Details](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6) | [Code](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6/code.php) | [Settings](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6/settings.json) | [79740ee8-4d10-4b51-9ff5-18e1386ec1c6](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6)
-  - **class Fields** | [Details](src/e6a64c41-405e-4bbc-9722-27402c22bbea) | [Code](src/e6a64c41-405e-4bbc-9722-27402c22bbea/code.php) | [Settings](src/e6a64c41-405e-4bbc-9722-27402c22bbea/settings.json) | [e6a64c41-405e-4bbc-9722-27402c22bbea](src/e6a64c41-405e-4bbc-9722-27402c22bbea)
-  - **class Filesfolders** | [Details](src/f4578c04-a81e-4218-b80d-b0612196eaf0) | [Code](src/f4578c04-a81e-4218-b80d-b0612196eaf0/code.php) | [Settings](src/f4578c04-a81e-4218-b80d-b0612196eaf0/settings.json) | [f4578c04-a81e-4218-b80d-b0612196eaf0](src/f4578c04-a81e-4218-b80d-b0612196eaf0)
-  - **class Historyadminview** | [Details](src/6dfbf568-f3cd-4ea7-af04-6859447b5462) | [Code](src/6dfbf568-f3cd-4ea7-af04-6859447b5462/code.php) | [Settings](src/6dfbf568-f3cd-4ea7-af04-6859447b5462/settings.json) | [6dfbf568-f3cd-4ea7-af04-6859447b5462](src/6dfbf568-f3cd-4ea7-af04-6859447b5462)
-  - **class Historycomponent** | [Details](src/17a728e9-d6cf-4060-9efb-241b0ff2f981) | [Code](src/17a728e9-d6cf-4060-9efb-241b0ff2f981/code.php) | [Settings](src/17a728e9-d6cf-4060-9efb-241b0ff2f981/settings.json) | [17a728e9-d6cf-4060-9efb-241b0ff2f981](src/17a728e9-d6cf-4060-9efb-241b0ff2f981)
-  - **class Javascriptadminview** | [Details](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f) | [Code](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f/code.php) | [Settings](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f/settings.json) | [dfd3c893-0296-46eb-9ae4-a0348713cd8f](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f)
-  - **class Javascriptcustomview** | [Details](src/29455d3b-df2b-4e41-8684-1608060e37a4) | [Code](src/29455d3b-df2b-4e41-8684-1608060e37a4/code.php) | [Settings](src/29455d3b-df2b-4e41-8684-1608060e37a4/settings.json) | [29455d3b-df2b-4e41-8684-1608060e37a4](src/29455d3b-df2b-4e41-8684-1608060e37a4)
-  - **class Joomlamodules** | [Details](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0) | [Code](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0/code.php) | [Settings](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0/settings.json) | [bfdc4ce5-cb12-4fc6-9023-51cede25edd0](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0)
-  - **class Joomlaplugins** | [Details](src/ef97b03e-1018-447a-8d7e-30401b0257bb) | [Code](src/ef97b03e-1018-447a-8d7e-30401b0257bb/code.php) | [Settings](src/ef97b03e-1018-447a-8d7e-30401b0257bb/settings.json) | [ef97b03e-1018-447a-8d7e-30401b0257bb](src/ef97b03e-1018-447a-8d7e-30401b0257bb)
-  - **class Libraries** | [Details](src/59895f37-50c8-4af3-9dad-230e18841953) | [Code](src/59895f37-50c8-4af3-9dad-230e18841953/code.php) | [Settings](src/59895f37-50c8-4af3-9dad-230e18841953/settings.json) | [59895f37-50c8-4af3-9dad-230e18841953](src/59895f37-50c8-4af3-9dad-230e18841953)
-  - **class Linkedviews** | [Details](src/ae1fa148-91be-4f80-89a9-69d91ba9d575) | [Code](src/ae1fa148-91be-4f80-89a9-69d91ba9d575/code.php) | [Settings](src/ae1fa148-91be-4f80-89a9-69d91ba9d575/settings.json) | [ae1fa148-91be-4f80-89a9-69d91ba9d575](src/ae1fa148-91be-4f80-89a9-69d91ba9d575)
-  - **class Loader** | [Details](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7) | [Code](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7/code.php) | [Settings](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7/settings.json) | [0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7)
-  - **class Modifieddate** | [Details](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3) | [Code](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3/code.php) | [Settings](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3/settings.json) | [9127e428-5dee-46cb-b3a9-ab5b91ea6df3](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3)
-  - **class Mysqlsettings** | [Details](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e) | [Code](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e/code.php) | [Settings](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e/settings.json) | [35191b0c-f7f3-44d6-8ec1-c816b997bd4e](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e)
-  - **class Permissions** | [Details](src/0dabc67c-abec-4541-82bf-279abd3c9be1) | [Code](src/0dabc67c-abec-4541-82bf-279abd3c9be1/code.php) | [Settings](src/0dabc67c-abec-4541-82bf-279abd3c9be1/settings.json) | [0dabc67c-abec-4541-82bf-279abd3c9be1](src/0dabc67c-abec-4541-82bf-279abd3c9be1)
-  - **class Phpadminview** | [Details](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe) | [Code](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe/code.php) | [Settings](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe/settings.json) | [c20a63e0-0eeb-4424-9d08-b1bf0f049dfe](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe)
-  - **class Phpcustomview** | [Details](src/489da602-27c7-418c-bf59-1d45ad42bdcc) | [Code](src/489da602-27c7-418c-bf59-1d45ad42bdcc/code.php) | [Settings](src/489da602-27c7-418c-bf59-1d45ad42bdcc/settings.json) | [489da602-27c7-418c-bf59-1d45ad42bdcc](src/489da602-27c7-418c-bf59-1d45ad42bdcc)
-  - **class Relations** | [Details](src/a8eb2fb1-88ed-4af8-842d-898eb915b588) | [Code](src/a8eb2fb1-88ed-4af8-842d-898eb915b588/code.php) | [Settings](src/a8eb2fb1-88ed-4af8-842d-898eb915b588/settings.json) | [a8eb2fb1-88ed-4af8-842d-898eb915b588](src/a8eb2fb1-88ed-4af8-842d-898eb915b588)
-  - **class Siteviews** | [Details](src/e0075978-315d-4807-8507-ce9c6922a885) | [Code](src/e0075978-315d-4807-8507-ce9c6922a885/code.php) | [Settings](src/e0075978-315d-4807-8507-ce9c6922a885/settings.json) | [e0075978-315d-4807-8507-ce9c6922a885](src/e0075978-315d-4807-8507-ce9c6922a885)
-  - **class Sql** | [Details](src/d4b418a7-bf9b-4768-969d-e07c36916fd2) | [Code](src/d4b418a7-bf9b-4768-969d-e07c36916fd2/code.php) | [Settings](src/d4b418a7-bf9b-4768-969d-e07c36916fd2/settings.json) | [d4b418a7-bf9b-4768-969d-e07c36916fd2](src/d4b418a7-bf9b-4768-969d-e07c36916fd2)
-  - **class Sqldump** | [Details](src/a6e1227c-1efe-407d-84ef-03c6989a6a88) | [Code](src/a6e1227c-1efe-407d-84ef-03c6989a6a88/code.php) | [Settings](src/a6e1227c-1efe-407d-84ef-03c6989a6a88/settings.json) | [a6e1227c-1efe-407d-84ef-03c6989a6a88](src/a6e1227c-1efe-407d-84ef-03c6989a6a88)
-  - **class Sqltweaking** | [Details](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26) | [Code](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26/code.php) | [Settings](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26/settings.json) | [e50cbac5-9c9d-4fd4-aa7a-5e830719ed26](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26)
-  - **class Tabs** | [Details](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69) | [Code](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69/code.php) | [Settings](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69/settings.json) | [143ac6ea-b64f-4331-9a97-31e3fce2bb69](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69)
-  - **class Updateserver** | [Details](src/1d0fd857-12ec-4f47-ab1c-124d85748e24) | [Code](src/1d0fd857-12ec-4f47-ab1c-124d85748e24/code.php) | [Settings](src/1d0fd857-12ec-4f47-ab1c-124d85748e24/settings.json) | [1d0fd857-12ec-4f47-ab1c-124d85748e24](src/1d0fd857-12ec-4f47-ab1c-124d85748e24)
-  - **class Updatesql** | [Details](src/b80296eb-4718-4ed3-894d-69f3ac293733) | [Code](src/b80296eb-4718-4ed3-894d-69f3ac293733/code.php) | [Settings](src/b80296eb-4718-4ed3-894d-69f3ac293733/settings.json) | [b80296eb-4718-4ed3-894d-69f3ac293733](src/b80296eb-4718-4ed3-894d-69f3ac293733)
-  - **class Whmcs** | [Details](src/af5beb21-214a-44f6-9090-7ea24c22e649) | [Code](src/af5beb21-214a-44f6-9090-7ea24c22e649/code.php) | [Settings](src/af5beb21-214a-44f6-9090-7ea24c22e649/settings.json) | [af5beb21-214a-44f6-9090-7ea24c22e649](src/af5beb21-214a-44f6-9090-7ea24c22e649)
+  - **class Adminviews** | [Details](src/cebdcccb-24c5-46db-92de-63453852dcb8) | [Code](src/cebdcccb-24c5-46db-92de-63453852dcb8/code.php) | [Settings](src/cebdcccb-24c5-46db-92de-63453852dcb8/settings.json) | Super__cebdcccb_24c5_46db_92de_63453852dcb8__Power
+  - **class Ajaxadmin** | [Details](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad) | [Code](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad/code.php) | [Settings](src/4f575bd6-de97-41f8-80d6-259c8a6dd9ad/settings.json) | Super__4f575bd6_de97_41f8_80d6_259c8a6dd9ad__Power
+  - **class Ajaxcustomview** | [Details](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82) | [Code](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82/code.php) | [Settings](src/592aed4e-2c5f-4fc5-8f7a-409203d1af82/settings.json) | Super__592aed4e_2c5f_4fc5_8f7a_409203d1af82__Power
+  - **class Conditions** | [Details](src/55e61314-ba10-4e2b-92dd-b44adebabce9) | [Code](src/55e61314-ba10-4e2b-92dd-b44adebabce9/code.php) | [Settings](src/55e61314-ba10-4e2b-92dd-b44adebabce9/settings.json) | Super__55e61314_ba10_4e2b_92dd_b44adebabce9__Power
+  - **class Createdate** | [Details](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121) | [Code](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121/code.php) | [Settings](src/53cf9828-7ad4-4856-aac1-7c4c67bd3121/settings.json) | Super__53cf9828_7ad4_4856_aac1_7c4c67bd3121__Power
+  - **class Cssadminview** | [Details](src/e79842d3-51b7-4282-93c7-3487cd8b61ab) | [Code](src/e79842d3-51b7-4282-93c7-3487cd8b61ab/code.php) | [Settings](src/e79842d3-51b7-4282-93c7-3487cd8b61ab/settings.json) | Super__e79842d3_51b7_4282_93c7_3487cd8b61ab__Power
+  - **class Csscustomview** | [Details](src/3283a89c-329a-47fb-a011-0df6c31a5c73) | [Code](src/3283a89c-329a-47fb-a011-0df6c31a5c73/code.php) | [Settings](src/3283a89c-329a-47fb-a011-0df6c31a5c73/settings.json) | Super__3283a89c_329a_47fb_a011_0df6c31a5c73__Power
+  - **class Customadminviews** | [Details](src/e0e24173-a808-4dd5-8e26-de971d014f86) | [Code](src/e0e24173-a808-4dd5-8e26-de971d014f86/code.php) | [Settings](src/e0e24173-a808-4dd5-8e26-de971d014f86/settings.json) | Super__e0e24173_a808_4dd5_8e26_de971d014f86__Power
+  - **class Customalias** | [Details](src/5f8e8fa6-3793-44af-882d-9cfb209434e9) | [Code](src/5f8e8fa6-3793-44af-882d-9cfb209434e9/code.php) | [Settings](src/5f8e8fa6-3793-44af-882d-9cfb209434e9/settings.json) | Super__5f8e8fa6_3793_44af_882d_9cfb209434e9__Power
+  - **class Custombuttons** | [Details](src/ebe3287d-bfa0-4519-b663-f442f4dea432) | [Code](src/ebe3287d-bfa0-4519-b663-f442f4dea432/code.php) | [Settings](src/ebe3287d-bfa0-4519-b663-f442f4dea432/settings.json) | Super__ebe3287d_bfa0_4519_b663_f442f4dea432__Power
+  - **class Customimportscripts** | [Details](src/037c7274-fb16-455d-989a-bf1da022620b) | [Code](src/037c7274-fb16-455d-989a-bf1da022620b/code.php) | [Settings](src/037c7274-fb16-455d-989a-bf1da022620b/settings.json) | Super__037c7274_fb16_455d_989a_bf1da022620b__Power
+  - **class Customtabs** | [Details](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c) | [Code](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/code.php) | [Settings](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/settings.json) | Super__fa8c1125_d370_4cb6_a7ff_eb32193c198c__Power
+  - **class Dynamicget** | [Details](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6) | [Code](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6/code.php) | [Settings](src/79740ee8-4d10-4b51-9ff5-18e1386ec1c6/settings.json) | Super__79740ee8_4d10_4b51_9ff5_18e1386ec1c6__Power
+  - **class Fields** | [Details](src/e6a64c41-405e-4bbc-9722-27402c22bbea) | [Code](src/e6a64c41-405e-4bbc-9722-27402c22bbea/code.php) | [Settings](src/e6a64c41-405e-4bbc-9722-27402c22bbea/settings.json) | Super__e6a64c41_405e_4bbc_9722_27402c22bbea__Power
+  - **class Filesfolders** | [Details](src/f4578c04-a81e-4218-b80d-b0612196eaf0) | [Code](src/f4578c04-a81e-4218-b80d-b0612196eaf0/code.php) | [Settings](src/f4578c04-a81e-4218-b80d-b0612196eaf0/settings.json) | Super__f4578c04_a81e_4218_b80d_b0612196eaf0__Power
+  - **class Historyadminview** | [Details](src/6dfbf568-f3cd-4ea7-af04-6859447b5462) | [Code](src/6dfbf568-f3cd-4ea7-af04-6859447b5462/code.php) | [Settings](src/6dfbf568-f3cd-4ea7-af04-6859447b5462/settings.json) | Super__6dfbf568_f3cd_4ea7_af04_6859447b5462__Power
+  - **class Historycomponent** | [Details](src/17a728e9-d6cf-4060-9efb-241b0ff2f981) | [Code](src/17a728e9-d6cf-4060-9efb-241b0ff2f981/code.php) | [Settings](src/17a728e9-d6cf-4060-9efb-241b0ff2f981/settings.json) | Super__17a728e9_d6cf_4060_9efb_241b0ff2f981__Power
+  - **class Javascriptadminview** | [Details](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f) | [Code](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f/code.php) | [Settings](src/dfd3c893-0296-46eb-9ae4-a0348713cd8f/settings.json) | Super__dfd3c893_0296_46eb_9ae4_a0348713cd8f__Power
+  - **class Javascriptcustomview** | [Details](src/29455d3b-df2b-4e41-8684-1608060e37a4) | [Code](src/29455d3b-df2b-4e41-8684-1608060e37a4/code.php) | [Settings](src/29455d3b-df2b-4e41-8684-1608060e37a4/settings.json) | Super__29455d3b_df2b_4e41_8684_1608060e37a4__Power
+  - **class Joomlamodules** | [Details](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0) | [Code](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0/code.php) | [Settings](src/bfdc4ce5-cb12-4fc6-9023-51cede25edd0/settings.json) | Super__bfdc4ce5_cb12_4fc6_9023_51cede25edd0__Power
+  - **class Joomlaplugins** | [Details](src/ef97b03e-1018-447a-8d7e-30401b0257bb) | [Code](src/ef97b03e-1018-447a-8d7e-30401b0257bb/code.php) | [Settings](src/ef97b03e-1018-447a-8d7e-30401b0257bb/settings.json) | Super__ef97b03e_1018_447a_8d7e_30401b0257bb__Power
+  - **class Libraries** | [Details](src/59895f37-50c8-4af3-9dad-230e18841953) | [Code](src/59895f37-50c8-4af3-9dad-230e18841953/code.php) | [Settings](src/59895f37-50c8-4af3-9dad-230e18841953/settings.json) | Super__59895f37_50c8_4af3_9dad_230e18841953__Power
+  - **class Linkedviews** | [Details](src/ae1fa148-91be-4f80-89a9-69d91ba9d575) | [Code](src/ae1fa148-91be-4f80-89a9-69d91ba9d575/code.php) | [Settings](src/ae1fa148-91be-4f80-89a9-69d91ba9d575/settings.json) | Super__ae1fa148_91be_4f80_89a9_69d91ba9d575__Power
+  - **class Loader** | [Details](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7) | [Code](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7/code.php) | [Settings](src/0d71c2d9-2fc0-4c20-82c5-43c46b0fc6f7/settings.json) | Super__0d71c2d9_2fc0_4c20_82c5_43c46b0fc6f7__Power
+  - **class Modifieddate** | [Details](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3) | [Code](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3/code.php) | [Settings](src/9127e428-5dee-46cb-b3a9-ab5b91ea6df3/settings.json) | Super__9127e428_5dee_46cb_b3a9_ab5b91ea6df3__Power
+  - **class Mysqlsettings** | [Details](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e) | [Code](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e/code.php) | [Settings](src/35191b0c-f7f3-44d6-8ec1-c816b997bd4e/settings.json) | Super__35191b0c_f7f3_44d6_8ec1_c816b997bd4e__Power
+  - **class Permissions** | [Details](src/0dabc67c-abec-4541-82bf-279abd3c9be1) | [Code](src/0dabc67c-abec-4541-82bf-279abd3c9be1/code.php) | [Settings](src/0dabc67c-abec-4541-82bf-279abd3c9be1/settings.json) | Super__0dabc67c_abec_4541_82bf_279abd3c9be1__Power
+  - **class Phpadminview** | [Details](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe) | [Code](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe/code.php) | [Settings](src/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe/settings.json) | Super__c20a63e0_0eeb_4424_9d08_b1bf0f049dfe__Power
+  - **class Phpcustomview** | [Details](src/489da602-27c7-418c-bf59-1d45ad42bdcc) | [Code](src/489da602-27c7-418c-bf59-1d45ad42bdcc/code.php) | [Settings](src/489da602-27c7-418c-bf59-1d45ad42bdcc/settings.json) | Super__489da602_27c7_418c_bf59_1d45ad42bdcc__Power
+  - **class Relations** | [Details](src/a8eb2fb1-88ed-4af8-842d-898eb915b588) | [Code](src/a8eb2fb1-88ed-4af8-842d-898eb915b588/code.php) | [Settings](src/a8eb2fb1-88ed-4af8-842d-898eb915b588/settings.json) | Super__a8eb2fb1_88ed_4af8_842d_898eb915b588__Power
+  - **class Siteviews** | [Details](src/e0075978-315d-4807-8507-ce9c6922a885) | [Code](src/e0075978-315d-4807-8507-ce9c6922a885/code.php) | [Settings](src/e0075978-315d-4807-8507-ce9c6922a885/settings.json) | Super__e0075978_315d_4807_8507_ce9c6922a885__Power
+  - **class Sql** | [Details](src/d4b418a7-bf9b-4768-969d-e07c36916fd2) | [Code](src/d4b418a7-bf9b-4768-969d-e07c36916fd2/code.php) | [Settings](src/d4b418a7-bf9b-4768-969d-e07c36916fd2/settings.json) | Super__d4b418a7_bf9b_4768_969d_e07c36916fd2__Power
+  - **class Sqldump** | [Details](src/a6e1227c-1efe-407d-84ef-03c6989a6a88) | [Code](src/a6e1227c-1efe-407d-84ef-03c6989a6a88/code.php) | [Settings](src/a6e1227c-1efe-407d-84ef-03c6989a6a88/settings.json) | Super__a6e1227c_1efe_407d_84ef_03c6989a6a88__Power
+  - **class Sqltweaking** | [Details](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26) | [Code](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26/code.php) | [Settings](src/e50cbac5-9c9d-4fd4-aa7a-5e830719ed26/settings.json) | Super__e50cbac5_9c9d_4fd4_aa7a_5e830719ed26__Power
+  - **class Tabs** | [Details](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69) | [Code](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69/code.php) | [Settings](src/143ac6ea-b64f-4331-9a97-31e3fce2bb69/settings.json) | Super__143ac6ea_b64f_4331_9a97_31e3fce2bb69__Power
+  - **class Updateserver** | [Details](src/1d0fd857-12ec-4f47-ab1c-124d85748e24) | [Code](src/1d0fd857-12ec-4f47-ab1c-124d85748e24/code.php) | [Settings](src/1d0fd857-12ec-4f47-ab1c-124d85748e24/settings.json) | Super__1d0fd857_12ec_4f47_ab1c_124d85748e24__Power
+  - **class Updatesql** | [Details](src/b80296eb-4718-4ed3-894d-69f3ac293733) | [Code](src/b80296eb-4718-4ed3-894d-69f3ac293733/code.php) | [Settings](src/b80296eb-4718-4ed3-894d-69f3ac293733/settings.json) | Super__b80296eb_4718_4ed3_894d_69f3ac293733__Power
+  - **class Whmcs** | [Details](src/af5beb21-214a-44f6-9090-7ea24c22e649) | [Code](src/af5beb21-214a-44f6-9090-7ea24c22e649/code.php) | [Settings](src/af5beb21-214a-44f6-9090-7ea24c22e649/settings.json) | Super__af5beb21_214a_44f6_9090_7ea24c22e649__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Placeholder](#vdm-joomla-componentbuilder-compiler-placeholder)
 
-  - **class Reverse** | [Details](src/ca111518-e47c-4049-b1b2-cb010f23866f) | [Code](src/ca111518-e47c-4049-b1b2-cb010f23866f/code.php) | [Settings](src/ca111518-e47c-4049-b1b2-cb010f23866f/settings.json) | [ca111518-e47c-4049-b1b2-cb010f23866f](src/ca111518-e47c-4049-b1b2-cb010f23866f)
+  - **class Reverse** | [Details](src/ca111518-e47c-4049-b1b2-cb010f23866f) | [Code](src/ca111518-e47c-4049-b1b2-cb010f23866f/code.php) | [Settings](src/ca111518-e47c-4049-b1b2-cb010f23866f/settings.json) | Super__ca111518_e47c_4049_b1b2_cb010f23866f__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Power](#vdm-joomla-componentbuilder-compiler-power)
 
-  - **final class Extractor** | [Details](src/eeb03266-22fd-45bb-953a-961bb6be3a54) | [Code](src/eeb03266-22fd-45bb-953a-961bb6be3a54/code.php) | [Settings](src/eeb03266-22fd-45bb-953a-961bb6be3a54/settings.json) | [eeb03266-22fd-45bb-953a-961bb6be3a54](src/eeb03266-22fd-45bb-953a-961bb6be3a54)
-  - **final class Injector** | [Details](src/763d137c-42bc-4282-98d8-cc5c0654985f) | [Code](src/763d137c-42bc-4282-98d8-cc5c0654985f/code.php) | [Settings](src/763d137c-42bc-4282-98d8-cc5c0654985f/settings.json) | [763d137c-42bc-4282-98d8-cc5c0654985f](src/763d137c-42bc-4282-98d8-cc5c0654985f)
-  - **final class Parser** | [Details](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205) | [Code](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/code.php) | [Settings](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/settings.json) | [95d0e03f-24fd-4412-bc2e-f0899fcc3205](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205)
-  - **class Autoloader** | [Details](src/6e64917c-d687-4ef3-a655-811319f5a81e) | [Code](src/6e64917c-d687-4ef3-a655-811319f5a81e/code.php) | [Settings](src/6e64917c-d687-4ef3-a655-811319f5a81e/settings.json) | [6e64917c-d687-4ef3-a655-811319f5a81e](src/6e64917c-d687-4ef3-a655-811319f5a81e)
-  - **class Infusion** | [Details](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c) | [Code](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/code.php) | [Settings](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/settings.json) | [0419081e-4cb3-4c65-8c6a-ffe941fb0f1c](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c)
-  - **class Plantuml** | [Details](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096) | [Code](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096/code.php) | [Settings](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096/settings.json) | [ff5e9e63-86d0-4691-ab59-d4b9d9154096](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096)
-  - **class Structure** | [Details](src/324566de-0f7d-4b6e-9caf-8424d55013ae) | [Code](src/324566de-0f7d-4b6e-9caf-8424d55013ae/code.php) | [Settings](src/324566de-0f7d-4b6e-9caf-8424d55013ae/settings.json) | [324566de-0f7d-4b6e-9caf-8424d55013ae](src/324566de-0f7d-4b6e-9caf-8424d55013ae)
+  - **final class Extractor** | [Details](src/eeb03266-22fd-45bb-953a-961bb6be3a54) | [Code](src/eeb03266-22fd-45bb-953a-961bb6be3a54/code.php) | [Settings](src/eeb03266-22fd-45bb-953a-961bb6be3a54/settings.json) | Super__eeb03266_22fd_45bb_953a_961bb6be3a54__Power
+  - **final class Injector** | [Details](src/763d137c-42bc-4282-98d8-cc5c0654985f) | [Code](src/763d137c-42bc-4282-98d8-cc5c0654985f/code.php) | [Settings](src/763d137c-42bc-4282-98d8-cc5c0654985f/settings.json) | Super__763d137c_42bc_4282_98d8_cc5c0654985f__Power
+  - **final class Parser** | [Details](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205) | [Code](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/code.php) | [Settings](src/95d0e03f-24fd-4412-bc2e-f0899fcc3205/settings.json) | Super__95d0e03f_24fd_4412_bc2e_f0899fcc3205__Power
+  - **class Autoloader** | [Details](src/6e64917c-d687-4ef3-a655-811319f5a81e) | [Code](src/6e64917c-d687-4ef3-a655-811319f5a81e/code.php) | [Settings](src/6e64917c-d687-4ef3-a655-811319f5a81e/settings.json) | Super__6e64917c_d687_4ef3_a655_811319f5a81e__Power
+  - **class Infusion** | [Details](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c) | [Code](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/code.php) | [Settings](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/settings.json) | Super__0419081e_4cb3_4c65_8c6a_ffe941fb0f1c__Power
+  - **class Plantuml** | [Details](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096) | [Code](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096/code.php) | [Settings](src/ff5e9e63-86d0-4691-ab59-d4b9d9154096/settings.json) | Super__ff5e9e63_86d0_4691_ab59_d4b9d9154096__Power
+  - **class Structure** | [Details](src/324566de-0f7d-4b6e-9caf-8424d55013ae) | [Code](src/324566de-0f7d-4b6e-9caf-8424d55013ae/code.php) | [Settings](src/324566de-0f7d-4b6e-9caf-8424d55013ae/settings.json) | Super__324566de_0f7d_4b6e_9caf_8424d55013ae__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Service](#vdm-joomla-componentbuilder-compiler-service)
 
-  - **class Adminview** | [Details](src/2dd1289a-4000-43cc-8c62-77ff32de56bf) | [Code](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/code.php) | [Settings](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/settings.json) | [2dd1289a-4000-43cc-8c62-77ff32de56bf](src/2dd1289a-4000-43cc-8c62-77ff32de56bf)
-  - **class Builder** | [Details](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7) | [Code](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/code.php) | [Settings](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/settings.json) | [2c76c06e-a371-4b73-9fbe-b4d9b4df55d7](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7)
-  - **class Compiler** | [Details](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69) | [Code](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/code.php) | [Settings](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/settings.json) | [ea5ed06e-72ae-4906-9167-1cc0fa32fe69](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69)
-  - **class Component** | [Details](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c) | [Code](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c/code.php) | [Settings](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c/settings.json) | [8a63e87b-b39b-4a15-8044-9b2a2f4fb61c](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c)
-  - **class Customcode** | [Details](src/a74ac3b7-bb79-4639-8f14-54a8021be68b) | [Code](src/a74ac3b7-bb79-4639-8f14-54a8021be68b/code.php) | [Settings](src/a74ac3b7-bb79-4639-8f14-54a8021be68b/settings.json) | [a74ac3b7-bb79-4639-8f14-54a8021be68b](src/a74ac3b7-bb79-4639-8f14-54a8021be68b)
-  - **class Customview** | [Details](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa) | [Code](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa/code.php) | [Settings](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa/settings.json) | [87faa133-4cac-4816-ae41-5c3f9a2f76aa](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa)
-  - **class Database** | [Details](src/4815e1c7-a433-443d-a112-d1e03d7df84b) | [Code](src/4815e1c7-a433-443d-a112-d1e03d7df84b/code.php) | [Settings](src/4815e1c7-a433-443d-a112-d1e03d7df84b/settings.json) | [4815e1c7-a433-443d-a112-d1e03d7df84b](src/4815e1c7-a433-443d-a112-d1e03d7df84b)
-  - **class Event** | [Details](src/b94aaedb-6774-4739-a63f-8f87141a85db) | [Code](src/b94aaedb-6774-4739-a63f-8f87141a85db/code.php) | [Settings](src/b94aaedb-6774-4739-a63f-8f87141a85db/settings.json) | [b94aaedb-6774-4739-a63f-8f87141a85db](src/b94aaedb-6774-4739-a63f-8f87141a85db)
-  - **class Extension** | [Details](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d) | [Code](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d/code.php) | [Settings](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d/settings.json) | [ed9591cb-0a03-400a-bf47-eaf78ab19b9d](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d)
-  - **class Field** | [Details](src/c6c30d66-3106-44eb-9272-b2cf7ec74613) | [Code](src/c6c30d66-3106-44eb-9272-b2cf7ec74613/code.php) | [Settings](src/c6c30d66-3106-44eb-9272-b2cf7ec74613/settings.json) | [c6c30d66-3106-44eb-9272-b2cf7ec74613](src/c6c30d66-3106-44eb-9272-b2cf7ec74613)
-  - **class History** | [Details](src/63782f74-7b03-4745-aa40-0adf8ed4e704) | [Code](src/63782f74-7b03-4745-aa40-0adf8ed4e704/code.php) | [Settings](src/63782f74-7b03-4745-aa40-0adf8ed4e704/settings.json) | [63782f74-7b03-4745-aa40-0adf8ed4e704](src/63782f74-7b03-4745-aa40-0adf8ed4e704)
-  - **class Joomlamodule** | [Details](src/295186de-5954-4a65-a4c1-2f79ef305743) | [Code](src/295186de-5954-4a65-a4c1-2f79ef305743/code.php) | [Settings](src/295186de-5954-4a65-a4c1-2f79ef305743/settings.json) | [295186de-5954-4a65-a4c1-2f79ef305743](src/295186de-5954-4a65-a4c1-2f79ef305743)
-  - **class Joomlaplugin** | [Details](src/9eba241c-af90-42dd-ae05-92ff4d8391d3) | [Code](src/9eba241c-af90-42dd-ae05-92ff4d8391d3/code.php) | [Settings](src/9eba241c-af90-42dd-ae05-92ff4d8391d3/settings.json) | [9eba241c-af90-42dd-ae05-92ff4d8391d3](src/9eba241c-af90-42dd-ae05-92ff4d8391d3)
-  - **class Language** | [Details](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0) | [Code](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0/code.php) | [Settings](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0/settings.json) | [9f00e793-86f8-4ef9-b775-a3eb129f83c0](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0)
-  - **class Library** | [Details](src/253317c7-3c3b-48a0-aec8-8af5e7a86504) | [Code](src/253317c7-3c3b-48a0-aec8-8af5e7a86504/code.php) | [Settings](src/253317c7-3c3b-48a0-aec8-8af5e7a86504/settings.json) | [253317c7-3c3b-48a0-aec8-8af5e7a86504](src/253317c7-3c3b-48a0-aec8-8af5e7a86504)
-  - **class Mapper** | [Details](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb) | [Code](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb/code.php) | [Settings](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb/settings.json) | [23f2ca33-440a-4941-8e9a-4bc67522c0cb](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb)
-  - **class Model** | [Details](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45) | [Code](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45/code.php) | [Settings](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45/settings.json) | [0601fee8-d51e-4af0-9ad3-b5f8700c4a45](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45)
-  - **class Placeholder** | [Details](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f) | [Code](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f/code.php) | [Settings](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f/settings.json) | [2f7b1998-bb93-4055-ae82-aa659ce8a37f](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f)
-  - **class Power** | [Details](src/de01527a-6586-46ea-92e7-11ea3de1cedb) | [Code](src/de01527a-6586-46ea-92e7-11ea3de1cedb/code.php) | [Settings](src/de01527a-6586-46ea-92e7-11ea3de1cedb/settings.json) | [de01527a-6586-46ea-92e7-11ea3de1cedb](src/de01527a-6586-46ea-92e7-11ea3de1cedb)
-  - **class Templatelayout** | [Details](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05) | [Code](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05/code.php) | [Settings](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05/settings.json) | [fff3255d-c493-4c21-a48f-73b3ebf8ba05](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05)
-  - **class Utilities** | [Details](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc) | [Code](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc/code.php) | [Settings](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc/settings.json) | [516f93b8-5fff-41c6-aeaf-2d93180a12cc](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc)
+  - **class Adminview** | [Details](src/2dd1289a-4000-43cc-8c62-77ff32de56bf) | [Code](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/code.php) | [Settings](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/settings.json) | Super__2dd1289a_4000_43cc_8c62_77ff32de56bf__Power
+  - **class Builder** | [Details](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7) | [Code](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/code.php) | [Settings](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/settings.json) | Super__2c76c06e_a371_4b73_9fbe_b4d9b4df55d7__Power
+  - **class Compiler** | [Details](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69) | [Code](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/code.php) | [Settings](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/settings.json) | Super__ea5ed06e_72ae_4906_9167_1cc0fa32fe69__Power
+  - **class Component** | [Details](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c) | [Code](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c/code.php) | [Settings](src/8a63e87b-b39b-4a15-8044-9b2a2f4fb61c/settings.json) | Super__8a63e87b_b39b_4a15_8044_9b2a2f4fb61c__Power
+  - **class Creator** | [Details](src/8fdd604f-53e7-4a91-9935-afcfd2f6ac1b) | [Code](src/8fdd604f-53e7-4a91-9935-afcfd2f6ac1b/code.php) | [Settings](src/8fdd604f-53e7-4a91-9935-afcfd2f6ac1b/settings.json) | Super__8fdd604f_53e7_4a91_9935_afcfd2f6ac1b__Power
+  - **class Customcode** | [Details](src/a74ac3b7-bb79-4639-8f14-54a8021be68b) | [Code](src/a74ac3b7-bb79-4639-8f14-54a8021be68b/code.php) | [Settings](src/a74ac3b7-bb79-4639-8f14-54a8021be68b/settings.json) | Super__a74ac3b7_bb79_4639_8f14_54a8021be68b__Power
+  - **class Customview** | [Details](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa) | [Code](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa/code.php) | [Settings](src/87faa133-4cac-4816-ae41-5c3f9a2f76aa/settings.json) | Super__87faa133_4cac_4816_ae41_5c3f9a2f76aa__Power
+  - **class Event** | [Details](src/b94aaedb-6774-4739-a63f-8f87141a85db) | [Code](src/b94aaedb-6774-4739-a63f-8f87141a85db/code.php) | [Settings](src/b94aaedb-6774-4739-a63f-8f87141a85db/settings.json) | Super__b94aaedb_6774_4739_a63f_8f87141a85db__Power
+  - **class Extension** | [Details](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d) | [Code](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d/code.php) | [Settings](src/ed9591cb-0a03-400a-bf47-eaf78ab19b9d/settings.json) | Super__ed9591cb_0a03_400a_bf47_eaf78ab19b9d__Power
+  - **class Field** | [Details](src/c6c30d66-3106-44eb-9272-b2cf7ec74613) | [Code](src/c6c30d66-3106-44eb-9272-b2cf7ec74613/code.php) | [Settings](src/c6c30d66-3106-44eb-9272-b2cf7ec74613/settings.json) | Super__c6c30d66_3106_44eb_9272_b2cf7ec74613__Power
+  - **class History** | [Details](src/63782f74-7b03-4745-aa40-0adf8ed4e704) | [Code](src/63782f74-7b03-4745-aa40-0adf8ed4e704/code.php) | [Settings](src/63782f74-7b03-4745-aa40-0adf8ed4e704/settings.json) | Super__63782f74_7b03_4745_aa40_0adf8ed4e704__Power
+  - **class Joomlamodule** | [Details](src/295186de-5954-4a65-a4c1-2f79ef305743) | [Code](src/295186de-5954-4a65-a4c1-2f79ef305743/code.php) | [Settings](src/295186de-5954-4a65-a4c1-2f79ef305743/settings.json) | Super__295186de_5954_4a65_a4c1_2f79ef305743__Power
+  - **class Joomlaplugin** | [Details](src/9eba241c-af90-42dd-ae05-92ff4d8391d3) | [Code](src/9eba241c-af90-42dd-ae05-92ff4d8391d3/code.php) | [Settings](src/9eba241c-af90-42dd-ae05-92ff4d8391d3/settings.json) | Super__9eba241c_af90_42dd_ae05_92ff4d8391d3__Power
+  - **class Language** | [Details](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0) | [Code](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0/code.php) | [Settings](src/9f00e793-86f8-4ef9-b775-a3eb129f83c0/settings.json) | Super__9f00e793_86f8_4ef9_b775_a3eb129f83c0__Power
+  - **class Library** | [Details](src/253317c7-3c3b-48a0-aec8-8af5e7a86504) | [Code](src/253317c7-3c3b-48a0-aec8-8af5e7a86504/code.php) | [Settings](src/253317c7-3c3b-48a0-aec8-8af5e7a86504/settings.json) | Super__253317c7_3c3b_48a0_aec8_8af5e7a86504__Power
+  - **class Mapper** | [Details](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb) | [Code](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb/code.php) | [Settings](src/23f2ca33-440a-4941-8e9a-4bc67522c0cb/settings.json) | Super__23f2ca33_440a_4941_8e9a_4bc67522c0cb__Power
+  - **class Model** | [Details](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45) | [Code](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45/code.php) | [Settings](src/0601fee8-d51e-4af0-9ad3-b5f8700c4a45/settings.json) | Super__0601fee8_d51e_4af0_9ad3_b5f8700c4a45__Power
+  - **class Placeholder** | [Details](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f) | [Code](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f/code.php) | [Settings](src/2f7b1998-bb93-4055-ae82-aa659ce8a37f/settings.json) | Super__2f7b1998_bb93_4055_ae82_aa659ce8a37f__Power
+  - **class Power** | [Details](src/de01527a-6586-46ea-92e7-11ea3de1cedb) | [Code](src/de01527a-6586-46ea-92e7-11ea3de1cedb/code.php) | [Settings](src/de01527a-6586-46ea-92e7-11ea3de1cedb/settings.json) | Super__de01527a_6586_46ea_92e7_11ea3de1cedb__Power
+  - **class Templatelayout** | [Details](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05) | [Code](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05/code.php) | [Settings](src/fff3255d-c493-4c21-a48f-73b3ebf8ba05/settings.json) | Super__fff3255d_c493_4c21_a48f_73b3ebf8ba05__Power
+  - **class Utilities** | [Details](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc) | [Code](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc/code.php) | [Settings](src/516f93b8-5fff-41c6-aeaf-2d93180a12cc/settings.json) | Super__516f93b8_5fff_41c6_aeaf_2d93180a12cc__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Templatelayout](#vdm-joomla-componentbuilder-compiler-templatelayout)
 
-  - **class Data** | [Details](src/39ea8150-f124-4e47-909d-641bf1c96d5e) | [Code](src/39ea8150-f124-4e47-909d-641bf1c96d5e/code.php) | [Settings](src/39ea8150-f124-4e47-909d-641bf1c96d5e/settings.json) | [39ea8150-f124-4e47-909d-641bf1c96d5e](src/39ea8150-f124-4e47-909d-641bf1c96d5e)
+  - **class Data** | [Details](src/39ea8150-f124-4e47-909d-641bf1c96d5e) | [Code](src/39ea8150-f124-4e47-909d-641bf1c96d5e/code.php) | [Settings](src/39ea8150-f124-4e47-909d-641bf1c96d5e/settings.json) | Super__39ea8150_f124_4e47_909d_641bf1c96d5e__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Utilities](#vdm-joomla-componentbuilder-compiler-utilities)
 
-  - **abstract class FieldHelper** | [Details](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec) | [Code](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/code.php) | [Settings](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/settings.json) | [7a5fd3f3-199e-43ba-a8e8-f473d6c030ec](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec)
-  - **abstract class Indent** | [Details](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6) | [Code](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/code.php) | [Settings](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/settings.json) | [a68c010b-e92e-47d5-8a44-d23cfddeb6c6](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6)
-  - **abstract class Line** | [Details](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222) | [Code](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/code.php) | [Settings](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/settings.json) | [4e6ff11d-bebf-42f5-8fd7-b2f882857222](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222)
-  - **abstract class Placefix** | [Details](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388) | [Code](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/code.php) | [Settings](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/settings.json) | [500f3a7f-c16d-4dd4-81b2-2df6776b5388](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388)
-  - **abstract class Unique** | [Details](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e) | [Code](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/code.php) | [Settings](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/settings.json) | [f02fb1df-f4b6-4be1-9595-2e72084a5e6e](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e)
-  - **class Counter** | [Details](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4) | [Code](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/code.php) | [Settings](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/settings.json) | [e6d871a6-bbe7-497d-af01-68f6bb9a87f4](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4)
-  - **class Dynamicpath** | [Details](src/268b85ef-49f3-4c39-8187-bb12e38d19ee) | [Code](src/268b85ef-49f3-4c39-8187-bb12e38d19ee/code.php) | [Settings](src/268b85ef-49f3-4c39-8187-bb12e38d19ee/settings.json) | [268b85ef-49f3-4c39-8187-bb12e38d19ee](src/268b85ef-49f3-4c39-8187-bb12e38d19ee)
-  - **class File** | [Details](src/5c75b455-3d4c-452a-867e-e90424a64c88) | [Code](src/5c75b455-3d4c-452a-867e-e90424a64c88/code.php) | [Settings](src/5c75b455-3d4c-452a-867e-e90424a64c88/settings.json) | [5c75b455-3d4c-452a-867e-e90424a64c88](src/5c75b455-3d4c-452a-867e-e90424a64c88)
-  - **class Folder** | [Details](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1) | [Code](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1/code.php) | [Settings](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1/settings.json) | [6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1)
-  - **class Pathfix** | [Details](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f) | [Code](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/code.php) | [Settings](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/settings.json) | [cdc9b06d-8333-4fa7-ab4d-b810dd90f95f](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f)
-  - **class Paths** | [Details](src/6f20369a-8536-4870-a1a3-cda254c939c8) | [Code](src/6f20369a-8536-4870-a1a3-cda254c939c8/code.php) | [Settings](src/6f20369a-8536-4870-a1a3-cda254c939c8/settings.json) | [6f20369a-8536-4870-a1a3-cda254c939c8](src/6f20369a-8536-4870-a1a3-cda254c939c8)
-  - **class Structure** | [Details](src/1efdded5-d6c8-452c-8f37-0374483a7b3f) | [Code](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/code.php) | [Settings](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/settings.json) | [1efdded5-d6c8-452c-8f37-0374483a7b3f](src/1efdded5-d6c8-452c-8f37-0374483a7b3f)
+  - **abstract class FieldHelper** | [Details](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec) | [Code](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/code.php) | [Settings](src/7a5fd3f3-199e-43ba-a8e8-f473d6c030ec/settings.json) | Super__7a5fd3f3_199e_43ba_a8e8_f473d6c030ec__Power
+  - **abstract class Indent** | [Details](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6) | [Code](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/code.php) | [Settings](src/a68c010b-e92e-47d5-8a44-d23cfddeb6c6/settings.json) | Super__a68c010b_e92e_47d5_8a44_d23cfddeb6c6__Power
+  - **abstract class Line** | [Details](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222) | [Code](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/code.php) | [Settings](src/4e6ff11d-bebf-42f5-8fd7-b2f882857222/settings.json) | Super__4e6ff11d_bebf_42f5_8fd7_b2f882857222__Power
+  - **abstract class Placefix** | [Details](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388) | [Code](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/code.php) | [Settings](src/500f3a7f-c16d-4dd4-81b2-2df6776b5388/settings.json) | Super__500f3a7f_c16d_4dd4_81b2_2df6776b5388__Power
+  - **abstract class Unique** | [Details](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e) | [Code](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/code.php) | [Settings](src/f02fb1df-f4b6-4be1-9595-2e72084a5e6e/settings.json) | Super__f02fb1df_f4b6_4be1_9595_2e72084a5e6e__Power
+  - **final class Xml** | [Details](src/f6ba34a2-0cd7-4dc1-ab67-75e962a5045b) | [Code](src/f6ba34a2-0cd7-4dc1-ab67-75e962a5045b/code.php) | [Settings](src/f6ba34a2-0cd7-4dc1-ab67-75e962a5045b/settings.json) | Super__f6ba34a2_0cd7_4dc1_ab67_75e962a5045b__Power
+  - **class Counter** | [Details](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4) | [Code](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/code.php) | [Settings](src/e6d871a6-bbe7-497d-af01-68f6bb9a87f4/settings.json) | Super__e6d871a6_bbe7_497d_af01_68f6bb9a87f4__Power
+  - **class Dynamicpath** | [Details](src/268b85ef-49f3-4c39-8187-bb12e38d19ee) | [Code](src/268b85ef-49f3-4c39-8187-bb12e38d19ee/code.php) | [Settings](src/268b85ef-49f3-4c39-8187-bb12e38d19ee/settings.json) | Super__268b85ef_49f3_4c39_8187_bb12e38d19ee__Power
+  - **class File** | [Details](src/5c75b455-3d4c-452a-867e-e90424a64c88) | [Code](src/5c75b455-3d4c-452a-867e-e90424a64c88/code.php) | [Settings](src/5c75b455-3d4c-452a-867e-e90424a64c88/settings.json) | Super__5c75b455_3d4c_452a_867e_e90424a64c88__Power
+  - **class Files** | [Details](src/1d967151-7c20-4ca7-9400-65233cdcd4db) | [Code](src/1d967151-7c20-4ca7-9400-65233cdcd4db/code.php) | [Settings](src/1d967151-7c20-4ca7-9400-65233cdcd4db/settings.json) | Super__1d967151_7c20_4ca7_9400_65233cdcd4db__Power
+  - **class Folder** | [Details](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1) | [Code](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1/code.php) | [Settings](src/6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1/settings.json) | Super__6bbb6ffe_3f09_4c21_aa9d_c93159afa1e1__Power
+  - **class Pathfix** | [Details](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f) | [Code](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/code.php) | [Settings](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/settings.json) | Super__cdc9b06d_8333_4fa7_ab4d_b810dd90f95f__Power
+  - **class Paths** | [Details](src/6f20369a-8536-4870-a1a3-cda254c939c8) | [Code](src/6f20369a-8536-4870-a1a3-cda254c939c8/code.php) | [Settings](src/6f20369a-8536-4870-a1a3-cda254c939c8/settings.json) | Super__6f20369a_8536_4870_a1a3_cda254c939c8__Power
+  - **class Structure** | [Details](src/1efdded5-d6c8-452c-8f37-0374483a7b3f) | [Code](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/code.php) | [Settings](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/settings.json) | Super__1efdded5_d6c8_452c_8f37_0374483a7b3f__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power\Database](#vdm-joomla-componentbuilder-power-database)
 
-  - **final class Insert** | [Details](src/380bb7a3-cdcc-4336-a699-5070cbf521a5) | [Code](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/code.php) | [Settings](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/settings.json) | [380bb7a3-cdcc-4336-a699-5070cbf521a5](src/380bb7a3-cdcc-4336-a699-5070cbf521a5)
-  - **final class Update** | [Details](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3) | [Code](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/code.php) | [Settings](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/settings.json) | [e543c123-b1d9-4a0b-83b2-a9d371da5ff3](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3)
-- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Builder\Update](#vdm-joomla-componentbuilder-compiler-builder-update)
+  - **final class Insert** | [Details](src/380bb7a3-cdcc-4336-a699-5070cbf521a5) | [Code](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/code.php) | [Settings](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/settings.json) | Super__380bb7a3_cdcc_4336_a699_5070cbf521a5__Power
+  - **final class Load** | [Details](src/1f86db0f-e271-45df-8795-3e503ec76698) | [Code](src/1f86db0f-e271-45df-8795-3e503ec76698/code.php) | [Settings](src/1f86db0f-e271-45df-8795-3e503ec76698/settings.json) | Super__1f86db0f_e271_45df_8795_3e503ec76698__Power
+  - **final class Update** | [Details](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3) | [Code](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/code.php) | [Settings](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/settings.json) | Super__e543c123_b1d9_4a0b_83b2_a9d371da5ff3__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Generator](#vdm-joomla-componentbuilder-power-generator)
 
-  - **class Mysql** | [Details](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9) | [Code](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/code.php) | [Settings](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9/settings.json) | [2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9](src/2b5c9989-1d4e-4f59-8b95-5cd2f72f82d9)
+  - **final class Bucket** | [Details](src/5d4278f0-7db2-498f-872a-c974bd8ce334) | [Code](src/5d4278f0-7db2-498f-872a-c974bd8ce334/code.php) | [Settings](src/5d4278f0-7db2-498f-872a-c974bd8ce334/settings.json) | Super__5d4278f0_7db2_498f_872a_c974bd8ce334__Power
+  - **final class ClassInjector** | [Details](src/c72692b0-0a0f-412a-b05b-80002cbf886a) | [Code](src/c72692b0-0a0f-412a-b05b-80002cbf886a/code.php) | [Settings](src/c72692b0-0a0f-412a-b05b-80002cbf886a/settings.json) | Super__c72692b0_0a0f_412a_b05b_80002cbf886a__Power
+  - **final class ClassInjectorBuilder** | [Details](src/9c2fdd98-ce4e-4b97-a2f8-ee6990bdcbf7) | [Code](src/9c2fdd98-ce4e-4b97-a2f8-ee6990bdcbf7/code.php) | [Settings](src/9c2fdd98-ce4e-4b97-a2f8-ee6990bdcbf7/settings.json) | Super__9c2fdd98_ce4e_4b97_a2f8_ee6990bdcbf7__Power
+  - **final class Search** | [Details](src/50302fce-62b4-48ae-a692-9cc4595ce74c) | [Code](src/50302fce-62b4-48ae-a692-9cc4595ce74c/code.php) | [Settings](src/50302fce-62b4-48ae-a692-9cc4595ce74c/settings.json) | Super__50302fce_62b4_48ae_a692_9cc4595ce74c__Power
+  - **final class ServiceProvider** | [Details](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e) | [Code](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e/code.php) | [Settings](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e/settings.json) | Super__369ae3f5_90db_43b9_aba9_ce5c83311c4e__Power
+  - **final class ServiceProviderBuilder** | [Details](src/8a2a3ee5-6ce2-4604-91e2-01f770228960) | [Code](src/8a2a3ee5-6ce2-4604-91e2-01f770228960/code.php) | [Settings](src/8a2a3ee5-6ce2-4604-91e2-01f770228960/settings.json) | Super__8a2a3ee5_6ce2_4604_91e2_01f770228960__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Model](#vdm-joomla-componentbuilder-power-model)
+
+  - **final class Load** | [Details](src/bb29a833-73f7-4283-9327-bc7e41f0723b) | [Code](src/bb29a833-73f7-4283-9327-bc7e41f0723b/code.php) | [Settings](src/bb29a833-73f7-4283-9327-bc7e41f0723b/settings.json) | Super__bb29a833_73f7_4283_9327_bc7e41f0723b__Power
+  - **final class Upsert** | [Details](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5) | [Code](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/code.php) | [Settings](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/settings.json) | Super__7c1fb50f_8fb1_4627_8705_6fedf7182ca5__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Service](#vdm-joomla-componentbuilder-power-service)
+
+  - **class Database** | [Details](src/7243aaf6-b76c-4391-8698-50abbfc98fbe) | [Code](src/7243aaf6-b76c-4391-8698-50abbfc98fbe/code.php) | [Settings](src/7243aaf6-b76c-4391-8698-50abbfc98fbe/settings.json) | Super__7243aaf6_b76c_4391_8698_50abbfc98fbe__Power
+  - **class Generator** | [Details](src/a7101bbc-3c81-4b52-a4aa-522291f7594b) | [Code](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/code.php) | [Settings](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/settings.json) | Super__a7101bbc_3c81_4b52_a4aa_522291f7594b__Power
+  - **class Gitea** | [Details](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae) | [Code](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae/code.php) | [Settings](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae/settings.json) | Super__510dc0f6_da3f_4a78_b43d_3a03e2cb5fae__Power
+  - **class Power** | [Details](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9) | [Code](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9/code.php) | [Settings](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9/settings.json) | Super__02bc072b_1e89_46c1_9732_4da77b1a9ac9__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Customcode\Extractor](#vdm-joomla-componentbuilder-compiler-customcode-extractor)
 
-  - **class Paths** | [Details](src/053803e6-1251-4aed-aefe-46a8e84198d2) | [Code](src/053803e6-1251-4aed-aefe-46a8e84198d2/code.php) | [Settings](src/053803e6-1251-4aed-aefe-46a8e84198d2/settings.json) | [053803e6-1251-4aed-aefe-46a8e84198d2](src/053803e6-1251-4aed-aefe-46a8e84198d2)
+  - **class Paths** | [Details](src/053803e6-1251-4aed-aefe-46a8e84198d2) | [Code](src/053803e6-1251-4aed-aefe-46a8e84198d2/code.php) | [Settings](src/053803e6-1251-4aed-aefe-46a8e84198d2/settings.json) | Super__053803e6_1251_4aed_aefe_46a8e84198d2__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaThree](#vdm-joomla-componentbuilder-compiler-extension-joomlathree)
 
-  - **class InstallScript** | [Details](src/1d929017-a5de-4e0f-9b5a-838934857e26) | [Code](src/1d929017-a5de-4e0f-9b5a-838934857e26/code.php) | [Settings](src/1d929017-a5de-4e0f-9b5a-838934857e26/settings.json) | [1d929017-a5de-4e0f-9b5a-838934857e26](src/1d929017-a5de-4e0f-9b5a-838934857e26)
+  - **class InstallScript** | [Details](src/1d929017-a5de-4e0f-9b5a-838934857e26) | [Code](src/1d929017-a5de-4e0f-9b5a-838934857e26/code.php) | [Settings](src/1d929017-a5de-4e0f-9b5a-838934857e26/settings.json) | Super__1d929017_a5de_4e0f_9b5a_838934857e26__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree](#vdm-joomla-componentbuilder-compiler-field-joomlathree)
 
-  - **class CoreValidation** | [Details](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957) | [Code](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957/code.php) | [Settings](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957/settings.json) | [24da9672-e47f-4bb1-b6c0-0ebfc17f0957](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957)
+  - **class CoreValidation** | [Details](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957) | [Code](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957/code.php) | [Settings](src/24da9672-e47f-4bb1-b6c0-0ebfc17f0957/settings.json) | Super__24da9672_e47f_4bb1_b6c0_0ebfc17f0957__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component](#vdm-joomla-componentbuilder-compiler-interfaces-component)
 
-  - **interface PlaceholderInterface** | [Details](src/97698747-c2ce-4e09-a470-acf6d8e86281) | [Code](src/97698747-c2ce-4e09-a470-acf6d8e86281/code.php) | [Settings](src/97698747-c2ce-4e09-a470-acf6d8e86281/settings.json) | [97698747-c2ce-4e09-a470-acf6d8e86281](src/97698747-c2ce-4e09-a470-acf6d8e86281)
+  - **interface PlaceholderInterface** | [Details](src/97698747-c2ce-4e09-a470-acf6d8e86281) | [Code](src/97698747-c2ce-4e09-a470-acf6d8e86281/code.php) | [Settings](src/97698747-c2ce-4e09-a470-acf6d8e86281/settings.json) | Super__97698747_c2ce_4e09_a470_acf6d8e86281__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator](#vdm-joomla-componentbuilder-compiler-interfaces-creator)
+
+  - **interface Fielddynamicinterface** | [Details](src/c902743e-8c6e-4a50-a4a3-8c955ef2960f) | [Code](src/c902743e-8c6e-4a50-a4a3-8c955ef2960f/code.php) | [Settings](src/c902743e-8c6e-4a50-a4a3-8c955ef2960f/settings.json) | Super__c902743e_8c6e_4a50_a4a3_8c955ef2960f__Power
+  - **interface Fieldsetinterface** | [Details](src/d44f3294-6b68-4d85-a617-15fb772b7d14) | [Code](src/d44f3294-6b68-4d85-a617-15fb772b7d14/code.php) | [Settings](src/d44f3294-6b68-4d85-a617-15fb772b7d14/settings.json) | Super__d44f3294_6b68_4d85_a617_15fb772b7d14__Power
+  - **interface Fieldtypeinterface** | [Details](src/2d27c436-4d8e-4692-8382-d9e97af2231c) | [Code](src/2d27c436-4d8e-4692-8382-d9e97af2231c/code.php) | [Settings](src/2d27c436-4d8e-4692-8382-d9e97af2231c/settings.json) | Super__2d27c436_4d8e_4692_8382_d9e97af2231c__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode](#vdm-joomla-componentbuilder-compiler-interfaces-customcode)
 
-  - **interface DispenserInterface** | [Details](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0) | [Code](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0/code.php) | [Settings](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0/settings.json) | [ef687e42-dc25-4423-9dd4-ec6e9743cfb0](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0)
-  - **interface ExternalInterface** | [Details](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a) | [Code](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a/code.php) | [Settings](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a/settings.json) | [1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a)
-  - **interface ExtractorInterface** | [Details](src/6da2afa5-6087-46dd-80a0-74c6434bcb18) | [Code](src/6da2afa5-6087-46dd-80a0-74c6434bcb18/code.php) | [Settings](src/6da2afa5-6087-46dd-80a0-74c6434bcb18/settings.json) | [6da2afa5-6087-46dd-80a0-74c6434bcb18](src/6da2afa5-6087-46dd-80a0-74c6434bcb18)
-  - **interface GuiInterface** | [Details](src/2cc8517d-1105-4697-9743-048b4b7c089c) | [Code](src/2cc8517d-1105-4697-9743-048b4b7c089c/code.php) | [Settings](src/2cc8517d-1105-4697-9743-048b4b7c089c/settings.json) | [2cc8517d-1105-4697-9743-048b4b7c089c](src/2cc8517d-1105-4697-9743-048b4b7c089c)
-  - **interface LockBaseInterface** | [Details](src/a3c515f5-4adf-4eb3-b637-0a1add550da6) | [Code](src/a3c515f5-4adf-4eb3-b637-0a1add550da6/code.php) | [Settings](src/a3c515f5-4adf-4eb3-b637-0a1add550da6/settings.json) | [a3c515f5-4adf-4eb3-b637-0a1add550da6](src/a3c515f5-4adf-4eb3-b637-0a1add550da6)
+  - **interface DispenserInterface** | [Details](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0) | [Code](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0/code.php) | [Settings](src/ef687e42-dc25-4423-9dd4-ec6e9743cfb0/settings.json) | Super__ef687e42_dc25_4423_9dd4_ec6e9743cfb0__Power
+  - **interface ExternalInterface** | [Details](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a) | [Code](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a/code.php) | [Settings](src/1fcb13a2-f3f0-4fa8-b8c6-ff9dc546777a/settings.json) | Super__1fcb13a2_f3f0_4fa8_b8c6_ff9dc546777a__Power
+  - **interface ExtractorInterface** | [Details](src/6da2afa5-6087-46dd-80a0-74c6434bcb18) | [Code](src/6da2afa5-6087-46dd-80a0-74c6434bcb18/code.php) | [Settings](src/6da2afa5-6087-46dd-80a0-74c6434bcb18/settings.json) | Super__6da2afa5_6087_46dd_80a0_74c6434bcb18__Power
+  - **interface GuiInterface** | [Details](src/2cc8517d-1105-4697-9743-048b4b7c089c) | [Code](src/2cc8517d-1105-4697-9743-048b4b7c089c/code.php) | [Settings](src/2cc8517d-1105-4697-9743-048b4b7c089c/settings.json) | Super__2cc8517d_1105_4697_9743_048b4b7c089c__Power
+  - **interface LockBaseInterface** | [Details](src/a3c515f5-4adf-4eb3-b637-0a1add550da6) | [Code](src/a3c515f5-4adf-4eb3-b637-0a1add550da6/code.php) | [Settings](src/a3c515f5-4adf-4eb3-b637-0a1add550da6/settings.json) | Super__a3c515f5_4adf_4eb3_b637_0a1add550da6__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Extension](#vdm-joomla-componentbuilder-compiler-interfaces-extension)
 
-  - **interface InstallInterface** | [Details](src/1aefb8f5-486f-4f00-adf9-696340b3254e) | [Code](src/1aefb8f5-486f-4f00-adf9-696340b3254e/code.php) | [Settings](src/1aefb8f5-486f-4f00-adf9-696340b3254e/settings.json) | [1aefb8f5-486f-4f00-adf9-696340b3254e](src/1aefb8f5-486f-4f00-adf9-696340b3254e)
+  - **interface InstallInterface** | [Details](src/1aefb8f5-486f-4f00-adf9-696340b3254e) | [Code](src/1aefb8f5-486f-4f00-adf9-696340b3254e/code.php) | [Settings](src/1aefb8f5-486f-4f00-adf9-696340b3254e/settings.json) | Super__1aefb8f5_486f_4f00_adf9_696340b3254e__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field](#vdm-joomla-componentbuilder-compiler-interfaces-field)
 
-  - **interface CoreValidationInterface** | [Details](src/b9f05dc4-d23a-499a-a826-9749b81818ed) | [Code](src/b9f05dc4-d23a-499a-a826-9749b81818ed/code.php) | [Settings](src/b9f05dc4-d23a-499a-a826-9749b81818ed/settings.json) | [b9f05dc4-d23a-499a-a826-9749b81818ed](src/b9f05dc4-d23a-499a-a826-9749b81818ed)
+  - **interface CoreValidationInterface** | [Details](src/b9f05dc4-d23a-499a-a826-9749b81818ed) | [Code](src/b9f05dc4-d23a-499a-a826-9749b81818ed/code.php) | [Settings](src/b9f05dc4-d23a-499a-a826-9749b81818ed/settings.json) | Super__b9f05dc4_d23a_499a_a826_9749b81818ed__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Power\Repo](#vdm-joomla-componentbuilder-compiler-power-repo)
 
-  - **class Readme** | [Details](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5) | [Code](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5/code.php) | [Settings](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5/settings.json) | [efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5)
+  - **class Readme** | [Details](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5) | [Code](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5/code.php) | [Settings](src/efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5/settings.json) | Super__efb1d0f8_2d14_4d2c_8b5f_4fcdd9df45a5__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Power\Repos](#vdm-joomla-componentbuilder-compiler-power-repos)
 
-  - **class Readme** | [Details](src/0d08c583-04d5-454e-b756-48ca05e1651a) | [Code](src/0d08c583-04d5-454e-b756-48ca05e1651a/code.php) | [Settings](src/0d08c583-04d5-454e-b756-48ca05e1651a/settings.json) | [0d08c583-04d5-454e-b756-48ca05e1651a](src/0d08c583-04d5-454e-b756-48ca05e1651a)
-
-# Class Diagrams
-
-## VDM Joomla Componentbuilder Compiler
-> namespace VDM\Joomla\Componentbuilder\Compiler
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler #Olive {
-
-
-  abstract Factory  #Orange {
-    # static $container
-    # static $JoomlaVersion
-    + {static} _() : mixed
-    + {static} _J() : mixed
-    + {static} getContainer() : Container
-    # {static} createContainer() : Container
-  }
-
-  class Component  #Gold {
-    + __construct()
-    + __get()
-  }
-
-  class Config  #Gold {
-    # JoomlaRegistry $config
-    + __construct()
-    # getGiteatoken() : ?string
-    # getAddcontributors() : bool
-    # getAddajax() : bool
-    # getAddsiteajax() : bool
-    # getAddeximport() : bool
-    # getAddcheckin() : bool
-    # getComponentid() : int
-    # getComponentversion() : string
-    # getComponentcodename() : string
-    # getComponentcontext() : string
-    # getComponentcodenamelength() : int
-    # getJoomlaversion() : int
-    # getJoomlaversions() : array
-    # getJoomlaversionname() : string
-    # getSetjoomlafields() : bool
-    # getShowadvancedoptions() : bool
-    # getIndentationvalue() : string
-    # getAddbuilddate() : int
-    # getBuilddate() : string
-    # getBackup() : int
-    # getRepository() : int
-    # getDebuglinenr() : int
-    # getMinify() : int
-    # getRemovelinebreaks() : bool
-    # getTidy() : bool
-    # getSettidywarning() : bool
-    # getSettaghistory() : bool
-    # getLangtag() : string
-    # getLangprefix() : string
-    # getLangtarget() : string
-    # getLangstringtargets() : array
-    # getLangstringkeytargets() : array
-    # getFieldbuildertype() : int
-    # getDefaultfields() : array
-    # getTmppath() : string
-    # getCompilerpath() : string
-    # getJcbpowerspath() : string
-    # getLocalpowersrepositorypath() : string
-    # getApprovedpaths() : array
-    # getBompath() : string
-    # getCustomfolderpath() : string
-    # getAddassetstablefix() : int
-    # getAddassetstablenamefix() : bool
-    # getAccessworsecase() : int
-    # getMysqltablekeys() : array
-    # getAddplaceholders() : bool
-    # getAddpower() : bool
-    # getAddsuperpowers() : bool
-    # getAddownpowers() : bool
-    # getBuildtarget() : string
-    # getCryptiontypes() : array
-    # getBasicencryption() : bool
-    # getMediumencryption() : bool
-    # getWhmcsencryption() : bool
-    # getRemovesitefolder() : bool
-    # getRemovesiteeditfolder() : bool
-    # getUikit() : int
-    # getGooglechart() : bool
-    # getFootable() : bool
-    # getFootableversion() : int
-  }
-
-  class Content  #Gold {
-    # key() : string
-    # firstKey() : string
-    # secondKey() : string
-  }
-
-  class Customcode  #Gold {
-    + array $functionNameMemory
-    + $active
-    + $memory
-    # $data
-    # Config $config
-    # Placeholder $placeholder
-    # Extractor $extractor
-    # Power $power
-    # External $external
-    # $db
-    + __construct()
-    + update() : string
-    + set() : string
-    + get() : bool
-    # insert() : string
-    # buildPlaceholders() : void
-    # check() : Mixed
-  }
-
-  class Field  #Gold {
-    # Data $data
-    # Name $name
-    # TypeName $typeName
-    # UniqueName $uniqueName
-    + __construct()
-    + set() : void
-  }
-
-  class Language  #Gold {
-    # array $content
-    # Config $config
-    + __construct()
-    + key() : string
-    + exist() : bool
-    + get() : string
-    + getTarget() : array
-    + setTarget() : void
-    + set() : void
-    # fix() : string
-  }
-
-  class Placeholder  #Gold {
-    + array $active
-    # Config $config
-    + __construct()
-    + set() : void
-    + get() : mixed
-    + exist() : bool
-    + add() : void
-    + remove() : void
-    + set_() : void
-    + get_() : mixed
-    + exist_() : bool
-    + add_() : void
-    + remove_() : void
-    + set_h() : void
-    + get_h() : mixed
-    + exist_h() : bool
-    + add_h() : void
-    + remove_h() : void
-    + setType() : void
-    + clearType() : void
-    + update() : string
-    + update_() : string
-    + keys() : array
-  }
-
-  class Power  #Gold {
-    + array $active
-    + array $namespace
-    + array $composer
-    + array $superpowers
-    # string $fixUrl
-    # array $state
-    # array $retry
-    # Config $config
-    # Placeholder $placeholder
-    # Customcode $customcode
-    # Gui $gui
-    # Superpower $superpower
-    # \JDatabaseDriver $db
-    # CMSApplication $app
-    + __construct()
-    + load() : void
-    + get() : ?object
-    - set() : bool
-    - isPowerSet() : bool
-    - isGuidValid() : bool
-    - getPowerData() : ?object
-    - setNamespace() : bool
-    - setUseSelection() : void
-    - setLoadSelection() : void
-    - setComposer() : void
-    - setImplements() : void
-    - setExtend() : void
-    - setUseAs() : void
-    - getCleanNamespace() : string
-    - getUseNamespace() : string
-    - addToHeader() : void
-    - setLicensingTemplate() : void
-    - setHeader() : void
-    - setMainClassCode() : void
-    - setSuperPowers() : void
-  }
-
-  class Registry  #Gold {
-    # $indent
-    + varExport() : ?string
-    # convertIndent() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Interfaces
-> namespace VDM\Joomla\Componentbuilder\Interfaces
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Interfaces #Olive {
-
-
-  interface Cryptinterface  #Lavender {
-    + encrypt() : string
-    + decrypt() : string
-  }
-
-  interface FactoryInterface  #Lavender {
-    + {static} _() : Mixed
-    + {static} getContainer() : Container
-  }
-
-  interface InsertInterface  #Lavender {
-    + defaults() : void
-    + rows() : bool
-    + items() : bool
-    + row() : bool
-    + item() : bool
-  }
-
-  interface LoadInterface  #Lavender {
-    + rows() : ?array
-    + items() : ?array
-    + row() : ?array
-    + item() : ?object
-    + value() : mixed
-  }
-
-  interface Mapperdoubleinterface  #Lavender {
-    + isActive_() : bool
-    + set_() : void
-    + get_() : mixed
-    + exist_() : bool
-    + add_() : void
-    + remove_() : void
-  }
-
-  interface Mappersingleinterface  #Lavender {
-    + isActive() : bool
-    + set() : void
-    + get() : mixed
-    + exist() : bool
-    + add() : void
-    + remove() : void
-  }
-
-  interface Serverinterface  #Lavender {
-    + set() : self
-    + move() : bool
-  }
-
-  interface Tableinterface  #Lavender {
-    + get() : mixed
-    + title() : ?array
-    + titleName() : string
-    + tables() : array
-    + exist() : bool
-    + fields() : ?array
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Power
-> namespace VDM\Joomla\Componentbuilder\Power
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Power #Olive {
-
-
-  class Grep << (F,LightGreen) >> #Green {
-    + string $path
-    + ?array $paths
-    # Contents $contents
-    # CMSApplication $app
-    + __construct()
-    + get() : ?object
-    - searchLocal() : ?object
-    - searchRemote() : ?object
-    - getLocal() : ?object
-    - getRemote() : ?object
-    - init() : void
-    - localIndex() : void
-    - remoteIndex() : void
-    - loadRemoteFile() : mixed
-    - getFunctionName() : ?string
-  }
-
-  class Model << (F,LightGreen) >> #Green {
-    + value() : mixed
-    # validateBefore() : bool
-    # validateAfter() : bool
-    # getTable() : string
-  }
-
-  class Super << (F,LightGreen) >> #Green {
-    # Grep $grep
-    # Insert $insert
-    # Update $update
-    + __construct()
-    + load() : bool
-    - insert() : bool
-    - update() : bool
-    - action() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Utilities
-> namespace VDM\Joomla\Componentbuilder\Utilities
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Utilities #Olive {
-
-
-  class Constantpaths  #Gold {
-    # array $paths
-    + get() : array|string|null
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Adminview
-> namespace VDM\Joomla\Componentbuilder\Compiler\Adminview
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Adminview #LightGreen {
-
-
-  class Data  #Gold {
-    # array $data
-    # Config $config
-    # Registry $registry
-    # EventInterface $event
-    # Placeholder $placeholder
-    # Dispenser $dispenser
-    # Customtabs $customtabs
-    # Tabs $tabs
-    # Fields $fields
-    # Historyadminview $history
-    # Permissions $permissions
-    # Conditions $conditions
-    # Relations $relations
-    # Linkedviews $linkedviews
-    # Javascriptadminview $javascript
-    # Cssadminview $css
-    # Phpadminview $php
-    # Custombuttons $custombuttons
-    # Customimportscripts $customimportscripts
-    # Ajaxadmin $ajax
-    # Customalias $customalias
-    # Sql $sql
-    # Mysqlsettings $mysqlsettings
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?object
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Alias
-> namespace VDM\Joomla\Componentbuilder\Compiler\Alias
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Alias #LightGreen {
-
-
-  class Data  #Gold {
-    # Config $config
-    # Registry $registry
-    # Customcode $customcode
-    # Gui $gui
-    # Loader $loader
-    # Libraries $libraries
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?array
-    # set() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Component
-> namespace VDM\Joomla\Componentbuilder\Compiler\Component
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Component #LightGreen {
-
-
-  class Dashboard  #Gold {
-    # Registry $registry
-    # Component $component
-    # CMSApplication $app
-    + __construct()
-    + set() : void
-  }
-
-  class Data  #Gold {
-    # Config $config
-    # EventInterface $event
-    # Placeholder $placeholder
-    # ComponentPlaceholder $componentPlaceholder
-    # Dispenser $dispenser
-    # Customcode $customcode
-    # Gui $gui
-    # Field $field
-    # FieldName $fieldName
-    # UniqueName $uniqueName
-    # Filesfolders $filesFolders
-    # Historycomponent $history
-    # Whmcs $whmcs
-    # Sqltweaking $sqltweaking
-    # Adminviews $adminviews
-    # Siteviews $siteviews
-    # Customadminviews $customadminviews
-    # Updateserver $updateserver
-    # Joomlamodules $modules
-    # Joomlaplugins $plugins
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?object
-  }
-
-  class Placeholder  #Gold {
-    # $placeholders
-    # $config
-    # $db
-    + __construct()
-    + get() : array
-  }
-
-  class Settings  #Gold {
-    # array $standardFolders
-    # array $standardRootFiles
-    # ?object $data
-    # Config $config
-    # Registry $registry
-    # EventInterface $event
-    # Placeholder $placeholder
-    # Component $component
-    # Paths $paths
-    # Dynamicpath $dynamicpath
-    # Pathfix $pathfix
-    + __construct()
-    + exists() : bool
-    + structure() : object
-    + multiple() : object
-    + single() : object
-    + standardFolder() : bool
-    + standardRootFile() : bool
-    - isSet() : bool
-    - get() : ?object
-    - readJsonFile() : ?object
-    - isValidData() : bool
-    - loadExtraFolders() : void
-    - addImportViewFolder() : void
-    - addPhpSpreadsheetFolder() : void
-    - addUikitFolder() : void
-    - addFooTableFolder() : void
-    - loadExtraFiles() : void
-    - addGoogleChartFiles() : void
-    - addFolders() : void
-    - addFiles() : void
-  }
-
-  class Structure  #Gold {
-    # Settings $settings
-    # Paths $paths
-    # Folder $folder
-    + __construct()
-    + build() : bool
-    # folders() : void
-  }
-
-  class Structuremultiple  #Gold {
-    # Config $config
-    # Registry $registry
-    # Settings $settings
-    # Component $component
-    # Createdate $createdate
-    # Modifieddate $modifieddate
-    # Structure $structure
-    + __construct()
-    + build() : bool
-    # admin() : bool
-    # site() : bool
-    # custom() : bool
-    - isValidAdminView() : bool
-    - isValidView() : bool
-    - buildAdminView() : void
-    - buildView() : void
-  }
-
-  class Structuresingle  #Gold {
-    # string $newName
-    # string $currentFullPath
-    # string $packageFullPath
-    # string $zipFullPath
-    # Config $config
-    # Registry $registry
-    # Settings $settings
-    # Component $component
-    # Content $content
-    # Counter $counter
-    # Paths $paths
-    # Files $files
-    # CMSApplication $app
-    + __construct()
-    + build() : bool
-    - doLicenseCheck() : bool
-    - doReadmeCheck() : bool
-    - doChangelogCheck() : bool
-    - setNewName() : void
-    - setPaths() : void
-    - pathExist() : bool
-    - setTarget() : void
-    - moveFile() : void
-    - registerFile() : void
-    - setDynamicTarget() : void
-    - setDynamicFolders() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Customcode
-> namespace VDM\Joomla\Componentbuilder\Compiler\Customcode
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Customcode #LightGreen {
-
-
-  class Dispenser  #Gold {
-    + array $hub
-    # Placeholder $placeholder
-    # Customcode $customcode
-    # Gui $gui
-    # Hash $hash
-    # LockBase $base64
-    + __construct()
-    + set() : bool
-    + get() : mixed
-    # initHub() : void
-    # setHub() : void
-  }
-
-  class External  #Gold {
-    # array $code
-    # array $cutter
-    # Placeholder $placeholder
-    # \JDatabaseDriver $db
-    # User $user
-    # CMSApplication $app
-    + __construct()
-    + set() : string
-    # getCode() : void
-    # cut() : string
-  }
-
-  class Extractor  #Gold {
-    # array $existing
-    # array $new
-    # array $done
-    # array $counter
-    # array $fileTypes
-    # array $placeholders
-    # string $today
-    # Config $config
-    # Gui $gui
-    # Paths $paths
-    # Reverse $reverse
-    # Placeholder $componentPlaceholder
-    # Pathfix $pathfix
-    # User $user
-    # \JDatabaseDriver $db
-    # CMSApplication $app
-    + __construct()
-    + run() : void
-    # searchFileContent() : array
-    # insert() : void
-    # update() : void
-    # setStartReplace() : string
-    # addLineChecker() : bool|int
-    # getSystemID() : mixed
-  }
-
-  class Gui  #Gold {
-    # Config $config
-    # Reverse $reverse
-    # Parser $parser
-    # \JDatabaseDriver $db
-    # CMSApplication $app
-    + __construct()
-    + set() : string
-    + search() : void
-    # check() : bool
-  }
-
-  class Hash  #Gold {
-    # Placeholder $placeholder
-    + __construct()
-    + set() : string
-  }
-
-  class LockBase  #Gold {
-    # Placeholder $placeholder
-    + __construct()
-    + set() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Customview
-> namespace VDM\Joomla\Componentbuilder\Compiler\Customview
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Customview #LightGreen {
-
-
-  class Data  #Gold {
-    # array $data
-    # Config $config
-    # EventInterface $event
-    # Customcode $customcode
-    # Gui $gui
-    # Libraries $libraries
-    # Templatelayout $templateLayout
-    # Dynamicget $dynamic
-    # Loader $loader
-    # Javascriptcustomview $javascript
-    # Csscustomview $css
-    # Phpcustomview $php
-    # Custombuttons $custombuttons
-    # Ajaxcustomview $ajax
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?object
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Dynamicget
-> namespace VDM\Joomla\Componentbuilder\Compiler\Dynamicget
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Dynamicget #LightGreen {
-
-
-  class Data  #Gold {
-    # array $guiMapper
-    # Config $config
-    # Registry $registry
-    # EventInterface $event
-    # Customcode $customcode
-    # Dispenser $dispenser
-    # Gui $gui
-    # Dynamicget $dynamic
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?array
-  }
-
-  class Selection  #Gold {
-    # array $name
-    # Config $config
-    # Registry $registry
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?array
-    # name() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Field
-> namespace VDM\Joomla\Componentbuilder\Compiler\Field
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Field #LightGreen {
-
-
-  class Customcode  #Gold {
-    # array $views
-    # Dispenser $dispenser
-    + __construct()
-    + update() : void
-  }
-
-  class Data  #Gold {
-    # array $fields
-    # Config $config
-    # EventInterface $event
-    # HistoryInterface $history
-    # Placeholder $placeholder
-    # Customcode $customcode
-    # FieldCustomcode $fieldCustomcode
-    # Validation $validation
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?object
-  }
-
-  class DatabaseName  #Gold {
-    # Registry $registry
-    + __construct()
-    + get() : ?string
-  }
-
-  class Name  #Gold {
-    # Registry $registry
-    # array $unique
-    # Placeholder $placeholder
-    # UniqueName $uniqueName
-    + __construct()
-    + get() : string
-  }
-
-  class TypeName  #Gold {
-    + get() : string
-  }
-
-  class UniqueName  #Gold {
-    # Registry $registry
-    + __construct()
-    + set() : void
-    + get() : string
-  }
-
-  class Validation  #Gold {
-    # Registry $registry
-    # Gui $gui
-    # Placeholder $placeholder
-    # Customcode $customcode
-    # CoreValidationInterface $validation
-    + __construct()
-    + set() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Interfaces
-> namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces #LightGreen {
-
-
-  interface CustomcodeInterface  #Lavender {
-    + update() : string
-    + set() : string
-    + get() : bool
-  }
-
-  interface EventInterface  #Lavender {
-    + trigger() : void
-  }
-
-  interface GetScriptInterface  #Lavender {
-    + get() : string
-  }
-
-  interface HistoryInterface  #Lavender {
-    + get() : ?object
-  }
-
-  interface LanguageInterface  #Lavender {
-    + key() : string
-    + exist() : bool
-    + get() : string
-    + getTarget() : array
-    + setTarget() : void
-    + set() : void
-  }
-
-  interface PlaceholderInterface  #Lavender {
-    + set() : void
-    + get() : mixed
-    + exist() : bool
-    + add() : void
-    + remove() : void
-    + set_() : void
-    + get_() : mixed
-    + exist_() : bool
-    + add_() : void
-    + remove_() : void
-    + set_h() : void
-    + get_h() : mixed
-    + exist_h() : bool
-    + add_h() : void
-    + remove_h() : void
-    + setType() : void
-    + clearType() : void
-    + update() : string
-    + update_() : string
-    + keys() : array
-  }
-
-  interface PowerInterface  #Lavender {
-    + load() : void
-    + get() : mixed
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler JoomlaThree
-> namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaThree
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaThree #LightGreen {
-
-
-  class Event  #Gold {
-    # $activePlugins
-    + __construct()
-    + trigger() : void
-  }
-
-  class History  #Gold {
-    # ?object $tmp
-    # Config $config
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?object
-    # set() : bool
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Joomlamodule
-> namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule #LightGreen {
-
-
-  class Data  #Gold {
-    # array $data
-    # Config $config
-    # Customcode $customcode
-    # Gui $gui
-    # Placeholder $placeholder
-    # Language $language
-    # Field $field
-    # FieldName $fieldName
-    # Filesfolders $filesFolders
-    # Libraries $libraries
-    # Dynamicget $dynamic
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : object|array|null
-    + exists() : bool
-    + set() : bool
-  }
-
-  class Structure  #Gold {
-    # Module $module
-    # Component $component
-    # Config $config
-    # Registry $registry
-    # Dispenser $dispenser
-    # EventInterface $event
-    # Counter $counter
-    # Folder $folder
-    # File $file
-    # Files $files
-    + __construct()
-    + build() : void
-    # getXML() : string
-    # getCustomScriptField() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Joomlaplugin
-> namespace VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin #LightGreen {
-
-
-  class Data  #Gold {
-    # array $data
-    # Config $config
-    # Customcode $customcode
-    # Gui $gui
-    # Placeholder $placeholder
-    # Language $language
-    # Field $field
-    # FieldName $fieldName
-    # Filesfolders $filesFolders
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : object|array|null
-    + exists() : bool
-    + set() : bool
-  }
-
-  class Structure  #Gold {
-    # Plugin $plugin
-    # Component $component
-    # Config $config
-    # Registry $registry
-    # Dispenser $dispenser
-    # EventInterface $event
-    # Counter $counter
-    # Folder $folder
-    # File $file
-    # Files $files
-    + __construct()
-    + build() : void
-    # getXML() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Language
-> namespace VDM\Joomla\Componentbuilder\Compiler\Language
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Language #LightGreen {
-
-
-  class Extractor  #Gold {
-    + array $langKeys
-    + array $langMismatch
-    + array $langMatch
-    # Config $config
-    # Placeholder $placeholder
-    # Language $language
-    + __construct()
-    + engine() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Library
-> namespace VDM\Joomla\Componentbuilder\Compiler\Library
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Library #LightGreen {
-
-
-  class Data  #Gold {
-    # Config $config
-    # Registry $registry
-    # Customcode $customcode
-    # Gui $gui
-    # FieldData $field
-    # Filesfolders $filesFolders
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : object|bool
-  }
-
-  class Structure  #Gold {
-    # Config $config
-    # Registry $registry
-    # EventInterface $event
-    # Component $component
-    # Content $content
-    # Counter $counter
-    # Paths $paths
-    # Folder $folder
-    # File $file
-    + __construct()
-    + build() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Model
-> namespace VDM\Joomla\Componentbuilder\Compiler\Model
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Model #LightGreen {
-
-
-  class Adminviews  #Gold {
-    # Adminview $admin
-    # Registry $registry
-    # Config $config
-    + __construct()
-    + set() : void
-  }
-
-  class Ajaxadmin  #Gold {
-    # array $guiMapper
-    # Config $config
-    # Registry $registry
-    # Dispenser $dispenser
-    + __construct()
-    + set() : void
-  }
-
-  class Ajaxcustomview  #Gold {
-    # array $guiMapper
-    # Config $config
-    # Dispenser $dispenser
-    + __construct()
-    + set() : void
-  }
-
-  class Conditions  #Gold {
-    # TypeName $typeName
-    # FieldName $fieldName
-    + __construct()
-    + set() : void
-  }
-
-  class Createdate  #Gold {
-    + get() : string
-  }
-
-  class Cssadminview  #Gold {
-    # array $areas
-    # Dispenser $dispenser
-    + __construct()
-    + set() : void
-  }
-
-  class Csscustomview  #Gold {
-    # array $areas
-    # Customcode $customcode
-    + __construct()
-    + set() : void
-  }
-
-  class Customadminviews  #Gold {
-    # Customview $customadmin
-    # Config $config
-    + __construct()
-    + set() : void
-  }
-
-  class Customalias  #Gold {
-    # Registry $registry
-    # FieldName $fieldName
-    + __construct()
-    + set() : void
-  }
-
-  class Custombuttons  #Gold {
-    # array $areas
-    # array $guiMapper
-    # Customcode $customcode
-    # Gui $gui
-    # Templatelayout $templateLayout
-    + __construct()
-    + set() : void
-  }
-
-  class Customimportscripts  #Gold {
-    # array $areas
-    # array $guiMapper
-    # Dispenser $dispenser
-    + __construct()
-    + set() : void
-  }
-
-  class Customtabs  #Gold {
-    # Config $config
-    # Registry $registry
-    # Language $language
-    # Placeholder $placeholder
-    # Customcode $customcode
-    + __construct()
-    + set() : void
-  }
-
-  class Dynamicget  #Gold {
-    # array $jointer
-    # array $operator
-    # array $guiMapper
-    # Config $config
-    # Registry $registry
-    # Customcode $customcode
-    # Gui $gui
-    # Placeholder $placeholder
-    # Selection $selection
-    + __construct()
-    + set() : void
-  }
-
-  class Fields  #Gold {
-    # Config $config
-    # Registry $registry
-    # HistoryInterface $history
-    # Customcode $customcode
-    # Field $field
-    # FieldName $fieldName
-    # UpdateSql $updateSql
-    # CMSApplication $app
-    + __construct()
-    + set() : void
-  }
-
-  class Filesfolders  #Gold {
-    # array $keys
-    + set() : void
-  }
-
-  class Historyadminview  #Gold {
-    # Config $config
-    # HistoryInterface $history
-    # Updatesql $updatesql
-    + __construct()
-    + set() : void
-  }
-
-  class Historycomponent  #Gold {
-    # Config $config
-    # HistoryInterface $history
-    # Updatesql $updatesql
-    + __construct()
-    + set() : void
-    - setAdminView() : void
-    - setComponent() : void
-  }
-
-  class Javascriptadminview  #Gold {
-    # array $scripter
-    # array $guiMapper
-    # Dispenser $dispenser
-    + __construct()
-    + set() : void
-  }
-
-  class Javascriptcustomview  #Gold {
-    # array $areas
-    # array $guiMapper
-    # Customcode $customcode
-    # Gui $gui
-    + __construct()
-    + set() : void
-  }
-
-  class Joomlamodules  #Gold {
-    # Module $module
-    + __construct()
-    + set() : void
-  }
-
-  class Joomlaplugins  #Gold {
-    # Plugin $plugin
-    + __construct()
-    + set() : void
-  }
-
-  class Libraries  #Gold {
-    # Config $config
-    # Registry $registry
-    # Library $library
-    + __construct()
-    + set() : void
-  }
-
-  class Linkedviews  #Gold {
-    # Registry $registry
-    + __construct()
-    + set() : void
-  }
-
-  class Loader  #Gold {
-    # Config $config
-    # Registry $registry
-    + __construct()
-    + set() : void
-    + uikit() : void
-    # getFootableScripts() : bool
-    # getGetModule() : bool
-    # getGoogleChart() : bool
-  }
-
-  class Modifieddate  #Gold {
-    # array $last
-    + get() : string
-    # getDate() : int
-    # getModified() : int
-    # getKey() : string
-  }
-
-  class Mysqlsettings  #Gold {
-    # Config $config
-    # Registry $registry
-    + __construct()
-    + set() : void
-  }
-
-  class Permissions  #Gold {
-    + set() : void
-  }
-
-  class Phpadminview  #Gold {
-    # array $areas
-    # array $guiMapper
-    # Dispenser $dispenser
-    # Templatelayout $templateLayout
-    + __construct()
-    + set() : void
-  }
-
-  class Phpcustomview  #Gold {
-    # array $areas
-    # array $guiMapper
-    # Customcode $customcode
-    # Gui $gui
-    # Loader $loader
-    # Templatelayout $templateLayout
-    + __construct()
-    + set() : void
-  }
-
-  class Relations  #Gold {
-    # Config $config
-    # Registry $registry
-    # Language $language
-    # Customcode $customcode
-    + __construct()
-    + set() : void
-  }
-
-  class Siteviews  #Gold {
-    # Customview $site
-    # Config $config
-    + __construct()
-    + set() : void
-  }
-
-  class Sql  #Gold {
-    # Dispenser $dispenser
-    # Sqldump $dump
-    + __construct()
-    + set() : void
-  }
-
-  class Sqldump  #Gold {
-    # Registry $registry
-    # \JDatabaseDriver $db
-    + __construct()
-    + get() : ?string
-    # escape() : string|array
-  }
-
-  class Sqltweaking  #Gold {
-    # Registry $registry
-    + __construct()
-    + set() : void
-    # tweak() : void
-  }
-
-  class Tabs  #Gold {
-    + set() : void
-  }
-
-  class Updateserver  #Gold {
-    + set() : void
-    # changelog() : void
-  }
-
-  class Updatesql  #Gold {
-    # array $name
-    # Registry $registry
-    + __construct()
-    + set() : void
-    # add() : void
-    # name() : string
-  }
-
-  class Whmcs  #Gold {
-    + set() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Placeholder
-> namespace VDM\Joomla\Componentbuilder\Compiler\Placeholder
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Placeholder #LightGreen {
-
-
-  class Reverse  #Gold {
-    # Config $config
-    # Placeholder $placeholder
-    # Language $language
-    # Extractor $extractor
-    # Power $power
-    + __construct()
-    + engine() : string
-    # setReverse() : string
-    # reverseSuperPowers() : string
-    # getReversePower() : ?array
-    # reverseLanguage() : string
-    # reverseCustomCode() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Power
-> namespace VDM\Joomla\Componentbuilder\Compiler\Power
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Power #LightGreen {
-
-
-  class Extractor << (F,LightGreen) >> #Green {
-    # array $powers
-    # \JDatabaseDriver $db
-    + __construct()
-    + get_() : ?array
-    + get() : ?array
-    + reverse() : ?array
-    + search() : void
-    # load() : void
-    # map() : ?array
-    # filter() : ?array
-    # namespaces() : ?array
-  }
-
-  class Injector << (F,LightGreen) >> #Green {
-    # Power $power
-    # Extractor $extractor
-    # Parser $parser
-    # Placeholder $placeholder
-    # array $map
-    # array $useStatements
-    # array $traits
-    + __construct()
-    + power() : string
-    # update() : string
-    # inspect() : ?string
-    # getName() : ?string
-    # getUniqueName() : string
-    # removeLastSpace() : string
-    # addUseStatements() : string
-    # addLines() : string
-    # addLinesAfterDefinedLine() : string
-  }
-
-  class Parser << (F,LightGreen) >> #Green {
-    + code() : array
-    + getClassCode() : ?string
-    + getClassLicense() : ?string
-    + getUseStatements() : ?array
-    + getTraits() : ?array
-    - properties() : ?array
-    - methods() : ?array
-    - extractDocBlock() : ?string
-    - extractFunctionArgumentDetails() : ?array
-    - extractReturnType() : ?string
-    - extractArgTypesFromComment() : ?array
-    - extractArgTypesArguments() : ?array
-    - extractReturnTypeFromComment() : ?string
-    - extractSinceVersion() : ?string
-    - extractDeprecatedVersion() : ?string
-    - removeWhiteSpaceFromComment() : string
-    - mergeArgumentTypes() : array
-  }
-
-  class Autoloader  #Gold {
-    # Power $power
-    # Config $config
-    # Content $content
-    # string $helper
-    + __construct()
-    + set() : void
-    - loadPluginAutoloader() : bool
-    - loadHelperAutoloader() : bool
-    - loadSiteAutoloader() : bool
-    - getPluginAutoloader() : string
-    - getHelperAutoloader() : string
-    - getBLockSiteLoading() : ?string
-    - getAutoloader() : ?string
-    - getComposer() : ?string
-  }
-
-  class Infusion  #Gold {
-    # Config $config
-    # Power $power
-    # Content $content
-    # Autoloader $autoloader
-    # Parser $parser
-    # RepoReadme $reporeadme
-    # ReposReadme $reposreadme
-    # Placeholder $placeholder
-    # Event $event
-    # array $linker
-    + __construct()
-    + set() : void
-    - parsePowers() : void
-    - setSuperPowers() : void
-    - setPowers() : void
-    - index() : string
-    - code() : string
-    - raw() : string
-    - linker() : string
-  }
-
-  class Plantuml  #Gold {
-    + namespaceDiagram() : string
-    + classBasicDiagram() : string
-    + classDetailedDiagram() : string
-    - generatePropertiesPlantUML() : string
-    - generateDetailedMethodsPlantUML() : array
-    - generateBasicMethodsPlantUML() : string
-    - generateMethodArgumentsAndNotes() : array
-    - generateMethodNotes() : array
-    - generateNotesPlantUML() : string
-    - getAccessSign() : string
-    - getClassTypeLable() : string
-    - getClassTypeTag() : string
-    - getClassColor() : string
-    - getNamespaceColor() : string
-  }
-
-  class Structure  #Gold {
-    # array $htaccess
-    # Power $power
-    # Config $config
-    # Registry $registry
-    # EventInterface $event
-    # Counter $counter
-    # Paths $paths
-    # Folder $folder
-    # File $file
-    # Files $files
-    # CMSApplication $app
-    + __construct()
-    + build() : void
-    - createFile() : void
-    - setHtaccess() : void
-    - setDynamicFolders() : void
-    - setSuperPowerDetails() : void
-    - setSuperPowerFiles() : void
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Service
-> namespace VDM\Joomla\Componentbuilder\Compiler\Service
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Service #LightGreen {
-
-
-  class Adminview  #Gold {
-    + register() : void
-    + getAdminviewData() : AdminviewData
-  }
-
-  class Builder  #Gold {
-    + register() : void
-    + getMysql() : Mysql
-  }
-
-  class Compiler  #Gold {
-    + register() : void
-    + getConfig() : Config
-    + getRegistry() : Registry
-    + getTable() : Table
-  }
-
-  class Component  #Gold {
-    + register() : void
-    + getComponent() : CompilerComponent
-    + getSettings() : Settings
-    + getDashboard() : Dashboard
-    + getPlaceholder() : Placeholder
-    + getData() : Data
-    + getStructure() : Structure
-    + getStructuresingle() : Structuresingle
-    + getStructuremultiple() : Structuremultiple
-  }
-
-  class Customcode  #Gold {
-    + register() : void
-    + getCustomcode() : CustomcodeInterface
-    + getExternal() : External
-    + getGui() : Gui
-    + getHash() : Hash
-    + getLockBase() : LockBase
-    + getDispenser() : Dispenser
-    + getPaths() : Paths
-    + getExtractor() : Extractor
-  }
-
-  class Customview  #Gold {
-    + register() : void
-    + getCustomviewData() : CustomviewData
-    + getDynamicgetData() : DynamicgetData
-    + getDynamicgetSelection() : DynamicgetSelection
-  }
-
-  class Database  #Gold {
-    + register() : void
-    + getLoad() : Load
-    + getInsert() : Insert
-    + getUpdate() : Update
-  }
-
-  class Event  #Gold {
-    # $currentVersion
-    + register() : void
-    + getEvent() : EventInterface
-    + getJ3Event() : J3Event
-  }
-
-  class Extension  #Gold {
-    # $targetVersion
-    + register() : void
-    + getJ3ExtensionInstallScript() : J3InstallScript
-    + getExtensionInstallScript() : GetScriptInterface
-  }
-
-  class Field  #Gold {
-    # $targetVersion
-    + register() : void
-    + getField() : CompilerField
-    + getData() : Data
-    + getValidation() : Validation
-    + getJ3CoreValidation() : J3CoreValidation
-    + getCoreValidation() : CoreValidationInterface
-    + getCustomcode() : Customcode
-    + getFieldName() : Name
-    + getFieldTypeName() : TypeName
-    + getFieldUniqueName() : UniqueName
-    + getFieldDatabaseName() : DatabaseName
-  }
-
-  class History  #Gold {
-    # $currentVersion
-    + register() : void
-    + getHistory() : HistoryInterface
-    + getJ3History() : J3History
-  }
-
-  class Joomlamodule  #Gold {
-    + register() : void
-    + getData() : Data
-    + getStructure() : Structure
-  }
-
-  class Joomlaplugin  #Gold {
-    + register() : void
-    + getData() : Data
-    + getStructure() : Structure
-  }
-
-  class Language  #Gold {
-    + register() : void
-    + getLanguage() : CompilerLanguage
-    + getLanguageExtractor() : Extractor
-  }
-
-  class Library  #Gold {
-    + register() : void
-    + getData() : Data
-    + getStructure() : Structure
-  }
-
-  class Mapper  #Gold {
-    + register() : void
-    + getContent() : Content
-  }
-
-  class Model  #Gold {
-    + register() : void
-    + getModelJoomlaplugins() : Joomlaplugins
-    + getModelJoomlamodules() : Joomlamodules
-    + getModelHistorycomponent() : Historycomponent
-    + getModelCustomadminviews() : Customadminviews
-    + getModelAjaxcustomview() : Ajaxcustomview
-    + getModelJavascriptcustomview() : Javascriptcustomview
-    + getModelCsscustomview() : Csscustomview
-    + getModelPhpcustomview() : Phpcustomview
-    + getModelDynamicget() : Dynamicget
-    + getModelLibraries() : Libraries
-    + getModelSiteviews() : Siteviews
-    + getModelPermissions() : Permissions
-    + getModelHistoryadminview() : Historyadminview
-    + getModelMysqlsettings() : Mysqlsettings
-    + getModelSql() : Sql
-    + getModelCustomalias() : Customalias
-    + getModelAjaxadmin() : Ajaxadmin
-    + getModelCustomimportscripts() : Customimportscripts
-    + getModelCustombuttons() : Custombuttons
-    + getModelLoader() : Loader
-    + getModelPhpadminview() : Phpadminview
-    + getModelCssadminview() : Cssadminview
-    + getModelJavascriptadminview() : Javascriptadminview
-    + getModelLinkedviews() : Linkedviews
-    + getModelRelations() : Relations
-    + getModelConditions() : Conditions
-    + getModelFields() : Fields
-    + getModelUpdatesql() : Updatesql
-    + getModelTabs() : Tabs
-    + getModelCustomtabs() : Customtabs
-    + getModelAdminviews() : Adminviews
-    + getModelSqltweaking() : Sqltweaking
-    + getModelSqldump() : Sqldump
-    + getModelWhmcs() : Whmcs
-    + getModifieddate() : Modifieddate
-    + getCreatedate() : Createdate
-    + getUpdateserver() : Updateserver
-    + getModelFilesfolders() : Filesfolders
-    + getServerLoad() : ServerLoad
-  }
-
-  class Placeholder  #Gold {
-    + register() : void
-    + getPlaceholder() : CompilerPlaceholder
-    + getPlaceholderReverse() : Reverse
-  }
-
-  class Power  #Gold {
-    + register() : void
-    + getPowers() : Powers
-    + getSuperpower() : Superpower
-    + getGrep() : Grep
-    + getAutoloader() : Autoloader
-    + getInfusion() : Infusion
-    + getStructure() : Structure
-    + getParser() : Parser
-    + getPlantuml() : Plantuml
-    + getRepoReadme() : RepoReadme
-    + getReposReadme() : ReposReadme
-    + getExtractor() : Extractor
-    + getInjector() : Injector
-    + getModel() : Model
-    + getInsert() : Insert
-    + getUpdate() : Update
-  }
-
-  class Templatelayout  #Gold {
-    + register() : void
-    + getTemplatelayoutData() : TemplatelayoutData
-    + getAliasData() : AliasData
-  }
-
-  class Utilities  #Gold {
-    + register() : void
-    + getFolder() : Folder
-    + getFile() : File
-    + getCounter() : Counter
-    + getPaths() : Paths
-    + getFiles() : Files
-    + getConstantpaths() : Constantpaths
-    + getDynamicpath() : Dynamicpath
-    + getPathfix() : Pathfix
-    + getStructure() : Structure
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Templatelayout
-> namespace VDM\Joomla\Componentbuilder\Compiler\Templatelayout
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Templatelayout #LightGreen {
-
-
-  class Data  #Gold {
-    # Config $config
-    # Registry $registry
-    # Aliasdata $alias
-    + __construct()
-    + set() : bool
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Utilities
-> namespace VDM\Joomla\Componentbuilder\Compiler\Utilities
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Utilities #LightGreen {
-
-
-  abstract FieldHelper  #Orange {
-    + {static} check() : bool
-  }
-
-  abstract Indent  #Orange {
-    + {static} _() : string
-    - {static} indent() : string
-    - {static} init() : void
-  }
-
-  abstract Line  #Orange {
-    - static $add
-    + {static} _() : string
-    - {static} add() : bool
-    - {static} init() : void
-  }
-
-  abstract Placefix  #Orange {
-    + {static} _() : string
-    + {static} b() : string
-    + {static} d() : string
-    + {static} _h() : string
-    + {static} h() : string
-  }
-
-  abstract Unique  #Orange {
-    + {static} get() : string
-    + {static} code() : string
-  }
-
-  class Counter  #Gold {
-    + int $folder
-    + int $file
-    + int $page
-    + int $line
-    + int $field
-    # int $seconds
-    # float $actualSeconds
-    # int $folderSeconds
-    # int $fileSeconds
-    # int $lineSeconds
-    # float $secondsDebugging
-    # float $secondsPlanning
-    # float $secondsMapping
-    # float $secondsOffice
-    # int $totalHours
-    # int $debuggingHours
-    # int $planningHours
-    # int $mappingHours
-    # int $officeHours
-    # int $actualTotalHours
-    # int $actualHoursSpent
-    # int $actualDaysSpent
-    # int $totalDays
-    # int $actualTotalDays
-    # float $projectWeekTime
-    # float $projectMonthTime
-    # float $start
-    # float $end
-    # float $timer
-    # Content $content
-    + __construct()
-    + start() : void
-    + end() : void
-    + set() : void
-    # calculate() : void
-  }
-
-  class Dynamicpath  #Gold {
-    # Placeholder $placeholder
-    # array $paths
-    + __construct()
-    + update() : string
-  }
-
-  class File  #Gold {
-    # Counter $counter
-    # Paths $paths
-    + __construct()
-    + html() : void
-    + write() : bool
-  }
-
-  class Folder  #Gold {
-    # Counter $counter
-    # File $file
-    + __construct()
-    + create() : void
-    + remove() : bool
-  }
-
-  class Pathfix  #Gold {
-    + set() : void
-  }
-
-  class Paths  #Gold {
-    # Config $config
-    # Component $component
-    + __construct()
-    + __get() : string
-    # key() : string
-    - setTemplatePath() : void
-    - setComponentSalesName() : void
-    - setComponentBackupName() : void
-    - setComponentFolderName() : void
-    - setComponentPath() : void
-    - setTemplatePathCustom() : void
-  }
-
-  class Structure  #Gold {
-    # Settings $settings
-    # Paths $paths
-    # Counter $counter
-    # File $file
-    # Files $files
-    # CMSApplication $app
-    + __construct()
-    + build() : bool
-    - getFileDetails() : ?array
-    - getPath() : ?string
-    - getNewName() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Power Database
-> namespace VDM\Joomla\Componentbuilder\Power\Database
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Power\Database #LightGreen {
-
-
-  class Insert << (F,LightGreen) >> #Green {
-    # Model $model
-    # Database $database
-    + __construct()
-    + value() : bool
-    + row() : bool
-    + rows() : bool
-    + item() : bool
-    + items() : bool
-  }
-
-  class Update << (F,LightGreen) >> #Green {
-    # Model $model
-    # Database $database
-    + __construct()
-    + value() : bool
-    + row() : bool
-    + rows() : bool
-    + item() : bool
-    + items() : bool
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Builder Update
-> namespace VDM\Joomla\Componentbuilder\Compiler\Builder\Update
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Builder\Update #DeepSkyBlue {
-
-
-  class Mysql  #Gold {
-    # key() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Customcode Extractor
-> namespace VDM\Joomla\Componentbuilder\Compiler\Customcode\Extractor
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Customcode\Extractor #DeepSkyBlue {
-
-
-  class Paths  #Gold {
-    + array $active
-    # array $componentPlaceholder
-    # Config $config
-    # Placeholder $placeholder
-    # Customcode $customcode
-    # Extractor $extractor
-    # \JDatabaseDriver $db
-    + __construct()
-    # load() : void
-    # getModuleIDs() : mixed
-    # getModulePath() : mixed
-    # getPluginIDs() : mixed
-    # getPluginPath() : mixed
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Extension JoomlaThree
-> namespace VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaThree
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaThree #DeepSkyBlue {
-
-
-  class InstallScript  #Gold {
-    # object $extension
-    # array $methods
-    # array $types
-    # array $construct
-    # array $install
-    # array $update
-    # array $uninstall
-    # bool $preflightActive
-    # bool $postflightActive
-    + get() : string
-    # build() : string
-    # head() : string
-    # construct() : string
-    # main() : string
-    # flight() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Field JoomlaThree
-> namespace VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree #DeepSkyBlue {
-
-
-  class CoreValidation  #Gold {
-    # ?array $rules
-    # string $path
-    + __construct()
-    + get() : array
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Interfaces Component
-> namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component #DeepSkyBlue {
-
-
-  interface PlaceholderInterface  #Lavender {
-    + get() : array
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Interfaces Customcode
-> namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode #DeepSkyBlue {
-
-
-  interface DispenserInterface  #Lavender {
-    + set() : bool
-    + get() : mixed
-  }
-
-  interface ExternalInterface  #Lavender {
-    + set() : string
-  }
-
-  interface ExtractorInterface  #Lavender {
-    + run() : void
-  }
-
-  interface GuiInterface  #Lavender {
-    + set() : string
-    + search() : void
-  }
-
-  interface LockBaseInterface  #Lavender {
-    + set() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Interfaces Extension
-> namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Extension
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Extension #DeepSkyBlue {
-
-
-  interface InstallInterface  #Lavender {
-    + getOfficialName() : string
-    + getClassName() : string
-    + getInstallerClassName() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Interfaces Field
-> namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field #DeepSkyBlue {
-
-
-  interface CoreValidationInterface  #Lavender {
-    + get() : array
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Power Repo
-> namespace VDM\Joomla\Componentbuilder\Compiler\Power\Repo
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Power\Repo #DeepSkyBlue {
-
-
-  class Readme  #Gold {
-    # Power $power
-    # Plantuml $plantuml
-    + __construct()
-    + get() : string
-  }
-}
-
-
-@enduml
-```
-
-## VDM Joomla Componentbuilder Compiler Power Repos
-> namespace VDM\Joomla\Componentbuilder\Compiler\Power\Repos
-```uml
-@startuml
-
-namespace VDM\Joomla\Componentbuilder\Compiler\Power\Repos #DeepSkyBlue {
-
-
-  class Readme  #Gold {
-    # Power $power
-    # Plantuml $plantuml
-    + __construct()
-    + get() : string
-    - readmeBuilder() : string
-    - readmeModel() : string
-    - generateIndex() : string
-    - generateDiagramBucket() : string
-    - defineTypeOrder() : array
-    - sortClasses() : void
-    - compareNamespace() : int
-    - compareType() : int
-    - compareName() : int
-    - generateNamespaceDiagram() : string
-    - indexLinkPower() : string
-    - linkPowerRepo() : string
-    - linkPowerCode() : string
-    - linkPowerSettings() : string
-    - linkPowerGuid() : string
-  }
-}
-
-
-@enduml
-```
-
+  - **class Readme** | [Details](src/0d08c583-04d5-454e-b756-48ca05e1651a) | [Code](src/0d08c583-04d5-454e-b756-48ca05e1651a/code.php) | [Settings](src/0d08c583-04d5-454e-b756-48ca05e1651a/settings.json) | Super__0d08c583_04d5_454e_b756_48ca05e1651a__Power
 
 ---
 ```

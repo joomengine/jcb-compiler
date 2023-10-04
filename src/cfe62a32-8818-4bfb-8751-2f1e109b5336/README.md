@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Dashboard (Details)
+# final class Dashboard (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
 ```uml
 @startuml
-class Dashboard  #Gold {
+class Dashboard << (F,LightGreen) >> #RoyalBlue {
   # Registry $registry
   # Component $component
   # CMSApplication $app

@@ -1,0 +1,25 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
+    "guid": "952423ba-015a-4104-89a4-030695aa4d15",
+    "implements": [
+        "64e291c2-11f1-423d-a44d-837cc12cc017"
+    ],
+    "load_selection": null,
+    "name": "IntegerFields",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Builder.IntegerFields",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "7d494d91-ab60-43cd-aecf-d50e07f7f30e",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Builder.IntegerFields",
+    "description": "Integer Fields Builder Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

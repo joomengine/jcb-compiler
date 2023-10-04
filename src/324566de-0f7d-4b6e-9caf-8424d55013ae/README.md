@@ -29,6 +29,7 @@ class Structure  #Gold {
   - setDynamicFolders() : void
   - setSuperPowerDetails() : void
   - setSuperPowerFiles(object $power, string $bom) : void
+  - loadExistingSuperPower(string $repository) : void
 }
 
 note right of Structure::__construct
@@ -49,7 +50,7 @@ note right of Structure::__construct
     ?CMSApplication $app = null
 end note
 
-note right of Structure::build
+note left of Structure::build
   Build the Powers files, folders
 
   since: 3.2.0
@@ -69,7 +70,7 @@ note right of Structure::createFile
     string $key
 end note
 
-note right of Structure::setHtaccess
+note left of Structure::setHtaccess
   Set the .htaccess for this power path
 
   since: 3.2.0
@@ -83,7 +84,7 @@ note right of Structure::setDynamicFolders
   return: void
 end note
 
-note right of Structure::setSuperPowerDetails
+note left of Structure::setSuperPowerDetails
   Set the super powers details structure
 
   since: 3.2.0
@@ -91,6 +92,13 @@ note right of Structure::setSuperPowerDetails
 end note
 
 note right of Structure::setSuperPowerFiles
+  Set the super power file paths
+
+  since: 3.2.0
+  return: void
+end note
+
+note left of Structure::loadExistingSuperPower
   Set the super power file paths
 
   since: 3.2.0

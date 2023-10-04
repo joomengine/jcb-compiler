@@ -34,7 +34,7 @@ interface Mappersingleinterface
 	 * @return  void
 	 * @since 3.2.0
 	 */
-	public function set(string $key, $value);
+	public function set(string $key, $value): void;
 
 	/**
 	 * Get content
@@ -62,11 +62,12 @@ interface Mappersingleinterface
 	 *
 	 * @param   string  $key    The main string key
 	 * @param   mixed   $value  The values to set
+	 * @param   bool    $array  The is array switch
 	 *
 	 * @return  void
 	 * @since 3.2.0
 	 */
-	public function add(string $key, $value);
+	public function add(string $key, $value, bool $array = false): void;
 
 	/**
 	 * Remove content
@@ -76,7 +77,6 @@ interface Mappersingleinterface
 	 * @return  void
 	 * @since 3.2.0
 	 */
-	public function remove(string $key);
-
+	public function remove(string $key): void;
 }
 

@@ -23,8 +23,8 @@
             "as": "FieldName"
         },
         "use_selection3": {
-            "use": "7a5fd3f3-199e-43ba-a8e8-f473d6c030ec",
-            "as": "default"
+            "use": "12df35ad-2d44-4c4c-a7d5-a3350932a520",
+            "as": "FieldGroups"
         },
         "use_selection4": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",

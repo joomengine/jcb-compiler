@@ -11,19 +11,19 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
         },
         "use_selection1": {
             "use": "cef2815b-f72b-402a-b769-f028f676692d",
-            "as": "Adminview"
+            "as": "Admin"
         },
         "use_selection2": {
-            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "use": "abdb7d20-a15e-42d8-bd91-7b09514df7f2",
             "as": "default"
         },
         "use_selection3": {
-            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "use": "9481caa2-6d04-4598-8320-543a93927243",
             "as": "default"
         },
         "use_selection4": {

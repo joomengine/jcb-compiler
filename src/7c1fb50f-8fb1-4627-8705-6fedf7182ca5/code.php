@@ -9,21 +9,22 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Power;
+namespace VDM\Joomla\Componentbuilder\Power\Model;
 
 
-use VDM\Joomla\Componentbuilder\Abstraction\Model as AbstractionModel;
+use VDM\Joomla\Abstraction\Model as AbstractionModel;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Componentbuilder\Interfaces\ModelInterface;
+use VDM\Joomla\Utilities\ObjectHelper;
+use VDM\Joomla\Interfaces\ModelInterface;
 
 
 /**
- * Power Model
+ * Power Model Update or Insert
  * 
  * @since 3.2.0
  */
-final class Model extends AbstractionModel implements ModelInterface
+final class Upsert extends AbstractionModel implements ModelInterface
 {
 	/**
 	 * Model the value
@@ -75,7 +76,7 @@ final class Model extends AbstractionModel implements ModelInterface
 	protected function validateBefore(&$value, ?string $field = null, ?string $table = null): bool
 	{
 		// check values
-		if (StringHelper::check($value) || ArrayHelper::check($value, true) || is_numeric($value))
+		if (StringHelper::check($value) || ArrayHelper::check($value, true)  || ObjectHelper::check($value) || is_numeric($value))
 		{
 			return true;
 		}

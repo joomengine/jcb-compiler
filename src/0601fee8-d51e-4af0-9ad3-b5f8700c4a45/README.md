@@ -194,7 +194,7 @@ note left of Model::getModelCustombuttons
 end note
 
 note right of Model::getModelLoader
-  Get the Model Auto Loader
+  Get The Model Loader Class.
 
   since: 3.2.0
   return: Loader

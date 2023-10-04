@@ -12,13 +12,13 @@
 @startuml
 class Mysqlsettings  #Gold {
   # Config $config
-  # Registry $registry
-  + __construct(?Config $config = null, ?Registry $registry = null)
+  # MysqlTableSetting $mysqltablesetting
+  + __construct(Config $config, MysqlTableSetting $mysqltablesetting)
   + set(object $item) : void
 }
 
 note right of Mysqlsettings::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
 end note

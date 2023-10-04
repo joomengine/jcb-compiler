@@ -10,7 +10,7 @@
 > namespace: **VDM\Joomla\Componentbuilder\Power\Database**
 ```uml
 @startuml
-class Update << (F,LightGreen) >> #Green {
+class Update << (F,LightGreen) >> #RoyalBlue {
   # Model $model
   # Database $database
   + __construct(Model $model, Database $database)

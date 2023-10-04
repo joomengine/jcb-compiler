@@ -12,21 +12,21 @@
 @startuml
 class Libraries  #Gold {
   # Config $config
-  # Registry $registry
+  # LibraryManager $librarymanager
   # Library $library
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, LibraryManager $librarymanager, ...)
   + set(string $key, object $item, ...) : void
 }
 
 note right of Libraries::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Library $library = null
+    Config $config
+    LibraryManager $librarymanager
+    Library $library
 end note
 
 note right of Libraries::set
