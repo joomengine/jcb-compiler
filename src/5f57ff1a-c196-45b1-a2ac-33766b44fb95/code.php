@@ -13,17 +13,25 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
+use VDM\Joomla\Abstraction\Registry\Traits\IsArray;
 use VDM\Joomla\Interfaces\Registryinterface;
 use VDM\Joomla\Abstraction\Registry;
 
 
 /**
- * Compiler Content One
+ * Compiler Content Multi
  * 
  * @since 3.2.0
  */
-class ContentOne extends Registry implements Registryinterface
+class ContentMulti extends Registry implements Registryinterface
 {
+	/**
+	 * Is an Array
+	 *
+	 * @since 3.2.0
+	 */
+	use IsArray;
+
 	/**
 	 * Constructor.
 	 *
@@ -31,7 +39,7 @@ class ContentOne extends Registry implements Registryinterface
 	 */
 	public function __construct()
 	{
-		$this->setSeparator(null);
+		$this->setSeparator('|');
 	}
 
 	/**
@@ -60,12 +68,22 @@ class ContentOne extends Registry implements Registryinterface
 	 *
 	 * @param array  $keys   The keys to the location mapper.
 	 *
-	 * @return array      The valid array of key
+	 * @return array|null      The valid array of key
 	 * @since 3.2.0
 	 */
-	protected function modelActiveKeys(array $keys): array
+	protected function modelActiveKeys(array $keys): ?array
 	{
-		return [Placefix::_h($keys[0])];
+		if (isset($keys[1]))
+		{
+			return [$keys[0], Placefix::_h($keys[1])];
+		}
+
+		if (isset($keys[0]))
+		{
+			return [$keys[0]];
+		}
+
+		return null;
 	}
 }
 

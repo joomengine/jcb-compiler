@@ -1,10 +1,10 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "4d4e76e9-12d9-4d19-b58c-b88974b2586a",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "a601888d-12b6-427f-94ae-95004206e24e",
     "implements": [
-        "fbc58009-fa16-4d49-a0dd-419c3b62d42f"
+        "64e291c2-11f1-423d-a44d-837cc12cc017"
     ],
     "load_selection": null,
     "name": "PermissionGlobalAction",

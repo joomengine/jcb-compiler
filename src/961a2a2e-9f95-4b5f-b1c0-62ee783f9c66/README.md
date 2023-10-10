@@ -8,7 +8,7 @@
 ```
 # final class FieldNames (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class FieldNames << (F,LightGreen) >> #RoyalBlue {

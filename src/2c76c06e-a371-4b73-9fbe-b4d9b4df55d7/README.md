@@ -22,6 +22,8 @@ class Builder  #Gold {
   + getCategoryOtherName(Container $container) : CategoryOtherName
   + getCheckBox(Container $container) : CheckBox
   + getComponentFields(Container $container) : ComponentFields
+  + getContentMulti(Container $container) : ContentMulti
+  + getContentOne(Container $container) : ContentOne
   + getCustomAlias(Container $container) : CustomAlias
   + getCustomField(Container $container) : CustomField
   + getCustomFieldLinks(Container $container) : CustomFieldLinks
@@ -176,6 +178,20 @@ note right of Builder::getComponentFields
 
   since: 3.2.0
   return: ComponentFields
+end note
+
+note left of Builder::getContentMulti
+  Get The ContentMulti Class.
+
+  since: 3.2.0
+  return: ContentMulti
+end note
+
+note right of Builder::getContentOne
+  Get The ContentOne Class.
+
+  since: 3.2.0
+  return: ContentOne
 end note
 
 note left of Builder::getCustomAlias

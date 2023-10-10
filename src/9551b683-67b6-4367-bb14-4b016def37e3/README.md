@@ -8,7 +8,7 @@
 ```
 # final class CustomTabs (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class CustomTabs << (F,LightGreen) >> #RoyalBlue {

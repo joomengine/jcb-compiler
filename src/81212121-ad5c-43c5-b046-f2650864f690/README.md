@@ -8,7 +8,7 @@
 ```
 # final class AccessSwitchList (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class AccessSwitchList << (F,LightGreen) >> #RoyalBlue {

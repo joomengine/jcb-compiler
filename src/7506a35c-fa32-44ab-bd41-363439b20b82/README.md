@@ -8,7 +8,7 @@
 ```
 # final class ListHeadOverride (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ListHeadOverride << (F,LightGreen) >> #RoyalBlue {

@@ -16,7 +16,8 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Application\CMSApplication;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
-use VDM\Joomla\Componentbuilder\Compiler\Content;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentOne as Content;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentMulti as Contents;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\SiteFieldData as SiteField;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Language;
@@ -49,12 +50,20 @@ final class CustomFieldTypeFile
 	protected Config $config;
 
 	/**
-	 * The Content Class.
+	 * The ContentOne Class.
 	 *
 	 * @var   Content
 	 * @since 3.2.0
 	 */
 	protected Content $content;
+
+	/**
+	 * The ContentMulti Class.
+	 *
+	 * @var   Contents
+	 * @since 3.2.0
+	 */
+	protected Contents $contents;
 
 	/**
 	 * The SiteFieldData Class.
@@ -140,7 +149,8 @@ final class CustomFieldTypeFile
 	 * Constructor.
 	 *
 	 * @param Config                  $config                  The Config Class.
-	 * @param Content                 $content                 The Content Class.
+	 * @param Content                 $content                 The ContentOne Class.
+	 * @param Contents                $contents                The ContentMulti Class.
 	 * @param SiteField               $sitefield               The SiteFieldData Class.
 	 * @param Placeholder             $placeholder             The Placeholder Class.
 	 * @param Language                $language                The Language Class.
@@ -153,8 +163,9 @@ final class CustomFieldTypeFile
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(Config $config, Content $content, SiteField $sitefield,
-		Placeholder $placeholder, Language $language,
+	public function __construct(Config $config, Content $content, Contents $contents,
+		SiteField $sitefield, Placeholder $placeholder,
+		Language $language,
 		ComponentPlaceholder $componentplaceholder,
 		Structure $structure, InputButton $inputbutton,
 		FieldGroupControl $fieldgroupcontrol,
@@ -163,6 +174,7 @@ final class CustomFieldTypeFile
 	{
 		$this->config = $config;
 		$this->content = $content;
+		$this->contents = $contents;
 		$this->sitefield = $sitefield;
 		$this->placeholder = $placeholder;
 		$this->language = $language;
@@ -188,13 +200,9 @@ final class CustomFieldTypeFile
 	{
 		// make sure it is not already been build or if it is prime
 		if (isset($data['custom']) && isset($data['custom']['extends'])
-			&& ((isset($data['custom']['prime_php'])
-					&& $data['custom']['prime_php'] == 1)
-				|| !$this->content->exist_('customfield_' . $data['type'])
-				|| !ArrayHelper::check(
-					$this->content->get_('customfield_' . $data['type'])
-				)
-			))
+			&& ((isset($data['custom']['prime_php']) && $data['custom']['prime_php'] == 1)
+				|| !$this->contents->isArray('customfield_' . $data['type']))
+			)
 		{
 			// set J prefix
 			$jprefix = 'J';
@@ -212,6 +220,8 @@ final class CustomFieldTypeFile
 				$data['type'] = implode('', $dotTypeArray);
 				$data['custom']['type'] = $data['type'];
 			}
+			// set the contents key
+			$contents_key = "customfield_{$data['type']}|";
 			// set tab and break replacements
 			$tabBreak = array(
 				'\t' => Indent::_(1),
@@ -273,17 +283,17 @@ final class CustomFieldTypeFile
 				$replace[$globalPlaceholder] = $gloabalValue;
 			}
 			// start loading the field type
-			// $this->fileContentDynamic['customfield_' . $data['type']] = array();
+
 			// JPREFIX <<<DYNAMIC>>>
-			$this->content->set_('customfield_' . $data['type'], 'JPREFIX', $jprefix);
+			$this->contents->set("{$contents_key}JPREFIX", $jprefix);
 			// Type <<<DYNAMIC>>>
-			$this->content->set_('customfield_' . $data['type'], 'Type',
+			$this->contents->set("{$contents_key}Type",
 				StringHelper::safe(
 					$data['custom']['type'], 'F'
 				)
 			);
 			// type <<<DYNAMIC>>>
-			$this->content->set_('customfield_' . $data['type'], 'type', StringHelper::safe($data['custom']['type']));
+			$this->contents->set("{$contents_key}type", StringHelper::safe($data['custom']['type']));
 			// is this a own custom field
 			if (isset($data['custom']['own_custom']))
 			{
@@ -311,24 +321,23 @@ final class CustomFieldTypeFile
 				);
 				// JFORM_TYPE_HEADER <<<DYNAMIC>>>
 				$add_default_header = true;
-				$this->content->set_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER',
+				$this->contents->set("{$contents_key}JFORM_TYPE_HEADER",
 					"//" . Line::_(
 						__LINE__,__CLASS__
 					) . " Import the " . $JFORM_extends
 					. " field type classes needed"
 				);
 				// JFORM_extens <<<DYNAMIC>>>
-				$this->content->set_('customfield_' . $data['type'],
-					'JFORM_extends', $JFORM_extends
+				$this->contents->set("{$contents_key}JFORM_extends", $JFORM_extends
 				);
 				// JFORM_EXTENDS <<<DYNAMIC>>>
-				$this->content->set_('customfield_' . $data['type'], 'JFORM_EXTENDS',
+				$this->contents->set("{$contents_key}JFORM_EXTENDS",
 					StringHelper::safe(
 						$data['custom']['extends'], 'F'
 					)
 				);
 				// JFORM_TYPE_PHP <<<DYNAMIC>>>
-				$this->content->set_('customfield_' . $data['type'], 'JFORM_TYPE_PHP',
+				$this->contents->set("{$contents_key}JFORM_TYPE_PHP",
 					PHP_EOL . PHP_EOL . Indent::_(1) . "//" . Line::_(
 						__LINE__,__CLASS__
 					) . " A " . $data['custom']['own_custom'] . " Field"
@@ -356,10 +365,10 @@ final class CustomFieldTypeFile
 						// check if this is header text
 						if ('HEADER' === $x)
 						{
-							$this->content->add_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER',
+							$this->contents->add("{$contents_key}JFORM_TYPE_HEADER",
 								PHP_EOL . $this->placeholder->update(
 									$phpBucket, $replace
-								)
+								), false
 							);
 							// stop default headers from loading
 							$add_default_header = false;
@@ -367,10 +376,10 @@ final class CustomFieldTypeFile
 						else
 						{
 							// JFORM_TYPE_PHP <<<DYNAMIC>>>
-							$this->content->add_('customfield_' . $data['type'], 'JFORM_TYPE_PHP',
+							$this->contents->add("{$contents_key}JFORM_TYPE_PHP",
 								PHP_EOL . $this->placeholder->update(
 									$phpBucket, $replace
-								)
+								), false
 							);
 						}
 					}
@@ -378,20 +387,22 @@ final class CustomFieldTypeFile
 				// check if we should add default header
 				if ($add_default_header)
 				{
-					$this->content->add_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER',
-						PHP_EOL . "jimport('joomla.form.helper');"
+					$this->contents->add("{$contents_key}JFORM_TYPE_HEADER",
+						PHP_EOL . "jimport('joomla.form.helper');",
+						false
 					);
-					$this->content->add_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER',
-						PHP_EOL . "JFormHelper::loadFieldClass('" . $JFORM_extends . "');"
+					$this->contents->add("{$contents_key}JFORM_TYPE_HEADER",
+						PHP_EOL . "JFormHelper::loadFieldClass('" . $JFORM_extends . "');",
+						false
 					);
 				}
 				// check the the JFormHelper::loadFieldClass(..) was set
-				elseif (strpos((string) $this->content->get_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER'),
+				elseif (strpos((string) $this->contents->get("{$contents_key}JFORM_TYPE_HEADER"),
 						'JFormHelper::loadFieldClass(') === false)
 				{
-					$this->content->add_('customfield_' . $data['type'], 'JFORM_TYPE_HEADER',
+					$this->contents->add("{$contents_key}JFORM_TYPE_HEADER",
 						PHP_EOL . "JFormHelper::loadFieldClass('"
-						. $JFORM_extends . "');"
+						. $JFORM_extends . "');", false
 					);
 				}
 			}
@@ -488,29 +499,29 @@ final class CustomFieldTypeFile
 					// build the Group Control
 					$this->fieldgroupcontrol->set($data['type'], $groupLangName);
 					// JFORM_GETGROUPS_PHP <<<DYNAMIC>>>
-					$this->content->set_('customfield_' . $data['type'], 'JFORM_GETGROUPS_PHP',
+					$this->contents->set("{$contents_key}JFORM_GETGROUPS_PHP",
 						$phpCode
 					);
 					// JFORM_GETEXCLUDED_PHP <<<DYNAMIC>>>
-					$this->content->set_('customfield_' . $data['type'], 'JFORM_GETEXCLUDED_PHP',
+					$this->contents->set("{$contents_key}JFORM_GETEXCLUDED_PHP",
 						$phpxCode
 					);
 				}
 				else
 				{
 					// JFORM_GETOPTIONS_PHP <<<DYNAMIC>>>
-					$this->content->set_('customfield_' . $data['type'], 'JFORM_GETOPTIONS_PHP',
+					$this->contents->set("{$contents_key}JFORM_GETOPTIONS_PHP",
 						$phpCode
 					);
 				}
 				// type <<<DYNAMIC>>>
-				$this->content->set_('customfield_' . $data['type'], 'ADD_BUTTON',
+				$this->contents->set("{$contents_key}ADD_BUTTON",
 					$this->inputbutton->get($data['custom'])
 				);
 			}
 		}
 		// if this field gets used in plug-in or module we should track it so if needed we can copy it over
-		if ((strpos($nameSingleCode, 'P|uG!n') !== false || strpos($nameSingleCode, 'M0dU|3') !== false)
+		if ((strpos($nameSingleCode, 'pLuG!n') !== false || strpos($nameSingleCode, 'M0dUl3') !== false)
 			&& isset($data['custom'])
 			&& isset($data['custom']['type']))
 		{

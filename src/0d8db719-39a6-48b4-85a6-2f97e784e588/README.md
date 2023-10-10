@@ -8,7 +8,7 @@
 ```
 # final class DatabaseKeys (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class DatabaseKeys << (F,LightGreen) >> #RoyalBlue {

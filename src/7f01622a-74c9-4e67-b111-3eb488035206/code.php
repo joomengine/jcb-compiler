@@ -178,7 +178,7 @@ final class Permission
 	public function getAction(string $nameView, string $action): ?string
 	{
 		if (($set_action = $this->getCore($nameView, $action)) !== null &&
-			$this->permissionaction->exist($set_action, $nameView))
+			$this->permissionaction->exists("{$set_action}|{$nameView}"))
 		{
 			return $set_action;
 		}
@@ -198,7 +198,7 @@ final class Permission
 	public function getGlobal(string $nameView, string $action): string
 	{
 		if (($set_action = $this->getCore($nameView, $action)) !== null &&
-			$this->permissionglobalaction->exist($set_action, $nameView))
+			$this->permissionglobalaction->exists("{$set_action}|{$nameView}"))
 		{
 			return $set_action;
 		}
@@ -218,7 +218,7 @@ final class Permission
 	public function actionExist(string $nameView, string $action): bool
 	{
 		if (($set_action = $this->getCore($nameView, $action)) !== null &&
-			$this->permissionaction->exist($set_action, $nameView))
+			$this->permissionaction->exists("{$set_action}|{$nameView}"))
 		{
 			return true;
 		}
@@ -238,7 +238,7 @@ final class Permission
 	public function globalExist(string $nameView, string $action): bool
 	{
 		if (($set_action = $this->getCore($nameView, $action)) !== null &&
-			$this->permissionglobalaction->exist($set_action, $nameView))
+			$this->permissionglobalaction->exists("{$set_action}|{$nameView}"))
 		{
 			return true;
 		}
@@ -336,7 +336,7 @@ final class Permission
 			$core_check[0] = 'core';
 			$core_target = implode('.', $core_check);
 
-			$this->permissioncore->set($nameView, $core_target, $action);
+			$this->permissioncore->set("{$nameView}|{$core_target}", $action);
 
 			// set array sort name
 			$sort_key = StringHelper::safe($permission['title']);
@@ -348,14 +348,14 @@ final class Permission
 			if ($permission['implementation'] == 1)
 			{
 				// only related to view
-				$this->permissionviews->set($nameView, $action, [
+				$this->permissionviews->set("{$nameView}|{$action}", [
 					'name' => $action,
 					'title' => $title,
 					'description' => "{$title}_DESC"
 				]);
 
 				// load permission to action
-				$this->permissionaction->set($action, $nameView, $nameView);
+				$this->permissionaction->set("{$action}|{$nameView}", $nameView);
 			}
 			elseif ($permission['implementation'] == 2)
 			{
@@ -370,7 +370,7 @@ final class Permission
 				$this->counter->accessSize++;
 
 				// build permission switch
-				$this->permissionglobalaction->set($action, $nameView, $nameView);
+				$this->permissionglobalaction->set("{$action}|{$nameView}", $nameView);
 
 				// add menu control view that has menus options
 				$this->setDashboard($nameView, $nameViews, $menuControllers, $action, $core_target);
@@ -378,14 +378,14 @@ final class Permission
 			elseif ($permission['implementation'] == 3)
 			{
 				// only related to view
-				$this->permissionviews->set($nameView, $action, [
+				$this->permissionviews->set("{$nameView}|{$action}", [
 					'name' => $action,
 					'title' => $title,
 					'description' => "{$title}_DESC"
 				]);
 
 				// load permission to action
-				$this->permissionaction->set($action, $nameView, $nameView);
+				$this->permissionaction->set("{$action}|{$nameView}", $nameView);
 
 				// relation to whole component
 				$this->permissioncomponent->set($sort_key, [
@@ -398,7 +398,7 @@ final class Permission
 				$this->counter->accessSize++;
 
 				// build permission switch
-				$this->permissionglobalaction->set($action, $nameView, $nameView);
+				$this->permissionglobalaction->set("{$action}|{$nameView}", $nameView);
 
 				// add menu control view that has menus options
 				$this->setDashboard($nameView, $nameViews, $menuControllers, $action, $core_target);
@@ -437,20 +437,17 @@ final class Permission
 		if ($coreTarget === 'core.access')
 		{
 			$this->permissiondashboard->set(
-				'icon', "$nameViews.access",
-				"'$nameViews.access' => '$action'"
+				"{$nameViews}.access", $action
 			);
 			$this->permissiondashboard->set(
-				'icon', "$nameView.access",
-				"'$nameView.access' => '$action'"
+				"{$nameView}.access", $action
 			);
 		}
 
 		if ($coreTarget === 'core.create')
 		{
 			$this->permissiondashboard->set(
-				'icon', "$nameView.create",
-				"'$nameView.create' => '$action'"
+				"{$nameView}.create", $action
 			);
 		}
 
@@ -462,15 +459,13 @@ final class Permission
 				if ($menu_controller === 'dashboard_add')
 				{
 					$this->permissiondashboard->set(
-						'icon', "$nameView.$menu_controller",
-						"'$nameView.$menu_controller' => '$action'"
+						"{$nameView}.{$menu_controller}", $action
 					);
 				}
 				else
 				{
 					$this->permissiondashboard->set(
-						'icon', "$nameViews.$menu_controller",
-						"'$nameViews.$menu_controller' => '$action'"
+						"{$nameViews}.{$menu_controller}", $action
 					);
 				}
 			}
@@ -690,7 +685,7 @@ final class Permission
 	 */
 	private function getCore(string $nameView, string $action): ?string
 	{
-		return $this->permissioncore->get($nameView, $action);
+		return $this->permissioncore->get("{$nameView}|{$action}");
 	}
 }
 

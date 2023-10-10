@@ -8,15 +8,14 @@
 ```
 # class Paths (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
-> extends: **MapperSingle**
+> extends: **Registry**
 ```uml
 @startuml
 class Paths  #Gold {
   # Config $config
   # Component $component
-  + __construct(?Config $config = null, ?Component $component = null)
+  + __construct(Config $config = null, Component $component = null)
   + __get(string $key) : string
-  # key(string $key) : string
   - setTemplatePath() : void
   - setComponentSalesName() : void
   - setComponentBackupName() : void
@@ -38,49 +37,42 @@ note left of Paths::__get
   return: string
 end note
 
-note right of Paths::key
-  Model the key
-
-  since: 3.2.0
-  return: string
-end note
-
-note left of Paths::setTemplatePath
+note right of Paths::setTemplatePath
   Set the template path
 
   since: 3.2.0
   return: void
 end note
 
-note right of Paths::setComponentSalesName
+note left of Paths::setComponentSalesName
   Set component sales name
 
   since: 3.2.0
   return: void
 end note
 
-note left of Paths::setComponentBackupName
+note right of Paths::setComponentBackupName
   Set component backup name
 
   since: 3.2.0
   return: void
 end note
 
-note right of Paths::setComponentFolderName
+note left of Paths::setComponentFolderName
   Set component folder name
 
   since: 3.2.0
   return: void
 end note
 
-note left of Paths::setComponentPath
+note right of Paths::setComponentPath
   Set component path
 
   since: 3.2.0
   return: void
 end note
 
-note right of Paths::setTemplatePathCustom
+note left of Paths::setTemplatePathCustom
   set the template path for custom TODO: just use custom_folder_path in config
 
   since: 3.2.0

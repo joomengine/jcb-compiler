@@ -8,7 +8,7 @@
 ```
 # final class IntegerFields (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class IntegerFields << (F,LightGreen) >> #RoyalBlue {

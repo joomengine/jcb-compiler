@@ -8,7 +8,7 @@
 ```
 # final class SiteFieldData (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class SiteFieldData << (F,LightGreen) >> #RoyalBlue {

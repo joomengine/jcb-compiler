@@ -8,7 +8,7 @@
 ```
 # final class Search (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class Search << (F,LightGreen) >> #RoyalBlue {

@@ -12,9 +12,9 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VDM\Joomla\Abstraction\StorageRegistry\Traits\ToString;
-use VDM\Joomla\Interfaces\Storageregistryinterface;
-use VDM\Joomla\Abstraction\StorageRegistry;
+use VDM\Joomla\Abstraction\Registry\Traits\ToString;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -22,7 +22,7 @@ use VDM\Joomla\Abstraction\StorageRegistry;
  * 
  * @since 3.2.0
  */
-final class DynamicFields extends StorageRegistry implements Storageregistryinterface
+final class DynamicFields extends Registry implements Registryinterface
 {
 	/**
 	 * To String Values

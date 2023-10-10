@@ -13,8 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
-use VDM\Joomla\Componentbuilder\Interfaces\Mapperdoubleinterface;
-use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -22,8 +21,18 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
  * 
  * @since 3.2.0
  */
-final class PermissionViews extends MapperDouble implements Mapperdoubleinterface
+final class PermissionViews extends Registry
 {
+	/**
+	 * Constructor.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct()
+	{
+		$this->setSeparator('|');
+	}
+
 	/**
 	 * Get the build view content
 	 *
@@ -57,32 +66,6 @@ final class PermissionViews extends MapperDouble implements Mapperdoubleinterfac
 		}
 
 		return '';
-	}
-
-	/**
-	 * Model the first key
-	 *
-	 * @param   string   $key  The first key to model
-	 *
-	 * @return  string
-	 * @since 3.2.0
-	 */
-	protected function firstKey(string $key): string
-	{
-		return $key;
-	}
-
-	/**
-	 * Model the second key
-	 *
-	 * @param   string   $key  The second key to model
-	 *
-	 * @return  string
-	 * @since 3.2.0
-	 */
-	protected function secondKey(string $key): string
-	{
-		return $key;
 	}
 }
 

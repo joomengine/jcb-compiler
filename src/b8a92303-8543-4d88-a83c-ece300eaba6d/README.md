@@ -8,7 +8,7 @@
 ```
 # final class ModelExpertField (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ModelExpertField << (F,LightGreen) >> #RoyalBlue {

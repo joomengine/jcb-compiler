@@ -8,7 +8,7 @@
 ```
 # final class AdminFilterType (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class AdminFilterType << (F,LightGreen) >> #RoyalBlue {

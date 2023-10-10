@@ -1,11 +1,9 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "4d4e76e9-12d9-4d19-b58c-b88974b2586a",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "480d11b9-783b-45d5-bce1-b0c2fcaad08a",
-    "implements": [
-        "fbc58009-fa16-4d49-a0dd-419c3b62d42f"
-    ],
+    "implements": null,
     "load_selection": null,
     "name": "PermissionViews",
     "power_version": "1.0.0",

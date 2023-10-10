@@ -24,6 +24,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\CategoryCode;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CategoryOtherName;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CheckBox;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ComponentFields;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentMulti;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentOne;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomAlias;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomField;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomFieldLinks;
@@ -149,6 +151,12 @@ class Builder implements ServiceProviderInterface
 
 		$container->alias(ComponentFields::class, 'Compiler.Builder.Component.Fields')
 			->share('Compiler.Builder.Component.Fields', [$this, 'getComponentFields'], true);
+
+		$container->alias(ContentMulti::class, 'Compiler.Builder.Content.Multi')
+			->share('Compiler.Builder.Content.Multi', [$this, 'getContentMulti'], true);
+
+		$container->alias(ContentOne::class, 'Compiler.Builder.Content.One')
+			->share('Compiler.Builder.Content.One', [$this, 'getContentOne'], true);
 
 		$container->alias(CustomAlias::class, 'Compiler.Builder.Custom.Alias')
 			->share('Compiler.Builder.Custom.Alias', [$this, 'getCustomAlias'], true);
@@ -510,6 +518,32 @@ class Builder implements ServiceProviderInterface
 	public function getComponentFields(Container $container): ComponentFields
 	{
 		return new ComponentFields();
+	}
+
+	/**
+	 * Get The ContentMulti Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ContentMulti
+	 * @since 3.2.0
+	 */
+	public function getContentMulti(Container $container): ContentMulti
+	{
+		return new ContentMulti();
+	}
+
+	/**
+	 * Get The ContentOne Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ContentOne
+	 * @since 3.2.0
+	 */
+	public function getContentOne(Container $container): ContentOne
+	{
+		return new ContentOne();
 	}
 
 	/**

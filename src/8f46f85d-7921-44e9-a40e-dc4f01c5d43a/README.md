@@ -8,7 +8,7 @@
 ```
 # final class GetAsLookup (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class GetAsLookup << (F,LightGreen) >> #RoyalBlue {

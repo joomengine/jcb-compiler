@@ -13,8 +13,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
-use VDM\Joomla\Componentbuilder\Interfaces\Mappersingleinterface;
-use VDM\Joomla\Componentbuilder\Abstraction\MapperSingle;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -22,8 +22,18 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperSingle;
  * 
  * @since 3.2.0
  */
-final class PermissionComponent extends MapperSingle implements Mappersingleinterface
+final class PermissionComponent extends Registry implements Registryinterface
 {
+	/**
+	 * Constructor.
+	 *
+	 * @since 3.2.0
+	 */
+	public function __construct()
+	{
+		$this->setSeparator('|');
+	}
+
 	/**
 	 * Get the build component content
 	 *
@@ -37,7 +47,7 @@ final class PermissionComponent extends MapperSingle implements Mappersingleinte
 			$bucket = ['<section name="component">'];
 
 			// get the header
-			if ($this->exist('->HEAD<-'))
+			if ($this->exists('->HEAD<-'))
 			{
 				$headers = $this->get('->HEAD<-');
 
@@ -73,19 +83,6 @@ final class PermissionComponent extends MapperSingle implements Mappersingleinte
 		}
 
 		return '';
-	}
-
-	/**
-	 * Model the key
-	 *
-	 * @param   string   $key  The first key to model
-	 *
-	 * @return  string
-	 * @since 3.2.0
-	 */
-	protected function key(string $key): string
-	{
-		return $key;
 	}
 }
 

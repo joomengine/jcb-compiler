@@ -8,7 +8,7 @@
 ```
 # final class ScriptUserSwitch (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ScriptUserSwitch << (F,LightGreen) >> #RoyalBlue {

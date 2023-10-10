@@ -8,7 +8,7 @@
 ```
 # final class OtherQuery (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class OtherQuery << (F,LightGreen) >> #RoyalBlue {

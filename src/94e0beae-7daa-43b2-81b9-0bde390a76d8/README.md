@@ -8,7 +8,7 @@
 ```
 # final class Sort (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class Sort << (F,LightGreen) >> #RoyalBlue {

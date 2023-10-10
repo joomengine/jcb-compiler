@@ -159,7 +159,7 @@ class Power implements ServiceProviderInterface
 		return new Autoloader(
 			$container->get('Power'),
 			$container->get('Config'),
-			$container->get('Content')
+			$container->get('Compiler.Builder.Content.One')
 		);
 	}
 
@@ -176,7 +176,8 @@ class Power implements ServiceProviderInterface
 		return new Infusion(
 			$container->get('Config'),
 			$container->get('Power'),
-			$container->get('Content'),
+			$container->get('Compiler.Builder.Content.One'),
+			$container->get('Compiler.Builder.Content.Multi'),
 			$container->get('Power.Autoloader'),
 			$container->get('Power.Parser'),
 			$container->get('Power.Repo.Readme'),

@@ -8,7 +8,7 @@
 ```
 # final class MetaData (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class MetaData << (F,LightGreen) >> #RoyalBlue {

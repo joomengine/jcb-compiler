@@ -8,26 +8,17 @@
 ```
 # final class PermissionAction (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **MapperDouble**
+> extends: **Registry**
 ```uml
 @startuml
 class PermissionAction << (F,LightGreen) >> #RoyalBlue {
-  # firstKey(string $key) : string
-  # secondKey(string $key) : string
+  + __construct()
 }
 
-note right of PermissionAction::firstKey
-  Model the first key
+note right of PermissionAction::__construct
+  Constructor.
 
   since: 3.2.0
-  return: string
-end note
-
-note right of PermissionAction::secondKey
-  Model the second key
-
-  since: 3.2.0
-  return: string
 end note
  
 @enduml

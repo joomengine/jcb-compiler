@@ -14,6 +14,7 @@ class Infusion  #Gold {
   # Config $config
   # Power $power
   # Content $content
+  # Contents $contents
   # Autoloader $autoloader
   # Parser $parser
   # RepoReadme $reporeadme
@@ -21,7 +22,7 @@ class Infusion  #Gold {
   # Placeholder $placeholder
   # Event $event
   # array $linker
-  + __construct(?Config $config = null, ?Power $power = null, ...)
+  + __construct(Config $config, Power $power, ...)
   + set() : void
   - parsePowers() : void
   - setSuperPowers() : void
@@ -40,15 +41,16 @@ note right of Infusion::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Power $power = null
-    ?Content $content = null
-    ?Autoloader $autoloader = null
-    ?Parser $parser = null
-    ?RepoReadme $reporeadme = null
-    ?ReposReadme $reposreadme = null
-    ?Placeholder $placeholder = null
-    ?Event $event = null
+    Config $config
+    Power $power
+    Content $content
+    Contents $contents
+    Autoloader $autoloader
+    Parser $parser
+    RepoReadme $reporeadme
+    ReposReadme $reposreadme
+    Placeholder $placeholder
+    Event $event
 end note
 
 note left of Infusion::set

@@ -117,7 +117,7 @@ class Utilities implements ServiceProviderInterface
 	public function getCounter(Container $container): Counter
 	{
 		return new Counter(
-			$container->get('Content')
+			$container->get('Compiler.Builder.Content.One')
 		);
 	}
 

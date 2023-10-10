@@ -8,7 +8,7 @@
 ```
 # final class Bucket (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Generator**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class Bucket << (F,LightGreen) >> #RoyalBlue {

@@ -8,7 +8,7 @@
 ```
 # final class ListJoin (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ListJoin << (F,LightGreen) >> #RoyalBlue {

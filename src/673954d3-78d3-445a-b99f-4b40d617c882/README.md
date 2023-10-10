@@ -24,7 +24,7 @@ class Structuresingle << (F,LightGreen) >> #RoyalBlue {
   # Paths $paths
   # Files $files
   # CMSApplication $app
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, Registry $registry, ...)
   + build() : bool
   - doLicenseCheck() : bool
   - doReadmeCheck() : bool
@@ -40,19 +40,19 @@ class Structuresingle << (F,LightGreen) >> #RoyalBlue {
 }
 
 note right of Structuresingle::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Settings $settings = null
-    ?Component $component = null
-    ?Content $content = null
-    ?Counter $counter = null
-    ?Paths $paths = null
-    ?Files $files = null
+    Config $config
+    Registry $registry
+    Settings $settings
+    Component $component
+    Content $content
+    Counter $counter
+    Paths $paths
+    Files $files
     ?CMSApplication $app = null
 end note
 

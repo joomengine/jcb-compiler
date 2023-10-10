@@ -1,11 +1,9 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "c6bbc3ee-58e7-4463-adba-5c5ae839ee36",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "6f20369a-8536-4870-a1a3-cda254c939c8",
-    "implements": [
-        "78527c29-24ad-4735-ad4c-ec33a4952d9b"
-    ],
+    "implements": null,
     "load_selection": null,
     "name": "Paths",
     "power_version": "1.0.0",
@@ -13,14 +11,10 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
             "as": "default"
         }

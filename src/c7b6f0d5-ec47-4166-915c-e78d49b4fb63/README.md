@@ -8,7 +8,7 @@
 ```
 # final class GetModule (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class GetModule << (F,LightGreen) >> #RoyalBlue {

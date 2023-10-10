@@ -8,7 +8,7 @@
 ```
 # final class FootableScripts (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class FootableScripts << (F,LightGreen) >> #RoyalBlue {

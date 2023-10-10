@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VDM\Joomla\Componentbuilder\Interfaces\Mapperdoubleinterface;
-use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -21,32 +21,16 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
  * 
  * @since 3.2.0
  */
-final class PermissionCore extends MapperDouble implements Mapperdoubleinterface
+final class PermissionCore extends Registry implements Registryinterface
 {
 	/**
-	 * Model the first key
+	 * Constructor.
 	 *
-	 * @param   string   $key  The first key to model
-	 *
-	 * @return  string
 	 * @since 3.2.0
 	 */
-	protected function firstKey(string $key): string
+	public function __construct()
 	{
-		return $key;
-	}
-
-	/**
-	 * Model the second key
-	 *
-	 * @param   string   $key  The second key to model
-	 *
-	 * @return  string
-	 * @since 3.2.0
-	 */
-	protected function secondKey(string $key): string
-	{
-		return $key;
+		$this->setSeparator('|');
 	}
 }
 

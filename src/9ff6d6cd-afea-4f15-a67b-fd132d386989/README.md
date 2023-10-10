@@ -8,7 +8,7 @@
 ```
 # final class MysqlTableSetting (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class MysqlTableSetting << (F,LightGreen) >> #RoyalBlue {

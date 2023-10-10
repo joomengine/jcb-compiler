@@ -4,7 +4,7 @@
 	 * @var     Container
 	 * @since 3.2.0
 	 **/
-	protected static $container = null;
+	protected static ?Container $container = null;
 
 	/**
 	 * Current Joomla Version Being Build
@@ -12,7 +12,7 @@
 	 * @var     int
 	 * @since 3.2.0
 	 **/
-	protected static $JoomlaVersion;
+	protected static int $JoomlaVersion;
 
 	/**
 	 * Get any class from the compiler container
@@ -25,6 +25,17 @@
 	public static function _($key)
 	{
 		return self::getContainer()->get($key);
+	}
+
+	/**
+	 * Get array of all keys in container
+	 *
+	 * @return  array
+	 * @since 3.2.0
+	 */
+	public static function getKeys(): array
+	{
+		return self::getContainer()->getKeys();
 	}
 
 	/**
@@ -74,7 +85,6 @@
 			->registerServiceProvider(new Server())
 			->registerServiceProvider(new Database())
 			->registerServiceProvider(new Model())
-			->registerServiceProvider(new Mapper())
 			->registerServiceProvider(new Compiler())
 			->registerServiceProvider(new Event())
 			->registerServiceProvider(new History())

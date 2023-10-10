@@ -8,7 +8,7 @@
 ```
 # final class DatabaseUniqueGuid (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class DatabaseUniqueGuid << (F,LightGreen) >> #RoyalBlue {

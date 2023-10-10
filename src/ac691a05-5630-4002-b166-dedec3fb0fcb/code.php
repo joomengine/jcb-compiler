@@ -1121,9 +1121,9 @@ final class FieldXML implements Fieldtypeinterface
 			// incase the field is in the config and has not been set (or is part of a plugin or module)
 			if (('config' === $nameSingleCode
 					&& 'configs' === $nameListCode)
-				|| (strpos($nameSingleCode, 'P|uG!n') !== false
+				|| (strpos($nameSingleCode, 'pLuG!n') !== false
 					|| strpos(
-						$nameSingleCode, 'M0dU|3'
+						$nameSingleCode, 'M0dUl3'
 					) !== false))
 			{
 				// set lang (just incase)

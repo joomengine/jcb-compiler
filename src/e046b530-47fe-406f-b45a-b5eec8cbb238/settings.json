@@ -1,17 +1,30 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "4d4e76e9-12d9-4d19-b58c-b88974b2586a",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "e046b530-47fe-406f-b45a-b5eec8cbb238",
     "implements": [
-        "fbc58009-fa16-4d49-a0dd-419c3b62d42f"
+        "64e291c2-11f1-423d-a44d-837cc12cc017"
     ],
     "load_selection": null,
     "name": "PermissionDashboard",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Builder.PermissionDashboard",
     "type": "final class",
-    "use_selection": null,
+    "use_selection": {
+        "use_selection0": {
+            "use": "52a1d14f-304a-431c-8fa4-411179942db5",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Builder.PermissionDashboard",
     "description": "Permission Dashboard Builder Class\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",

@@ -8,23 +8,22 @@
 ```
 # final class PermissionDashboard (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **MapperDouble**
+> extends: **Registry**
 ```uml
 @startuml
 class PermissionDashboard << (F,LightGreen) >> #RoyalBlue {
-  # firstKey(string $key) : string
-  # secondKey(string $key) : string
+  + __construct()
+  + build() : string
 }
 
-note right of PermissionDashboard::firstKey
-  Model the first key
+note right of PermissionDashboard::__construct
+  Constructor.
 
   since: 3.2.0
-  return: string
 end note
 
-note right of PermissionDashboard::secondKey
-  Model the second key
+note right of PermissionDashboard::build
+  Get the build permission dashboard code
 
   since: 3.2.0
   return: string

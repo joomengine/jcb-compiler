@@ -12,9 +12,9 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VDM\Joomla\Abstraction\StorageRegistry\Traits\GetString;
-use VDM\Joomla\Interfaces\Storageregistryinterface;
-use VDM\Joomla\Abstraction\StorageRegistry;
+use VDM\Joomla\Abstraction\Registry\Traits\GetString;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -22,7 +22,7 @@ use VDM\Joomla\Abstraction\StorageRegistry;
  * 
  * @since 3.2.0
  */
-final class CategoryCode extends StorageRegistry implements Storageregistryinterface
+final class CategoryCode extends Registry implements Registryinterface
 {
 	/**
 	 * Get String Values

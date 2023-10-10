@@ -6,70 +6,35 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# interface Mapperdoubleinterface (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Interfaces**
+# class ContentMulti (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
+> extends: **Registry**
 ```uml
 @startuml
-interface Mapperdoubleinterface  #Lavender {
-  + isActive(string $firstKey = null) : bool
-  + set(string $firstKey, string $secondKey, ...) : void
-  + get(string $firstKey, ?string $secondKey = null) : mixed
-  + exist(string $firstKey, ?string $secondKey = null) : bool
-  + add(string $firstKey, string $secondKey, ...) : void
-  + remove(string $firstKey, ?string $secondKey = null) : void
+class ContentMulti  #Gold {
+  + __construct()
+  # getActiveKeys(string $path) : ?array
+  # modelActiveKeys(array $keys) : ?array
 }
 
-note right of Mapperdoubleinterface::isActive
-  Check if any values are set in the active array.
+note right of ContentMulti::__construct
+  Constructor.
 
   since: 3.2.0
-  return: bool
 end note
 
-note right of Mapperdoubleinterface::set
-  Set dynamic content
+note right of ContentMulti::getActiveKeys
+  Get that the active keys from a path
 
   since: 3.2.0
-  return: void
-  
-  arguments:
-    string $firstKey
-    string $secondKey
-    mixed $value
+  return: ?array
 end note
 
-note right of Mapperdoubleinterface::get
-  Get dynamic content
+note right of ContentMulti::modelActiveKeys
+  Model that the active key
 
   since: 3.2.0
-  return: mixed
-end note
-
-note right of Mapperdoubleinterface::exist
-  Does keys exist
-
-  since: 3.2.0
-  return: bool
-end note
-
-note right of Mapperdoubleinterface::add
-  Add dynamic content
-
-  since: 3.2.0
-  return: void
-  
-  arguments:
-    string $firstKey
-    string $secondKey
-    mixed $value
-    bool $array = false
-end note
-
-note right of Mapperdoubleinterface::remove
-  Remove dynamic content
-
-  since: 3.2.0
-  return: void
+  return: ?array
 end note
  
 @enduml

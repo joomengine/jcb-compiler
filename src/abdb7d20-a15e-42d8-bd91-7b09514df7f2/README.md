@@ -8,7 +8,7 @@
 ```
 # final class SiteEditView (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class SiteEditView << (F,LightGreen) >> #RoyalBlue {

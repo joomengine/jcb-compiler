@@ -11,9 +11,8 @@
 ```uml
 @startuml
 abstract Factory  #Orange {
-  # static $container
-  # static $JoomlaVersion
   + {static} _(string $key) : mixed
+  + {static} getKeys() : array
   + {static} _J(string $key) : mixed
   + {static} getContainer() : Container
   # {static} createContainer() : Container
@@ -24,6 +23,13 @@ note right of Factory::_
 
   since: 3.2.0
   return: mixed
+end note
+
+note right of Factory::getKeys
+  Get array of all keys in container
+
+  since: 3.2.0
+  return: array
 end note
 
 note right of Factory::_J

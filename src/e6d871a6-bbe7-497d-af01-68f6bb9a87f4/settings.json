@@ -11,12 +11,8 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
-            "as": "default"
+            "as": "Content"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.Counter",

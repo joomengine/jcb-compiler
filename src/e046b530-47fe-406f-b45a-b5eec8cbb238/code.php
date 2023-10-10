@@ -12,8 +12,11 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VDM\Joomla\Componentbuilder\Interfaces\Mapperdoubleinterface;
-use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
+use VDM\Joomla\Abstraction\Registry\Traits\VarExport;
+use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
+use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -21,32 +24,41 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperDouble;
  * 
  * @since 3.2.0
  */
-final class PermissionDashboard extends MapperDouble implements Mapperdoubleinterface
+final class PermissionDashboard extends Registry implements Registryinterface
 {
 	/**
-	 * Model the first key
+	 * Constructor.
 	 *
-	 * @param   string   $key  The first key to model
-	 *
-	 * @return  string
 	 * @since 3.2.0
 	 */
-	protected function firstKey(string $key): string
+	public function __construct()
 	{
-		return $key;
+		$this->setSeparator('|');
 	}
 
 	/**
-	 * Model the second key
+	 * Var Export Values
 	 *
-	 * @param   string   $key  The second key to model
+	 * @since 3.2.0
+	 */
+	use VarExport;
+
+	/**
+	 * Get the build permission dashboard code
 	 *
 	 * @return  string
 	 * @since 3.2.0
 	 */
-	protected function secondKey(string $key): string
+	public function build(): string
 	{
-		return $key;
+		if ($this->isActive())
+		{
+			return PHP_EOL . Indent::_(2) . "//" . Line::_(__Line__, __Class__)
+				. " view access array" . PHP_EOL . Indent::_(2)
+				. "\$viewAccess = " . $this->varExport() . ';';
+		}
+
+		return '';
 	}
 }
 

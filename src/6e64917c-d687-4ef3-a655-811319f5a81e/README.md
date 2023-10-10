@@ -15,7 +15,7 @@ class Autoloader  #Gold {
   # Config $config
   # Content $content
   # string $helper
-  + __construct(?Power $power = null, ?Config $config = null, ...)
+  + __construct(Power $power, Config $config, ...)
   + set() : void
   - loadPluginAutoloader() : bool
   - loadHelperAutoloader() : bool
@@ -33,9 +33,9 @@ note right of Autoloader::__construct
   since: 3.2.0
   
   arguments:
-    ?Power $power = null
-    ?Config $config = null
-    ?Content $content = null
+    Power $power
+    Config $config
+    Content $content
 end note
 
 note left of Autoloader::set

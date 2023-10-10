@@ -8,7 +8,7 @@
 ```
 # final class TabCounter (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class TabCounter << (F,LightGreen) >> #RoyalBlue {

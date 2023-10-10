@@ -8,7 +8,7 @@
 ```
 # final class Filter (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class Filter << (F,LightGreen) >> #RoyalBlue {

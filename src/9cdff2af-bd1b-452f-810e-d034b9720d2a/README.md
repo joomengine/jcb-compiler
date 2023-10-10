@@ -8,7 +8,7 @@
 ```
 # final class MovedPublishingFields (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class MovedPublishingFields << (F,LightGreen) >> #RoyalBlue {

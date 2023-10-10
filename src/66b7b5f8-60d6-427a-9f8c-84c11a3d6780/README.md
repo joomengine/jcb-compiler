@@ -8,7 +8,7 @@
 ```
 # final class OrderZero (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class OrderZero << (F,LightGreen) >> #RoyalBlue {

@@ -12,8 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VDM\Joomla\Componentbuilder\Interfaces\Mappersingleinterface;
-use VDM\Joomla\Componentbuilder\Abstraction\MapperSingle;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -21,20 +20,24 @@ use VDM\Joomla\Componentbuilder\Abstraction\MapperSingle;
  * 
  * @since 3.2.0
  */
-class UpdateMysql extends MapperSingle implements Mappersingleinterface
+class UpdateMysql extends Registry
 {
 	/**
-	 * Model the key
+	 * Get that the active keys from a path
 	 *
-	 * @param   string   $key  The key to model
+	 * @param string  $path   The path to determine the location.
 	 *
-	 * @return  string
+	 * @return array|null      The valid array of keys
 	 * @since 3.2.0
 	 */
-	protected function key(string $key): string
+	protected function getActiveKeys(string $path): ?array
 	{
-		return preg_replace('/\s+/', '', $key);
-	}
+		if (!empty($path))
+		{
+			return [preg_replace('/\s+/', '', $path)];
+		}
 
+		return null;
+	}
 }
 

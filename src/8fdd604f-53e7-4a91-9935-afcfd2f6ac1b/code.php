@@ -162,7 +162,8 @@ class Creator implements ServiceProviderInterface
 	{
 		return new CustomFieldTypeFile(
 			$container->get('Config'),
-			$container->get('Content'),
+			$container->get('Compiler.Builder.Content.One'),
+			$container->get('Compiler.Builder.Content.Multi'),
 			$container->get('Compiler.Builder.Site.Field.Data'),
 			$container->get('Placeholder'),
 			$container->get('Language'),

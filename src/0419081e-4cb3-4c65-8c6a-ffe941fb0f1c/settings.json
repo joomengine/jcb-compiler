@@ -11,20 +11,20 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
-            "as": "default"
+            "as": "Content"
+        },
+        "use_selection3": {
+            "use": "5f57ff1a-c196-45b1-a2ac-33766b44fb95",
+            "as": "Contents"
         },
         "use_selection4": {
             "use": "6e64917c-d687-4ef3-a655-811319f5a81e",

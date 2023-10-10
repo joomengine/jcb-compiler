@@ -42,7 +42,7 @@ class Counter  #Gold {
   # float $end
   # float $timer
   # Content $content
-  + __construct(?Content $content = null)
+  + __construct(Content $content)
   + start() : void
   + end() : void
   + set() : void
@@ -50,7 +50,7 @@ class Counter  #Gold {
 }
 
 note right of Counter::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
 end note

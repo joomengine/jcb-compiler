@@ -8,7 +8,7 @@
 ```
 # final class TemplateData (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class TemplateData << (F,LightGreen) >> #RoyalBlue {

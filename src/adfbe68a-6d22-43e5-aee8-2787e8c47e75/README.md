@@ -6,36 +6,35 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Content (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler**
-> extends: **Mapper**
+# class ContentOne (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
+> extends: **Registry**
 ```uml
 @startuml
-class Content  #Gold {
-  # key(string $key) : string
-  # firstKey(string $key) : string
-  # secondKey(string $key) : string
+class ContentOne  #Gold {
+  + __construct()
+  # getActiveKeys(string $path) : ?array
+  # modelActiveKeys(array $keys) : array
 }
 
-note right of Content::key
-  Model the key
+note right of ContentOne::__construct
+  Constructor.
 
   since: 3.2.0
-  return: string
 end note
 
-note right of Content::firstKey
-  Model the first key
+note right of ContentOne::getActiveKeys
+  Get that the active keys from a path
 
   since: 3.2.0
-  return: string
+  return: ?array
 end note
 
-note right of Content::secondKey
-  Model the second key
+note right of ContentOne::modelActiveKeys
+  Model that the active key
 
   since: 3.2.0
-  return: string
+  return: array
 end note
  
 @enduml

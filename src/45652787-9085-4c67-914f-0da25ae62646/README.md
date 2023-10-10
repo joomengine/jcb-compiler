@@ -8,7 +8,7 @@
 ```
 # final class JsonItem (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class JsonItem << (F,LightGreen) >> #RoyalBlue {

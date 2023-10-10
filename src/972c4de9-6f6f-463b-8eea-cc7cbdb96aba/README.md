@@ -8,7 +8,7 @@
 ```
 # final class ItemsMethodListString (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ItemsMethodListString << (F,LightGreen) >> #RoyalBlue {

@@ -13,6 +13,7 @@
 class CustomFieldTypeFile << (F,LightGreen) >> #RoyalBlue {
   # Config $config
   # Content $content
+  # Contents $contents
   # SiteField $sitefield
   # Placeholder $placeholder
   # Language $language
@@ -35,6 +36,7 @@ note right of CustomFieldTypeFile::__construct
   arguments:
     Config $config
     Content $content
+    Contents $contents
     SiteField $sitefield
     Placeholder $placeholder
     Language $language

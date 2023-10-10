@@ -8,7 +8,7 @@
 ```
 # final class SiteDynamicGet (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class SiteDynamicGet << (F,LightGreen) >> #RoyalBlue {

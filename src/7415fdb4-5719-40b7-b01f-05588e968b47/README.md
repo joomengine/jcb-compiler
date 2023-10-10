@@ -8,7 +8,7 @@
 ```
 # final class LayoutData (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class LayoutData << (F,LightGreen) >> #RoyalBlue {

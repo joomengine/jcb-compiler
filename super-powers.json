@@ -417,17 +417,6 @@
         "spk": "Super__20ed72b0_fcac_4344_aee1_8a65e3bf221d__Power",
         "guid": "20ed72b0-fcac-4344-aee1-8a65e3bf221d"
     },
-    "23f2ca33-440a-4941-8e9a-4bc67522c0cb": {
-        "name": "Mapper",
-        "type": "class",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Service",
-        "code": "src\/23f2ca33-440a-4941-8e9a-4bc67522c0cb\/code.php",
-        "power": "src\/23f2ca33-440a-4941-8e9a-4bc67522c0cb\/code.power",
-        "settings": "src\/23f2ca33-440a-4941-8e9a-4bc67522c0cb\/settings.json",
-        "path": "src\/23f2ca33-440a-4941-8e9a-4bc67522c0cb",
-        "spk": "Super__23f2ca33_440a_4941_8e9a_4bc67522c0cb__Power",
-        "guid": "23f2ca33-440a-4941-8e9a-4bc67522c0cb"
-    },
     "24da9672-e47f-4bb1-b6c0-0ebfc17f0957": {
         "name": "CoreValidation",
         "type": "class",
@@ -1099,6 +1088,17 @@
         "spk": "Super__5e3d856d_8174_4131_b4e9_9328066438e1__Power",
         "guid": "5e3d856d-8174-4131-b4e9-9328066438e1"
     },
+    "5f57ff1a-c196-45b1-a2ac-33766b44fb95": {
+        "name": "ContentMulti",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Builder",
+        "code": "src\/5f57ff1a-c196-45b1-a2ac-33766b44fb95\/code.php",
+        "power": "src\/5f57ff1a-c196-45b1-a2ac-33766b44fb95\/code.power",
+        "settings": "src\/5f57ff1a-c196-45b1-a2ac-33766b44fb95\/settings.json",
+        "path": "src\/5f57ff1a-c196-45b1-a2ac-33766b44fb95",
+        "spk": "Super__5f57ff1a_c196_45b1_a2ac_33766b44fb95__Power",
+        "guid": "5f57ff1a-c196-45b1-a2ac-33766b44fb95"
+    },
     "5f8e8fa6-3793-44af-882d-9cfb209434e9": {
         "name": "Customalias",
         "type": "class",
@@ -1340,17 +1340,6 @@
         "path": "src\/766a9524-37df-4604-91a7-b98a6150ee26",
         "spk": "Super__766a9524_37df_4604_91a7_b98a6150ee26__Power",
         "guid": "766a9524-37df-4604-91a7-b98a6150ee26"
-    },
-    "78527c29-24ad-4735-ad4c-ec33a4952d9b": {
-        "name": "Mappersingleinterface",
-        "type": "interface",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Interfaces",
-        "code": "src\/78527c29-24ad-4735-ad4c-ec33a4952d9b\/code.php",
-        "power": "src\/78527c29-24ad-4735-ad4c-ec33a4952d9b\/code.power",
-        "settings": "src\/78527c29-24ad-4735-ad4c-ec33a4952d9b\/settings.json",
-        "path": "src\/78527c29-24ad-4735-ad4c-ec33a4952d9b",
-        "spk": "Super__78527c29_24ad_4735_ad4c_ec33a4952d9b__Power",
-        "guid": "78527c29-24ad-4735-ad4c-ec33a4952d9b"
     },
     "79739667-72c6-4576-9830-7b1eb92e4791": {
         "name": "FieldsetXML",
@@ -2057,9 +2046,9 @@
         "guid": "ac691a05-5630-4002-b166-dedec3fb0fcb"
     },
     "adfbe68a-6d22-43e5-aee8-2787e8c47e75": {
-        "name": "Content",
+        "name": "ContentOne",
         "type": "class",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Builder",
         "code": "src\/adfbe68a-6d22-43e5-aee8-2787e8c47e75\/code.php",
         "power": "src\/adfbe68a-6d22-43e5-aee8-2787e8c47e75\/code.power",
         "settings": "src\/adfbe68a-6d22-43e5-aee8-2787e8c47e75\/settings.json",
@@ -3012,17 +3001,6 @@
         "path": "src\/fa8c1125-d370-4cb6-a7ff-eb32193c198c",
         "spk": "Super__fa8c1125_d370_4cb6_a7ff_eb32193c198c__Power",
         "guid": "fa8c1125-d370-4cb6-a7ff-eb32193c198c"
-    },
-    "fbc58009-fa16-4d49-a0dd-419c3b62d42f": {
-        "name": "Mapperdoubleinterface",
-        "type": "interface",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Interfaces",
-        "code": "src\/fbc58009-fa16-4d49-a0dd-419c3b62d42f\/code.php",
-        "power": "src\/fbc58009-fa16-4d49-a0dd-419c3b62d42f\/code.power",
-        "settings": "src\/fbc58009-fa16-4d49-a0dd-419c3b62d42f\/settings.json",
-        "path": "src\/fbc58009-fa16-4d49-a0dd-419c3b62d42f",
-        "spk": "Super__fbc58009_fa16_4d49_a0dd_419c3b62d42f__Power",
-        "guid": "fbc58009-fa16-4d49-a0dd-419c3b62d42f"
     },
     "fd885c23-88dd-440a-9b05-d02a2b2962f9": {
         "name": "OtherWhere",

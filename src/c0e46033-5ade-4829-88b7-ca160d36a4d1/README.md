@@ -8,7 +8,7 @@
 ```
 # final class SiteDecrypt (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class SiteDecrypt << (F,LightGreen) >> #RoyalBlue {

@@ -8,7 +8,7 @@
 ```
 # final class OtherGroup (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class OtherGroup << (F,LightGreen) >> #RoyalBlue {

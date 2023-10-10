@@ -8,7 +8,7 @@
 ```
 # final class HiddenFields (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class HiddenFields << (F,LightGreen) >> #RoyalBlue {

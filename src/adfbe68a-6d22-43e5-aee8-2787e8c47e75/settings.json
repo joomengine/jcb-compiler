@@ -1,16 +1,15 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "44a3367c-f9e4-406b-b396-0f452bde0f03",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
     "implements": [
-        "7921a2b3-b58c-4184-af3f-f58094f695a8",
-        "78527c29-24ad-4735-ad4c-ec33a4952d9b"
+        "64e291c2-11f1-423d-a44d-837cc12cc017"
     ],
     "load_selection": null,
-    "name": "Content",
+    "name": "ContentOne",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.Content",
+    "system_name": "JCB.Compiler.Builder.ContentOne",
     "type": "class",
     "use_selection": {
         "use_selection0": {
@@ -18,8 +17,8 @@
             "as": "default"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Content",
-    "description": "Compiler Content\r\n\r\n@since 3.2.0",
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Builder.ContentOne",
+    "description": "Compiler Content One\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",
     "composer": ""

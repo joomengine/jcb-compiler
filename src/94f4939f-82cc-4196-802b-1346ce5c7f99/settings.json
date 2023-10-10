@@ -1,10 +1,10 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "c6bbc3ee-58e7-4463-adba-5c5ae839ee36",
+    "extends": "7e822c03-1b20-41d1-9427-f5b8d5836af7",
     "guid": "94f4939f-82cc-4196-802b-1346ce5c7f99",
     "implements": [
-        "78527c29-24ad-4735-ad4c-ec33a4952d9b"
+        "64e291c2-11f1-423d-a44d-837cc12cc017"
     ],
     "load_selection": null,
     "name": "PermissionComponent",

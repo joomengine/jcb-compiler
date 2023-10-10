@@ -8,18 +8,18 @@
 ```
 # class UpdateMysql (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **MapperSingle**
+> extends: **Registry**
 ```uml
 @startuml
 class UpdateMysql  #Gold {
-  # key(string $key) : string
+  # getActiveKeys(string $path) : ?array
 }
 
-note right of UpdateMysql::key
-  Model the key
+note right of UpdateMysql::getActiveKeys
+  Get that the active keys from a path
 
   since: 3.2.0
-  return: string
+  return: ?array
 end note
  
 @enduml

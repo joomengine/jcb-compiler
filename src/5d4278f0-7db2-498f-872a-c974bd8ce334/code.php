@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Power\Generator;
 
 
-use VDM\Joomla\Interfaces\Storageregistryinterface;
-use VDM\Joomla\Abstraction\StorageRegistry;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Abstraction\StorageRegistry;
  * 
  * @since 3.2.0
  */
-final class Bucket extends StorageRegistry implements Storageregistryinterface
+final class Bucket extends Registry implements Registryinterface
 {
 }
 

@@ -285,7 +285,7 @@ class Data
 				$_backup_langPrefix = $this->config->lang_prefix;
 
 				// set some keys
-				$module->target_type = 'M0dU|3';
+				$module->target_type = 'M0dUl3';
 				$module->key         = $module->id . '_' . $module->target_type;
 
 				// update to point to module

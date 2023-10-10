@@ -8,7 +8,7 @@
 ```
 # final class ComponentFields (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class ComponentFields << (F,LightGreen) >> #RoyalBlue {

@@ -8,7 +8,7 @@
 ```
 # final class OtherWhere (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class OtherWhere << (F,LightGreen) >> #RoyalBlue {

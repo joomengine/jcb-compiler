@@ -8,7 +8,7 @@
 ```
 # final class CustomAlias (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Builder**
-> extends: **StorageRegistry**
+> extends: **Registry**
 ```uml
 @startuml
 class CustomAlias << (F,LightGreen) >> #RoyalBlue {
