@@ -24,14 +24,14 @@ note right of Joomlamodule::register
 end note
 
 note right of Joomlamodule::getData
-  Get the Joomla Module Data
+  Get The Data Class.
 
   since: 3.2.0
   return: Data
 end note
 
 note right of Joomlamodule::getStructure
-  Get the Joomla Module Structure Builder
+  Get The Structure Class.
 
   since: 3.2.0
   return: Structure

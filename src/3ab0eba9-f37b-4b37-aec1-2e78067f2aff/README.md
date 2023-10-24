@@ -15,6 +15,8 @@ class Super << (F,LightGreen) >> #RoyalBlue {
   # Insert $insert
   # Update $update
   + __construct(Grep $grep, Insert $insert, ...)
+  + init() : bool
+  + reset(array $powers) : bool
   + load(string $guid, array $order = ['remote', 'local'], ...) : bool
   - insert(object $power) : bool
   - update(object $power) : bool
@@ -30,6 +32,20 @@ note right of Super::__construct
     Grep $grep
     Insert $insert
     Update $update
+end note
+
+note right of Super::init
+  Init all power not found in database
+
+  since: 3.2.0
+  return: bool
+end note
+
+note right of Super::reset
+  Reset the powers
+
+  since: 3.2.0
+  return: bool
 end note
 
 note right of Super::load

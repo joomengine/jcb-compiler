@@ -18,7 +18,11 @@ class Config  #Gold {
   # getAddcustomgiteaurl() : int
   # getCustomgiteaurl() : ?string
   # getCustomgiteatoken() : ?string
+  # getSuperpowerscoreorganisation() : string
+  # getSuperpowersinitrepos() : array
   # getTmppath() : string
+  # getAddsuperpowers() : bool
+  # getAddownpowers() : bool
   # getLocalpowersrepositorypath() : string
   # getApprovedpaths() : array
 }
@@ -62,11 +66,39 @@ note right of Config::getCustomgiteatoken
   return: ?string
 end note
 
+note left of Config::getSuperpowerscoreorganisation
+  Get super power core organisation
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Config::getSuperpowersinitrepos
+  Get super power init repos
+
+  since: 3.2.0
+  return: array
+end note
+
 note left of Config::getTmppath
   get temporary path
 
   since: 3.2.0
   return: string
+end note
+
+note right of Config::getAddsuperpowers
+  Get switch to add super powers
+
+  since: 3.2.0
+  return: bool
+end note
+
+note left of Config::getAddownpowers
+  Get switch to add own super powers
+
+  since: 3.2.0
+  return: bool
 end note
 
 note right of Config::getLocalpowersrepositorypath

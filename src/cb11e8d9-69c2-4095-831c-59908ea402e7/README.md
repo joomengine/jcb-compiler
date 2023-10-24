@@ -18,33 +18,34 @@ class Data  #Gold {
   # Placeholder $placeholder
   # Language $language
   # Field $field
-  # FieldName $fieldName
-  # Filesfolders $filesFolders
+  # Fieldname $fieldname
+  # Filesfolders $filesfolders
   # Libraries $libraries
-  # Dynamicget $dynamic
-  # \JDatabaseDriver $db
-  + __construct(?Config $config = null, ?Customcode $customcode = null, ...)
+  # Dynamicget $dynamicget
+  # Templatelayout $templatelayout
+  + __construct(Config $config, Customcode $customcode, ...)
   + get(int $id = null) : object|array|null
   + exists(int $id = null) : bool
   + set(int $id) : bool
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Placeholder $placeholder = null
-    ?Language $language = null
-    ?Field $field = null
-    ?FieldName $fieldName = null
-    ?Filesfolders $filesFolders = null
-    ?Libraries $libraries = null
-    ?Dynamicget $dynamic = null
+    Config $config
+    Customcode $customcode
+    Gui $gui
+    Placeholder $placeholder
+    Language $language
+    Field $field
+    Fieldname $fieldname
+    Filesfolders $filesfolders
+    Libraries $libraries
+    Dynamicget $dynamicget
+    Templatelayout $templatelayout
     ?\JDatabaseDriver $db = null
 end note
 

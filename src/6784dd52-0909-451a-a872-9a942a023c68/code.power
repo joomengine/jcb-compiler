@@ -52,6 +52,34 @@
 	}
 
 	/**
+	 * Get all remote powers GUID's
+	 *
+	 * @return array|null
+	 * @since 3.2.0
+	 */
+	public function getRemotePowersGuid(): ?array
+	{
+		if (!is_array($this->paths) || $this->paths === [])
+		{
+			return null;
+		}
+
+		$powers = [];
+		foreach ($this->paths as $path)
+		{
+			// Get local index
+			$this->remoteIndex($path);
+
+			if (isset($path->index) && is_object($path->index))
+			{
+				$powers = array_merge($powers, array_keys((array) $path->index));
+			}
+		}
+
+		return empty($powers) ? null : array_unique($powers);
+	}
+
+	/**
 	 * Get a power
 	 *
 	 * @param string   $guid    The global unique id of the power
@@ -281,10 +309,10 @@
 		{
 			$path->index = $this->contents->get($path->owner, $path->repo, 'super-powers.json', $path->branch);
 		}
-		catch (\DomainException $e)
+		catch (\Exception $e)
 		{
 			$this->app->enqueueMessage(
-				Text::sprintf('<p>Super Power</b> repository at <b>git.vdm.dev/%s</b> gave the following error!<br />%s</p>', $path->path, $e->getMessage()),
+				Text::sprintf('<p>Super Power</b> repository at <b>%s/%s</b> gave the following error!<br />%s</p>', $this->contents->api(), $path->path, $e->getMessage()),
 				'Error'
 			);
 
@@ -309,10 +337,10 @@
 		{
 			$data = $this->contents->get($owner, $repo, $path, $branch);
 		}
-		catch (\DomainException $e)
+		catch (\Exception $e)
 		{
 			$this->app->enqueueMessage(
-				Text::sprintf('<p>File at <b>gitea.remote/%s</b> gave the following error!<br />%s</p>', $path, $e->getMessage()),
+				Text::sprintf('<p>File at <b>%s/%s</b> gave the following error!<br />%s</p>', $this->contents->api(), $path, $e->getMessage()),
 				'Error'
 			);
 

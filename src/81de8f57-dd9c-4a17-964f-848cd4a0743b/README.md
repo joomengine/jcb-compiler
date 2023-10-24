@@ -12,7 +12,7 @@
 @startuml
 interface Cryptinterface  #Lavender {
   + encrypt(string $string, string $key) : string
-  + decrypt(string $string, string $key) : string
+  + decrypt(string $string, string $key) : ?string
 }
 
 note right of Cryptinterface::encrypt
@@ -26,7 +26,7 @@ note right of Cryptinterface::decrypt
   Decrypt a string as needed
 
   since: 3.2.0
-  return: string
+  return: ?string
 end note
  
 @enduml

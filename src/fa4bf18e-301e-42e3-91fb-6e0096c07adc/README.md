@@ -18,6 +18,8 @@ class Config  #Gold {
   # getAddcustomgiteaurl() : int
   # getCustomgiteaurl() : ?string
   # getCustomgiteatoken() : ?string
+  # getSuperpowerscoreorganisation() : string
+  # getSuperpowerscorerepos() : array
   # getAddcontributors() : bool
   # getAddajax() : bool
   # getAddsiteajax() : bool
@@ -116,6 +118,20 @@ note right of Config::getCustomgiteatoken
 
   since: 3.2.0
   return: ?string
+end note
+
+note left of Config::getSuperpowerscoreorganisation
+  Get super power core organisation
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Config::getSuperpowerscorerepos
+  Get super power core repos
+
+  since: 3.2.0
+  return: array
 end note
 
 note left of Config::getAddcontributors

@@ -78,6 +78,66 @@
 	}
 
 	/**
+	 * Get super power core organisation
+	 *
+	 * @return  string   The super power core organisation
+	 * @since 3.2.0
+	 */
+	protected function getSuperpowerscoreorganisation(): string
+	{
+		// the VDM default organisation is [joomla]
+		$organisation = 'joomla';
+
+		if ($this->add_custom_gitea_url == 2)
+		{
+			return $this->params->get('super_powers_core_organisation', $organisation);
+		}
+
+		return $organisation;
+	}
+
+	/**
+	 * Get super power init repos
+	 *
+	 * @return  array The init repositories on Gitea
+	 * @since 3.2.0
+	 */
+	protected function getSuperpowersinitrepos(): array
+	{
+		// some defaults repos we need by JCB
+		$repos = [];
+
+		// only add custom init with custom gitea
+		$paths = null;
+		if ($this->add_custom_gitea_url == 2)
+		{
+			$paths = $this->params->get('super_powers_init_repos');
+		}
+
+		if (!empty($paths) && is_array($paths))
+		{
+			foreach ($paths as $path)
+			{
+				$owner = $path->owner ?? null;
+				$repo = $path->repo ?? null;
+				if ($owner !== null && $repo !== null)
+				{
+					// we make sure to get only the objects
+					$repos = ["{$owner}.{$repo}" => $path] + $repos;
+				}
+			}
+		}
+		else
+		{
+			$repos[$this->super_powers_core_organisation . '.super-powers'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'super-powers', 'branch' => 'master'];
+			$repos[$this->super_powers_core_organisation . '.gitea'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'gitea', 'branch' => 'master'];
+			$repos[$this->super_powers_core_organisation . '.openai'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'openai', 'branch' => 'master'];
+		}
+
+		return $repos;
+	}
+
+	/**
 	 * get temporary path
 	 *
 	 * @return  string  The temporary path
@@ -87,6 +147,33 @@
 	{
 		// get the temporary path
 		return $this->config->get('tmp_path');
+	}
+
+	/**
+	 * Get switch to add super powers
+	 *
+	 * @return  bool  Switch to add super powers
+	 * @since 3.2.0
+	 */
+	protected function getAddsuperpowers(): bool
+	{
+		return (bool) $this->params->get('powers_repository', 0);
+	}
+
+	/**
+	 * Get switch to add own super powers
+	 *
+	 * @return  bool  Switch to add own super powers
+	 * @since 3.2.0
+	 */
+	protected function getAddownpowers(): bool
+	{
+		if ($this->add_super_powers)
+		{
+			return (bool) $this->params->get('super_powers_repositories', 0);
+		}
+
+		return false;
 	}
 
 	/**
@@ -104,18 +191,7 @@
 			return $default;
 		}
 
-		$global = $this->params->get('local_powers_repository_path', $default);
-
-		if (!$this->show_advanced_options)
-		{
-			return $global;
-		}
-
-		$value = $this->input->post->get('powers_repository', 2, 'INT');
-
-		return $value == 1
-			? $this->input->post->get('local_powers_repository_path', $global, 'PATH')
-			: $global;
+		return $this->params->get('local_powers_repository_path', $default);
 	}
 
 	/**
@@ -126,27 +202,29 @@
 	 */
 	protected function getApprovedpaths(): array
 	{
-		$default = (object) ['owner' => 'joomla', 'repo' => 'super-powers', 'branch' => 'master'];
+		// some defaults repos we need by JCB
+		$approved = $this->super_powers_init_repos;
 
 		if (!$this->add_own_powers)
 		{
-			return [$default];
+			return array_values($approved);
 		}
 
 		$paths = $this->params->get('approved_paths');
 
-		$approved = [];
 		if (!empty($paths))
 		{
 			foreach ($paths as $path)
 			{
-				// we make sure to get only the objects
-				$approved[] = $path;
+				$owner = $path->owner ?? null;
+				$repo = $path->repo ?? null;
+				if ($owner !== null && $repo !== null)
+				{
+					// we make sure to get only the objects
+					$approved = ["{$owner}.{$repo}" => $path] + $approved;
+				}
 			}
 		}
 
-		// finally we add the default
-		$approved[] = $default;
-
-		return $approved;
+		return array_values($approved);
 	}

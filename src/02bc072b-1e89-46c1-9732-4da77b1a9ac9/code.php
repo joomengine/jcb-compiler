@@ -109,8 +109,8 @@ class Power implements ServiceProviderInterface
 	{
 		return new Superpower(
 			$container->get('Power.Grep'),
-			$container->get('Power.Insert'),
-			$container->get('Power.Update')
+			$container->get('Power.Database.Insert'),
+			$container->get('Power.Database.Update')
 		);
 	}
 
