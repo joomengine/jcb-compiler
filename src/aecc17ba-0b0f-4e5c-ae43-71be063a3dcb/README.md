@@ -14,7 +14,7 @@ class Placeholder << (F,LightGreen) >> #RoyalBlue {
   # $placeholders
   # $config
   # $db
-  + __construct(?Config $config = null, ?\JDatabaseDriver $db = null)
+  + __construct(?Config $config = null)
   + get() : array
 }
 

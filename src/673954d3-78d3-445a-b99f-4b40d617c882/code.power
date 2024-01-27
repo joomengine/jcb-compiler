@@ -47,7 +47,15 @@
 	protected Registry $registry;
 
 	/**
-	 * The Settings Class.
+	 * The Placeholder Class.
+	 *
+	 * @var   Placeholder
+	 * @since 3.2.0
+	 */
+	protected Placeholder $placeholder;
+
+	/**
+	 * The SettingsInterface Class.
 	 *
 	 * @var   Settings
 	 * @since 3.2.0
@@ -105,24 +113,27 @@
 	/**
 	 * Constructor.
 	 *
-	 * @param Config                $config      The Config Class.
-	 * @param Registry              $registry    The Registry Class.
-	 * @param Settings              $settings    The Settings Class.
-	 * @param Component             $component   The Component Class.
-	 * @param Content               $content     The ContentOne Class.
-	 * @param Counter               $counter     The Counter Class.
-	 * @param Paths                 $paths       The Paths Class.
-	 * @param Files                 $files       The Files Class.
-	 * @param CMSApplication|null   $app         The CMS Application object.
+	 * @param Config                $config        The Config Class.
+	 * @param Registry              $registry      The Registry Class.
+	 * @param Placeholder           $placeholder   The Placeholder Class.
+	 * @param Settings              $settings      The SettingsInterface Class.
+	 * @param Component             $component     The Component Class.
+	 * @param Content               $content       The ContentOne Class.
+	 * @param Counter               $counter       The Counter Class.
+	 * @param Paths                 $paths         The Paths Class.
+	 * @param Files                 $files         The Files Class.
+	 * @param CMSApplication|null   $app           The CMS Application object.
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(Config $config, Registry $registry, Settings $settings,
+	public function __construct(Config $config, Registry $registry,
+		Placeholder $placeholder, Settings $settings,
 		Component $component, Content $content, Counter $counter,
 		Paths $paths, Files $files, ?CMSApplication $app = null)
 	{
 		$this->config = $config;
 		$this->registry = $registry;
+		$this->placeholder = $placeholder;
 		$this->settings = $settings;
 		$this->component = $component;
 		$this->content = $content;
@@ -261,21 +272,24 @@
 		{
 			if ($details->rename === 'new')
 			{
-				$this->newName = $details->newName;
+				$newName = $details->newName;
 			}
 			else
 			{
-				$this->newName = str_replace(
+				$naam = $details->naam ?? 'error';
+				$newName = str_replace(
 					$details->rename,
 					$this->config->component_code_name,
-					(string) $details->naam
+					(string) $naam
 				);
 			}
 		}
 		else
 		{
-			$this->newName = $details->naam;
+			$newName = $details->naam ?? 'error';
 		}
+
+		$this->newName = $this->placeholder->update_($newName);
 	}
 
 	/**
@@ -567,13 +581,24 @@
 			// add the setDynamicF0ld3rs() method to the install scipt.php file
 			$this->registry->set('set_move_folders_install_script', true);
 
+			$function = 'setDynamicF0ld3rs';
+			$script = 'script.php';
+			if ($this->config->get('joomla_version', 3) != 3)
+			{
+				$function = 'moveFolders';
+				$script = 'ComponentnameInstallerScript.php';
+			}
+
 			// set message that this was done (will still add a tutorial link later)
 			$this->app->enqueueMessage(
 				Text::_('<hr /><h3>Dynamic folder(s) were detected.</h3>'),
 				'Notice'
 			);
+
 			$this->app->enqueueMessage(
-				Text::sprintf('A method (setDynamicF0ld3rs) was added to the install <b>script.php</b> of this package to insure that the folder(s) are copied into the correct place when this component is installed!'),
+				Text::sprintf('A method (%s) was added to the install <b>%s</b> of this package to insure that the folder(s) are copied into the correct place when this component is installed!',
+					$function, $script
+				),
 				'Notice'
 			);
 		}

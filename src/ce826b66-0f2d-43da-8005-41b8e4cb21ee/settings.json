@@ -11,47 +11,43 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
-            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
-            "as": "default"
-        },
-        "use_selection2": {
-            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
-            "as": "default"
-        },
-        "use_selection3": {
-            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
-            "as": "default"
-        },
-        "use_selection4": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection1": {
             "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
-            "as": "default"
+            "as": "Event"
         },
-        "use_selection6": {
+        "use_selection2": {
             "use": "4325745f-da1f-4d4d-a591-3189fe8c06e5",
-            "as": "default"
+            "as": "History"
         },
-        "use_selection7": {
+        "use_selection3": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection4": {
             "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection5": {
             "use": "a356d103-74f3-49ca-8e4f-3bd37746f089",
             "as": "FieldCustomcode"
         },
-        "use_selection10": {
+        "use_selection6": {
             "use": "c871fb4a-4c33-4302-bb79-a9cd7ef4a557",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         }
     },

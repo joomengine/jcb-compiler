@@ -1,0 +1,27 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "23f2ca33-440a-4941-8e9a-4bc67522c0cb",
+    "implements": null,
+    "load_selection": null,
+    "name": "FileInjector",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Utilities.FileInjector",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "763d137c-42bc-4282-98d8-cc5c0654985f",
+            "as": "Power"
+        },
+        "use_selection1": {
+            "use": "152c8793-8b75-4715-996a-257b9f65451c",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Utilities.FileInjector",
+    "description": "File Injector\r\n   Thanks to http:\/\/stackoverflow.com\/a\/16813550\/1429677\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

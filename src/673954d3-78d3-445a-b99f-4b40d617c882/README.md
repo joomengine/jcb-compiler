@@ -17,6 +17,7 @@ class Structuresingle << (F,LightGreen) >> #RoyalBlue {
   # string $zipFullPath
   # Config $config
   # Registry $registry
+  # Placeholder $placeholder
   # Settings $settings
   # Component $component
   # Content $content
@@ -47,6 +48,7 @@ note right of Structuresingle::__construct
   arguments:
     Config $config
     Registry $registry
+    Placeholder $placeholder
     Settings $settings
     Component $component
     Content $content

@@ -6,34 +6,34 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Validation (Details)
+# class Rule (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
 ```uml
 @startuml
-class Validation  #Gold {
+class Rule  #Gold {
   # Registry $registry
+  # Customcode $customcode
   # Gui $gui
   # Placeholder $placeholder
-  # Customcode $customcode
-  # CoreValidationInterface $validation
-  + __construct(?Registry $registry = null, ?Gui $gui = null, ...)
+  # CoreRule $corerule
+  + __construct(Registry $registry, Customcode $customcode, ...)
   + set(int $id, string $field) : void
 }
 
-note right of Validation::__construct
-  Constructor
+note right of Rule::__construct
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Registry $registry = null
-    ?Gui $gui = null
-    ?Placeholder $placeholder = null
-    ?Customcode $customcode = null
-    ?CoreValidationInterface $validation = null
+    Registry $registry
+    Customcode $customcode
+    Gui $gui
+    Placeholder $placeholder
+    CoreRule $corerule
 end note
 
-note right of Validation::set
+note right of Rule::set
   Set the validation rule
 
   since: 3.2.0

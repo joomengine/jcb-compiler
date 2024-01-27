@@ -19,6 +19,10 @@
         "use_selection1": {
             "use": "4b86f62e-ce41-4325-a11a-08148807d0df",
             "as": "J3Event"
+        },
+        "use_selection2": {
+            "use": "4729c2b0-f12b-4397-8d77-055d38bca98b",
+            "as": "J4Event"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Event",

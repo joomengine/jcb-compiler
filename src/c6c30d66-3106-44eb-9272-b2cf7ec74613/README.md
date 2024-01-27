@@ -12,19 +12,26 @@
 @startuml
 class Field  #Gold {
   # $targetVersion
+  # $currentVersion
   + register(Container $container) : void
-  + getField(Container $container) : CompilerField
+  + getCompilerField(Container $container) : CompilerField
   + getData(Container $container) : Data
   + getGroups(Container $container) : Groups
   + getAttributes(Container $container) : Attributes
-  + getValidation(Container $container) : Validation
-  + getJ3CoreValidation(Container $container) : J3CoreValidation
-  + getCoreValidation(Container $container) : CoreValidationInterface
+  + getName(Container $container) : Name
+  + getTypeName(Container $container) : TypeName
+  + getUniqueName(Container $container) : UniqueName
+  + getRule(Container $container) : Rule
   + getCustomcode(Container $container) : Customcode
-  + getFieldName(Container $container) : Name
-  + getFieldTypeName(Container $container) : TypeName
-  + getFieldUniqueName(Container $container) : UniqueName
-  + getFieldDatabaseName(Container $container) : DatabaseName
+  + getDatabaseName(Container $container) : DatabaseName
+  + getJ3CoreRule(Container $container) : J3CoreRule
+  + getJ4CoreRule(Container $container) : J4CoreRule
+  + getJ3CoreField(Container $container) : J3CoreField
+  + getJ4CoreField(Container $container) : J4CoreField
+  + getJ3InputButton(Container $container) : J3InputButton
+  + getJ4InputButton(Container $container) : J4InputButton
+  + getCoreField(Container $container) : CoreField
+  + getCoreRule(Container $container) : CoreRule
   + getInputButton(Container $container) : InputButton
 }
 
@@ -35,88 +42,130 @@ note right of Field::register
   return: void
 end note
 
-note left of Field::getField
-  Get the Compiler Field
+note left of Field::getCompilerField
+  Get The Field Class.
 
   since: 3.2.0
   return: CompilerField
 end note
 
 note right of Field::getData
-  Get the Compiler Field Data
+  Get The Data Class.
 
   since: 3.2.0
   return: Data
 end note
 
 note left of Field::getGroups
-  Get the Compiler Field Groups
+  Get The Groups Class.
 
   since: 3.2.0
   return: Groups
 end note
 
 note right of Field::getAttributes
-  Get the Compiler Field Attributes
+  Get The Attributes Class.
 
   since: 3.2.0
   return: Attributes
 end note
 
-note left of Field::getValidation
-  Get the Compiler Field Validation
-
-  since: 3.2.0
-  return: Validation
-end note
-
-note right of Field::getJ3CoreValidation
-  Get the Compiler Field Joomla 3 Validation
-
-  since: 3.2.0
-  return: J3CoreValidation
-end note
-
-note left of Field::getCoreValidation
-  Get the Compiler Field Core Validation
-
-  since: 3.2.0
-  return: CoreValidationInterface
-end note
-
-note right of Field::getCustomcode
-  Get the Compiler Field Customcode
-
-  since: 3.2.0
-  return: Customcode
-end note
-
-note left of Field::getFieldName
-  Get the Compiler Field Name
+note left of Field::getName
+  Get The Name Class.
 
   since: 3.2.0
   return: Name
 end note
 
-note right of Field::getFieldTypeName
-  Get the Compiler Field Type Name
+note right of Field::getTypeName
+  Get The TypeName Class.
 
   since: 3.2.0
   return: TypeName
 end note
 
-note left of Field::getFieldUniqueName
-  Get the Compiler Field Unique Name
+note left of Field::getUniqueName
+  Get The UniqueName Class.
 
   since: 3.2.0
   return: UniqueName
 end note
 
-note right of Field::getFieldDatabaseName
-  Get the Compiler Field Database Name
+note right of Field::getRule
+  Get The Rule Class.
+
+  since: 3.2.0
+  return: Rule
+end note
+
+note left of Field::getCustomcode
+  Get The Customcode Class.
+
+  since: 3.2.0
+  return: Customcode
+end note
+
+note right of Field::getDatabaseName
+  Get The DatabaseName Class.
 
   since: 3.2.0
   return: DatabaseName
+end note
+
+note left of Field::getJ3CoreRule
+  Get The CoreRule Class.
+
+  since: 3.2.0
+  return: J3CoreRule
+end note
+
+note right of Field::getJ4CoreRule
+  Get The CoreRule Class.
+
+  since: 3.2.0
+  return: J4CoreRule
+end note
+
+note left of Field::getJ3CoreField
+  Get The CoreField Class.
+
+  since: 3.2.0
+  return: J3CoreField
+end note
+
+note right of Field::getJ4CoreField
+  Get The CoreField Class.
+
+  since: 3.2.0
+  return: J4CoreField
+end note
+
+note left of Field::getJ3InputButton
+  Get The J3InputButton Class.
+
+  since: 3.2.0
+  return: J3InputButton
+end note
+
+note right of Field::getJ4InputButton
+  Get The J4InputButton Class.
+
+  since: 3.2.0
+  return: J4InputButton
+end note
+
+note left of Field::getCoreField
+  Get The CoreFieldInterface Class.
+
+  since: 3.2.0
+  return: CoreField
+end note
+
+note right of Field::getCoreRule
+  Get The CoreRuleInterface Class.
+
+  since: 3.2.0
+  return: CoreRule
 end note
 
 note left of Field::getInputButton

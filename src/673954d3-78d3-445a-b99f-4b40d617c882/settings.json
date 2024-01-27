@@ -19,34 +19,38 @@
             "as": "default"
         },
         "use_selection2": {
-            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
         "use_selection3": {
+            "use": "5f44e66a-31d0-45ff-92b3-b7372dc57ae9",
+            "as": "Settings"
+        },
+        "use_selection4": {
             "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection5": {
             "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
             "as": "Content"
         },
-        "use_selection5": {
+        "use_selection6": {
             "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection7": {
             "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection8": {
             "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection9": {
             "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection10": {
             "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
             "as": "default"
         }

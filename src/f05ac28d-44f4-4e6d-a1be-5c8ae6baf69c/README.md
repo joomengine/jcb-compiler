@@ -17,7 +17,7 @@ class Data  #Gold {
   # Gui $gui
   # Loader $loader
   # Libraries $libraries
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?Registry $registry = null, ...)
   + get(string $alias, string $table, ...) : ?array
   # set(string $table) : void
@@ -35,7 +35,6 @@ note right of Data::__construct
     ?Gui $gui = null
     ?Loader $loader = null
     ?Libraries $libraries = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

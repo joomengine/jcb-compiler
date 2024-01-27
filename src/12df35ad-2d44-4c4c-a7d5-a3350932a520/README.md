@@ -11,8 +11,8 @@
 ```uml
 @startuml
 class Groups << (F,LightGreen) >> #RoyalBlue {
-  # \JDatabaseDriver $db
-  + __construct(?\JDatabaseDriver $db = null)
+  # $db
+  + __construct()
   + check(string $type, string $option = 'default') : bool
   + types(array $groups = []) : ?array
   + typesIds(array $groups = []) : ?array

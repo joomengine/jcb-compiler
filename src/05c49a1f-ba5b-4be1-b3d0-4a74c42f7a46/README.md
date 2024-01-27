@@ -19,7 +19,7 @@ class Data  #Gold {
   # Dispenser $dispenser
   # Gui $gui
   # Dynamicget $dynamic
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?Registry $registry = null, ...)
   + get(array $ids, string $view_code, ...) : ?array
 }
@@ -37,7 +37,6 @@ note right of Data::__construct
     ?Dispenser $dispenser = null
     ?Gui $gui = null
     ?Dynamicget $dynamic = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

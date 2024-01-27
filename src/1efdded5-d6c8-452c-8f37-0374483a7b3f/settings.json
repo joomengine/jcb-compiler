@@ -11,12 +11,12 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
         },
         "use_selection1": {
-            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
-            "as": "default"
+            "use": "5f44e66a-31d0-45ff-92b3-b7372dc57ae9",
+            "as": "Settings"
         },
         "use_selection2": {
             "use": "6f20369a-8536-4870-a1a3-cda254c939c8",

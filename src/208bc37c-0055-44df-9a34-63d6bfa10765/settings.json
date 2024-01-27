@@ -1,0 +1,51 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "208bc37c-0055-44df-9a34-63d6bfa10765",
+    "implements": null,
+    "load_selection": null,
+    "name": "ConfigFieldsetsCustomfield",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.ConfigFieldsetsCustomfield",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "ed314bd8-c995-4282-bcaa-5e0a68ac401b",
+            "as": "Customfield"
+        },
+        "use_selection3": {
+            "use": "0a524af3-f647-4f62-a422-d7d36ebe749b",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.ConfigFieldsetsCustomfield",
+    "description": "Config Fieldsets Customfield Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

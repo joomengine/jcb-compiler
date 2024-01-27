@@ -13,8 +13,8 @@
 class History  #Gold {
   # ?object $tmp
   # Config $config
-  # \JDatabaseDriver $db
-  + __construct(?Config $config = null, ?\JDatabaseDriver $db = null)
+  # $db
+  + __construct(?Config $config = null)
   + get(string $type, int $id) : ?object
   # set(object $object, int $action) : bool
 }

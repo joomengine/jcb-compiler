@@ -12,6 +12,7 @@
 @startuml
 class Builders << (F,LightGreen) >> #RoyalBlue {
   # Config $config
+  # Power $power
   # Language $language
   # Placeholder $placeholder
   # Layout $layout
@@ -58,7 +59,7 @@ class Builders << (F,LightGreen) >> #RoyalBlue {
   # Filter $filter
   # ComponentFields $componentfields
   # CMSApplication $app
-  + __construct(Config $config, Language $language, ...)
+  + __construct(Config $config, Power $power, ...)
   + set(string $langLabel, string $langView, ...) : void
 }
 
@@ -69,6 +70,7 @@ note right of Builders::__construct
   
   arguments:
     Config $config
+    Power $power
     Language $language
     Placeholder $placeholder
     Layout $layout

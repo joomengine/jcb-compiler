@@ -17,7 +17,7 @@ class Paths  #Gold {
   # Placeholder $placeholder
   # Customcode $customcode
   # Extractor $extractor
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
   # load() : void
   # getModuleIDs() : mixed
@@ -37,7 +37,6 @@ note right of Paths::__construct
     ?ComponentPlaceholder $componentPlaceholder = null
     ?Customcode $customcode = null
     ?Extractor $extractor = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Paths::load

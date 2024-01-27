@@ -11,13 +11,14 @@
 ```uml
 @startuml
 class Structure  #Gold {
+  # Placeholder $placeholder
   # Settings $settings
   # Paths $paths
   # Counter $counter
   # File $file
   # Files $files
   # CMSApplication $app
-  + __construct(?Settings $settings = null, ?Paths $paths = null, ...)
+  + __construct(Placeholder $placeholder, Settings $settings, ...)
   + build(array $target, string $type, ...) : bool
   - getFileDetails(object $details, string $item, ...) : ?array
   - getPath(object $details, string $zipPath, ...) : ?string
@@ -30,11 +31,12 @@ note right of Structure::__construct
   since: 3.2.0
   
   arguments:
-    ?Settings $settings = null
-    ?Paths $paths = null
-    ?Counter $counter = null
-    ?File $file = null
-    ?Files $files = null
+    Placeholder $placeholder
+    Settings $settings
+    Paths $paths
+    Counter $counter
+    File $file
+    Files $files
     ?CMSApplication $app = null
 end note
 

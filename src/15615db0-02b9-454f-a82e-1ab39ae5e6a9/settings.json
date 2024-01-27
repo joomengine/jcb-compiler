@@ -1,0 +1,87 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "15615db0-02b9-454f-a82e-1ab39ae5e6a9",
+    "implements": null,
+    "load_selection": null,
+    "name": "AccessSections",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.AccessSections",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection2": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "FieldName"
+        },
+        "use_selection5": {
+            "use": "eb33420d-359d-44a5-852e-613aef1feaae",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "7f01622a-74c9-4e67-b111-3eb488035206",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "9b5872d6-c1d8-4602-b443-5844d2c950ee",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "9551b683-67b6-4367-bb14-4b016def37e3",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "480d11b9-783b-45d5-bce1-b0c2fcaad08a",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "5133a033-1351-43ec-9692-2907d7b9aacd",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "94f4939f-82cc-4196-802b-1346ce5c7f99",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "8bf026e7-9ae0-423c-b74b-5bc16c54acf7",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "152c8793-8b75-4715-996a-257b9f65451c",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.AccessSections",
+    "description": "Access Sections Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

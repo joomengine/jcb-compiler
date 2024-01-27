@@ -31,7 +31,7 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   # Updateserver $updateserver
   # Joomlamodules $modules
   # Joomlaplugins $plugins
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?EventInterface $event = null, ...)
   + get() : ?object
 }
@@ -62,7 +62,6 @@ note right of Data::__construct
     ?Updateserver $updateserver = null
     ?Joomlamodules $modules = null
     ?Joomlaplugins $plugins = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

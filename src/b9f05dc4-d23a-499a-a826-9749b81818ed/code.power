@@ -1,5 +1,5 @@
 	/**
-	 * Get the Array of Existing Validation Rule Names
+	 * Get the Array of Existing Core Rule Names
 	 *
 	 * @param bool      $lowercase Switch to set rules lowercase
 	 *

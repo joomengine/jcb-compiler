@@ -20,7 +20,7 @@ class Data  #Gold {
   # Field $field
   # FieldName $fieldName
   # Filesfolders $filesFolders
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?Customcode $customcode = null, ...)
   + get(int $id = null) : object|array|null
   + exists(int $id = null) : bool
@@ -41,7 +41,6 @@ note right of Data::__construct
     ?Field $field = null
     ?FieldName $fieldName = null
     ?Filesfolders $filesFolders = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

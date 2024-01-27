@@ -41,7 +41,6 @@ note right of Customcode::__construct
     ?Extractor $extractor = null
     ?Power $power = null
     ?External $external = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Customcode::update

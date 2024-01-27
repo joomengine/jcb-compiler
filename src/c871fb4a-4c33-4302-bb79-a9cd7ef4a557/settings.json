@@ -5,23 +5,11 @@
     "guid": "c871fb4a-4c33-4302-bb79-a9cd7ef4a557",
     "implements": null,
     "load_selection": null,
-    "name": "Validation",
+    "name": "Rule",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.Field.Validation",
+    "system_name": "JCB.Compiler.Field.Rule",
     "type": "class",
     "use_selection": {
-        "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
-            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
-            "as": "default"
-        },
-        "use_selection2": {
-            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
-            "as": "default"
-        },
         "use_selection3": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"
@@ -40,11 +28,19 @@
         },
         "use_selection7": {
             "use": "b9f05dc4-d23a-499a-a826-9749b81818ed",
+            "as": "CoreRule"
+        },
+        "use_selection1": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
             "as": "default"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field.Validation",
-    "description": "Compiler Field Validation Rules\r\n\r\n@since 3.2.0",
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Field.Rule",
+    "description": "Compiler Field Rules\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",
     "composer": ""

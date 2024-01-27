@@ -12,8 +12,8 @@
 @startuml
 class Sqldump  #Gold {
   # Registry $registry
-  # \JDatabaseDriver $db
-  + __construct(?Registry $registry = null, ?\JDatabaseDriver $db = null)
+  # $db
+  + __construct(?Registry $registry = null)
   + get(array $tables, string $view, ...) : ?string
   # escape(string|array $value) : string|array
 }

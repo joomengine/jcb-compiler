@@ -11,7 +11,7 @@
 ```uml
 @startuml
 interface EventInterface  #Lavender {
-  + trigger(string $event, mixed $data) : void
+  + trigger(string $event, mixed $data = null) : void
 }
 
 note right of EventInterface::trigger

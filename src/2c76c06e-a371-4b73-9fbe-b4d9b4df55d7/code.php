@@ -16,6 +16,7 @@ use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\AccessSwitch;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\AccessSwitchList;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\AssetsRules;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\AdminFilterType;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Alias;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\BaseSixFour;
@@ -24,8 +25,11 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\CategoryCode;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CategoryOtherName;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CheckBox;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ComponentFields;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ConfigFieldsets;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ConfigFieldsetsCustomfield;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentMulti;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentOne;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\Contributors;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomAlias;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomField;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomFieldLinks;
@@ -38,14 +42,17 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\DatabaseUniqueKeys;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\DoNotEscape;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\DynamicFields;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ExtensionCustomFields;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ExtensionsParams;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldGroupControl;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldNames;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldRelations;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Filter;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FootableScripts;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\FrontendParams;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GetAsLookup;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GetModule;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GoogleChart;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\HasMenuGlobal;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\HasPermissions;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\HiddenFields;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\History;
@@ -55,6 +62,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\ItemsMethodListString;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\JsonItem;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\JsonItemArray;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\JsonString;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\LanguageMessages;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Layout;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\LayoutData;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\LibraryManager;
@@ -83,8 +91,10 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionAction;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionComponent;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionCore;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionDashboard;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionFields;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionGlobalAction;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionViews;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\Request;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ScriptMediaSwitch;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ScriptUserSwitch;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Search;
@@ -103,6 +113,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\TemplateData;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Title;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\UikitComp;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\UpdateMysql;
+use VDM\Joomla\Componentbuilder\Compiler\Builder\ViewsDefaultOrdering;
 
 
 /**
@@ -128,6 +139,9 @@ class Builder implements ServiceProviderInterface
 		$container->alias(AccessSwitchList::class, 'Compiler.Builder.Access.Switch.List')
 			->share('Compiler.Builder.Access.Switch.List', [$this, 'getAccessSwitchList'], true);
 
+		$container->alias(AssetsRules::class, 'Compiler.Builder.Assets.Rules')
+			->share('Compiler.Builder.Assets.Rules', [$this, 'getAssetsRules'], true);
+
 		$container->alias(AdminFilterType::class, 'Compiler.Builder.Admin.Filter.Type')
 			->share('Compiler.Builder.Admin.Filter.Type', [$this, 'getAdminFilterType'], true);
 
@@ -152,11 +166,20 @@ class Builder implements ServiceProviderInterface
 		$container->alias(ComponentFields::class, 'Compiler.Builder.Component.Fields')
 			->share('Compiler.Builder.Component.Fields', [$this, 'getComponentFields'], true);
 
+		$container->alias(ConfigFieldsets::class, 'Compiler.Builder.Config.Fieldsets')
+			->share('Compiler.Builder.Config.Fieldsets', [$this, 'getConfigFieldsets'], true);
+
+		$container->alias(ConfigFieldsetsCustomfield::class, 'Compiler.Builder.Config.Fieldsets.Customfield')
+			->share('Compiler.Builder.Config.Fieldsets.Customfield', [$this, 'getConfigFieldsetsCustomfield'], true);
+
 		$container->alias(ContentMulti::class, 'Compiler.Builder.Content.Multi')
 			->share('Compiler.Builder.Content.Multi', [$this, 'getContentMulti'], true);
 
 		$container->alias(ContentOne::class, 'Compiler.Builder.Content.One')
 			->share('Compiler.Builder.Content.One', [$this, 'getContentOne'], true);
+
+		$container->alias(Contributors::class, 'Compiler.Builder.Contributors')
+			->share('Compiler.Builder.Contributors', [$this, 'getContributors'], true);
 
 		$container->alias(CustomAlias::class, 'Compiler.Builder.Custom.Alias')
 			->share('Compiler.Builder.Custom.Alias', [$this, 'getCustomAlias'], true);
@@ -194,6 +217,9 @@ class Builder implements ServiceProviderInterface
 		$container->alias(ExtensionCustomFields::class, 'Compiler.Builder.Extension.Custom.Fields')
 			->share('Compiler.Builder.Extension.Custom.Fields', [$this, 'getExtensionCustomFields'], true);
 
+		$container->alias(ExtensionsParams::class, 'Compiler.Builder.Extensions.Params')
+			->share('Compiler.Builder.Extensions.Params', [$this, 'getExtensionsParams'], true);
+
 		$container->alias(FieldGroupControl::class, 'Compiler.Builder.Field.Group.Control')
 			->share('Compiler.Builder.Field.Group.Control', [$this, 'getFieldGroupControl'], true);
 
@@ -209,6 +235,9 @@ class Builder implements ServiceProviderInterface
 		$container->alias(FootableScripts::class, 'Compiler.Builder.Footable.Scripts')
 			->share('Compiler.Builder.Footable.Scripts', [$this, 'getFootableScripts'], true);
 
+		$container->alias(FrontendParams::class, 'Compiler.Builder.Frontend.Params')
+			->share('Compiler.Builder.Frontend.Params', [$this, 'getFrontendParams'], true);
+
 		$container->alias(GetAsLookup::class, 'Compiler.Builder.Get.As.Lookup')
 			->share('Compiler.Builder.Get.As.Lookup', [$this, 'getGetAsLookup'], true);
 
@@ -217,6 +246,9 @@ class Builder implements ServiceProviderInterface
 
 		$container->alias(GoogleChart::class, 'Compiler.Builder.Google.Chart')
 			->share('Compiler.Builder.Google.Chart', [$this, 'getGoogleChart'], true);
+
+		$container->alias(HasMenuGlobal::class, 'Compiler.Builder.Has.Menu.Global')
+			->share('Compiler.Builder.Has.Menu.Global', [$this, 'getHasMenuGlobal'], true);
 
 		$container->alias(HasPermissions::class, 'Compiler.Builder.Has.Permissions')
 			->share('Compiler.Builder.Has.Permissions', [$this, 'getHasPermissions'], true);
@@ -244,6 +276,9 @@ class Builder implements ServiceProviderInterface
 
 		$container->alias(JsonString::class, 'Compiler.Builder.Json.String')
 			->share('Compiler.Builder.Json.String', [$this, 'getJsonString'], true);
+
+		$container->alias(LanguageMessages::class, 'Compiler.Builder.Language.Messages')
+			->share('Compiler.Builder.Language.Messages', [$this, 'getLanguageMessages'], true);
 
 		$container->alias(Layout::class, 'Compiler.Builder.Layout')
 			->share('Compiler.Builder.Layout', [$this, 'getLayout'], true);
@@ -329,11 +364,17 @@ class Builder implements ServiceProviderInterface
 		$container->alias(PermissionDashboard::class, 'Compiler.Builder.Permission.Dashboard')
 			->share('Compiler.Builder.Permission.Dashboard', [$this, 'getPermissionDashboard'], true);
 
+		$container->alias(PermissionFields::class, 'Compiler.Builder.Permission.Fields')
+			->share('Compiler.Builder.Permission.Fields', [$this, 'getPermissionFields'], true);
+
 		$container->alias(PermissionGlobalAction::class, 'Compiler.Builder.Permission.Global.Action')
 			->share('Compiler.Builder.Permission.Global.Action', [$this, 'getPermissionGlobalAction'], true);
 
 		$container->alias(PermissionViews::class, 'Compiler.Builder.Permission.Views')
 			->share('Compiler.Builder.Permission.Views', [$this, 'getPermissionViews'], true);
+
+		$container->alias(Request::class, 'Compiler.Builder.Request')
+			->share('Compiler.Builder.Request', [$this, 'getRequest'], true);
 
 		$container->alias(ScriptMediaSwitch::class, 'Compiler.Builder.Script.Media.Switch')
 			->share('Compiler.Builder.Script.Media.Switch', [$this, 'getScriptMediaSwitch'], true);
@@ -388,6 +429,9 @@ class Builder implements ServiceProviderInterface
 
 		$container->alias(UpdateMysql::class, 'Compiler.Builder.Update.Mysql')
 			->share('Compiler.Builder.Update.Mysql', [$this, 'getUpdateMysql'], true);
+
+		$container->alias(ViewsDefaultOrdering::class, 'Compiler.Builder.Views.Default.Ordering')
+			->share('Compiler.Builder.Views.Default.Ordering', [$this, 'getViewsDefaultOrdering'], true);
 	}
 
 	/**
@@ -414,6 +458,19 @@ class Builder implements ServiceProviderInterface
 	public function getAccessSwitchList(Container $container): AccessSwitchList
 	{
 		return new AccessSwitchList();
+	}
+
+	/**
+	 * Get The AssetsRules Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  AssetsRules
+	 * @since 3.2.0
+	 */
+	public function getAssetsRules(Container $container): AssetsRules
+	{
+		return new AssetsRules();
 	}
 
 	/**
@@ -521,6 +578,32 @@ class Builder implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get The ConfigFieldsets Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ConfigFieldsets
+	 * @since 3.2.0
+	 */
+	public function getConfigFieldsets(Container $container): ConfigFieldsets
+	{
+		return new ConfigFieldsets();
+	}
+
+	/**
+	 * Get The ConfigFieldsetsCustomfield Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ConfigFieldsetsCustomfield
+	 * @since 3.2.0
+	 */
+	public function getConfigFieldsetsCustomfield(Container $container): ConfigFieldsetsCustomfield
+	{
+		return new ConfigFieldsetsCustomfield();
+	}
+
+	/**
 	 * Get The ContentMulti Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -544,6 +627,19 @@ class Builder implements ServiceProviderInterface
 	public function getContentOne(Container $container): ContentOne
 	{
 		return new ContentOne();
+	}
+
+	/**
+	 * Get The Contributors Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Contributors
+	 * @since 3.2.0
+	 */
+	public function getContributors(Container $container): Contributors
+	{
+		return new Contributors();
 	}
 
 	/**
@@ -703,6 +799,19 @@ class Builder implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get The ExtensionsParams Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ExtensionsParams
+	 * @since 3.2.0
+	 */
+	public function getExtensionsParams(Container $container): ExtensionsParams
+	{
+		return new ExtensionsParams();
+	}
+
+	/**
 	 * Get The FieldGroupControl Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -768,6 +877,19 @@ class Builder implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get The FrontendParams Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  FrontendParams
+	 * @since 3.2.0
+	 */
+	public function getFrontendParams(Container $container): FrontendParams
+	{
+		return new FrontendParams();
+	}
+
+	/**
 	 * Get The GetAsLookup Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -804,6 +926,19 @@ class Builder implements ServiceProviderInterface
 	public function getGoogleChart(Container $container): GoogleChart
 	{
 		return new GoogleChart();
+	}
+
+	/**
+	 * Get The HasMenuGlobal Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  HasMenuGlobal
+	 * @since 3.2.0
+	 */
+	public function getHasMenuGlobal(Container $container): HasMenuGlobal
+	{
+		return new HasMenuGlobal();
 	}
 
 	/**
@@ -921,6 +1056,19 @@ class Builder implements ServiceProviderInterface
 	public function getJsonString(Container $container): JsonString
 	{
 		return new JsonString();
+	}
+
+	/**
+	 * Get The LanguageMessages Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  LanguageMessages
+	 * @since 3.2.0
+	 */
+	public function getLanguageMessages(Container $container): LanguageMessages
+	{
+		return new LanguageMessages();
 	}
 
 	/**
@@ -1288,6 +1436,19 @@ class Builder implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get The PermissionFields Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  PermissionFields
+	 * @since 3.2.0
+	 */
+	public function getPermissionFields(Container $container): PermissionFields
+	{
+		return new PermissionFields();
+	}
+
+	/**
 	 * Get The PermissionGlobalAction Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -1311,6 +1472,19 @@ class Builder implements ServiceProviderInterface
 	public function getPermissionViews(Container $container): PermissionViews
 	{
 		return new PermissionViews();
+	}
+
+	/**
+	 * Get The Request Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Request
+	 * @since 3.2.0
+	 */
+	public function getRequest(Container $container): Request
+	{
+		return new Request();
 	}
 
 	/**
@@ -1545,6 +1719,19 @@ class Builder implements ServiceProviderInterface
 	public function getUpdateMysql(Container $container): UpdateMysql
 	{
 		return new UpdateMysql();
+	}
+
+	/**
+	 * Get The ViewsDefaultOrdering Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ViewsDefaultOrdering
+	 * @since 3.2.0
+	 */
+	public function getViewsDefaultOrdering(Container $container): ViewsDefaultOrdering
+	{
+		return new ViewsDefaultOrdering();
 	}
 }
 

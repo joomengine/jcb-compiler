@@ -13,14 +13,14 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field;
 
 
 /**
- * Field Joomla Core Validation Interface
+ * Field Joomla Core Rule Interface
  * 
  * @since 3.2.0
  */
-interface CoreValidationInterface
+interface CoreRuleInterface
 {
 	/**
-	 * Get the Array of Existing Validation Rule Names
+	 * Get the Array of Existing Core Rule Names
 	 *
 	 * @param bool      $lowercase Switch to set rules lowercase
 	 *

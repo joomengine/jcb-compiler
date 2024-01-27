@@ -18,31 +18,39 @@
         },
         "use_selection1": {
             "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
-            "as": "default"
+            "as": "J3Settings"
         },
         "use_selection2": {
+            "use": "e7fff971-b031-42bf-8009-ef554e30854d",
+            "as": "J4Settings"
+        },
+        "use_selection3": {
             "use": "cfe62a32-8818-4bfb-8751-2f1e109b5336",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection4": {
             "use": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection5": {
             "use": "ef9578e5-4c9d-46bf-866f-3a94bdc7b753",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection6": {
             "use": "6c89c663-78f5-4078-9fac-7047f2eaaf96",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection7": {
             "use": "673954d3-78d3-445a-b99f-4b40d617c882",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection8": {
             "use": "b69a23db-0a62-4840-a9c5-b2d8d63ecc6c",
             "as": "default"
+        },
+        "use_selection9": {
+            "use": "5f44e66a-31d0-45ff-92b3-b7372dc57ae9",
+            "as": "Settings"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Component",

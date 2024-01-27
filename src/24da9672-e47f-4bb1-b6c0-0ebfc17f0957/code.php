@@ -14,23 +14,23 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree;
 
 use Joomla\CMS\Filesystem\Folder;
 use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreValidationInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreRuleInterface;
 
 
 /**
- * Core Joomla Field Validation Rules
+ * Core Joomla Field Rules
  * 
  * @since 3.2.0
  */
-class CoreValidation implements CoreValidationInterface
+class CoreRule implements CoreRuleInterface
 {
 	/**
 	 * Local Core Joomla Rules
 	 *
-	 * @var    array|null
+	 * @var    array
 	 * @since 3.2.0
 	 **/
-	protected ?array $rules = null;
+	protected array $rules = [];
 
 	/**
 	 * Local Core Joomla Rules Path
@@ -61,41 +61,13 @@ class CoreValidation implements CoreValidationInterface
 	 */
 	public function get(bool $lowercase = false): array
 	{
-		if (!$this->rules)
+		if ($this->rules === [])
 		{
-			// check if the path exist
-			if (!Folder::exists($this->path))
-			{
-				return [];
-			}
-
-			// we must first store the current working directory
-			$joomla = getcwd();
-
-			// go to that folder
-			chdir($this->path);
-
-			// load all the files in this path
-			$rules = Folder::files('.', '\.php', true, true);
-
-			// change back to Joomla working directory
-			chdir($joomla);
-
-			// make sure we have an array
-			if (!ArrayHelper::check($rules))
-			{
-				return false;
-			}
-
-			// remove the Rule.php from the name
-			$this->rules = array_map(
-				fn($name): string => str_replace(array('./','Rule.php'), '', (string) $name),
-				$rules
-			);
+			$this->set($this->path);
 		}
 
 		// return rules if found
-		if (is_array($this->rules))
+		if ($this->rules !== [])
 		{
 			// check if the names should be all lowercase
 			if ($lowercase)
@@ -105,6 +77,7 @@ class CoreValidation implements CoreValidationInterface
 					$this->rules
 				);
 			}
+
 			return $this->rules;
 		}
 
@@ -112,5 +85,41 @@ class CoreValidation implements CoreValidationInterface
 		return [];
 	}
 
+	/**
+	 * Set the rules found in a path
+	 *
+	 * @param string $path The path to load rules from
+	 * @return void
+	 * @since 3.2.0
+	 */
+	private function set(string $path): void
+	{
+		// Check if the path exists
+		if (!Folder::exists($path))
+		{
+			return;
+		}
+
+		// Load all PHP files in this path
+		$rules = Folder::files($path, '\.php$', true, true);
+
+		// Process the files to extract rule names
+		$processedRules = array_map(function ($name) {
+			$fileName = basename($name);
+
+			// Remove 'Rule.php' if it exists or just '.php' otherwise
+			if (substr($fileName, -8) === 'Rule.php')
+			{
+				return str_replace('Rule.php', '', $fileName);
+			}
+			else
+			{
+				return str_replace('.php', '', $fileName);
+			}
+		}, $rules);
+
+		// Merge with existing rules and remove duplicates
+		$this->rules = array_unique(array_merge($processedRules, $this->rules));
+	}
 }
 

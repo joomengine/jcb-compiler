@@ -23,8 +23,8 @@ class Power  #Gold {
   # Customcode $customcode
   # Gui $gui
   # Superpower $superpower
-  # \JDatabaseDriver $db
-  # CMSApplication $app
+  # $db
+  # $app
   + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
   + load(array $guids) : void
   + get(string $guid, int $build) : ?object
@@ -59,8 +59,6 @@ note right of Power::__construct
     ?Customcode $customcode = null
     ?Gui $gui = null
     ?Superpower $superpower = null
-    ?\JDatabaseDriver $db = null
-    ?CMSApplication $app = null
 end note
 
 note left of Power::load

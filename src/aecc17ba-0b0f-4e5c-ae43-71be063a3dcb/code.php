@@ -49,7 +49,6 @@ final class Placeholder implements PlaceholderInterface
 	/**
 	 * Database object to query local DB
 	 *
-	 * @var    \JDatabaseDriver
 	 * @since 3.2.0
 	 **/
 	protected $db;
@@ -62,10 +61,10 @@ final class Placeholder implements PlaceholderInterface
 	 *
 	 * @since 3.2.0
 	 **/
-	public function __construct(?Config $config = null, ?\JDatabaseDriver $db = null)
+	public function __construct(?Config $config = null)
 	{
 		$this->config = $config ?: Compiler::_('Config');
-		$this->db = $db ?: Factory::getDbo();
+		$this->db = Factory::getDbo();
 	}
 
 	/**

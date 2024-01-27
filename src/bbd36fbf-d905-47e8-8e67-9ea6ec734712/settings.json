@@ -1,0 +1,46 @@
+{
+    "add_head": "1",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "bbd36fbf-d905-47e8-8e67-9ea6ec734712",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "ArchitectureModel",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.ArchitectureModel",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "e00a7d1d-6d80-41c5-bf13-32d41bc5bf91",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "2a69a8ab-cea0-4c75-92d5-9495cb740e0f",
+            "as": "J4ModelCanDelete"
+        },
+        "use_selection2": {
+            "use": "23766738-d0a4-4d0a-8555-7e4c97c0cddd",
+            "as": "J3ModelCanDelete"
+        },
+        "use_selection3": {
+            "use": "600515b1-493f-4448-96fe-018e54e087c8",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "cb2a82a5-aa49-4d46-b765-9b3feb118208",
+            "as": "J4ModelCanEditState"
+        },
+        "use_selection5": {
+            "use": "bce9ac2b-9f46-413f-b046-9e8af3f7dfbe",
+            "as": "J3ModelCanEditState"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.ArchitectureModel",
+    "description": "Architecture Model Service Provider\r\n\r\n@since 3.2.0",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

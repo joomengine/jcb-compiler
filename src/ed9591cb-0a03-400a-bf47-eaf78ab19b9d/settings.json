@@ -19,6 +19,10 @@
         "use_selection1": {
             "use": "1d929017-a5de-4e0f-9b5a-838934857e26",
             "as": "J3InstallScript"
+        },
+        "use_selection2": {
+            "use": "d42e1fac-3c05-4a22-8878-2abd43019811",
+            "as": "J4InstallScript"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Extension",

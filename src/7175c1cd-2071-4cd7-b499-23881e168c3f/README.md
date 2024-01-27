@@ -17,7 +17,7 @@ class Data  #Gold {
   # Gui $gui
   # FieldData $field
   # Filesfolders $filesFolders
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?Registry $registry = null, ...)
   + get(int $id) : object|bool
 }
@@ -34,7 +34,6 @@ note right of Data::__construct
     ?Gui $gui = null
     ?FieldData $field = null
     ?Filesfolders $filesFolders = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

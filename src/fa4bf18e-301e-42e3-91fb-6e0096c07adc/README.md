@@ -30,6 +30,8 @@ class Config  #Gold {
   # getComponentcodename() : string
   # getComponentcontext() : string
   # getComponentcodenamelength() : int
+  # getAddnamespaceprefix() : bool
+  # getNamespaceprefix() : string
   # getJoomlaversion() : int
   # getJoomlaversions() : array
   # getJoomlaversionname() : string
@@ -46,6 +48,7 @@ class Config  #Gold {
   # getTidy() : bool
   # getSettidywarning() : bool
   # getSettaghistory() : bool
+  # getPercentagelanguageadd() : int
   # getLangtag() : string
   # getLangprefix() : string
   # getLangtarget() : string
@@ -56,6 +59,7 @@ class Config  #Gold {
   # getTmppath() : string
   # getCompilerpath() : string
   # getJcbpowerspath() : string
+  # getPowerlibraryfolder() : string
   # getLocalpowersrepositorypath() : string
   # getApprovedpaths() : array
   # getBompath() : string
@@ -79,6 +83,8 @@ class Config  #Gold {
   # getGooglechart() : bool
   # getFootable() : bool
   # getFootableversion() : int
+  # getPermissionstrictperfield() : bool
+  # getExporttextonly() : int
 }
 
 note right of Config::__construct
@@ -204,6 +210,20 @@ note right of Config::getComponentcodenamelength
   return: int
 end note
 
+note left of Config::getAddnamespaceprefix
+  get add namespace prefix
+
+  since: 3.2.0
+  return: bool
+end note
+
+note right of Config::getNamespaceprefix
+  get namespace prefix
+
+  since: 3.2.0
+  return: string
+end note
+
 note left of Config::getJoomlaversion
   get posted Joomla version
 
@@ -316,70 +336,84 @@ note right of Config::getSettaghistory
   return: bool
 end note
 
-note left of Config::getLangtag
+note left of Config::getPercentagelanguageadd
+  get percentage when a language should be added
+
+  since: 3.2.0
+  return: int
+end note
+
+note right of Config::getLangtag
   get language tag
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangprefix
+note left of Config::getLangprefix
   get language prefix
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getLangtarget
+note right of Config::getLangtarget
   get language target
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangstringtargets
+note left of Config::getLangstringtargets
   get language string targets
 
   since: 3.2.0
   return: array
 end note
 
-note left of Config::getLangstringkeytargets
+note right of Config::getLangstringkeytargets
   get language string targets (by key name)
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getFieldbuildertype
+note left of Config::getFieldbuildertype
   get field builder type
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getDefaultfields
+note right of Config::getDefaultfields
   get default fields
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getTmppath
+note left of Config::getTmppath
   get temporary path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getCompilerpath
+note right of Config::getCompilerpath
   get compiler path
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getJcbpowerspath
+note left of Config::getJcbpowerspath
+  get jcb powers path
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Config::getPowerlibraryfolder
   get jcb powers path
 
   since: 3.2.0
@@ -542,6 +576,20 @@ end note
 
 note left of Config::getFootableversion
   The footable version
+
+  since: 3.2.0
+  return: int
+end note
+
+note right of Config::getPermissionstrictperfield
+  The Permission Strict Per Field Switch
+
+  since: 3.2.0
+  return: bool
+end note
+
+note left of Config::getExporttextonly
+  The Export Text Only Switch
 
   since: 3.2.0
   return: int

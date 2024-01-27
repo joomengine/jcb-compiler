@@ -14,10 +14,10 @@ class External  #Gold {
   # array $code
   # array $cutter
   # Placeholder $placeholder
-  # \JDatabaseDriver $db
-  # User $user
-  # CMSApplication $app
-  + __construct(?Placeholder $placeholder = null, ?\JDatabaseDriver $db = null, ...)
+  # $db
+  # $user
+  # $app
+  + __construct(?Placeholder $placeholder = null)
   + set(string $string, int $debug) : string
   # getCode(string $target, array $bucket) : void
   # cut(string $string, string $sequence, ...) : string
@@ -27,12 +27,6 @@ note right of External::__construct
   Constructor.
 
   since: 3.2.0
-  
-  arguments:
-    ?Placeholder $placeholder = null
-    ?\JDatabaseDriver $db = null
-    ?User $user = null
-    ?CMSApplication $app = null
 end note
 
 note right of External::set

@@ -1,0 +1,47 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "84c11075-570a-4907-9be0-9305e0fabe3c",
+    "implements": null,
+    "load_selection": null,
+    "name": "ConfigFieldsetsUikit",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.ConfigFieldsetsUikit",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "0a524af3-f647-4f62-a422-d7d36ebe749b",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "bcf1e767-1566-440d-9f67-5c1bada934fa",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "ed314bd8-c995-4282-bcaa-5e0a68ac401b",
+            "as": "Customfield"
+        },
+        "use_selection5": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.ConfigFieldsetsUikit",
+    "description": "Config Fieldsets Uikit Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

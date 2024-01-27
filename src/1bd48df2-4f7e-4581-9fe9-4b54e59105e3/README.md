@@ -14,8 +14,8 @@ class Gui  #Gold {
   # Config $config
   # Reverse $reverse
   # Parser $parser
-  # \JDatabaseDriver $db
-  # CMSApplication $app
+  # $db
+  # $app
   + __construct(?Config $config = null, ?Reverse $reverse = null, ...)
   + set(string $string, array $config) : string
   + search(string $file, array $placeholders, ...) : void
@@ -31,8 +31,6 @@ note right of Gui::__construct
     ?Config $config = null
     ?Reverse $reverse = null
     ?Parser $parser = null
-    ?\JDatabaseDriver $db = null
-    ?CMSApplication $app = null
 end note
 
 note right of Gui::set

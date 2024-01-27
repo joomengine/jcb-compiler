@@ -23,6 +23,7 @@ class Data  #Gold {
   # Libraries $libraries
   # Dynamicget $dynamicget
   # Templatelayout $templatelayout
+  # $db
   + __construct(Config $config, Customcode $customcode, ...)
   + get(int $id = null) : object|array|null
   + exists(int $id = null) : bool
@@ -46,7 +47,6 @@ note right of Data::__construct
     Libraries $libraries
     Dynamicget $dynamicget
     Templatelayout $templatelayout
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

@@ -15,7 +15,7 @@ class Selection  #Gold {
   # Config $config
   # GetAsLookup $getaslookup
   # SiteFields $sitefields
-  # \JDatabaseDriver $db
+  # $db
   + __construct(Config $config, GetAsLookup $getaslookup, ...)
   + get(string $methodKey, string $viewCode, ...) : ?array
   # name(int $id) : string
@@ -30,7 +30,6 @@ note right of Selection::__construct
     Config $config
     GetAsLookup $getaslookup
     SiteFields $sitefields
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Selection::get

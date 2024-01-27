@@ -33,7 +33,7 @@ class Data  #Gold {
   # Sql $sql
   # Mysqlsettings $mysqlsettings
   # SiteEditView $siteeditview
-  # \JDatabaseDriver $db
+  # $db
   + __construct(Config $config, Event $event, ...)
   + get(int $id) : ?object
 }
@@ -66,7 +66,6 @@ note right of Data::__construct
     Sql $sql
     Mysqlsettings $mysqlsettings
     SiteEditView $siteeditview
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get

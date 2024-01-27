@@ -230,17 +230,13 @@ class Infusion
 		// infuse super powers details if set
 		if ($this->config->add_super_powers && ArrayHelper::check($this->power->superpowers))
 		{
-			// TODO we need to update the event signatures
-			$context = $this->config->component_context;
-
 			foreach ($this->power->superpowers as $path => $powers)
 			{
 				$key = StringHelper::safe($path);
 
 				// Trigger Event: jcb_ce_onBeforeInfuseSuperPowerDetails
 				$this->event->trigger(
-					'jcb_ce_onBeforeInfuseSuperPowerDetails',
-					array(&$context, &$path, &$key, &$powers)
+					'jcb_ce_onBeforeInfuseSuperPowerDetails', [&$path, &$key, &$powers]
 				);
 
 				// we add and all missing powers
@@ -260,8 +256,7 @@ class Infusion
 
 				// Trigger Event: jcb_ce_onAfterInfuseSuperPowerDetails
 				$this->event->trigger(
-					'jcb_ce_onAfterInfuseSuperPowerDetails',
-					array(&$context, &$path, &$key, &$powers)
+					'jcb_ce_onAfterInfuseSuperPowerDetails', [&$path, &$key, &$powers]
 				);
 			}
 		}
@@ -306,17 +301,13 @@ class Infusion
 		// infuse powers data if set
 		if (ArrayHelper::check($this->power->active))
 		{
-			// TODO we need to update the event signatures
-			$context = $this->config->component_context;
-
 			foreach ($this->power->active as $power)
 			{
 				if (ObjectHelper::check($power))
 				{
 					// Trigger Event: jcb_ce_onBeforeInfusePowerData
 					$this->event->trigger(
-						'jcb_ce_onBeforeInfusePowerData',
-						array(&$context, &$power)
+						'jcb_ce_onBeforeInfusePowerData', [&$power]
 					);
 
 					// POWERCODE
@@ -333,8 +324,7 @@ class Infusion
 
 					// Trigger Event: jcb_ce_onAfterInfusePowerData
 					$this->event->trigger(
-						'jcb_ce_onAfterInfusePowerData',
-						array(&$context, &$power)
+						'jcb_ce_onAfterInfusePowerData', [&$power]
 					);
 				}
 			}

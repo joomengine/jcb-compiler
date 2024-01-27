@@ -1,0 +1,9 @@
+	/**
+	 * Get the Array of Existing Core Field Names
+	 *
+	 * @param bool      $lowercase Switch to set field lowercase
+	 *
+	 * @return array
+	 * @since 3.2.0
+	 */
+	public function get(bool $lowercase = false): array;

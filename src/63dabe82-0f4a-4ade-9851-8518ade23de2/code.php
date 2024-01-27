@@ -9,7 +9,7 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Component;
+namespace VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaThree;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
@@ -24,6 +24,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Utilities\Pathfix;
 use VDM\Joomla\Utilities\FileHelper;
 use VDM\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component\SettingsInterface;
 
 
 /**
@@ -31,7 +32,7 @@ use VDM\Joomla\Utilities\StringHelper;
  * 
  * @since 3.2.0
  */
-final class Settings
+final class Settings implements SettingsInterface
 {
 	/**
 	 * The standard folders
@@ -285,13 +286,9 @@ final class Settings
 		$this->addFolders($version_data);
 		$this->addFiles($version_data);
 
-		// for plugin event TODO change event api signatures
-		$component_context = $this->config->component_context;
-
 		// Trigger Event: jcb_ce_onAfterSetJoomlaVersionData
 		$this->event->trigger(
-			'jcb_ce_onAfterSetJoomlaVersionData',
-			array(&$component_context, &$version_data)
+			'jcb_ce_onAfterSetJoomlaVersionData', [&$version_data]
 		);
 
 		return $version_data;
@@ -751,6 +748,5 @@ final class Settings
 
 		$this->component->remove('files');
 	}
-
 }
 

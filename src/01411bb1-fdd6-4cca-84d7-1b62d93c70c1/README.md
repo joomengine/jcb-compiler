@@ -11,6 +11,7 @@
 ```uml
 @startuml
 class Extractor  #Gold {
+  # int $currentVersion
   # array $existing
   # array $new
   # array $done
@@ -24,9 +25,9 @@ class Extractor  #Gold {
   # Reverse $reverse
   # Placeholder $componentPlaceholder
   # Pathfix $pathfix
-  # User $user
-  # \JDatabaseDriver $db
-  # CMSApplication $app
+  # $user
+  # $db
+  # $app
   + __construct(?Config $config = null, ?Gui $gui = null, ...)
   + run() : void
   # searchFileContent(string $file, $target) : array
@@ -49,9 +50,6 @@ note right of Extractor::__construct
     ?Reverse $reverse = null
     ?Placeholder $placeholder = null
     ?Pathfix $pathfix = null
-    ?User $user = null
-    ?\JDatabaseDriver $db = null
-    ?CMSApplication $app = null
 end note
 
 note left of Extractor::run

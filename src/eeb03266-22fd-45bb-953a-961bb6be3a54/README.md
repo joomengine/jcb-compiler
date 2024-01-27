@@ -12,8 +12,8 @@
 @startuml
 class Extractor << (F,LightGreen) >> #RoyalBlue {
   # array $powers
-  # \JDatabaseDriver $db
-  + __construct(?\JDatabaseDriver $db = null)
+  # $db
+  + __construct()
   + get_() : ?array
   + get(string $code) : ?array
   + reverse(string $code) : ?array

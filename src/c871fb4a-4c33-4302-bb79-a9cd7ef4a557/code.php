@@ -12,82 +12,81 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Field;
 
 
-use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Gui;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
-use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreValidationInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreRuleInterface as CoreRule;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
 
 
 /**
- * Compiler Field Validation Rules
+ * Compiler Field Rules
  * 
  * @since 3.2.0
  */
-class Validation
+class Rule
 {
 	/**
-	 * Compiler registry
+	 * The Registry Class.
 	 *
-	 * @var    Registry
+	 * @var   Registry
 	 * @since 3.2.0
 	 */
 	protected Registry $registry;
 
 	/**
-	 * Compiler Gui
+	 * The Customcode Class.
 	 *
-	 * @var    Gui
-	 * @since 3.2.0
-	 */
-	protected Gui $gui;
-
-	/**
-	 * Compiler Placeholder
-	 *
-	 * @var    Placeholder
-	 * @since 3.2.0
-	 */
-	protected Placeholder $placeholder;
-
-	/**
-	 * Compiler Customcode
-	 *
-	 * @var    Customcode
+	 * @var   Customcode
 	 * @since 3.2.0
 	 */
 	protected Customcode $customcode;
 
 	/**
-	 * Compiler Field Core Validation
+	 * The Gui Class.
 	 *
-	 * @var    CoreValidationInterface
+	 * @var   Gui
 	 * @since 3.2.0
 	 */
-	protected CoreValidationInterface $validation;
+	protected Gui $gui;
 
 	/**
-	 * Constructor
+	 * The Placeholder Class.
 	 *
-	 * @param Registry|null                      $registry          The compiler registry object.
-	 * @param Gui|null                       $gui          The compiler customcode gui object.
-	 * @param Placeholder|null               $placeholder  The compiler placeholder object.
-	 * @param Customcode|null                $customcode   The compiler customcode object.
-	 * @param CoreValidationInterface|null   $validation   The core validation rule object.
+	 * @var   Placeholder
+	 * @since 3.2.0
+	 */
+	protected Placeholder $placeholder;
+
+	/**
+	 * The CoreRuleInterface Class.
+	 *
+	 * @var   CoreRule
+	 * @since 3.2.0
+	 */
+	protected CoreRule $corerule;
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Registry      $registry      The Registry Class.
+	 * @param Customcode    $customcode    The Customcode Class.
+	 * @param Gui           $gui           The Gui Class.
+	 * @param Placeholder   $placeholder   The Placeholder Class.
+	 * @param CoreRule      $corerule      The CoreRuleInterface Class.
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(?Registry $registry = null, ?Gui $gui = null, ?Placeholder $placeholder = null,
-		?Customcode $customcode = null, ?CoreValidationInterface $validation = null)
+	public function __construct(Registry $registry, Customcode $customcode, Gui $gui,
+		Placeholder $placeholder, CoreRule $corerule)
 	{
-		$this->registry = $registry ?: Compiler::_('Registry');
-		$this->gui = $gui ?: Compiler::_('Customcode.Gui');
-		$this->placeholder = $placeholder ?: Compiler::_('Placeholder');
-		$this->customcode = $customcode ?: Compiler::_('Customcode');
-		$this->validation = $validation ?: Compiler::_('Field.Core.Validation');
+		$this->registry = $registry;
+		$this->customcode = $customcode;
+		$this->gui = $gui;
+		$this->placeholder = $placeholder;
+		$this->corerule = $corerule;
 	}
 
 	/**
@@ -120,7 +119,7 @@ class Validation
 			if ($this->registry->get("validation.rules.${validation_rule}") === null)
 			{
 				// get joomla core validation names  and make sure this rule is not a core validation rule
-				if (!in_array($validation_rule, (array) $this->validation->get(true)))
+				if (!in_array($validation_rule, (array) $this->corerule->get(true)))
 				{
 					// get the class methods for this rule if it exists
 					if (($php_code = GetHelper::var(
@@ -163,6 +162,5 @@ class Validation
 			}
 		}
 	}
-
 }
 

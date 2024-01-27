@@ -14,6 +14,7 @@ class Builder  #Gold {
   + register(Container $container) : void
   + getAccessSwitch(Container $container) : AccessSwitch
   + getAccessSwitchList(Container $container) : AccessSwitchList
+  + getAssetsRules(Container $container) : AssetsRules
   + getAdminFilterType(Container $container) : AdminFilterType
   + getAlias(Container $container) : Alias
   + getBaseSixFour(Container $container) : BaseSixFour
@@ -22,8 +23,11 @@ class Builder  #Gold {
   + getCategoryOtherName(Container $container) : CategoryOtherName
   + getCheckBox(Container $container) : CheckBox
   + getComponentFields(Container $container) : ComponentFields
+  + getConfigFieldsets(Container $container) : ConfigFieldsets
+  + getConfigFieldsetsCustomfield(Container $container) : ConfigFieldsetsCustomfield
   + getContentMulti(Container $container) : ContentMulti
   + getContentOne(Container $container) : ContentOne
+  + getContributors(Container $container) : Contributors
   + getCustomAlias(Container $container) : CustomAlias
   + getCustomField(Container $container) : CustomField
   + getCustomFieldLinks(Container $container) : CustomFieldLinks
@@ -36,14 +40,17 @@ class Builder  #Gold {
   + getDoNotEscape(Container $container) : DoNotEscape
   + getDynamicFields(Container $container) : DynamicFields
   + getExtensionCustomFields(Container $container) : ExtensionCustomFields
+  + getExtensionsParams(Container $container) : ExtensionsParams
   + getFieldGroupControl(Container $container) : FieldGroupControl
   + getFieldNames(Container $container) : FieldNames
   + getFieldRelations(Container $container) : FieldRelations
   + getFilter(Container $container) : Filter
   + getFootableScripts(Container $container) : FootableScripts
+  + getFrontendParams(Container $container) : FrontendParams
   + getGetAsLookup(Container $container) : GetAsLookup
   + getGetModule(Container $container) : GetModule
   + getGoogleChart(Container $container) : GoogleChart
+  + getHasMenuGlobal(Container $container) : HasMenuGlobal
   + getHasPermissions(Container $container) : HasPermissions
   + getHiddenFields(Container $container) : HiddenFields
   + getHistory(Container $container) : History
@@ -53,6 +60,7 @@ class Builder  #Gold {
   + getJsonItem(Container $container) : JsonItem
   + getJsonItemArray(Container $container) : JsonItemArray
   + getJsonString(Container $container) : JsonString
+  + getLanguageMessages(Container $container) : LanguageMessages
   + getLayout(Container $container) : Layout
   + getLayoutData(Container $container) : LayoutData
   + getLibraryManager(Container $container) : LibraryManager
@@ -81,8 +89,10 @@ class Builder  #Gold {
   + getPermissionComponent(Container $container) : PermissionComponent
   + getPermissionCore(Container $container) : PermissionCore
   + getPermissionDashboard(Container $container) : PermissionDashboard
+  + getPermissionFields(Container $container) : PermissionFields
   + getPermissionGlobalAction(Container $container) : PermissionGlobalAction
   + getPermissionViews(Container $container) : PermissionViews
+  + getRequest(Container $container) : Request
   + getScriptMediaSwitch(Container $container) : ScriptMediaSwitch
   + getScriptUserSwitch(Container $container) : ScriptUserSwitch
   + getSearch(Container $container) : Search
@@ -101,6 +111,7 @@ class Builder  #Gold {
   + getTitle(Container $container) : Title
   + getUikitComp(Container $container) : UikitComp
   + getUpdateMysql(Container $container) : UpdateMysql
+  + getViewsDefaultOrdering(Container $container) : ViewsDefaultOrdering
 }
 
 note right of Builder::register
@@ -124,74 +135,102 @@ note right of Builder::getAccessSwitchList
   return: AccessSwitchList
 end note
 
-note left of Builder::getAdminFilterType
+note left of Builder::getAssetsRules
+  Get The AssetsRules Class.
+
+  since: 3.2.0
+  return: AssetsRules
+end note
+
+note right of Builder::getAdminFilterType
   Get The AdminFilterType Class.
 
   since: 3.2.0
   return: AdminFilterType
 end note
 
-note right of Builder::getAlias
+note left of Builder::getAlias
   Get The Alias Class.
 
   since: 3.2.0
   return: Alias
 end note
 
-note left of Builder::getBaseSixFour
+note right of Builder::getBaseSixFour
   Get The BaseSixFour Class.
 
   since: 3.2.0
   return: BaseSixFour
 end note
 
-note right of Builder::getCategory
+note left of Builder::getCategory
   Get The Category Class.
 
   since: 3.2.0
   return: Category
 end note
 
-note left of Builder::getCategoryCode
+note right of Builder::getCategoryCode
   Get The CategoryCode Class.
 
   since: 3.2.0
   return: CategoryCode
 end note
 
-note right of Builder::getCategoryOtherName
+note left of Builder::getCategoryOtherName
   Get The CategoryOtherName Class.
 
   since: 3.2.0
   return: CategoryOtherName
 end note
 
-note left of Builder::getCheckBox
+note right of Builder::getCheckBox
   Get The CheckBox Class.
 
   since: 3.2.0
   return: CheckBox
 end note
 
-note right of Builder::getComponentFields
+note left of Builder::getComponentFields
   Get The ComponentFields Class.
 
   since: 3.2.0
   return: ComponentFields
 end note
 
-note left of Builder::getContentMulti
+note right of Builder::getConfigFieldsets
+  Get The ConfigFieldsets Class.
+
+  since: 3.2.0
+  return: ConfigFieldsets
+end note
+
+note left of Builder::getConfigFieldsetsCustomfield
+  Get The ConfigFieldsetsCustomfield Class.
+
+  since: 3.2.0
+  return: ConfigFieldsetsCustomfield
+end note
+
+note right of Builder::getContentMulti
   Get The ContentMulti Class.
 
   since: 3.2.0
   return: ContentMulti
 end note
 
-note right of Builder::getContentOne
+note left of Builder::getContentOne
   Get The ContentOne Class.
 
   since: 3.2.0
   return: ContentOne
+end note
+
+note right of Builder::getContributors
+  Get The Contributors Class.
+
+  since: 3.2.0
+  return: Contributors
 end note
 
 note left of Builder::getCustomAlias
@@ -278,39 +317,53 @@ note right of Builder::getExtensionCustomFields
   return: ExtensionCustomFields
 end note
 
-note left of Builder::getFieldGroupControl
+note left of Builder::getExtensionsParams
+  Get The ExtensionsParams Class.
+
+  since: 3.2.0
+  return: ExtensionsParams
+end note
+
+note right of Builder::getFieldGroupControl
   Get The FieldGroupControl Class.
 
   since: 3.2.0
   return: FieldGroupControl
 end note
 
-note right of Builder::getFieldNames
+note left of Builder::getFieldNames
   Get The FieldNames Class.
 
   since: 3.2.0
   return: FieldNames
 end note
 
-note left of Builder::getFieldRelations
+note right of Builder::getFieldRelations
   Get The FieldRelations Class.
 
   since: 3.2.0
   return: FieldRelations
 end note
 
-note right of Builder::getFilter
+note left of Builder::getFilter
   Get The Filter Class.
 
   since: 3.2.0
   return: Filter
 end note
 
-note left of Builder::getFootableScripts
+note right of Builder::getFootableScripts
   Get The FootableScripts Class.
 
   since: 3.2.0
   return: FootableScripts
+end note
+
+note left of Builder::getFrontendParams
+  Get The FrontendParams Class.
+
+  since: 3.2.0
+  return: FrontendParams
 end note
 
 note right of Builder::getGetAsLookup
@@ -334,67 +387,81 @@ note right of Builder::getGoogleChart
   return: GoogleChart
 end note
 
-note left of Builder::getHasPermissions
+note left of Builder::getHasMenuGlobal
+  Get The HasMenuGlobal Class.
+
+  since: 3.2.0
+  return: HasMenuGlobal
+end note
+
+note right of Builder::getHasPermissions
   Get The HasPermissions Class.
 
   since: 3.2.0
   return: HasPermissions
 end note
 
-note right of Builder::getHiddenFields
+note left of Builder::getHiddenFields
   Get The HiddenFields Class.
 
   since: 3.2.0
   return: HiddenFields
 end note
 
-note left of Builder::getHistory
+note right of Builder::getHistory
   Get The History Class.
 
   since: 3.2.0
   return: History
 end note
 
-note right of Builder::getIntegerFields
+note left of Builder::getIntegerFields
   Get The IntegerFields Class.
 
   since: 3.2.0
   return: IntegerFields
 end note
 
-note left of Builder::getItemsMethodEximportString
+note right of Builder::getItemsMethodEximportString
   Get The ItemsMethodEximportString Class.
 
   since: 3.2.0
   return: ItemsMethodEximportString
 end note
 
-note right of Builder::getItemsMethodListString
+note left of Builder::getItemsMethodListString
   Get The ItemsMethodListString Class.
 
   since: 3.2.0
   return: ItemsMethodListString
 end note
 
-note left of Builder::getJsonItem
+note right of Builder::getJsonItem
   Get The JsonItem Class.
 
   since: 3.2.0
   return: JsonItem
 end note
 
-note right of Builder::getJsonItemArray
+note left of Builder::getJsonItemArray
   Get The JsonItemArray Class.
 
   since: 3.2.0
   return: JsonItemArray
 end note
 
-note left of Builder::getJsonString
+note right of Builder::getJsonString
   Get The JsonString Class.
 
   since: 3.2.0
   return: JsonString
+end note
+
+note left of Builder::getLanguageMessages
+  Get The LanguageMessages Class.
+
+  since: 3.2.0
+  return: LanguageMessages
 end note
 
 note right of Builder::getLayout
@@ -593,18 +660,32 @@ note left of Builder::getPermissionDashboard
   return: PermissionDashboard
 end note
 
-note right of Builder::getPermissionGlobalAction
+note right of Builder::getPermissionFields
+  Get The PermissionFields Class.
+
+  since: 3.2.0
+  return: PermissionFields
+end note
+
+note left of Builder::getPermissionGlobalAction
   Get The PermissionGlobalAction Class.
 
   since: 3.2.0
   return: PermissionGlobalAction
 end note
 
-note left of Builder::getPermissionViews
+note right of Builder::getPermissionViews
   Get The PermissionViews Class.
 
   since: 3.2.0
   return: PermissionViews
+end note
+
+note left of Builder::getRequest
+  Get The Request Class.
+
+  since: 3.2.0
+  return: Request
 end note
 
 note right of Builder::getScriptMediaSwitch
@@ -731,6 +812,13 @@ note left of Builder::getUpdateMysql
 
   since: 3.2.0
   return: UpdateMysql
+end note
+
+note right of Builder::getViewsDefaultOrdering
+  Get The ViewsDefaultOrdering Class.
+
+  since: 3.2.0
+  return: ViewsDefaultOrdering
 end note
  
 @enduml

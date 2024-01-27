@@ -1,0 +1,31 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "cfdf0968-f394-4459-933c-ad1674fb1041",
+    "implements": null,
+    "load_selection": null,
+    "name": "Request",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.Request",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "98419ff3-6628-4539-8365-37f88378bced",
+            "as": "RequestBuilder"
+        },
+        "use_selection1": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.Request",
+    "description": "Request Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

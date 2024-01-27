@@ -15,8 +15,8 @@
             "as": "Compiler"
         },
         "use_selection1": {
-            "use": "63dabe82-0f4a-4ade-9851-8518ade23de2",
-            "as": "default"
+            "use": "5f44e66a-31d0-45ff-92b3-b7372dc57ae9",
+            "as": "Settings"
         },
         "use_selection2": {
             "use": "6f20369a-8536-4870-a1a3-cda254c939c8",

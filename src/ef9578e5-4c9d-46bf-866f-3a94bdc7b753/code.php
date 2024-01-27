@@ -210,10 +210,9 @@ final class Data
 	/**
 	 * Database object to query local DB
 	 *
-	 * @var    \JDatabaseDriver
 	 * @since 3.2.0
 	 **/
-	protected \JDatabaseDriver $db;
+	protected $db;
 
 	/**
 	 * Constructor
@@ -249,7 +248,7 @@ final class Data
 		?Filesfolders $filesFolders = null, ?Historycomponent $history = null, ?Whmcs $whmcs = null,
 		?Sqltweaking $sqltweaking = null, ?Adminviews $adminviews = null, ?Siteviews $siteviews = null,
 		?Customadminviews $customadminviews = null, ?Updateserver $updateserver = null,
-		?Joomlamodules $modules = null, ?Joomlaplugins $plugins = null, ?\JDatabaseDriver $db = null)
+		?Joomlamodules $modules = null, ?Joomlaplugins $plugins = null)
 	{
 		$this->config = $config ?: Compiler::_('Config');
 		$this->event = $event ?: Compiler::_('Event');
@@ -271,7 +270,7 @@ final class Data
 		$this->updateserver = $updateserver ?: Compiler::_('Model.Updateserver');
 		$this->modules = $modules ?: Compiler::_('Model.Joomlamodules');
 		$this->plugins = $plugins ?: Compiler::_('Model.Joomlaplugins');
-		$this->db = $db ?: Factory::getDbo();
+		$this->db = Factory::getDbo();
 	}
 
 	/**
@@ -346,15 +345,9 @@ final class Data
 			$this->db->quoteName('a.id') . ' = ' . (int) $this->config->component_id
 		);
 
-		// for plugin event TODO change event api signatures
-		$component_context = $this->config->component_context;
-		$component_id = $this->config->component_id;
-
 		// Trigger Event: jcb_ce_onBeforeQueryComponentData
 		$this->event->trigger(
-			'jcb_ce_onBeforeQueryComponentData',
-			array(&$component_context, &$component_id, &$query,
-				&$this->db)
+			'jcb_ce_onBeforeQueryComponentData', [&$query, &$this->db]
 		);
 
 		// Reset the query using our newly populated query object.
@@ -371,8 +364,7 @@ final class Data
 
 		// Trigger Event: jcb_ce_onBeforeModelComponentData
 		$this->event->trigger(
-			'jcb_ce_onBeforeModelComponentData',
-			array(&$component_context, &$component)
+			'jcb_ce_onBeforeModelComponentData', [&$component]
 		);
 
 		// load the global placeholders
@@ -866,7 +858,7 @@ final class Data
 		// Trigger Event: jcb_ce_onAfterModelComponentData
 		$this->event->trigger(
 			'jcb_ce_onAfterModelComponentData',
-			array(&$component_context, &$component)
+			[&$component]
 		);
 
 		// return found component data

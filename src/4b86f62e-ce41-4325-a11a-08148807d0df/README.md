@@ -13,7 +13,7 @@
 class Event  #Gold {
   # $activePlugins
   + __construct(?Registry $params = null)
-  + trigger(string $event, mixed $data) : void
+  + trigger(string $event, mixed $data = null) : void
 }
 
 note right of Event::__construct

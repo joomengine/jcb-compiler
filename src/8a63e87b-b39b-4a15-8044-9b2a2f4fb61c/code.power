@@ -1,4 +1,12 @@
 	/**
+	 * Current Joomla Version Being Build
+	 *
+	 * @var     int
+	 * @since 3.2.0
+	 **/
+	protected $targetVersion;
+
+	/**
 	 * Registers the service provider with a DI container.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -9,10 +17,13 @@
 	public function register(Container $container)
 	{
 		$container->alias(CompilerComponent::class, 'Component')
-			->share('Component', [$this, 'getComponent'], true);
+			->share('Component', [$this, 'getCompilerComponent'], true);
 
-		$container->alias(Settings::class, 'Component.Settings')
-			->share('Component.Settings', [$this, 'getSettings'], true);
+		$container->alias(J3Settings::class, 'Component.J3.Settings')
+			->share('Component.J3.Settings', [$this, 'getJ3Settings'], true);
+
+		$container->alias(J4Settings::class, 'Component.J4.Settings')
+			->share('Component.J4.Settings', [$this, 'getJ4Settings'], true);
 
 		$container->alias(Dashboard::class, 'Component.Dashboard')
 			->share('Component.Dashboard', [$this, 'getDashboard'], true);
@@ -31,17 +42,20 @@
 
 		$container->alias(Structuremultiple::class, 'Component.Structure.Multiple')
 			->share('Component.Structure.Multiple', [$this, 'getStructuremultiple'], true);
+
+		$container->alias(Settings::class, 'Component.Settings')
+			->share('Component.Settings', [$this, 'getSettings'], true);
 	}
 
 	/**
-	 * Get the Component
+	 * Get The Component Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
 	 * @return  CompilerComponent
 	 * @since 3.2.0
 	 */
-	public function getComponent(Container $container): CompilerComponent
+	public function getCompilerComponent(Container $container): CompilerComponent
 	{
 		return new CompilerComponent(
 			$container->get('Component.Data')
@@ -49,16 +63,16 @@
 	}
 
 	/**
-	 * Get the Compiler Component (version) Settings
+	 * Get The Settings Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  Settings
+	 * @return  J3Settings
 	 * @since 3.2.0
 	 */
-	public function getSettings(Container $container): Settings
+	public function getJ3Settings(Container $container): J3Settings
 	{
-		return new Settings(
+		return new J3Settings(
 			$container->get('Config'),
 			$container->get('Registry'),
 			$container->get('Event'),
@@ -71,7 +85,29 @@
 	}
 
 	/**
-	 * Get the Compiler Component Dynamic Dashboard
+	 * Get The Settings Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J4Settings
+	 * @since 3.2.0
+	 */
+	public function getJ4Settings(Container $container): J4Settings
+	{
+		return new J4Settings(
+			$container->get('Config'),
+			$container->get('Registry'),
+			$container->get('Event'),
+			$container->get('Placeholder'),
+			$container->get('Component'),
+			$container->get('Utilities.Paths'),
+			$container->get('Utilities.Dynamicpath'),
+			$container->get('Utilities.Pathfix')
+		);
+	}
+
+	/**
+	 * Get The Dashboard Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -87,7 +123,7 @@
 	}
 
 	/**
-	 * Get the Component Placeholders
+	 * Get The Placeholder Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -102,7 +138,7 @@
 	}
 
 	/**
-	 * Get the Component Data
+	 * Get The Data Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -136,7 +172,7 @@
 	}
 
 	/**
-	 * Get the Compiler Structure
+	 * Get The Structure Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -153,7 +189,7 @@
 	}
 
 	/**
-	 * Get the Compiler Structure Single
+	 * Get The Structuresingle Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -165,6 +201,7 @@
 		return new Structuresingle(
 			$container->get('Config'),
 			$container->get('Registry'),
+			$container->get('Placeholder'),
 			$container->get('Component.Settings'),
 			$container->get('Component'),
 			$container->get('Compiler.Builder.Content.One'),
@@ -175,7 +212,7 @@
 	}
 
 	/**
-	 * Get the Compiler Structure Multiple
+	 * Get The Structuremultiple Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -193,4 +230,22 @@
 			$container->get('Model.Modifieddate'),
 			$container->get('Utilities.Structure')
 		);
+	}
+
+	/**
+	 * Get The Settings Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Settings
+	 * @since 3.2.0
+	 */
+	public function getSettings(Container $container): Settings
+	{
+		if (empty($this->targetVersion))
+		{
+			$this->targetVersion = $container->get('Config')->joomla_version;
+		}
+
+		return $container->get('Component.J' . $this->targetVersion . '.Settings');
 	}

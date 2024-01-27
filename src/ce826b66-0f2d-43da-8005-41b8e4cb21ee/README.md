@@ -13,31 +13,30 @@
 class Data  #Gold {
   # array $fields
   # Config $config
-  # EventInterface $event
-  # HistoryInterface $history
+  # Event $event
+  # History $history
   # Placeholder $placeholder
   # Customcode $customcode
-  # FieldCustomcode $fieldCustomcode
-  # Validation $validation
-  # \JDatabaseDriver $db
-  + __construct(?Config $config = null, ?EventInterface $event = null, ...)
+  # FieldCustomcode $fieldcustomcode
+  # Rule $rule
+  # $db
+  + __construct(Config $config, Event $event, ...)
   + get(int $id, ?string $singleViewName = null, ...) : ?object
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?EventInterface $event = null
-    ?HistoryInterface $history = null
-    ?Placeholder $placeholder = null
-    ?Customcode $customcode = null
-    ?FieldCustomcode $fieldCustomcode = null
-    ?Validation $validation = null
-    ?\JDatabaseDriver $db = null
+    Config $config
+    Event $event
+    History $history
+    Placeholder $placeholder
+    Customcode $customcode
+    FieldCustomcode $fieldcustomcode
+    Rule $rule
 end note
 
 note right of Data::get

@@ -250,13 +250,9 @@
 		$this->addFolders($version_data);
 		$this->addFiles($version_data);
 
-		// for plugin event TODO change event api signatures
-		$component_context = $this->config->component_context;
-
 		// Trigger Event: jcb_ce_onAfterSetJoomlaVersionData
 		$this->event->trigger(
-			'jcb_ce_onAfterSetJoomlaVersionData',
-			array(&$component_context, &$version_data)
+			'jcb_ce_onAfterSetJoomlaVersionData', [&$version_data]
 		);
 
 		return $version_data;

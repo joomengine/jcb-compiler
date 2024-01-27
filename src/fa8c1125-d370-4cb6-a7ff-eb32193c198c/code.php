@@ -159,7 +159,7 @@ class Customtabs
 						{
 							// add the tab
 							$tmp = PHP_EOL . $_tab . Indent::_(1)
-								. "<?php echo JHtml::_('bootstrap.addTab', '"
+								. "<?php echo Html::_('bootstrap.addTab', '"
 								. $tab['view'] . "Tab', '" . $tab['code']
 								. "', JT" . "ext::_('" . $tab['lang']
 								. "', true)); ?>";
@@ -174,7 +174,7 @@ class Customtabs
 							$tmp .= PHP_EOL . $_tab . Indent::_(3) . '</div>';
 							$tmp .= PHP_EOL . $_tab . Indent::_(2) . '</div>';
 							$tmp .= PHP_EOL . $_tab . Indent::_(1)
-								. "<?php echo JHtml::_('bootstrap.endTab'); ?>";
+								. "<?php echo Html::_('bootstrap.endTab'); ?>";
 
 							// update html
 							$tab['html'] = $tmp;

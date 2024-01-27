@@ -347,6 +347,14 @@ class Structure
 		// check if we should add the dynamic folder moving script to the installer script
 		if (!$this->registry->get('set_move_folders_install_script'))
 		{
+			$function = 'setDynamicF0ld3rs';
+			$script = 'script.php';
+			if ($this->config->get('joomla_version', 3) != 3)
+			{
+				$function = 'moveFolders';
+				$script = 'ComponentnameInstallerScript.php';
+			}
+
 			// add the setDynamicF0ld3rs() method to the install script.php file
 			$this->registry->set('set_move_folders_install_script', true);
 
@@ -356,7 +364,9 @@ class Structure
 				'Notice'
 			);
 			$this->app->enqueueMessage(
-				Text::sprintf('COM_COMPONENTBUILDER_A_METHOD_SETDYNAMICFZEROLDTHREERS_WAS_ADDED_TO_THE_INSTALL_BSCRIPTPHPB_OF_THIS_PACKAGE_TO_INSURE_THAT_THE_FOLDERS_ARE_COPIED_INTO_THE_CORRECT_PLACE_WHEN_THIS_COMPONENT_IS_INSTALLED'),
+				Text::sprintf('COM_COMPONENTBUILDER_A_METHOD_S_WAS_ADDED_TO_THE_INSTALL_BSB_OF_THIS_PACKAGE_TO_INSURE_THAT_THE_FOLDERS_ARE_COPIED_INTO_THE_CORRECT_PLACE_WHEN_THIS_COMPONENT_IS_INSTALLED',
+					$function, $script
+				),
 				'Notice'
 			);
 		}

@@ -1,0 +1,14 @@
+	/**
+	 * Is an Array
+	 *
+	 * @since 3.2.0
+	 */
+	use IsArray;
+
+	/**
+	 * Base switch to add values as string or array
+	 *
+	 * @var    boolean
+	 * @since 3.2.0
+	 **/
+	protected bool $addAsArray = true;

@@ -25,7 +25,7 @@ class Data  #Gold {
   # Phpcustomview $php
   # Custombuttons $custombuttons
   # Ajaxcustomview $ajax
-  # \JDatabaseDriver $db
+  # $db
   + __construct(?Config $config = null, ?EventInterface $event = null, ...)
   + get(int $id, string $table = 'site_view') : ?object
 }
@@ -49,7 +49,6 @@ note right of Data::__construct
     ?Phpcustomview $php = null
     ?Ajaxcustomview $ajax = null
     ?Custombuttons $custombuttons = null
-    ?\JDatabaseDriver $db = null
 end note
 
 note right of Data::get
