@@ -16,6 +16,10 @@
             "use": "e00a7d1d-6d80-41c5-bf13-32d41bc5bf91",
             "as": "default"
         },
+        "use_selection6": {
+            "use": "34df20ec-67db-4e7e-be61-fb94d360c408",
+            "as": "J5ModelCanDelete"
+        },
         "use_selection1": {
             "use": "2a69a8ab-cea0-4c75-92d5-9495cb740e0f",
             "as": "J4ModelCanDelete"
@@ -27,6 +31,10 @@
         "use_selection3": {
             "use": "600515b1-493f-4448-96fe-018e54e087c8",
             "as": "default"
+        },
+        "use_selection7": {
+            "use": "318a98a3-bb6f-42cb-a000-352d4c848b51",
+            "as": "J5ModelCanEditState"
         },
         "use_selection4": {
             "use": "cb2a82a5-aa49-4d46-b765-9b3feb118208",

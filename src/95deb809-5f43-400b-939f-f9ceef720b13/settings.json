@@ -1,0 +1,69 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "95deb809-5f43-400b-939f-f9ceef720b13",
+    "implements": [
+        "3a777d70-52ad-49ec-9016-6f7438608613"
+    ],
+    "load_selection": null,
+    "name": "Header",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.J5.Header",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection2": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "54ec57f6-2fc3-42e5-975e-1fabeacb845d",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "9481caa2-6d04-4598-8320-543a93927243",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "007177eb-d39d-4093-8840-07a38811c502",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "81212121-ad5c-43c5-b046-f2650864f690",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "e4e65c5b-00ec-439c-96bf-3153c3a73398",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "8ca30d59-e56a-4cdd-bd8c-d9aad28f5903",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.JoomlaFive.Header",
+    "description": "Build headers for all Joomla 5 files\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

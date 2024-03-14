@@ -17,7 +17,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface as Event;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Dispenser;
-use VDM\Joomla\Componentbuilder\Compiler\Model\Customtabs;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Model\CustomtabsInterface as Customtabs;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Tabs;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Fields;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Historyadminview as History;

@@ -463,6 +463,7 @@ final class FieldsetXML implements Fieldsetinterface
 				'label'       => $lang_view . '_VERSION_LABEL',
 				'description' => $lang_view . '_VERSION_DESC',
 				'size'        => 6,
+				'default'    => 1,
 				'readonly'    => "true",
 				'filter'      => 'unset'
 			];

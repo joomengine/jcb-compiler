@@ -13,9 +13,6 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
 use Joomla\CMS\Factory;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
@@ -23,6 +20,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Language\Extractor;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Extractor as Power;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\External;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\CustomcodeInterface;
 
 

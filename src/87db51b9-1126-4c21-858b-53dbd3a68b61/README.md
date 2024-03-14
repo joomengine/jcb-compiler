@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class History (Details)
+# final class History (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaThree**
 ```uml
 @startuml
-class History  #Gold {
+class History << (F,LightGreen) >> #RoyalBlue {
   # ?object $tmp
   # Config $config
   # $db

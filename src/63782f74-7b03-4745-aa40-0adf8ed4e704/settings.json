@@ -23,6 +23,10 @@
         "use_selection2": {
             "use": "25c7ca86-6088-4f5f-b9fe-13504779c6ba",
             "as": "J4History"
+        },
+        "use_selection3": {
+            "use": "8ab6fe75-ba5a-4316-9ef8-1eccceec813f",
+            "as": "J5History"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.History",

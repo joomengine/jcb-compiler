@@ -9,8 +9,8 @@
     "load_selection": null,
     "name": "InstallScript",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.Extension.JoomlaFour.InstallScript",
-    "type": "class",
+    "system_name": "JCB.Compiler.Extension.J4.InstallScript",
+    "type": "final class",
     "use_selection": {
         "use_selection0": {
             "use": "1aefb8f5-486f-4f00-adf9-696340b3254e",

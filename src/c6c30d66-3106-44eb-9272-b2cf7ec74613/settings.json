@@ -60,6 +60,10 @@
             "use": "43f46bb2-ab6d-47c7-9fd9-f1745a3576fb",
             "as": "J4CoreRule"
         },
+        "use_selection19": {
+            "use": "8b56b62d-b960-4823-b9bb-c71675a71b85",
+            "as": "J5CoreRule"
+        },
         "use_selection12": {
             "use": "e6683873-b74e-4b54-8466-69f8a9282033",
             "as": "J3CoreField"
@@ -68,6 +72,10 @@
             "use": "c6818275-cdf7-4fce-a365-90d95a77a71c",
             "as": "J4CoreField"
         },
+        "use_selection20": {
+            "use": "4c143764-1b84-4b9f-86c5-8de119b26f1a",
+            "as": "J5CoreField"
+        },
         "use_selection14": {
             "use": "2bc33733-e900-4a9c-8cb3-c537aa9db785",
             "as": "J3InputButton"
@@ -75,6 +83,10 @@
         "use_selection15": {
             "use": "1b8a40e9-7847-4341-8a8e-dfdc2d531bbe",
             "as": "J4InputButton"
+        },
+        "use_selection21": {
+            "use": "163fa7ca-21bd-4e7f-a618-26fe10b870fe",
+            "as": "J5InputButton"
         },
         "use_selection16": {
             "use": "e2f5fddf-cbc8-44ee-836c-7f3fb08d8900",

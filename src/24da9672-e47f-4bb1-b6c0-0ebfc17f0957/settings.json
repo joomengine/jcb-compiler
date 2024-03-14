@@ -10,7 +10,7 @@
     "name": "CoreRule",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Field.J3.CoreRule",
-    "type": "class",
+    "type": "final class",
     "use_selection": {
         "use_selection0": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",

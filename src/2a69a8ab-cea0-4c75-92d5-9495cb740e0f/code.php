@@ -69,7 +69,7 @@ final class CanDelete implements CanDeleteInterface
 		$allow = [];
 
 		// setup the default script
-		$allow[] = PHP_EOL . Indent::_(2) . "if (empty(\$record->id) || (\$record->state != -2))";
+		$allow[] = PHP_EOL . Indent::_(2) . "if (empty(\$record->id) || (\$record->published != -2))";
 		$allow[] = Indent::_(2) . "{";
 		$allow[] = Indent::_(3) . "return false;";
 		$allow[] = Indent::_(2) . "}" . PHP_EOL;

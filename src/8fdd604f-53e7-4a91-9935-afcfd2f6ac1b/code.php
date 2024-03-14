@@ -33,6 +33,11 @@ use VDM\Joomla\Componentbuilder\Compiler\Creator\Layout;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Permission;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\SiteFieldData;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Request;
+use VDM\Joomla\Componentbuilder\Compiler\Creator\Router;
+use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterConstructorDefault;
+use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterConstructorManual;
+use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterMethodsDefault;
+use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterMethodsManual;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\FieldsetString;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\FieldsetXML;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\FieldsetDynamic;
@@ -117,6 +122,21 @@ class Creator implements ServiceProviderInterface
 
 		$container->alias(Request::class, 'Compiler.Creator.Request')
 			->share('Compiler.Creator.Request', [$this, 'getRequest'], true);
+
+		$container->alias(Router::class, 'Compiler.Creator.Router')
+			->share('Compiler.Creator.Router', [$this, 'getRouter'], true);
+
+		$container->alias(RouterConstructorDefault::class, 'Compiler.Creator.Router.Constructor.Default')
+			->share('Compiler.Creator.Router.Constructor.Default', [$this, 'getRouterConstructorDefault'], true);
+
+		$container->alias(RouterConstructorManual::class, 'Compiler.Creator.Router.Constructor.Manual')
+			->share('Compiler.Creator.Router.Constructor.Manual', [$this, 'getRouterConstructorManual'], true);
+
+		$container->alias(RouterMethodsDefault::class, 'Compiler.Creator.Router.Methods.Default')
+			->share('Compiler.Creator.Router.Methods.Default', [$this, 'getRouterMethodsDefault'], true);
+
+		$container->alias(RouterMethodsManual::class, 'Compiler.Creator.Router.Methods.Manual')
+			->share('Compiler.Creator.Router.Methods.Manual', [$this, 'getRouterMethodsManual'], true);
 
 		$container->alias(FieldsetString::class, 'Compiler.Creator.Fieldset.String')
 			->share('Compiler.Creator.Fieldset.String', [$this, 'getFieldsetString'], true);
@@ -565,6 +585,87 @@ class Creator implements ServiceProviderInterface
 	{
 		return new Request(
 			$container->get('Compiler.Builder.Request')
+		);
+	}
+
+	/**
+	 * Get The Router Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Router
+	 * @since 3.2.0
+	 */
+	public function getRouter(Container $container): Router
+	{
+		return new Router(
+			$container->get('Customcode.Dispenser'),
+			$container->get('Compiler.Builder.Request'),
+			$container->get('Compiler.Builder.Router'),
+			$container->get('Compiler.Creator.Router.Constructor.Default'),
+			$container->get('Compiler.Creator.Router.Constructor.Manual'),
+			$container->get('Compiler.Creator.Router.Methods.Default'),
+			$container->get('Compiler.Creator.Router.Methods.Manual')
+		);
+	}
+
+	/**
+	 * Get The RouterConstructorDefault Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  RouterConstructorDefault
+	 * @since 3.2.0
+	 */
+	public function getRouterConstructorDefault(Container $container): RouterConstructorDefault
+	{
+		return new RouterConstructorDefault(
+			$container->get('Compiler.Builder.Router')
+		);
+	}
+
+	/**
+	 * Get The RouterConstructorManual Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  RouterConstructorManual
+	 * @since 3.2.0
+	 */
+	public function getRouterConstructorManual(Container $container): RouterConstructorManual
+	{
+		return new RouterConstructorManual(
+			$container->get('Compiler.Builder.Router')
+		);
+	}
+
+	/**
+	 * Get The RouterMethodsDefault Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  RouterMethodsDefault
+	 * @since 3.2.0
+	 */
+	public function getRouterMethodsDefault(Container $container): RouterMethodsDefault
+	{
+		return new RouterMethodsDefault(
+			$container->get('Compiler.Builder.Router')
+		);
+	}
+
+	/**
+	 * Get The RouterMethodsManual Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  RouterMethodsManual
+	 * @since 3.2.0
+	 */
+	public function getRouterMethodsManual(Container $container): RouterMethodsManual
+	{
+		return new RouterMethodsManual(
+			$container->get('Compiler.Builder.Router')
 		);
 	}
 

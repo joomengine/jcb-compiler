@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class CoreField (Details)
+# final class CoreField (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree**
 ```uml
 @startuml
-class CoreField  #Gold {
+class CoreField << (F,LightGreen) >> #RoyalBlue {
   # array $fields
   # array $paths
   + __construct()

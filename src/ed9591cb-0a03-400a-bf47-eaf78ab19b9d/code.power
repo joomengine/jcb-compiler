@@ -24,6 +24,9 @@
 
 		$container->alias(J4InstallScript::class, 'J4.Extension.InstallScript')
 			->share('J4.Extension.InstallScript', [$this, 'getJ4ExtensionInstallScript'], true);
+
+		$container->alias(J5InstallScript::class, 'J5.Extension.InstallScript')
+			->share('J5.Extension.InstallScript', [$this, 'getJ5ExtensionInstallScript'], true);
 	}
 
 	/**
@@ -50,6 +53,19 @@
 	public function getJ4ExtensionInstallScript(Container $container): J4InstallScript
 	{
 		return new J4InstallScript();
+	}
+
+	/**
+	 * Get the Joomla 5 Extension Install Script
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J5InstallScript
+	 * @since 3.2.0
+	 */
+	public function getJ5ExtensionInstallScript(Container $container): J5InstallScript
+	{
+		return new J5InstallScript();
 	}
 
 	/**

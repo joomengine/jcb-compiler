@@ -12,7 +12,9 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaFour;
 
 
+use Joomla\CMS\Factory;
 use Joomla\Registry\Registry;
+use Joomla\CMS\Plugin\PluginHelper;
 use VDM\Joomla\Utilities\Component\Helper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface;
 
@@ -22,15 +24,22 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface;
  * 
  * @since 3.2.0
  */
-class Event implements EventInterface
+final class Event implements EventInterface
 {
 	/**
-	 * event plugin trigger switch
+	 * event plug-in trigger switch
 	 *
 	 * @var    boolean
 	 * @since 3.2.0
 	 */
 	protected $activePlugins = false;
+
+	/**
+	 * The application to trigger and event TODO
+	 *
+	 * @since 3.2.0
+	 */
+	protected $dispatcher;
 
 	/**
 	 * Constructor
@@ -50,19 +59,21 @@ class Event implements EventInterface
 			foreach ($plugins as $plugin)
 			{
 				// get possible plugins
-				if (\JPluginHelper::isEnabled('extension', $plugin))
+				if (PluginHelper::isEnabled('extension', $plugin))
 				{
 					// Import the appropriate plugin group.
-					\JPluginHelper::importPlugin('extension', $plugin);
+					PluginHelper::importPlugin('extension', $plugin);
 					// activate events
 					$this->activePlugins = true;
 				}
 			}
 		}
+
+		$this->dispatcher = Factory::getApplication();
 	}
 
 	/**
-	 * Trigger and event
+	 * Trigger an event
 	 *
 	 * @param   string  $event  The event to trigger
 	 * @param   mixed   $data   The values to pass to the event/plugin
@@ -76,22 +87,14 @@ class Event implements EventInterface
 		// only execute if plugins were loaded (active)
 		if ($this->activePlugins)
 		{
-			// Get the dispatcher.
-			$dispatcher = \JEventDispatcher::getInstance();
-
-			// Trigger this compiler event.
-			$results = $dispatcher->trigger($event, $data);
-
-			// Check for errors encountered while trigger the event
-			if (count((array) $results) && in_array(false, $results, true))
+			try
 			{
-				// Get the last error.
-				$error = $dispatcher->getError();
-
-				if (!($error instanceof \Exception))
-				{
-					throw new \Exception($error);
-				}
+				// Trigger this compiler event.
+				$results = $this->dispatcher->triggerEvent($event, $data ?? []);
+			}
+			catch (\Exception $e)
+			{
+				throw new \Exception("Error processing event '$event': " . $e->getMessage());
 			}
 		}
 	}

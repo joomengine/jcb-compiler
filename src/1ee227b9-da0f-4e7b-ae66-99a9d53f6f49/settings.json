@@ -9,7 +9,7 @@
     "load_selection": null,
     "name": "Header",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.JoomlaFour.Header",
+    "system_name": "JCB.Compiler.J4.Header",
     "type": "final class",
     "use_selection": {
         "use_selection0": {
@@ -50,10 +50,6 @@
         },
         "use_selection9": {
             "use": "8ca30d59-e56a-4cdd-bd8c-d9aad28f5903",
-            "as": "default"
-        },
-        "use_selection10": {
-            "use": "ce8cf834-6bac-44fb-941c-861f7e046cc0",
             "as": "default"
         },
         "use_selection11": {

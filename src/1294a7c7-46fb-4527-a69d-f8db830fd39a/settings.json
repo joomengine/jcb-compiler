@@ -1,0 +1,55 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "1294a7c7-46fb-4527-a69d-f8db830fd39a",
+    "implements": null,
+    "load_selection": null,
+    "name": "Router",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.Router",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "98419ff3-6628-4539-8365-37f88378bced",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4a4cf7a3-d0f9-439e-96fb-82d7a4ae0cf5",
+            "as": "Builder"
+        },
+        "use_selection3": {
+            "use": "e5278bf3-6dfb-42a0-b699-148b5ab8e45f",
+            "as": "DefaultConstructor"
+        },
+        "use_selection4": {
+            "use": "ec7bdbf9-8377-446e-9f40-64e23ae96b59",
+            "as": "ManualConstructor"
+        },
+        "use_selection5": {
+            "use": "17c590ed-8a44-485c-9be8-9a144a6b7429",
+            "as": "DefaultMethods"
+        },
+        "use_selection6": {
+            "use": "6034587d-82a3-4b19-ac58-40507f79122a",
+            "as": "ManualMethods"
+        },
+        "use_selection7": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.Router",
+    "description": "Router Creator Class\r\n\r\n@since 3.2.0",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

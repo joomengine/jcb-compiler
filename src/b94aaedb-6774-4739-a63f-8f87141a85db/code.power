@@ -22,6 +22,9 @@
 		$container->alias(J4Event::class, 'J4.Event')
 			->share('J4.Event', [$this, 'getJ4Event'], true);
 
+		$container->alias(J5Event::class, 'J5.Event')
+			->share('J5.Event', [$this, 'getJ5Event'], true);
+
 		$container->alias(EventInterface::class, 'Event')
 			->share('Event', [$this, 'getEvent'], true);
 	}
@@ -68,4 +71,17 @@
 	public function getJ4Event(Container $container): J4Event
 	{
 		return new J4Event();
+	}
+
+	/**
+	 * Get the Joomla 5 Event
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J5Event
+	 * @since 3.2.0
+	 */
+	public function getJ5Event(Container $container): J5Event
+	{
+		return new J5Event();
 	}

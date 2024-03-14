@@ -402,6 +402,7 @@
 			$field_set[] = Indent::_(3) . 'description="' . $lang_view
 				. '_VERSION_DESC"';
 			$field_set[] = Indent::_(3) . 'size="6"';
+			$field_set[] = Indent::_(3) . 'default="1"';
 			$field_set[] = Indent::_(3) . 'readonly="true"';
 			$field_set[] = Indent::_(3) . 'filter="unset"';
 			$field_set[] = Indent::_(2) . "/>";

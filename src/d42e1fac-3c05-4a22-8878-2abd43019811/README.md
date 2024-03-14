@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class InstallScript (Details)
+# final class InstallScript (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaFour**
 ```uml
 @startuml
-class InstallScript  #Gold {
+class InstallScript << (F,LightGreen) >> #RoyalBlue {
   # object $extension
   # array $methods
   # array $types
@@ -21,6 +21,7 @@ class InstallScript  #Gold {
   # bool $preflightActive
   # bool $postflightActive
   + get(object $extension) : string
+  # rest() : void
   # build() : string
   # head() : string
   # construct() : string
@@ -33,6 +34,13 @@ note right of InstallScript::get
 
   since: 3.2.0
   return: string
+end note
+
+note right of InstallScript::rest
+  Reset all bucket at the start of each build
+
+  since: 3.2.0
+  return: void
 end note
 
 note right of InstallScript::build

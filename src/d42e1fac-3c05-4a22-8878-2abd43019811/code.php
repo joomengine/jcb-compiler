@@ -25,7 +25,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\GetScriptInterface;
  * 
  * @since 3.2.0
  */
-class InstallScript implements GetScriptInterface
+final class InstallScript implements GetScriptInterface
 {
 	/**
 	 * The extension
@@ -125,6 +125,9 @@ class InstallScript implements GetScriptInterface
 	 */
 	public function get(object $extension): string
 	{
+		// purge the object
+		$this->rest();
+
 		// loop over methods and types
 		foreach ($this->methods as $method)
 		{
@@ -158,6 +161,24 @@ class InstallScript implements GetScriptInterface
 
 		// return the class
 		return $this->build();
+	}
+
+	/**
+	 * Reset all bucket at the start of each build
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	protected function rest(): void
+	{
+		$this->construct = [];
+		$this->install = [];
+		$this->update = [];
+		$this->uninstall = [];
+		$this->preflightActive = false;
+		$this->preflightBucket = ['install' => [], 'uninstall' => [], 'discover_install' => [], 'update' => []];
+		$this->postflightActive = false;
+		$this->postflightBucket = ['install' => [], 'uninstall' => [], 'discover_install' => [], 'update' => []];
 	}
 
 	/**

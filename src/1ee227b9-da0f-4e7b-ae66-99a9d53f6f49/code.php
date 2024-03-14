@@ -22,7 +22,6 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\Category;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\AccessSwitchList;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Filter;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Tags;
-use VDM\Joomla\Utilities\String\NamespaceHelper;
 use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\HeaderInterface;
@@ -145,7 +144,7 @@ final class Header implements HeaderInterface
 	 * @var   string
 	 * @since 3.2.0
 	 */
-	protected string $ComponentNameSpace;
+	protected string $ComponentNamespace;
 
 	/**
 	 * Constructor.
@@ -181,9 +180,9 @@ final class Header implements HeaderInterface
 		$this->tags = $tags;
 
 		// set some global values
-		$this->NamespacePrefix = $this->config->get('namespace_prefix');
+		$this->NamespacePrefix = $this->placeholder->get('NamespacePrefix');
 		$this->ComponentName = $this->placeholder->get('Component');
-		$this->ComponentNameSpace = NamespaceHelper::safeSegment($this->ComponentName);
+		$this->ComponentNamespace = $this->placeholder->get('ComponentNamespace');
 	}
 
 	/**
@@ -199,6 +198,32 @@ final class Header implements HeaderInterface
 	{
 		// get static headers
 		$headers = $this->getHeaders($context);
+
+		// add to all except the helper classes
+		if ('admin.helper' !== $context && 'site.helper' !== $context)
+		{
+			$target = 'Administrator';
+			if ($this->config->get('build_target', 'admin') === 'site')
+			{
+				$target = 'Site';
+			}
+
+			$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNamespace}\\{$target}\\Helper\\{$this->ComponentName}Helper;";
+
+			// we will add more as needed
+			switch ($context)
+			{
+				case 'site.view.model':
+				case 'site.views.model':
+				case 'site.view.html':
+				case 'site.views.html':
+					$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNamespace}\\Site\\Helper\\RouteHelper;";
+				break;
+
+				default:
+					break;
+			}
+		}
 
 		// get dynamic headers
 		switch ($context)
@@ -222,8 +247,15 @@ final class Header implements HeaderInterface
 				}
 				break;
 
-			case 'admin.views':
-				$this->setChosenMultiSelectionHeaders($headers, $codeName);
+			case 'admin.view':
+			case 'custom.admin.view':
+			case 'custom.admin.views':
+			case 'site.admin.view':
+				$headers[] = '';
+				$headers[] = '/** @var Joomla\CMS\WebAsset\WebAssetManager $wa */';
+				$headers[] = '$wa = $this->getDocument()->getWebAssetManager();';
+				$headers[] = '$wa->useScript(\'keepalive\')->useScript(\'form.validate\');';
+				$headers[] = 'Html::_(\'bootstrap.tooltip\');';
 				break;
 
 			case 'admin.view.model':
@@ -237,18 +269,6 @@ final class Header implements HeaderInterface
 
 			default:
 				break;
-		}
-
-		// add to all except the helper classes
-		if ('admin.helper' !== $context && 'site.helper' !== $context)
-		{
-			$target = 'Administrator';
-			if ($this->config->get('build_target', 'admin') === 'site')
-			{
-				$target = 'Site';
-			}
-
-			$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNameSpace}\\{$target}\\Helper\\{$this->ComponentName}Helper;";
 		}
 
 		// Trigger Event: jcb_ce_setClassHeader
@@ -322,11 +342,6 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
 				$headers[] = 'use Joomla\CMS\Layout\LayoutHelper;';
 				$headers[] = 'use Joomla\CMS\Router\Route;';
-				$headers[] = '';
-				$headers[] = '/** @var Joomla\CMS\WebAsset\WebAssetManager $wa */';
-				$headers[] = '$wa = $this->getDocument()->getWebAssetManager();';
-				$headers[] = '$wa->useScript(\'keepalive\')->useScript(\'form.validate\');';
-				$headers[] = 'Html::_(\'bootstrap.tooltip\');';
 				break;
 
 			case 'admin.view.controller':
@@ -371,7 +386,7 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Plugin\PluginHelper;';
 				$headers[] = 'use Joomla\CMS\Toolbar\ToolbarHelper;';
 				$headers[] = 'use Joomla\CMS\Document\Document;';
-				$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNameSpace}\\Site\\Helper\\HeaderCheck;";
+				$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNamespace}\\Site\\Helper\\HeaderCheck;";
 				break;
 
 			case 'custom.admin.view.html':
@@ -388,7 +403,7 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Plugin\PluginHelper;';
 				$headers[] = 'use Joomla\CMS\Toolbar\ToolbarHelper;';
 				$headers[] = 'use Joomla\CMS\Document\Document;';
-				$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNameSpace}\\{$target}\\Helper\\HeaderCheck;";
+				$headers[] = "use {$this->NamespacePrefix}\\Component\\{$this->ComponentNamespace}\\{$target}\\Helper\\HeaderCheck;";
 				break;
 
 			case 'admin.view.model':
@@ -425,13 +440,29 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Session\Session;';
 				break;
 
+			case 'ajax.admin.model':
+			case 'ajax.site.model':
+				$headers[] = 'use Joomla\CMS\Application\CMSApplicationInterface;';
+				$headers[] = 'use Joomla\CMS\Component\ComponentHelper;';
+				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
+				$headers[] = 'use Joomla\CMS\Layout\LayoutHelper;';
+				$headers[] = 'use Joomla\CMS\MVC\Model\ListModel;';
+				$headers[] = 'use Joomla\CMS\MVC\Factory\MVCFactoryInterface;';
+				$headers[] = 'use Joomla\CMS\Plugin\PluginHelper;';
+				$headers[] = 'use Joomla\CMS\User\User;';
+				$headers[] = 'use Joomla\Utilities\ArrayHelper;';
+				$headers[] = 'use Joomla\Input\Input;';
+				$headers[] = 'use Joomla\CMS\Router\Route;';
+				$headers[] = 'use Joomla\CMS\Session\Session;';
+				$headers[] = 'use Joomla\CMS\Uri\Uri;';
+				$headers[] = 'use Joomla\Registry\Registry;';
+				break;
+
 			case 'dashboard.model':
 				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
 				$headers[] = 'use Joomla\CMS\Session\Session;';
 				$headers[] = 'use Joomla\CMS\Uri\Uri;';
 			case 'admin.views.model':
-			case 'ajax.admin.model':
-			case 'ajax.site.model':
 			case 'custom.admin.views.model':
 			case 'site.views.model':
 				$headers[] = 'use Joomla\CMS\Application\CMSApplicationInterface;';
@@ -439,6 +470,7 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\MVC\Model\ListModel;';
 				$headers[] = 'use Joomla\CMS\MVC\Factory\MVCFactoryInterface;';
 				$headers[] = 'use Joomla\CMS\Plugin\PluginHelper;';
+				$headers[] = 'use Joomla\CMS\Router\Route;';
 				$headers[] = 'use Joomla\CMS\User\User;';
 				$headers[] = 'use Joomla\Utilities\ArrayHelper;';
 				$headers[] = 'use Joomla\Input\Input;';
@@ -491,14 +523,26 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Document\Document;';
 				break;
 
-			case 'site.component':
-				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
-				$headers[] = 'use Joomla\CMS\MVC\Controller\BaseController;';
+			case 'site.router':
+				$headers[] = 'use Joomla\CMS\Application\SiteApplication;';
+				$headers[] = 'use Joomla\CMS\Categories\CategoryFactoryInterface;';
+				$headers[] = 'use Joomla\CMS\Component\ComponentHelper;';
+				$headers[] = 'use Joomla\CMS\Component\Router\RouterView;';
+				$headers[] = 'use Joomla\CMS\Component\Router\RouterViewConfiguration;';
+				$headers[] = 'use Joomla\CMS\Component\Router\Rules\MenuRules;';
+				$headers[] = 'use Joomla\CMS\Component\Router\Rules\NomenuRules;';
+				$headers[] = 'use Joomla\CMS\Component\Router\Rules\StandardRules;';
+				$headers[] = 'use Joomla\CMS\Menu\AbstractMenu;';
+				$headers[] = 'use Joomla\Database\DatabaseInterface;';
+				$headers[] = 'use Joomla\Database\ParameterType;';
+				$headers[] = 'use Joomla\Registry\Registry;';
 				break;
 
 			case 'site.view':
 			case 'site.views':
 				$headers[] = 'use Joomla\CMS\Router\Route;';
+				$headers[] = 'use Joomla\CMS\Layout\LayoutHelper;';
+				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
 				break;
 
 			case 'form.custom.field':
@@ -533,110 +577,6 @@ final class Header implements HeaderInterface
 			$headers[] = 'use PhpOffice\PhpSpreadsheet\IOFactory;';
 			$headers[] = 'use PhpOffice\PhpSpreadsheet\Spreadsheet;';
 			$headers[] = 'use PhpOffice\PhpSpreadsheet\Writer\Xlsx;';
-		}
-	}
-
-	/**
-	 * Build chosen multi selection headers for the view
-	 *
-	 * @param   array   $headers       The headers array
-	 * @param   string  $nameListCode  The list view name
-	 *
-	 * @return  void
-	 * @since 3.2.0
-	 */
-	protected function setChosenMultiSelectionHeaders(&$headers, $nameListCode)
-	{
-		// check that the filter type is the new filter option (2 = topbar)
-		if ($this->adminfiltertype->get($nameListCode, 1) == 2)
-		{
-			// add category switch
-			$add_category = false;
-			if ($this->category->exists("{$nameListCode}.extension")
-				&& $this->category->get("{$nameListCode}.filter", 0) >= 1)
-			{
-				// is found so add it
-				$add_category = true;
-			}
-			// add accessLevels switch
-			$add_access_levels = false;
-			if ($this->accessswitchlist->exists($nameListCode))
-			{
-				// is found so add it
-				$add_access_levels = true;
-			}
-			// check if this view have filters
-			if ($this->filter->exists($nameListCode))
-			{
-				foreach ($this->filter->get($nameListCode) as $filter)
-				{
-					// we need this only for filters that are multi
-					if (isset($filter['multi']) && $filter['multi'] == 2)
-					{
-						// if this is a category we should make sure it must be added
-						if (!$add_category && $filter['type'] === 'category')
-						{
-							continue;
-						}
-						elseif ($add_category && $filter['type'] === 'category')
-						{
-							// already added here so no need to add again
-							$add_category = false;
-						}
-						// check if this was an access field
-						elseif ($filter['type'] === 'accesslevel')
-						{
-							// already added here so no need to add again
-							$add_access_levels = false;
-						}
-						// add the header
-						$headers[]
-							= 'Html::_(\'formbehavior.chosen\', \'.multiple'
-							. $filter['class']
-							. '\', null, [\'placeholder_text_multiple\' => \'- \' . Text::_(\''
-							. $filter['lang_select'] . '\') . \' -\']);';
-					}
-					elseif ($add_category && $filter['type'] === 'category')
-					{
-						// add the header
-						$headers[]
-							= 'Html::_(\'formbehavior.chosen\', \'.multipleCategories'
-							. '\', null, [\'placeholder_text_multiple\' => \'- \' . Text::_(\''
-							. $filter['lang_select'] . '\') . \' -\']);';
-						// already added here so no need to add again
-						$add_category = false;
-					}
-				}
-			}
-			// add category if not already added
-			if ($add_category)
-			{
-				// add the header
-				$headers[]
-					= 'Html::_(\'formbehavior.chosen\', \'.multipleCategories'
-					. '\', null, [\'placeholder_text_multiple\' => \'- \' . Text::_(\''
-					. $this->category->exists("{$nameListCode}.name", 'error')
-					. '\') . \' -\']);';
-			}
-			// add accessLevels if not already added
-			if ($add_access_levels)
-			{
-				// set the language strings for selection
-				$filter_name_select      = 'Select Access';
-				$filter_name_select_lang = $this->config->lang_prefix . '_FILTER_'
-					. StringHelper::safe(
-						$filter_name_select, 'U'
-					);
-				// and to translation
-				$this->language->set(
-					$this->config->lang_target, $filter_name_select_lang, $filter_name_select
-				);
-				// add the header
-				$headers[]
-					= 'Html::_(\'formbehavior.chosen\', \'.multipleAccessLevels'
-					. '\', null, [\'placeholder_text_multiple\' => \'- \' . Text::_(\''
-					. $filter_name_select_lang . '\') . \' -\']);';
-			}
 		}
 	}
 }

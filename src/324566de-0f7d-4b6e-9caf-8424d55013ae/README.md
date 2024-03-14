@@ -12,6 +12,7 @@
 @startuml
 class Structure  #Gold {
   # array $htaccess
+  # array $done
   # Power $power
   # Config $config
   # Registry $registry

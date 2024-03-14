@@ -6,12 +6,13 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Event (Details)
+# final class Event (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaFour**
 ```uml
 @startuml
-class Event  #Gold {
+class Event << (F,LightGreen) >> #RoyalBlue {
   # $activePlugins
+  # $dispatcher
   + __construct(?Registry $params = null)
   + trigger(string $event, mixed $data = null) : void
 }
@@ -23,7 +24,7 @@ note right of Event::__construct
 end note
 
 note right of Event::trigger
-  Trigger and event
+  Trigger an event
 
   since: 3.2.0
   return: void

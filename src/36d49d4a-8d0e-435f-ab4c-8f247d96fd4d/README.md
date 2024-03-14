@@ -16,6 +16,7 @@ class Header  #Gold {
   + getHeader(Container $container) : HeaderInterface
   + getJ3Header(Container $container) : J3Header
   + getJ4Header(Container $container) : J4Header
+  + getJ5Header(Container $container) : J5Header
 }
 
 note right of Header::register
@@ -44,6 +45,13 @@ note right of Header::getJ4Header
 
   since: 3.2.0
   return: J4Header
+end note
+
+note right of Header::getJ5Header
+  Get The Header Class.
+
+  since: 3.2.0
+  return: J5Header
 end note
  
 @enduml

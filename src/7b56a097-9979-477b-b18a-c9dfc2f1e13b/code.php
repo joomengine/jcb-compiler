@@ -411,12 +411,13 @@ final class Header implements HeaderInterface
 			case 'site.view':
 			case 'site.views':
 				$headers[] = 'use Joomla\CMS\Router\Route;';
+				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
 				break;
 
 			case 'form.custom.field':
 				$headers[] = 'use Joomla\CMS\HTML\HTMLHelper as Html;';
 				$headers[] = "jimport('joomla.form.helper');";
-				$headers[] = "JFormHelper::loadFieldClass('###JFORM_extends###');";
+				$headers[] = "\JFormHelper::loadFieldClass('###JFORM_extends###');";
 				break;
 
 			default:

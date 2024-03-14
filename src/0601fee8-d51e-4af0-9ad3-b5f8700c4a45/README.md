@@ -11,46 +11,51 @@
 ```uml
 @startuml
 class Model  #Gold {
+  # $targetVersion
   + register(Container $container) : void
-  + getModelJoomlaplugins(Container $container) : Joomlaplugins
-  + getModelJoomlamodules(Container $container) : Joomlamodules
-  + getModelHistorycomponent(Container $container) : Historycomponent
-  + getModelCustomadminviews(Container $container) : Customadminviews
-  + getModelAjaxcustomview(Container $container) : Ajaxcustomview
-  + getModelJavascriptcustomview(Container $container) : Javascriptcustomview
-  + getModelCsscustomview(Container $container) : Csscustomview
-  + getModelPhpcustomview(Container $container) : Phpcustomview
-  + getModelDynamicget(Container $container) : Dynamicget
-  + getModelLibraries(Container $container) : Libraries
-  + getModelSiteviews(Container $container) : Siteviews
-  + getModelPermissions(Container $container) : Permissions
-  + getModelHistoryadminview(Container $container) : Historyadminview
-  + getModelMysqlsettings(Container $container) : Mysqlsettings
-  + getModelSql(Container $container) : Sql
-  + getModelCustomalias(Container $container) : Customalias
-  + getModelAjaxadmin(Container $container) : Ajaxadmin
-  + getModelCustomimportscripts(Container $container) : Customimportscripts
-  + getModelCustombuttons(Container $container) : Custombuttons
-  + getModelLoader(Container $container) : Loader
-  + getModelPhpadminview(Container $container) : Phpadminview
-  + getModelCssadminview(Container $container) : Cssadminview
-  + getModelJavascriptadminview(Container $container) : Javascriptadminview
-  + getModelLinkedviews(Container $container) : Linkedviews
-  + getModelRelations(Container $container) : Relations
-  + getModelConditions(Container $container) : Conditions
-  + getModelFields(Container $container) : Fields
-  + getModelUpdatesql(Container $container) : Updatesql
-  + getModelTabs(Container $container) : Tabs
-  + getModelCustomtabs(Container $container) : Customtabs
-  + getModelAdminviews(Container $container) : Adminviews
-  + getModelSqltweaking(Container $container) : Sqltweaking
-  + getModelSqldump(Container $container) : Sqldump
-  + getModelWhmcs(Container $container) : Whmcs
+  + getServerLoad(Container $container) : ServerLoad
+  + getJoomlaplugins(Container $container) : Joomlaplugins
+  + getJoomlamodules(Container $container) : Joomlamodules
+  + getHistorycomponent(Container $container) : Historycomponent
+  + getCustomadminviews(Container $container) : Customadminviews
+  + getAjaxcustomview(Container $container) : Ajaxcustomview
+  + getJavascriptcustomview(Container $container) : Javascriptcustomview
+  + getCsscustomview(Container $container) : Csscustomview
+  + getPhpcustomview(Container $container) : Phpcustomview
+  + getDynamicget(Container $container) : Dynamicget
+  + getLibraries(Container $container) : Libraries
+  + getSiteviews(Container $container) : Siteviews
+  + getPermissions(Container $container) : Permissions
+  + getHistoryadminview(Container $container) : Historyadminview
+  + getMysqlsettings(Container $container) : Mysqlsettings
+  + getSql(Container $container) : Sql
+  + getCustomalias(Container $container) : Customalias
+  + getAjaxadmin(Container $container) : Ajaxadmin
+  + getCustomimportscripts(Container $container) : Customimportscripts
+  + getCustombuttons(Container $container) : Custombuttons
+  + getLoader(Container $container) : Loader
+  + getPhpadminview(Container $container) : Phpadminview
+  + getCssadminview(Container $container) : Cssadminview
+  + getJavascriptadminview(Container $container) : Javascriptadminview
+  + getLinkedviews(Container $container) : Linkedviews
+  + getRelations(Container $container) : Relations
+  + getConditions(Container $container) : Conditions
+  + getFields(Container $container) : Fields
+  + getUpdatesql(Container $container) : Updatesql
+  + getTabs(Container $container) : Tabs
+  + getCustomtabs(Container $container) : Customtabs
+  + getCustomtabsJ3(Container $container) : CustomtabsJ3
+  + getCustomtabsJ4(Container $container) : CustomtabsJ4
+  + getCustomtabsJ5(Container $container) : CustomtabsJ5
+  + getAdminviews(Container $container) : Adminviews
+  + getSqltweaking(Container $container) : Sqltweaking
+  + getSqldump(Container $container) : Sqldump
+  + getWhmcs(Container $container) : Whmcs
+  + getFilesfolders(Container $container) : Filesfolders
   + getModifieddate(Container $container) : Modifieddate
   + getCreatedate(Container $container) : Createdate
+  + getRouter(Container $container) : Router
   + getUpdateserver(Container $container) : Updateserver
-  + getModelFilesfolders(Container $container) : Filesfolders
-  + getServerLoad(Container $container) : ServerLoad
 }
 
 note right of Model::register
@@ -60,277 +65,305 @@ note right of Model::register
   return: void
 end note
 
-note left of Model::getModelJoomlaplugins
-  Get the Joomla plugins Model
+note left of Model::getServerLoad
+  Get The Load Class.
+
+  since: 3.2.0
+  return: ServerLoad
+end note
+
+note right of Model::getJoomlaplugins
+  Get The Joomlaplugins Class.
 
   since: 3.2.0
   return: Joomlaplugins
 end note
 
-note right of Model::getModelJoomlamodules
-  Get the Joomla modules Model
+note left of Model::getJoomlamodules
+  Get The Joomlamodules Class.
 
   since: 3.2.0
   return: Joomlamodules
 end note
 
-note left of Model::getModelHistorycomponent
-  Get the history component Model
+note right of Model::getHistorycomponent
+  Get The Historycomponent Class.
 
   since: 3.2.0
   return: Historycomponent
 end note
 
-note right of Model::getModelCustomadminviews
-  Get the custom admin views Model
+note left of Model::getCustomadminviews
+  Get The Customadminviews Class.
 
   since: 3.2.0
   return: Customadminviews
 end note
 
-note left of Model::getModelAjaxcustomview
-  Get the ajax custom view Model
+note right of Model::getAjaxcustomview
+  Get The Ajaxcustomview Class.
 
   since: 3.2.0
   return: Ajaxcustomview
 end note
 
-note right of Model::getModelJavascriptcustomview
-  Get the javascript custom view Model
+note left of Model::getJavascriptcustomview
+  Get The Javascriptcustomview Class.
 
   since: 3.2.0
   return: Javascriptcustomview
 end note
 
-note left of Model::getModelCsscustomview
-  Get the css custom view Model
+note right of Model::getCsscustomview
+  Get The Csscustomview Class.
 
   since: 3.2.0
   return: Csscustomview
 end note
 
-note right of Model::getModelPhpcustomview
-  Get the php custom view Model
+note left of Model::getPhpcustomview
+  Get The Phpcustomview Class.
 
   since: 3.2.0
   return: Phpcustomview
 end note
 
-note left of Model::getModelDynamicget
-  Get the dynamic get Model
+note right of Model::getDynamicget
+  Get The Dynamicget Class.
 
   since: 3.2.0
   return: Dynamicget
 end note
 
-note right of Model::getModelLibraries
-  Get the libraries Model
+note left of Model::getLibraries
+  Get The Libraries Class.
 
   since: 3.2.0
   return: Libraries
 end note
 
-note left of Model::getModelSiteviews
-  Get the site views Model
+note right of Model::getSiteviews
+  Get The Siteviews Class.
 
   since: 3.2.0
   return: Siteviews
 end note
 
-note right of Model::getModelPermissions
-  Get the permissions Model
+note left of Model::getPermissions
+  Get The Permissions Class.
 
   since: 3.2.0
   return: Permissions
 end note
 
-note left of Model::getModelHistoryadminview
-  Get the admin view history Model
+note right of Model::getHistoryadminview
+  Get The Historyadminview Class.
 
   since: 3.2.0
   return: Historyadminview
 end note
 
-note right of Model::getModelMysqlsettings
-  Get the MySQL settings Model
+note left of Model::getMysqlsettings
+  Get The Mysqlsettings Class.
 
   since: 3.2.0
   return: Mysqlsettings
 end note
 
-note left of Model::getModelSql
-  Get the Sql Model
+note right of Model::getSql
+  Get The Sql Class.
 
   since: 3.2.0
   return: Sql
 end note
 
-note right of Model::getModelCustomalias
-  Get the custom alias Model
+note left of Model::getCustomalias
+  Get The Customalias Class.
 
   since: 3.2.0
   return: Customalias
 end note
 
-note left of Model::getModelAjaxadmin
-  Get the Admin Ajax Model
+note right of Model::getAjaxadmin
+  Get The Ajaxadmin Class.
 
   since: 3.2.0
   return: Ajaxadmin
 end note
 
-note right of Model::getModelCustomimportscripts
-  Get the custom import scripts Model
+note left of Model::getCustomimportscripts
+  Get The Customimportscripts Class.
 
   since: 3.2.0
   return: Customimportscripts
 end note
 
-note left of Model::getModelCustombuttons
-  Get the custom import scripts Model
+note right of Model::getCustombuttons
+  Get The Custombuttons Class.
 
   since: 3.2.0
   return: Custombuttons
 end note
 
-note right of Model::getModelLoader
-  Get The Model Loader Class.
+note left of Model::getLoader
+  Get The Loader Class.
 
   since: 3.2.0
   return: Loader
 end note
 
-note left of Model::getModelPhpadminview
-  Get the php admin view Model
+note right of Model::getPhpadminview
+  Get The Phpadminview Class.
 
   since: 3.2.0
   return: Phpadminview
 end note
 
-note right of Model::getModelCssadminview
-  Get the Css Adminview Model
+note left of Model::getCssadminview
+  Get The Cssadminview Class.
 
   since: 3.2.0
   return: Cssadminview
 end note
 
-note left of Model::getModelJavascriptadminview
-  Get the Javascript Adminview Model
+note right of Model::getJavascriptadminview
+  Get The Javascriptadminview Class.
 
   since: 3.2.0
   return: Javascriptadminview
 end note
 
-note right of Model::getModelLinkedviews
-  Get the linked views Model
+note left of Model::getLinkedviews
+  Get The Linkedviews Class.
 
   since: 3.2.0
   return: Linkedviews
 end note
 
-note left of Model::getModelRelations
-  Get the relations Model
+note right of Model::getRelations
+  Get The Relations Class.
 
   since: 3.2.0
   return: Relations
 end note
 
-note right of Model::getModelConditions
-  Get the conditions Model
+note left of Model::getConditions
+  Get The Conditions Class.
 
   since: 3.2.0
   return: Conditions
 end note
 
-note left of Model::getModelFields
-  Get the fields Model
+note right of Model::getFields
+  Get The Fields Class.
 
   since: 3.2.0
   return: Fields
 end note
 
-note right of Model::getModelUpdatesql
-  Get the update sql Model
+note left of Model::getUpdatesql
+  Get The Updatesql Class.
 
   since: 3.2.0
   return: Updatesql
 end note
 
-note left of Model::getModelTabs
-  Get the tabs Model
+note right of Model::getTabs
+  Get The Tabs Class.
 
   since: 3.2.0
   return: Tabs
 end note
 
-note right of Model::getModelCustomtabs
-  Get the custom tabs Model
+note left of Model::getCustomtabs
+  Get The Customtabs Class.
 
   since: 3.2.0
   return: Customtabs
 end note
 
-note left of Model::getModelAdminviews
-  Get the admin views Model
+note right of Model::getCustomtabsJ3
+  Get The CustomtabsJ3 Class.
+
+  since: 3.2.0
+  return: CustomtabsJ3
+end note
+
+note left of Model::getCustomtabsJ4
+  Get The CustomtabsJ4 Class.
+
+  since: 3.2.0
+  return: CustomtabsJ4
+end note
+
+note right of Model::getCustomtabsJ5
+  Get The CustomtabsJ5 Class.
+
+  since: 3.2.0
+  return: CustomtabsJ5
+end note
+
+note left of Model::getAdminviews
+  Get The Adminviews Class.
 
   since: 3.2.0
   return: Adminviews
 end note
 
-note right of Model::getModelSqltweaking
-  Get the SQL tweaking Model
+note right of Model::getSqltweaking
+  Get The Sqltweaking Class.
 
   since: 3.2.0
   return: Sqltweaking
 end note
 
-note left of Model::getModelSqldump
-  Get the SQL dump Model
+note left of Model::getSqldump
+  Get The Sqldump Class.
 
   since: 3.2.0
   return: Sqldump
 end note
 
-note right of Model::getModelWhmcs
-  Get the whmcs Model
+note right of Model::getWhmcs
+  Get The Whmcs Class.
 
   since: 3.2.0
   return: Whmcs
 end note
 
-note left of Model::getModifieddate
-  Get the modified date Model
-
-  since: 3.2.0
-  return: Modifieddate
-end note
-
-note right of Model::getCreatedate
-  Get the create date Model
-
-  since: 3.2.0
-  return: Createdate
-end note
-
-note left of Model::getUpdateserver
-  Get the update server Model
-
-  since: 3.2.0
-  return: Updateserver
-end note
-
-note right of Model::getModelFilesfolders
-  Get the files folders Model
+note left of Model::getFilesfolders
+  Get The Filesfolders Class.
 
   since: 3.2.0
   return: Filesfolders
 end note
 
-note left of Model::getServerLoad
-  Get the Server Model Server Loader class
+note right of Model::getModifieddate
+  Get The Modifieddate Class.
 
   since: 3.2.0
-  return: ServerLoad
+  return: Modifieddate
+end note
+
+note left of Model::getCreatedate
+  Get The Createdate Class.
+
+  since: 3.2.0
+  return: Createdate
+end note
+
+note right of Model::getRouter
+  Get The Router Class.
+
+  since: 3.2.0
+  return: Router
+end note
+
+note left of Model::getUpdateserver
+  Get The Updateserver Class.
+
+  since: 3.2.0
+  return: Updateserver
 end note
  
 @enduml

@@ -248,6 +248,7 @@ class Selection
 					return [
 						'select'      => $querySelect,
 						'from'        => $queryFrom,
+						'view'        => $viewCode,
 						'name'        => $queryName,
 						'table'       => $table,
 						'type'        => $type,

@@ -35,7 +35,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Service\Field;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Joomlamodule;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Joomlaplugin;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Utilities;
-use VDM\Joomla\Componentbuilder\Compiler\Service\Builder;
+use VDM\Joomla\Componentbuilder\Compiler\Service\BuilderAJ;
+use VDM\Joomla\Componentbuilder\Compiler\Service\BuilderLZ;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Creator;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureController;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureModel;
@@ -165,7 +166,8 @@ abstract class Factory implements FactoryInterface
 			->registerServiceProvider(new Joomlamodule())
 			->registerServiceProvider(new Joomlaplugin())
 			->registerServiceProvider(new Utilities())
-			->registerServiceProvider(new Builder())
+			->registerServiceProvider(new BuilderAJ())
+			->registerServiceProvider(new BuilderLZ())
 			->registerServiceProvider(new Creator())
 			->registerServiceProvider(new ArchitectureController())
 			->registerServiceProvider(new ArchitectureModel())

@@ -24,12 +24,11 @@ class Header << (F,LightGreen) >> #RoyalBlue {
   # array $headers
   # string $NamespacePrefix
   # string $ComponentName
-  # string $ComponentNameSpace
+  # string $ComponentNamespace
   + __construct(Config $config, Event $event, ...)
   + get(string $context, string $codeName) : string
   # getHeaders(string $context) : array
   # setHelperClassHeader(array $headers, string $target_client) : void
-  # setChosenMultiSelectionHeaders(array $headers, string $nameListCode) : void
 }
 
 note right of Header::__construct
@@ -66,13 +65,6 @@ end note
 
 note right of Header::setHelperClassHeader
   set Helper Dynamic Headers
-
-  since: 3.2.0
-  return: void
-end note
-
-note right of Header::setChosenMultiSelectionHeaders
-  Build chosen multi selection headers for the view
 
   since: 3.2.0
   return: void

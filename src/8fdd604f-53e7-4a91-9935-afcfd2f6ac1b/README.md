@@ -31,6 +31,11 @@ class Creator  #Gold {
   + getPermission(Container $container) : Permission
   + getSiteFieldData(Container $container) : SiteFieldData
   + getRequest(Container $container) : Request
+  + getRouter(Container $container) : Router
+  + getRouterConstructorDefault(Container $container) : RouterConstructorDefault
+  + getRouterConstructorManual(Container $container) : RouterConstructorManual
+  + getRouterMethodsDefault(Container $container) : RouterMethodsDefault
+  + getRouterMethodsManual(Container $container) : RouterMethodsManual
   + getFieldsetString(Container $container) : FieldsetString
   + getFieldsetXML(Container $container) : FieldsetXML
   + getFieldsetDynamic(Container $container) : FieldsetDynamic
@@ -182,63 +187,98 @@ note left of Creator::getRequest
   return: Request
 end note
 
-note right of Creator::getFieldsetString
+note right of Creator::getRouter
+  Get The Router Class.
+
+  since: 3.2.0
+  return: Router
+end note
+
+note left of Creator::getRouterConstructorDefault
+  Get The RouterConstructorDefault Class.
+
+  since: 3.2.0
+  return: RouterConstructorDefault
+end note
+
+note right of Creator::getRouterConstructorManual
+  Get The RouterConstructorManual Class.
+
+  since: 3.2.0
+  return: RouterConstructorManual
+end note
+
+note left of Creator::getRouterMethodsDefault
+  Get The RouterMethodsDefault Class.
+
+  since: 3.2.0
+  return: RouterMethodsDefault
+end note
+
+note right of Creator::getRouterMethodsManual
+  Get The RouterMethodsManual Class.
+
+  since: 3.2.0
+  return: RouterMethodsManual
+end note
+
+note left of Creator::getFieldsetString
   Get The FieldsetString Class.
 
   since: 3.2.0
   return: FieldsetString
 end note
 
-note left of Creator::getFieldsetXML
+note right of Creator::getFieldsetXML
   Get The FieldsetXML Class.
 
   since: 3.2.0
   return: FieldsetXML
 end note
 
-note right of Creator::getFieldsetDynamic
+note left of Creator::getFieldsetDynamic
   Get The FieldsetDynamic Class.
 
   since: 3.2.0
   return: FieldsetDynamic
 end note
 
-note left of Creator::getFieldXML
+note right of Creator::getFieldXML
   Get The FieldXML Class.
 
   since: 3.2.0
   return: FieldXML
 end note
 
-note right of Creator::getFieldString
+note left of Creator::getFieldString
   Get The FieldString Class.
 
   since: 3.2.0
   return: FieldString
 end note
 
-note left of Creator::getFieldDynamic
+note right of Creator::getFieldDynamic
   Get The FieldDynamic Class.
 
   since: 3.2.0
   return: FieldDynamic
 end note
 
-note right of Creator::getFieldAsString
+note left of Creator::getFieldAsString
   Get The FieldAsString Class.
 
   since: 3.2.0
   return: FieldAsString
 end note
 
-note left of Creator::getFieldType
+note right of Creator::getFieldType
   Get The Fieldtypeinterface Class.
 
   since: 3.2.0
   return: FieldType
 end note
 
-note right of Creator::getFieldset
+note left of Creator::getFieldset
   Get The Fieldsetinterface Class.
 
   since: 3.2.0

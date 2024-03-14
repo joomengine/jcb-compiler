@@ -16,6 +16,7 @@ class History  #Gold {
   + getHistory(Container $container) : HistoryInterface
   + getJ3History(Container $container) : J3History
   + getJ4History(Container $container) : J4History
+  + getJ5History(Container $container) : J5History
 }
 
 note right of History::register
@@ -44,6 +45,13 @@ note right of History::getJ4History
 
   since: 3.2.0
   return: J4History
+end note
+
+note right of History::getJ5History
+  Get the Joomla 5 History
+
+  since: 3.2.0
+  return: J5History
 end note
  
 @enduml

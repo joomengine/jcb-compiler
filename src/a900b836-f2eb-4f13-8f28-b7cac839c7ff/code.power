@@ -285,7 +285,7 @@
 	 * @return  void
 	 * @since 3.2.0
 	 */
-	protected function setMainXmlFile(mixed $plugin): void
+	protected function setMainXmlFile(object $plugin): void
 	{
 		$file_details = [
 			'path' => $plugin->folder_path . '/' . $plugin->file_name . '.xml',

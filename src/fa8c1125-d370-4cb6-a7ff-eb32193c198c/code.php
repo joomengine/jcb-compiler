@@ -9,7 +9,7 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Model;
+namespace VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaThree;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Config;
@@ -21,6 +21,7 @@ use VDM\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Model\CustomtabsInterface;
 
 
 /**
@@ -28,7 +29,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
  * 
  * @since 3.2.0
  */
-class Customtabs
+final class Customtabs implements CustomtabsInterface
 {
 	/**
 	 * The Config Class.

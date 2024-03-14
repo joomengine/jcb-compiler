@@ -16,6 +16,7 @@ class Component  #Gold {
   + getCompilerComponent(Container $container) : CompilerComponent
   + getJ3Settings(Container $container) : J3Settings
   + getJ4Settings(Container $container) : J4Settings
+  + getJ5Settings(Container $container) : J5Settings
   + getDashboard(Container $container) : Dashboard
   + getPlaceholder(Container $container) : Placeholder
   + getData(Container $container) : Data
@@ -53,49 +54,56 @@ note left of Component::getJ4Settings
   return: J4Settings
 end note
 
-note right of Component::getDashboard
+note right of Component::getJ5Settings
+  Get The Settings Class.
+
+  since: 3.2.0
+  return: J5Settings
+end note
+
+note left of Component::getDashboard
   Get The Dashboard Class.
 
   since: 3.2.0
   return: Dashboard
 end note
 
-note left of Component::getPlaceholder
+note right of Component::getPlaceholder
   Get The Placeholder Class.
 
   since: 3.2.0
   return: Placeholder
 end note
 
-note right of Component::getData
+note left of Component::getData
   Get The Data Class.
 
   since: 3.2.0
   return: Data
 end note
 
-note left of Component::getStructure
+note right of Component::getStructure
   Get The Structure Class.
 
   since: 3.2.0
   return: Structure
 end note
 
-note right of Component::getStructuresingle
+note left of Component::getStructuresingle
   Get The Structuresingle Class.
 
   since: 3.2.0
   return: Structuresingle
 end note
 
-note left of Component::getStructuremultiple
+note right of Component::getStructuremultiple
   Get The Structuremultiple Class.
 
   since: 3.2.0
   return: Structuremultiple
 end note
 
-note right of Component::getSettings
+note left of Component::getSettings
   Get The Settings Class.
 
   since: 3.2.0

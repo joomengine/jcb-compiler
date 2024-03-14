@@ -26,7 +26,7 @@ class Structure  #Gold {
   # getXML(object $plugin) : string
   # pluginPath(object $plugin) : void
   # setMainClassFile(object $plugin) : void
-  # setMainXmlFile(mixed $plugin) : void
+  # setMainXmlFile(object $plugin) : void
   # setInstallScript(object $plugin) : void
   # setReadme(object $plugin) : void
   # setForms(object $plugin) : void

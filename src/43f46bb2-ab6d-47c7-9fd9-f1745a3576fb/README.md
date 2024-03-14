@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class CoreRule (Details)
+# final class CoreRule (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFour**
 ```uml
 @startuml
-class CoreRule  #Gold {
+class CoreRule << (F,LightGreen) >> #RoyalBlue {
   # array $rules
   # string $path
   + __construct()

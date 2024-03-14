@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Customtabs (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+# final class Customtabs (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaThree**
 ```uml
 @startuml
-class Customtabs  #Gold {
+class Customtabs << (F,LightGreen) >> #RoyalBlue {
   # Config $config
   # BuilderCustomTabs $buildercustomtabs
   # Language $language

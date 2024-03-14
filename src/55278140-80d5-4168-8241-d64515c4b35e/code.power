@@ -723,6 +723,8 @@
 				);
 			}
 		}
+		// extends value
+		$extends_field = $custom['extends'] ?? '';
 		// build the list values
 		if (($listSwitch || $listJoin) && $typeName != 'repeatable'
 			&& $typeName != 'subform')
@@ -848,7 +850,7 @@
 				);
 			}
 			// build script switch for user
-			if ($custom['extends'] === 'user')
+			if ($extends_field === 'user')
 			{
 				$this->scriptuserswitch->set($typeName, $typeName);
 			}
@@ -920,7 +922,7 @@
 		}
 		// setup checkbox for this view
 		if ($dbSwitch && ($typeName === 'checkbox' ||
-				(ArrayHelper::check($custom) && isset($custom['extends']) && $custom['extends'] === 'checkboxes')))
+				(ArrayHelper::check($custom) && $extends_field === 'checkboxes')))
 		{
 			$this->checkbox->add($nameSingleCode, $name, true);
 		}

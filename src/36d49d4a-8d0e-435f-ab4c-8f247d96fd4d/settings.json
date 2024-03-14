@@ -23,6 +23,10 @@
         "use_selection2": {
             "use": "1ee227b9-da0f-4e7b-ae66-99a9d53f6f49",
             "as": "J4Header"
+        },
+        "use_selection3": {
+            "use": "95deb809-5f43-400b-939f-f9ceef720b13",
+            "as": "J5Header"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Header",

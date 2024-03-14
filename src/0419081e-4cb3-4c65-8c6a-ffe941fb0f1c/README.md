@@ -15,13 +15,13 @@ class Infusion  #Gold {
   # Power $power
   # Content $content
   # Contents $contents
-  # Autoloader $autoloader
   # Parser $parser
   # RepoReadme $reporeadme
   # ReposReadme $reposreadme
   # Placeholder $placeholder
   # Event $event
   # array $linker
+  # array $done
   + __construct(Config $config, Power $power, ...)
   + set() : void
   - parsePowers() : void
@@ -45,7 +45,6 @@ note right of Infusion::__construct
     Power $power
     Content $content
     Contents $contents
-    Autoloader $autoloader
     Parser $parser
     RepoReadme $reporeadme
     ReposReadme $reposreadme

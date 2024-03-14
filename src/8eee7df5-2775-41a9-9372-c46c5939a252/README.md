@@ -20,7 +20,7 @@ class Language  #Gold {
   + getTarget(string $target) : array
   + setTarget(string $target, ?array $content) : void
   + set(string $target, string $language, ...) : void
-  # fix(string $string) : string
+  + fix(string $string) : string
 }
 
 note right of Language::__construct
@@ -78,7 +78,10 @@ note right of Language::set
 end note
 
 note left of Language::fix
-  We need to remove all text breaks from all language strings
+  Removes all types of line breaks from a given string.
+This method is designed to strip out all kinds of new line characters from the input string
+to ensure a single-line output. It takes into consideration different operating systems'
+line endings, including the combination of Carriage Return and Line Feed.
 
   since: 3.2.0
   return: string

@@ -16,7 +16,6 @@ use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Power;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentOne as Content;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ContentMulti as Contents;
-use VDM\Joomla\Componentbuilder\Compiler\Power\Autoloader;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Parser;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repo\Readme as RepoReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repos\Readme as ReposReadme;
@@ -64,14 +63,6 @@ class Infusion
 	 * @since 3.2.0
 	 */
 	protected Contents $contents;
-
-	/**
-	 * The Autoloader Class.
-	 *
-	 * @var   Autoloader
-	 * @since 3.2.0
-	 */
-	protected Autoloader $autoloader;
 
 	/**
 	 * The Parser Class.
@@ -141,13 +132,36 @@ class Infusion
 	];
 
 	/**
+	 * Power Infusion Tracker
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 **/
+	protected array $done = [];
+
+	/**
+	 * Power Content Infusion Tracker
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 **/
+	protected array $content_done = [];
+
+	/**
+	 * Path Infusion Tracker
+	 *
+	 * @var    array
+	 * @since 3.2.0
+	 **/
+	protected array $path_done = [];
+
+	/**
 	 * Constructor.
 	 *
 	 * @param Config        $config        The Config Class.
 	 * @param Power         $power         The Power Class.
 	 * @param Content       $content       The ContentOne Class.
 	 * @param Contents      $contents      The ContentMulti Class.
-	 * @param Autoloader    $autoloader    The Autoloader Class.
 	 * @param Parser        $parser        The Parser Class.
 	 * @param RepoReadme    $reporeadme    The Readme Class.
 	 * @param ReposReadme   $reposreadme   The Readme Class.
@@ -157,8 +171,7 @@ class Infusion
 	 * @since 3.2.0
 	 */
 	public function __construct(Config $config, Power $power, Content $content,
-		Contents $contents, Autoloader $autoloader,
-		Parser $parser, RepoReadme $reporeadme,
+		Contents $contents, Parser $parser, RepoReadme $reporeadme,
 		ReposReadme $reposreadme, Placeholder $placeholder,
 		Event $event)
 	{
@@ -166,7 +179,6 @@ class Infusion
 		$this->power = $power;
 		$this->content = $content;
 		$this->contents = $contents;
-		$this->autoloader = $autoloader;
 		$this->parser = $parser;
 		$this->reporeadme = $reporeadme;
 		$this->reposreadme = $reposreadme;
@@ -203,8 +215,13 @@ class Infusion
 		// we only do this if super powers are active
 		if ($this->config->add_super_powers && ArrayHelper::check($this->power->superpowers))
 		{
-			foreach ($this->power->active as $n => &$power)
+			foreach ($this->power->active as $guid => &$power)
 			{
+				if (isset($this->done[$guid]))
+				{
+					continue;
+				}
+
 				if (ObjectHelper::check($power) && isset($power->main_class_code) &&
 					StringHelper::check($power->main_class_code))
 				{
@@ -215,6 +232,9 @@ class Infusion
 						$power->parsed_class_code = $this->parser->code($power->main_class_code);
 					}
 				}
+
+				// do each power just once
+				$this->done[$guid] = true;
 			}
 		}
 	}
@@ -232,6 +252,11 @@ class Infusion
 		{
 			foreach ($this->power->superpowers as $path => $powers)
 			{
+				if (isset($this->path_done[$path]))
+				{
+					continue;
+				}
+
 				$key = StringHelper::safe($path);
 
 				// Trigger Event: jcb_ce_onBeforeInfuseSuperPowerDetails
@@ -258,6 +283,9 @@ class Infusion
 				$this->event->trigger(
 					'jcb_ce_onAfterInfuseSuperPowerDetails', [&$path, &$key, &$powers]
 				);
+
+				// do each path just once
+				$this->path_done[$path] = true;
 			}
 		}
 	}
@@ -301,8 +329,13 @@ class Infusion
 		// infuse powers data if set
 		if (ArrayHelper::check($this->power->active))
 		{
-			foreach ($this->power->active as $power)
+			foreach ($this->power->active as $guid => $power)
 			{
+				if (isset($this->content_done[$guid]))
+				{
+					continue;
+				}
+
 				if (ObjectHelper::check($power))
 				{
 					// Trigger Event: jcb_ce_onBeforeInfusePowerData
@@ -327,10 +360,10 @@ class Infusion
 						'jcb_ce_onAfterInfusePowerData', [&$power]
 					);
 				}
-			}
 
-			// now set the power autoloader
-			$this->autoloader->set();
+				// do each power just once
+				$this->content_done[$guid] = true;
+			}
 		}
 	}
 

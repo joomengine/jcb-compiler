@@ -24,6 +24,10 @@
             "use": "e7fff971-b031-42bf-8009-ef554e30854d",
             "as": "J4Settings"
         },
+        "use_selection10": {
+            "use": "69d2b980-a665-48cd-96f8-757bf3810b41",
+            "as": "J5Settings"
+        },
         "use_selection3": {
             "use": "cfe62a32-8818-4bfb-8751-2f1e109b5336",
             "as": "default"

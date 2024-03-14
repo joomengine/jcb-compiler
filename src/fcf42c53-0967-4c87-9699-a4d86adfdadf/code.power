@@ -1,0 +1,9 @@
+	/**
+	 * Set custom tabs
+	 *
+	 * @param   object  $item  The view data
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function set(object &$item);

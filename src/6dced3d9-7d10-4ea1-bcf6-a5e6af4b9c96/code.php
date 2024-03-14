@@ -542,8 +542,8 @@ final class CustomFieldTypeFile
 		$placeholders[Placefix::_('view')] = $this->getViewName();
 		$placeholders[Placefix::_('views')] = $this->getViewsName();
 
-		// Gymnastics to help with transition to Joomla 4
-		if ($this->config->get('joomla_version', 3) == 4)
+		// Gymnastics to help with transition to Joomla 4 and above
+		if ($this->config->get('joomla_version', 3) != 3)
 		{
 			$placeholders['JFactory::getUser()'] = 'Factory::getApplication()->getIdentity()';
 			$placeholders['Factory::getUser()'] = 'Factory::getApplication()->getIdentity()';
@@ -551,6 +551,7 @@ final class CustomFieldTypeFile
 			$placeholders['JHtml::'] = 'Html::';
 			$placeholders['JText::'] = 'Text::';
 			$placeholders['JComponentHelper::'] = 'ComponentHelper::';
+			$placeholders['\JComponentHelper::'] = 'ComponentHelper::';
 		}
 
 		$this->placeholders = $placeholders;
@@ -644,21 +645,48 @@ final class CustomFieldTypeFile
 
 		$core_fields = $this->corefield->get();
 		$extends = $this->extends;
-
+		$found = null;
 		foreach ($core_fields as $core_field)
 		{
 			$field = strtolower((string) $core_field);
 			if ($extends === $field)
 			{
-				$this->fieldmap[$extends] = $core_field;
-
-				return $core_field;
+				$found = $core_field;
+				break;
 			}
 		}
 
-		$this->fieldmap[$extends] = StringHelper::safe($extends, 'F');
+		$extends = $found ?? StringHelper::safe($extends, 'F');
 
-		return $this->fieldmap[$extends];
+		if ($this->config->get('joomla_version', 3) != 3)
+		{
+			$fix = strtolower($extends);
+
+			if ('checkboxes' === $fix)
+			{
+				$extends = 'CheckboxesField';
+			}
+			elseif ('list' === $fix)
+			{
+				$extends = 'FormField';
+			}
+			elseif ('radio' === $fix)
+			{
+				$extends = 'RadioField';
+			}
+			elseif ('combo' === $fix)
+			{
+				$extends = 'ComboField';
+			}
+			elseif (strpos($extends, 'Field') === false)
+			{
+				$extends = StringHelper::safe($extends, 'F') . 'Field';
+			}
+		}
+
+		$this->fieldmap[$this->extends] = $extends;
+
+		return $extends;
 	}
 
 	/**
@@ -718,8 +746,11 @@ final class CustomFieldTypeFile
 			$this->setButtonOptionErrorMessages();
 		}
 
-		$target = ['admin' => 'customfield'];
-		$this->structure->build($target, 'fieldcustom', $this->baseType);
+		$targets = [['admin' => 'customfield'], ['site' => 'customfield']];
+		foreach ($targets as $target)
+		{
+			$this->structure->build($target, 'fieldcustom', $this->baseType);
+		}
 
 		$this->prepareCustomFieldHeader();
 		$this->prepareCustomFieldBody();
@@ -740,10 +771,13 @@ final class CustomFieldTypeFile
 		$contents_key = $this->contentsKey;
 
 		// Build the custom field type file
-		$target = ['admin' => 'customfield'];
-		$this->structure->build(
-			$target, 'field' . $this->extends, $this->baseType
-		);
+		$targets = [['admin' => 'customfield'], ['site' => 'customfield']];
+		foreach ($targets as $target)
+		{
+			$this->structure->build(
+				$target, 'field' . $this->extends, $this->baseType
+			);
+		}
 
 		$php_code = $this->loadPhpScript('php');
 
