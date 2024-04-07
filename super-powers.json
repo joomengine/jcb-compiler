@@ -3827,6 +3827,17 @@
         "spk": "Super__f48764e0_16c6_459c_8576_af7616f3b720__Power",
         "guid": "f48764e0-16c6-459c-8576-af7616f3b720"
     },
+    "f65b52c2-593a-4c35-89d1-4a8e57a1adf0": {
+        "name": "CoreRules",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Service",
+        "code": "src\/f65b52c2-593a-4c35-89d1-4a8e57a1adf0\/code.php",
+        "power": "src\/f65b52c2-593a-4c35-89d1-4a8e57a1adf0\/code.power",
+        "settings": "src\/f65b52c2-593a-4c35-89d1-4a8e57a1adf0\/settings.json",
+        "path": "src\/f65b52c2-593a-4c35-89d1-4a8e57a1adf0",
+        "spk": "Super__f65b52c2_593a_4c35_89d1_4a8e57a1adf0__Power",
+        "guid": "f65b52c2-593a-4c35-89d1-4a8e57a1adf0"
+    },
     "f6ba34a2-0cd7-4dc1-ab67-75e962a5045b": {
         "name": "Xml",
         "type": "final class",

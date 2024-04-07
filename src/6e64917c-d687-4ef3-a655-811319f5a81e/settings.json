@@ -10,27 +10,27 @@
     "system_name": "JCB.Compiler.Power.Autoloader",
     "type": "class",
     "use_selection": {
-        "use_selection1": {
+        "use_selection0": {
             "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
             "as": "Content"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection4": {
             "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection5": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         }

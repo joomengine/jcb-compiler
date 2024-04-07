@@ -24,9 +24,6 @@ class Field  #Gold {
   + getRule(Container $container) : Rule
   + getCustomcode(Container $container) : Customcode
   + getDatabaseName(Container $container) : DatabaseName
-  + getJ3CoreRule(Container $container) : J3CoreRule
-  + getJ4CoreRule(Container $container) : J4CoreRule
-  + getJ5CoreRule(Container $container) : J5CoreRule
   + getJ3CoreField(Container $container) : J3CoreField
   + getJ4CoreField(Container $container) : J4CoreField
   + getJ5CoreField(Container $container) : J5CoreField
@@ -34,7 +31,6 @@ class Field  #Gold {
   + getJ4InputButton(Container $container) : J4InputButton
   + getJ5InputButton(Container $container) : J5InputButton
   + getCoreField(Container $container) : CoreField
-  + getCoreRule(Container $container) : CoreRule
   + getInputButton(Container $container) : InputButton
 }
 
@@ -115,81 +111,53 @@ note right of Field::getDatabaseName
   return: DatabaseName
 end note
 
-note left of Field::getJ3CoreRule
-  Get The CoreRule Class.
-
-  since: 3.2.0
-  return: J3CoreRule
-end note
-
-note right of Field::getJ4CoreRule
-  Get The CoreRule Class.
-
-  since: 3.2.0
-  return: J4CoreRule
-end note
-
-note left of Field::getJ5CoreRule
-  Get The CoreRule Class.
-
-  since: 3.2.0
-  return: J5CoreRule
-end note
-
-note right of Field::getJ3CoreField
+note left of Field::getJ3CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J3CoreField
 end note
 
-note left of Field::getJ4CoreField
+note right of Field::getJ4CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J4CoreField
 end note
 
-note right of Field::getJ5CoreField
+note left of Field::getJ5CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J5CoreField
 end note
 
-note left of Field::getJ3InputButton
+note right of Field::getJ3InputButton
   Get The J3InputButton Class.
 
   since: 3.2.0
   return: J3InputButton
 end note
 
-note right of Field::getJ4InputButton
+note left of Field::getJ4InputButton
   Get The J4InputButton Class.
 
   since: 3.2.0
   return: J4InputButton
 end note
 
-note left of Field::getJ5InputButton
+note right of Field::getJ5InputButton
   Get The J5InputButton Class.
 
   since: 3.2.0
   return: J5InputButton
 end note
 
-note right of Field::getCoreField
+note left of Field::getCoreField
   Get The CoreFieldInterface Class.
 
   since: 3.2.0
   return: CoreField
-end note
-
-note left of Field::getCoreRule
-  Get The CoreRuleInterface Class.
-
-  since: 3.2.0
-  return: CoreRule
 end note
 
 note right of Field::getInputButton

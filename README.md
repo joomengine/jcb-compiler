@@ -48,6 +48,9 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | Super__6784dd52_0909_451a_a872_9a942a023c68__Power
   - **final class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | Super__3ab0eba9_f37b_4b37_aec1_2e78067f2aff__Power
   - **class Config** | [Details](src/be4ccfae-65a9-401e-bdbe-637d8c226954) | [Code](src/be4ccfae-65a9-401e-bdbe-637d8c226954/code.php) | [Settings](src/be4ccfae-65a9-401e-bdbe-637d8c226954/settings.json) | Super__be4ccfae_65a9_401e_bdbe_637d8c226954__Power
+- **Namespace**: [VDM\Joomla\Componentbuilder\Service](#vdm-joomla-componentbuilder-service)
+
+  - **class CoreRules** | [Details](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0) | [Code](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0/code.php) | [Settings](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0/settings.json) | Super__f65b52c2_593a_4c35_89d1_4a8e57a1adf0__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Utilities](#vdm-joomla-componentbuilder-utilities)
 
   - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | Super__e0c8c931_52a0_4171_9909_e8769505bb1f__Power

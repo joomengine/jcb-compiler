@@ -99,6 +99,7 @@
 			->registerServiceProvider(new Customview())
 			->registerServiceProvider(new Templatelayout())
 			->registerServiceProvider(new Extension())
+			->registerServiceProvider(new CoreRules())
 			->registerServiceProvider(new Field())
 			->registerServiceProvider(new Joomlamodule())
 			->registerServiceProvider(new Joomlaplugin())
