@@ -13,14 +13,14 @@ namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaPower;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power\InjectorInterface;
-use VDM\Joomla\Componentbuilder\Compiler\Power\Injector;
+use VDM\Joomla\Componentbuilder\Compiler\Power\Injector as ExtendingInjector;
 
 
 /**
  * Compiler Joomla Power Injector
  * @since 3.2.0
  */
-final class Injector extends Injector implements InjectorInterface
+final class Injector extends ExtendingInjector implements InjectorInterface
 {
 	/**
 	 * Update the code

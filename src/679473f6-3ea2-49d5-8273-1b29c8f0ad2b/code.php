@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
 
 
 use VDM\Joomla\Componentbuilder\Interfaces\Database\UpdateInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Update;
+use VDM\Joomla\Componentbuilder\Power\Database\Update as ExtendingUpdate;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Database\Update;
  * 
  * @since 3.2.0
  */
-final class Update extends Update implements UpdateInterface
+final class Update extends ExtendingUpdate implements UpdateInterface
 {
 	/**
 	 * Table Name

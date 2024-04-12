@@ -44,26 +44,26 @@ class JoomlaPower implements ServiceProviderInterface
 		$container->alias(Powers::class, 'Joomla.Power')
 			->share('Joomla.Power', [$this, 'getPowers'], true);
 
-		$container->alias(Superpower::class, 'Joomla.Superpower')
-			->share('Joomla.Superpower', [$this, 'getSuperpower'], true);
+		$container->alias(Superpower::class, 'Joomlapower')
+			->share('Joomlapower', [$this, 'getSuperpower'], true);
 
 		$container->alias(Grep::class, 'Joomla.Power.Grep')
 			->share('Joomla.Power.Grep', [$this, 'getGrep'], true);
 
 		$container->alias(Extractor::class, 'Joomla.Power.Extractor')
-			->share('Power.Extractor', [$this, 'getExtractor'], true);
+			->share('Joomla.Power.Extractor', [$this, 'getExtractor'], true);
 
 		$container->alias(Injector::class, 'Joomla.Power.Injector')
-			->share('Power.Injector', [$this, 'getInjector'], true);
+			->share('Joomla.Power.Injector', [$this, 'getInjector'], true);
 
 		$container->alias(Upsert::class, 'Joomla.Power.Model.Upsert')
-			->share('Power.Model.Upsert', [$this, 'getModelUpsert'], true);
+			->share('Joomla.Power.Model.Upsert', [$this, 'getModelUpsert'], true);
 
 		$container->alias(Insert::class, 'Joomla.Power.Insert')
-			->share('Power.Insert', [$this, 'getInsert'], true);
+			->share('Joomla.Power.Insert', [$this, 'getInsert'], true);
 
 		$container->alias(Update::class, 'Joomla.Power.Update')
-			->share('Power.Update', [$this, 'getUpdate'], true);
+			->share('Joomla.Power.Update', [$this, 'getUpdate'], true);
 	}
 
 	/**

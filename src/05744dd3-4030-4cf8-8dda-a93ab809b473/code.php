@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower\Model;
 
 
 use VDM\Joomla\Interfaces\ModelInterface;
-use VDM\Joomla\Componentbuilder\Power\Model\Load;
+use VDM\Joomla\Componentbuilder\Power\Model\Load as ExtendingLoad;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Model\Load;
  * 
  * @since 3.2.0
  */
-final class Load extends Load implements ModelInterface
+final class Load extends ExtendingLoad implements ModelInterface
 {
 	/**
 	 * Get the current active table

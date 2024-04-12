@@ -37,7 +37,7 @@ class Power  #Gold {
   - setLoadSelection(string $guid) : void
   - setComposer(string $guid) : void
   - setImplements(string $guid, array $use) : void
-  - setExtend(string $guid, array $use) : void
+  - setExtend(string $guid, array $use, ...) : void
   - setUseAs(string $guid, array $use, ...) : void
   - getCleanNamespace(string $namespace) : string
   - getUseNamespace(string $namespace, string $as = 'default') : string
@@ -148,6 +148,11 @@ note right of Power::setExtend
 
   since: 3.2.0
   return: void
+  
+  arguments:
+    string $guid
+    array $use
+    array $as
 end note
 
 note left of Power::setUseAs

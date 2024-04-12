@@ -15,7 +15,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 use VDM\Joomla\Utilities\FileHelper;
 use VDM\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Componentbuilder\Interfaces\GrepInterface;
-use VDM\Joomla\Componentbuilder\Power\Grep;
+use VDM\Joomla\Componentbuilder\Power\Grep as ExtendingGrep;
 
 
 /**
@@ -28,7 +28,7 @@ use VDM\Joomla\Componentbuilder\Power\Grep;
  * 
  * @since 3.2.1
  */
-final class Grep extends Grep implements GrepInterface
+final class Grep extends ExtendingGrep implements GrepInterface
 {
 	/**
 	 * Get a local power

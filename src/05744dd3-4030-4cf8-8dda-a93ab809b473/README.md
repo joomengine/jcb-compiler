@@ -8,7 +8,7 @@
 ```
 # final class Load (Details)
 > namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Model**
-> extends: **Load**
+> extends: **ExtendingLoad**
 ```uml
 @startuml
 class Load << (F,LightGreen) >> #RoyalBlue {

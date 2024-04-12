@@ -8,7 +8,7 @@
 ```
 # final class Insert (Details)
 > namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Database**
-> extends: **Insert**
+> extends: **ExtendingInsert**
 ```uml
 @startuml
 class Insert << (F,LightGreen) >> #RoyalBlue {

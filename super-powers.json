@@ -164,6 +164,17 @@
         "spk": "Super__0b45357f_b077_4337_92f3_65c1e19d36cd__Power",
         "guid": "0b45357f-b077-4337-92f3-65c1e19d36cd"
     },
+    "0b821bba-7503-4448-90e7-f3c1bd51dfd6": {
+        "name": "Config",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\JoomlaPower",
+        "code": "src\/0b821bba-7503-4448-90e7-f3c1bd51dfd6\/code.php",
+        "power": "src\/0b821bba-7503-4448-90e7-f3c1bd51dfd6\/code.power",
+        "settings": "src\/0b821bba-7503-4448-90e7-f3c1bd51dfd6\/settings.json",
+        "path": "src\/0b821bba-7503-4448-90e7-f3c1bd51dfd6",
+        "spk": "Super__0b821bba_7503_4448_90e7_f3c1bd51dfd6__Power",
+        "guid": "0b821bba-7503-4448-90e7-f3c1bd51dfd6"
+    },
     "0d08c583-04d5-454e-b756-48ca05e1651a": {
         "name": "Readme",
         "type": "class",
@@ -977,6 +988,17 @@
         "path": "src\/380bb7a3-cdcc-4336-a699-5070cbf521a5",
         "spk": "Super__380bb7a3_cdcc_4336_a699_5070cbf521a5__Power",
         "guid": "380bb7a3-cdcc-4336-a699-5070cbf521a5"
+    },
+    "38e1ca3e-1908-459a-be87-9f83b292058f": {
+        "name": "JoomlaPower",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\JoomlaPower\\Service",
+        "code": "src\/38e1ca3e-1908-459a-be87-9f83b292058f\/code.php",
+        "power": "src\/38e1ca3e-1908-459a-be87-9f83b292058f\/code.power",
+        "settings": "src\/38e1ca3e-1908-459a-be87-9f83b292058f\/settings.json",
+        "path": "src\/38e1ca3e-1908-459a-be87-9f83b292058f",
+        "spk": "Super__38e1ca3e_1908_459a_be87_9f83b292058f__Power",
+        "guid": "38e1ca3e-1908-459a-be87-9f83b292058f"
     },
     "396f9883-4e50-4b65-a1d5-05bd6c23df30": {
         "name": "AccessSectionsJoomlaFields",

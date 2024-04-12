@@ -147,7 +147,7 @@ class Extractor implements ExtractorInterface
 	 * @return void
 	 * @since 3.2.0
 	 */
-	public function search(string $code)
+	public function search(string $code): void
 	{
 		$matches = [];
 		preg_match_all($this->pattern, $code, $matches);

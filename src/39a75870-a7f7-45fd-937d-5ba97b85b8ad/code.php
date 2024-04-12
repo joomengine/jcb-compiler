@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 
 use VDM\Joomla\Componentbuilder\Interfaces\SuperInterface;
-use VDM\Joomla\Componentbuilder\Power\Super;
+use VDM\Joomla\Componentbuilder\Power\Super as ExtendingSuper;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Super;
  * 
  * @since 3.2.0
  */
-final class Super extends Super implements SuperInterface
+final class Super extends ExtendingSuper implements SuperInterface
 {
 	/**
 	 * Table Name

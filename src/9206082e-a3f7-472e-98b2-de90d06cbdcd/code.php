@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower\Model;
 
 
 use VDM\Joomla\Interfaces\ModelInterface;
-use VDM\Joomla\Componentbuilder\Power\Model\Upsert;
+use VDM\Joomla\Componentbuilder\Power\Model\Upsert as ExtendingUpsert;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Model\Upsert;
  * 
  * @since 3.2.0
  */
-final class Upsert extends Upsert implements ModelInterface
+final class Upsert extends ExtendingUpsert implements ModelInterface
 {
 	/**
 	 * Get the current active table

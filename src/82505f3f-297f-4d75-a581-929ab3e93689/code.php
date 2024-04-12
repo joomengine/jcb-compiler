@@ -13,14 +13,14 @@ namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaPower;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power\ExtractorInterface;
-use VDM\Joomla\Componentbuilder\Compiler\Power\Extractor;
+use VDM\Joomla\Componentbuilder\Compiler\Power\Extractor as ExtendingExtractor;
 
 
 /**
  * Compiler Joomla Power Extractor
  * @since 3.2.1
  */
-final class Extractor extends Extractor implements ExtractorInterface
+final class Extractor extends ExtendingExtractor implements ExtractorInterface
 {
 	/**
 	 * The pattern to get the powers

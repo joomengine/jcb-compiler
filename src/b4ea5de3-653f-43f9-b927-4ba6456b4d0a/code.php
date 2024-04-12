@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
 
 
 use VDM\Joomla\Componentbuilder\Power\Database\LoadInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Load;
+use VDM\Joomla\Componentbuilder\Power\Database\Load as ExtendingLoad;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Database\Load;
  * 
  * @since 2.0.1
  */
-final class Load extends Load implements LoadInterface
+final class Load extends ExtendingLoad implements LoadInterface
 {
 	/**
 	 * Table Name

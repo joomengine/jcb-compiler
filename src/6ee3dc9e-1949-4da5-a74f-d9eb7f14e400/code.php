@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 
 use Joomla\DI\Container;
-use VDM\Joomla\Componentbuilder\Compiler\Service\JoomlaPower as Power;
+use VDM\Joomla\Componentbuilder\JoomlaPower\Service\JoomlaPower as Power;
 use VDM\Joomla\Componentbuilder\Service\Database;
 use VDM\Joomla\Componentbuilder\JoomlaPower\Service\Database as PowerDatabase;
 use VDM\Joomla\Componentbuilder\Service\Gitea;

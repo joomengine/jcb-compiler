@@ -8,7 +8,7 @@
 ```
 # final class Update (Details)
 > namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Database**
-> extends: **Update**
+> extends: **ExtendingUpdate**
 ```uml
 @startuml
 class Update << (F,LightGreen) >> #RoyalBlue {

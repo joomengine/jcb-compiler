@@ -8,7 +8,7 @@
 ```
 # final class Grep (Details)
 > namespace: **VDM\Joomla\Componentbuilder\JoomlaPower**
-> extends: **Grep**
+> extends: **ExtendingGrep**
 ```uml
 @startuml
 class Grep << (F,LightGreen) >> #RoyalBlue {

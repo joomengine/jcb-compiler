@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
 
 
 use VDM\Joomla\Componentbuilder\Interfaces\Database\InsertInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Insert;
+use VDM\Joomla\Componentbuilder\Power\Database\Insert as ExtendingInsert;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Componentbuilder\Power\Database\Insert;
  * 
  * @since 3.2.1
  */
-final class Insert extends Insert implements InsertInterface
+final class Insert extends ExtendingInsert implements InsertInterface
 {
 	/**
 	 * Table Name

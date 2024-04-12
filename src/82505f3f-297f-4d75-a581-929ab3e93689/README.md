@@ -8,7 +8,7 @@
 ```
 # final class Extractor (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaPower**
-> extends: **Extractor**
+> extends: **ExtendingExtractor**
 ```uml
 @startuml
 class Extractor << (F,LightGreen) >> #RoyalBlue {
