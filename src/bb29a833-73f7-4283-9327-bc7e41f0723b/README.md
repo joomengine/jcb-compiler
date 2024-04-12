@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Load (Details)
+# class Load (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Model**
 > extends: **AbstractionModel**
 ```uml
 @startuml
-class Load << (F,LightGreen) >> #RoyalBlue {
+class Load  #Gold {
   + value(mixed $value, string $field, ...) : mixed
   # validateBefore(mixed $value, ?string $field = null, ...) : bool
   # validateAfter(mixed $value, ?string $field = null, ...) : bool

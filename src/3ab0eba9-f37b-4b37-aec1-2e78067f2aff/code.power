@@ -23,6 +23,14 @@
 	protected Update $update;
 
 	/**
+	 * Table Name
+	 *
+	 * @var    string
+	 * @since 3.2.1
+	 */
+	protected string $table = 'power';
+
+	/**
 	 * Constructor.
 	 *
 	 * @param Grep      $grep     The Power Grep object.
@@ -147,7 +155,7 @@
 	 */
 	private function action(string $guid): string
 	{
-		if (($id = GuidHelper::item($guid, 'power')) !== null && $id > 0)
+		if (($id = GuidHelper::item($guid, $this->table)) !== null && $id > 0)
 		{
 			return 'update';
 		}

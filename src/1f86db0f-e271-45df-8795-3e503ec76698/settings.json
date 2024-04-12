@@ -3,15 +3,17 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "1f86db0f-e271-45df-8795-3e503ec76698",
-    "implements": null,
+    "implements": [
+        "99786f53-64b7-4d52-95b0-5306e7386c3f"
+    ],
     "load_selection": null,
     "name": "Load",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Database.Load",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "bb29a833-73f7-4283-9327-bc7e41f0723b",
+            "use": "8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff",
             "as": "Model"
         },
         "use_selection1": {

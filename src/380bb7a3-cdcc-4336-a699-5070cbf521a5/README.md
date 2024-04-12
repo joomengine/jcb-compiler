@@ -6,13 +6,14 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Insert (Details)
+# class Insert (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Database**
 ```uml
 @startuml
-class Insert << (F,LightGreen) >> #RoyalBlue {
+class Insert  #Gold {
   # Model $model
   # Database $database
+  # string $table
   + __construct(Model $model, Database $database)
   + value(mixed $value, string $field, ...) : bool
   + row(array $item) : bool

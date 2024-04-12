@@ -6,13 +6,14 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Update (Details)
+# class Update (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Database**
 ```uml
 @startuml
-class Update << (F,LightGreen) >> #RoyalBlue {
+class Update  #Gold {
   # Model $model
   # Database $database
+  # string $table
   + __construct(Model $model, Database $database)
   + value(mixed $value, string $field, ...) : bool
   + row(array $item) : bool

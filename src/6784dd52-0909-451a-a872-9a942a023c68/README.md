@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Grep (Details)
+# class Grep (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power**
 ```uml
 @startuml
-class Grep << (F,LightGreen) >> #RoyalBlue {
+class Grep  #Gold {
   + ?string $path
   + ?array $paths
   # Contents $contents

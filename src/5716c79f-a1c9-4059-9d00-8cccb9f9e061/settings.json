@@ -1,0 +1,54 @@
+{
+    "add_head": "1",
+    "add_licensing_template": "2",
+    "extends": "0",
+    "guid": "5716c79f-a1c9-4059-9d00-8cccb9f9e061",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "JoomlaPower",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.JoomlaPower",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "3730a000-ab64-477d-8b0f-70eaf71b517a",
+            "as": "Powers"
+        },
+        "use_selection1": {
+            "use": "355bf21a-f859-4528-9110-bcd2c6d05ea7",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "39a75870-a7f7-45fd-937d-5ba97b85b8ad",
+            "as": "Superpower"
+        },
+        "use_selection3": {
+            "use": "82505f3f-297f-4d75-a581-929ab3e93689",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a6052fe9-0d2b-4b36-b3e7-03b47c483542",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "9206082e-a3f7-472e-98b2-de90d06cbdcd",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "9d53d45e-9b4d-45ec-827b-4916b91c907e",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "679473f6-3ea2-49d5-8273-1b29c8f0ad2b",
+            "as": "default"
+        }
+    },
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.JoomlaPower",
+    "description": "Compiler Joomla Power Service Provider\r\n\r\n@since 3.2.0",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

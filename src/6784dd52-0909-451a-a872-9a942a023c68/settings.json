@@ -3,12 +3,14 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "6784dd52-0909-451a-a872-9a942a023c68",
-    "implements": null,
+    "implements": [
+        "c182506a-ab84-439c-b962-1e606b58d545"
+    ],
     "load_selection": null,
     "name": "Grep",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Grep",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
             "use": "8d1baef6-fcad-49a9-848f-428009cdb989",

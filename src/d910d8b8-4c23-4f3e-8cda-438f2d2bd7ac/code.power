@@ -93,6 +93,7 @@
 			->registerServiceProvider(new Placeholder())
 			->registerServiceProvider(new Customcode())
 			->registerServiceProvider(new Power())
+			->registerServiceProvider(new JoomlaPower())
 			->registerServiceProvider(new Component())
 			->registerServiceProvider(new Adminview())
 			->registerServiceProvider(new Library())

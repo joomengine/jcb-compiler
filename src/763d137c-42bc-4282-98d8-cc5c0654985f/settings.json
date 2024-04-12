@@ -3,30 +3,28 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "763d137c-42bc-4282-98d8-cc5c0654985f",
-    "implements": null,
+    "implements": [
+        "e923311a-4058-4e81-9f67-5956fd0c627c"
+    ],
     "load_selection": null,
     "name": "Injector",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Power.Injector",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
+            "use": "1133c2d7-ba7e-4c95-8cde-01f084d04682",
+            "as": "Power"
         },
         "use_selection1": {
-            "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
-            "as": "default"
+            "use": "c159425c-51f9-4a15-af99-f2d0c6d7aae8",
+            "as": "Extractor"
         },
         "use_selection2": {
-            "use": "eeb03266-22fd-45bb-953a-961bb6be3a54",
-            "as": "default"
-        },
-        "use_selection3": {
             "use": "95d0e03f-24fd-4412-bc2e-f0899fcc3205",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         }

@@ -10,7 +10,7 @@
     "name": "Load",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Model.Load",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
             "use": "584747d1-3a86-453d-b7a3-a2219de8d777",

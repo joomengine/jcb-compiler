@@ -24,7 +24,7 @@ use VDM\Joomla\Interfaces\ModelInterface;
  * 
  * @since 3.2.0
  */
-final class Upsert extends AbstractionModel implements ModelInterface
+class Upsert extends AbstractionModel implements ModelInterface
 {
 	/**
 	 * Model the value

@@ -6,11 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Extractor (Details)
+# class Extractor (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 ```uml
 @startuml
-class Extractor << (F,LightGreen) >> #RoyalBlue {
+class Extractor  #Gold {
+  # string $table
   # array $powers
   # $db
   + __construct()

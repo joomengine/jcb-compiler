@@ -6,11 +6,11 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Injector (Details)
+# class Injector (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 ```uml
 @startuml
-class Injector << (F,LightGreen) >> #RoyalBlue {
+class Injector  #Gold {
   # Power $power
   # Extractor $extractor
   # Parser $parser
@@ -20,7 +20,7 @@ class Injector << (F,LightGreen) >> #RoyalBlue {
   # array $traits
   # array $other
   # array $duplicate
-  + __construct(?Power $power = null, ?Extractor $extractor = null, ...)
+  + __construct(Power $power = null, Extractor $extractor = null, ...)
   + power(string $code) : string
   # update(array $guids, string $code) : string
   # inspect(object $power, ?array $useStatements, ...) : ?string
@@ -45,10 +45,10 @@ note right of Injector::__construct
   since: 3.2.0
   
   arguments:
-    ?Power $power = null
-    ?Extractor $extractor = null
-    ?Parser $parser = null
-    ?Placeholder $placeholder = null
+    Power $power = null
+    Extractor $extractor = null
+    Parser $parser = null
+    Placeholder $placeholder = null
 end note
 
 note left of Injector::power

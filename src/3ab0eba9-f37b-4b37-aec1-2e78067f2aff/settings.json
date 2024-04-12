@@ -8,19 +8,19 @@
     "name": "Super",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Super",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "6784dd52-0909-451a-a872-9a942a023c68",
-            "as": "default"
+            "use": "c182506a-ab84-439c-b962-1e606b58d545",
+            "as": "Grep"
         },
         "use_selection1": {
-            "use": "380bb7a3-cdcc-4336-a699-5070cbf521a5",
-            "as": "default"
+            "use": "95c02df3-fe0a-405b-b506-b7a5b8605b66",
+            "as": "Insert"
         },
         "use_selection2": {
-            "use": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
-            "as": "default"
+            "use": "69c29be3-ab25-4f56-944e-7ada6307b10c",
+            "as": "Update"
         },
         "use_selection3": {
             "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",

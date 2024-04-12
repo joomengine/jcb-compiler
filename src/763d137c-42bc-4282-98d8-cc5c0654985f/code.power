@@ -80,13 +80,13 @@
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(?Power $power = null, ?Extractor $extractor = null,
-		?Parser $parser = null, ?Placeholder $placeholder = null)
+	public function __construct(Power $power = null, Extractor $extractor = null,
+		Parser $parser = null, Placeholder $placeholder = null)
 	{
-		$this->power = $power ?: Compiler::_('Power');
-		$this->extractor = $extractor ?: Compiler::_('Power.Extractor');
-		$this->parser = $parser ?: Compiler::_('Power.Parser');
-		$this->placeholder = $placeholder ?: Compiler::_('Placeholder');
+		$this->power = $power;
+		$this->extractor = $extractor;
+		$this->parser = $parser;
+		$this->placeholder = $placeholder;
 	}
 
 	/**

@@ -6,14 +6,15 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Super (Details)
+# class Super (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power**
 ```uml
 @startuml
-class Super << (F,LightGreen) >> #RoyalBlue {
+class Super  #Gold {
   # Grep $grep
   # Insert $insert
   # Update $update
+  # string $table
   + __construct(Grep $grep, Insert $insert, ...)
   + init() : bool
   + reset(array $powers) : bool

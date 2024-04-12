@@ -3,12 +3,14 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "eeb03266-22fd-45bb-953a-961bb6be3a54",
-    "implements": null,
+    "implements": [
+        "c159425c-51f9-4a15-af99-f2d0c6d7aae8"
+    ],
     "load_selection": null,
     "name": "Extractor",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Power.Extractor",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
             "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",

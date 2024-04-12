@@ -1,0 +1,20 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "eeb03266-22fd-45bb-953a-961bb6be3a54",
+    "guid": "82505f3f-297f-4d75-a581-929ab3e93689",
+    "implements": [
+        "c159425c-51f9-4a15-af99-f2d0c6d7aae8"
+    ],
+    "load_selection": null,
+    "name": "Extractor",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.JoomlaPower.Extractor",
+    "type": "final class",
+    "use_selection": null,
+    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.JoomlaPower.Extractor",
+    "description": "Compiler Joomla Power Extractor\r\n@since 3.2.1",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

@@ -3,15 +3,17 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "380bb7a3-cdcc-4336-a699-5070cbf521a5",
-    "implements": null,
+    "implements": [
+        "95c02df3-fe0a-405b-b506-b7a5b8605b66"
+    ],
     "load_selection": null,
     "name": "Insert",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Database.Insert",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "7c1fb50f-8fb1-4627-8705-6fedf7182ca5",
+            "use": "8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff",
             "as": "Model"
         },
         "use_selection1": {

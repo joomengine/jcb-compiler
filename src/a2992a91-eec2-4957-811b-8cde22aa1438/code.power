@@ -1,0 +1,103 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since 3.2.0
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(ModelLoad::class, 'Joomla.Power.Model.Load')
+			->share('Joomla.Power.Model.Load', [$this, 'getModelLoad'], true);
+
+		$container->alias(ModelUpsert::class, 'Joomla.Power.Model.Upsert')
+			->share('Joomla.Power.Model.Upsert', [$this, 'getModelUpsert'], true);
+
+		$container->alias(LoadDatabase::class, 'Joomla.Power.Database.Load')
+			->share('Joomla.Power.Database.Load', [$this, 'getLoadDatabase'], true);
+
+		$container->alias(InsertDatabase::class, 'Joomla.Power.Database.Insert')
+			->share('Joomla.Power.Database.Insert', [$this, 'getInsertDatabase'], true);
+
+		$container->alias(UpdateDatabase::class, 'Joomla.Power.Database.Update')
+			->share('Joomla.Power.Database.Update', [$this, 'getUpdateDatabase'], true);
+	}
+
+	/**
+	 * Get the Power Model Load
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ModelLoad
+	 * @since 3.2.0
+	 */
+	public function getModelLoad(Container $container): ModelLoad
+	{
+		return new ModelLoad(
+			$container->get('Table')
+		);
+	}
+
+	/**
+	 * Get the Power Model Update or Insert
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  ModelUpsert
+	 * @since 3.2.0
+	 */
+	public function getModelUpsert(Container $container): ModelUpsert
+	{
+		return new ModelUpsert(
+			$container->get('Table')
+		);
+	}
+
+	/**
+	 * Get the Load Database
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  LoadDatabase
+	 * @since 3.2.0
+	 */
+	public function getLoadDatabase(Container $container): LoadDatabase
+	{
+		return new LoadDatabase(
+			$container->get('Joomla.Power.Model.Load'),
+			$container->get('Load')
+		);
+	}
+
+	/**
+	 * Get the Insert Database
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  InsertDatabase
+	 * @since 3.2.0
+	 */
+	public function getInsertDatabase(Container $container): InsertDatabase
+	{
+		return new InsertDatabase(
+			$container->get('Joomla.Power.Model.Upsert'),
+			$container->get('Insert')
+		);
+	}
+
+	/**
+	 * Get the Update Database
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  UpdateDatabase
+	 * @since 3.2.0
+	 */
+	public function getUpdateDatabase(Container $container): UpdateDatabase
+	{
+		return new UpdateDatabase(
+			$container->get('Joomla.Power.Model.Upsert'),
+			$container->get('Update')
+		);
+	}

@@ -6,13 +6,14 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class Load (Details)
+# class Load (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Database**
 ```uml
 @startuml
-class Load << (F,LightGreen) >> #RoyalBlue {
+class Load  #Gold {
   # Model $model
   # Database $load
+  # string $table
   + __construct(Model $model, Database $load)
   + value(array $keys, string $field) : mixed
   + item(array $keys) : ?object

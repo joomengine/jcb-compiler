@@ -15,6 +15,14 @@
 	protected Database $load;
 
 	/**
+	 * Table Name
+	 *
+	 * @var    string
+	 * @since 3.2.1
+	 */
+	protected string $table = 'power';
+
+	/**
 	 * Constructor
 	 *
 	 * @param Table       $table     The core table object.
@@ -49,11 +57,11 @@
 		return $this->model->value(
 			$this->load->value(
 				["a.{$field}" => $field],
-				['a' => 'power'],
+				['a' => $this->table],
 				$this->prefix($keys)
 			),
 			$field,
-			'power'
+			$this->table
 		);
 	}
 
@@ -76,10 +84,10 @@
 		return $this->model->item(
 			$this->load->item(
 				['all' => 'a.*'],
-				['a' => 'power'],
+				['a' => $this->table],
 				$this->prefix($keys)
 			),
-			'power'
+			$this->table
 		);
 	}
  
@@ -105,9 +113,9 @@
 	{
 		return $this->model->items(
 			$this->load->items(
-				['all' => 'a.*'], ['a' => 'power'], $this->prefix($keys)
+				['all' => 'a.*'], ['a' => $this->table], $this->prefix($keys)
 			),
-			'power'
+			$this->table
 		);
 	}
 

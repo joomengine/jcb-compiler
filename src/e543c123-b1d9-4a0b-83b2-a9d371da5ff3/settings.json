@@ -3,15 +3,17 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
-    "implements": null,
+    "implements": [
+        "69c29be3-ab25-4f56-944e-7ada6307b10c"
+    ],
     "load_selection": null,
     "name": "Update",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Database.Update",
-    "type": "final class",
+    "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "7c1fb50f-8fb1-4627-8705-6fedf7182ca5",
+            "use": "8aef58c1-3f70-4bd4-b9e4-3f29fcd41cff",
             "as": "Model"
         },
         "use_selection1": {
