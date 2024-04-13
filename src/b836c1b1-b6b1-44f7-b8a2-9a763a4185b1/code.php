@@ -799,7 +799,7 @@ class Power implements PowerInterface
 				if ($this->active[$guid]->extends_name === $this->active[$guid]->class_name)
 				{
 					$this->active[$guid]->extends_name = $as[$this->active[$guid]->extends]
-						= 'Extending' . $this->active[$guid]->extends_name;
+						= 'Extending' . $this->active[$guid]->class_name;
 				}
 			}
 		}

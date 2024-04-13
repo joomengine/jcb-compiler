@@ -8,7 +8,7 @@
 ```
 # class Upsert (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Model**
-> extends: **AbstractionModel**
+> extends: **Model**
 ```uml
 @startuml
 class Upsert  #Gold {

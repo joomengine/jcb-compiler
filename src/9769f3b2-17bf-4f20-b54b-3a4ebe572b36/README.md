@@ -8,7 +8,7 @@
 ```
 # abstract class BaseConfig (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Abstraction**
-> extends: **Config**
+> extends: **ExtendingBaseConfig**
 ```uml
 @startuml
 abstract BaseConfig  #Orange {
