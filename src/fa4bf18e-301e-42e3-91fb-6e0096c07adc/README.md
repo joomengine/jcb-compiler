@@ -62,6 +62,10 @@ class Config  #Gold {
   # getPowerlibraryfolder() : string
   # getLocalpowersrepositorypath() : string
   # getApprovedpaths() : array
+  # getJoomlapowerscoreorganisation() : string
+  # getJoomlapowersinitrepos() : array
+  # getLocaljoomlapowersrepositorypath() : string
+  # getApprovedjoomlapaths() : array
   # getBompath() : string
   # getCustomfolderpath() : string
   # getAddassetstablefix() : int
@@ -429,6 +433,34 @@ end note
 
 note right of Config::getApprovedpaths
   Get super power approved paths
+
+  since: 3.2.0
+  return: array
+end note
+
+note left of Config::getJoomlapowerscoreorganisation
+  Get super power core organisation
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Config::getJoomlapowersinitrepos
+  Get Joomla power init repos
+
+  since: 3.2.0
+  return: array
+end note
+
+note left of Config::getLocaljoomlapowersrepositorypath
+  Get local joomla super powers repository path
+
+  since: 3.2.0
+  return: string
+end note
+
+note right of Config::getApprovedjoomlapaths
+  Get joomla power approved paths
 
   since: 3.2.0
   return: array

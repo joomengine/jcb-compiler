@@ -18,13 +18,11 @@ class Config  #Gold {
   # getAddcustomgiteaurl() : int
   # getCustomgiteaurl() : ?string
   # getCustomgiteatoken() : ?string
-  # getSuperpowerscoreorganisation() : string
-  # getSuperpowersinitrepos() : array
+  # getJoomlapowerscoreorganisation() : string
+  # getJoomlapowersinitrepos() : array
   # getTmppath() : string
-  # getAddsuperpowers() : bool
-  # getAddownpowers() : bool
-  # getLocalpowersrepositorypath() : string
-  # getApprovedpaths() : array
+  # getLocaljoomlapowersrepositorypath() : string
+  # getApprovedjoomlapaths() : array
 }
 
 note right of Config::__construct
@@ -66,15 +64,15 @@ note right of Config::getCustomgiteatoken
   return: ?string
 end note
 
-note left of Config::getSuperpowerscoreorganisation
+note left of Config::getJoomlapowerscoreorganisation
   Get super power core organisation
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getSuperpowersinitrepos
-  Get super power init repos
+note right of Config::getJoomlapowersinitrepos
+  Get Joomla power init repos
 
   since: 3.2.0
   return: array
@@ -87,29 +85,15 @@ note left of Config::getTmppath
   return: string
 end note
 
-note right of Config::getAddsuperpowers
-  Get switch to add super powers
-
-  since: 3.2.0
-  return: bool
-end note
-
-note left of Config::getAddownpowers
-  Get switch to add own super powers
-
-  since: 3.2.0
-  return: bool
-end note
-
-note right of Config::getLocalpowersrepositorypath
-  Get local super powers repository path
+note right of Config::getLocaljoomlapowersrepositorypath
+  Get local joomla super powers repository path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getApprovedpaths
-  Get super power approved paths
+note left of Config::getApprovedjoomlapaths
+  Get joomla power approved paths
 
   since: 3.2.0
   return: array

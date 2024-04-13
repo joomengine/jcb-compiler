@@ -117,56 +117,25 @@ class Config extends BaseConfig
 	 * @return  string   The super power core organisation
 	 * @since 3.2.0
 	 */
-	protected function getSuperpowerscoreorganisation(): string
+	protected function getJoomlapowerscoreorganisation(): string
 	{
 		// the VDM default organisation is [joomla]
 		$organisation = 'joomla';
 
-		if ($this->add_custom_gitea_url == 2)
-		{
-			return $this->params->get('super_powers_core_organisation', $organisation);
-		}
-
-		return $organisation;
+		return $this->params->get('joomla_powers_core_organisation', $organisation);
 	}
 
 	/**
-	 * Get super power init repos
+	 * Get Joomla power init repos
 	 *
 	 * @return  array The init repositories on Gitea
 	 * @since 3.2.0
 	 */
-	protected function getSuperpowersinitrepos(): array
+	protected function getJoomlapowersinitrepos(): array
 	{
 		// some defaults repos we need by JCB
 		$repos = [];
-
-		// only add custom init with custom gitea
-		$paths = null;
-		if ($this->add_custom_gitea_url == 2)
-		{
-			$paths = $this->params->get('super_powers_init_repos');
-		}
-
-		if (!empty($paths) && is_array($paths))
-		{
-			foreach ($paths as $path)
-			{
-				$owner = $path->owner ?? null;
-				$repo = $path->repo ?? null;
-				if ($owner !== null && $repo !== null)
-				{
-					// we make sure to get only the objects
-					$repos = ["{$owner}.{$repo}" => $path] + $repos;
-				}
-			}
-		}
-		else
-		{
-			$repos[$this->super_powers_core_organisation . '.super-powers'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'super-powers', 'branch' => 'master'];
-			$repos[$this->super_powers_core_organisation . '.gitea'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'gitea', 'branch' => 'master'];
-			$repos[$this->super_powers_core_organisation . '.openai'] = (object) ['owner' => $this->super_powers_core_organisation, 'repo' => 'openai', 'branch' => 'master'];
-		}
+		$repos[$this->joomla_powers_core_organisation . '.joomla-powers'] = (object) ['owner' => $this->joomla_powers_core_organisation, 'repo' => 'joomla-powers', 'branch' => 'master'];
 
 		return $repos;
 	}
@@ -184,81 +153,28 @@ class Config extends BaseConfig
 	}
 
 	/**
-	 * Get switch to add super powers
-	 *
-	 * @return  bool  Switch to add super powers
-	 * @since 3.2.0
-	 */
-	protected function getAddsuperpowers(): bool
-	{
-		return (bool) $this->params->get('powers_repository', 0);
-	}
-
-	/**
-	 * Get switch to add own super powers
-	 *
-	 * @return  bool  Switch to add own super powers
-	 * @since 3.2.0
-	 */
-	protected function getAddownpowers(): bool
-	{
-		if ($this->add_super_powers)
-		{
-			return (bool) $this->params->get('super_powers_repositories', 0);
-		}
-
-		return false;
-	}
-
-	/**
-	 * Get local super powers repository path
+	 * Get local joomla super powers repository path
 	 *
 	 * @return  string The path to the local repository
 	 * @since 3.2.0
 	 */
-	protected function getLocalpowersrepositorypath(): string
+	protected function getLocaljoomlapowersrepositorypath(): string
 	{
-		$default = $this->tmp_path . '/super_powers';
+		$default = $this->tmp_path . '/joomla_powers';
 
-		if (!$this->add_super_powers)
-		{
-			return $default;
-		}
-
-		return $this->params->get('local_powers_repository_path', $default);
+		return $this->params->get('local_joomla_powers_repository_path', $default);
 	}
 
 	/**
-	 * Get super power approved paths
+	 * Get joomla power approved paths
 	 *
-	 * @return  array The approved paths to the repositories on Gitea
+	 * @return  array The paths to the repositories on Gitea
 	 * @since 3.2.0
 	 */
-	protected function getApprovedpaths(): array
+	protected function getApprovedjoomlapaths(): array
 	{
 		// some defaults repos we need by JCB
-		$approved = $this->super_powers_init_repos;
-
-		if (!$this->add_own_powers)
-		{
-			return array_values($approved);
-		}
-
-		$paths = $this->params->get('approved_paths');
-
-		if (!empty($paths))
-		{
-			foreach ($paths as $path)
-			{
-				$owner = $path->owner ?? null;
-				$repo = $path->repo ?? null;
-				if ($owner !== null && $repo !== null)
-				{
-					// we make sure to get only the objects
-					$approved = ["{$owner}.{$repo}" => $path] + $approved;
-				}
-			}
-		}
+		$approved = $this->joomla_powers_init_repos;
 
 		return array_values($approved);
 	}
