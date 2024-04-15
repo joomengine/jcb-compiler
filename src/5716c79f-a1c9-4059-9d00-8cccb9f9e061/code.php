@@ -77,7 +77,11 @@ class JoomlaPower implements ServiceProviderInterface
 	public function getPowers(Container $container): Powers
 	{
 		return new Powers(
-			$container->get('Config')
+			$container->get('Config'),
+			$container->get('Placeholder'),
+			$container->get('Customcode'),
+			$container->get('Customcode.Gui'),
+			$container->get('Joomlapower')
 		);
 	}
 
