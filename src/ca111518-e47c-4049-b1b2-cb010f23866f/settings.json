@@ -45,6 +45,10 @@
         "use_selection8": {
             "use": "eeb03266-22fd-45bb-953a-961bb6be3a54",
             "as": "Power"
+        },
+        "use_selection9": {
+            "use": "82505f3f-297f-4d75-a581-929ab3e93689",
+            "as": "JoomlaPower"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Placeholder.Reverse",

@@ -16,11 +16,13 @@ class Reverse  #Gold {
   # Language $language
   # Extractor $extractor
   # Power $power
-  + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
+  # JoomlaPower $joomla
+  + __construct(Config $config, Placeholder $placeholder, ...)
   + engine(string $string, array $placeholders, ...) : string
   # setReverse(string $updateString, string $string, ...) : string
   # reverseSuperPowers(string $updateString, string $string, ...) : string
-  # getReversePower(array $powers, array $useStatements) : ?array
+  # reverseJoomlaPowers(string $updateString, string $string, ...) : string
+  # getReversePower(array $powers, array $useStatements, ...) : ?array
   # reverseLanguage(string $updateString, string $string, ...) : string
   # reverseCustomCode(string $updateString, string $string) : string
 }
@@ -31,14 +33,15 @@ note right of Reverse::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Placeholder $placeholder = null
-    ?Language $language = null
-    ?Extractor $extractor = null
-    ?Power $power = null
+    Config $config
+    Placeholder $placeholder
+    Language $language
+    Extractor $extractor
+    Power $power
+    JoomlaPower $joomla
 end note
 
-note right of Reverse::engine
+note left of Reverse::engine
   Reverse Engineer the dynamic placeholders (TODO hmmmm this is not ideal)
 
   since: 3.2.0
@@ -67,7 +70,7 @@ note right of Reverse::setReverse
     ?array $useStatements
 end note
 
-note right of Reverse::reverseSuperPowers
+note left of Reverse::reverseSuperPowers
   Set the super powers keys for the reveres process
 
   since: 3.2.0
@@ -79,11 +82,28 @@ note right of Reverse::reverseSuperPowers
     ?array $useStatements
 end note
 
-note right of Reverse::getReversePower
+note right of Reverse::reverseJoomlaPowers
+  Set the joomla powers keys for the reveres process
+
+  since: 3.2.0
+  return: string
+  
+  arguments:
+    string $updateString
+    string $string
+    ?array $useStatements
+end note
+
+note left of Reverse::getReversePower
   Set the super powers keys for the reveres process
 
   since: 3.2.0
   return: ?array
+  
+  arguments:
+    array $powers
+    array $useStatements
+    string $target
 end note
 
 note right of Reverse::reverseLanguage
@@ -98,7 +118,7 @@ note right of Reverse::reverseLanguage
     string $target
 end note
 
-note right of Reverse::reverseCustomCode
+note left of Reverse::reverseCustomCode
   Set the custom code placeholder for the reveres process
 
   since: 3.2.0

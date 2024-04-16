@@ -235,6 +235,10 @@ final class JoomlaPower implements PowerInterface
 				// all powers linked to it
 				$this->state[$guid] = true;
 
+				echo '<pre>';
+				var_dump($this->active[$guid]);
+				exit;
+
 				// set the approved super power values
 				$this->setSuperPowers($guid);
 

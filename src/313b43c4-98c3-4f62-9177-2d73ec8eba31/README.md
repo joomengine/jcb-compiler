@@ -19,9 +19,10 @@ class Customcode  #Gold {
   # Placeholder $placeholder
   # Extractor $extractor
   # Power $power
+  # JoomlaPower $joomla
   # External $external
   # $db
-  + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
+  + __construct(Config $config, Placeholder $placeholder, ...)
   + update(string $string, int $debug) : string
   + set(string $string, int $debug, ...) : string
   + get(?array $ids = null, bool $setLang = true, ...) : bool
@@ -36,11 +37,12 @@ note right of Customcode::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Placeholder $placeholder = null
-    ?Extractor $extractor = null
-    ?Power $power = null
-    ?External $external = null
+    Config $config
+    Placeholder $placeholder
+    Extractor $extractor
+    Power $power
+    JoomlaPower $joomla
+    External $external
 end note
 
 note right of Customcode::update
