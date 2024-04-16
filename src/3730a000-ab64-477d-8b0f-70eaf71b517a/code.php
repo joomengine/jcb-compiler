@@ -16,12 +16,9 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Application\CMSApplication;
 use Joomla\CMS\Language\Text;
 use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Utilities\GuidHelper;
-use VDM\Joomla\Utilities\String\ClassfunctionHelper;
 use VDM\Joomla\Utilities\String\NamespaceHelper;
-use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
@@ -31,7 +28,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\PowerInterface;
 
 
 /**
- * Power
+ * Joomla Power
+ * 
+ * @since 3.2.1
  */
 final class JoomlaPower implements PowerInterface
 {
@@ -39,7 +38,7 @@ final class JoomlaPower implements PowerInterface
 	 * All loaded powers
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	public array $active = [];
 
@@ -47,7 +46,7 @@ final class JoomlaPower implements PowerInterface
 	 * All power namespaces
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	public array $namespace = [];
 
@@ -55,7 +54,7 @@ final class JoomlaPower implements PowerInterface
 	 * All super powers of this build
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	public array $superpowers = [];
 
@@ -63,7 +62,7 @@ final class JoomlaPower implements PowerInterface
 	 * Old super powers found in the local repos
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	public array $old_superpowers = [];
 
@@ -71,7 +70,7 @@ final class JoomlaPower implements PowerInterface
 	 * The url to the power, if there is an error.
 	 *
 	 * @var   string
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected string $fixUrl;
 
@@ -79,7 +78,7 @@ final class JoomlaPower implements PowerInterface
 	 * The state of all loaded powers
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected array $state = [];
 
@@ -87,7 +86,7 @@ final class JoomlaPower implements PowerInterface
 	 * The state of retry to loaded powers
 	 *
 	 * @var    array
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected array $retry = [];
 
@@ -95,7 +94,7 @@ final class JoomlaPower implements PowerInterface
 	 * Compiler Config
 	 *
 	 * @var    Config
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected Config $config;
 
@@ -103,7 +102,7 @@ final class JoomlaPower implements PowerInterface
 	 * Compiler Placeholder
 	 *
 	 * @var    Placeholder
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected Placeholder $placeholder;
 
@@ -111,7 +110,7 @@ final class JoomlaPower implements PowerInterface
 	 * Compiler Customcode
 	 *
 	 * @var    Customcode
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected Customcode $customcode;
 
@@ -119,7 +118,7 @@ final class JoomlaPower implements PowerInterface
 	 * Compiler Customcode in Gui
 	 *
 	 * @var    Gui
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected Gui $gui;
 
@@ -127,21 +126,21 @@ final class JoomlaPower implements PowerInterface
 	 * The JCB Superpower class
 	 *
 	 * @var    Superpower
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected Superpower $superpower;
 
 	/**
 	 * Database object to query local DB
 	 *
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected $db;
 
 	/**
 	 * Database object to query local DB
 	 *
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 **/
 	protected $app;
 
@@ -155,7 +154,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param Superpower         $superpower   The JCB superpower object.
 	 *
 	 * @throws \Exception
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	public function __construct(Config $config, Placeholder $placeholder,
 		Customcode $customcode, Gui $gui, Superpower $superpower)
@@ -175,7 +174,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param array   $guids    The global unique ids of the linked powers
 	 *
 	 * @return void
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	public function load(array $guids)
 	{
@@ -195,7 +194,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param int       $build   Force build switch (to override global switch)
 	 *
 	 * @return object|null
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	public function get(string $guid, int $build = 0): ?object
 	{
@@ -213,7 +212,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param string   $guid    The global unique id of the power
 	 *
 	 * @return bool  true on successful setting of a power
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function set(string $guid): bool
 	{
@@ -235,14 +234,40 @@ final class JoomlaPower implements PowerInterface
 				// all powers linked to it
 				$this->state[$guid] = true;
 
-				echo '<pre>';
-				var_dump($this->active[$guid]);
-				exit;
+				// convert settings to an array
+				if (JsonHelper::check($this->active[$guid]->settings))
+				{
+					$this->active[$guid]->settings = $settings
+						= json_decode($this->active[$guid]->settings, true);
+				}
 
-				// set the approved super power values
-				$this->setSuperPowers($guid);
+				// set a target version
+				$joomla_version = $this->config->joomla_version;
 
-				return true;
+				if ($joomla_version && ArrayHelper::check($settings))
+				{
+					foreach ($settings as $namespace)
+					{
+						if ($joomla_version == $namespace['joomla_version'] ||
+							$namespace['joomla_version'] == 0)
+						{
+							$this->active[$guid]->namespace = $namespace['namespace'];
+							$this->active[$guid]->type = $namespace['type'] ?? 'class';
+							break;
+						}
+					}
+
+					$this->active[$guid]->class_name =
+						$this->extractLastNameFromNamespace($this->active[$guid]->namespace);
+
+					$this->active[$guid]->_namespace =
+						$this->removeLastNameFromNamespace($this->active[$guid]->namespace);
+
+					// set the approved super power values
+					$this->setSuperPowers($guid);
+
+					return true;
+				}
 			}
 		}
 
@@ -278,12 +303,54 @@ final class JoomlaPower implements PowerInterface
 	}
 
 	/**
+	 * Extracts the last part of a namespace string, which is typically the class name.
+	 *
+	 * @param string $namespace  The namespace string to extract from.
+	 *
+	 * @return string|null The extracted class name.
+	 * @since 3.2.1
+	 */
+	private function extractLastNameFromNamespace(string $namespace): ?string
+	{
+		$parts = explode('\\', $namespace);
+		$result = end($parts);
+
+		// Remove '\\' from the beginning and end of the resulting string
+		$result = trim($result, '\\');
+
+		// If the resulting string is empty, return null
+		return empty($result) ? null : $result;
+	}
+
+	/**
+	 * Removes the last name from the namespace.
+	 *
+	 * @param string $namespace The namespace
+	 *
+	 * @return string The namespace shortened
+	 * @since 3.2.1
+	 */
+	private function removeLastNameFromNamespace(string $namespace): string
+	{
+		// Remove '\\' from the beginning and end of the resulting string
+		$namespace = trim($namespace, '\\');
+
+		$parts = explode('\\', $namespace);
+
+		// Remove the last part (the class name)
+		array_pop($parts);
+
+		// Reassemble the namespace without the class name
+		return implode('\\', $parts);
+	}
+
+	/**
 	 * Check if the power is already set
 	 *
 	 * @param string  $guid  The global unique id of the power
 	 *
 	 * @return bool true if the power is already set
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function isPowerSet(string $guid): bool
 	{
@@ -296,7 +363,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param string  $guid  The global unique id of the power
 	 *
 	 * @return bool true if the GUID is valid
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function isGuidValid(string $guid): bool
 	{
@@ -309,7 +376,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param string  $guid  The global unique id of the power
 	 *
 	 * @return object|null The power data
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function getPowerData(string $guid): ?object
 	{
@@ -336,7 +403,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param bool    $removeNumbers    The switch to remove numbers
 	 *
 	 * @return string
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function getCleanNamespace(string $namespace): string
 	{
@@ -351,7 +418,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param string   $as                The use as name (default is none)
 	 *
 	 * @return string
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function getUseNamespace(string $namespace, string $as = 'default'): string
 	{
@@ -369,7 +436,7 @@ final class JoomlaPower implements PowerInterface
 	 * @param string  $guid   The global unique id of the power
 	 *
 	 * @return void
-	 * @since 3.2.0
+	 * @since 3.2.1
 	 */
 	private function setSuperPowers(string $guid): void
 	{
