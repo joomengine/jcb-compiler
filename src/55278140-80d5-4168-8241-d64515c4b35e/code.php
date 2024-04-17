@@ -1300,10 +1300,56 @@ final class Builders
 					'title' => (is_string($title_) && $name === $title_) ? true : false,
 					'list' => $nameListCode,
 					'store' => (isset($field['store'])) ? $field['store'] : null,
-					'tab_name' => $tabName
+					'tab_name' => $tabName,
+					'db' => $this->normalizeDatabaseValues($nameSingleCode, $name)
 				]
 			);
 		}
+	}
+
+	/**
+	 * Normalizes database values by adjusting the 'length' and 'default' fields based on specific conditions.
+	 * This function modifies the database values by replacing placeholder texts and appending specifications
+	 * to types based on the 'length' field. It removes unnecessary fields from the result array.
+	 *
+	 * @param string  $nameSingleCode  The code for naming single entries.
+	 * @param string  $name             The name of the database entry.
+	 *
+	 * @return array|null Returns the modified database values array or null if no values are found.
+	 * @since 3.2.1
+	 */
+	private function normalizeDatabaseValues($nameSingleCode, $name): ?array
+	{
+		$db_values = $this->databasetables->get($nameSingleCode . '.' . $name, null);
+		if ($db_values === null)
+		{
+			return null;
+		}
+
+		if (isset($db_values['lenght']))
+		{
+			if ($db_values['lenght'] === 'Other' && isset($db_values['lenght_other']))
+			{
+				$db_values['lenght'] = $db_values['lenght_other'];
+			}
+			$db_values['lenght'] = trim($db_values['lenght']);
+			if (strlen($db_values['lenght']))
+			{
+				$db_values['type'] .= '(' . $db_values['lenght'] . ')';
+			}
+		}
+
+		if (isset($db_values['default']))
+		{
+			if ($db_values['default'] === 'Other' && isset($db_values['other']))
+			{
+				$db_values['default'] = $db_values['other'];
+			}
+		}
+
+		unset($db_values['ID'], $db_values['lenght'], $db_values['lenght_other'], $db_values['other']);
+
+		return $db_values;
 	}
 }
 

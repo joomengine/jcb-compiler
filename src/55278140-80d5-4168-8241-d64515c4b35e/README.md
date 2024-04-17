@@ -61,6 +61,7 @@ class Builders << (F,LightGreen) >> #RoyalBlue {
   # CMSApplication $app
   + __construct(Config $config, Power $power, ...)
   + set(string $langLabel, string $langView, ...) : void
+  - normalizeDatabaseValues(string $nameSingleCode, string $name) : ?array
 }
 
 note right of Builders::__construct
@@ -137,6 +138,15 @@ note right of Builders::set
     bool $multiple
     ?array $custom = null
     ?array $options = null
+end note
+
+note right of Builders::normalizeDatabaseValues
+  Normalizes database values by adjusting the 'length' and 'default' fields based on specific conditions.
+This function modifies the database values by replacing placeholder texts and appending specifications
+to types based on the 'length' field. It removes unnecessary fields from the result array.
+
+  since: 3.2.1
+  return: ?array
 end note
  
 @enduml
