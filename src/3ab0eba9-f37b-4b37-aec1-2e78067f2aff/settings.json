@@ -3,7 +3,9 @@
     "add_licensing_template": "2",
     "extends": "0",
     "guid": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
-    "implements": null,
+    "implements": [
+        "51de80f2-2868-4c2c-8198-ef79349e9bd7"
+    ],
     "load_selection": null,
     "name": "Super",
     "power_version": "1.0.0",

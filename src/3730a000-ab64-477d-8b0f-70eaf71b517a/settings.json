@@ -13,40 +13,40 @@
     "type": "final class",
     "use_selection": {
         "use_selection0": {
-            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
-            "as": "default"
-        },
-        "use_selection2": {
-            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
-            "as": "default"
-        },
-        "use_selection3": {
-            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
-            "as": "default"
-        },
-        "use_selection5": {
-            "use": "ce8cf834-6bac-44fb-941c-861f7e046cc0",
-            "as": "default"
-        },
-        "use_selection7": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection1": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection2": {
             "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
             "as": "default"
         },
-        "use_selection10": {
+        "use_selection3": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection11": {
+        "use_selection4": {
             "use": "39a75870-a7f7-45fd-937d-5ba97b85b8ad",
             "as": "SuperPower"
+        },
+        "use_selection5": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "ce8cf834-6bac-44fb-941c-861f7e046cc0",
+            "as": "default"
         }
     },
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.JoomlaPower",
