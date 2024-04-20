@@ -693,6 +693,8 @@ final class Builders
 				$field['settings']->null_switch);
 			// set index types
 			$_guid = true;
+			$databaseuniquekey = false;
+			$databasekey = false;
 			if ($field['settings']->indexes == 1
 				&& !in_array(
 					$field['settings']->datatype, $textKeys
@@ -700,6 +702,7 @@ final class Builders
 			{
 				// build unique keys of this view for db
 				$this->databaseuniquekeys->add($nameSingleCode, $name, true);
+				$databaseuniquekey = true;
 				// prevent guid from being added twice
 				if ('guid' === $name)
 				{
@@ -715,6 +718,7 @@ final class Builders
 			{
 				// build keys of this view for db
 				$this->databasekeys->add($nameSingleCode, $name, true);
+				$databasekey = true;
 			}
 			// special treatment for GUID
 			if ('guid' === $name && $_guid)
@@ -1301,7 +1305,7 @@ final class Builders
 					'list' => $nameListCode,
 					'store' => (isset($field['store'])) ? $field['store'] : null,
 					'tab_name' => $tabName,
-					'db' => $this->normalizeDatabaseValues($nameSingleCode, $name)
+					'db' => $this->normalizeDatabaseValues($nameSingleCode, $name, $databaseuniquekey, $databasekey)
 				]
 			);
 		}
@@ -1314,11 +1318,13 @@ final class Builders
 	 *
 	 * @param string  $nameSingleCode  The code for naming single entries.
 	 * @param string  $name             The name of the database entry.
+	 * @param string  $uniquekey      Is this field a uniquekey
+	 * @param string  $iskey              Is this field a key
 	 *
 	 * @return array|null Returns the modified database values array or null if no values are found.
 	 * @since 3.2.1
 	 */
-	private function normalizeDatabaseValues($nameSingleCode, $name): ?array
+	private function normalizeDatabaseValues($nameSingleCode, $name, $uniquekey, $iskey): ?array
 	{
 		$db_values = $this->databasetables->get($nameSingleCode . '.' . $name, null);
 		if ($db_values === null)
@@ -1346,6 +1352,9 @@ final class Builders
 				$db_values['default'] = $db_values['other'];
 			}
 		}
+
+		$db_values['unique_key'] = $uniquekey;
+		$db_values['key'] = $iskey;
 
 		unset($db_values['ID'], $db_values['lenght'], $db_values['lenght_other'], $db_values['other']);
 

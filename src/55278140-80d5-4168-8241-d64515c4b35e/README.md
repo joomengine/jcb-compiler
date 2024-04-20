@@ -61,7 +61,7 @@ class Builders << (F,LightGreen) >> #RoyalBlue {
   # CMSApplication $app
   + __construct(Config $config, Power $power, ...)
   + set(string $langLabel, string $langView, ...) : void
-  - normalizeDatabaseValues(string $nameSingleCode, string $name) : ?array
+  - normalizeDatabaseValues(string $nameSingleCode, string $name, ...) : ?array
 }
 
 note right of Builders::__construct
@@ -147,6 +147,12 @@ to types based on the 'length' field. It removes unnecessary fields from the res
 
   since: 3.2.1
   return: ?array
+  
+  arguments:
+    string $nameSingleCode
+    string $name
+    string $uniquekey
+    string $iskey
 end note
  
 @enduml
