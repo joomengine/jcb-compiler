@@ -1,4 +1,11 @@
 	/**
+	 * Is String Values
+	 *
+	 * @since 3.2.0
+	 */
+	use IsString;
+
+	/**
 	 * Constructor.
 	 *
 	 * @since 3.2.0
