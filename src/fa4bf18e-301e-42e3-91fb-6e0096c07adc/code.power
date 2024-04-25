@@ -260,6 +260,24 @@
 	}
 
 	/**
+	 * get component autoloader path
+	 *
+	 * @return  string  The component autoloader path
+	 * @since 3.2.0
+	 */
+	protected function getComponentautoloaderpath(): string
+	{
+		if ($this->joomla_version == 3)
+		{
+			return 'helpers/powerloader.php';
+		}
+		else
+		{
+			return 'src/Helper/PowerloaderHelper.php';
+		}
+	}
+
+	/**
 	 * get add namespace prefix
 	 *
 	 * @return  bool  The add namespace prefix switch

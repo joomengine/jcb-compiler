@@ -16,13 +16,10 @@ class Autoloader  #Gold {
   # Content $content
   # string $helper
   + __construct(Power $power, Config $config, ...)
+  + setFiles() : void
   + set() : void
-  - loadPluginAutoloader() : bool
-  - loadHelperAutoloader() : bool
-  - loadSiteAutoloader() : bool
-  - getPluginAutoloader() : string
   - getHelperAutoloader() : string
-  - getBLockSiteLoading() : ?string
+  - getAutoloaderFile(int $tabSpace, string $area = 'JPATH_ADMINISTRATOR') : ?string
   - getAutoloader(int $tabSpace) : ?string
   - getComposer(int $tabSpace) : ?string
 }
@@ -38,39 +35,18 @@ note right of Autoloader::__construct
     Content $content
 end note
 
-note left of Autoloader::set
+note right of Autoloader::setFiles
   Set the autoloader into the active content array
 
   since: 3.2.0
   return: void
 end note
 
-note right of Autoloader::loadPluginAutoloader
-  Should we load the plugin autoloader
+note right of Autoloader::set
+  Set the autoloader into the active content array
 
   since: 3.2.0
-  return: bool
-end note
-
-note left of Autoloader::loadHelperAutoloader
-  Should we load the helper class autoloader
-
-  since: 3.2.0
-  return: bool
-end note
-
-note right of Autoloader::loadSiteAutoloader
-  Should we load the autoloader in site area
-
-  since: 3.2.0
-  return: bool
-end note
-
-note left of Autoloader::getPluginAutoloader
-  Get helper autoloader code
-
-  since: 3.2.0
-  return: string
+  return: void
 end note
 
 note right of Autoloader::getHelperAutoloader
@@ -80,11 +56,10 @@ note right of Autoloader::getHelperAutoloader
   return: string
 end note
 
-note left of Autoloader::getBLockSiteLoading
-  Get code that will block the plugin from loading
-the autoloader in the site area
+note right of Autoloader::getAutoloaderFile
+  Get autoloader file
 
-  since: 3.2.0
+  since: 3.2.1
   return: ?string
 end note
 
@@ -95,7 +70,7 @@ note right of Autoloader::getAutoloader
   return: ?string
 end note
 
-note left of Autoloader::getComposer
+note right of Autoloader::getComposer
   Get the composer autoloader routine
 
   since: 3.2.0
