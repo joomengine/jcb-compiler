@@ -111,7 +111,7 @@ class Autoloader
 		// make sure we only load this once
 		if (ArrayHelper::check($this->power->namespace) && !$this->content->isString('ADMIN_POWER_HELPER'))
 		{
-			/** *********************** IMPORTANT SORT NOTICE ***********************************************
+			/* ********************** IMPORTANT SORT NOTICE *****************************************
 			 *   make sure the name space values are sorted from the longest string to the shortest
 			 *   so that the search do not mistakenly match a shorter namespace before a longer one
 			 *   that has the same short namespace for example:
@@ -186,8 +186,8 @@ class Autoloader
 		// we start building the autoloaded file loader
 		$autoload_file = [];
 		$autoload_file[] = Indent::_($tabSpace) . '//'
-			. Line::_(__Line__, __Class__) . ' The power autoloader for this project admin area.';
-		$autoload_file[] = Indent::_($tabSpace) . "\$power_autoloader = $area . '/componenents/com_"
+			. Line::_(__Line__, __Class__) . " The power autoloader for this project ($area) area.";
+		$autoload_file[] = Indent::_($tabSpace) . "\$power_autoloader = $area . '/components/com_"
 			. $this->config->get('component_code_name', 'ERROR') . '/'
 			. $this->config->get('component_autoloader_path', 'ERROR') . "';";
 		$autoload_file[] = Indent::_($tabSpace) . 'if (file_exists($power_autoloader))';
