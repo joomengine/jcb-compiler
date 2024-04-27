@@ -620,9 +620,12 @@
 		return [
 			'jjt' => 'Joomla' . '.JText._(',
 			'js' => 'Text:' . ':script(',
-			't' => 'Text:' . ':_(',        // namespace and J version will be found
+			't' => 'Text:' . ':_(',            // namespace and J version will be found
 			'ts' => 'Text:' . ':sprintf(',  // namespace and J version will be found
-			'jt' => 'JustTEXT:' . ':_('
+			'jt' => 'JustTEXT:' . ':_(',
+			'spjs' => 'Joomla__' . '_ba6326ef_cb79_4348_80f4_ab086082e3c5___Power:' . ':script(',    // the joomla power version
+			'spt' => 'Joomla__' . '_ba6326ef_cb79_4348_80f4_ab086082e3c5___Power:' . ':_(',            // the joomla power version
+			'spts' => 'Joomla__' . '_ba6326ef_cb79_4348_80f4_ab086082e3c5___Power:' . ':sprintf('   // the joomla power version
 		];
 	}
 
