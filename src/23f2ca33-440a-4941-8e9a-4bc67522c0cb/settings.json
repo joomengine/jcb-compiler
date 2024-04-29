@@ -15,6 +15,10 @@
             "as": "Power"
         },
         "use_selection1": {
+            "use": "a6052fe9-0d2b-4b36-b3e7-03b47c483542",
+            "as": "JoomlaPower"
+        },
+        "use_selection2": {
             "use": "152c8793-8b75-4715-996a-257b9f65451c",
             "as": "default"
         }

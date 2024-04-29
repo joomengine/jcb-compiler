@@ -12,22 +12,24 @@
 @startuml
 class FileInjector << (F,LightGreen) >> #RoyalBlue {
   # Power $power
-  + __construct(Power $power)
+  # JoomlaPower $joomla
+  + __construct(Power $power, JoomlaPower $joomla)
   + add(string $file, string $data, ...) : void
   - openFileWithLock(string $file) : resource
   - processFile(resource $actual_file, resource $temp_file, ...) : void
   - truncateIfNeeded(resource $actual_file, string $data, ...) : void
   - copyRemainingData(resource $actual_file, resource $temp_file, ...) : void
   - injectSuperPowers(resource $actual_file) : void
+  - injectJoomlaPowers(resource $actual_file) : void
 }
 
 note right of FileInjector::__construct
   Constructor.
 
-  since: 3.2.0
+  since: 3.2.1
 end note
 
-note right of FileInjector::add
+note left of FileInjector::add
   Inserts or replaces data in a file at a specific position.
 
   since: 3.2.0
@@ -47,7 +49,7 @@ note right of FileInjector::openFileWithLock
   return: resource
 end note
 
-note right of FileInjector::processFile
+note left of FileInjector::processFile
   Processes the file for data insertion and copying the remaining data.
 
   since: 3.2.0
@@ -73,7 +75,7 @@ note right of FileInjector::truncateIfNeeded
     int $position
 end note
 
-note right of FileInjector::copyRemainingData
+note left of FileInjector::copyRemainingData
   Copies the remaining data from the temporary stream to the actual file.
 
   since: 3.2.0
@@ -90,6 +92,13 @@ note right of FileInjector::injectSuperPowers
   Injects super powers into the file content, if found, and updates the file.
 
   since: 3.2.0
+  return: void
+end note
+
+note left of FileInjector::injectJoomlaPowers
+  Injects Joomla powers into the file content, if found, and updates the file.
+
+  since: 3.2.1
   return: void
 end note
  
