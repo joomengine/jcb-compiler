@@ -12,6 +12,8 @@
 ```uml
 @startuml
 class DatabaseKeys << (F,LightGreen) >> #RoyalBlue {
+  # bool $addAsArray
+  # bool $uniqueArray
 }
  
 @enduml
