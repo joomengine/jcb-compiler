@@ -12,14 +12,22 @@
 ```uml
 @startuml
 class Grep << (F,LightGreen) >> #RoyalBlue {
-  - getLocal(object $path, string $guid) : ?object
+  # array $order
+  # remoteIndex(object $path) : void
+  - searchRemote(string $guid) : ?object
   - getRemote(object $path, string $guid) : ?object
-  - localIndex(object $path) : void
-  - remoteIndex(object $path) : void
+  - loadRemoteFile(string $owner, string $repo, ...) : mixed
 }
 
-note right of Grep::getLocal
-  Get a local power
+note right of Grep::remoteIndex
+  Load the remote repository index of powers
+
+  since: 3.2.0
+  return: void
+end note
+
+note right of Grep::searchRemote
+  Search for a remote power
 
   since: 3.2.0
   return: ?object
@@ -32,18 +40,17 @@ note right of Grep::getRemote
   return: ?object
 end note
 
-note right of Grep::localIndex
-  Load the local repository index of powers
+note right of Grep::loadRemoteFile
+  Load the remote file
 
   since: 3.2.0
-  return: void
-end note
-
-note right of Grep::remoteIndex
-  Load the remote repository index of powers
-
-  since: 3.2.0
-  return: void
+  return: mixed
+  
+  arguments:
+    string $owner
+    string $repo
+    string $path
+    ?string $branch
 end note
  
 @enduml

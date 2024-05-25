@@ -6,56 +6,29 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Grep (Details)
+# final class Grep (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power**
+> extends: **ExtendingGrep**
 ```uml
 @startuml
-class Grep  #Gold {
-  + ?string $path
-  + ?array $paths
-  # Contents $contents
-  # CMSApplication $app
-  + __construct(string $path, array $paths, ...)
-  + getRemotePowersGuid() : ?array
-  + get(string $guid, array $order = ['local', 'remote']) : ?object
+class Grep << (F,LightGreen) >> #RoyalBlue {
+  # remoteIndex(object $path) : void
   - searchLocal(string $guid) : ?object
   - searchRemote(string $guid) : ?object
   - getLocal(object $path, string $guid) : ?object
   - getRemote(object $path, string $guid) : ?object
-  - init() : void
-  - localIndex(object $path) : void
-  - remoteIndex(object $path) : void
   - loadRemoteFile(string $owner, string $repo, ...) : mixed
-  - getFunctionName(string $name) : ?string
+  - localIndex(object $path) : void
 }
 
-note right of Grep::__construct
-  Constructor.
+note right of Grep::remoteIndex
+  Load the remote repository index of powers
 
   since: 3.2.0
-  
-  arguments:
-    string $path
-    array $paths
-    Contents $contents
-    ?CMSApplication $app = null
+  return: void
 end note
 
-note left of Grep::getRemotePowersGuid
-  Get all remote powers GUID's
-
-  since: 3.2.0
-  return: ?array
-end note
-
-note right of Grep::get
-  Get a power
-
-  since: 3.2.0
-  return: ?object
-end note
-
-note left of Grep::searchLocal
+note right of Grep::searchLocal
   Search for a local power
 
   since: 3.2.0
@@ -69,7 +42,7 @@ note right of Grep::searchRemote
   return: ?object
 end note
 
-note left of Grep::getLocal
+note right of Grep::getLocal
   Get a local power
 
   since: 3.2.0
@@ -81,27 +54,6 @@ note right of Grep::getRemote
 
   since: 3.2.0
   return: ?object
-end note
-
-note left of Grep::init
-  Set path details
-
-  since: 3.2.0
-  return: void
-end note
-
-note right of Grep::localIndex
-  Load the local repository index of powers
-
-  since: 3.2.0
-  return: void
-end note
-
-note left of Grep::remoteIndex
-  Load the remote repository index of powers
-
-  since: 3.2.0
-  return: void
 end note
 
 note right of Grep::loadRemoteFile
@@ -117,11 +69,11 @@ note right of Grep::loadRemoteFile
     ?string $branch
 end note
 
-note left of Grep::getFunctionName
-  Get function name
+note right of Grep::localIndex
+  Load the local repository index of powers
 
   since: 3.2.0
-  return: ?string
+  return: void
 end note
  
 @enduml

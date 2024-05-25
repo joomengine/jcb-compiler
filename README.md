@@ -54,8 +54,8 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **abstract class Factory** | [Details](src/a5734b9e-a72d-494c-bc72-c3bc7506015f) | [Code](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/code.php) | [Settings](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/settings.json) | Super__a5734b9e_a72d_494c_bc72_c3bc7506015f__Power
   - **final class Generator** | [Details](src/505801ac-d3e2-44c6-a300-9a57a96170c6) | [Code](src/505801ac-d3e2-44c6-a300-9a57a96170c6/code.php) | [Settings](src/505801ac-d3e2-44c6-a300-9a57a96170c6/settings.json) | Super__505801ac_d3e2_44c6_a300_9a57a96170c6__Power
+  - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | Super__6784dd52_0909_451a_a872_9a942a023c68__Power
   - **class Config** | [Details](src/be4ccfae-65a9-401e-bdbe-637d8c226954) | [Code](src/be4ccfae-65a9-401e-bdbe-637d8c226954/code.php) | [Settings](src/be4ccfae-65a9-401e-bdbe-637d8c226954/settings.json) | Super__be4ccfae_65a9_401e_bdbe_637d8c226954__Power
-  - **class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | Super__6784dd52_0909_451a_a872_9a942a023c68__Power
   - **class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | Super__3ab0eba9_f37b_4b37_aec1_2e78067f2aff__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Service](#vdm-joomla-componentbuilder-service)
 

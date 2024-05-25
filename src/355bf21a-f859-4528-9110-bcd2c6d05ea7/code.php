@@ -12,10 +12,11 @@
 namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 
+use Joomla\CMS\Language\Text;
 use VDM\Joomla\Utilities\FileHelper;
 use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Componentbuilder\Interfaces\GrepInterface;
-use VDM\Joomla\Componentbuilder\Power\Grep as ExtendingGrep;
+use VDM\Joomla\Interfaces\GrepInterface;
+use VDM\Joomla\Abstraction\Grep as ExtendingGrep;
 
 
 /**
@@ -31,30 +32,65 @@ use VDM\Joomla\Componentbuilder\Power\Grep as ExtendingGrep;
 final class Grep extends ExtendingGrep implements GrepInterface
 {
 	/**
-	 * Get a local power
+	 * Order of global search
+	 *
+	 * @var    array
+	 * @since 3.2.1
+	 **/
+	protected array $order = ['remote'];
+
+	/**
+	 * Load the remote repository index of powers
 	 *
 	 * @param object    $path    The repository path details
+	 *
+	 * @return void
+	 * @since 3.2.0
+	 */
+	protected function remoteIndex(object &$path): void
+	{
+		if (isset($path->index))
+		{
+			return;
+		}
+
+		try
+		{
+			$path->index = $this->contents->get($path->owner, $path->repo, 'joomla-powers.json', $path->branch);
+		}
+		catch (\Exception $e)
+		{
+			$this->app->enqueueMessage(
+				Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
+				'Error'
+			);
+
+			$path->index = null;
+		}
+	}
+
+	/**
+	 * Search for a remote power
+	 *
 	 * @param string    $guid    The global unique id of the power
 	 *
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function getLocal(object $path, string $guid): ?object
+	private function searchRemote(string $guid): ?object
 	{
-		if (empty($path->local->{$guid}->settings))
+		// we can only search if we have paths
+		if ($this->path && $this->paths)
 		{
-			return null;
-		}
-
-		// get the settings
-		if (($settings = FileHelper::getContent($path->full_path . '/' . $path->local->{$guid}->settings, null)) !== null &&
-			JsonHelper::check($settings))
-		{
-			$power = json_decode($settings);
-
-			if (isset($power->guid))
+			foreach ($this->paths as $path)
 			{
-				return $power;
+				// get local index
+				$this->remoteIndex($path);
+
+				if (!empty($path->index) && isset($path->index->{$guid}))
+				{
+					return $this->getRemote($path, $guid);
+				}
 			}
 		}
 
@@ -81,6 +117,15 @@ final class Grep extends ExtendingGrep implements GrepInterface
 		if (($power = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->settings, $path->branch)) !== null &&
 			isset($power->guid))
 		{
+			// set the git details in params
+			$power->params = (object) [
+				'git' => [
+					'owner' => $path->owner,
+					'repo' => $path->repo,
+					'branch' => $path->branch
+				]
+			];
+
 			return $power;
 		}
 
@@ -88,59 +133,33 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	}
 
 	/**
-	 * Load the local repository index of powers
+	 * Load the remote file
 	 *
-	 * @param object    $path    The repository path details
+	 * @param string         $owner    The repository owner
+	 * @param string         $repo     The repository name
+	 * @param string         $path     The repository path to file
+	 * @param string|null    $branch   The repository branch name
 	 *
-	 * @return void
+	 * @return mixed
 	 * @since 3.2.0
 	 */
-	private function localIndex(object &$path)
+	private function loadRemoteFile(string $owner, string $repo, string $path, ?string $branch)
 	{
-		if (isset($path->local) || !isset($path->full_path))
-		{
-			return;
-		}
-
-		if (($content = FileHelper::getContent($path->full_path . '/joomla-powers.json', null)) !== null &&
-			JsonHelper::check($content))
-		{
-			$path->local = json_decode($content);
-
-			return;
-		}
-
-		$path->local = null;
-	}
-
-	/**
-	 * Load the remote repository index of powers
-	 *
-	 * @param object    $path    The repository path details
-	 *
-	 * @return void
-	 * @since 3.2.0
-	 */
-	private function remoteIndex(object &$path)
-	{
-		if (isset($path->index))
-		{
-			return;
-		}
-
 		try
 		{
-			$path->index = $this->contents->get($path->owner, $path->repo, 'joomla-powers.json', $path->branch);
+			$data = $this->contents->get($owner, $repo, $path, $branch);
 		}
 		catch (\Exception $e)
 		{
 			$this->app->enqueueMessage(
-				Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
+				Text::sprintf('COM_COMPONENTBUILDER_PFILE_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path, $e->getMessage()),
 				'Error'
 			);
 
-			$path->index = null;
+			return null;
 		}
+
+		return $data;
 	}
 }
 

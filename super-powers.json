@@ -1662,7 +1662,7 @@
     },
     "6784dd52-0909-451a-a872-9a942a023c68": {
         "name": "Grep",
-        "type": "class",
+        "type": "final class",
         "namespace": "VDM\\Joomla\\Componentbuilder\\Power",
         "code": "src\/6784dd52-0909-451a-a872-9a942a023c68\/code.php",
         "power": "src\/6784dd52-0909-451a-a872-9a942a023c68\/code.power",
