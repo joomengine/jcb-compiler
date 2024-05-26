@@ -28,13 +28,13 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldGroupControl;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ExtensionCustomFields;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\HeaderInterface as Header;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreFieldInterface as CoreField;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\String\ClassfunctionHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\String\ClassfunctionHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;
-use VDM\Joomla\Utilities\String\FieldHelper;
+use VastDevelopmentMethod\Joomla\Utilities\String\FieldHelper;
 
 
 /**

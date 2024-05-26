@@ -17,9 +17,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomTabs as BuilderCustomTabs
 use VDM\Joomla\Componentbuilder\Compiler\Language;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Model\CustomtabsInterface;
 

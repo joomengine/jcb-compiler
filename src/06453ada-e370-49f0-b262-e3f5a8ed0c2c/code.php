@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;

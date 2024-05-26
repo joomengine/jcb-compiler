@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
-use VDM\Joomla\Abstraction\Registry;
+use VastDevelopmentMethod\Joomla\Abstraction\Registry;
 
 
 /**

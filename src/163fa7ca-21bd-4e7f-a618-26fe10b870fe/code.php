@@ -15,7 +15,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFive;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Permission;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;

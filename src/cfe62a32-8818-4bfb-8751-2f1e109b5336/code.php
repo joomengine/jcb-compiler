@@ -18,8 +18,8 @@ use Joomla\CMS\Application\CMSApplication;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
 use VDM\Joomla\Componentbuilder\Compiler\Component;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 
 
 /**

@@ -21,9 +21,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Component;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Paths;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Dynamicpath;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Pathfix;
-use VDM\Joomla\Utilities\FileHelper;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component\SettingsInterface;
 
 

@@ -14,13 +14,13 @@ namespace VDM\Joomla\Componentbuilder\Power;
 
 use Joomla\DI\Container;
 use VDM\Joomla\Componentbuilder\Power\Service\Power;
-use VDM\Joomla\Componentbuilder\Service\Database;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Database;
 use VDM\Joomla\Componentbuilder\Power\Service\Database as PowerDatabase;
 use VDM\Joomla\Componentbuilder\Power\Service\Generator;
-use VDM\Joomla\Componentbuilder\Service\Gitea;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Gitea;
 use VDM\Joomla\Componentbuilder\Power\Service\Gitea as GiteaPower;
-use VDM\Joomla\Gitea\Service\Utilities as GiteaUtilities;
-use VDM\Joomla\Interfaces\FactoryInterface;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Utilities as GiteaUtilities;
+use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
 
 
 /**

@@ -20,11 +20,11 @@ use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
 use VDM\Joomla\Componentbuilder\Compiler\Language;
 use VDM\Joomla\Componentbuilder\Compiler\Field\Groups as FieldGroups;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\GetHelper;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\Base64Helper;
-use VDM\Joomla\Utilities\String\FieldHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\Base64Helper;
+use VastDevelopmentMethod\Joomla\Utilities\String\FieldHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\FieldHelper as UtilitiesFieldHelper;
 
 

@@ -13,9 +13,9 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
 use Joomla\DI\Container;
-use VDM\Joomla\Componentbuilder\Service\Crypt;
-use VDM\Joomla\Componentbuilder\Service\Server;
-use VDM\Joomla\Componentbuilder\Service\Database;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Crypt;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Server;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Database;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Model;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Event;
@@ -42,18 +42,18 @@ use VDM\Joomla\Componentbuilder\Compiler\Service\BuilderLZ;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Creator;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureController;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureModel;
-use VDM\Joomla\Componentbuilder\Service\Gitea;
-use VDM\Joomla\Gitea\Service\Utilities as GiteaUtilities;
-use VDM\Joomla\Gitea\Service\Settings as GiteaSettings;
-use VDM\Joomla\Gitea\Service\Organization as GiteaOrg;
-use VDM\Joomla\Gitea\Service\User as GiteaUser;
-use VDM\Joomla\Gitea\Service\Repository as GiteaRepo;
-use VDM\Joomla\Gitea\Service\Package as GiteaPackage;
-use VDM\Joomla\Gitea\Service\Issue as GiteaIssue;
-use VDM\Joomla\Gitea\Service\Notifications as GiteNotifi;
-use VDM\Joomla\Gitea\Service\Miscellaneous as GiteaMisc;
-use VDM\Joomla\Gitea\Service\Admin as GiteaAdmin;
-use VDM\Joomla\Interfaces\FactoryInterface;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Gitea;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Utilities as GiteaUtilities;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Settings as GiteaSettings;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Organization as GiteaOrg;
+use VastDevelopmentMethod\Joomla\Gitea\Service\User as GiteaUser;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Repository as GiteaRepo;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Package as GiteaPackage;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Issue as GiteaIssue;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Notifications as GiteNotifi;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Miscellaneous as GiteaMisc;
+use VastDevelopmentMethod\Joomla\Gitea\Service\Admin as GiteaAdmin;
+use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
 
 
 /**

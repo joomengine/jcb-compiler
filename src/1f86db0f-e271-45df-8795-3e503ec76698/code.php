@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Power\Database;
 
 
-use VDM\Joomla\Interfaces\ModelInterface as Model;
-use VDM\Joomla\Database\Load as Database;
+use VastDevelopmentMethod\Joomla\Interfaces\ModelInterface as Model;
+use VastDevelopmentMethod\Joomla\Database\Load as Database;
 use VDM\Joomla\Componentbuilder\Power\Database\LoadInterface;
 
 

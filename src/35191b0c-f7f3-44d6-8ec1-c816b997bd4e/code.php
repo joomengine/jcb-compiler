@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Model;
 
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\MysqlTableSetting;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 
 
 /**

@@ -19,8 +19,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterConstructorDefault as Def
 use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterConstructorManual as ManualConstructor;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterMethodsDefault as DefaultMethods;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\RouterMethodsManual as ManualMethods;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 
 
 /**

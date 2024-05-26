@@ -12,11 +12,11 @@
 namespace VDM\Joomla\Componentbuilder\Power\Model;
 
 
-use VDM\Joomla\Abstraction\Model as AbstractionModel;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\ObjectHelper;
-use VDM\Joomla\Interfaces\ModelInterface;
+use VastDevelopmentMethod\Joomla\Abstraction\Model as AbstractionModel;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
+use VastDevelopmentMethod\Joomla\Interfaces\ModelInterface;
 
 
 /**

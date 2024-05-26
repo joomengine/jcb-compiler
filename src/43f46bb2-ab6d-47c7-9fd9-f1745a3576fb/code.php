@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFour;
 
 
 use Joomla\CMS\Filesystem\Folder;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field\CoreRuleInterface;
 
 

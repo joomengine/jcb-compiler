@@ -14,8 +14,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Model;
 
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Dispenser;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\Component\Helper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
 
 
 /**

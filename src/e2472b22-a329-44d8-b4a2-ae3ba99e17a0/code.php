@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Component\Data;
-use VDM\Joomla\Componentbuilder\Abstraction\BaseRegistry;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Abstraction\BaseRegistry;
 
 
 /**

@@ -13,10 +13,10 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 
 use Joomla\CMS\Language\Text;
-use VDM\Joomla\Utilities\FileHelper;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Interfaces\GrepInterface;
-use VDM\Joomla\Abstraction\Grep as ExtendingGrep;
+use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Interfaces\GrepInterface;
+use VastDevelopmentMethod\Joomla\Abstraction\Grep as ExtendingGrep;
 
 
 /**

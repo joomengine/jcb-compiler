@@ -13,8 +13,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field;
 
 
 use Joomla\CMS\Factory;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
 
 
 /**

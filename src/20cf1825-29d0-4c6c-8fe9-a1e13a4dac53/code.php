@@ -28,13 +28,13 @@ use VDM\Joomla\Componentbuilder\Compiler\Creator\ConfigFieldsetsGooglechart;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\ConfigFieldsetsEmailHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\ConfigFieldsetsEncryption;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\ConfigFieldsetsCustomfield;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
-use VDM\Joomla\Utilities\GetHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;
-use VDM\Joomla\Utilities\MathHelper;
+use VastDevelopmentMethod\Joomla\Utilities\MathHelper;
 
 
 /**

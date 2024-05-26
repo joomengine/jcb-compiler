@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Utilities;
 
 use VDM\Joomla\Componentbuilder\Compiler\Power\Injector as Power;
 use VDM\Joomla\Componentbuilder\Compiler\JoomlaPower\Injector as JoomlaPower;
-use VDM\Joomla\Utilities\MathHelper;
+use VastDevelopmentMethod\Joomla\Utilities\MathHelper;
 
 
 /**

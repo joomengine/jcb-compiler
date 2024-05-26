@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Field\Data;
 use VDM\Joomla\Componentbuilder\Compiler\Field\Name;
 use VDM\Joomla\Componentbuilder\Compiler\Field\TypeName;

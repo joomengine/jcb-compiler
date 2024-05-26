@@ -14,8 +14,8 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 use Joomla\Registry\Registry as JoomlaRegistry;
 use Joomla\CMS\Factory as JoomlaFactory;
-use VDM\Joomla\Utilities\GetHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Abstraction\BaseConfig;
 
 

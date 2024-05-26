@@ -16,9 +16,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Adminview\Data as Admin;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\SiteEditView;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\AdminFilterType;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\ObjectHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
 
 
 /**

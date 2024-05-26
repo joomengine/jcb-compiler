@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaPower;
 
 
-use VDM\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power\ExtractorInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Extractor as ExtendingExtractor;
 

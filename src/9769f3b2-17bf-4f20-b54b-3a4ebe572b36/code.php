@@ -15,9 +15,9 @@ namespace VDM\Joomla\Componentbuilder\Abstraction;
 use Joomla\Registry\Registry as JoomlaRegistry;
 use Joomla\CMS\Factory;
 use Joomla\Input\Input;
-use VDM\Joomla\Utilities\Component\Helper;
-use VDM\Joomla\Utilities\String\ClassfunctionHelper;
-use VDM\Joomla\Abstraction\BaseConfig as ExtendingBaseConfig;
+use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
+use VastDevelopmentMethod\Joomla\Utilities\String\ClassfunctionHelper;
+use VastDevelopmentMethod\Joomla\Abstraction\BaseConfig as ExtendingBaseConfig;
 
 
 /**

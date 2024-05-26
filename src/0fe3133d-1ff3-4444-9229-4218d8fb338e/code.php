@@ -19,7 +19,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\Contributors;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ConfigFieldsets;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ExtensionsParams;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ConfigFieldsetsCustomfield as Customfield;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 
 

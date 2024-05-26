@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
-use VDM\Joomla\Componentbuilder\Abstraction\BaseRegistry;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Abstraction\BaseRegistry;
 
 
 /**

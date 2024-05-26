@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field;
 
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Lists;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 
 
 /**

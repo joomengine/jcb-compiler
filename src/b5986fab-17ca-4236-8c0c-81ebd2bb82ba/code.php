@@ -13,8 +13,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Creator;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Creator\FieldAsString;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 
 
 /**

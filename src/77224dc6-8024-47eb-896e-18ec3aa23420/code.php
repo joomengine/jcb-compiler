@@ -15,7 +15,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaFive;
 use Joomla\CMS\Factory;
 use Joomla\Registry\Registry;
 use Joomla\CMS\Plugin\PluginHelper;
-use VDM\Joomla\Utilities\Component\Helper;
+use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface;
 
 

@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Customcode;
 
 
-use VDM\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;

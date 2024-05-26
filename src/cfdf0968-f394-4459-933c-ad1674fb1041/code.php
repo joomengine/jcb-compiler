@@ -13,8 +13,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Creator;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Request as RequestBuilder;
-use VDM\Joomla\Utilities\GetHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 
 
 /**

@@ -28,9 +28,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Model\Phpcustomview;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Ajaxcustomview;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Custombuttons;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Unique;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
 
 
 /**

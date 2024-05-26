@@ -17,7 +17,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\FootableScripts;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GoogleChart;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GetModule;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\UikitComp;
-use VDM\Joomla\Utilities\Component\Helper;
+use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
 
 
 /**

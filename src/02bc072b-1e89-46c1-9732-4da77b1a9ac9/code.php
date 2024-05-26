@@ -15,7 +15,7 @@ namespace VDM\Joomla\Componentbuilder\Power\Service;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Power\Config;
-use VDM\Joomla\Componentbuilder\Table;
+use VastDevelopmentMethod\Joomla\Componentbuilder\Table;
 use VDM\Joomla\Componentbuilder\Power\Grep;
 use VDM\Joomla\Componentbuilder\Power\Super as Superpower;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Parser;

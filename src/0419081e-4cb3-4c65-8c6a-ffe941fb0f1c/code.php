@@ -21,9 +21,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Power\Repo\Readme as RepoReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repos\Readme as ReposReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface as Event;
-use VDM\Joomla\Utilities\StringHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\ObjectHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
 
 
 /**

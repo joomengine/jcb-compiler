@@ -14,10 +14,10 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Customcode\Extractor;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Filesystem\Folder;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\JsonHelper;
-use VDM\Joomla\Utilities\GetHelper;
-use VDM\Joomla\Utilities\String\ClassfunctionHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VastDevelopmentMethod\Joomla\Utilities\String\ClassfunctionHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;

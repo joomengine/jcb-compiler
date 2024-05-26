@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Field;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Dispenser;
 
 

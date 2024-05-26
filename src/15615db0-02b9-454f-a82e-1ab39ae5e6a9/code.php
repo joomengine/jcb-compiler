@@ -26,9 +26,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionViews;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionFields;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionComponent;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\CustomButtonPermissions;
-use VDM\Joomla\Utilities\MathHelper;
-use VDM\Joomla\Utilities\ArrayHelper;
-use VDM\Joomla\Utilities\StringHelper;
+use VastDevelopmentMethod\Joomla\Utilities\MathHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
 
 
 /**

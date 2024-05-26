@@ -20,7 +20,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Component;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Createdate;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Modifieddate;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Structure;
-use VDM\Joomla\Utilities\ObjectHelper;
+use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
 
 

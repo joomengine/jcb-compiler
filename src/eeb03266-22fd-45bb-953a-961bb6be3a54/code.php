@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Power;
 
 
 use Joomla\CMS\Factory;
-use VDM\Joomla\Utilities\GuidHelper;
+use VastDevelopmentMethod\Joomla\Utilities\GuidHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power\ExtractorInterface;
 
 

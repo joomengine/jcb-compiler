@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Power\Generator;
 
 
-use VDM\Joomla\Interfaces\Registryinterface;
-use VDM\Joomla\Abstraction\Registry;
+use VastDevelopmentMethod\Joomla\Interfaces\Registryinterface;
+use VastDevelopmentMethod\Joomla\Abstraction\Registry;
 
 
 /**
