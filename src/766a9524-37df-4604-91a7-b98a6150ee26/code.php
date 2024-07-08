@@ -23,12 +23,12 @@ use VDM\Joomla\Componentbuilder\Compiler\Language;
 use VDM\Joomla\Componentbuilder\Compiler\Field;
 use VDM\Joomla\Componentbuilder\Compiler\Field\Name as FieldName;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Filesfolders;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\ClassfunctionHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\PluginHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\String\ClassfunctionHelper;
+use VDM\Joomla\Utilities\String\PluginHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
 
 
 /**

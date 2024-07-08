@@ -8,6 +8,7 @@
 ```
 # final class RouterMethodsDefault (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class RouterMethodsDefault << (F,LightGreen) >> #RoyalBlue {

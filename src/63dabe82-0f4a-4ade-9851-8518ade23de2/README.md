@@ -8,6 +8,7 @@
 ```
 # final class Settings (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaThree**
+> extends: ****
 ```uml
 @startuml
 class Settings << (F,LightGreen) >> #RoyalBlue {

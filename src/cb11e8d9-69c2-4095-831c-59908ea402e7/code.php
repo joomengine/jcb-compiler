@@ -25,11 +25,11 @@ use VDM\Joomla\Componentbuilder\Compiler\Model\Filesfolders;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Libraries;
 use VDM\Joomla\Componentbuilder\Compiler\Dynamicget\Data as Dynamicget;
 use VDM\Joomla\Componentbuilder\Compiler\Templatelayout\Data as Templatelayout;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\ClassfunctionHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\String\ClassfunctionHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
 
 
 /**

@@ -8,6 +8,7 @@
 ```
 # class Extractor (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode**
+> extends: ****
 ```uml
 @startuml
 class Extractor  #Gold {

@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "5716c79f-a1c9-4059-9d00-8cccb9f9e061",
     "implements": [
         "-1"
@@ -31,21 +31,10 @@
         "use_selection4": {
             "use": "a6052fe9-0d2b-4b36-b3e7-03b47c483542",
             "as": "default"
-        },
-        "use_selection5": {
-            "use": "9206082e-a3f7-472e-98b2-de90d06cbdcd",
-            "as": "default"
-        },
-        "use_selection6": {
-            "use": "9d53d45e-9b4d-45ec-827b-4916b91c907e",
-            "as": "default"
-        },
-        "use_selection7": {
-            "use": "679473f6-3ea2-49d5-8273-1b29c8f0ad2b",
-            "as": "default"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.JoomlaPower",
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Service.JoomlaPower",
     "description": "Compiler Joomla Power Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",

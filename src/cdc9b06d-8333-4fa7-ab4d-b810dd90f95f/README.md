@@ -8,6 +8,7 @@
 ```
 # class Pathfix (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Pathfix  #Gold {

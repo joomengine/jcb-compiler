@@ -13,9 +13,11 @@ namespace VDM\Joomla\Componentbuilder\Compiler;
 
 
 use Joomla\DI\Container;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Crypt;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Server;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Database;
+use VDM\Joomla\Componentbuilder\Service\Crypt;
+use VDM\Joomla\Componentbuilder\Service\Server;
+use VDM\Joomla\Service\Database;
+use VDM\Joomla\Service\Model as BaseModel;
+use VDM\Joomla\Service\Data;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Model;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Event;
@@ -42,18 +44,19 @@ use VDM\Joomla\Componentbuilder\Compiler\Service\BuilderLZ;
 use VDM\Joomla\Componentbuilder\Compiler\Service\Creator;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureController;
 use VDM\Joomla\Componentbuilder\Compiler\Service\ArchitectureModel;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Gitea;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Utilities as GiteaUtilities;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Settings as GiteaSettings;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Organization as GiteaOrg;
-use VastDevelopmentMethod\Joomla\Gitea\Service\User as GiteaUser;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Repository as GiteaRepo;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Package as GiteaPackage;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Issue as GiteaIssue;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Notifications as GiteNotifi;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Miscellaneous as GiteaMisc;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Admin as GiteaAdmin;
-use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
+use VDM\Joomla\Componentbuilder\Service\Gitea;
+use VDM\Joomla\Gitea\Service\Utilities as GiteaUtilities;
+use VDM\Joomla\Gitea\Service\Settings as GiteaSettings;
+use VDM\Joomla\Gitea\Service\Organization as GiteaOrg;
+use VDM\Joomla\Gitea\Service\User as GiteaUser;
+use VDM\Joomla\Gitea\Service\Repository as GiteaRepo;
+use VDM\Joomla\Gitea\Service\Package as GiteaPackage;
+use VDM\Joomla\Gitea\Service\Issue as GiteaIssue;
+use VDM\Joomla\Gitea\Service\Notifications as GiteNotifi;
+use VDM\Joomla\Gitea\Service\Miscellaneous as GiteaMisc;
+use VDM\Joomla\Gitea\Service\Admin as GiteaAdmin;
+use VDM\Joomla\Interfaces\FactoryInterface;
+use VDM\Joomla\Abstraction\Factory as ExtendingFactory;
 
 
 /**
@@ -61,16 +64,8 @@ use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
  * 
  * @since 3.2.0
  */
-abstract class Factory implements FactoryInterface
+abstract class Factory extends ExtendingFactory implements FactoryInterface
 {
-	/**
-	 * Global Compiler Container
-	 *
-	 * @var     Container
-	 * @since 3.2.0
-	 **/
-	protected static ?Container $container = null;
-
 	/**
 	 * Current Joomla Version Being Build
 	 *
@@ -78,19 +73,6 @@ abstract class Factory implements FactoryInterface
 	 * @since 3.2.0
 	 **/
 	protected static int $JoomlaVersion;
-
-	/**
-	 * Get any class from the compiler container
-	 *
-	 * @param   string  $key  The container class key
-	 *
-	 * @return  mixed
-	 * @since 3.2.0
-	 */
-	public static function _($key)
-	{
-		return self::getContainer()->get($key);
-	}
 
 	/**
 	 * Get array of all keys in container
@@ -122,22 +104,6 @@ abstract class Factory implements FactoryInterface
 	}
 
 	/**
-	 * Get the global compiler container
-	 *
-	 * @return  Container
-	 * @since 3.2.0
-	 */
-	public static function getContainer(): Container
-	{
-		if (!self::$container)
-		{
-			self::$container = self::createContainer();
-		}
-
-		return self::$container;
-	}
-
-	/**
 	 * Create a container object
 	 *
 	 * @return  Container
@@ -149,6 +115,8 @@ abstract class Factory implements FactoryInterface
 			->registerServiceProvider(new Crypt())
 			->registerServiceProvider(new Server())
 			->registerServiceProvider(new Database())
+			->registerServiceProvider(new BaseModel())
+			->registerServiceProvider(new Data())
 			->registerServiceProvider(new Model())
 			->registerServiceProvider(new Compiler())
 			->registerServiceProvider(new Event())

@@ -8,6 +8,7 @@
 ```
 # final class CoreField (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class CoreField << (F,LightGreen) >> #RoyalBlue {

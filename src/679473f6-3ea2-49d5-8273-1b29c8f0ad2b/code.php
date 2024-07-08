@@ -9,17 +9,17 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
+namespace VDM\Joomla\Componentbuilder\JoomlaPower\Data;
 
 
-use VDM\Joomla\Componentbuilder\Interfaces\Database\UpdateInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Update as ExtendingUpdate;
+use VDM\Joomla\Interfaces\Data\UpdateInterface;
+use VDM\Joomla\Abstraction\Data\Update as ExtendingUpdate;
 
 
 /**
- * Joomla Power Database Update
+ * Joomla Power Data Update (GUID)
  * 
- * @since 3.2.0
+ * @since 3.2.2
  */
 final class Update extends ExtendingUpdate implements UpdateInterface
 {

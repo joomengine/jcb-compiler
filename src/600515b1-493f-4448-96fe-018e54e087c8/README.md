@@ -8,6 +8,7 @@
 ```
 # interface CanEditStateInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model**
+> extends: ****
 ```uml
 @startuml
 interface CanEditStateInterface  #Lavender {

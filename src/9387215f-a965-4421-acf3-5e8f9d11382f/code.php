@@ -12,11 +12,11 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Field;
 
 
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\TypeHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\FieldHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\String\TypeHelper;
+use VDM\Joomla\Utilities\String\FieldHelper;
+use VDM\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Field\UniqueName;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CategoryOtherName;

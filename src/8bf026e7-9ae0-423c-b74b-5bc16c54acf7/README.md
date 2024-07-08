@@ -8,6 +8,7 @@
 ```
 # final class CustomButtonPermissions (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class CustomButtonPermissions << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # final class FieldAsString (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class FieldAsString << (F,LightGreen) >> #RoyalBlue {

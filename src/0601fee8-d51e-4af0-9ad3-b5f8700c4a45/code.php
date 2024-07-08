@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service;
 
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Server\Model\Load as ServerLoad;
+use VDM\Joomla\Componentbuilder\Server\Model\Load as ServerLoad;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Joomlaplugins;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Joomlamodules;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Historycomponent;

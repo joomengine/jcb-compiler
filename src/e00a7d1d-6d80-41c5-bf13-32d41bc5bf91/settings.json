@@ -1,7 +1,7 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "e00a7d1d-6d80-41c5-bf13-32d41bc5bf91",
     "implements": null,
     "load_selection": null,
@@ -10,7 +10,8 @@
     "system_name": "JCB.Interfaces.Architecture.Model.CanDelete",
     "type": "interface",
     "use_selection": null,
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Interfaces.Architecture.Model.CanDeleteInterface",
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Interfaces.Architecture.Model.CanDeleteInterface",
     "description": "Model Can Delete Interface\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",

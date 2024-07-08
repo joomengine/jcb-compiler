@@ -8,6 +8,7 @@
 ```
 # final class Builders (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class Builders << (F,LightGreen) >> #RoyalBlue {

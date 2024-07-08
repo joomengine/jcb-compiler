@@ -8,6 +8,7 @@
 ```
 # class Tabs (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Tabs  #Gold {

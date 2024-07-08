@@ -8,6 +8,7 @@
 ```
 # class External (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode**
+> extends: ****
 ```uml
 @startuml
 class External  #Gold {

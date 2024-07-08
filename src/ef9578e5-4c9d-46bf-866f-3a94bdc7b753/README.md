@@ -8,6 +8,7 @@
 ```
 # final class Data (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
+> extends: ****
 ```uml
 @startuml
 class Data << (F,LightGreen) >> #RoyalBlue {

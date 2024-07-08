@@ -8,6 +8,7 @@
 ```
 # interface CoreFieldInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field**
+> extends: ****
 ```uml
 @startuml
 interface CoreFieldInterface  #Lavender {

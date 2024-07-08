@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\JoomlaPower\Model;
 
 
-use VastDevelopmentMethod\Joomla\Interfaces\ModelInterface;
+use VDM\Joomla\Interfaces\ModelInterface;
 use VDM\Joomla\Componentbuilder\Power\Model\Load as ExtendingLoad;
 
 

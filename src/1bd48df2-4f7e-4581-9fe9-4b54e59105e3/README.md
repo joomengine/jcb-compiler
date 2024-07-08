@@ -8,6 +8,7 @@
 ```
 # class Gui (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode**
+> extends: ****
 ```uml
 @startuml
 class Gui  #Gold {

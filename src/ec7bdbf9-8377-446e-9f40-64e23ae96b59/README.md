@@ -8,6 +8,7 @@
 ```
 # final class RouterConstructorManual (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class RouterConstructorManual << (F,LightGreen) >> #RoyalBlue {

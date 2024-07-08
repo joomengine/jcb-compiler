@@ -13,10 +13,10 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 
 use Joomla\CMS\Language\Text;
-use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Interfaces\GrepInterface;
-use VastDevelopmentMethod\Joomla\Abstraction\Grep as ExtendingGrep;
+use VDM\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Interfaces\GrepInterface;
+use VDM\Joomla\Abstraction\Grep as ExtendingGrep;
 
 
 /**
@@ -54,18 +54,36 @@ final class Grep extends ExtendingGrep implements GrepInterface
 			return;
 		}
 
+		$path->index = null;
+
+		// update the branch
+		$branch_field = $this->getBranchField();
+		$branch = $path->{$branch_field} ?? $path->read_branch ?? 'master';
+
 		try
 		{
-			$path->index = $this->contents->get($path->owner, $path->repo, 'joomla-powers.json', $path->branch);
+			$this->contents->load_($path->base ?? null, $path->token ?? null);
+			$source = $this->contents->metadata($path->organisation, $path->repository, 'src', $branch);
+			if ($source && is_array($source))
+			{
+				$path->index = new \stdClass();
+				foreach ($source as $index)
+				{
+					if (is_object($index) && isset($index->name))
+					{
+						$path->index->{$index->name} = $index;
+					}
+				}
+			}
+
+			$this->contents->reset_();
 		}
 		catch (\Exception $e)
 		{
 			$this->app->enqueueMessage(
-				Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
+				Text::sprintf('COM_COMPONENTBUILDER_PJOOMLA_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
 				'Error'
 			);
-
-			$path->index = null;
 		}
 	}
 
@@ -77,10 +95,10 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function searchRemote(string $guid): ?object
+	protected function searchRemote(string $guid): ?object
 	{
 		// we can only search if we have paths
-		if ($this->path && $this->paths)
+		if (is_array($this->paths))
 		{
 			foreach ($this->paths as $path)
 			{
@@ -98,7 +116,7 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	}
 
 	/**
-	 * Get a remote power
+	 * Get a remote joomla power
 	 *
 	 * @param object    $path    The repository path details
 	 * @param string    $guid    The global unique id of the power
@@ -106,48 +124,65 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function getRemote(object $path, string $guid): ?object
+	protected function getRemote(object $path, string $guid): ?object
 	{
-		if (empty($path->index->{$guid}->settings))
+		$power = null;
+		if (empty($path->index->{$guid}->path))
 		{
-			return null;
-		}
-
-		// get the settings
-		if (($power = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->settings, $path->branch)) !== null &&
-			isset($power->guid))
-		{
-			// set the git details in params
-			$power->params = (object) [
-				'git' => [
-					'owner' => $path->owner,
-					'repo' => $path->repo,
-					'branch' => $path->branch
-				]
-			];
-
 			return $power;
 		}
 
-		return null;
+		// get the branch name
+		$branch_field = $this->getBranchField();
+		$branch = $path->{$branch_field} ?? $path->read_branch ?? 'master';
+
+		// get the settings
+		$this->contents->load_($path->base ?? null, $path->token ?? null);
+		if (($power = $this->loadRemoteFile($path->organisation, $path->repository, $path->index->{$guid}->path . '/item.json', $branch)) !== null &&
+			isset($power->guid))
+		{
+			// set the git details in params
+			$path_guid = $path->guid ?? null;
+			if ($path_guid !== null)
+			{
+				if (($meta = $this->contents->metadata($path->organisation, $path->repository, $path->index->{$guid}->path . '/item.json', $branch)) !== null &&
+					isset($meta->sha))
+				{
+					if (isset($power->params) && is_object($power->params) &&
+						isset($power->params->source) && is_array($power->params->source))
+					{
+						$power->params->source[$path_guid] = $meta->sha;
+					}
+					else
+					{
+						$power->params = (object)[
+							'source' => [$path_guid => $meta->sha]
+						];
+					}
+				}
+			}
+		}
+		$this->contents->reset_();
+
+		return $power;
 	}
 
 	/**
 	 * Load the remote file
 	 *
-	 * @param string         $owner    The repository owner
-	 * @param string         $repo     The repository name
-	 * @param string         $path     The repository path to file
-	 * @param string|null    $branch   The repository branch name
+	 * @param string         $organisation   The repository organisation
+	 * @param string         $repository     The repository name
+	 * @param string         $path           The repository path to file
+	 * @param string|null    $branch         The repository branch name
 	 *
 	 * @return mixed
 	 * @since 3.2.0
 	 */
-	private function loadRemoteFile(string $owner, string $repo, string $path, ?string $branch)
+	protected function loadRemoteFile(string $organisation, string $repository, string $path, ?string $branch)
 	{
 		try
 		{
-			$data = $this->contents->get($owner, $repo, $path, $branch);
+			$data = $this->contents->get($organisation, $repository, $path, $branch);
 		}
 		catch (\Exception $e)
 		{

@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Model;
 
 
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

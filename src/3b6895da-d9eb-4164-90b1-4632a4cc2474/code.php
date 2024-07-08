@@ -28,9 +28,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Model\Phpcustomview;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Ajaxcustomview;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Custombuttons;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Unique;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 
 
 /**
@@ -244,7 +244,7 @@ class Data
 			);
 
 			// Make sure the icon is only an icon path
-			if (strpos($item->icon, '#') !== false)
+			if (isset($item->icon) && strpos($item->icon, '#') !== false)
 			{
 				$item->icon = strstr($item->icon, '#', true);
 			}

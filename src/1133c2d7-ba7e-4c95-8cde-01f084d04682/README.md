@@ -8,6 +8,7 @@
 ```
 # interface PowerInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces**
+> extends: ****
 ```uml
 @startuml
 interface PowerInterface  #Lavender {

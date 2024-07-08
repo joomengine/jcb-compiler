@@ -8,6 +8,7 @@
 ```
 # class ArchitectureController (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class ArchitectureController  #Gold {

@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "ed9591cb-0a03-400a-bf47-eaf78ab19b9d",
     "implements": [
         "-1"
@@ -29,6 +29,7 @@
             "as": "J5InstallScript"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Extension",
     "description": "Extension Script Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

@@ -8,6 +8,7 @@
 ```
 # class Customimportscripts (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Customimportscripts  #Gold {

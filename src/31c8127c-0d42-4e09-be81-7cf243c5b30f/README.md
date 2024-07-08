@@ -8,6 +8,7 @@
 ```
 # final class ConfigFieldsetsGooglechart (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class ConfigFieldsetsGooglechart << (F,LightGreen) >> #RoyalBlue {

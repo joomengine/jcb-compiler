@@ -16,7 +16,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\HistoryInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Updatesql;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

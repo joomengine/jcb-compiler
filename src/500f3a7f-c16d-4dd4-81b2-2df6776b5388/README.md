@@ -8,6 +8,7 @@
 ```
 # abstract class Placefix (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 abstract Placefix  #Orange {

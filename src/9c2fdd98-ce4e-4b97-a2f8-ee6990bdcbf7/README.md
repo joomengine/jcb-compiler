@@ -8,6 +8,7 @@
 ```
 # final class ClassInjectorBuilder (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Generator**
+> extends: ****
 ```uml
 @startuml
 class ClassInjectorBuilder << (F,LightGreen) >> #RoyalBlue {

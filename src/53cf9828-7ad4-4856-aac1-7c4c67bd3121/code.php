@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Model;
 
 
 use Joomla\CMS\Factory;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

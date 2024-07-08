@@ -8,6 +8,7 @@
 ```
 # interface UpdateInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Interfaces\Database**
+> extends: ****
 ```uml
 @startuml
 interface UpdateInterface  #Lavender {

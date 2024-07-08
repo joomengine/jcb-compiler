@@ -8,6 +8,7 @@
 ```
 # class Power (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class Power  #Gold {
@@ -24,9 +25,6 @@ class Power  #Gold {
   + getReposReadme(Container $container) : ReposReadme
   + getExtractor(Container $container) : Extractor
   + getInjector(Container $container) : Injector
-  + getModelUpsert(Container $container) : Upsert
-  + getInsert(Container $container) : Insert
-  + getUpdate(Container $container) : Update
 }
 
 note right of Power::register
@@ -37,108 +35,87 @@ note right of Power::register
 end note
 
 note left of Power::getPowers
-  Get the Powers
+  Get The Power Class.
 
   since: 3.2.0
   return: Powers
 end note
 
 note right of Power::getSuperpower
-  Get the Superpower
+  Get The Super Class.
 
   since: 3.2.0
   return: Superpower
 end note
 
 note left of Power::getGrep
-  Get the Grep
+  Get The Grep Class.
 
   since: 3.2.0
   return: Grep
 end note
 
 note right of Power::getAutoloader
-  Get the Compiler Autoloader
+  Get The Autoloader Class.
 
   since: 3.2.0
   return: Autoloader
 end note
 
 note left of Power::getInfusion
-  Get the Compiler Power Infusion
+  Get The Infusion Class.
 
   since: 3.2.0
   return: Infusion
 end note
 
 note right of Power::getStructure
-  Get the Compiler Power Structure Builder
+  Get The Structure Class.
 
   since: 3.2.0
   return: Structure
 end note
 
 note left of Power::getParser
-  Get the Compiler Power Parser
+  Get The Parser Class.
 
   since: 3.2.0
   return: Parser
 end note
 
 note right of Power::getPlantuml
-  Get the Compiler Power Plantuml Builder
+  Get The Plantuml Class.
 
   since: 3.2.0
   return: Plantuml
 end note
 
 note left of Power::getRepoReadme
-  Get the Compiler Power Repo Readme Builder
+  Get The Readme Class.
 
   since: 3.2.0
   return: RepoReadme
 end note
 
 note right of Power::getReposReadme
-  Get the Compiler Power Repos Readme Builder
+  Get The Readme Class.
 
   since: 3.2.0
   return: ReposReadme
 end note
 
 note left of Power::getExtractor
-  Get the Compiler Power Extractor
+  Get The Extractor Class.
 
   since: 3.2.0
   return: Extractor
 end note
 
 note right of Power::getInjector
-  Get the Compiler Power Injector
+  Get The Injector Class.
 
   since: 3.2.0
   return: Injector
-end note
-
-note left of Power::getModelUpsert
-  Get the Power Model Upsert
-
-  since: 3.2.0
-  return: Upsert
-end note
-
-note right of Power::getInsert
-  Get the Power Insert
-
-  since: 3.2.0
-  return: Insert
-end note
-
-note left of Power::getUpdate
-  Get the Power Update
-
-  since: 3.2.0
-  return: Update
 end note
  
 @enduml

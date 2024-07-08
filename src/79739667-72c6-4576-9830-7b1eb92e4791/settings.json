@@ -1,7 +1,7 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "79739667-72c6-4576-9830-7b1eb92e4791",
     "implements": [
         "d44f3294-6b68-4d85-a617-15fb772b7d14"
@@ -69,7 +69,8 @@
             "as": "default"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Creator.FieldsetXML",
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Creator.FieldsetXML",
     "description": "Fieldset XML Creator Class\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",

@@ -14,10 +14,8 @@
 class Config  #Gold {
   # JoomlaRegistry $config
   + __construct(?Input $input = null, ?JoomlaRegistry $params = null, ...)
+  # getGiteausername() : ?string
   # getGiteatoken() : ?string
-  # getAddcustomgiteaurl() : int
-  # getCustomgiteaurl() : ?string
-  # getCustomgiteatoken() : ?string
   # getSuperpowerscoreorganisation() : string
   # getSuperpowerscorerepos() : array
   # getAddcontributors() : bool
@@ -103,29 +101,15 @@ note right of Config::__construct
     ?JoomlaRegistry $config = null
 end note
 
-note left of Config::getGiteatoken
+note left of Config::getGiteausername
+  get Gitea Username
+
+  since: 3.2.0
+  return: ?string
+end note
+
+note right of Config::getGiteatoken
   get Gitea Access Token
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Config::getAddcustomgiteaurl
-  get Add Custom Gitea URL
-
-  since: 3.2.0
-  return: int
-end note
-
-note left of Config::getCustomgiteaurl
-  get Custom Gitea URL
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Config::getCustomgiteatoken
-  get Custom Gitea Access Token
 
   since: 3.2.0
   return: ?string

@@ -8,6 +8,7 @@
 ```
 # interface LockBaseInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode**
+> extends: ****
 ```uml
 @startuml
 interface LockBaseInterface  #Lavender {

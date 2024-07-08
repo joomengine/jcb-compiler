@@ -8,6 +8,7 @@
 ```
 # final class Event (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaFour**
+> extends: ****
 ```uml
 @startuml
 class Event << (F,LightGreen) >> #RoyalBlue {

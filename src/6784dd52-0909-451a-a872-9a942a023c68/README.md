@@ -13,12 +13,12 @@
 @startuml
 class Grep << (F,LightGreen) >> #RoyalBlue {
   # remoteIndex(object $path) : void
-  - searchLocal(string $guid) : ?object
-  - searchRemote(string $guid) : ?object
-  - getLocal(object $path, string $guid) : ?object
-  - getRemote(object $path, string $guid) : ?object
-  - loadRemoteFile(string $owner, string $repo, ...) : mixed
-  - localIndex(object $path) : void
+  # searchLocal(string $guid) : ?object
+  # searchRemote(string $guid) : ?object
+  # getLocal(object $path, string $guid) : ?object
+  # getRemote(object $path, string $guid) : ?object
+  # loadRemoteFile(string $organisation, string $repository, ...) : mixed
+  # localIndex(object $path) : void
 }
 
 note right of Grep::remoteIndex
@@ -63,8 +63,8 @@ note right of Grep::loadRemoteFile
   return: mixed
   
   arguments:
-    string $owner
-    string $repo
+    string $organisation
+    string $repository
     string $path
     ?string $branch
 end note

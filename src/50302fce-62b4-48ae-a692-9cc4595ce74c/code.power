@@ -50,7 +50,7 @@
 	{
 		if (($power = $this->bucket->get("power.{$guid}")) === null)
 		{
-			if (($power = $this->database->item(['guid' => $guid])) === null)
+			if (($power = $this->database->table('power')->item(['guid' => $guid])) === null)
 			{
 				return null;
 			}
@@ -228,7 +228,7 @@
 	{
 		if (($service_providers = $this->bucket->get("service_providers.{$guid}")) === null)
 		{
-			if (($powers = $this->database->items([
+			if (($powers = $this->database->table('power')->items([
 				'use_selection' => [
 					'operator' => 'LIKE',
 					'value' => "'%{$guid}%'",

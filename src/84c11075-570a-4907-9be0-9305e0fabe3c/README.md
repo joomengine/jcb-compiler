@@ -8,6 +8,7 @@
 ```
 # final class ConfigFieldsetsUikit (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class ConfigFieldsetsUikit << (F,LightGreen) >> #RoyalBlue {

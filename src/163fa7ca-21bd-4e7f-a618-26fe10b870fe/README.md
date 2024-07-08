@@ -8,6 +8,7 @@
 ```
 # final class InputButton (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class InputButton << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # final class Search (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Generator**
+> extends: ****
 ```uml
 @startuml
 class Search << (F,LightGreen) >> #RoyalBlue {

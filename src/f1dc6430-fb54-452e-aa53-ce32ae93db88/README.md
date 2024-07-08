@@ -8,6 +8,7 @@
 ```
 # class Dispenser (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode**
+> extends: ****
 ```uml
 @startuml
 class Dispenser  #Gold {

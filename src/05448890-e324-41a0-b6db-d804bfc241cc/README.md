@@ -8,6 +8,7 @@
 ```
 # final class FieldsetString (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class FieldsetString << (F,LightGreen) >> #RoyalBlue {

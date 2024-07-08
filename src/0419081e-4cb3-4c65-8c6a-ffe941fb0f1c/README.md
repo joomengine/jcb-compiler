@@ -8,6 +8,7 @@
 ```
 # class Infusion (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+> extends: ****
 ```uml
 @startuml
 class Infusion  #Gold {

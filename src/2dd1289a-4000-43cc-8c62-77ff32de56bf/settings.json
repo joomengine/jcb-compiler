@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "2dd1289a-4000-43cc-8c62-77ff32de56bf",
     "implements": [
         "-1"
@@ -21,6 +21,7 @@
             "as": "default"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Adminview",
     "description": "Compiler Adminview\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

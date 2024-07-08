@@ -8,6 +8,7 @@
 ```
 # interface CustomtabsInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Model**
+> extends: ****
 ```uml
 @startuml
 interface CustomtabsInterface  #Lavender {

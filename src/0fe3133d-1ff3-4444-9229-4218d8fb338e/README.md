@@ -8,6 +8,7 @@
 ```
 # final class ConfigFieldsetsGlobal (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class ConfigFieldsetsGlobal << (F,LightGreen) >> #RoyalBlue {

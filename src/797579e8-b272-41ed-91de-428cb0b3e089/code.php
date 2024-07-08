@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Customcode;
 
 
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
-use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\FileHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 

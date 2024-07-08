@@ -8,6 +8,7 @@
 ```
 # interface CanDeleteInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model**
+> extends: ****
 ```uml
 @startuml
 interface CanDeleteInterface  #Lavender {

@@ -1,7 +1,7 @@
 {
     "add_head": "0",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "728ee726-3f0f-4762-899d-f8c9430cee58",
     "guid": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
     "implements": [
         "51de80f2-2868-4c2c-8198-ef79349e9bd7"
@@ -10,26 +10,10 @@
     "name": "Super",
     "power_version": "1.0.0",
     "system_name": "JCB.Power.Super",
-    "type": "class",
-    "use_selection": {
-        "use_selection0": {
-            "use": "c182506a-ab84-439c-b962-1e606b58d545",
-            "as": "Grep"
-        },
-        "use_selection1": {
-            "use": "95c02df3-fe0a-405b-b506-b7a5b8605b66",
-            "as": "Insert"
-        },
-        "use_selection2": {
-            "use": "69c29be3-ab25-4f56-944e-7ada6307b10c",
-            "as": "Update"
-        },
-        "use_selection3": {
-            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
-            "as": "default"
-        }
-    },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Power.Super",
+    "type": "final class",
+    "use_selection": null,
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Power.Super",
     "description": "Superpower of JCB\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",

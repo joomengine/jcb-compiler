@@ -8,6 +8,7 @@
 ```
 # final class Customtabs (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaFour**
+> extends: ****
 ```uml
 @startuml
 class Customtabs << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # final class AccessSectionsCategory (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class AccessSectionsCategory << (F,LightGreen) >> #RoyalBlue {

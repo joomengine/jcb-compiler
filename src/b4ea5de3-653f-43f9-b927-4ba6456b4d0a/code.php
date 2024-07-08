@@ -9,17 +9,17 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
+namespace VDM\Joomla\Componentbuilder\JoomlaPower\Data;
 
 
-use VDM\Joomla\Componentbuilder\Power\Database\LoadInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Load as ExtendingLoad;
+use VDM\Joomla\Interfaces\Data\LoadInterface;
+use VDM\Joomla\Abstraction\Data\Load as ExtendingLoad;
 
 
 /**
- * Power Database Load
+ * Joomla Power Data Load
  * 
- * @since 2.0.1
+ * @since 3.2.2
  */
 final class Load extends ExtendingLoad implements LoadInterface
 {

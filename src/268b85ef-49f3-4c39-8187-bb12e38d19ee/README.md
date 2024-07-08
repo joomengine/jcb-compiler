@@ -8,6 +8,7 @@
 ```
 # class Dynamicpath (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Dynamicpath  #Gold {

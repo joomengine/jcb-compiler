@@ -8,6 +8,7 @@
 ```
 # final class CanEditState (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model**
+> extends: ****
 ```uml
 @startuml
 class CanEditState << (F,LightGreen) >> #RoyalBlue {

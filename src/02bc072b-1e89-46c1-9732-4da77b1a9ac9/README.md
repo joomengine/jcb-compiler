@@ -8,6 +8,7 @@
 ```
 # class Power (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Service**
+> extends: ****
 ```uml
 @startuml
 class Power  #Gold {

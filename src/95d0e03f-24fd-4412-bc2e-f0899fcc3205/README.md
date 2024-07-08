@@ -8,6 +8,7 @@
 ```
 # final class Parser (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+> extends: ****
 ```uml
 @startuml
 class Parser << (F,LightGreen) >> #RoyalBlue {

@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "de01527a-6586-46ea-92e7-11ea3de1cedb",
     "implements": [
         "-1"
@@ -17,19 +17,19 @@
             "as": "Powers"
         },
         "use_selection1": {
-            "use": "6784dd52-0909-451a-a872-9a942a023c68",
-            "as": "default"
-        },
-        "use_selection2": {
             "use": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
             "as": "Superpower"
         },
+        "use_selection2": {
+            "use": "6784dd52-0909-451a-a872-9a942a023c68",
+            "as": "default"
+        },
         "use_selection3": {
-            "use": "0419081e-4cb3-4c65-8c6a-ffe941fb0f1c",
+            "use": "6e64917c-d687-4ef3-a655-811319f5a81e",
             "as": "default"
         },
         "use_selection4": {
-            "use": "6e64917c-d687-4ef3-a655-811319f5a81e",
+            "use": "0419081e-4cb3-4c65-8c6a-ffe941fb0f1c",
             "as": "default"
         },
         "use_selection5": {
@@ -59,21 +59,10 @@
         "use_selection11": {
             "use": "763d137c-42bc-4282-98d8-cc5c0654985f",
             "as": "default"
-        },
-        "use_selection12": {
-            "use": "7c1fb50f-8fb1-4627-8705-6fedf7182ca5",
-            "as": "default"
-        },
-        "use_selection13": {
-            "use": "380bb7a3-cdcc-4336-a699-5070cbf521a5",
-            "as": "default"
-        },
-        "use_selection14": {
-            "use": "e543c123-b1d9-4a0b-83b2-a9d371da5ff3",
-            "as": "default"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Power",
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Service.Power",
     "description": "Compiler Power Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",

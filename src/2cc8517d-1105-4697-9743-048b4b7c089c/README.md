@@ -8,6 +8,7 @@
 ```
 # interface GuiInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode**
+> extends: ****
 ```uml
 @startuml
 interface GuiInterface  #Lavender {

@@ -8,6 +8,7 @@
 ```
 # class Header (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class Header  #Gold {

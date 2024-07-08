@@ -8,6 +8,7 @@
 ```
 # class Reverse (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Placeholder**
+> extends: ****
 ```uml
 @startuml
 class Reverse  #Gold {

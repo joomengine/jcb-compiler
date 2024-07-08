@@ -8,6 +8,7 @@
 ```
 # final class FileInjector (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class FileInjector << (F,LightGreen) >> #RoyalBlue {

@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
-use VastDevelopmentMethod\Joomla\Interfaces\Registryinterface;
-use VastDevelopmentMethod\Joomla\Abstraction\Registry;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**

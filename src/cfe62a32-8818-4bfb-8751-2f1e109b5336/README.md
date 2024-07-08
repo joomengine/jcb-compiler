@@ -8,6 +8,7 @@
 ```
 # final class Dashboard (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
+> extends: ****
 ```uml
 @startuml
 class Dashboard << (F,LightGreen) >> #RoyalBlue {

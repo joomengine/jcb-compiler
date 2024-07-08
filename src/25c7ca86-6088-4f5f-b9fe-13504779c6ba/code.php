@@ -14,8 +14,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaFour;
 
 use Joomla\CMS\Factory;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\HistoryInterface;
 

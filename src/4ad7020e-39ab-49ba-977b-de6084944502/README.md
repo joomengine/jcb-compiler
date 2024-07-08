@@ -8,6 +8,7 @@
 ```
 # class Fieldset (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Language**
+> extends: ****
 ```uml
 @startuml
 class Fieldset  #Gold {

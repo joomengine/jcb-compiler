@@ -8,10 +8,12 @@
 ```
 # class BuilderLZ (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class BuilderLZ  #Gold {
   + register(Container $container) : void
+  + getLanguages(Container $container) : Languages
   + getLanguageMessages(Container $container) : LanguageMessages
   + getLayout(Container $container) : Layout
   + getLayoutData(Container $container) : LayoutData
@@ -74,371 +76,378 @@ note right of BuilderLZ::register
   return: void
 end note
 
-note left of BuilderLZ::getLanguageMessages
+note left of BuilderLZ::getLanguages
+  Get The Languages Class.
+
+  since: 3.2.0
+  return: Languages
+end note
+
+note right of BuilderLZ::getLanguageMessages
   Get The LanguageMessages Class.
 
   since: 3.2.0
   return: LanguageMessages
 end note
 
-note right of BuilderLZ::getLayout
+note left of BuilderLZ::getLayout
   Get The Layout Class.
 
   since: 3.2.0
   return: Layout
 end note
 
-note left of BuilderLZ::getLayoutData
+note right of BuilderLZ::getLayoutData
   Get The LayoutData Class.
 
   since: 3.2.0
   return: LayoutData
 end note
 
-note right of BuilderLZ::getLibraryManager
+note left of BuilderLZ::getLibraryManager
   Get The LibraryManager Class.
 
   since: 3.2.0
   return: LibraryManager
 end note
 
-note left of BuilderLZ::getListFieldClass
+note right of BuilderLZ::getListFieldClass
   Get The ListFieldClass Class.
 
   since: 3.2.0
   return: ListFieldClass
 end note
 
-note right of BuilderLZ::getListHeadOverride
+note left of BuilderLZ::getListHeadOverride
   Get The ListHeadOverride Class.
 
   since: 3.2.0
   return: ListHeadOverride
 end note
 
-note left of BuilderLZ::getListJoin
+note right of BuilderLZ::getListJoin
   Get The ListJoin Class.
 
   since: 3.2.0
   return: ListJoin
 end note
 
-note right of BuilderLZ::getLists
+note left of BuilderLZ::getLists
   Get The Lists Class.
 
   since: 3.2.0
   return: Lists
 end note
 
-note left of BuilderLZ::getMainTextField
+note right of BuilderLZ::getMainTextField
   Get The MainTextField Class.
 
   since: 3.2.0
   return: MainTextField
 end note
 
-note right of BuilderLZ::getMetaData
+note left of BuilderLZ::getMetaData
   Get The MetaData Class.
 
   since: 3.2.0
   return: MetaData
 end note
 
-note left of BuilderLZ::getModelBasicField
+note right of BuilderLZ::getModelBasicField
   Get The ModelBasicField Class.
 
   since: 3.2.0
   return: ModelBasicField
 end note
 
-note right of BuilderLZ::getModelExpertField
+note left of BuilderLZ::getModelExpertField
   Get The ModelExpertField Class.
 
   since: 3.2.0
   return: ModelExpertField
 end note
 
-note left of BuilderLZ::getModelExpertFieldInitiator
+note right of BuilderLZ::getModelExpertFieldInitiator
   Get The ModelExpertFieldInitiator Class.
 
   since: 3.2.0
   return: ModelExpertFieldInitiator
 end note
 
-note right of BuilderLZ::getModelMediumField
+note left of BuilderLZ::getModelMediumField
   Get The ModelMediumField Class.
 
   since: 3.2.0
   return: ModelMediumField
 end note
 
-note left of BuilderLZ::getModelWhmcsField
+note right of BuilderLZ::getModelWhmcsField
   Get The ModelWhmcsField Class.
 
   since: 3.2.0
   return: ModelWhmcsField
 end note
 
-note right of BuilderLZ::getMovedPublishingFields
+note left of BuilderLZ::getMovedPublishingFields
   Get The MovedPublishingFields Class.
 
   since: 3.2.0
   return: MovedPublishingFields
 end note
 
-note left of BuilderLZ::getMysqlTableSetting
+note right of BuilderLZ::getMysqlTableSetting
   Get The MysqlTableSetting Class.
 
   since: 3.2.0
   return: MysqlTableSetting
 end note
 
-note right of BuilderLZ::getNewPublishingFields
+note left of BuilderLZ::getNewPublishingFields
   Get The NewPublishingFields Class.
 
   since: 3.2.0
   return: NewPublishingFields
 end note
 
-note left of BuilderLZ::getOrderZero
+note right of BuilderLZ::getOrderZero
   Get The OrderZero Class.
 
   since: 3.2.0
   return: OrderZero
 end note
 
-note right of BuilderLZ::getOtherFilter
+note left of BuilderLZ::getOtherFilter
   Get The OtherFilter Class.
 
   since: 3.2.0
   return: OtherFilter
 end note
 
-note left of BuilderLZ::getOtherGroup
+note right of BuilderLZ::getOtherGroup
   Get The OtherGroup Class.
 
   since: 3.2.0
   return: OtherGroup
 end note
 
-note right of BuilderLZ::getOtherJoin
+note left of BuilderLZ::getOtherJoin
   Get The OtherJoin Class.
 
   since: 3.2.0
   return: OtherJoin
 end note
 
-note left of BuilderLZ::getOtherOrder
+note right of BuilderLZ::getOtherOrder
   Get The OtherOrder Class.
 
   since: 3.2.0
   return: OtherOrder
 end note
 
-note right of BuilderLZ::getOtherQuery
+note left of BuilderLZ::getOtherQuery
   Get The OtherQuery Class.
 
   since: 3.2.0
   return: OtherQuery
 end note
 
-note left of BuilderLZ::getOtherWhere
+note right of BuilderLZ::getOtherWhere
   Get The OtherWhere Class.
 
   since: 3.2.0
   return: OtherWhere
 end note
 
-note right of BuilderLZ::getPermissionAction
+note left of BuilderLZ::getPermissionAction
   Get The PermissionAction Class.
 
   since: 3.2.0
   return: PermissionAction
 end note
 
-note left of BuilderLZ::getPermissionComponent
+note right of BuilderLZ::getPermissionComponent
   Get The PermissionComponent Class.
 
   since: 3.2.0
   return: PermissionComponent
 end note
 
-note right of BuilderLZ::getPermissionCore
+note left of BuilderLZ::getPermissionCore
   Get The PermissionCore Class.
 
   since: 3.2.0
   return: PermissionCore
 end note
 
-note left of BuilderLZ::getPermissionDashboard
+note right of BuilderLZ::getPermissionDashboard
   Get The PermissionDashboard Class.
 
   since: 3.2.0
   return: PermissionDashboard
 end note
 
-note right of BuilderLZ::getPermissionFields
+note left of BuilderLZ::getPermissionFields
   Get The PermissionFields Class.
 
   since: 3.2.0
   return: PermissionFields
 end note
 
-note left of BuilderLZ::getPermissionGlobalAction
+note right of BuilderLZ::getPermissionGlobalAction
   Get The PermissionGlobalAction Class.
 
   since: 3.2.0
   return: PermissionGlobalAction
 end note
 
-note right of BuilderLZ::getPermissionViews
+note left of BuilderLZ::getPermissionViews
   Get The PermissionViews Class.
 
   since: 3.2.0
   return: PermissionViews
 end note
 
-note left of BuilderLZ::getRequest
+note right of BuilderLZ::getRequest
   Get The Request Class.
 
   since: 3.2.0
   return: Request
 end note
 
-note right of BuilderLZ::getRouter
+note left of BuilderLZ::getRouter
   Get The Router Class.
 
   since: 3.2.0
   return: Router
 end note
 
-note left of BuilderLZ::getScriptMediaSwitch
+note right of BuilderLZ::getScriptMediaSwitch
   Get The ScriptMediaSwitch Class.
 
   since: 3.2.0
   return: ScriptMediaSwitch
 end note
 
-note right of BuilderLZ::getScriptUserSwitch
+note left of BuilderLZ::getScriptUserSwitch
   Get The ScriptUserSwitch Class.
 
   since: 3.2.0
   return: ScriptUserSwitch
 end note
 
-note left of BuilderLZ::getSearch
+note right of BuilderLZ::getSearch
   Get The Search Class.
 
   since: 3.2.0
   return: Search
 end note
 
-note right of BuilderLZ::getSelectionTranslation
+note left of BuilderLZ::getSelectionTranslation
   Get The SelectionTranslation Class.
 
   since: 3.2.0
   return: SelectionTranslation
 end note
 
-note left of BuilderLZ::getSiteDecrypt
+note right of BuilderLZ::getSiteDecrypt
   Get The SiteDecrypt Class.
 
   since: 3.2.0
   return: SiteDecrypt
 end note
 
-note right of BuilderLZ::getSiteDynamicGet
+note left of BuilderLZ::getSiteDynamicGet
   Get The SiteDynamicGet Class.
 
   since: 3.2.0
   return: SiteDynamicGet
 end note
 
-note left of BuilderLZ::getSiteEditView
+note right of BuilderLZ::getSiteEditView
   Get The SiteEditView Class.
 
   since: 3.2.0
   return: SiteEditView
 end note
 
-note right of BuilderLZ::getSiteFieldData
+note left of BuilderLZ::getSiteFieldData
   Get The SiteFieldData Class.
 
   since: 3.2.0
   return: SiteFieldData
 end note
 
-note left of BuilderLZ::getSiteFieldDecodeFilter
+note right of BuilderLZ::getSiteFieldDecodeFilter
   Get The SiteFieldDecodeFilter Class.
 
   since: 3.2.0
   return: SiteFieldDecodeFilter
 end note
 
-note right of BuilderLZ::getSiteFields
+note left of BuilderLZ::getSiteFields
   Get The SiteFields Class.
 
   since: 3.2.0
   return: SiteFields
 end note
 
-note left of BuilderLZ::getSiteMainGet
+note right of BuilderLZ::getSiteMainGet
   Get The SiteMainGet Class.
 
   since: 3.2.0
   return: SiteMainGet
 end note
 
-note right of BuilderLZ::getSort
+note left of BuilderLZ::getSort
   Get The Sort Class.
 
   since: 3.2.0
   return: Sort
 end note
 
-note left of BuilderLZ::getTabCounter
+note right of BuilderLZ::getTabCounter
   Get The TabCounter Class.
 
   since: 3.2.0
   return: TabCounter
 end note
 
-note right of BuilderLZ::getTags
+note left of BuilderLZ::getTags
   Get The Tags Class.
 
   since: 3.2.0
   return: Tags
 end note
 
-note left of BuilderLZ::getTemplateData
+note right of BuilderLZ::getTemplateData
   Get The TemplateData Class.
 
   since: 3.2.0
   return: TemplateData
 end note
 
-note right of BuilderLZ::getTitle
+note left of BuilderLZ::getTitle
   Get The Title Class.
 
   since: 3.2.0
   return: Title
 end note
 
-note left of BuilderLZ::getUikitComp
+note right of BuilderLZ::getUikitComp
   Get The UikitComp Class.
 
   since: 3.2.0
   return: UikitComp
 end note
 
-note right of BuilderLZ::getUpdateMysql
+note left of BuilderLZ::getUpdateMysql
   Get The UpdateMysql Class.
 
   since: 3.2.0
   return: UpdateMysql
 end note
 
-note left of BuilderLZ::getViewsDefaultOrdering
+note right of BuilderLZ::getViewsDefaultOrdering
   Get The ViewsDefaultOrdering Class.
 
   since: 3.2.0

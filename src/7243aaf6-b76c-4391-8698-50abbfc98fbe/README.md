@@ -6,59 +6,76 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Database (Details)
+# class Data (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Service**
+> extends: ****
 ```uml
 @startuml
-class Database  #Gold {
+class Data  #Gold {
   + register(Container $container) : void
   + getModelLoad(Container $container) : ModelLoad
   + getModelUpsert(Container $container) : ModelUpsert
-  + getLoadDatabase(Container $container) : LoadDatabase
-  + getInsertDatabase(Container $container) : InsertDatabase
-  + getUpdateDatabase(Container $container) : UpdateDatabase
+  + getLoadData(Container $container) : LoadData
+  + getInsertData(Container $container) : InsertData
+  + getUpdateData(Container $container) : UpdateData
+  + getDeleteData(Container $container) : DeleteData
+  + getItem(Container $container) : Item
 }
 
-note right of Database::register
+note right of Data::register
   Registers the service provider with a DI container.
 
   since: 3.2.0
   return: void
 end note
 
-note right of Database::getModelLoad
-  Get the Power Model Load
+note left of Data::getModelLoad
+  Get The Load Class.
 
   since: 3.2.0
   return: ModelLoad
 end note
 
-note right of Database::getModelUpsert
-  Get the Power Model Update or Insert
+note right of Data::getModelUpsert
+  Get The Upsert Class.
 
   since: 3.2.0
   return: ModelUpsert
 end note
 
-note right of Database::getLoadDatabase
-  Get the Load Database
+note left of Data::getLoadData
+  Get The Load Class.
 
   since: 3.2.0
-  return: LoadDatabase
+  return: LoadData
 end note
 
-note right of Database::getInsertDatabase
-  Get the Insert Database
+note right of Data::getInsertData
+  Get The Insert Class.
 
   since: 3.2.0
-  return: InsertDatabase
+  return: InsertData
 end note
 
-note right of Database::getUpdateDatabase
-  Get the Update Database
+note left of Data::getUpdateData
+  Get The Update Class.
 
   since: 3.2.0
-  return: UpdateDatabase
+  return: UpdateData
+end note
+
+note right of Data::getDeleteData
+  Get The Delete Class.
+
+  since: 3.2.2
+  return: DeleteData
+end note
+
+note left of Data::getItem
+  Get The Item Class.
+
+  since: 3.2.2
+  return: Item
 end note
  
 @enduml

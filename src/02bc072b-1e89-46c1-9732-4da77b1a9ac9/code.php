@@ -15,7 +15,7 @@ namespace VDM\Joomla\Componentbuilder\Power\Service;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Power\Config;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Table;
+use VDM\Joomla\Componentbuilder\Table;
 use VDM\Joomla\Componentbuilder\Power\Grep;
 use VDM\Joomla\Componentbuilder\Power\Super as Superpower;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Parser;
@@ -91,9 +91,9 @@ class Power implements ServiceProviderInterface
 	public function getGrep(Container $container): Grep
 	{
 		return new Grep(
-			$container->get('Config')->local_powers_repository_path,
+			$container->get('Gitea.Repository.Contents'),
 			$container->get('Config')->approved_paths,
-			$container->get('Gitea.Repository.Contents')
+			$container->get('Config')->local_powers_repository_path
 		);
 	}
 
@@ -109,8 +109,7 @@ class Power implements ServiceProviderInterface
 	{
 		return new Superpower(
 			$container->get('Power.Grep'),
-			$container->get('Power.Database.Insert'),
-			$container->get('Power.Database.Update')
+			$container->get('Data.Item')
 		);
 	}
 

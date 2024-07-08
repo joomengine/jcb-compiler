@@ -18,8 +18,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\ConfigFieldsetsCustomfield as C
 use VDM\Joomla\Componentbuilder\Compiler\Builder\HasMenuGlobal;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FrontendParams;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Request;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
 
 
 /**

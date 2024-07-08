@@ -8,6 +8,7 @@
 ```
 # abstract class FieldHelper (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 abstract FieldHelper  #Orange {

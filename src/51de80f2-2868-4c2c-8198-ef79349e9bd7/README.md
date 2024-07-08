@@ -8,6 +8,7 @@
 ```
 # interface SuperInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Interfaces**
+> extends: ****
 ```uml
 @startuml
 interface SuperInterface  #Lavender {

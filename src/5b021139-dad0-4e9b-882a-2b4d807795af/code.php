@@ -16,10 +16,10 @@ use Joomla\CMS\Factory;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\GetAsLookup;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\SiteFields;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
-use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\Component\Helper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Indent;
 
 

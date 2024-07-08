@@ -18,9 +18,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Customcode;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ListJoin;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ListHeadOverride;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldRelations;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

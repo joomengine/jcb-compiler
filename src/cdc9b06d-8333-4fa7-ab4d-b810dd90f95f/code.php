@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Utilities;
 
 
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

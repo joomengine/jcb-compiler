@@ -35,9 +35,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Model\Customalias;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Sql;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Mysqlsettings;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\SiteEditView;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 
 
 /**

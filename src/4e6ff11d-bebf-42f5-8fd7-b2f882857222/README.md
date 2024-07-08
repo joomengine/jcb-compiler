@@ -8,6 +8,7 @@
 ```
 # abstract class Line (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 abstract Line  #Orange {

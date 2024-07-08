@@ -8,6 +8,7 @@
 ```
 # class Language (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: ****
 ```uml
 @startuml
 class Language  #Gold {

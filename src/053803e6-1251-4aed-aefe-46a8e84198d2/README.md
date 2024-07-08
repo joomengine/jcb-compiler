@@ -8,6 +8,7 @@
 ```
 # class Paths (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode\Extractor**
+> extends: ****
 ```uml
 @startuml
 class Paths  #Gold {

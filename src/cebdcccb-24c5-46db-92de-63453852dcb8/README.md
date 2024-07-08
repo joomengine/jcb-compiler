@@ -8,6 +8,7 @@
 ```
 # class Adminviews (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Adminviews  #Gold {

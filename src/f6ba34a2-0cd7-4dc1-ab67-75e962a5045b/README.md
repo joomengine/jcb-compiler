@@ -8,6 +8,7 @@
 ```
 # final class Xml (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Xml << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # class Counter (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Counter  #Gold {

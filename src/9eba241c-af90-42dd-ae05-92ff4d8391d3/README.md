@@ -8,6 +8,7 @@
 ```
 # class Joomlaplugin (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class Joomlaplugin  #Gold {

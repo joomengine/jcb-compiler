@@ -8,6 +8,7 @@
 ```
 # class Mysqlsettings (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Mysqlsettings  #Gold {

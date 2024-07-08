@@ -8,6 +8,7 @@
 ```
 # final class CoreRule (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaFour**
+> extends: ****
 ```uml
 @startuml
 class CoreRule << (F,LightGreen) >> #RoyalBlue {

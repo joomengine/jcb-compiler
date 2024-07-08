@@ -8,6 +8,7 @@
 ```
 # class Readme (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power\Repo**
+> extends: ****
 ```uml
 @startuml
 class Readme  #Gold {

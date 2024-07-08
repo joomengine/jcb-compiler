@@ -8,6 +8,7 @@
 ```
 # final class Attributes (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
+> extends: ****
 ```uml
 @startuml
 class Attributes << (F,LightGreen) >> #RoyalBlue {

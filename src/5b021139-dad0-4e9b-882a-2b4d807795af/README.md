@@ -8,6 +8,7 @@
 ```
 # class Selection (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Dynamicget**
+> extends: ****
 ```uml
 @startuml
 class Selection  #Gold {

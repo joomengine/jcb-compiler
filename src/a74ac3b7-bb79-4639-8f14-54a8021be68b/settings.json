@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "a74ac3b7-bb79-4639-8f14-54a8021be68b",
     "implements": [
         "-1"
@@ -49,6 +49,7 @@
             "as": "default"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Customcode",
     "description": "Compiler Custom Code Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

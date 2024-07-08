@@ -13,9 +13,9 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Builder;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Placefix;
-use VastDevelopmentMethod\Joomla\Abstraction\Registry\Traits\IsString;
-use VastDevelopmentMethod\Joomla\Interfaces\Registryinterface;
-use VastDevelopmentMethod\Joomla\Abstraction\Registry;
+use VDM\Joomla\Abstraction\Registry\Traits\IsString;
+use VDM\Joomla\Interfaces\Registryinterface;
+use VDM\Joomla\Abstraction\Registry;
 
 
 /**

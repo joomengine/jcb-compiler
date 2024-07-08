@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "b94aaedb-6774-4739-a63f-8f87141a85db",
     "implements": [
         "-1"
@@ -29,6 +29,7 @@
             "as": "J5Event"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Event",
     "description": "Event Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

@@ -22,10 +22,10 @@ use VDM\Joomla\Componentbuilder\Compiler\Field\Attributes;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Xml;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\CustomFieldTypeFile;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Counter;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\String\FieldHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\String\FieldHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\ObjectHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator\Fieldtypeinterface;
 

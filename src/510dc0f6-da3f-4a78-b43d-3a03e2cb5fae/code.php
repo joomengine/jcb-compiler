@@ -14,7 +14,7 @@ namespace VDM\Joomla\Componentbuilder\Power\Service;
 
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
-use VastDevelopmentMethod\Joomla\Gitea\Repository\Contents;
+use VDM\Joomla\Gitea\Repository\Contents;
 
 
 /**

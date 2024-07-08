@@ -8,6 +8,7 @@
 ```
 # class Siteviews (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Siteviews  #Gold {

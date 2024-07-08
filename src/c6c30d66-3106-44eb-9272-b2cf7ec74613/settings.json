@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "c6c30d66-3106-44eb-9272-b2cf7ec74613",
     "implements": [
         "-1"
@@ -85,6 +85,7 @@
             "as": "InputButton"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Field",
     "description": "Compiler Field\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

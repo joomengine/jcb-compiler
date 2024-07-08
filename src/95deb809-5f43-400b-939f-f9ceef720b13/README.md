@@ -8,6 +8,7 @@
 ```
 # final class Header (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class Header << (F,LightGreen) >> #RoyalBlue {

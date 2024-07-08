@@ -8,6 +8,7 @@
 ```
 # interface PlaceholderInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component**
+> extends: ****
 ```uml
 @startuml
 interface PlaceholderInterface  #Lavender {

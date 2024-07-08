@@ -8,6 +8,7 @@
 ```
 # class Placeholder (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: ****
 ```uml
 @startuml
 class Placeholder  #Gold {

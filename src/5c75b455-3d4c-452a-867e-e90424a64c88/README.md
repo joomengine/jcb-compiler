@@ -8,6 +8,7 @@
 ```
 # class File (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class File  #Gold {

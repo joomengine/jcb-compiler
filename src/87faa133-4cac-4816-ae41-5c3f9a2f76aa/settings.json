@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "87faa133-4cac-4816-ae41-5c3f9a2f76aa",
     "implements": [
         "-1"
@@ -25,6 +25,7 @@
             "as": "DynamicgetSelection"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Customview",
     "description": "Compiler Customview\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

@@ -35,10 +35,10 @@ use VDM\Joomla\Componentbuilder\Compiler\Model\Updateserver;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Joomlamodules;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Joomlaplugins;
 use VDM\Joomla\Componentbuilder\Compiler\Model\Router;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\GetHelper;
 
 
 /**

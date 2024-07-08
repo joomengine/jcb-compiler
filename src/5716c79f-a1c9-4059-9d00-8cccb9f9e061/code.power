@@ -22,15 +22,6 @@
 
 		$container->alias(Injector::class, 'Joomla.Power.Injector')
 			->share('Joomla.Power.Injector', [$this, 'getInjector'], true);
-
-		$container->alias(Upsert::class, 'Joomla.Power.Model.Upsert')
-			->share('Joomla.Power.Model.Upsert', [$this, 'getModelUpsert'], true);
-
-		$container->alias(Insert::class, 'Joomla.Power.Insert')
-			->share('Joomla.Power.Insert', [$this, 'getInsert'], true);
-
-		$container->alias(Update::class, 'Joomla.Power.Update')
-			->share('Joomla.Power.Update', [$this, 'getUpdate'], true);
 	}
 
 	/**
@@ -64,8 +55,7 @@
 	{
 		return new Superpower(
 			$container->get('Joomla.Power.Grep'),
-			$container->get('Joomla.Power.Insert'),
-			$container->get('Joomla.Power.Update')
+			$container->get('Data.Item')
 		);
 	}
 
@@ -80,9 +70,8 @@
 	public function getGrep(Container $container): Grep
 	{
 		return new Grep(
-			$container->get('Config')->local_joomla_powers_repository_path,
-			$container->get('Config')->approved_joomla_paths,
-			$container->get('Gitea.Repository.Contents')
+			$container->get('Gitea.Repository.Contents'),
+			$container->get('Config')->approved_joomla_paths
 		);
 	}
 
@@ -116,52 +105,5 @@
 			$container->get('Joomla.Power.Extractor'),
 			$container->get('Power.Parser'),
 			$container->get('Placeholder')
-		);
-	}
-
-	/**
-	 * Get the Power Model Upsert
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Upsert
-	 * @since 3.2.0
-	 */
-	public function getModelUpsert(Container $container): Upsert
-	{
-		return new Upsert(
-			$container->get('Table')
-		);
-	}
-
-	/**
-	 * Get the Power Insert
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Insert
-	 * @since 3.2.0
-	 */
-	public function getInsert(Container $container): Insert
-	{
-		return new Insert(
-			$container->get('Joomla.Power.Model.Upsert'),
-			$container->get('Insert')
-		);
-	}
-
-	/**
-	 * Get the Power Update
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Update
-	 * @since 3.2.0
-	 */
-	public function getUpdate(Container $container): Update
-	{
-		return new Update(
-			$container->get('Joomla.Power.Model.Upsert'),
-			$container->get('Update')
 		);
 	}

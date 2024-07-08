@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\JoomlaThree;
 
 
 use Joomla\Registry\Registry;
-use VastDevelopmentMethod\Joomla\Utilities\Component\Helper;
+use VDM\Joomla\Utilities\Component\Helper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface;
 
 

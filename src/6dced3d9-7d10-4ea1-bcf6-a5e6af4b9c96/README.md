@@ -8,6 +8,7 @@
 ```
 # final class CustomFieldTypeFile (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class CustomFieldTypeFile << (F,LightGreen) >> #RoyalBlue {

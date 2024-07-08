@@ -25,7 +25,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Creator\Layout;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Counter;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Xml;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Line;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator\Fieldsetinterface;
 
 

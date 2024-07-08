@@ -8,6 +8,7 @@
 ```
 # final class Layout (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class Layout << (F,LightGreen) >> #RoyalBlue {

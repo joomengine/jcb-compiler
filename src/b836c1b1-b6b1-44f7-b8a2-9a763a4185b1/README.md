@@ -8,6 +8,7 @@
 ```
 # class Power (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: ****
 ```uml
 @startuml
 class Power  #Gold {
@@ -25,7 +26,7 @@ class Power  #Gold {
   # Superpower $superpower
   # $db
   # $app
-  + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
+  + __construct(Config $config, Placeholder $placeholder, ...)
   + load(array $guids) : void
   + get(string $guid, int $build) : ?object
   - set(string $guid) : bool
@@ -38,6 +39,8 @@ class Power  #Gold {
   - setComposer(string $guid) : void
   - setImplements(string $guid, array $use) : void
   - setExtend(string $guid, array $use, ...) : void
+  - setExtendClass(string $guid, array $use, ...) : void
+  - setExtendInterface(string $guid, array $use, ...) : void
   - setUseAs(string $guid, array $use, ...) : void
   - getCleanNamespace(string $namespace) : string
   - getUseNamespace(string $namespace, string $as = 'default') : string
@@ -54,11 +57,11 @@ note right of Power::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Placeholder $placeholder = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Superpower $superpower = null
+    Config $config
+    Placeholder $placeholder
+    Customcode $customcode
+    Gui $gui
+    Superpower $superpower
 end note
 
 note left of Power::load
@@ -144,9 +147,33 @@ note left of Power::setImplements
 end note
 
 note right of Power::setExtend
+  Set Extend
+
+  since: 3.2.0
+  return: void
+  
+  arguments:
+    string $guid
+    array $use
+    array $as
+end note
+
+note left of Power::setExtendClass
   Set Extend Class
 
   since: 3.2.0
+  return: void
+  
+  arguments:
+    string $guid
+    array $use
+    array $as
+end note
+
+note right of Power::setExtendInterface
+  Set Extend Interface
+
+  since: 3.2.2
   return: void
   
   arguments:

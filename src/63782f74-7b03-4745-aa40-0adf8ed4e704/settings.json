@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "63782f74-7b03-4745-aa40-0adf8ed4e704",
     "implements": [
         "-1"
@@ -29,6 +29,7 @@
             "as": "J5History"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.History",
     "description": "History Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

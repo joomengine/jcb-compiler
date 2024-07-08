@@ -7,7 +7,7 @@
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
 # final class Insert (Details)
-> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Database**
+> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Data**
 > extends: **ExtendingInsert**
 ```uml
 @startuml

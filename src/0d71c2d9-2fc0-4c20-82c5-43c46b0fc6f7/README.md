@@ -8,6 +8,7 @@
 ```
 # class Loader (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Loader  #Gold {

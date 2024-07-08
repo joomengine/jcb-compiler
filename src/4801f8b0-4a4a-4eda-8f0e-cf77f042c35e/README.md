@@ -8,6 +8,7 @@
 ```
 # final class FieldDynamic (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class FieldDynamic << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # class CoreRules (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Service**
+> extends: ****
 ```uml
 @startuml
 class CoreRules  #Gold {

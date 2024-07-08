@@ -8,6 +8,7 @@
 ```
 # class Dynamicget (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Dynamicget  #Gold {

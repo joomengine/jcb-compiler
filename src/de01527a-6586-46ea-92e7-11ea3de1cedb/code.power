@@ -43,19 +43,10 @@
 
 		$container->alias(Injector::class, 'Power.Injector')
 			->share('Power.Injector', [$this, 'getInjector'], true);
-
-		$container->alias(Upsert::class, 'Power.Model.Upsert')
-			->share('Power.Model.Upsert', [$this, 'getModelUpsert'], true);
-
-		$container->alias(Insert::class, 'Power.Insert')
-			->share('Power.Insert', [$this, 'getInsert'], true);
-
-		$container->alias(Update::class, 'Power.Update')
-			->share('Power.Update', [$this, 'getUpdate'], true);
 	}
 
 	/**
-	 * Get the Powers
+	 * Get The Power Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -68,12 +59,13 @@
 			$container->get('Config'),
 			$container->get('Placeholder'),
 			$container->get('Customcode'),
-			$container->get('Customcode.Gui')
+			$container->get('Customcode.Gui'),
+			$container->get('Superpower')
 		);
 	}
 
 	/**
-	 * Get the Superpower
+	 * Get The Super Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -84,13 +76,12 @@
 	{
 		return new Superpower(
 			$container->get('Power.Grep'),
-			$container->get('Power.Insert'),
-			$container->get('Power.Update')
+			$container->get('Data.Item')
 		);
 	}
 
 	/**
-	 * Get the Grep
+	 * Get The Grep Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -100,14 +91,14 @@
 	public function getGrep(Container $container): Grep
 	{
 		return new Grep(
-			$container->get('Config')->local_powers_repository_path,
+			$container->get('Gitea.Repository.Contents'),
 			$container->get('Config')->approved_paths,
-			$container->get('Gitea.Repository.Contents')
+			$container->get('Config')->local_powers_repository_path
 		);
 	}
 
 	/**
-	 * Get the Compiler Autoloader
+	 * Get The Autoloader Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -124,7 +115,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Infusion
+	 * Get The Infusion Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -147,7 +138,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Structure Builder
+	 * Get The Structure Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -170,11 +161,11 @@
 	}
 
 	/**
-	 * Get the Compiler Power Parser
+	 * Get The Parser Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  Structure
+	 * @return  Parser
 	 * @since 3.2.0
 	 */
 	public function getParser(Container $container): Parser
@@ -183,7 +174,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Plantuml Builder
+	 * Get The Plantuml Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -196,7 +187,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Repo Readme Builder
+	 * Get The Readme Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -212,7 +203,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Repos Readme Builder
+	 * Get The Readme Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -228,7 +219,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Extractor
+	 * Get The Extractor Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -241,7 +232,7 @@
 	}
 
 	/**
-	 * Get the Compiler Power Injector
+	 * Get The Injector Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -255,52 +246,5 @@
 			$container->get('Power.Extractor'),
 			$container->get('Power.Parser'),
 			$container->get('Placeholder')
-		);
-	}
-
-	/**
-	 * Get the Power Model Upsert
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Upsert
-	 * @since 3.2.0
-	 */
-	public function getModelUpsert(Container $container): Upsert
-	{
-		return new Upsert(
-			$container->get('Table')
-		);
-	}
-
-	/**
-	 * Get the Power Insert
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Insert
-	 * @since 3.2.0
-	 */
-	public function getInsert(Container $container): Insert
-	{
-		return new Insert(
-			$container->get('Power.Model.Upsert'),
-			$container->get('Insert')
-		);
-	}
-
-	/**
-	 * Get the Power Update
-	 *
-	 * @param   Container  $container  The DI container.
-	 *
-	 * @return  Update
-	 * @since 3.2.0
-	 */
-	public function getUpdate(Container $container): Update
-	{
-		return new Update(
-			$container->get('Power.Model.Upsert'),
-			$container->get('Update')
 		);
 	}

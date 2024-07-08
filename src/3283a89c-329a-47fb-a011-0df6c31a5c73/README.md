@@ -8,6 +8,7 @@
 ```
 # class Csscustomview (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Csscustomview  #Gold {

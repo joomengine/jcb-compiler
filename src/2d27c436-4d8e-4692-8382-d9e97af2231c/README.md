@@ -8,6 +8,7 @@
 ```
 # interface Fieldtypeinterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator**
+> extends: ****
 ```uml
 @startuml
 interface Fieldtypeinterface  #Lavender {

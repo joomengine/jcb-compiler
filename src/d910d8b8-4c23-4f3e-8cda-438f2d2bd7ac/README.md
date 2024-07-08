@@ -8,22 +8,14 @@
 ```
 # abstract class Factory (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: **ExtendingFactory**
 ```uml
 @startuml
 abstract Factory  #Orange {
-  + {static} _(string $key) : mixed
   + {static} getKeys() : array
   + {static} _J(string $key) : mixed
-  + {static} getContainer() : Container
   # {static} createContainer() : Container
 }
-
-note right of Factory::_
-  Get any class from the compiler container
-
-  since: 3.2.0
-  return: mixed
-end note
 
 note right of Factory::getKeys
   Get array of all keys in container
@@ -37,13 +29,6 @@ note right of Factory::_J
 
   since: 3.2.0
   return: mixed
-end note
-
-note right of Factory::getContainer
-  Get the global compiler container
-
-  since: 3.2.0
-  return: Container
 end note
 
 note right of Factory::createContainer

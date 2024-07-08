@@ -8,6 +8,7 @@
 ```
 # class Constantpaths (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Constantpaths  #Gold {

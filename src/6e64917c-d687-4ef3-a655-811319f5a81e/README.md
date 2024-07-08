@@ -8,6 +8,7 @@
 ```
 # class Autoloader (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+> extends: ****
 ```uml
 @startuml
 class Autoloader  #Gold {

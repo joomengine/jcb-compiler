@@ -8,6 +8,7 @@
 ```
 # class Generator (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Service**
+> extends: ****
 ```uml
 @startuml
 class Generator  #Gold {

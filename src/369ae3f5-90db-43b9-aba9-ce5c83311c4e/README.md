@@ -8,6 +8,7 @@
 ```
 # final class ServiceProvider (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Generator**
+> extends: ****
 ```uml
 @startuml
 class ServiceProvider << (F,LightGreen) >> #RoyalBlue {

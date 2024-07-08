@@ -8,6 +8,7 @@
 ```
 # final class JoomlaPower (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: ****
 ```uml
 @startuml
 class JoomlaPower << (F,LightGreen) >> #RoyalBlue {

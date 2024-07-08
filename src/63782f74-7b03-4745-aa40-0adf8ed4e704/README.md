@@ -8,6 +8,7 @@
 ```
 # class History (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class History  #Gold {

@@ -14,9 +14,9 @@
 class Grep << (F,LightGreen) >> #RoyalBlue {
   # array $order
   # remoteIndex(object $path) : void
-  - searchRemote(string $guid) : ?object
-  - getRemote(object $path, string $guid) : ?object
-  - loadRemoteFile(string $owner, string $repo, ...) : mixed
+  # searchRemote(string $guid) : ?object
+  # getRemote(object $path, string $guid) : ?object
+  # loadRemoteFile(string $organisation, string $repository, ...) : mixed
 }
 
 note right of Grep::remoteIndex
@@ -34,7 +34,7 @@ note right of Grep::searchRemote
 end note
 
 note right of Grep::getRemote
-  Get a remote power
+  Get a remote joomla power
 
   since: 3.2.0
   return: ?object
@@ -47,8 +47,8 @@ note right of Grep::loadRemoteFile
   return: mixed
   
   arguments:
-    string $owner
-    string $repo
+    string $organisation
+    string $repository
     string $path
     ?string $branch
 end note

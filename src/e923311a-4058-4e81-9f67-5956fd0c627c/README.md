@@ -8,6 +8,7 @@
 ```
 # interface InjectorInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power**
+> extends: ****
 ```uml
 @startuml
 interface InjectorInterface  #Lavender {

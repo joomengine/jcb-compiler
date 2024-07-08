@@ -16,7 +16,7 @@ use Joomla\CMS\Filesystem\File as JoomlaFile;
 use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Counter;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Paths;
-use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Utilities\FileHelper;
 
 
 /**

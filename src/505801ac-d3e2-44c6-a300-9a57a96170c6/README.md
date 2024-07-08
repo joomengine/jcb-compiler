@@ -8,6 +8,7 @@
 ```
 # final class Generator (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power**
+> extends: ****
 ```uml
 @startuml
 class Generator << (F,LightGreen) >> #RoyalBlue {

@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "2e5bf608-de5c-4b00-a20d-47c26aa350d9",
     "guid": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
     "implements": [
         "caf33c5d-858c-4f9a-894f-ab302ec5445a"
@@ -25,155 +25,164 @@
             "as": "default"
         },
         "use_selection3": {
-            "use": "0601fee8-d51e-4af0-9ad3-b5f8700c4a45",
-            "as": "default"
+            "use": "2dcedd6c-c95b-4a37-9cac-95d28faedca3",
+            "as": "BaseModel"
         },
         "use_selection4": {
-            "use": "ea5ed06e-72ae-4906-9167-1cc0fa32fe69",
+            "use": "a5daf189-3345-4b13-8716-c51f686f545b",
             "as": "default"
         },
         "use_selection5": {
-            "use": "b94aaedb-6774-4739-a63f-8f87141a85db",
+            "use": "0601fee8-d51e-4af0-9ad3-b5f8700c4a45",
             "as": "default"
         },
         "use_selection6": {
-            "use": "36d49d4a-8d0e-435f-ab4c-8f247d96fd4d",
+            "use": "ea5ed06e-72ae-4906-9167-1cc0fa32fe69",
             "as": "default"
         },
         "use_selection7": {
-            "use": "63782f74-7b03-4745-aa40-0adf8ed4e704",
+            "use": "b94aaedb-6774-4739-a63f-8f87141a85db",
             "as": "default"
         },
         "use_selection8": {
-            "use": "9f00e793-86f8-4ef9-b775-a3eb129f83c0",
+            "use": "36d49d4a-8d0e-435f-ab4c-8f247d96fd4d",
             "as": "default"
         },
         "use_selection9": {
-            "use": "2f7b1998-bb93-4055-ae82-aa659ce8a37f",
+            "use": "63782f74-7b03-4745-aa40-0adf8ed4e704",
             "as": "default"
         },
         "use_selection10": {
-            "use": "a74ac3b7-bb79-4639-8f14-54a8021be68b",
+            "use": "9f00e793-86f8-4ef9-b775-a3eb129f83c0",
             "as": "default"
         },
         "use_selection11": {
-            "use": "de01527a-6586-46ea-92e7-11ea3de1cedb",
-            "as": "default"
-        },
-        "use_selection39": {
-            "use": "5716c79f-a1c9-4059-9d00-8cccb9f9e061",
+            "use": "2f7b1998-bb93-4055-ae82-aa659ce8a37f",
             "as": "default"
         },
         "use_selection12": {
-            "use": "8a63e87b-b39b-4a15-8044-9b2a2f4fb61c",
+            "use": "a74ac3b7-bb79-4639-8f14-54a8021be68b",
             "as": "default"
         },
         "use_selection13": {
-            "use": "2dd1289a-4000-43cc-8c62-77ff32de56bf",
+            "use": "de01527a-6586-46ea-92e7-11ea3de1cedb",
             "as": "default"
         },
         "use_selection14": {
-            "use": "253317c7-3c3b-48a0-aec8-8af5e7a86504",
+            "use": "5716c79f-a1c9-4059-9d00-8cccb9f9e061",
             "as": "default"
         },
         "use_selection15": {
-            "use": "87faa133-4cac-4816-ae41-5c3f9a2f76aa",
+            "use": "8a63e87b-b39b-4a15-8044-9b2a2f4fb61c",
             "as": "default"
         },
         "use_selection16": {
-            "use": "fff3255d-c493-4c21-a48f-73b3ebf8ba05",
+            "use": "2dd1289a-4000-43cc-8c62-77ff32de56bf",
             "as": "default"
         },
         "use_selection17": {
-            "use": "ed9591cb-0a03-400a-bf47-eaf78ab19b9d",
+            "use": "253317c7-3c3b-48a0-aec8-8af5e7a86504",
             "as": "default"
         },
         "use_selection18": {
-            "use": "f65b52c2-593a-4c35-89d1-4a8e57a1adf0",
+            "use": "87faa133-4cac-4816-ae41-5c3f9a2f76aa",
             "as": "default"
         },
         "use_selection19": {
-            "use": "c6c30d66-3106-44eb-9272-b2cf7ec74613",
+            "use": "fff3255d-c493-4c21-a48f-73b3ebf8ba05",
             "as": "default"
         },
         "use_selection20": {
-            "use": "295186de-5954-4a65-a4c1-2f79ef305743",
+            "use": "ed9591cb-0a03-400a-bf47-eaf78ab19b9d",
             "as": "default"
         },
         "use_selection21": {
-            "use": "9eba241c-af90-42dd-ae05-92ff4d8391d3",
+            "use": "f65b52c2-593a-4c35-89d1-4a8e57a1adf0",
             "as": "default"
         },
         "use_selection22": {
-            "use": "516f93b8-5fff-41c6-aeaf-2d93180a12cc",
+            "use": "c6c30d66-3106-44eb-9272-b2cf7ec74613",
             "as": "default"
         },
         "use_selection23": {
-            "use": "c7230c8c-ea88-4d8d-8c53-6136133195b7",
+            "use": "295186de-5954-4a65-a4c1-2f79ef305743",
             "as": "default"
         },
         "use_selection24": {
-            "use": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
+            "use": "9eba241c-af90-42dd-ae05-92ff4d8391d3",
             "as": "default"
         },
         "use_selection25": {
-            "use": "8fdd604f-53e7-4a91-9935-afcfd2f6ac1b",
+            "use": "516f93b8-5fff-41c6-aeaf-2d93180a12cc",
             "as": "default"
         },
         "use_selection26": {
-            "use": "56ba30f5-a5c4-4c4c-be6f-a56f7f9cbc60",
+            "use": "c7230c8c-ea88-4d8d-8c53-6136133195b7",
             "as": "default"
         },
         "use_selection27": {
-            "use": "bbd36fbf-d905-47e8-8e67-9ea6ec734712",
+            "use": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
             "as": "default"
         },
         "use_selection28": {
-            "use": "71acf8d6-32b8-4173-8277-eb9cda29fd64",
+            "use": "8fdd604f-53e7-4a91-9935-afcfd2f6ac1b",
             "as": "default"
         },
         "use_selection29": {
+            "use": "56ba30f5-a5c4-4c4c-be6f-a56f7f9cbc60",
+            "as": "default"
+        },
+        "use_selection30": {
+            "use": "bbd36fbf-d905-47e8-8e67-9ea6ec734712",
+            "as": "default"
+        },
+        "use_selection31": {
+            "use": "71acf8d6-32b8-4173-8277-eb9cda29fd64",
+            "as": "default"
+        },
+        "use_selection32": {
             "use": "6edf0cf3-c2b0-45c9-84d2-c6ef1c5d434c",
             "as": "GiteaUtilities"
         },
-        "use_selection30": {
+        "use_selection33": {
             "use": "f4d00907-c94a-49b7-8727-d64c1fa74cf5",
             "as": "GiteaSettings"
         },
-        "use_selection31": {
+        "use_selection34": {
             "use": "3d25ea99-4f33-489a-934c-0e42027e6114",
             "as": "GiteaOrg"
         },
-        "use_selection32": {
+        "use_selection35": {
             "use": "0a69cfc5-3223-4afb-8c9a-75f4bacf3c0e",
             "as": "GiteaUser"
         },
-        "use_selection33": {
+        "use_selection36": {
             "use": "0bb2b72f-ebcd-46fe-844b-ac5fe715c230",
             "as": "GiteaRepo"
         },
-        "use_selection34": {
+        "use_selection37": {
             "use": "808da4eb-b467-46cf-a767-e7e714f46b5a",
             "as": "GiteaPackage"
         },
-        "use_selection35": {
+        "use_selection38": {
             "use": "44396eb8-e14c-47d9-9bdc-8205c0fd2bba",
             "as": "GiteaIssue"
         },
-        "use_selection36": {
+        "use_selection39": {
             "use": "be57f70f-1214-4d69-8d33-7cd4e312ff70",
             "as": "GiteNotifi"
         },
-        "use_selection37": {
+        "use_selection40": {
             "use": "012af7d0-3436-4cae-b856-be49bdc39a3e",
             "as": "GiteaMisc"
         },
-        "use_selection38": {
+        "use_selection41": {
             "use": "ddced4c5-667d-4559-873d-d716c17fd85b",
             "as": "GiteaAdmin"
         }
     },
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Factory",
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Factory",
     "description": "Compiler Factory\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "use Joomla\\DI\\Container;",

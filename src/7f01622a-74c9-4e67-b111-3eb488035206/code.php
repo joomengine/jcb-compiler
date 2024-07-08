@@ -21,8 +21,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionGlobalAction;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\PermissionDashboard;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Counter;
 use VDM\Joomla\Componentbuilder\Compiler\Language;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

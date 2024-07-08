@@ -8,6 +8,7 @@
 ```
 # final class CanDelete (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model**
+> extends: ****
 ```uml
 @startuml
 class CanDelete << (F,LightGreen) >> #RoyalBlue {

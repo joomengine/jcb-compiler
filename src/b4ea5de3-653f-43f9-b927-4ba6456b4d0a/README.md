@@ -7,7 +7,7 @@
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
 # final class Load (Details)
-> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Database**
+> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Data**
 > extends: **ExtendingLoad**
 ```uml
 @startuml

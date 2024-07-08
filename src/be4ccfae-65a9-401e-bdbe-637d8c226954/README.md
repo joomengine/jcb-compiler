@@ -14,10 +14,8 @@
 class Config  #Gold {
   # JoomlaRegistry $config
   + __construct(?Input $input = null, ?JoomlaRegistry $params = null, ...)
+  # getGiteausername() : ?string
   # getGiteatoken() : ?string
-  # getAddcustomgiteaurl() : int
-  # getCustomgiteaurl() : ?string
-  # getCustomgiteatoken() : ?string
   # getSuperpowerscoreorganisation() : string
   # getSuperpowersinitrepos() : array
   # getTmppath() : string
@@ -25,6 +23,7 @@ class Config  #Gold {
   # getAddownpowers() : bool
   # getLocalpowersrepositorypath() : string
   # getApprovedpaths() : array
+  # getIndentationvalue() : string
 }
 
 note right of Config::__construct
@@ -38,29 +37,15 @@ note right of Config::__construct
     ?JoomlaRegistry $config = null
 end note
 
-note left of Config::getGiteatoken
+note left of Config::getGiteausername
+  get Gitea Username
+
+  since: 3.2.0
+  return: ?string
+end note
+
+note right of Config::getGiteatoken
   get Gitea Access Token
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Config::getAddcustomgiteaurl
-  get Add Custom Gitea URL
-
-  since: 3.2.0
-  return: int
-end note
-
-note left of Config::getCustomgiteaurl
-  get Custom Gitea URL
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Config::getCustomgiteatoken
-  get Custom Gitea Access Token
 
   since: 3.2.0
   return: ?string
@@ -113,6 +98,13 @@ note left of Config::getApprovedpaths
 
   since: 3.2.0
   return: array
+end note
+
+note right of Config::getIndentationvalue
+  get indentation value
+
+  since: 3.2.2
+  return: string
 end note
  
 @enduml

@@ -8,6 +8,7 @@
 ```
 # class Event (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class Event  #Gold {

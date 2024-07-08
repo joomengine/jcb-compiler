@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "2f7b1998-bb93-4055-ae82-aa659ce8a37f",
     "implements": [
         "-1"
@@ -21,6 +21,7 @@
             "as": "default"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Placeholder",
     "description": "Compiler Placeholder Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

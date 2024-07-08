@@ -20,8 +20,8 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\FieldNames;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator\Fieldtypeinterface as Field;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Builders;
 use VDM\Joomla\Componentbuilder\Compiler\Creator\Layout;
-use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\ObjectHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Creator\Fielddynamicinterface;
 
 

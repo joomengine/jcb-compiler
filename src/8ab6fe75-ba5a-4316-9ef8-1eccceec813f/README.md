@@ -8,6 +8,7 @@
 ```
 # final class History (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class History << (F,LightGreen) >> #RoyalBlue {

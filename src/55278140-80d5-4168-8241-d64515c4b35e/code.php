@@ -62,10 +62,10 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\Sort;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Search;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Filter;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\ComponentFields;
-use VastDevelopmentMethod\Joomla\Utilities\String\FieldHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\String\FieldHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 
 
 /**

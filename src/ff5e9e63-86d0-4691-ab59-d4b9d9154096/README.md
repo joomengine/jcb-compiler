@@ -8,6 +8,7 @@
 ```
 # class Plantuml (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+> extends: ****
 ```uml
 @startuml
 class Plantuml  #Gold {

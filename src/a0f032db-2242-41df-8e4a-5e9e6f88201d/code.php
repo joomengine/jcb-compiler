@@ -18,7 +18,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Builder\TabCounter;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\Layout as BuilderLayout;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\MovedPublishingFields;
 use VDM\Joomla\Componentbuilder\Compiler\Builder\NewPublishingFields;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\StringHelper;
 
 
 /**

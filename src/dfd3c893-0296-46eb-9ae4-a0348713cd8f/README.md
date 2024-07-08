@@ -8,6 +8,7 @@
 ```
 # class Javascriptadminview (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Javascriptadminview  #Gold {

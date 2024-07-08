@@ -14,13 +14,15 @@ namespace VDM\Joomla\Componentbuilder\Power;
 
 use Joomla\DI\Container;
 use VDM\Joomla\Componentbuilder\Power\Service\Power;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Database;
-use VDM\Joomla\Componentbuilder\Power\Service\Database as PowerDatabase;
+use VDM\Joomla\Service\Database;
+use VDM\Joomla\Service\Model;
+use VDM\Joomla\Service\Data;
 use VDM\Joomla\Componentbuilder\Power\Service\Generator;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Service\Gitea;
+use VDM\Joomla\Componentbuilder\Service\Gitea;
 use VDM\Joomla\Componentbuilder\Power\Service\Gitea as GiteaPower;
-use VastDevelopmentMethod\Joomla\Gitea\Service\Utilities as GiteaUtilities;
-use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
+use VDM\Joomla\Gitea\Service\Utilities as GiteaUtilities;
+use VDM\Joomla\Interfaces\FactoryInterface;
+use VDM\Joomla\Abstraction\Factory as ExtendingFactory;
 
 
 /**
@@ -28,45 +30,8 @@ use VastDevelopmentMethod\Joomla\Interfaces\FactoryInterface;
  * 
  * @since 3.2.0
  */
-abstract class Factory implements FactoryInterface
+abstract class Factory extends ExtendingFactory implements FactoryInterface
 {
-	/**
-	 * Global Package Container
-	 *
-	 * @var     Container
-	 * @since 3.2.0
-	 **/
-	protected static $container = null;
-
-	/**
-	 * Get any class from the package container
-	 *
-	 * @param   string  $key  The container class key
-	 *
-	 * @return  Mixed
-	 * @since 3.2.0
-	 */
-	public static function _($key)
-	{
-		return self::getContainer()->get($key);
-	}
-
-	/**
-	 * Get the global package container
-	 *
-	 * @return  Container
-	 * @since 3.2.0
-	 */
-	public static function getContainer(): Container
-	{
-		if (!self::$container)
-		{
-			self::$container = self::createContainer();
-		}
-
-		return self::$container;
-	}
-
 	/**
 	 * Create a container object
 	 *
@@ -78,7 +43,8 @@ abstract class Factory implements FactoryInterface
 		return (new Container())
 			->registerServiceProvider(new Power())
 			->registerServiceProvider(new Database())
-			->registerServiceProvider(new PowerDatabase())
+			->registerServiceProvider(new Model())
+			->registerServiceProvider(new Data())
 			->registerServiceProvider(new Generator())
 			->registerServiceProvider(new Gitea())
 			->registerServiceProvider(new GiteaPower())

@@ -8,6 +8,7 @@
 ```
 # interface DispenserInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Customcode**
+> extends: ****
 ```uml
 @startuml
 interface DispenserInterface  #Lavender {

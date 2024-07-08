@@ -8,6 +8,7 @@
 ```
 # interface InstallInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Extension**
+> extends: ****
 ```uml
 @startuml
 interface InstallInterface  #Lavender {

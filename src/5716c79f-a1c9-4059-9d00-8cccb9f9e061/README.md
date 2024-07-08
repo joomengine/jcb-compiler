@@ -8,6 +8,7 @@
 ```
 # class JoomlaPower (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class JoomlaPower  #Gold {
@@ -17,9 +18,6 @@ class JoomlaPower  #Gold {
   + getGrep(Container $container) : Grep
   + getExtractor(Container $container) : Extractor
   + getInjector(Container $container) : Injector
-  + getModelUpsert(Container $container) : Upsert
-  + getInsert(Container $container) : Insert
-  + getUpdate(Container $container) : Update
 }
 
 note right of JoomlaPower::register
@@ -29,7 +27,7 @@ note right of JoomlaPower::register
   return: void
 end note
 
-note left of JoomlaPower::getPowers
+note right of JoomlaPower::getPowers
   Get the Powers
 
   since: 3.2.0
@@ -43,7 +41,7 @@ note right of JoomlaPower::getSuperpower
   return: Superpower
 end note
 
-note left of JoomlaPower::getGrep
+note right of JoomlaPower::getGrep
   Get the Grep
 
   since: 3.2.0
@@ -57,32 +55,11 @@ note right of JoomlaPower::getExtractor
   return: Extractor
 end note
 
-note left of JoomlaPower::getInjector
+note right of JoomlaPower::getInjector
   Get the Compiler Power Injector
 
   since: 3.2.0
   return: Injector
-end note
-
-note right of JoomlaPower::getModelUpsert
-  Get the Power Model Upsert
-
-  since: 3.2.0
-  return: Upsert
-end note
-
-note left of JoomlaPower::getInsert
-  Get the Power Insert
-
-  since: 3.2.0
-  return: Insert
-end note
-
-note right of JoomlaPower::getUpdate
-  Get the Power Update
-
-  since: 3.2.0
-  return: Update
 end note
  
 @enduml

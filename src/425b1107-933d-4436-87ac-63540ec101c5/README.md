@@ -8,6 +8,7 @@
 ```
 # final class AllowAdd (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Controller**
+> extends: ****
 ```uml
 @startuml
 class AllowAdd << (F,LightGreen) >> #RoyalBlue {

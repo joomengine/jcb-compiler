@@ -13,7 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Adminview;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Builder\HasPermissions;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 
 
 /**

@@ -8,6 +8,7 @@
 ```
 # interface InputButtonInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Field**
+> extends: ****
 ```uml
 @startuml
 interface InputButtonInterface  #Lavender {

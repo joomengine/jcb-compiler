@@ -41,13 +41,12 @@ This repository contains an index (see below) of all the approved powers within 
 - **Namespace**: [VDM\Joomla\Componentbuilder\Interfaces](#vdm-joomla-componentbuilder-interfaces)
 
   - **interface Cryptinterface** | [Details](src/81de8f57-dd9c-4a17-964f-848cd4a0743b) | [Code](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/code.php) | [Settings](src/81de8f57-dd9c-4a17-964f-848cd4a0743b/settings.json) | Super__81de8f57_dd9c_4a17_964f_848cd4a0743b__Power
-  - **interface GrepInterface** | [Details](src/c182506a-ab84-439c-b962-1e606b58d545) | [Code](src/c182506a-ab84-439c-b962-1e606b58d545/code.php) | [Settings](src/c182506a-ab84-439c-b962-1e606b58d545/settings.json) | Super__c182506a_ab84_439c_b962_1e606b58d545__Power
   - **interface Serverinterface** | [Details](src/86ac0760-26f5-4746-9c7f-ce77860f80f8) | [Code](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/code.php) | [Settings](src/86ac0760-26f5-4746-9c7f-ce77860f80f8/settings.json) | Super__86ac0760_26f5_4746_9c7f_ce77860f80f8__Power
-  - **interface SuperInterface** | [Details](src/51de80f2-2868-4c2c-8198-ef79349e9bd7) | [Code](src/51de80f2-2868-4c2c-8198-ef79349e9bd7/code.php) | [Settings](src/51de80f2-2868-4c2c-8198-ef79349e9bd7/settings.json) | Super__51de80f2_2868_4c2c_8198_ef79349e9bd7__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower](#vdm-joomla-componentbuilder-joomlapower)
 
   - **abstract class Factory** | [Details](src/6ee3dc9e-1949-4da5-a74f-d9eb7f14e400) | [Code](src/6ee3dc9e-1949-4da5-a74f-d9eb7f14e400/code.php) | [Settings](src/6ee3dc9e-1949-4da5-a74f-d9eb7f14e400/settings.json) | Super__6ee3dc9e_1949_4da5_a74f_d9eb7f14e400__Power
   - **final class Grep** | [Details](src/355bf21a-f859-4528-9110-bcd2c6d05ea7) | [Code](src/355bf21a-f859-4528-9110-bcd2c6d05ea7/code.php) | [Settings](src/355bf21a-f859-4528-9110-bcd2c6d05ea7/settings.json) | Super__355bf21a_f859_4528_9110_bcd2c6d05ea7__Power
+  - **final class Repository** | [Details](src/85cddb24-7ee6-4d86-a0db-615f443e1aec) | [Code](src/85cddb24-7ee6-4d86-a0db-615f443e1aec/code.php) | [Settings](src/85cddb24-7ee6-4d86-a0db-615f443e1aec/settings.json) | Super__85cddb24_7ee6_4d86_a0db_615f443e1aec__Power
   - **final class Super** | [Details](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad) | [Code](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad/code.php) | [Settings](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad/settings.json) | Super__39a75870_a7f7_45fd_937d_5ba97b85b8ad__Power
   - **class Config** | [Details](src/0b821bba-7503-4448-90e7-f3c1bd51dfd6) | [Code](src/0b821bba-7503-4448-90e7-f3c1bd51dfd6/code.php) | [Settings](src/0b821bba-7503-4448-90e7-f3c1bd51dfd6/settings.json) | Super__0b821bba_7503_4448_90e7_f3c1bd51dfd6__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power](#vdm-joomla-componentbuilder-power)
@@ -55,13 +54,15 @@ This repository contains an index (see below) of all the approved powers within 
   - **abstract class Factory** | [Details](src/a5734b9e-a72d-494c-bc72-c3bc7506015f) | [Code](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/code.php) | [Settings](src/a5734b9e-a72d-494c-bc72-c3bc7506015f/settings.json) | Super__a5734b9e_a72d_494c_bc72_c3bc7506015f__Power
   - **final class Generator** | [Details](src/505801ac-d3e2-44c6-a300-9a57a96170c6) | [Code](src/505801ac-d3e2-44c6-a300-9a57a96170c6/code.php) | [Settings](src/505801ac-d3e2-44c6-a300-9a57a96170c6/settings.json) | Super__505801ac_d3e2_44c6_a300_9a57a96170c6__Power
   - **final class Grep** | [Details](src/6784dd52-0909-451a-a872-9a942a023c68) | [Code](src/6784dd52-0909-451a-a872-9a942a023c68/code.php) | [Settings](src/6784dd52-0909-451a-a872-9a942a023c68/settings.json) | Super__6784dd52_0909_451a_a872_9a942a023c68__Power
+  - **final class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | Super__3ab0eba9_f37b_4b37_aec1_2e78067f2aff__Power
   - **class Config** | [Details](src/be4ccfae-65a9-401e-bdbe-637d8c226954) | [Code](src/be4ccfae-65a9-401e-bdbe-637d8c226954/code.php) | [Settings](src/be4ccfae-65a9-401e-bdbe-637d8c226954/settings.json) | Super__be4ccfae_65a9_401e_bdbe_637d8c226954__Power
-  - **class Super** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | Super__3ab0eba9_f37b_4b37_aec1_2e78067f2aff__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Service](#vdm-joomla-componentbuilder-service)
 
   - **class CoreRules** | [Details](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0) | [Code](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0/code.php) | [Settings](src/f65b52c2-593a-4c35-89d1-4a8e57a1adf0/settings.json) | Super__f65b52c2_593a_4c35_89d1_4a8e57a1adf0__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Utilities](#vdm-joomla-componentbuilder-utilities)
 
+  - **abstract class FilterHelper** | [Details](src/cddcac51-9a46-47c4-ba59-105c70453bd6) | [Code](src/cddcac51-9a46-47c4-ba59-105c70453bd6/code.php) | [Settings](src/cddcac51-9a46-47c4-ba59-105c70453bd6/settings.json) | Super__cddcac51_9a46_47c4_ba59_105c70453bd6__Power
+  - **abstract class RepoHelper** | [Details](src/c6619b00-261c-473b-8094-d4fe9e6bab39) | [Code](src/c6619b00-261c-473b-8094-d4fe9e6bab39/code.php) | [Settings](src/c6619b00-261c-473b-8094-d4fe9e6bab39/settings.json) | Super__c6619b00_261c_473b_8094_d4fe9e6bab39__Power
   - **class Constantpaths** | [Details](src/e0c8c931-52a0-4171-9909-e8769505bb1f) | [Code](src/e0c8c931-52a0-4171-9909-e8769505bb1f/code.php) | [Settings](src/e0c8c931-52a0-4171-9909-e8769505bb1f/settings.json) | Super__e0c8c931_52a0_4171_9909_e8769505bb1f__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Adminview](#vdm-joomla-componentbuilder-compiler-adminview)
 
@@ -120,6 +121,7 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class JsonItemArray** | [Details](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb) | [Code](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb/code.php) | [Settings](src/6b386f2e-3eb1-4f60-81af-a90c8da1ffeb/settings.json) | Super__6b386f2e_3eb1_4f60_81af_a90c8da1ffeb__Power
   - **final class JsonString** | [Details](src/bb26cf63-69a5-4c43-b2df-43284c9d907d) | [Code](src/bb26cf63-69a5-4c43-b2df-43284c9d907d/code.php) | [Settings](src/bb26cf63-69a5-4c43-b2df-43284c9d907d/settings.json) | Super__bb26cf63_69a5_4c43_b2df_43284c9d907d__Power
   - **final class LanguageMessages** | [Details](src/44efa649-736d-4656-a0ec-e4f1653a6742) | [Code](src/44efa649-736d-4656-a0ec-e4f1653a6742/code.php) | [Settings](src/44efa649-736d-4656-a0ec-e4f1653a6742/settings.json) | Super__44efa649_736d_4656_a0ec_e4f1653a6742__Power
+  - **final class Languages** | [Details](src/7526a39a-ada3-4499-8d75-81beff33f949) | [Code](src/7526a39a-ada3-4499-8d75-81beff33f949/code.php) | [Settings](src/7526a39a-ada3-4499-8d75-81beff33f949/settings.json) | Super__7526a39a_ada3_4499_8d75_81beff33f949__Power
   - **final class Layout** | [Details](src/a90a2495-9c26-446c-867e-9ee8f42fb6af) | [Code](src/a90a2495-9c26-446c-867e-9ee8f42fb6af/code.php) | [Settings](src/a90a2495-9c26-446c-867e-9ee8f42fb6af/settings.json) | Super__a90a2495_9c26_446c_867e_9ee8f42fb6af__Power
   - **final class LayoutData** | [Details](src/7415fdb4-5719-40b7-b01f-05588e968b47) | [Code](src/7415fdb4-5719-40b7-b01f-05588e968b47/code.php) | [Settings](src/7415fdb4-5719-40b7-b01f-05588e968b47/settings.json) | Super__7415fdb4_5719_40b7_b01f_05588e968b47__Power
   - **final class LibraryManager** | [Details](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8) | [Code](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8/code.php) | [Settings](src/e696927b-e8f4-4cfc-9d25-215db4e3c7a8/settings.json) | Super__e696927b_e8f4_4cfc_9d25_215db4e3c7a8__Power
@@ -385,29 +387,9 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Pathfix** | [Details](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f) | [Code](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/code.php) | [Settings](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/settings.json) | Super__cdc9b06d_8333_4fa7_ab4d_b810dd90f95f__Power
   - **class Paths** | [Details](src/6f20369a-8536-4870-a1a3-cda254c939c8) | [Code](src/6f20369a-8536-4870-a1a3-cda254c939c8/code.php) | [Settings](src/6f20369a-8536-4870-a1a3-cda254c939c8/settings.json) | Super__6f20369a_8536_4870_a1a3_cda254c939c8__Power
   - **class Structure** | [Details](src/1efdded5-d6c8-452c-8f37-0374483a7b3f) | [Code](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/code.php) | [Settings](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/settings.json) | Super__1efdded5_d6c8_452c_8f37_0374483a7b3f__Power
-- **Namespace**: [VDM\Joomla\Componentbuilder\Interfaces\Database](#vdm-joomla-componentbuilder-interfaces-database)
-
-  - **interface InsertInterface** | [Details](src/95c02df3-fe0a-405b-b506-b7a5b8605b66) | [Code](src/95c02df3-fe0a-405b-b506-b7a5b8605b66/code.php) | [Settings](src/95c02df3-fe0a-405b-b506-b7a5b8605b66/settings.json) | Super__95c02df3_fe0a_405b_b506_b7a5b8605b66__Power
-  - **interface UpdateInterface** | [Details](src/69c29be3-ab25-4f56-944e-7ada6307b10c) | [Code](src/69c29be3-ab25-4f56-944e-7ada6307b10c/code.php) | [Settings](src/69c29be3-ab25-4f56-944e-7ada6307b10c/settings.json) | Super__69c29be3_ab25_4f56_944e_7ada6307b10c__Power
-- **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Database](#vdm-joomla-componentbuilder-joomlapower-database)
-
-  - **final class Insert** | [Details](src/9d53d45e-9b4d-45ec-827b-4916b91c907e) | [Code](src/9d53d45e-9b4d-45ec-827b-4916b91c907e/code.php) | [Settings](src/9d53d45e-9b4d-45ec-827b-4916b91c907e/settings.json) | Super__9d53d45e_9b4d_45ec_827b_4916b91c907e__Power
-  - **final class Load** | [Details](src/b4ea5de3-653f-43f9-b927-4ba6456b4d0a) | [Code](src/b4ea5de3-653f-43f9-b927-4ba6456b4d0a/code.php) | [Settings](src/b4ea5de3-653f-43f9-b927-4ba6456b4d0a/settings.json) | Super__b4ea5de3_653f_43f9_b927_4ba6456b4d0a__Power
-  - **final class Update** | [Details](src/679473f6-3ea2-49d5-8273-1b29c8f0ad2b) | [Code](src/679473f6-3ea2-49d5-8273-1b29c8f0ad2b/code.php) | [Settings](src/679473f6-3ea2-49d5-8273-1b29c8f0ad2b/settings.json) | Super__679473f6_3ea2_49d5_8273_1b29c8f0ad2b__Power
-- **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Model](#vdm-joomla-componentbuilder-joomlapower-model)
-
-  - **final class Load** | [Details](src/05744dd3-4030-4cf8-8dda-a93ab809b473) | [Code](src/05744dd3-4030-4cf8-8dda-a93ab809b473/code.php) | [Settings](src/05744dd3-4030-4cf8-8dda-a93ab809b473/settings.json) | Super__05744dd3_4030_4cf8_8dda_a93ab809b473__Power
-  - **final class Upsert** | [Details](src/9206082e-a3f7-472e-98b2-de90d06cbdcd) | [Code](src/9206082e-a3f7-472e-98b2-de90d06cbdcd/code.php) | [Settings](src/9206082e-a3f7-472e-98b2-de90d06cbdcd/settings.json) | Super__9206082e_a3f7_472e_98b2_de90d06cbdcd__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Service](#vdm-joomla-componentbuilder-joomlapower-service)
 
-  - **class Database** | [Details](src/a2992a91-eec2-4957-811b-8cde22aa1438) | [Code](src/a2992a91-eec2-4957-811b-8cde22aa1438/code.php) | [Settings](src/a2992a91-eec2-4957-811b-8cde22aa1438/settings.json) | Super__a2992a91_eec2_4957_811b_8cde22aa1438__Power
   - **class JoomlaPower** | [Details](src/38e1ca3e-1908-459a-be87-9f83b292058f) | [Code](src/38e1ca3e-1908-459a-be87-9f83b292058f/code.php) | [Settings](src/38e1ca3e-1908-459a-be87-9f83b292058f/settings.json) | Super__38e1ca3e_1908_459a_be87_9f83b292058f__Power
-- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Database](#vdm-joomla-componentbuilder-power-database)
-
-  - **interface LoadInterface** | [Details](src/99786f53-64b7-4d52-95b0-5306e7386c3f) | [Code](src/99786f53-64b7-4d52-95b0-5306e7386c3f/code.php) | [Settings](src/99786f53-64b7-4d52-95b0-5306e7386c3f/settings.json) | Super__99786f53_64b7_4d52_95b0_5306e7386c3f__Power
-  - **class Insert** | [Details](src/380bb7a3-cdcc-4336-a699-5070cbf521a5) | [Code](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/code.php) | [Settings](src/380bb7a3-cdcc-4336-a699-5070cbf521a5/settings.json) | Super__380bb7a3_cdcc_4336_a699_5070cbf521a5__Power
-  - **class Load** | [Details](src/1f86db0f-e271-45df-8795-3e503ec76698) | [Code](src/1f86db0f-e271-45df-8795-3e503ec76698/code.php) | [Settings](src/1f86db0f-e271-45df-8795-3e503ec76698/settings.json) | Super__1f86db0f_e271_45df_8795_3e503ec76698__Power
-  - **class Update** | [Details](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3) | [Code](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/code.php) | [Settings](src/e543c123-b1d9-4a0b-83b2-a9d371da5ff3/settings.json) | Super__e543c123_b1d9_4a0b_83b2_a9d371da5ff3__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power\Generator](#vdm-joomla-componentbuilder-power-generator)
 
   - **final class Bucket** | [Details](src/5d4278f0-7db2-498f-872a-c974bd8ce334) | [Code](src/5d4278f0-7db2-498f-872a-c974bd8ce334/code.php) | [Settings](src/5d4278f0-7db2-498f-872a-c974bd8ce334/settings.json) | Super__5d4278f0_7db2_498f_872a_c974bd8ce334__Power
@@ -416,13 +398,8 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class Search** | [Details](src/50302fce-62b4-48ae-a692-9cc4595ce74c) | [Code](src/50302fce-62b4-48ae-a692-9cc4595ce74c/code.php) | [Settings](src/50302fce-62b4-48ae-a692-9cc4595ce74c/settings.json) | Super__50302fce_62b4_48ae_a692_9cc4595ce74c__Power
   - **final class ServiceProvider** | [Details](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e) | [Code](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e/code.php) | [Settings](src/369ae3f5-90db-43b9-aba9-ce5c83311c4e/settings.json) | Super__369ae3f5_90db_43b9_aba9_ce5c83311c4e__Power
   - **final class ServiceProviderBuilder** | [Details](src/8a2a3ee5-6ce2-4604-91e2-01f770228960) | [Code](src/8a2a3ee5-6ce2-4604-91e2-01f770228960/code.php) | [Settings](src/8a2a3ee5-6ce2-4604-91e2-01f770228960/settings.json) | Super__8a2a3ee5_6ce2_4604_91e2_01f770228960__Power
-- **Namespace**: [VDM\Joomla\Componentbuilder\Power\Model](#vdm-joomla-componentbuilder-power-model)
-
-  - **class Load** | [Details](src/bb29a833-73f7-4283-9327-bc7e41f0723b) | [Code](src/bb29a833-73f7-4283-9327-bc7e41f0723b/code.php) | [Settings](src/bb29a833-73f7-4283-9327-bc7e41f0723b/settings.json) | Super__bb29a833_73f7_4283_9327_bc7e41f0723b__Power
-  - **class Upsert** | [Details](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5) | [Code](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/code.php) | [Settings](src/7c1fb50f-8fb1-4627-8705-6fedf7182ca5/settings.json) | Super__7c1fb50f_8fb1_4627_8705_6fedf7182ca5__Power
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power\Service](#vdm-joomla-componentbuilder-power-service)
 
-  - **class Database** | [Details](src/7243aaf6-b76c-4391-8698-50abbfc98fbe) | [Code](src/7243aaf6-b76c-4391-8698-50abbfc98fbe/code.php) | [Settings](src/7243aaf6-b76c-4391-8698-50abbfc98fbe/settings.json) | Super__7243aaf6_b76c_4391_8698_50abbfc98fbe__Power
   - **class Generator** | [Details](src/a7101bbc-3c81-4b52-a4aa-522291f7594b) | [Code](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/code.php) | [Settings](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/settings.json) | Super__a7101bbc_3c81_4b52_a4aa_522291f7594b__Power
   - **class Gitea** | [Details](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae) | [Code](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae/code.php) | [Settings](src/510dc0f6-da3f-4a78-b43d-3a03e2cb5fae/settings.json) | Super__510dc0f6_da3f_4a78_b43d_3a03e2cb5fae__Power
   - **class Power** | [Details](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9) | [Code](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9/code.php) | [Settings](src/02bc072b-1e89-46c1-9732-4da77b1a9ac9/settings.json) | Super__02bc072b_1e89_46c1_9732_4da77b1a9ac9__Power

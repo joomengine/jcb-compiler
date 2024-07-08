@@ -8,6 +8,9 @@
 	 */
 	public function register(Container $container)
 	{
+		$container->alias(Languages::class, 'Compiler.Builder.Languages')
+			->share('Compiler.Builder.Languages', [$this, 'getLanguages'], true);
+
 		$container->alias(LanguageMessages::class, 'Compiler.Builder.Language.Messages')
 			->share('Compiler.Builder.Language.Messages', [$this, 'getLanguageMessages'], true);
 
@@ -166,6 +169,19 @@
 
 		$container->alias(ViewsDefaultOrdering::class, 'Compiler.Builder.Views.Default.Ordering')
 			->share('Compiler.Builder.Views.Default.Ordering', [$this, 'getViewsDefaultOrdering'], true);
+	}
+
+	/**
+	 * Get The Languages Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Languages
+	 * @since 3.2.0
+	 */
+	public function getLanguages(Container $container): Languages
+	{
+		return new Languages();
 	}
 
 	/**

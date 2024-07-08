@@ -13,10 +13,10 @@ namespace VDM\Joomla\Componentbuilder\Power;
 
 
 use Joomla\CMS\Language\Text;
-use VastDevelopmentMethod\Joomla\Utilities\FileHelper;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Interfaces\GrepInterface;
-use VastDevelopmentMethod\Joomla\Abstraction\Grep as ExtendingGrep;
+use VDM\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Interfaces\GrepInterface;
+use VDM\Joomla\Abstraction\Grep as ExtendingGrep;
 
 
 /**
@@ -48,14 +48,28 @@ final class Grep extends ExtendingGrep implements GrepInterface
 
 		try
 		{
-			$path->index = $this->contents->get($path->owner, $path->repo, 'super-powers.json', $path->branch);
+			$this->contents->load_($path->base ?? null, $path->token ?? null);
+			$path->index = $this->contents->get($path->organisation, $path->repository, 'super-powers.json', $path->read_branch);
+			$this->contents->reset_();
 		}
 		catch (\Exception $e)
 		{
-			$this->app->enqueueMessage(
-				Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
-				'Error'
-			);
+			if ('super-powers' === $path->repository && 'joomla' !== $path->organisation && (empty($path->base) || $path->base === 'https://git.vdm.dev'))
+			{
+				// give heads-up about the overriding feature
+				$this->app->enqueueMessage(
+					Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BHTTPSGITVDMDEVSB_CAN_BE_USED_TO_OVERRIDE_ANY_POWERBR_BUT_HAS_NOT_YET_BEEN_SET_IN_YOUR_ACCOUNT_AT_HTTPSGITVDMDEVSBR_SMALLTHIS_IS_AND_OPTIONAL_FEATURESMALL', $path->path, $path->organisation),
+					'Message'
+				);
+			}
+			else
+			{
+				// give error
+				$this->app->enqueueMessage(
+					Text::sprintf('COM_COMPONENTBUILDER_PSUPER_POWERB_REPOSITORY_AT_BSSB_GAVE_THE_FOLLOWING_ERRORBR_SP', $this->contents->api(), $path->path, $e->getMessage()),
+					'Error'
+				);
+			}
 
 			$path->index = null;
 		}
@@ -69,7 +83,7 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function searchLocal(string $guid): ?object
+	protected function searchLocal(string $guid): ?object
 	{
 		// we can only search if we have paths
 		if ($this->path && $this->paths)
@@ -97,7 +111,7 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function searchRemote(string $guid): ?object
+	protected function searchRemote(string $guid): ?object
 	{
 		// we can only search if we have paths
 		if ($this->path && $this->paths)
@@ -126,7 +140,7 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function getLocal(object $path, string $guid): ?object
+	protected function getLocal(object $path, string $guid): ?object
 	{
 		if (empty($path->local->{$guid}->settings) || empty($path->local->{$guid}->code))
 		{
@@ -159,44 +173,50 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return object|null
 	 * @since 3.2.0
 	 */
-	private function getRemote(object $path, string $guid): ?object
+	protected function getRemote(object $path, string $guid): ?object
 	{
+		$power = null;
 		if (empty($path->index->{$guid}->settings) || empty($path->index->{$guid}->code))
 		{
-			return null;
+			return $power;
 		}
 
 		// get the settings
-		if (($power = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->settings, $path->branch)) !== null &&
+		$this->contents->load_($path->base ?? null, $path->token ?? null);
+		if (($power = $this->loadRemoteFile($path->organisation, $path->repository, $path->index->{$guid}->settings, $path->read_branch)) !== null &&
 			isset($power->guid))
 		{
 			// get the code
-			if (($code = $this->loadRemoteFile($path->owner, $path->repo, $path->index->{$guid}->power, $path->branch)) !== null)
+			if (($code = $this->loadRemoteFile($path->organisation, $path->repository, $path->index->{$guid}->power, $path->read_branch)) !== null)
 			{
+				// set the git details in params
+				$power->params = (object) [
+					'source' => ['guid' => $path->guid ?? null]
+				];
 				$power->main_class_code = $code;
-				return $power;
 			}
 		}
+		$this->contents->reset_();
 
-		return null;
+		return $power;
 	}
 
 	/**
 	 * Load the remote file
 	 *
-	 * @param string         $owner    The repository owner
-	 * @param string         $repo     The repository name
-	 * @param string         $path     The repository path to file
-	 * @param string|null    $branch   The repository branch name
+	 * @param string         $organisation  The repository organisation
+	 * @param string         $repository    The repository name
+	 * @param string         $path          The repository path to file
+	 * @param string|null    $branch        The repository branch name
 	 *
 	 * @return mixed
 	 * @since 3.2.0
 	 */
-	private function loadRemoteFile(string $owner, string $repo, string $path, ?string $branch)
+	protected function loadRemoteFile(string $organisation, string $repository, string $path, ?string $branch)
 	{
 		try
 		{
-			$data = $this->contents->get($owner, $repo, $path, $branch);
+			$data = $this->contents->get($organisation, $repository, $path, $branch);
 		}
 		catch (\Exception $e)
 		{
@@ -219,7 +239,7 @@ final class Grep extends ExtendingGrep implements GrepInterface
 	 * @return void
 	 * @since 3.2.0
 	 */
-	private function localIndex(object &$path)
+	protected function localIndex(object &$path)
 	{
 		if (isset($path->local) || !isset($path->full_path))
 		{

@@ -8,6 +8,7 @@
 ```
 # interface SettingsInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component**
+> extends: ****
 ```uml
 @startuml
 interface SettingsInterface  #Lavender {

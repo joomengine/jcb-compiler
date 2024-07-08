@@ -8,6 +8,7 @@
 ```
 # final class InstallScript (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaFive**
+> extends: ****
 ```uml
 @startuml
 class InstallScript << (F,LightGreen) >> #RoyalBlue {

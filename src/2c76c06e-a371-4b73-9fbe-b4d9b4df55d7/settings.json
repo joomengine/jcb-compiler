@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "2c76c06e-a371-4b73-9fbe-b4d9b4df55d7",
     "implements": [
         "-1"
@@ -12,6 +12,10 @@
     "system_name": "JCB.Compiler.Service.BuilderLZ",
     "type": "class",
     "use_selection": {
+        "use_selection53": {
+            "use": "7526a39a-ada3-4499-8d75-81beff33f949",
+            "as": "default"
+        },
         "use_selection0": {
             "use": "44efa649-736d-4656-a0ec-e4f1653a6742",
             "as": "default"
@@ -225,6 +229,7 @@
             "as": "default"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.BuilderLZ",
     "description": "Builder L-Z Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

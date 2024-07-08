@@ -8,6 +8,7 @@
 ```
 # class Hash (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Customcode**
+> extends: ****
 ```uml
 @startuml
 class Hash  #Gold {

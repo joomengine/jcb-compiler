@@ -8,6 +8,7 @@
 ```
 # class UniqueName (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
+> extends: ****
 ```uml
 @startuml
 class UniqueName  #Gold {

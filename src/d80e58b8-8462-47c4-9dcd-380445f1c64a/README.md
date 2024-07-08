@@ -8,6 +8,7 @@
 ```
 # final class ConfigFieldsetsEmailHelper (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class ConfigFieldsetsEmailHelper << (F,LightGreen) >> #RoyalBlue {

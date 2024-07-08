@@ -8,6 +8,7 @@
 ```
 # final class AllowEdit (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Controller**
+> extends: ****
 ```uml
 @startuml
 class AllowEdit << (F,LightGreen) >> #RoyalBlue {

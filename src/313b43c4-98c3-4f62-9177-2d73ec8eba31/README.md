@@ -8,6 +8,7 @@
 ```
 # class Customcode (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
+> extends: ****
 ```uml
 @startuml
 class Customcode  #Gold {

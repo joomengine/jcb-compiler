@@ -8,7 +8,7 @@
 ```
 # final class Super (Details)
 > namespace: **VDM\Joomla\Componentbuilder\JoomlaPower**
-> extends: **ExtendingSuper**
+> extends: **Remote**
 ```uml
 @startuml
 class Super << (F,LightGreen) >> #RoyalBlue {

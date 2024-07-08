@@ -14,8 +14,8 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Model;
 
 use VDM\Joomla\Componentbuilder\Compiler\Builder\CustomAlias as BuilderCustomAlias;
 use VDM\Joomla\Componentbuilder\Compiler\Field\Name as FieldName;
-use VastDevelopmentMethod\Joomla\Utilities\JsonHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\JsonHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
 
 
 /**

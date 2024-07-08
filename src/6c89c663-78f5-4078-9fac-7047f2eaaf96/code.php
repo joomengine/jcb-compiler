@@ -16,7 +16,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Factory as Compiler;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Component\SettingsInterface as Settings;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Paths;
 use VDM\Joomla\Componentbuilder\Compiler\Utilities\Folder;
-use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
+use VDM\Joomla\Utilities\ObjectHelper;
 
 
 /**

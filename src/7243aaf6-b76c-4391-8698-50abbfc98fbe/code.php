@@ -14,19 +14,21 @@ namespace VDM\Joomla\Componentbuilder\Power\Service;
 
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
-use VDM\Joomla\Componentbuilder\Power\Model\Load as ModelLoad;
-use VDM\Joomla\Componentbuilder\Power\Model\Upsert as ModelUpsert;
-use VDM\Joomla\Componentbuilder\Power\Database\Load as LoadDatabase;
-use VDM\Joomla\Componentbuilder\Power\Database\Insert as InsertDatabase;
-use VDM\Joomla\Componentbuilder\Power\Database\Update as UpdateDatabase;
+use VDM\Joomla\Model\Load as ModelLoad;
+use VDM\Joomla\Model\Upsert as ModelUpsert;
+use VDM\Joomla\Componentbuilder\Power\Data\Load as LoadData;
+use VDM\Joomla\Componentbuilder\Power\Data\Insert as InsertData;
+use VDM\Joomla\Componentbuilder\Power\Data\Update as UpdateData;
+use VDM\Joomla\Componentbuilder\Power\Data\Delete as DeleteData;
+use VDM\Joomla\Data\Item;
 
 
 /**
- * Database Service Provider
+ * Data Service Provider
  * 
  * @since 3.2.0
  */
-class Database implements ServiceProviderInterface
+class Data implements ServiceProviderInterface
 {
 	/**
 	 * Registers the service provider with a DI container.
@@ -44,18 +46,24 @@ class Database implements ServiceProviderInterface
 		$container->alias(ModelUpsert::class, 'Power.Model.Upsert')
 			->share('Power.Model.Upsert', [$this, 'getModelUpsert'], true);
 
-		$container->alias(LoadDatabase::class, 'Power.Database.Load')
-			->share('Power.Database.Load', [$this, 'getLoadDatabase'], true);
+		$container->alias(LoadData::class, 'Power.Load')
+			->share('Power.Load', [$this, 'getLoadData'], true);
 
-		$container->alias(InsertDatabase::class, 'Power.Database.Insert')
-			->share('Power.Database.Insert', [$this, 'getInsertDatabase'], true);
+		$container->alias(InsertData::class, 'Power.Insert')
+			->share('Power.Insert', [$this, 'getInsertData'], true);
 
-		$container->alias(UpdateDatabase::class, 'Power.Database.Update')
-			->share('Power.Database.Update', [$this, 'getUpdateDatabase'], true);
+		$container->alias(UpdateData::class, 'Power.Update')
+			->share('Power.Update', [$this, 'getUpdateData'], true);
+
+		$container->alias(DeleteData::class, 'Power.Delete')
+			->share('Power.Delete', [$this, 'getDeleteData'], true);
+
+		$container->alias(Item::class, 'Power.Item')
+			->share('Power.Item', [$this, 'getItem'], true);
 	}
 
 	/**
-	 * Get the Power Model Load
+	 * Get The Load Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -65,12 +73,12 @@ class Database implements ServiceProviderInterface
 	public function getModelLoad(Container $container): ModelLoad
 	{
 		return new ModelLoad(
-			$container->get('Table')
+			$container->get('Table'), 'power', false
 		);
 	}
 
 	/**
-	 * Get the Power Model Update or Insert
+	 * Get The Upsert Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
@@ -80,55 +88,88 @@ class Database implements ServiceProviderInterface
 	public function getModelUpsert(Container $container): ModelUpsert
 	{
 		return new ModelUpsert(
-			$container->get('Table')
+			$container->get('Table'), 'power', false
 		);
 	}
 
 	/**
-	 * Get the Load Database
+	 * Get The Load Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  LoadDatabase
+	 * @return  LoadData
 	 * @since 3.2.0
 	 */
-	public function getLoadDatabase(Container $container): LoadDatabase
+	public function getLoadData(Container $container): LoadData
 	{
-		return new LoadDatabase(
+		return new LoadData(
 			$container->get('Power.Model.Load'),
 			$container->get('Load')
 		);
 	}
 
 	/**
-	 * Get the Insert Database
+	 * Get The Insert Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  InsertDatabase
+	 * @return  InsertData
 	 * @since 3.2.0
 	 */
-	public function getInsertDatabase(Container $container): InsertDatabase
+	public function getInsertData(Container $container): InsertData
 	{
-		return new InsertDatabase(
+		return new InsertData(
 			$container->get('Power.Model.Upsert'),
 			$container->get('Insert')
 		);
 	}
 
 	/**
-	 * Get the Update Database
+	 * Get The Update Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  UpdateDatabase
+	 * @return  UpdateData
 	 * @since 3.2.0
 	 */
-	public function getUpdateDatabase(Container $container): UpdateDatabase
+	public function getUpdateData(Container $container): UpdateData
 	{
-		return new UpdateDatabase(
+		return new UpdateData(
 			$container->get('Power.Model.Upsert'),
 			$container->get('Update')
+		);
+	}
+
+	/**
+	 * Get The Delete Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  DeleteData
+	 * @since 3.2.2
+	 */
+	public function getDeleteData(Container $container): DeleteData
+	{
+		return new DeleteData(
+			$container->get('Delete')
+		);
+	}
+
+	/**
+	 * Get The Item Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Item
+	 * @since 3.2.2
+	 */
+	public function getItem(Container $container): Item
+	{
+		return new Item(
+			$container->get('Power.Load'),
+			$container->get('Power.Insert'),
+			$container->get('Power.Update'),
+			$container->get('Power.Delete')
 		);
 	}
 }

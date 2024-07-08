@@ -8,6 +8,7 @@
 ```
 # final class Groups (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
+> extends: ****
 ```uml
 @startuml
 class Groups << (F,LightGreen) >> #RoyalBlue {

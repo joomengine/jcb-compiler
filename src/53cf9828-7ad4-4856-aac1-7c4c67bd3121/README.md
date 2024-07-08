@@ -8,6 +8,7 @@
 ```
 # class Createdate (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Model**
+> extends: ****
 ```uml
 @startuml
 class Createdate  #Gold {

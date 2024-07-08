@@ -8,6 +8,7 @@
 ```
 # class Structure (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Utilities**
+> extends: ****
 ```uml
 @startuml
 class Structure  #Gold {

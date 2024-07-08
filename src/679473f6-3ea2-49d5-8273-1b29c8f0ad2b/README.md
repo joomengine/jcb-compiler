@@ -7,7 +7,7 @@
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
 # final class Update (Details)
-> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Database**
+> namespace: **VDM\Joomla\Componentbuilder\JoomlaPower\Data**
 > extends: **ExtendingUpdate**
 ```uml
 @startuml

@@ -1,7 +1,7 @@
 {
     "add_head": "1",
     "add_licensing_template": "2",
-    "extends": "0",
+    "extends": "",
     "guid": "ea5ed06e-72ae-4906-9167-1cc0fa32fe69",
     "implements": [
         "-1"
@@ -25,6 +25,7 @@
             "as": "default"
         }
     },
+    "extendsinterfaces": null,
     "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Compiler",
     "description": "Compiler Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",

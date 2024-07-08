@@ -21,9 +21,9 @@ use VDM\Joomla\Componentbuilder\Compiler\Power\Repo\Readme as RepoReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Power\Repos\Readme as ReposReadme;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface as Event;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ArrayHelper;
-use VastDevelopmentMethod\Joomla\Utilities\ObjectHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\ArrayHelper;
+use VDM\Joomla\Utilities\ObjectHelper;
 
 
 /**
@@ -115,6 +115,8 @@ class Infusion
 		'unchanged_description' => 'description',
 		'extends' => 'extends',
 		'unchanged_extends_custom' => 'extends_custom',
+		'extendsinterfaces' => 'extendsinterfaces',
+		'unchanged_extendsinterfaces_custom' => 'extendsinterfaces_custom',
 		'guid' => 'guid',
 		'unchanged_head' => 'head',
 		'use_selection' => 'use_selection',

@@ -8,6 +8,7 @@
 ```
 # class Utilities (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+> extends: ****
 ```uml
 @startuml
 class Utilities  #Gold {

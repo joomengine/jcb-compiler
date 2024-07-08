@@ -8,6 +8,7 @@
 ```
 # final class Permission (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Adminview**
+> extends: ****
 ```uml
 @startuml
 class Permission << (F,LightGreen) >> #RoyalBlue {

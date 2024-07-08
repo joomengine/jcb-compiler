@@ -8,6 +8,7 @@
 ```
 # class DatabaseName (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
+> extends: ****
 ```uml
 @startuml
 class DatabaseName  #Gold {

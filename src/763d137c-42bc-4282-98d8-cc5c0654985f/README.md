@@ -8,6 +8,7 @@
 ```
 # class Injector (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+> extends: ****
 ```uml
 @startuml
 class Injector  #Gold {

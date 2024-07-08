@@ -16,7 +16,7 @@ use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
-use VastDevelopmentMethod\Joomla\Componentbuilder\Table;
+use VDM\Joomla\Componentbuilder\Table;
 
 
 /**

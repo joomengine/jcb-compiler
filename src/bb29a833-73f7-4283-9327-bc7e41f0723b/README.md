@@ -8,7 +8,7 @@
 ```
 # class Load (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power\Model**
-> extends: **AbstractionModel**
+> extends: **Model**
 ```uml
 @startuml
 class Load  #Gold {

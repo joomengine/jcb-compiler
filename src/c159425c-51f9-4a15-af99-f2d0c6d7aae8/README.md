@@ -8,6 +8,7 @@
 ```
 # interface ExtractorInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Power**
+> extends: ****
 ```uml
 @startuml
 interface ExtractorInterface  #Lavender {

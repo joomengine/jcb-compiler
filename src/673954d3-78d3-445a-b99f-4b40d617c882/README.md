@@ -8,6 +8,7 @@
 ```
 # final class Structuresingle (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
+> extends: ****
 ```uml
 @startuml
 class Structuresingle << (F,LightGreen) >> #RoyalBlue {

@@ -8,6 +8,7 @@
 ```
 # interface AllowEditInterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Controller**
+> extends: ****
 ```uml
 @startuml
 interface AllowEditInterface  #Lavender {

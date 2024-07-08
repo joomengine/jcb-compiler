@@ -12,9 +12,9 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Utilities;
 
 
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
-use VastDevelopmentMethod\Joomla\Utilities\Base64Helper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\Base64Helper;
 
 
 /**

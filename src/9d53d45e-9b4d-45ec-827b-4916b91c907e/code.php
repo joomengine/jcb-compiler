@@ -9,17 +9,17 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\JoomlaPower\Database;
+namespace VDM\Joomla\Componentbuilder\JoomlaPower\Data;
 
 
-use VDM\Joomla\Componentbuilder\Interfaces\Database\InsertInterface;
-use VDM\Joomla\Componentbuilder\Power\Database\Insert as ExtendingInsert;
+use VDM\Joomla\Interfaces\Data\InsertInterface;
+use VDM\Joomla\Abstraction\Data\Insert as ExtendingInsert;
 
 
 /**
- * Joomla Power Database Insert
+ * Joomla Power Data Insert
  * 
- * @since 3.2.1
+ * @since 3.2.2
  */
 final class Insert extends ExtendingInsert implements InsertInterface
 {
@@ -29,6 +29,6 @@ final class Insert extends ExtendingInsert implements InsertInterface
 	 * @var    string
 	 * @since 3.2.1
 	 */
-	protected string $table = 'power';
+	protected string $table = 'joomla_power';
 }
 

@@ -14,8 +14,9 @@ namespace VDM\Joomla\Componentbuilder\JoomlaPower;
 
 use Joomla\Registry\Registry as JoomlaRegistry;
 use Joomla\CMS\Factory as JoomlaFactory;
-use VastDevelopmentMethod\Joomla\Utilities\GetHelper;
-use VastDevelopmentMethod\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Utilities\GetHelper;
+use VDM\Joomla\Utilities\StringHelper;
+use VDM\Joomla\Componentbuilder\Utilities\RepoHelper;
 use VDM\Joomla\Componentbuilder\Abstraction\BaseConfig;
 
 
@@ -58,6 +59,17 @@ class Config extends BaseConfig
 	}
 
 	/**
+	 * get Gitea Username
+	 *
+	 * @return  string  the access token
+	 * @since 3.2.0
+	 */
+	protected function getGiteausername(): ?string
+	{
+		return $this->params->get('gitea_username');
+	}
+
+	/**
 	 * get Gitea Access Token
 	 *
 	 * @return  string  the access token
@@ -65,50 +77,7 @@ class Config extends BaseConfig
 	 */
 	protected function getGiteatoken(): ?string
 	{
-		return $this->custom_gitea_token ?? $this->params->get('gitea_token');
-	}
-
-	/**
-	 * get Add Custom Gitea URL
-	 *
-	 * @return  int  the add switch
-	 * @since 3.2.0
-	 */
-	protected function getAddcustomgiteaurl(): int
-	{
-		return $this->params->get('add_custom_gitea_url', 1);
-	}
-
-	/**
-	 * get Custom Gitea URL
-	 *
-	 * @return  string  the custom gitea url
-	 * @since 3.2.0
-	 */
-	protected function getCustomgiteaurl(): ?string
-	{
-		if ($this->add_custom_gitea_url == 2)
-		{
-			return $this->params->get('custom_gitea_url');
-		}
-
-		return null;
-	}
-
-	/**
-	 * get Custom Gitea Access Token
-	 *
-	 * @return  string  the custom access token
-	 * @since 3.2.0
-	 */
-	protected function getCustomgiteatoken(): ?string
-	{
-		if ($this->add_custom_gitea_url == 2)
-		{
-			return $this->params->get('custom_gitea_token');
-		}
-
-		return null;
+		return $this->params->get('gitea_token');
 	}
 
 	/**
@@ -135,46 +104,42 @@ class Config extends BaseConfig
 	{
 		// some defaults repos we need by JCB
 		$repos = [];
-		$repos[$this->joomla_powers_core_organisation . '.joomla-powers'] = (object) ['owner' => $this->joomla_powers_core_organisation, 'repo' => 'joomla-powers', 'branch' => 'master'];
+		// get the users own power repo (can overwrite all)
+		if (!empty($this->gitea_username))
+		{
+			$repos[$this->gitea_username . '.joomla-powers'] = (object) ['organisation' => $this->gitea_username, 'repository' => 'joomla-powers', 'read_branch' => 'master'];
+		}
+		$repos[$this->joomla_powers_core_organisation . '.joomla-powers'] = (object) ['organisation' => $this->joomla_powers_core_organisation, 'repository' => 'joomla-powers', 'read_branch' => 'master'];
 
 		return $repos;
 	}
 
 	/**
-	 * get temporary path
-	 *
-	 * @return  string  The temporary path
-	 * @since 3.2.0
-	 */
-	protected function getTmppath(): string
-	{
-		// get the temporary path
-		return $this->config->get('tmp_path');
-	}
-
-	/**
-	 * Get local joomla super powers repository path
-	 *
-	 * @return  string The path to the local repository
-	 * @since 3.2.0
-	 */
-	protected function getLocaljoomlapowersrepositorypath(): string
-	{
-		$default = $this->tmp_path . '/joomla_powers';
-
-		return $this->params->get('local_joomla_powers_repository_path', $default);
-	}
-
-	/**
 	 * Get joomla power approved paths
 	 *
-	 * @return  array The paths to the repositories on Gitea
+	 * @return  array The approved paths to the repositories on Gitea
 	 * @since 3.2.0
 	 */
 	protected function getApprovedjoomlapaths(): array
 	{
 		// some defaults repos we need by JCB
 		$approved = $this->joomla_powers_init_repos;
+
+		$paths = RepoHelper::get(2); // Joomla Power = 2
+
+		if ($paths !== null)
+		{
+			foreach ($paths as $path)
+			{
+				$owner = $path->organisation ?? null;
+				$repo = $path->repository ?? null;
+				if ($owner !== null && $repo !== null)
+				{
+					// we make sure to get only the objects
+					$approved = ["{$owner}.{$repo}" => $path] + $approved;
+				}
+			}
+		}
 
 		return array_values($approved);
 	}

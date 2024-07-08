@@ -8,6 +8,7 @@
 ```
 # final class Placeholder (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Component**
+> extends: ****
 ```uml
 @startuml
 class Placeholder << (F,LightGreen) >> #RoyalBlue {

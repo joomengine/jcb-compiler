@@ -8,6 +8,7 @@
 ```
 # final class ConfigFieldsetsEncryption (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class ConfigFieldsetsEncryption << (F,LightGreen) >> #RoyalBlue {

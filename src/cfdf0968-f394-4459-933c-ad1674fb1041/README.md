@@ -8,6 +8,7 @@
 ```
 # final class Request (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+> extends: ****
 ```uml
 @startuml
 class Request << (F,LightGreen) >> #RoyalBlue {

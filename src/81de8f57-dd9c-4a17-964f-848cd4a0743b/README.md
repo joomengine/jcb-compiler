@@ -8,6 +8,7 @@
 ```
 # interface Cryptinterface (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Interfaces**
+> extends: ****
 ```uml
 @startuml
 interface Cryptinterface  #Lavender {
