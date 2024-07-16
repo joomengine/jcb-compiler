@@ -18,7 +18,7 @@
         },
         "use_selection1": {
             "use": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
-            "as": "Superpower"
+            "as": "default"
         },
         "use_selection2": {
             "use": "6784dd52-0909-451a-a872-9a942a023c68",
@@ -46,11 +46,11 @@
         },
         "use_selection8": {
             "use": "efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5",
-            "as": "RepoReadme"
+            "as": "ItemReadme"
         },
         "use_selection9": {
             "use": "0d08c583-04d5-454e-b756-48ca05e1651a",
-            "as": "ReposReadme"
+            "as": "MainReadme"
         },
         "use_selection10": {
             "use": "eeb03266-22fd-45bb-953a-961bb6be3a54",

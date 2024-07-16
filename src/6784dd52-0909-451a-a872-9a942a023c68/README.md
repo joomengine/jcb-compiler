@@ -9,34 +9,26 @@
 # final class Grep (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Power**
 > extends: **ExtendingGrep**
+
 ```uml
 @startuml
 class Grep << (F,LightGreen) >> #RoyalBlue {
-  # remoteIndex(object $path) : void
   # searchLocal(string $guid) : ?object
   # searchRemote(string $guid) : ?object
   # getLocal(object $path, string $guid) : ?object
   # getRemote(object $path, string $guid) : ?object
-  # loadRemoteFile(string $organisation, string $repository, ...) : mixed
-  # localIndex(object $path) : void
+  # setRemoteIndexMessage(string $message, string $path, ...) : void
 }
 
-note right of Grep::remoteIndex
-  Load the remote repository index of powers
-
-  since: 3.2.0
-  return: void
-end note
-
 note right of Grep::searchLocal
-  Search for a local power
+  Search for a local item
 
   since: 3.2.0
   return: ?object
 end note
 
 note right of Grep::searchRemote
-  Search for a remote power
+  Search for a remote item
 
   since: 3.2.0
   return: ?object
@@ -56,28 +48,36 @@ note right of Grep::getRemote
   return: ?object
 end note
 
-note right of Grep::loadRemoteFile
-  Load the remote file
-
-  since: 3.2.0
-  return: mixed
-  
-  arguments:
-    string $organisation
-    string $repository
-    string $path
-    ?string $branch
-end note
-
-note right of Grep::localIndex
-  Load the local repository index of powers
+note right of Grep::setRemoteIndexMessage
+  Set repository messages and errors based on given conditions.
 
   since: 3.2.0
   return: void
+  
+  arguments:
+    string $message
+    string $path
+    string $repository
+    string $organisation
+    ?string $base
 end note
  
 @enduml
 ```
+
+The Power feature in JCB allows you to write PHP classes and their implementations, making it easy to include them in your Joomla project. JCB handles linking, autoloading, namespacing, and folder structure creation for you.
+
+By using the SPK (Super Power Key) in your custom code (replacing the class name in your code with the SPK), JCB will automatically pull the power from the repository into your project. This makes it available in your JCB instance, allowing you to edit it and include the class in your generated Joomla component.
+
+JCB uses placeholders like [[[`NamespacePrefix`]]] and [[[`ComponentNamespace`]]] in namespacing to prevent collisions and improve reusability across different JCB systems. You can also set the **JCB powers path** globally or per component under the **Dynamic Integration** tab, providing flexibility and easy maintainability.
+
+To add this specific Power to your project in JCB:
+
+> simply use this SPK
+```
+Super---6784dd52_0909_451a_a872_9a942a023c68---Power
+```
+> remember to replace the `---` with `___` to activate this Power in your code
 
 ---
 ```

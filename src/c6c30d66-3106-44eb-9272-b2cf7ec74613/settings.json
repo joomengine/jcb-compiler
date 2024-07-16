@@ -52,41 +52,41 @@
             "use": "99368a6f-2f64-4d4e-ad3a-544d4020ecc6",
             "as": "default"
         },
-        "use_selection13": {
+        "use_selection10": {
             "use": "e6683873-b74e-4b54-8466-69f8a9282033",
             "as": "J3CoreField"
         },
-        "use_selection14": {
+        "use_selection11": {
             "use": "c6818275-cdf7-4fce-a365-90d95a77a71c",
             "as": "J4CoreField"
         },
-        "use_selection15": {
+        "use_selection12": {
             "use": "4c143764-1b84-4b9f-86c5-8de119b26f1a",
             "as": "J5CoreField"
         },
-        "use_selection16": {
+        "use_selection13": {
             "use": "2bc33733-e900-4a9c-8cb3-c537aa9db785",
             "as": "J3InputButton"
         },
-        "use_selection17": {
+        "use_selection14": {
             "use": "1b8a40e9-7847-4341-8a8e-dfdc2d531bbe",
             "as": "J4InputButton"
         },
-        "use_selection18": {
+        "use_selection15": {
             "use": "163fa7ca-21bd-4e7f-a618-26fe10b870fe",
             "as": "J5InputButton"
         },
-        "use_selection19": {
+        "use_selection16": {
             "use": "e2f5fddf-cbc8-44ee-836c-7f3fb08d8900",
             "as": "CoreField"
         },
-        "use_selection21": {
+        "use_selection17": {
             "use": "c600f58c-3fe2-4d2d-b711-2660eab6effe",
             "as": "InputButton"
         }
     },
     "extendsinterfaces": null,
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Service.Field",
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Service.Field",
     "description": "Compiler Field\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",

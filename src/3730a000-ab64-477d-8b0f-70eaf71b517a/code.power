@@ -341,7 +341,7 @@
 	 */
 	private function handlePowerNotFound(string $guid): bool
 	{
-		if (empty($this->retry[$guid]) && $this->superpower->load($guid, ['remote', 'local']))
+		if (empty($this->retry[$guid]) && $this->superpower->item($guid, ['remote', 'local']))
 		{
 			// Retry loading the power
 			unset($this->state[$guid]);

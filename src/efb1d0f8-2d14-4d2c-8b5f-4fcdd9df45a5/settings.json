@@ -3,29 +3,23 @@
     "add_licensing_template": "2",
     "extends": "",
     "guid": "efb1d0f8-2d14-4d2c-8b5f-4fcdd9df45a5",
-    "implements": null,
+    "implements": [
+        "65a0f81a-14fc-4870-9382-b8d830b19937"
+    ],
     "load_selection": null,
-    "name": "Readme",
+    "name": "Item",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.Power.Repo.Readme",
-    "type": "class",
+    "system_name": "JCB.Power.Readme.Item",
+    "type": "final class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
-            "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
-            "as": "default"
-        },
-        "use_selection2": {
             "use": "ff5e9e63-86d0-4691-ab59-d4b9d9154096",
             "as": "default"
         }
     },
     "extendsinterfaces": null,
-    "namespace": "VDM\\Joomla\\Componentbuilder.Compiler.Power.Repo.Readme",
-    "description": "Compiler Power Repo Readme\r\n@since 3.2.0",
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Power.Readme.Item",
+    "description": "Compiler Power Item Readme\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",
     "composer": ""

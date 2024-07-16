@@ -11,8 +11,8 @@
 		$container->alias(Powers::class, 'Power')
 			->share('Power', [$this, 'getPowers'], true);
 
-		$container->alias(Superpower::class, 'Superpower')
-			->share('Superpower', [$this, 'getSuperpower'], true);
+		$container->alias(Get::class, 'Power.Remote.Get')
+			->share('Power.Remote.Get', [$this, 'getRemoteGet'], true);
 
 		$container->alias(Grep::class, 'Power.Grep')
 			->share('Power.Grep', [$this, 'getGrep'], true);
@@ -32,11 +32,11 @@
 		$container->alias(Plantuml::class, 'Power.Plantuml')
 			->share('Power.Plantuml', [$this, 'getPlantuml'], true);
 
-		$container->alias(RepoReadme::class, 'Power.Repo.Readme')
-			->share('Power.Repo.Readme', [$this, 'getRepoReadme'], true);
+		$container->alias(ItemReadme::class, 'Power.Readme.Item')
+			->share('Power.Readme.Item', [$this, 'getItemReadme'], true);
 
-		$container->alias(ReposReadme::class, 'Power.Repos.Readme')
-			->share('Power.Repos.Readme', [$this, 'getReposReadme'], true);
+		$container->alias(MainReadme::class, 'Power.Readme.Main')
+			->share('Power.Readme.Main', [$this, 'getMainReadme'], true);
 
 		$container->alias(Extractor::class, 'Power.Extractor')
 			->share('Power.Extractor', [$this, 'getExtractor'], true);
@@ -60,21 +60,21 @@
 			$container->get('Placeholder'),
 			$container->get('Customcode'),
 			$container->get('Customcode.Gui'),
-			$container->get('Superpower')
+			$container->get('Power.Remote.Get')
 		);
 	}
 
 	/**
-	 * Get The Super Class.
+	 * Get The Remote Get Class.
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  Superpower
+	 * @return  Get
 	 * @since 3.2.0
 	 */
-	public function getSuperpower(Container $container): Superpower
+	public function getRemoteGet(Container $container): Get
 	{
-		return new Superpower(
+		return new Get(
 			$container->get('Power.Grep'),
 			$container->get('Data.Item')
 		);
@@ -130,8 +130,8 @@
 			$container->get('Compiler.Builder.Content.One'),
 			$container->get('Compiler.Builder.Content.Multi'),
 			$container->get('Power.Parser'),
-			$container->get('Power.Repo.Readme'),
-			$container->get('Power.Repos.Readme'),
+			$container->get('Power.Readme.Item'),
+			$container->get('Power.Readme.Main'),
 			$container->get('Placeholder'),
 			$container->get('Event')
 		);
@@ -191,13 +191,12 @@
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  RepoReadme
+	 * @return  ItemReadme
 	 * @since 3.2.0
 	 */
-	public function getRepoReadme(Container $container): RepoReadme
+	public function getItemReadme(Container $container): ItemReadme
 	{
-		return new RepoReadme(
-			$container->get('Power'),
+		return new ItemReadme(
 			$container->get('Power.Plantuml')
 		);
 	}
@@ -207,15 +206,12 @@
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
-	 * @return  ReposReadme
+	 * @return  MainReadme
 	 * @since 3.2.0
 	 */
-	public function getReposReadme(Container $container): ReposReadme
+	public function getMainReadme(Container $container): MainReadme
 	{
-		return new ReposReadme(
-			$container->get('Power'),
-			$container->get('Power.Plantuml')
-		);
+		return new MainReadme();
 	}
 
 	/**

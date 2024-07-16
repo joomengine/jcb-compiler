@@ -22,7 +22,7 @@
         },
         "use_selection2": {
             "use": "39a75870-a7f7-45fd-937d-5ba97b85b8ad",
-            "as": "Superpower"
+            "as": "default"
         },
         "use_selection3": {
             "use": "82505f3f-297f-4d75-a581-929ab3e93689",
@@ -34,7 +34,7 @@
         }
     },
     "extendsinterfaces": null,
-    "namespace": "[[[NamespacePrefix]]]\\Joomla\\Componentbuilder.Compiler.Service.JoomlaPower",
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Service.JoomlaPower",
     "description": "Compiler Joomla Power Service Provider\r\n\r\n@since 3.2.0",
     "implements_custom": "ServiceProviderInterface",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",

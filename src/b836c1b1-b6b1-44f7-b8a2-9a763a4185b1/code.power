@@ -1110,7 +1110,7 @@
 					$repo = $global_path . '/' . $path;
 
 					// set SuperPowerKey (spk)
-					$spk = 'Super_'.'_' . str_replace('-', '_', $guid) . '_'.'_Power';
+					$spk = 'Super---' . str_replace('-', '_', $guid) . '---Power';
 
 					// set the global super power
 					$this->superpowers[$repo][$guid] = [

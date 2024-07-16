@@ -1,12 +1,4 @@
 	/**
-	 * Power Objects
-	 *
-	 * @var    Power
-	 * @since 3.2.0
-	 **/
-	protected Power $power;
-
-	/**
 	 * Compiler Powers Plantuml Builder
 	 *
 	 * @var    Plantuml
@@ -17,26 +9,24 @@
 	/**
 	 * Constructor.
 	 *
-	 * @param Power|null         $power        The power object.
-	 * @param Plantuml|null      $plantuml     The powers plantuml builder object.
+	 * @param Plantuml     $plantuml     The powers plantuml builder object.
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct(?Power $power = null, ?Plantuml $plantuml = null)
+	public function __construct(Plantuml $plantuml)
 	{
-		$this->power = $power ?: Compiler::_('Power');
-		$this->plantuml = $plantuml ?: Compiler::_('Power.Plantuml');
+		$this->plantuml = $plantuml;
 	}
 
 	/**
-	 * Get a Power Readme
+	 * Get an item readme
 	 *
-	 * @param object  $power A power details.
+	 * @param object  $item  An item details.
 	 *
 	 * @return string
-	 * @since 3.2.0
+	 * @since 3.2.2
 	 */
-	public function get(object $power): string
+	public function get(object $item): string
 	{
 		// build readme
 		$readme = ["```
@@ -49,21 +39,23 @@
 ```"];
 		// add the class diagram
 		$parsed_class_code = [];
-		if (isset($power->parsed_class_code) && is_array($power->parsed_class_code))
+		if (isset($item->parsed_class_code) && is_array($item->parsed_class_code))
 		{
-			$parsed_class_code = $power->parsed_class_code;
+			$parsed_class_code = $item->parsed_class_code;
 		}
 
-		$readme[] = "# " . $power->type . " " . $power->code_name . " (Details)";
-		$readme[] = "> namespace: **" . $power->_namespace . "**";
-		if ($power->extends != 0)
+		$readme[] = "# " . $item->type . " " . $item->code_name . " (Details)";
+		$readme[] = "> namespace: **" . $item->_namespace . "**";
+		if (!empty($item->extends_name))
 		{
-			$readme[] = "> extends: **" . $power->extends_name . "**";
+			$readme[] = "> extends: **" . $item->extends_name . "**";
 		}
-		$readme[] = "```uml\n@startuml" . $this->plantuml->classDetailedDiagram(
-			['name' => $power->code_name, 'type' => $power->type],
+		$readme[] = "\n```uml\n@startuml" . $this->plantuml->classDetailedDiagram(
+			['name' => $item->code_name, 'type' => $item->type],
 			$parsed_class_code
 		) . " \n@enduml\n```";
+
+		$readme[] = "\nThe Power feature in JCB allows you to write PHP classes and their implementations, making it easy to include them in your Joomla project. JCB handles linking, autoloading, namespacing, and folder structure creation for you.\n\nBy using the SPK (Super Power Key) in your custom code (replacing the class name in your code with the SPK), JCB will automatically pull the power from the repository into your project. This makes it available in your JCB instance, allowing you to edit it and include the class in your generated Joomla component.\n\nJCB uses placeholders like [[[`NamespacePrefix`]]] and [[[`ComponentNamespace`]]] in namespacing to prevent collisions and improve reusability across different JCB systems. You can also set the **JCB powers path** globally or per component under the **Dynamic Integration** tab, providing flexibility and easy maintainability.\n\nTo add this specific Power to your project in JCB:\n\n> simply use this SPK\n```\n" . 'Super---' . str_replace('-', '_', $item->guid) . '---Power' . "\n```\n> remember to replace the `---` with `___` to activate this Power in your code";
 
 		// yes you can remove this, but why?
 		$readme[] = "\n---\n```
