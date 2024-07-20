@@ -14,9 +14,12 @@
 @startuml
 class Set << (F,LightGreen) >> #RoyalBlue {
   # string $table
+  # string $area
   # array $map
   # updateItem(object $item, object $existing, ...) : bool
   # createItem(object $item, object $repo) : void
+  # updateItemReadme(object $item, object $existing, ...) : void
+  # createItemReadme(object $item, object $repo) : void
 }
 
 note right of Set::updateItem
@@ -33,6 +36,25 @@ end note
 
 note right of Set::createItem
   create a new item
+
+  since: 3.2.2
+  return: void
+end note
+
+note right of Set::updateItemReadme
+  update an existing item readme
+
+  since: 3.2.2
+  return: void
+  
+  arguments:
+    object $item
+    object $existing
+    object $repo
+end note
+
+note right of Set::createItemReadme
+  create a new item readme
 
   since: 3.2.2
   return: void

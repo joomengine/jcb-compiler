@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\JoomlaPower\Remote;
 
 
-use VDM\Joomla\Interfaces\Data\RemoteSetInterface;
-use VDM\Joomla\Data\Remote\Set as ExtendingSet;
+use VDM\Joomla\Interfaces\Remote\SetInterface;
+use VDM\Joomla\Abstraction\Remote\Set as ExtendingSet;
 
 
 /**
@@ -21,15 +21,31 @@ use VDM\Joomla\Data\Remote\Set as ExtendingSet;
  * 
  * @since 3.2.2
  */
-final class Set extends ExtendingSet implements RemoteSetInterface
+final class Set extends ExtendingSet implements SetInterface
 {
 	/**
 	 * Table Name
 	 *
 	 * @var    string
-	 * @since 3.2.1
+	 * @since 3.2.2
 	 */
 	protected string $table = 'joomla_power';
+
+	/**
+	 * Area Name
+	 *
+	 * @var    string
+	 * @since 3.2.2
+	 */
+	protected string $area = 'Joomla Power';
+
+	/**
+	 * Prefix Key
+	 *
+	 * @var    string
+	 * @since 3.2.2
+	 */
+	protected string $prefix_key = 'Joomla---';
 
 	/**
 	 * The item map
@@ -45,12 +61,18 @@ final class Set extends ExtendingSet implements RemoteSetInterface
 	];
 
 	/**
-	 * The settings file path
+	 * The index map
 	 *
-	 * @var   string
+	 * @var    array
 	 * @since 3.2.2
 	 */
-	protected string $settings_path = 'item.json';
+	protected array $index_map = [
+		'name' => 'index_map_IndexName',
+		'settings' => 'index_map_IndexSettingsPath',
+		'path' => 'index_map_IndexPath',
+		'jpk' => 'index_map_IndexKey',
+		'guid' => 'index_map_IndexGUID'
+	];
 
 	/**
 	 * update an existing item (if changed)
@@ -65,7 +87,7 @@ final class Set extends ExtendingSet implements RemoteSetInterface
 	protected function updateItem(object $item, object $existing, object $repo): bool
 	{
 		// make sure there was a change
-		$sha = $existing->params->source[$repo->guid] ?? null;
+		$sha = $existing->params->source[$repo->guid . '-settings'] ?? null;
 		$existing = $this->mapItem($existing);
 		if ($sha === null || $this->areObjectsEqual($item, $existing))
 		{
@@ -102,6 +124,57 @@ final class Set extends ExtendingSet implements RemoteSetInterface
 			'src/' . $item->guid . '/' . $this->getSettingsPath(), // The file path.
 			json_encode($item, JSON_PRETTY_PRINT), // The file content.
 			'Create ' . $item->system_name, // The commit message.
+			$repo->write_branch // The branch name.
+		);
+	}
+
+	/**
+	 * update an existing item readme
+	 *
+	 * @param object $item
+	 * @param object $existing
+	 * @param object $repo
+	 *
+	 * @return void
+	 * @since 3.2.2
+	 */
+	protected function updateItemReadme(object $item, object $existing, object $repo): void
+	{
+		// make sure there was a change
+		$sha = $existing->params->source[$repo->guid . '-readme'] ?? null;
+		if ($sha === null)
+		{
+			return;
+		}
+
+		$this->git->update(
+			$repo->organisation, // The owner name.
+			$repo->repository, // The repository name.
+			'src/' . $item->guid . '/README.md', // The file path.
+			$this->itemReadme->get($item), // The file content.
+			'Update ' . $item->system_name . ' readme file', // The commit message.
+			$sha, // The blob SHA of the old file.
+			$repo->write_branch // The branch name.
+		);
+	}
+
+	/**
+	 * create a new item readme
+	 *
+	 * @param object  $item
+	 * @param object  $repo
+	 *
+	 * @return void
+	 * @since 3.2.2
+	 */
+	protected function createItemReadme(object $item, object $repo): void
+	{
+		$this->git->create(
+			$repo->organisation, // The owner name.
+			$repo->repository, // The repository name.
+			'src/' . $item->guid . '/README.md', // The file path.
+			$this->itemReadme->get($item), // The file content.
+			'Create ' . $item->system_name . ' readme file', // The commit message.
 			$repo->write_branch // The branch name.
 		);
 	}

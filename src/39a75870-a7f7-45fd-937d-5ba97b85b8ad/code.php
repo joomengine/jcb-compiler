@@ -12,8 +12,8 @@
 namespace VDM\Joomla\Componentbuilder\JoomlaPower\Remote;
 
 
-use VDM\Joomla\Interfaces\Data\RemoteGetInterface;
-use VDM\Joomla\Data\Remote\Get as ExtendingGet;
+use VDM\Joomla\Interfaces\Remote\GetInterface;
+use VDM\Joomla\Abstraction\Remote\Get as ExtendingGet;
 
 
 /**
@@ -21,7 +21,7 @@ use VDM\Joomla\Data\Remote\Get as ExtendingGet;
  * 
  * @since 3.2.0
  */
-final class Get extends ExtendingGet implements RemoteGetInterface
+final class Get extends ExtendingGet implements GetInterface
 {
 	/**
 	 * Table Name

@@ -48,7 +48,12 @@ final class Main implements MainInterface
 ```"];
 
 		// default description of super powers
-		$readme[] = "\n### What is JCB Joomla Powers?\nThe Joomla Component Builder (JCB) Joomla Power features are designed to enhance JCB's functionality and streamline the development process. These Joomla Powers enable developers to efficiently manage and share their custom powers across multiple JCB instances through repositories hosted on [https://git.vdm.dev/[username]/[repository-name]](https://git.vdm.dev). JCB Super Powers are managed using a combination of layers, events, tasks, methods, switches, and algorithms, which work together to provide powerful customization and extensibility options. More details on JCB Super Powers can be found in the [Super Powers Documentation](https://git.vdm.dev/joomla/super-powers/wiki).\n\nIn summary, JCB Super Powers offer a flexible and efficient way to manage and share functionalities between JCB instances. By utilizing a sophisticated system of layers, events, tasks, methods, switches, and algorithms, developers can seamlessly integrate JCB core powers and their custom powers. For more information on how to work with JCB Super Powers, refer to the [Super Powers User Guide](https://git.vdm.dev/joomla/super-powers/wiki).\n\n### What can I find here?\nThis repository contains an index (see below) of all the approved powers within the JCB GUI. During the compilation of a component, these powers are automatically added to the repository, ensuring a well-organized and accessible collection of functionalities.\n";
+		$readme[] = "\n### What is JCB Joomla Powers?\nThe Joomla Component Builder (JCB) Joomla Power features are designed to enhance JCB's functionality and streamline the development process. The Joomla powers enable developers to effectively leverage Joomla classes in their custom code without needing to manually add the `use` statements for those classes to the file headers. JCB automatically updates these `use` statements in the necessary headers when it detects a Joomla power key in the custom code.\n
+\n
+By doing this, we can control the `use` statements dynamically from a central point. This is particularly beneficial when transitioning from Joomla 3 to Joomla 4, as it allows us to seamlessly switch from certain classes to their respective Joomla framework classes and vice versa. Maintaining these `use` statements in the Joomla Power area ensures that JCB handles the inclusion and updating of class names to prevent conflicts with other classes.\n
+\n
+This approach is convenient and allows developers to focus on the bespoke parts of their application logic without worrying about class declarations.\n
+\nThis repository contains an index (see below) of all the Joomla! Powers within the JCB core GUI. These Joomla! Powers are automatically added to the repository by our maintainers, ensuring a well-organized and accessible collection of Joomla Classes are maintained.\n";
 
 		// get the readme body
 		$readme[] = $this->readmeBuilder($items);
@@ -93,8 +98,6 @@ final class Main implements MainInterface
 		{
 			// add to the sort bucket
 			$classes[] = [
-				'namespace' => $power['namespace'],
-				'type' => $power['type'],
 				'name' => $power['name'],
 				'link' => $this->indexLinkPower($power)
 			];
@@ -113,7 +116,7 @@ final class Main implements MainInterface
 	 */
 	private function readmeModel(array &$classes): string
 	{
-		$this->sortClasses($classes, $this->defineTypeOrder());
+		$this->sortClasses($classes);
 
 		return $this->generateIndex($classes);
 	}
@@ -127,106 +130,32 @@ final class Main implements MainInterface
 	 */
 	private function generateIndex(array &$classes): string
 	{
-		$result = "# Index of powers\n";
-		$current_namespace = null;
+		$result = "# Index of Joomla! Powers\n";
 
 		foreach ($classes as $class)
 		{
-			if ($class['namespace'] !== $current_namespace)
-			{
-				$current_namespace = $class['namespace'];
-				$result .= "\n- **Namespace**: [{$current_namespace}](#" .
-					strtolower(str_replace('\\', '-', $current_namespace)) . ")\n";
-			}
-
 			// Add the class details
-			$result .= "\n  - " . $class['link'];
+			$result .= "\n - " . $class['link'];
 		}
 
-		return $result;
-	}
+		$result .= "\n> remember to replace the `---` with `___` in the JPK to activate that Joomla! Power in your code";
 
-	/**
-	 * Define the order of types for sorting purposes
-	 *
-	 * @return array The order of types
-	 * @since 3.2.0
-	 */
-	private function defineTypeOrder(): array
-	{
-		return [
-			'interface' => 1,
-			'abstract' => 2,
-			'abstract class' => 2,
-			'final' => 3,
-			'final class' => 3,
-			'class' => 4,
-			'trait' => 5
-		];
+
+		return $result;
 	}
 
 	/**
 	 * Sort the flattened array using a single sorting function
 	 *
 	 * @param array $classes The classes to sort
-	 * @param array $typeOrder The order of types
+	 *
 	 * @since 3.2.0
 	 */
-	private function sortClasses(array &$classes, array $typeOrder): void
+	private function sortClasses(array &$classes): void
 	{
-		usort($classes, function ($a, $b) use ($typeOrder) {
-			$namespaceDiff = $this->compareNamespace($a, $b);
-
-			if ($namespaceDiff !== 0)
-			{
-				return $namespaceDiff;
-			}
-
-			$typeDiff = $this->compareType($a, $b, $typeOrder);
-
-			if ($typeDiff !== 0)
-			{
-				return $typeDiff;
-			}
-
+		usort($classes, function ($a, $b) {
 			return $this->compareName($a, $b);
 		});
-	}
-
-	/**
-	 * Compare the namespace of two classes
-	 *
-	 * @param array $a First class
-	 * @param array $b Second class
-	 *
-	 * @return int Comparison result
-	 * @since 3.2.0
-	 */
-	private function compareNamespace(array $a, array $b): int
-	{
-		$namespaceDepthDiff = substr_count($a['namespace'], '\\') - substr_count($b['namespace'], '\\');
-
-		if ($namespaceDepthDiff === 0)
-		{
-			return strcmp($a['namespace'], $b['namespace']);
-		}
-
-		return $namespaceDepthDiff;
-	}
-
-	/**
-	 * Compare the type of two classes
-	 *
-	 * @param array $a First class
-	 * @param array $b Second class
-	 * @param array $typeOrder The order of types
-	 *
-	 * @return int Comparison result
-	 * @since 3.2.0
-	 */
-	private function compareType(array $a, array $b, array $typeOrder): int
-	{
-		return $typeOrder[$a['type']] <=> $typeOrder[$b['type']];
 	}
 
 	/**
@@ -253,13 +182,11 @@ final class Main implements MainInterface
 	 */
 	private function indexLinkPower(array &$power): string
 	{
-		$type = $power['type'] ?? 'error';
 		$name = $power['name'] ?? 'error';
-		return '**' . $type . ' ' . $name . "** | "
+		return '**' . $name . "** | "
 			. $this->linkPowerRepo($power) . ' | '
-			. $this->linkPowerCode($power) . ' | '
-			. $this->linkPowerSettings($power) . ' | '
-			. $this->linkPowerSPK($power);
+			. $this->linkPowerSettings($power) . ' | JPK: `'
+			. $this->linkPowerJPK($power) .'`';
 	}
 
 	/**
@@ -284,20 +211,6 @@ final class Main implements MainInterface
 	 * @return string
 	 * @since 3.2.0
 	 */
-	private function linkPowerCode(array &$power): string
-	{
-		$code = $power['code'] ?? 'error';
-		return '[Code](' . $code . ')';
-	}
-
-	/**
-	 * Build the Link to the power settings in this repository
-	 *
-	 * @param array  $power  The power details.
-	 *
-	 * @return string
-	 * @since 3.2.0
-	 */
 	private function linkPowerSettings(array &$power): string
 	{
 		$settings = $power['settings'] ?? 'error';
@@ -305,17 +218,17 @@ final class Main implements MainInterface
 	}
 
 	/**
-	 * Get the SuperPowerKey (SPK)
+	 * Get the JoomlaPowerKey (JPK)
 	 *
 	 * @param array  $power  The power details.
 	 *
 	 * @return string
 	 * @since 3.2.0
 	 */
-	private function linkPowerSPK(array &$power): string
+	private function linkPowerJPK(array &$power): string
 	{
-		$spk = $power['spk'] ?? 'error';
-		return $spk;
+		$jpk = $power['jpk'] ?? 'error';
+		return $jpk;
 	}
 }
 
