@@ -1,0 +1,19 @@
+	/**
+	 * Get Array Code
+	 *
+	 * @param array   $views
+	 *
+	 * @since 5.0.2
+	 * @return  string   The array of Code (string)
+	 */
+	public function getArray(array $views): string;
+
+	/**
+	 * Get Custom Function Code
+	 *
+	 * @param array   $views
+	 *
+	 * @since 5.0.2
+	 * @return  string   The functions of Code (string)
+	 */
+	public function getFunctions(array $views): string;

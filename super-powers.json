@@ -32,6 +32,17 @@
         "spk": "Super---01411bb1_fdd6_4cca_84d7_1b62d93c70c1---Power",
         "guid": "01411bb1-fdd6-4cca-84d7-1b62d93c70c1"
     },
+    "025d5903-cfdf-4624-aebb-10d02075e265": {
+        "name": "AllowEditViewsInterface",
+        "type": "interface",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Interfaces\\Architecture\\Controller",
+        "code": "src\/025d5903-cfdf-4624-aebb-10d02075e265\/code.php",
+        "power": "src\/025d5903-cfdf-4624-aebb-10d02075e265\/code.power",
+        "settings": "src\/025d5903-cfdf-4624-aebb-10d02075e265\/settings.json",
+        "path": "src\/025d5903-cfdf-4624-aebb-10d02075e265",
+        "spk": "Super---025d5903_cfdf_4624_aebb_10d02075e265---Power",
+        "guid": "025d5903-cfdf-4624-aebb-10d02075e265"
+    },
     "02bc072b-1e89-46c1-9732-4da77b1a9ac9": {
         "name": "Power",
         "type": "class",
@@ -1935,6 +1946,17 @@
         "spk": "Super---7c07c9d6_34cd_4491_934a_ef0a83f414c0---Power",
         "guid": "7c07c9d6-34cd-4491-934a-ef0a83f414c0"
     },
+    "7ecd7318-8bea-4321-8f13-626da1ab01c7": {
+        "name": "AllowEditViews",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaFive\\Controller",
+        "code": "src\/7ecd7318-8bea-4321-8f13-626da1ab01c7\/code.php",
+        "power": "src\/7ecd7318-8bea-4321-8f13-626da1ab01c7\/code.power",
+        "settings": "src\/7ecd7318-8bea-4321-8f13-626da1ab01c7\/settings.json",
+        "path": "src\/7ecd7318-8bea-4321-8f13-626da1ab01c7",
+        "spk": "Super---7ecd7318_8bea_4321_8f13_626da1ab01c7---Power",
+        "guid": "7ecd7318-8bea-4321-8f13-626da1ab01c7"
+    },
     "7f01622a-74c9-4e67-b111-3eb488035206": {
         "name": "Permission",
         "type": "final class",
@@ -2969,6 +2991,17 @@
         "spk": "Super---bcf1e767_1566_440d_9f67_5c1bada934fa---Power",
         "guid": "bcf1e767-1566-440d-9f67-5c1bada934fa"
     },
+    "bdb74844-7cba-4227-a01c-355eba5fd031": {
+        "name": "AllowEditViews",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaThree\\Controller",
+        "code": "src\/bdb74844-7cba-4227-a01c-355eba5fd031\/code.php",
+        "power": "src\/bdb74844-7cba-4227-a01c-355eba5fd031\/code.power",
+        "settings": "src\/bdb74844-7cba-4227-a01c-355eba5fd031\/settings.json",
+        "path": "src\/bdb74844-7cba-4227-a01c-355eba5fd031",
+        "spk": "Super---bdb74844_7cba_4227_a01c_355eba5fd031---Power",
+        "guid": "bdb74844-7cba-4227-a01c-355eba5fd031"
+    },
     "be4ccfae-65a9-401e-bdbe-637d8c226954": {
         "name": "Config",
         "type": "class",
@@ -3034,6 +3067,17 @@
         "path": "src\/c20a63e0-0eeb-4424-9d08-b1bf0f049dfe",
         "spk": "Super---c20a63e0_0eeb_4424_9d08_b1bf0f049dfe---Power",
         "guid": "c20a63e0-0eeb-4424-9d08-b1bf0f049dfe"
+    },
+    "c2453304-c9ac-4d67-a045-fbda68876434": {
+        "name": "AllowEditViews",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaFour\\Controller",
+        "code": "src\/c2453304-c9ac-4d67-a045-fbda68876434\/code.php",
+        "power": "src\/c2453304-c9ac-4d67-a045-fbda68876434\/code.power",
+        "settings": "src\/c2453304-c9ac-4d67-a045-fbda68876434\/settings.json",
+        "path": "src\/c2453304-c9ac-4d67-a045-fbda68876434",
+        "spk": "Super---c2453304_c9ac_4d67_a045_fbda68876434---Power",
+        "guid": "c2453304-c9ac-4d67-a045-fbda68876434"
     },
     "c600f58c-3fe2-4d2d-b711-2660eab6effe": {
         "name": "InputButtonInterface",

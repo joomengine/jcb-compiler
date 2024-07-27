@@ -30,6 +30,7 @@ class Config  #Gold {
   # getComponentcontext() : string
   # getComponentcodenamelength() : int
   # getComponentautoloaderpath() : string
+  # getComponentinstallerautoloaderpath() : string
   # getAddnamespaceprefix() : bool
   # getNamespaceprefix() : string
   # getJoomlaversion() : int
@@ -207,413 +208,420 @@ note left of Config::getComponentautoloaderpath
   return: string
 end note
 
-note right of Config::getAddnamespaceprefix
+note right of Config::getComponentinstallerautoloaderpath
+  get component installer autoloader path
+
+  since: 5.0.2
+  return: string
+end note
+
+note left of Config::getAddnamespaceprefix
   get add namespace prefix
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getNamespaceprefix
+note right of Config::getNamespaceprefix
   get namespace prefix
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getJoomlaversion
+note left of Config::getJoomlaversion
   get posted Joomla version
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getJoomlaversions
+note right of Config::getJoomlaversions
   get Joomla versions
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getJoomlaversionname
+note left of Config::getJoomlaversionname
   get posted Joomla version name
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getSetjoomlafields
+note right of Config::getSetjoomlafields
   set joomla fields
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getShowadvancedoptions
+note left of Config::getShowadvancedoptions
   get show advanced options switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getIndentationvalue
+note right of Config::getIndentationvalue
   get indentation value
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getAddbuilddate
+note left of Config::getAddbuilddate
   get add build date switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getBuilddate
+note right of Config::getBuilddate
   get build date
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getBackup
+note left of Config::getBackup
   get posted backup switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getRepository
+note right of Config::getRepository
   get posted repository switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getDebuglinenr
+note left of Config::getDebuglinenr
   get posted debuglinenr switch
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getMinify
+note right of Config::getMinify
   get posted minify switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getRemovelinebreaks
+note left of Config::getRemovelinebreaks
   get posted remove line breaks switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getTidy
+note right of Config::getTidy
   get system tidy state
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getSettidywarning
+note left of Config::getSettidywarning
   add tidy warning
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getSettaghistory
+note right of Config::getSettaghistory
   get history tag switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getPercentagelanguageadd
+note left of Config::getPercentagelanguageadd
   get percentage when a language should be added
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getLangtag
+note right of Config::getLangtag
   get language tag
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangprefix
+note left of Config::getLangprefix
   get language prefix
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getLangtarget
+note right of Config::getLangtarget
   get language target
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLangstringtargets
+note left of Config::getLangstringtargets
   get language string targets
 
   since: 3.2.0
   return: array
 end note
 
-note left of Config::getLangstringkeytargets
+note right of Config::getLangstringkeytargets
   get language string targets (by key name)
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getFieldbuildertype
+note left of Config::getFieldbuildertype
   get field builder type
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getDefaultfields
+note right of Config::getDefaultfields
   get default fields
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getTmppath
+note left of Config::getTmppath
   get temporary path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getCompilerpath
+note right of Config::getCompilerpath
   get compiler path
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getJcbpowerspath
+note left of Config::getJcbpowerspath
   get jcb powers path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getPowerlibraryfolder
+note right of Config::getPowerlibraryfolder
   get jcb powers path
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getLocalpowersrepositorypath
+note left of Config::getLocalpowersrepositorypath
   Get local super powers repository path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getApprovedpaths
+note right of Config::getApprovedpaths
   Get super power approved paths
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getJoomlapowerscoreorganisation
+note left of Config::getJoomlapowerscoreorganisation
   Get super power core organisation
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getJoomlapowersinitrepos
+note right of Config::getJoomlapowersinitrepos
   Get Joomla power init repos
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getLocaljoomlapowersrepositorypath
+note left of Config::getLocaljoomlapowersrepositorypath
   Get local joomla super powers repository path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getApprovedjoomlapaths
+note right of Config::getApprovedjoomlapaths
   Get joomla power approved paths
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getBompath
+note left of Config::getBompath
   get bom path
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getCustomfolderpath
+note right of Config::getCustomfolderpath
   get custom folder path
 
   since: 3.2.0
   return: string
 end note
 
-note right of Config::getAddassetstablefix
+note left of Config::getAddassetstablefix
   get switch to add assets table fix
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getAddassetstablenamefix
+note right of Config::getAddassetstablenamefix
   get switch to add assets table name fix
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getAccessworsecase
+note left of Config::getAccessworsecase
   get access worse case size
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getMysqltablekeys
+note right of Config::getMysqltablekeys
   get mysql table keys
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getAddplaceholders
+note left of Config::getAddplaceholders
   get switch add placeholders
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getAddpower
+note right of Config::getAddpower
   get switch add power
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getAddsuperpowers
+note left of Config::getAddsuperpowers
   Get switch to add super powers
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getAddownpowers
+note right of Config::getAddownpowers
   Get switch to add own super powers
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getBuildtarget
+note left of Config::getBuildtarget
   get switch build target switch
 
   since: 3.2.0
   return: string
 end note
 
-note left of Config::getCryptiontypes
+note right of Config::getCryptiontypes
   get encryption types
 
   since: 3.2.0
   return: array
 end note
 
-note right of Config::getBasicencryption
+note left of Config::getBasicencryption
   get basic encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getMediumencryption
+note right of Config::getMediumencryption
   get medium encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getWhmcsencryption
+note left of Config::getWhmcsencryption
   get whmcs encryption switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getRemovesitefolder
+note right of Config::getRemovesitefolder
   Should we remove the site folder
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getRemovesiteeditfolder
+note left of Config::getRemovesiteeditfolder
   Should we remove the site edit folder
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getUikit
+note right of Config::getUikit
   The Uikit switch
 
   since: 3.2.0
   return: int
 end note
 
-note right of Config::getGooglechart
+note left of Config::getGooglechart
   The google chart switch
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Config::getFootable
+note right of Config::getFootable
   The footable switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getFootableversion
+note left of Config::getFootableversion
   The footable version
 
   since: 3.2.0
   return: int
 end note
 
-note left of Config::getPermissionstrictperfield
+note right of Config::getPermissionstrictperfield
   The Permission Strict Per Field Switch
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Config::getExporttextonly
+note left of Config::getExporttextonly
   The Export Text Only Switch
 
   since: 3.2.0

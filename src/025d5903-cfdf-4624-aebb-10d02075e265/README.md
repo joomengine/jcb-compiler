@@ -6,109 +6,28 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Autoloader (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
+# interface AllowEditViewsInterface (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Controller**
 
 ```uml
 @startuml
-class Autoloader  #Gold {
-  # Power $power
-  # Config $config
-  # Content $content
-  # string $installerhelper
-  # string $helper
-  + __construct(Power $power, Config $config, ...)
-  + setFiles() : void
-  + set() : void
-  - getAutoloaderCode() : string
-  - getAutoloaderFile(int $tabSpace, string $area = 'JPATH_ADMINISTRATOR') : ?string
-  - getAutoloader() : ?string
-  - getComposer() : ?string
-  - getAutoloaderInstallArray() : string
-  - getAutoloaderInstallerCode() : string
-  - getInstallerAutoloader() : ?string
-  - getInstallerComposer() : ?string
+interface AllowEditViewsInterface  #Lavender {
+  + getArray(array $views) : string
+  + getFunctions(array $views) : string
 }
 
-note right of Autoloader::__construct
-  Constructor.
-
-  since: 3.2.0
-  
-  arguments:
-    Power $power
-    Config $config
-    Content $content
-end note
-
-note left of Autoloader::setFiles
-  Set the autoloader into the active content array
-
-  since: 3.2.0
-  return: void
-end note
-
-note right of Autoloader::set
-  Set the autoloader into the active content array
-
-  since: 3.2.0
-  return: void
-end note
-
-note left of Autoloader::getAutoloaderCode
-  Get autoloader code
-
-  since: 3.2.0
-  return: string
-end note
-
-note right of Autoloader::getAutoloaderFile
-  Get autoloader file
-
-  since: 3.2.1
-  return: ?string
-end note
-
-note left of Autoloader::getAutoloader
-  Get autoloader code
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Autoloader::getComposer
-  Get the composer autoloader routine
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note left of Autoloader::getAutoloaderInstallArray
-  Get autoloaders for install file
+note right of AllowEditViewsInterface::getArray
+  Get Array Code
 
   since: 5.0.2
   return: string
 end note
 
-note right of Autoloader::getAutoloaderInstallerCode
-  Get installer autoloader code
+note right of AllowEditViewsInterface::getFunctions
+  Get Custom Function Code
 
   since: 5.0.2
   return: string
-end note
-
-note left of Autoloader::getInstallerAutoloader
-  Get autoloader code
-
-  since: 3.2.0
-  return: ?string
-end note
-
-note right of Autoloader::getInstallerComposer
-  Get the composer autoloader routine (NOT READY)
-
-  since: 3.2.0
-  return: ?string
 end note
  
 @enduml
@@ -124,7 +43,7 @@ To add this specific Power to your project in JCB:
 
 > simply use this SPK
 ```
-Super---6e64917c_d687_4ef3_a655_811319f5a81e---Power
+Super---025d5903_cfdf_4624_aebb_10d02075e265---Power
 ```
 > remember to replace the `---` with `___` to activate this Power in your code
 

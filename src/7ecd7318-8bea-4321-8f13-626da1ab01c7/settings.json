@@ -1,0 +1,46 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "7ecd7318-8bea-4321-8f13-626da1ab01c7",
+    "implements": [
+        "025d5903-cfdf-4624-aebb-10d02075e265"
+    ],
+    "load_selection": null,
+    "name": "AllowEditViews",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J5.Controller.AllowEditViews",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "7f01622a-74c9-4e67-b111-3eb488035206",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "007177eb-d39d-4093-8840-07a38811c502",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a1e551a9-8369-48c9-a076-4e5beb65e0df",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaFive.Controller.AllowEditViews",
+    "description": "Controller Allow Edit Views Class for Joomla 5\r\n\r\n@since 5.0.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

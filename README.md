@@ -495,6 +495,7 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class AllowAdd** | [Details](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6) | [Code](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6/code.php) | [Settings](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6/settings.json) | SPK: `Super---005fce79_1b62_4a93_8d5e_8c89fee1afc6---Power`
   - **final class AllowEdit** | [Details](src/e85175fd-e297-46df-a497-27f7a37190fd) | [Code](src/e85175fd-e297-46df-a497-27f7a37190fd/code.php) | [Settings](src/e85175fd-e297-46df-a497-27f7a37190fd/settings.json) | SPK: `Super---e85175fd_e297_46df_a497_27f7a37190fd---Power`
+  - **final class AllowEditViews** | [Details](src/7ecd7318-8bea-4321-8f13-626da1ab01c7) | [Code](src/7ecd7318-8bea-4321-8f13-626da1ab01c7/code.php) | [Settings](src/7ecd7318-8bea-4321-8f13-626da1ab01c7/settings.json) | SPK: `Super---7ecd7318_8bea_4321_8f13_626da1ab01c7---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model](#vdm-joomla-componentbuilder-compiler-architecture-joomlafive-model)
 
   - **final class CanDelete** | [Details](src/34df20ec-67db-4e7e-be61-fb94d360c408) | [Code](src/34df20ec-67db-4e7e-be61-fb94d360c408/code.php) | [Settings](src/34df20ec-67db-4e7e-be61-fb94d360c408/settings.json) | SPK: `Super---34df20ec_67db_4e7e_be61_fb94d360c408---Power`
@@ -503,6 +504,7 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class AllowAdd** | [Details](src/425b1107-933d-4436-87ac-63540ec101c5) | [Code](src/425b1107-933d-4436-87ac-63540ec101c5/code.php) | [Settings](src/425b1107-933d-4436-87ac-63540ec101c5/settings.json) | SPK: `Super---425b1107_933d_4436_87ac_63540ec101c5---Power`
   - **final class AllowEdit** | [Details](src/ddf31f4b-96ba-46e7-8100-f48e1cefe533) | [Code](src/ddf31f4b-96ba-46e7-8100-f48e1cefe533/code.php) | [Settings](src/ddf31f4b-96ba-46e7-8100-f48e1cefe533/settings.json) | SPK: `Super---ddf31f4b_96ba_46e7_8100_f48e1cefe533---Power`
+  - **final class AllowEditViews** | [Details](src/c2453304-c9ac-4d67-a045-fbda68876434) | [Code](src/c2453304-c9ac-4d67-a045-fbda68876434/code.php) | [Settings](src/c2453304-c9ac-4d67-a045-fbda68876434/settings.json) | SPK: `Super---c2453304_c9ac_4d67_a045_fbda68876434---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model](#vdm-joomla-componentbuilder-compiler-architecture-joomlafour-model)
 
   - **final class CanDelete** | [Details](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f) | [Code](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/code.php) | [Settings](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/settings.json) | SPK: `Super---2a69a8ab_cea0_4c75_92d5_9495cb740e0f---Power`
@@ -511,6 +513,7 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class AllowAdd** | [Details](src/f21388dc-5ddc-4970-a3c2-55f075024762) | [Code](src/f21388dc-5ddc-4970-a3c2-55f075024762/code.php) | [Settings](src/f21388dc-5ddc-4970-a3c2-55f075024762/settings.json) | SPK: `Super---f21388dc_5ddc_4970_a3c2_55f075024762---Power`
   - **final class AllowEdit** | [Details](src/8faaed82-522d-4f78-bd43-0ab3f7c72e5f) | [Code](src/8faaed82-522d-4f78-bd43-0ab3f7c72e5f/code.php) | [Settings](src/8faaed82-522d-4f78-bd43-0ab3f7c72e5f/settings.json) | SPK: `Super---8faaed82_522d_4f78_bd43_0ab3f7c72e5f---Power`
+  - **final class AllowEditViews** | [Details](src/bdb74844-7cba-4227-a01c-355eba5fd031) | [Code](src/bdb74844-7cba-4227-a01c-355eba5fd031/code.php) | [Settings](src/bdb74844-7cba-4227-a01c-355eba5fd031/settings.json) | SPK: `Super---bdb74844_7cba_4227_a01c_355eba5fd031---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model](#vdm-joomla-componentbuilder-compiler-architecture-joomlathree-model)
 
   - **final class CanDelete** | [Details](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd) | [Code](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/code.php) | [Settings](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/settings.json) | SPK: `Super---23766738_d0a4_4d0a_8555_7e4c97c0cddd---Power`
@@ -519,6 +522,7 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **interface AllowAddInterface** | [Details](src/c9700450-4f44-4455-bc86-6a7660daadee) | [Code](src/c9700450-4f44-4455-bc86-6a7660daadee/code.php) | [Settings](src/c9700450-4f44-4455-bc86-6a7660daadee/settings.json) | SPK: `Super---c9700450_4f44_4455_bc86_6a7660daadee---Power`
   - **interface AllowEditInterface** | [Details](src/992a842f-1ba9-4a5c-b214-042459ffe038) | [Code](src/992a842f-1ba9-4a5c-b214-042459ffe038/code.php) | [Settings](src/992a842f-1ba9-4a5c-b214-042459ffe038/settings.json) | SPK: `Super---992a842f_1ba9_4a5c_b214_042459ffe038---Power`
+  - **interface AllowEditViewsInterface** | [Details](src/025d5903-cfdf-4624-aebb-10d02075e265) | [Code](src/025d5903-cfdf-4624-aebb-10d02075e265/code.php) | [Settings](src/025d5903-cfdf-4624-aebb-10d02075e265/settings.json) | SPK: `Super---025d5903_cfdf_4624_aebb_10d02075e265---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model](#vdm-joomla-componentbuilder-compiler-interfaces-architecture-model)
 
   - **interface CanDeleteInterface** | [Details](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91) | [Code](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/code.php) | [Settings](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/settings.json) | SPK: `Super---e00a7d1d_6d80_41c5_bf13_32d41bc5bf91---Power`

@@ -16,33 +16,49 @@
             "use": "c9700450-4f44-4455-bc86-6a7660daadee",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection1": {
             "use": "005fce79-1b62-4a93-8d5e-8c89fee1afc6",
             "as": "J5ControllerAllowAdd"
         },
-        "use_selection1": {
+        "use_selection2": {
             "use": "425b1107-933d-4436-87ac-63540ec101c5",
             "as": "J4ControllerAllowAdd"
         },
-        "use_selection2": {
+        "use_selection3": {
             "use": "f21388dc-5ddc-4970-a3c2-55f075024762",
             "as": "J3ControllerAllowAdd"
         },
-        "use_selection3": {
+        "use_selection4": {
             "use": "992a842f-1ba9-4a5c-b214-042459ffe038",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection5": {
             "use": "e85175fd-e297-46df-a497-27f7a37190fd",
             "as": "J5ControllerAllowEdit"
         },
-        "use_selection4": {
+        "use_selection6": {
             "use": "ddf31f4b-96ba-46e7-8100-f48e1cefe533",
             "as": "J4ControllerAllowEdit"
         },
-        "use_selection5": {
+        "use_selection7": {
             "use": "8faaed82-522d-4f78-bd43-0ab3f7c72e5f",
             "as": "J3ControllerAllowEdit"
+        },
+        "use_selection8": {
+            "use": "025d5903-cfdf-4624-aebb-10d02075e265",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "7ecd7318-8bea-4321-8f13-626da1ab01c7",
+            "as": "J5ControllerAllowEditViews"
+        },
+        "use_selection10": {
+            "use": "c2453304-c9ac-4d67-a045-fbda68876434",
+            "as": "J4ControllerAllowEditViews"
+        },
+        "use_selection11": {
+            "use": "bdb74844-7cba-4227-a01c-355eba5fd031",
+            "as": "J3ControllerAllowEditViews"
         }
     },
     "extendsinterfaces": null,

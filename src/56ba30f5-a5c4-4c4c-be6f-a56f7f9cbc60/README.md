@@ -22,6 +22,10 @@ class ArchitectureController  #Gold {
   + getJ5ControllerAllowEdit(Container $container) : J5ControllerAllowEdit
   + getJ4ControllerAllowEdit(Container $container) : J4ControllerAllowEdit
   + getJ3ControllerAllowEdit(Container $container) : J3ControllerAllowEdit
+  + getAllowEditViews(Container $container) : AllowEditViewsInterface
+  + getJ5ControllerAllowEditViews(Container $container) : J5ControllerAllowEditViews
+  + getJ4ControllerAllowEditViews(Container $container) : J4ControllerAllowEditViews
+  + getJ3ControllerAllowEditViews(Container $container) : J3ControllerAllowEditViews
 }
 
 note right of ArchitectureController::register
@@ -85,6 +89,34 @@ note right of ArchitectureController::getJ3ControllerAllowEdit
 
   since: 3.2.0
   return: J3ControllerAllowEdit
+end note
+
+note left of ArchitectureController::getAllowEditViews
+  Get The AllowEditViewsInterface Class.
+
+  since: 5.0.2
+  return: AllowEditViewsInterface
+end note
+
+note right of ArchitectureController::getJ5ControllerAllowEditViews
+  Get The AllowEditViews Class.
+
+  since: 5.0.2
+  return: J5ControllerAllowEditViews
+end note
+
+note left of ArchitectureController::getJ4ControllerAllowEditViews
+  Get The AllowEditViews Class.
+
+  since: 5.0.2
+  return: J4ControllerAllowEditViews
+end note
+
+note right of ArchitectureController::getJ3ControllerAllowEditViews
+  Get The AllowEditViews Class.
+
+  since: 5.0.2
+  return: J3ControllerAllowEditViews
 end note
  
 @enduml
