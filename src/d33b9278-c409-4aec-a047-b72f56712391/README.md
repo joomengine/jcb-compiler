@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Extractor (Details)
+# final class Extractor (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Language**
 
 ```uml
 @startuml
-class Extractor  #Gold {
+class Extractor << (F,LightGreen) >> #RoyalBlue {
   + array $langKeys
   + array $langMismatch
   + array $langMatch

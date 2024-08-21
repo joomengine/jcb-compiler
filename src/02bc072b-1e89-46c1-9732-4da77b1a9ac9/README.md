@@ -17,7 +17,11 @@ class Power  #Gold {
   + getTable(Container $container) : Table
   + getGrep(Container $container) : Grep
   + getRemoteGet(Container $container) : Get
+  + getRemoteSet(Container $container) : Set
+  + getItemReadme(Container $container) : ItemReadme
+  + getMainReadme(Container $container) : MainReadme
   + getParser(Container $container) : Parser
+  + getPlantuml(Container $container) : Plantuml
 }
 
 note right of Power::register
@@ -27,7 +31,7 @@ note right of Power::register
   return: void
 end note
 
-note right of Power::getConfig
+note left of Power::getConfig
   Get The Config Class.
 
   since: 3.2.0
@@ -41,7 +45,7 @@ note right of Power::getTable
   return: Table
 end note
 
-note right of Power::getGrep
+note left of Power::getGrep
   Get The Grep Class.
 
   since: 3.2.0
@@ -55,11 +59,39 @@ note right of Power::getRemoteGet
   return: Get
 end note
 
+note left of Power::getRemoteSet
+  Get The Remote Set Class.
+
+  since: 5.0.3
+  return: Set
+end note
+
+note right of Power::getItemReadme
+  Get The Readme Class.
+
+  since: 5.0.3
+  return: ItemReadme
+end note
+
+note left of Power::getMainReadme
+  Get The Readme Class.
+
+  since: 5.0.3
+  return: MainReadme
+end note
+
 note right of Power::getParser
   Get The Parser Class.
 
   since: 3.2.0
   return: Parser
+end note
+
+note left of Power::getPlantuml
+  Get The Plantuml Class.
+
+  since: 5.0.3
+  return: Plantuml
 end note
  
 @enduml

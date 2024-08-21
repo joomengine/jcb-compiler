@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Language (Details)
+# final class Language (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
 
 ```uml
 @startuml
-class Language  #Gold {
+class Language << (F,LightGreen) >> #RoyalBlue {
   # array $content
   # Config $config
   + __construct(?Config $config = null)

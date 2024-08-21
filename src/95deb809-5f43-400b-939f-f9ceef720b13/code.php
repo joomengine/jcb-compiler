@@ -200,7 +200,7 @@ final class Header implements HeaderInterface
 		$headers = $this->getHeaders($context);
 
 		// add to all except the helper classes
-		if ('admin.helper' !== $context && 'site.helper' !== $context)
+		if ('admin.helper' !== $context && 'site.helper' !== $context && 'plugin.extension.header' !== $context && 'plugin.provider.header' !== $context)
 		{
 			$target = 'Administrator';
 			if ($this->config->get('build_target', 'admin') === 'site')
@@ -228,11 +228,6 @@ final class Header implements HeaderInterface
 		// get dynamic headers
 		switch ($context)
 		{
-			case 'admin.helper':
-			case 'site.helper':
-				$this->setHelperClassHeader($headers, $codeName);
-				break;
-
 			case 'admin.view.html':
 			case 'admin.views.html':
 			case 'custom.admin.view.html':
@@ -243,7 +238,7 @@ final class Header implements HeaderInterface
 				if ((2 == $this->config->uikit || 1 == $this->config->uikit)
 					&& $this->uikitcomp->exists($codeName))
 				{
-					$headers[] = 'use Joomla\CMS\Filesystem\File;';
+					$headers[] = 'use Joomla\Filesystem\File;';
 				}
 				break;
 
@@ -265,6 +260,10 @@ final class Header implements HeaderInterface
 			case 'admin.views.model':
 			case 'site.views.model':
 				$headers[] = 'use Joomla\CMS\Helper\TagsHelper;';
+				break;
+
+			case 'plugin.provider.header':
+				$headers[] = "use {$this->NamespacePrefix}\\Plugin\\[[[PluginGroupNamespace]]]\\[[[PluginNamespace]]]\\Extension\\{$codeName};";
 				break;
 
 			default:
@@ -313,7 +312,7 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Access\Access;';
 				$headers[] = 'use Joomla\CMS\Access\Rules as AccessRules;';
 				$headers[] = 'use Joomla\CMS\Component\ComponentHelper;';
-				$headers[] = 'use Joomla\CMS\Filesystem\File;';
+				$headers[] = 'use Joomla\Filesystem\File;';
 				$headers[] = 'use Joomla\CMS\Language\Language;';
 				$headers[] = 'use Joomla\CMS\MVC\Model\BaseDatabaseModel;';
 				$headers[] = 'use Joomla\CMS\Object\CMSObject;';
@@ -503,8 +502,8 @@ final class Header implements HeaderInterface
 				break;
 			case 'import.custom.model':
 			case 'import.model':
-				$headers[] = 'use Joomla\CMS\Filesystem\File;';
-				$headers[] = 'use Joomla\CMS\Filesystem\Folder;';
+				$headers[] = 'use Joomla\Filesystem\File;';
+				$headers[] = 'use Joomla\Filesystem\Folder;';
 				$headers[] = 'use Joomla\CMS\Filesystem\Path;';
 				$headers[] = 'use Joomla\CMS\Filter\OutputFilter;';
 				$headers[] = 'use Joomla\CMS\Installer\InstallerHelper;';
@@ -553,6 +552,33 @@ final class Header implements HeaderInterface
 				$headers[] = 'use Joomla\CMS\Form\Field\###FORM_EXTENDS###;';
 				break;
 
+			case 'plugin.extension.header':
+				$headers = [];
+				break;
+			case 'plugin.provider.header':
+				$headers = [];
+				$headers[] = 'use Joomla\CMS\Factory;';
+				$headers[] = 'use Joomla\CMS\Plugin\PluginHelper;';
+				$headers[] = 'use Joomla\CMS\Extension\PluginInterface;';
+				$headers[] = 'use Joomla\Event\DispatcherInterface;';
+				$headers[] = 'use Joomla\DI\ServiceProviderInterface;';
+				$headers[] = 'use Joomla\DI\Container;';
+				break;
+
+			case 'api.view.controller':
+			case 'api.views.controller':
+				$headers = [];
+				$headers[] = 'use Joomla\CMS\Factory;';
+				$headers[] = 'use Joomla\CMS\MVC\Controller\ApiController;';
+				break;
+
+			case 'api.view.json':
+			case 'api.views.json':
+				$headers = [];
+				$headers[] = 'use Joomla\CMS\Factory;';
+				$headers[] = 'use Joomla\CMS\MVC\View\JsonApiView as BaseApiView;';
+				break;
+
 			default:
 				break;
 		}
@@ -560,26 +586,6 @@ final class Header implements HeaderInterface
 		$this->headers[$context] = $headers;
 
 		return $headers;
-	}
-
-	/**
-	 * set Helper Dynamic Headers
-	 *
-	 * @param   array   $headers  The headers array
-	 * @param   string  $target_client
-	 *
-	 * @return void
-	 * @since 3.2.0
-	 */
-	protected function setHelperClassHeader(&$headers, $target_client)
-	{
-		// add only to admin client
-		if ('admin' === $target_client && $this->config->get('add_eximport', false))
-		{
-			$headers[] = 'use PhpOffice\PhpSpreadsheet\IOFactory;';
-			$headers[] = 'use PhpOffice\PhpSpreadsheet\Spreadsheet;';
-			$headers[] = 'use PhpOffice\PhpSpreadsheet\Writer\Xlsx;';
-		}
 	}
 }
 

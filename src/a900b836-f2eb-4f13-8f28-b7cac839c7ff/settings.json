@@ -3,15 +3,17 @@
     "add_licensing_template": "2",
     "extends": "",
     "guid": "a900b836-f2eb-4f13-8f28-b7cac839c7ff",
-    "implements": null,
+    "implements": [
+        "ef66b17c-ffae-414a-9067-20a63ba2bec5"
+    ],
     "load_selection": null,
     "name": "Structure",
     "power_version": "1.0.0",
-    "system_name": "JCB.Compiler.Joomlaplugin.Structure",
+    "system_name": "JCB.Compiler.Joomlaplugin.J3.Structure",
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "766a9524-37df-4604-91a7-b98a6150ee26",
+            "use": "8cc85656-a925-4a46-a49b-83c72167fd6a",
             "as": "Plugin"
         },
         "use_selection1": {
@@ -80,8 +82,8 @@
         }
     },
     "extendsinterfaces": null,
-    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Joomlaplugin.Structure",
-    "description": "Joomla Plugin Builder Class\r\n\r\n@since 3.2.0",
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Joomlaplugin.JoomlaThree.Structure",
+    "description": "Joomla 3 Plugin Builder Class\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
     "head": "",
     "composer": ""

@@ -1,0 +1,6 @@
+	/**
+	 * Is an Array
+	 *
+	 * @since 5.0.2
+	 */
+	use IsArray;

@@ -14,11 +14,51 @@
     "use_selection": {
         "use_selection0": {
             "use": "766a9524-37df-4604-91a7-b98a6150ee26",
-            "as": "default"
+            "as": "J3PluginData"
         },
         "use_selection1": {
+            "use": "361e08c0-5916-4b77-b6a2-c16a769bbc40",
+            "as": "J4PluginData"
+        },
+        "use_selection2": {
+            "use": "174f5c9c-5e03-4261-94ca-279ca76c710d",
+            "as": "J5PluginData"
+        },
+        "use_selection3": {
+            "use": "8cc85656-a925-4a46-a49b-83c72167fd6a",
+            "as": "PluginData"
+        },
+        "use_selection4": {
             "use": "a900b836-f2eb-4f13-8f28-b7cac839c7ff",
-            "as": "default"
+            "as": "J3Structure"
+        },
+        "use_selection5": {
+            "use": "34daa4c8-45c3-4249-baa3-1bedf8ed3ebc",
+            "as": "J4Structure"
+        },
+        "use_selection6": {
+            "use": "d05c22be-9641-47fb-8a7b-063c43e7f1bf",
+            "as": "J5Structure"
+        },
+        "use_selection7": {
+            "use": "ef66b17c-ffae-414a-9067-20a63ba2bec5",
+            "as": "Structure"
+        },
+        "use_selection8": {
+            "use": "03b75302-98ba-47ac-859f-1f49b738f66c",
+            "as": "J3Infusion"
+        },
+        "use_selection9": {
+            "use": "84fe58db-d64d-42c6-9b41-f80bcff34c7f",
+            "as": "J4Infusion"
+        },
+        "use_selection10": {
+            "use": "7f75b300-534c-4f63-a368-6f4abc4cea58",
+            "as": "J5Infusion"
+        },
+        "use_selection11": {
+            "use": "40e17114-2193-4a61-9233-47b5f4193665",
+            "as": "Infusion"
         }
     },
     "extendsinterfaces": null,

@@ -1,0 +1,28 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "23f459a4-7c2a-4cbf-b0a6-8a11954140a9",
+    "implements": null,
+    "load_selection": null,
+    "name": "FieldsetExtension",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Creator.FieldsetExtension",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "b5986fab-17ca-4236-8c0c-81ebd2bb82ba",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Creator.FieldsetExtension",
+    "description": "Extension Fieldset Creator Class\r\n\r\n@since 5.0.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

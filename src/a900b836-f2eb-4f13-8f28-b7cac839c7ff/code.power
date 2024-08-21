@@ -266,9 +266,9 @@
 			'<?php' . PHP_EOL . '// Plugin main class template' .
 			PHP_EOL . Placefix::_h('BOM') . PHP_EOL .
 			PHP_EOL . '// No direct access to this file' . PHP_EOL .
-			"defined('_JEXEC') or die('Restricted access');"
-			. PHP_EOL .
-			Placefix::_h('MAINCLASS')
+			"defined('_JEXEC') or die('Restricted access');" . PHP_EOL .
+			PHP_EOL . Placefix::_h('EXTENSION_CLASS_HEADER') .
+			PHP_EOL . PHP_EOL . Placefix::_h('EXTENSION_CLASS')
 		);
 
 		$this->files->appendArray($plugin->key, $file_details);
@@ -328,7 +328,7 @@
 				PHP_EOL . Placefix::_h('BOM') . PHP_EOL .
 				PHP_EOL . '// No direct access to this file' . PHP_EOL .
 				"defined('_JEXEC') or die('Restricted access');" . PHP_EOL .
-				Placefix::_h('INSTALLCLASS')
+				Placefix::_h('INSTALL_CLASS')
 			);
 
 			$this->files->appendArray($plugin->key, $file_details);

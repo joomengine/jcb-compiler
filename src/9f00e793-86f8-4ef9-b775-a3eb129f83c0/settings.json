@@ -17,11 +17,35 @@
             "as": "CompilerLanguage"
         },
         "use_selection1": {
-            "use": "d33b9278-c409-4aec-a047-b72f56712391",
+            "use": "058cfcd7-1f84-4cc6-8bcc-7672f316881d",
             "as": "default"
         },
         "use_selection2": {
+            "use": "0b0e574c-aab4-4eaf-96d8-d7210d8ed93e",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "1d051a2f-0691-45a8-b3d9-d0c1adcd73bc",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "375543cd-5f2a-4893-982e-a73eaa55360d",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "d33b9278-c409-4aec-a047-b72f56712391",
+            "as": "default"
+        },
+        "use_selection6": {
             "use": "4ad7020e-39ab-49ba-977b-de6084944502",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "263f0227-3cc2-4a88-9818-edb20081c30c",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "344d36be-3949-4848-8cb0-e3d3d9d05c36",
             "as": "default"
         }
     },

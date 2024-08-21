@@ -25,8 +25,10 @@ class Structuremultiple << (F,LightGreen) >> #RoyalBlue {
   # site() : bool
   # custom() : bool
   - isValidAdminView(array $view, array $config) : bool
+  - hasApi(array $view) : int
   - isValidView(array $view, array $config) : bool
   - buildAdminView(array $view, array $config) : void
+  - buildApi(array $view, array $config, ...) : void
   - buildView(array $view, array $config, ...) : void
 }
 
@@ -80,18 +82,37 @@ note left of Structuremultiple::isValidAdminView
   return: bool
 end note
 
-note right of Structuremultiple::isValidView
+note right of Structuremultiple::hasApi
+  Check if the view has an API
+
+  since: 5.0.2
+  return: int
+end note
+
+note left of Structuremultiple::isValidView
   Check if the view is a valid view
 
   since: 3.2.0
   return: bool
 end note
 
-note left of Structuremultiple::buildAdminView
+note right of Structuremultiple::buildAdminView
   Build the admin view
 
   since: 3.2.0
   return: void
+end note
+
+note left of Structuremultiple::buildApi
+  Build the api
+
+  since: 5.0.2
+  return: void
+  
+  arguments:
+    array $view
+    array $config
+    int $targetArea
 end note
 
 note right of Structuremultiple::buildView

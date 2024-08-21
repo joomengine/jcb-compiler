@@ -9,10 +9,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin;
+namespace VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaThree;
 
 
-use VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\Data as Plugin;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\PluginDataInterface as Plugin;
 use VDM\Joomla\Componentbuilder\Compiler\Component;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
@@ -29,14 +29,15 @@ use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Utilities\ObjectHelper;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Componentbuilder\Interfaces\Plugin\StructureInterface;
 
 
 /**
- * Joomla Plugin Builder Class
+ * Joomla 3 Plugin Builder Class
  * 
  * @since 3.2.0
  */
-class Structure
+class Structure implements StructureInterface
 {
 	/**
 	 * The Data Class.
@@ -306,9 +307,9 @@ class Structure
 			'<?php' . PHP_EOL . '// Plugin main class template' .
 			PHP_EOL . Placefix::_h('BOM') . PHP_EOL .
 			PHP_EOL . '// No direct access to this file' . PHP_EOL .
-			"defined('_JEXEC') or die('Restricted access');"
-			. PHP_EOL .
-			Placefix::_h('MAINCLASS')
+			"defined('_JEXEC') or die('Restricted access');" . PHP_EOL .
+			PHP_EOL . Placefix::_h('EXTENSION_CLASS_HEADER') .
+			PHP_EOL . PHP_EOL . Placefix::_h('EXTENSION_CLASS')
 		);
 
 		$this->files->appendArray($plugin->key, $file_details);
@@ -368,7 +369,7 @@ class Structure
 				PHP_EOL . Placefix::_h('BOM') . PHP_EOL .
 				PHP_EOL . '// No direct access to this file' . PHP_EOL .
 				"defined('_JEXEC') or die('Restricted access');" . PHP_EOL .
-				Placefix::_h('INSTALLCLASS')
+				Placefix::_h('INSTALL_CLASS')
 			);
 
 			$this->files->appendArray($plugin->key, $file_details);

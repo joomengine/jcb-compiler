@@ -35,6 +35,7 @@ class Injector  #Gold {
   # shouldAddTraitStatement(object $power) : bool
   # handleTraitLogic(string $name, object $power, ...) : void
   # addUseStatement(string $name, string $className, ...) : void
+  # countPartsInString(string $string) : int
   # addUseStatements(string $code, ?array $useStatements) : string
   # addLines(string $code, string $lines) : string
   # addLinesAfterDefinedLine(string $code, string $lines) : string
@@ -173,21 +174,28 @@ note left of Injector::addUseStatement
     string $namespaceStatement
 end note
 
-note right of Injector::addUseStatements
+note right of Injector::countPartsInString
+  Counts the number of parts in a string separated by backslashes.
+
+  since: 5.0.2
+  return: int
+end note
+
+note left of Injector::addUseStatements
   Insert a line before the class declaration in the given class code.
 
   since: 3.2.0
   return: string
 end note
 
-note left of Injector::addLines
+note right of Injector::addLines
   Insert a line before the class declaration in the given class code.
 
   since: 3.2.0
   return: string
 end note
 
-note right of Injector::addLinesAfterDefinedLine
+note left of Injector::addLinesAfterDefinedLine
   Inserts a new line after the defined('_JEXEC') line.
 
   since: 3.2.0

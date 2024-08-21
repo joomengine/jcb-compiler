@@ -1,0 +1,7 @@
+	/**
+	 * Build the Plug-ins files, folders, url's and configure
+	 *
+	 * @return   void
+	 * @since    5.0.0
+	 */
+	public function build();

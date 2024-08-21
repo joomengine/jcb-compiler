@@ -7,7 +7,7 @@
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
 # class Structure (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin**
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaThree**
 
 ```uml
 @startuml

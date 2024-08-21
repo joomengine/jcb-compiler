@@ -75,6 +75,7 @@
 			->registerServiceProvider(new Creator())
 			->registerServiceProvider(new ArchitectureController())
 			->registerServiceProvider(new ArchitectureModel())
+			->registerServiceProvider(new ArchitecturePlugin())
 			->registerServiceProvider(new Gitea())
 			->registerServiceProvider(new GiteaUtilities())
 			->registerServiceProvider(new GiteaSettings())

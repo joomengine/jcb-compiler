@@ -21,6 +21,11 @@ class InstallScript << (F,LightGreen) >> #RoyalBlue {
   # array $uninstall
   # bool $preflightActive
   # bool $postflightActive
+  # array $removeFilePaths
+  # array $removeFolderPaths
+  # $app
+  # array $deleteFiles
+  # array $deleteFolders
   + get(object $extension) : string
   # rest() : void
   # build() : string
@@ -28,6 +33,7 @@ class InstallScript << (F,LightGreen) >> #RoyalBlue {
   # construct() : string
   # main(string $name) : string
   # flight(string $name) : string
+  # removeFiles() : string
 }
 
 note right of InstallScript::get
@@ -37,7 +43,7 @@ note right of InstallScript::get
   return: string
 end note
 
-note right of InstallScript::rest
+note left of InstallScript::rest
   Reset all bucket at the start of each build
 
   since: 3.2.0
@@ -51,7 +57,7 @@ note right of InstallScript::build
   return: string
 end note
 
-note right of InstallScript::head
+note left of InstallScript::head
   get install script head
 
   since: 3.2.0
@@ -65,7 +71,7 @@ note right of InstallScript::construct
   return: string
 end note
 
-note right of InstallScript::main
+note left of InstallScript::main
   build main methods
 
   since: 3.2.0
@@ -76,6 +82,13 @@ note right of InstallScript::flight
   build flight methods
 
   since: 3.2.0
+  return: string
+end note
+
+note left of InstallScript::removeFiles
+  build remove files methods
+
+  since: 5.0.2
   return: string
 end note
  

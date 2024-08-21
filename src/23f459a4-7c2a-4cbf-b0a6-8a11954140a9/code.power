@@ -1,0 +1,51 @@
+	/**
+	 * The Placeholder Class.
+	 *
+	 * @var   Placeholder
+	 * @since 5.0.2
+	 */
+	protected Placeholder $placeholder;
+
+	/**
+	 * The FieldsetDynamic Class.
+	 *
+	 * @var   FieldsetDynamic
+	 * @since 5.0.2
+	 */
+	protected FieldsetDynamic $fieldsetdynamic;
+
+	/**
+	 * Constructor.
+	 *
+	 * @param Placeholder       $placeholder       The Placeholder Class.
+	 * @param FieldsetDynamic   $fieldsetdynamic   The Fieldset Dynamic Class.
+	 *
+	 * @since 5.0.2
+	 */
+	public function __construct(Placeholder $placeholder, FieldsetDynamic $fieldsetdynamic)
+	{
+		$this->placeholder = $placeholder;
+		$this->fieldsetdynamic = $fieldsetdynamic;
+	}
+
+	/**
+	 * build field set for an extention
+	 *
+	 * @param   object  $extension  The extention object
+	 * @param   array   $fields     The fields to build
+	 * @param   string  $dbkey      The database key
+	 *
+	 * @return  string The fields set in xml
+	 *
+	 * @since 5.0.2
+	 */
+	public function get(object $extension, array $fields, string $dbkey = 'zz'): string
+	{
+		// get global placeholders
+		$placeholder = $this->placeholder->get();
+		// build the fieldset
+		return $this->fieldsetdynamic->get(
+			$fields, $extension->lang_prefix, $extension->key, $extension->key,
+			$placeholder, $dbkey
+		);
+	}

@@ -37,6 +37,7 @@ class Creator  #Gold {
   + getRouterConstructorManual(Container $container) : RouterConstructorManual
   + getRouterMethodsDefault(Container $container) : RouterMethodsDefault
   + getRouterMethodsManual(Container $container) : RouterMethodsManual
+  + getFieldsetExtension(Container $container) : FieldsetExtension
   + getFieldsetString(Container $container) : FieldsetString
   + getFieldsetXML(Container $container) : FieldsetXML
   + getFieldsetDynamic(Container $container) : FieldsetDynamic
@@ -223,63 +224,70 @@ note right of Creator::getRouterMethodsManual
   return: RouterMethodsManual
 end note
 
-note left of Creator::getFieldsetString
+note left of Creator::getFieldsetExtension
+  Get The FieldsetExtension Class.
+
+  since: 5.0.2
+  return: FieldsetExtension
+end note
+
+note right of Creator::getFieldsetString
   Get The FieldsetString Class.
 
   since: 3.2.0
   return: FieldsetString
 end note
 
-note right of Creator::getFieldsetXML
+note left of Creator::getFieldsetXML
   Get The FieldsetXML Class.
 
   since: 3.2.0
   return: FieldsetXML
 end note
 
-note left of Creator::getFieldsetDynamic
+note right of Creator::getFieldsetDynamic
   Get The FieldsetDynamic Class.
 
   since: 3.2.0
   return: FieldsetDynamic
 end note
 
-note right of Creator::getFieldXML
+note left of Creator::getFieldXML
   Get The FieldXML Class.
 
   since: 3.2.0
   return: FieldXML
 end note
 
-note left of Creator::getFieldString
+note right of Creator::getFieldString
   Get The FieldString Class.
 
   since: 3.2.0
   return: FieldString
 end note
 
-note right of Creator::getFieldDynamic
+note left of Creator::getFieldDynamic
   Get The FieldDynamic Class.
 
   since: 3.2.0
   return: FieldDynamic
 end note
 
-note left of Creator::getFieldAsString
+note right of Creator::getFieldAsString
   Get The FieldAsString Class.
 
   since: 3.2.0
   return: FieldAsString
 end note
 
-note right of Creator::getFieldType
+note left of Creator::getFieldType
   Get The Fieldtypeinterface Class.
 
   since: 3.2.0
   return: FieldType
 end note
 
-note left of Creator::getFieldset
+note right of Creator::getFieldset
   Get The Fieldsetinterface Class.
 
   since: 3.2.0

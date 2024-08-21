@@ -13,6 +13,7 @@
 @startuml
 abstract RepoHelper  #Orange {
   + {static} get(int $target) : ?array
+  # {static} setPlaceholders(string $placeholders) : array
 }
 
 note right of RepoHelper::get
@@ -20,6 +21,13 @@ note right of RepoHelper::get
 
   since: 3.2.0
   return: ?array
+end note
+
+note right of RepoHelper::setPlaceholders
+  set the placeholders for this repo
+
+  since: 5.0.3
+  return: array
 end note
  
 @enduml

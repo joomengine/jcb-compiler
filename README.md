@@ -31,10 +31,10 @@ This repository contains an index (see below) of all the approved powers within 
   - **abstract class Factory** | [Details](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac) | [Code](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/code.php) | [Settings](src/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac/settings.json) | SPK: `Super---d910d8b8_4c23_4f3e_8cda_438f2d2bd7ac---Power`
   - **final class Component** | [Details](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0) | [Code](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/code.php) | [Settings](src/e2472b22-a329-44d8-b4a2-ae3ba99e17a0/settings.json) | SPK: `Super---e2472b22_a329_44d8_b4a2_ae3ba99e17a0---Power`
   - **final class JoomlaPower** | [Details](src/3730a000-ab64-477d-8b0f-70eaf71b517a) | [Code](src/3730a000-ab64-477d-8b0f-70eaf71b517a/code.php) | [Settings](src/3730a000-ab64-477d-8b0f-70eaf71b517a/settings.json) | SPK: `Super---3730a000_ab64_477d_8b0f_70eaf71b517a---Power`
+  - **final class Language** | [Details](src/8eee7df5-2775-41a9-9372-c46c5939a252) | [Code](src/8eee7df5-2775-41a9-9372-c46c5939a252/code.php) | [Settings](src/8eee7df5-2775-41a9-9372-c46c5939a252/settings.json) | SPK: `Super---8eee7df5_2775_41a9_9372_c46c5939a252---Power`
   - **class Config** | [Details](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc) | [Code](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/code.php) | [Settings](src/fa4bf18e-301e-42e3-91fb-6e0096c07adc/settings.json) | SPK: `Super---fa4bf18e_301e_42e3_91fb_6e0096c07adc---Power`
   - **class Customcode** | [Details](src/313b43c4-98c3-4f62-9177-2d73ec8eba31) | [Code](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/code.php) | [Settings](src/313b43c4-98c3-4f62-9177-2d73ec8eba31/settings.json) | SPK: `Super---313b43c4_98c3_4f62_9177_2d73ec8eba31---Power`
   - **class Field** | [Details](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75) | [Code](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/code.php) | [Settings](src/d7ba2d5d-10b6-470d-978d-9f91ea65ee75/settings.json) | SPK: `Super---d7ba2d5d_10b6_470d_978d_9f91ea65ee75---Power`
-  - **class Language** | [Details](src/8eee7df5-2775-41a9-9372-c46c5939a252) | [Code](src/8eee7df5-2775-41a9-9372-c46c5939a252/code.php) | [Settings](src/8eee7df5-2775-41a9-9372-c46c5939a252/settings.json) | SPK: `Super---8eee7df5_2775_41a9_9372_c46c5939a252---Power`
   - **class Placeholder** | [Details](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c) | [Code](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/code.php) | [Settings](src/06453ada-e370-49f0-b262-e3f5a8ed0c2c/settings.json) | SPK: `Super---06453ada_e370_49f0_b262_e3f5a8ed0c2c---Power`
   - **class Power** | [Details](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1) | [Code](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/code.php) | [Settings](src/b836c1b1-b6b1-44f7-b8a2-9a763a4185b1/settings.json) | SPK: `Super---b836c1b1_b6b1_44f7_b8a2_9a763a4185b1---Power`
   - **class Registry** | [Details](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6) | [Code](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/code.php) | [Settings](src/e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6/settings.json) | SPK: `Super---e5d9804f_0eb0_4ee9_b406_ad4e8cdbc1f6---Power`
@@ -136,6 +136,7 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class ModelMediumField** | [Details](src/b0b26749-5e2c-4b56-8982-48172f2531fa) | [Code](src/b0b26749-5e2c-4b56-8982-48172f2531fa/code.php) | [Settings](src/b0b26749-5e2c-4b56-8982-48172f2531fa/settings.json) | SPK: `Super---b0b26749_5e2c_4b56_8982_48172f2531fa---Power`
   - **final class ModelWhmcsField** | [Details](src/28cac2bb-df04-454f-b4d6-923b573eb94e) | [Code](src/28cac2bb-df04-454f-b4d6-923b573eb94e/code.php) | [Settings](src/28cac2bb-df04-454f-b4d6-923b573eb94e/settings.json) | SPK: `Super---28cac2bb_df04_454f_b4d6_923b573eb94e---Power`
   - **final class MovedPublishingFields** | [Details](src/9cdff2af-bd1b-452f-810e-d034b9720d2a) | [Code](src/9cdff2af-bd1b-452f-810e-d034b9720d2a/code.php) | [Settings](src/9cdff2af-bd1b-452f-810e-d034b9720d2a/settings.json) | SPK: `Super---9cdff2af_bd1b_452f_810e_d034b9720d2a---Power`
+  - **final class Multilingual** | [Details](src/a8c6158a-6fd2-476b-a5ea-c81f1ecd2356) | [Code](src/a8c6158a-6fd2-476b-a5ea-c81f1ecd2356/code.php) | [Settings](src/a8c6158a-6fd2-476b-a5ea-c81f1ecd2356/settings.json) | SPK: `Super---a8c6158a_6fd2_476b_a5ea_c81f1ecd2356---Power`
   - **final class MysqlTableSetting** | [Details](src/9ff6d6cd-afea-4f15-a67b-fd132d386989) | [Code](src/9ff6d6cd-afea-4f15-a67b-fd132d386989/code.php) | [Settings](src/9ff6d6cd-afea-4f15-a67b-fd132d386989/settings.json) | SPK: `Super---9ff6d6cd_afea_4f15_a67b_fd132d386989---Power`
   - **final class NewPublishingFields** | [Details](src/0f141480-afe6-41fb-996c-2a4e566a2f0d) | [Code](src/0f141480-afe6-41fb-996c-2a4e566a2f0d/code.php) | [Settings](src/0f141480-afe6-41fb-996c-2a4e566a2f0d/settings.json) | SPK: `Super---0f141480_afe6_41fb_996c_2a4e566a2f0d---Power`
   - **final class OrderZero** | [Details](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780) | [Code](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780/code.php) | [Settings](src/66b7b5f8-60d6-427a-9f8c-84c11a3d6780/settings.json) | SPK: `Super---66b7b5f8_60d6_427a_9f8c_84c11a3d6780---Power`
@@ -205,6 +206,7 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class FieldString** | [Details](src/44d039b9-d293-481b-b560-23a6e7a63962) | [Code](src/44d039b9-d293-481b-b560-23a6e7a63962/code.php) | [Settings](src/44d039b9-d293-481b-b560-23a6e7a63962/settings.json) | SPK: `Super---44d039b9_d293_481b_b560_23a6e7a63962---Power`
   - **final class FieldXML** | [Details](src/ac691a05-5630-4002-b166-dedec3fb0fcb) | [Code](src/ac691a05-5630-4002-b166-dedec3fb0fcb/code.php) | [Settings](src/ac691a05-5630-4002-b166-dedec3fb0fcb/settings.json) | SPK: `Super---ac691a05_5630_4002_b166_dedec3fb0fcb---Power`
   - **final class FieldsetDynamic** | [Details](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba) | [Code](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba/code.php) | [Settings](src/b5986fab-17ca-4236-8c0c-81ebd2bb82ba/settings.json) | SPK: `Super---b5986fab_17ca_4236_8c0c_81ebd2bb82ba---Power`
+  - **final class FieldsetExtension** | [Details](src/23f459a4-7c2a-4cbf-b0a6-8a11954140a9) | [Code](src/23f459a4-7c2a-4cbf-b0a6-8a11954140a9/code.php) | [Settings](src/23f459a4-7c2a-4cbf-b0a6-8a11954140a9/settings.json) | SPK: `Super---23f459a4_7c2a_4cbf_b0a6_8a11954140a9---Power`
   - **final class FieldsetString** | [Details](src/05448890-e324-41a0-b6db-d804bfc241cc) | [Code](src/05448890-e324-41a0-b6db-d804bfc241cc/code.php) | [Settings](src/05448890-e324-41a0-b6db-d804bfc241cc/settings.json) | SPK: `Super---05448890_e324_41a0_b6db_d804bfc241cc---Power`
   - **final class FieldsetXML** | [Details](src/79739667-72c6-4576-9830-7b1eb92e4791) | [Code](src/79739667-72c6-4576-9830-7b1eb92e4791/code.php) | [Settings](src/79739667-72c6-4576-9830-7b1eb92e4791/settings.json) | SPK: `Super---79739667_72c6_4576_9830_7b1eb92e4791---Power`
   - **final class Layout** | [Details](src/a0f032db-2242-41df-8e4a-5e9e6f88201d) | [Code](src/a0f032db-2242-41df-8e4a-5e9e6f88201d/code.php) | [Settings](src/a0f032db-2242-41df-8e4a-5e9e6f88201d/settings.json) | SPK: `Super---a0f032db_2242_41df_8e4a_5e9e6f88201d---Power`
@@ -251,6 +253,7 @@ This repository contains an index (see below) of all the approved powers within 
   - **interface HistoryInterface** | [Details](src/4325745f-da1f-4d4d-a591-3189fe8c06e5) | [Code](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/code.php) | [Settings](src/4325745f-da1f-4d4d-a591-3189fe8c06e5/settings.json) | SPK: `Super---4325745f_da1f_4d4d_a591_3189fe8c06e5---Power`
   - **interface LanguageInterface** | [Details](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83) | [Code](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/code.php) | [Settings](src/d6592c9b-93a6-41b3-83c7-c43a0a80cb83/settings.json) | SPK: `Super---d6592c9b_93a6_41b3_83c7_c43a0a80cb83---Power`
   - **interface PlaceholderInterface** | [Details](src/a6cdd935-c038-4a54-8446-54bed87f003c) | [Code](src/a6cdd935-c038-4a54-8446-54bed87f003c/code.php) | [Settings](src/a6cdd935-c038-4a54-8446-54bed87f003c/settings.json) | SPK: `Super---a6cdd935_c038_4a54_8446_54bed87f003c---Power`
+  - **interface PluginDataInterface** | [Details](src/8cc85656-a925-4a46-a49b-83c72167fd6a) | [Code](src/8cc85656-a925-4a46-a49b-83c72167fd6a/code.php) | [Settings](src/8cc85656-a925-4a46-a49b-83c72167fd6a/settings.json) | SPK: `Super---8cc85656_a925_4a46_a49b_83c72167fd6a---Power`
   - **interface PowerInterface** | [Details](src/1133c2d7-ba7e-4c95-8cde-01f084d04682) | [Code](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/code.php) | [Settings](src/1133c2d7-ba7e-4c95-8cde-01f084d04682/settings.json) | SPK: `Super---1133c2d7_ba7e_4c95_8cde_01f084d04682---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\JoomlaFive](#vdm-joomla-componentbuilder-compiler-joomlafive)
 
@@ -275,14 +278,16 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **class Data** | [Details](src/cb11e8d9-69c2-4095-831c-59908ea402e7) | [Code](src/cb11e8d9-69c2-4095-831c-59908ea402e7/code.php) | [Settings](src/cb11e8d9-69c2-4095-831c-59908ea402e7/settings.json) | SPK: `Super---cb11e8d9_69c2_4095_831c_59908ea402e7---Power`
   - **class Structure** | [Details](src/071c7cff-4c88-4b80-bd99-066c572dcb71) | [Code](src/071c7cff-4c88-4b80-bd99-066c572dcb71/code.php) | [Settings](src/071c7cff-4c88-4b80-bd99-066c572dcb71/settings.json) | SPK: `Super---071c7cff_4c88_4b80_bd99_066c572dcb71---Power`
-- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin](#vdm-joomla-componentbuilder-compiler-joomlaplugin)
-
-  - **class Data** | [Details](src/766a9524-37df-4604-91a7-b98a6150ee26) | [Code](src/766a9524-37df-4604-91a7-b98a6150ee26/code.php) | [Settings](src/766a9524-37df-4604-91a7-b98a6150ee26/settings.json) | SPK: `Super---766a9524_37df_4604_91a7_b98a6150ee26---Power`
-  - **class Structure** | [Details](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff) | [Code](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/code.php) | [Settings](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/settings.json) | SPK: `Super---a900b836_f2eb_4f13_8f28_b7cac839c7ff---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Language](#vdm-joomla-componentbuilder-compiler-language)
 
-  - **class Extractor** | [Details](src/d33b9278-c409-4aec-a047-b72f56712391) | [Code](src/d33b9278-c409-4aec-a047-b72f56712391/code.php) | [Settings](src/d33b9278-c409-4aec-a047-b72f56712391/settings.json) | SPK: `Super---d33b9278_c409_4aec_a047_b72f56712391---Power`
-  - **class Fieldset** | [Details](src/4ad7020e-39ab-49ba-977b-de6084944502) | [Code](src/4ad7020e-39ab-49ba-977b-de6084944502/code.php) | [Settings](src/4ad7020e-39ab-49ba-977b-de6084944502/settings.json) | SPK: `Super---4ad7020e_39ab_49ba_977b_de6084944502---Power`
+  - **final class Extractor** | [Details](src/d33b9278-c409-4aec-a047-b72f56712391) | [Code](src/d33b9278-c409-4aec-a047-b72f56712391/code.php) | [Settings](src/d33b9278-c409-4aec-a047-b72f56712391/settings.json) | SPK: `Super---d33b9278_c409_4aec_a047_b72f56712391---Power`
+  - **final class Fieldset** | [Details](src/4ad7020e-39ab-49ba-977b-de6084944502) | [Code](src/4ad7020e-39ab-49ba-977b-de6084944502/code.php) | [Settings](src/4ad7020e-39ab-49ba-977b-de6084944502/settings.json) | SPK: `Super---4ad7020e_39ab_49ba_977b_de6084944502---Power`
+  - **final class Insert** | [Details](src/1d051a2f-0691-45a8-b3d9-d0c1adcd73bc) | [Code](src/1d051a2f-0691-45a8-b3d9-d0c1adcd73bc/code.php) | [Settings](src/1d051a2f-0691-45a8-b3d9-d0c1adcd73bc/settings.json) | SPK: `Super---1d051a2f_0691_45a8_b3d9_d0c1adcd73bc---Power`
+  - **final class Multilingual** | [Details](src/263f0227-3cc2-4a88-9818-edb20081c30c) | [Code](src/263f0227-3cc2-4a88-9818-edb20081c30c/code.php) | [Settings](src/263f0227-3cc2-4a88-9818-edb20081c30c/settings.json) | SPK: `Super---263f0227_3cc2_4a88_9818_edb20081c30c---Power`
+  - **final class Purge** | [Details](src/0b0e574c-aab4-4eaf-96d8-d7210d8ed93e) | [Code](src/0b0e574c-aab4-4eaf-96d8-d7210d8ed93e/code.php) | [Settings](src/0b0e574c-aab4-4eaf-96d8-d7210d8ed93e/settings.json) | SPK: `Super---0b0e574c_aab4_4eaf_96d8_d7210d8ed93e---Power`
+  - **final class Set** | [Details](src/058cfcd7-1f84-4cc6-8bcc-7672f316881d) | [Code](src/058cfcd7-1f84-4cc6-8bcc-7672f316881d/code.php) | [Settings](src/058cfcd7-1f84-4cc6-8bcc-7672f316881d/settings.json) | SPK: `Super---058cfcd7_1f84_4cc6_8bcc_7672f316881d---Power`
+  - **final class Translation** | [Details](src/344d36be-3949-4848-8cb0-e3d3d9d05c36) | [Code](src/344d36be-3949-4848-8cb0-e3d3d9d05c36/code.php) | [Settings](src/344d36be-3949-4848-8cb0-e3d3d9d05c36/settings.json) | SPK: `Super---344d36be_3949_4848_8cb0_e3d3d9d05c36---Power`
+  - **final class Update** | [Details](src/375543cd-5f2a-4893-982e-a73eaa55360d) | [Code](src/375543cd-5f2a-4893-982e-a73eaa55360d/code.php) | [Settings](src/375543cd-5f2a-4893-982e-a73eaa55360d/settings.json) | SPK: `Super---375543cd_5f2a_4893_982e_a73eaa55360d---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Library](#vdm-joomla-componentbuilder-compiler-library)
 
   - **class Data** | [Details](src/7175c1cd-2071-4cd7-b499-23881e168c3f) | [Code](src/7175c1cd-2071-4cd7-b499-23881e168c3f/code.php) | [Settings](src/7175c1cd-2071-4cd7-b499-23881e168c3f/settings.json) | SPK: `Super---7175c1cd_2071_4cd7_b499_23881e168c3f---Power`
@@ -332,9 +337,9 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Reverse** | [Details](src/ca111518-e47c-4049-b1b2-cb010f23866f) | [Code](src/ca111518-e47c-4049-b1b2-cb010f23866f/code.php) | [Settings](src/ca111518-e47c-4049-b1b2-cb010f23866f/settings.json) | SPK: `Super---ca111518_e47c_4049_b1b2_cb010f23866f---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Power](#vdm-joomla-componentbuilder-compiler-power)
 
+  - **final class Infusion** | [Details](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c) | [Code](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/code.php) | [Settings](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/settings.json) | SPK: `Super---0419081e_4cb3_4c65_8c6a_ffe941fb0f1c---Power`
   - **class Autoloader** | [Details](src/6e64917c-d687-4ef3-a655-811319f5a81e) | [Code](src/6e64917c-d687-4ef3-a655-811319f5a81e/code.php) | [Settings](src/6e64917c-d687-4ef3-a655-811319f5a81e/settings.json) | SPK: `Super---6e64917c_d687_4ef3_a655_811319f5a81e---Power`
   - **class Extractor** | [Details](src/eeb03266-22fd-45bb-953a-961bb6be3a54) | [Code](src/eeb03266-22fd-45bb-953a-961bb6be3a54/code.php) | [Settings](src/eeb03266-22fd-45bb-953a-961bb6be3a54/settings.json) | SPK: `Super---eeb03266_22fd_45bb_953a_961bb6be3a54---Power`
-  - **class Infusion** | [Details](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c) | [Code](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/code.php) | [Settings](src/0419081e-4cb3-4c65-8c6a-ffe941fb0f1c/settings.json) | SPK: `Super---0419081e_4cb3_4c65_8c6a_ffe941fb0f1c---Power`
   - **class Injector** | [Details](src/763d137c-42bc-4282-98d8-cc5c0654985f) | [Code](src/763d137c-42bc-4282-98d8-cc5c0654985f/code.php) | [Settings](src/763d137c-42bc-4282-98d8-cc5c0654985f/settings.json) | SPK: `Super---763d137c_42bc_4282_98d8_cc5c0654985f---Power`
   - **class Structure** | [Details](src/324566de-0f7d-4b6e-9caf-8424d55013ae) | [Code](src/324566de-0f7d-4b6e-9caf-8424d55013ae/code.php) | [Settings](src/324566de-0f7d-4b6e-9caf-8424d55013ae/settings.json) | SPK: `Super---324566de_0f7d_4b6e_9caf_8424d55013ae---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Service](#vdm-joomla-componentbuilder-compiler-service)
@@ -342,6 +347,7 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Adminview** | [Details](src/2dd1289a-4000-43cc-8c62-77ff32de56bf) | [Code](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/code.php) | [Settings](src/2dd1289a-4000-43cc-8c62-77ff32de56bf/settings.json) | SPK: `Super---2dd1289a_4000_43cc_8c62_77ff32de56bf---Power`
   - **class ArchitectureController** | [Details](src/56ba30f5-a5c4-4c4c-be6f-a56f7f9cbc60) | [Code](src/56ba30f5-a5c4-4c4c-be6f-a56f7f9cbc60/code.php) | [Settings](src/56ba30f5-a5c4-4c4c-be6f-a56f7f9cbc60/settings.json) | SPK: `Super---56ba30f5_a5c4_4c4c_be6f_a56f7f9cbc60---Power`
   - **class ArchitectureModel** | [Details](src/bbd36fbf-d905-47e8-8e67-9ea6ec734712) | [Code](src/bbd36fbf-d905-47e8-8e67-9ea6ec734712/code.php) | [Settings](src/bbd36fbf-d905-47e8-8e67-9ea6ec734712/settings.json) | SPK: `Super---bbd36fbf_d905_47e8_8e67_9ea6ec734712---Power`
+  - **class ArchitecturePlugin** | [Details](src/98ac432d-df19-4c40-bb12-8104ea4362c8) | [Code](src/98ac432d-df19-4c40-bb12-8104ea4362c8/code.php) | [Settings](src/98ac432d-df19-4c40-bb12-8104ea4362c8/settings.json) | SPK: `Super---98ac432d_df19_4c40_bb12_8104ea4362c8---Power`
   - **class BuilderAJ** | [Details](src/c7230c8c-ea88-4d8d-8c53-6136133195b7) | [Code](src/c7230c8c-ea88-4d8d-8c53-6136133195b7/code.php) | [Settings](src/c7230c8c-ea88-4d8d-8c53-6136133195b7/settings.json) | SPK: `Super---c7230c8c_ea88_4d8d_8c53_6136133195b7---Power`
   - **class BuilderLZ** | [Details](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7) | [Code](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/code.php) | [Settings](src/2c76c06e-a371-4b73-9fbe-b4d9b4df55d7/settings.json) | SPK: `Super---2c76c06e_a371_4b73_9fbe_b4d9b4df55d7---Power`
   - **class Compiler** | [Details](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69) | [Code](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/code.php) | [Settings](src/ea5ed06e-72ae-4906-9167-1cc0fa32fe69/settings.json) | SPK: `Super---ea5ed06e_72ae_4906_9167_1cc0fa32fe69---Power`
@@ -384,6 +390,10 @@ This repository contains an index (see below) of all the approved powers within 
   - **class Pathfix** | [Details](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f) | [Code](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/code.php) | [Settings](src/cdc9b06d-8333-4fa7-ab4d-b810dd90f95f/settings.json) | SPK: `Super---cdc9b06d_8333_4fa7_ab4d_b810dd90f95f---Power`
   - **class Paths** | [Details](src/6f20369a-8536-4870-a1a3-cda254c939c8) | [Code](src/6f20369a-8536-4870-a1a3-cda254c939c8/code.php) | [Settings](src/6f20369a-8536-4870-a1a3-cda254c939c8/settings.json) | SPK: `Super---6f20369a_8536_4870_a1a3_cda254c939c8---Power`
   - **class Structure** | [Details](src/1efdded5-d6c8-452c-8f37-0374483a7b3f) | [Code](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/code.php) | [Settings](src/1efdded5-d6c8-452c-8f37-0374483a7b3f/settings.json) | SPK: `Super---1efdded5_d6c8_452c_8f37_0374483a7b3f---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Interfaces\Plugin](#vdm-joomla-componentbuilder-interfaces-plugin)
+
+  - **interface InfusionInterface** | [Details](src/40e17114-2193-4a61-9233-47b5f4193665) | [Code](src/40e17114-2193-4a61-9233-47b5f4193665/code.php) | [Settings](src/40e17114-2193-4a61-9233-47b5f4193665/settings.json) | SPK: `Super---40e17114_2193_4a61_9233_47b5f4193665---Power`
+  - **interface StructureInterface** | [Details](src/ef66b17c-ffae-414a-9067-20a63ba2bec5) | [Code](src/ef66b17c-ffae-414a-9067-20a63ba2bec5/code.php) | [Settings](src/ef66b17c-ffae-414a-9067-20a63ba2bec5/settings.json) | SPK: `Super---ef66b17c_ffae_414a_9067_20a63ba2bec5---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Readme](#vdm-joomla-componentbuilder-joomlapower-readme)
 
   - **final class Item** | [Details](src/fcbd0dd7-1f26-472e-abd3-56265f4999f2) | [Code](src/fcbd0dd7-1f26-472e-abd3-56265f4999f2/code.php) | [Settings](src/fcbd0dd7-1f26-472e-abd3-56265f4999f2/settings.json) | SPK: `Super---fcbd0dd7_1f26_472e_abd3_56265f4999f2---Power`
@@ -410,6 +420,7 @@ This repository contains an index (see below) of all the approved powers within 
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power\Remote](#vdm-joomla-componentbuilder-power-remote)
 
   - **final class Get** | [Details](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff) | [Code](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/code.php) | [Settings](src/3ab0eba9-f37b-4b37-aec1-2e78067f2aff/settings.json) | SPK: `Super---3ab0eba9_f37b_4b37_aec1_2e78067f2aff---Power`
+  - **final class Set** | [Details](src/caf559ee-8337-4f07-9e4a-394d4e06afdc) | [Code](src/caf559ee-8337-4f07-9e4a-394d4e06afdc/code.php) | [Settings](src/caf559ee-8337-4f07-9e4a-394d4e06afdc/settings.json) | SPK: `Super---caf559ee_8337_4f07_9e4a_394d4e06afdc---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Power\Service](#vdm-joomla-componentbuilder-power-service)
 
   - **class Generator** | [Details](src/a7101bbc-3c81-4b52-a4aa-522291f7594b) | [Code](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/code.php) | [Settings](src/a7101bbc-3c81-4b52-a4aa-522291f7594b/settings.json) | SPK: `Super---a7101bbc_3c81_4b52_a4aa_522291f7594b---Power`
@@ -482,6 +493,21 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **interface ExtractorInterface** | [Details](src/c159425c-51f9-4a15-af99-f2d0c6d7aae8) | [Code](src/c159425c-51f9-4a15-af99-f2d0c6d7aae8/code.php) | [Settings](src/c159425c-51f9-4a15-af99-f2d0c6d7aae8/settings.json) | SPK: `Super---c159425c_51f9_4a15_af99_f2d0c6d7aae8---Power`
   - **interface InjectorInterface** | [Details](src/e923311a-4058-4e81-9f67-5956fd0c627c) | [Code](src/e923311a-4058-4e81-9f67-5956fd0c627c/code.php) | [Settings](src/e923311a-4058-4e81-9f67-5956fd0c627c/settings.json) | SPK: `Super---e923311a_4058_4e81_9f67_5956fd0c627c---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaFive](#vdm-joomla-componentbuilder-compiler-joomlaplugin-joomlafive)
+
+  - **final class Data** | [Details](src/174f5c9c-5e03-4261-94ca-279ca76c710d) | [Code](src/174f5c9c-5e03-4261-94ca-279ca76c710d/code.php) | [Settings](src/174f5c9c-5e03-4261-94ca-279ca76c710d/settings.json) | SPK: `Super---174f5c9c_5e03_4261_94ca_279ca76c710d---Power`
+  - **final class Infusion** | [Details](src/7f75b300-534c-4f63-a368-6f4abc4cea58) | [Code](src/7f75b300-534c-4f63-a368-6f4abc4cea58/code.php) | [Settings](src/7f75b300-534c-4f63-a368-6f4abc4cea58/settings.json) | SPK: `Super---7f75b300_534c_4f63_a368_6f4abc4cea58---Power`
+  - **class Structure** | [Details](src/d05c22be-9641-47fb-8a7b-063c43e7f1bf) | [Code](src/d05c22be-9641-47fb-8a7b-063c43e7f1bf/code.php) | [Settings](src/d05c22be-9641-47fb-8a7b-063c43e7f1bf/settings.json) | SPK: `Super---d05c22be_9641_47fb_8a7b_063c43e7f1bf---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaFour](#vdm-joomla-componentbuilder-compiler-joomlaplugin-joomlafour)
+
+  - **final class Data** | [Details](src/361e08c0-5916-4b77-b6a2-c16a769bbc40) | [Code](src/361e08c0-5916-4b77-b6a2-c16a769bbc40/code.php) | [Settings](src/361e08c0-5916-4b77-b6a2-c16a769bbc40/settings.json) | SPK: `Super---361e08c0_5916_4b77_b6a2_c16a769bbc40---Power`
+  - **final class Infusion** | [Details](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f) | [Code](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f/code.php) | [Settings](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f/settings.json) | SPK: `Super---84fe58db_d64d_42c6_9b41_f80bcff34c7f---Power`
+  - **class Structure** | [Details](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc) | [Code](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc/code.php) | [Settings](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc/settings.json) | SPK: `Super---34daa4c8_45c3_4249_baa3_1bedf8ed3ebc---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaThree](#vdm-joomla-componentbuilder-compiler-joomlaplugin-joomlathree)
+
+  - **final class Data** | [Details](src/766a9524-37df-4604-91a7-b98a6150ee26) | [Code](src/766a9524-37df-4604-91a7-b98a6150ee26/code.php) | [Settings](src/766a9524-37df-4604-91a7-b98a6150ee26/settings.json) | SPK: `Super---766a9524_37df_4604_91a7_b98a6150ee26---Power`
+  - **final class Infusion** | [Details](src/03b75302-98ba-47ac-859f-1f49b738f66c) | [Code](src/03b75302-98ba-47ac-859f-1f49b738f66c/code.php) | [Settings](src/03b75302-98ba-47ac-859f-1f49b738f66c/settings.json) | SPK: `Super---03b75302_98ba_47ac_859f_1f49b738f66c---Power`
+  - **class Structure** | [Details](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff) | [Code](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/code.php) | [Settings](src/a900b836-f2eb-4f13-8f28-b7cac839c7ff/settings.json) | SPK: `Super---a900b836_f2eb_4f13_8f28_b7cac839c7ff---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaFive](#vdm-joomla-componentbuilder-compiler-model-joomlafive)
 
   - **final class Customtabs** | [Details](src/92cc3144-1d3d-45b2-b49f-c7d356950033) | [Code](src/92cc3144-1d3d-45b2-b49f-c7d356950033/code.php) | [Settings](src/92cc3144-1d3d-45b2-b49f-c7d356950033/settings.json) | SPK: `Super---92cc3144_1d3d_45b2_b49f_c7d356950033---Power`
@@ -491,6 +517,9 @@ This repository contains an index (see below) of all the approved powers within 
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaThree](#vdm-joomla-componentbuilder-compiler-model-joomlathree)
 
   - **final class Customtabs** | [Details](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c) | [Code](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/code.php) | [Settings](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/settings.json) | SPK: `Super---fa8c1125_d370_4cb6_a7ff_eb32193c198c---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Interfaces\Architecture\Plugin](#vdm-joomla-componentbuilder-interfaces-architecture-plugin)
+
+  - **interface MainXMLInterface** | [Details](src/97177ca9-a51a-4d24-81e1-8747b6e7d76c) | [Code](src/97177ca9-a51a-4d24-81e1-8747b6e7d76c/code.php) | [Settings](src/97177ca9-a51a-4d24-81e1-8747b6e7d76c/settings.json) | SPK: `Super---97177ca9_a51a_4d24_81e1_8747b6e7d76c---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Controller](#vdm-joomla-componentbuilder-compiler-architecture-joomlafive-controller)
 
   - **final class AllowAdd** | [Details](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6) | [Code](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6/code.php) | [Settings](src/005fce79-1b62-4a93-8d5e-8c89fee1afc6/settings.json) | SPK: `Super---005fce79_1b62_4a93_8d5e_8c89fee1afc6---Power`
@@ -500,6 +529,11 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class CanDelete** | [Details](src/34df20ec-67db-4e7e-be61-fb94d360c408) | [Code](src/34df20ec-67db-4e7e-be61-fb94d360c408/code.php) | [Settings](src/34df20ec-67db-4e7e-be61-fb94d360c408/settings.json) | SPK: `Super---34df20ec_67db_4e7e_be61_fb94d360c408---Power`
   - **final class CanEditState** | [Details](src/318a98a3-bb6f-42cb-a000-352d4c848b51) | [Code](src/318a98a3-bb6f-42cb-a000-352d4c848b51/code.php) | [Settings](src/318a98a3-bb6f-42cb-a000-352d4c848b51/settings.json) | SPK: `Super---318a98a3_bb6f_42cb_a000_352d4c848b51---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Plugin](#vdm-joomla-componentbuilder-compiler-architecture-joomlafive-plugin)
+
+  - **final class Extension** | [Details](src/28c8eed4-58cf-4d40-9053-ad77b6edfa9d) | [Code](src/28c8eed4-58cf-4d40-9053-ad77b6edfa9d/code.php) | [Settings](src/28c8eed4-58cf-4d40-9053-ad77b6edfa9d/settings.json) | SPK: `Super---28c8eed4_58cf_4d40_9053_ad77b6edfa9d---Power`
+  - **final class MainXML** | [Details](src/a7124f78-21c5-400e-984d-4c5463cb2315) | [Code](src/a7124f78-21c5-400e-984d-4c5463cb2315/code.php) | [Settings](src/a7124f78-21c5-400e-984d-4c5463cb2315/settings.json) | SPK: `Super---a7124f78_21c5_400e_984d_4c5463cb2315---Power`
+  - **final class Provider** | [Details](src/63865266-62e0-40bd-820c-e95449d12982) | [Code](src/63865266-62e0-40bd-820c-e95449d12982/code.php) | [Settings](src/63865266-62e0-40bd-820c-e95449d12982/settings.json) | SPK: `Super---63865266_62e0_40bd_820c_e95449d12982---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Controller](#vdm-joomla-componentbuilder-compiler-architecture-joomlafour-controller)
 
   - **final class AllowAdd** | [Details](src/425b1107-933d-4436-87ac-63540ec101c5) | [Code](src/425b1107-933d-4436-87ac-63540ec101c5/code.php) | [Settings](src/425b1107-933d-4436-87ac-63540ec101c5/settings.json) | SPK: `Super---425b1107_933d_4436_87ac_63540ec101c5---Power`
@@ -509,6 +543,11 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class CanDelete** | [Details](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f) | [Code](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/code.php) | [Settings](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/settings.json) | SPK: `Super---2a69a8ab_cea0_4c75_92d5_9495cb740e0f---Power`
   - **final class CanEditState** | [Details](src/cb2a82a5-aa49-4d46-b765-9b3feb118208) | [Code](src/cb2a82a5-aa49-4d46-b765-9b3feb118208/code.php) | [Settings](src/cb2a82a5-aa49-4d46-b765-9b3feb118208/settings.json) | SPK: `Super---cb2a82a5_aa49_4d46_b765_9b3feb118208---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Plugin](#vdm-joomla-componentbuilder-compiler-architecture-joomlafour-plugin)
+
+  - **final class Extension** | [Details](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa) | [Code](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa/code.php) | [Settings](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa/settings.json) | SPK: `Super---ec808f55_6703_46c0_8a6d_33c9d4e0e9fa---Power`
+  - **final class MainXML** | [Details](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786) | [Code](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786/code.php) | [Settings](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786/settings.json) | SPK: `Super---af6d0e6a_61d2_4250_9e2f_bed5591e2786---Power`
+  - **final class Provider** | [Details](src/60c3ccc5-36dc-4480-b5c4-252c37212f61) | [Code](src/60c3ccc5-36dc-4480-b5c4-252c37212f61/code.php) | [Settings](src/60c3ccc5-36dc-4480-b5c4-252c37212f61/settings.json) | SPK: `Super---60c3ccc5_36dc_4480_b5c4_252c37212f61---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Controller](#vdm-joomla-componentbuilder-compiler-architecture-joomlathree-controller)
 
   - **final class AllowAdd** | [Details](src/f21388dc-5ddc-4970-a3c2-55f075024762) | [Code](src/f21388dc-5ddc-4970-a3c2-55f075024762/code.php) | [Settings](src/f21388dc-5ddc-4970-a3c2-55f075024762/settings.json) | SPK: `Super---f21388dc_5ddc_4970_a3c2_55f075024762---Power`
@@ -518,6 +557,11 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **final class CanDelete** | [Details](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd) | [Code](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/code.php) | [Settings](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/settings.json) | SPK: `Super---23766738_d0a4_4d0a_8555_7e4c97c0cddd---Power`
   - **final class CanEditState** | [Details](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe) | [Code](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe/code.php) | [Settings](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe/settings.json) | SPK: `Super---bce9ac2b_9f46_413f_b046_9e8af3f7dfbe---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Plugin](#vdm-joomla-componentbuilder-compiler-architecture-joomlathree-plugin)
+
+  - **final class Extension** | [Details](src/a5f658ff-3962-475d-8cf8-c91da562bf49) | [Code](src/a5f658ff-3962-475d-8cf8-c91da562bf49/code.php) | [Settings](src/a5f658ff-3962-475d-8cf8-c91da562bf49/settings.json) | SPK: `Super---a5f658ff_3962_475d_8cf8_c91da562bf49---Power`
+  - **final class MainXML** | [Details](src/54e05f58-6538-42ec-ba46-b136f33e7cc7) | [Code](src/54e05f58-6538-42ec-ba46-b136f33e7cc7/code.php) | [Settings](src/54e05f58-6538-42ec-ba46-b136f33e7cc7/settings.json) | SPK: `Super---54e05f58_6538_42ec_ba46_b136f33e7cc7---Power`
+  - **final class Provider** | [Details](src/6dd2d394-8dde-4eb7-8505-cd7d345c49e3) | [Code](src/6dd2d394-8dde-4eb7-8505-cd7d345c49e3/code.php) | [Settings](src/6dd2d394-8dde-4eb7-8505-cd7d345c49e3/settings.json) | SPK: `Super---6dd2d394_8dde_4eb7_8505_cd7d345c49e3---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Controller](#vdm-joomla-componentbuilder-compiler-interfaces-architecture-controller)
 
   - **interface AllowAddInterface** | [Details](src/c9700450-4f44-4455-bc86-6a7660daadee) | [Code](src/c9700450-4f44-4455-bc86-6a7660daadee/code.php) | [Settings](src/c9700450-4f44-4455-bc86-6a7660daadee/settings.json) | SPK: `Super---c9700450_4f44_4455_bc86_6a7660daadee---Power`
@@ -527,6 +571,10 @@ This repository contains an index (see below) of all the approved powers within 
 
   - **interface CanDeleteInterface** | [Details](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91) | [Code](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/code.php) | [Settings](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/settings.json) | SPK: `Super---e00a7d1d_6d80_41c5_bf13_32d41bc5bf91---Power`
   - **interface CanEditStateInterface** | [Details](src/600515b1-493f-4448-96fe-018e54e087c8) | [Code](src/600515b1-493f-4448-96fe-018e54e087c8/code.php) | [Settings](src/600515b1-493f-4448-96fe-018e54e087c8/settings.json) | SPK: `Super---600515b1_493f_4448_96fe_018e54e087c8---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Plugin](#vdm-joomla-componentbuilder-compiler-interfaces-architecture-plugin)
+
+  - **interface ExtensionInterface** | [Details](src/914db7f5-82d8-4d3b-a1c1-eb476b1898c2) | [Code](src/914db7f5-82d8-4d3b-a1c1-eb476b1898c2/code.php) | [Settings](src/914db7f5-82d8-4d3b-a1c1-eb476b1898c2/settings.json) | SPK: `Super---914db7f5_82d8_4d3b_a1c1_eb476b1898c2---Power`
+  - **interface ProviderInterface** | [Details](src/d6ae90a5-44b4-4ce4-aedc-86c90a242912) | [Code](src/d6ae90a5-44b4-4ce4-aedc-86c90a242912/code.php) | [Settings](src/d6ae90a5-44b4-4ce4-aedc-86c90a242912/settings.json) | SPK: `Super---d6ae90a5_44b4_4ce4_aedc_86c90a242912---Power`
 > remember to replace the `---` with `___` in the SPK to activate that Power in your code
 
 ---

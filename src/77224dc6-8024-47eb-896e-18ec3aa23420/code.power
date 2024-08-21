@@ -7,9 +7,9 @@
 	protected $activePlugins = false;
 
 	/**
-	 * The application to trigger and event TODO
+	 * The dispatcher to get events
 	 *
-	 * @since 3.2.0
+	 * @since 5.0.2
 	 */
 	protected $dispatcher;
 
@@ -41,7 +41,7 @@
 			}
 		}
 
-		$this->dispatcher = Factory::getApplication();
+		$this->dispatcher = Factory::getContainer()->get(DispatcherInterface::class);
 	}
 
 	/**
@@ -61,8 +61,13 @@
 		{
 			try
 			{
-				// Trigger this compiler event.
-				$results = $this->dispatcher->triggerEvent($event, $data ?? []);
+				$data ??= [];
+				$listeners = $this->dispatcher->getListeners($event);
+				foreach ($listeners as $listener)
+				{
+					// Call the listener with the unpacked arguments
+					$listener(...$data);
+				}
 			}
 			catch (\Exception $e)
 			{

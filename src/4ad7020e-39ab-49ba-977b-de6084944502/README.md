@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Fieldset (Details)
+# final class Fieldset (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Language**
 
 ```uml
 @startuml
-class Fieldset  #Gold {
+class Fieldset << (F,LightGreen) >> #RoyalBlue {
   # Language $language
   # MetaData $metadata
   # AccessSwitch $accessswitch

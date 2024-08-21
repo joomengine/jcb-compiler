@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Infusion (Details)
+# final class Infusion (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Power**
 
 ```uml
 @startuml
-class Infusion  #Gold {
+class Infusion << (F,LightGreen) >> #RoyalBlue {
   # Config $config
   # Power $power
   # Content $content

@@ -6,12 +6,12 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# class Data (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin**
+# final class Data (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaThree**
 
 ```uml
 @startuml
-class Data  #Gold {
+class Data << (F,LightGreen) >> #RoyalBlue {
   # array $data
   # Config $config
   # Customcode $customcode
@@ -19,29 +19,29 @@ class Data  #Gold {
   # Placeholder $placeholder
   # Language $language
   # Field $field
-  # FieldName $fieldName
-  # Filesfolders $filesFolders
+  # FieldName $fieldname
+  # Filesfolders $filesfolders
   # $db
-  + __construct(?Config $config = null, ?Customcode $customcode = null, ...)
+  + __construct(Config $config, Customcode $customcode, ...)
   + get(int $id = null) : object|array|null
   + exists(int $id = null) : bool
   + set(int $id) : bool
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
-  since: 3.2.0
+  since: 5.0.2
   
   arguments:
-    ?Config $config = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Placeholder $placeholder = null
-    ?Language $language = null
-    ?Field $field = null
-    ?FieldName $fieldName = null
-    ?Filesfolders $filesFolders = null
+    Config $config
+    Customcode $customcode
+    Gui $gui
+    Placeholder $placeholder
+    Language $language
+    Field $field
+    FieldName $fieldname
+    Filesfolders $filesfolders
 end note
 
 note right of Data::get

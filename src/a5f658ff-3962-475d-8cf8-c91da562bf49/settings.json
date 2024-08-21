@@ -1,0 +1,30 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "a5f658ff-3962-475d-8cf8-c91da562bf49",
+    "implements": [
+        "914db7f5-82d8-4d3b-a1c1-eb476b1898c2"
+    ],
+    "load_selection": null,
+    "name": "Extension",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J3.Plugin.Extension",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "Builder"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaThree.Plugin.Extension",
+    "description": "Plugin Extension Class for Joomla 3\r\n\r\n@since 5.0.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

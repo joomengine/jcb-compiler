@@ -14,8 +14,14 @@
 class Language  #Gold {
   + register(Container $container) : void
   + getCompilerLanguage(Container $container) : CompilerLanguage
+  + getSet(Container $container) : Set
+  + getPurge(Container $container) : Purge
+  + getInsert(Container $container) : Insert
+  + getUpdate(Container $container) : Update
   + getExtractor(Container $container) : Extractor
   + getFieldset(Container $container) : Fieldset
+  + getMultilingual(Container $container) : Multilingual
+  + getTranslation(Container $container) : Translation
 }
 
 note right of Language::register
@@ -25,11 +31,39 @@ note right of Language::register
   return: void
 end note
 
-note right of Language::getCompilerLanguage
+note left of Language::getCompilerLanguage
   Get The Language Class.
 
   since: 3.2.0
   return: CompilerLanguage
+end note
+
+note right of Language::getSet
+  Get The Set Class.
+
+  since: 3.2.0
+  return: Set
+end note
+
+note left of Language::getPurge
+  Get The Purge Class.
+
+  since: 5.0.2
+  return: Purge
+end note
+
+note right of Language::getInsert
+  Get The Insert Class.
+
+  since: 5.0.2
+  return: Insert
+end note
+
+note left of Language::getUpdate
+  Get The Update Class.
+
+  since: 5.0.2
+  return: Update
 end note
 
 note right of Language::getExtractor
@@ -39,11 +73,25 @@ note right of Language::getExtractor
   return: Extractor
 end note
 
-note right of Language::getFieldset
+note left of Language::getFieldset
   Get The Fieldset Class.
 
   since: 3.2.0
   return: Fieldset
+end note
+
+note right of Language::getMultilingual
+  Get The Multilingual Class.
+
+  since: 5.0.2
+  return: Multilingual
+end note
+
+note left of Language::getTranslation
+  Get The Translation Class.
+
+  since: 3.2.0
+  return: Translation
 end note
  
 @enduml

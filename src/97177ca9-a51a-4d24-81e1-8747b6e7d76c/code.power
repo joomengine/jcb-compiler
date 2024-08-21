@@ -1,0 +1,9 @@
+	/**
+	 * Generates the main XML for the plugin.
+	 *
+	 * @param object $plugin The plugin object.
+	 *
+	 * @return string The generated XML.
+	 * @since  5.0.2
+	 */
+	public function get(object $plugin): string;

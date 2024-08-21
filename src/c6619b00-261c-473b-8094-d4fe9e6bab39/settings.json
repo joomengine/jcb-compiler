@@ -9,7 +9,16 @@
     "power_version": "1.0.0",
     "system_name": "JCB.Utilities.RepoHelper",
     "type": "abstract class",
-    "use_selection": null,
+    "use_selection": {
+        "use_selection0": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
     "extendsinterfaces": null,
     "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Utilities.RepoHelper",
     "description": "Repositories Helper\r\n\r\n@since 3.2.2",

@@ -29,7 +29,6 @@ class Header << (F,LightGreen) >> #RoyalBlue {
   + __construct(Config $config, Event $event, ...)
   + get(string $context, string $codeName) : string
   # getHeaders(string $context) : array
-  # setHelperClassHeader(array $headers, string $target_client) : void
 }
 
 note right of Header::__construct
@@ -62,13 +61,6 @@ note right of Header::getHeaders
 
   since: 3.2.0
   return: array
-end note
-
-note right of Header::setHelperClassHeader
-  set Helper Dynamic Headers
-
-  since: 3.2.0
-  return: void
 end note
  
 @enduml

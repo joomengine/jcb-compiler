@@ -1,0 +1,38 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "60c3ccc5-36dc-4480-b5c4-252c37212f61",
+    "implements": [
+        "d6ae90a5-44b4-4ce4-aedc-86c90a242912"
+    ],
+    "load_selection": null,
+    "name": "Provider",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J4.Plugin.Provider",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "Builder"
+        },
+        "use_selection3": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaFour.Plugin.Provider",
+    "description": "Plugin Provider Class for Joomla 4\r\n\r\n@since 5.0.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

@@ -1,0 +1,63 @@
+	/**
+	 * Database object to query local DB
+	 *
+	 * @since 5.0.2
+	 **/
+	protected $db;
+
+	/**
+	 * Constructor.
+	 *
+	 * @since 5.0.2
+	 */
+	public function __construct()
+	{
+		$this->db = Factory::getDbo();
+	}
+
+	/**
+	 * Get the other languages
+	 *
+	 * @param   array  $values  The lang strings to get
+	 *
+	 * @return  array
+	 * @since   5.0.2
+	 */
+	public function get(array $values): ?array
+	{
+		// Create a new query object.
+		$query = $this->db->getQuery(true);
+
+		$query->from(
+			$this->db->quoteName(
+				'#__[[[component]]]_language_translation', 'a'
+			)
+		);
+
+		if (ArrayHelper::check($values))
+		{
+			$query->select(
+				$this->db->quoteName(
+					array('a.id', 'a.translation', 'a.source', 'a.components',
+						'a.modules', 'a.plugins', 'a.published')
+				)
+			);
+
+			$query->where(
+				$this->db->quoteName('a.source') . ' IN (' . implode(
+					',', array_map(
+						fn($a) => $this->db->quote($a), $values
+					)
+				) . ')'
+			);
+
+			$this->db->setQuery($query);
+			$this->db->execute();
+			if ($this->db->getNumRows())
+			{
+				return $this->db->loadAssocList('source');
+			}
+		}
+
+		return null;
+	}
