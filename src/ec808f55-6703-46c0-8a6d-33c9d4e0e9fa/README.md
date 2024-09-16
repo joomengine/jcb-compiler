@@ -19,6 +19,7 @@ class Extension << (F,LightGreen) >> #RoyalBlue {
   + get(object $plugin) : string
   # addNeededMethods(string $code) : bool
   # addGetSubscribedEvents(array $methods) : ?string
+  # validEventName(array $method) : bool
   # getSubscribedEvents(array $methods) : bool
 }
 
@@ -55,6 +56,16 @@ note right of Extension::addGetSubscribedEvents
 
   since: 5.0.2
   return: ?string
+end note
+
+note right of Extension::validEventName
+  Validates if a method name is a valid event name for a Joomla plugin.
+The method must meet the following criteria:
+- It must be public, not static, and not abstract.
+- It must not be a magic method (i.e., should not start with '__').
+
+  since: 5.0.2
+  return: bool
 end note
 
 note right of Extension::getSubscribedEvents

@@ -1,0 +1,51 @@
+{
+    "add_head": "1",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "4adfb171-2580-4d57-8fbb-fb92cfd11046",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Fieldtype",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Fieldtype.Service.Fieldtype",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "baf83354-0be5-410e-80f9-2b64b052e482",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "bfd1d6d5-56c1-4fe9-9fee-1c5910e1f5d8",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "d8d35836-60f2-4464-a306-097f079c4f13",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "3235d233-ba17-4a4a-9078-aeb8c8716c04",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "d45b9f58-e4d7-4b0a-be05-e34c6fa215c8",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "35d9a31b-2b5d-4cbb-9763-299cacc76128",
+            "as": "ItemReadme"
+        },
+        "use_selection6": {
+            "use": "927fc3eb-9332-43ec-b903-ce16dcf6df09",
+            "as": "MainReadme"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Fieldtype.Service.Fieldtype",
+    "description": "Field Type Service Provider\r\n\r\n@since  5.0.3",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

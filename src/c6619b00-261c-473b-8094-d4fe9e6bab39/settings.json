@@ -7,7 +7,7 @@
     "load_selection": null,
     "name": "RepoHelper",
     "power_version": "1.0.0",
-    "system_name": "JCB.Utilities.RepoHelper",
+    "system_name": "Joomla.Utilities.RepoHelper",
     "type": "abstract class",
     "use_selection": {
         "use_selection0": {

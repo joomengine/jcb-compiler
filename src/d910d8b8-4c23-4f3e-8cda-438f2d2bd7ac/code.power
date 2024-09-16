@@ -73,6 +73,7 @@
 			->registerServiceProvider(new BuilderAJ())
 			->registerServiceProvider(new BuilderLZ())
 			->registerServiceProvider(new Creator())
+			->registerServiceProvider(new ArchitectureComHelperClass())
 			->registerServiceProvider(new ArchitectureController())
 			->registerServiceProvider(new ArchitectureModel())
 			->registerServiceProvider(new ArchitecturePlugin())

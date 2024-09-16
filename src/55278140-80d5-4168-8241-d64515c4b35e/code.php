@@ -992,7 +992,8 @@ final class Builders
 				'code'      => $name,
 				'name'      => $listLangName,
 				'extension' => $_extension,
-				'filter'    => $field['filter']
+				'filter'    => $field['filter'],
+				'add_icon'  => StringHelper::check($view['settings']->icon_category)
 			]);
 			// also set code name for title alias fix
 			$this->categorycode->set($nameSingleCode, [
@@ -1116,7 +1117,7 @@ final class Builders
 					break;
 			}
 			// just a heads-up for usergroups set to multiple
-			if ($typeName === 'usergroup')
+			if ($typeName === 'usergroup' || $typeName === 'usergrouplist')
 			{
 				$this->sitefielddata->set(
 					$nameSingleCode, $name, 'json', $typeName
