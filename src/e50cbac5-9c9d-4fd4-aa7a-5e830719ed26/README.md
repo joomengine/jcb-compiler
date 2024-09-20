@@ -13,7 +13,7 @@
 @startuml
 class Sqltweaking  #Gold {
   # Registry $registry
-  + __construct(?Registry $registry = null)
+  + __construct(Registry $registry)
   + set(object $item) : void
   # tweak(array $settings) : void
 }

@@ -14,7 +14,7 @@
 class Updatesql  #Gold {
   # array $name
   # Registry $registry
-  + __construct(?Registry $registry = null)
+  + __construct(Registry $registry)
   + set(mixed $old, mixed $new, ...) : void
   # add(string $type, int $item, ...) : void
   # name(int $id) : string

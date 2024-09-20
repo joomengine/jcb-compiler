@@ -10,10 +10,6 @@
     "system_name": "JCB.Compiler.Model.Updatesql",
     "type": "class",
     "use_selection": {
-        "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
         "use_selection1": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"

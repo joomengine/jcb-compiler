@@ -14,7 +14,7 @@
 class Sql  #Gold {
   # Dispenser $dispenser
   # Sqldump $dump
-  + __construct(?Dispenser $dispenser = null, ?Sqldump $dump = null)
+  + __construct(Dispenser $dispenser, Sqldump $dump)
   + set(object $item) : void
 }
 

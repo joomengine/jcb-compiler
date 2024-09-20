@@ -14,7 +14,7 @@
 class Sqldump  #Gold {
   # Registry $registry
   # $db
-  + __construct(?Registry $registry = null)
+  + __construct(Registry $registry)
   + get(array $tables, string $view, ...) : ?string
   # escape(string|array $value) : string|array
 }

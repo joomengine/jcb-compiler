@@ -18,7 +18,7 @@ class Dispenser  #Gold {
   # Gui $gui
   # Hash $hash
   # LockBase $base64
-  + __construct(?Placeholder $placeholder = null, ?Customcode $customcode = null, ...)
+  + __construct(Placeholder $placeholder, Customcode $customcode, ...)
   + set(string $script, string $first, ...) : bool
   + get(string $first, string $second, ...) : mixed
   # initHub(string $first, ?string $second = null, ...) : void
@@ -31,11 +31,11 @@ note right of Dispenser::__construct
   since: 3.2.0
   
   arguments:
-    ?Placeholder $placeholder = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Hash $hash = null
-    ?LockBase $base64 = null
+    Placeholder $placeholder
+    Customcode $customcode
+    Gui $gui
+    Hash $hash
+    LockBase $lockbase
 end note
 
 note right of Dispenser::set

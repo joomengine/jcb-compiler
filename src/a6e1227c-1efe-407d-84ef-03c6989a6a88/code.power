@@ -16,14 +16,13 @@
 	/**
 	 * Constructor
 	 *
-	 * @param Registry|null            $registry     The compiler registry object.
-	 * @param \JDatabaseDriver|null    $db           The database object.
+	 * @param Registry    $registry    The compiler registry object.
 	 
 	 * @since 3.2.0
 	 */
-	public function __construct(?Registry $registry = null)
+	public function __construct(Registry $registry)
 	{
-		$this->registry = $registry ?: Compiler::_('Registry');
+		$this->registry = $registry;
 		$this->db = Factory::getDbo();
 	}
 

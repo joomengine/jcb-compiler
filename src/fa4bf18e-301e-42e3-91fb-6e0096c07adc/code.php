@@ -543,14 +543,7 @@ class Config extends BaseConfig
 	 */
 	protected function getRemovelinebreaks(): bool
 	{
-		// get posted value
-		$value = $this->input->post->get('remove_line_breaks', 2, 'INT');
-		// get global
-		if ($value > 1)
-		{
-			return (bool) GetHelper::var('joomla_component', $this->component_id, 'id', 'remove_line_breaks');
-		}
-		return (bool) $value;
+		return (bool) true;
 	}
 
 	/**

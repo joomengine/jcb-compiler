@@ -13,31 +13,27 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
-            "as": "default"
-        },
-        "use_selection1": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection2": {
-            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
-            "as": "default"
-        },
-        "use_selection3": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection1": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection2": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection3": {
             "use": "797579e8-b272-41ed-91de-428cb0b3e089",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection4": {
             "use": "7c07c9d6-34cd-4491-934a-ef0a83f414c0",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         }
     },
