@@ -1,6 +1,6 @@
 	/**
-	 * Count Values
+	 * Path Count Values
 	 *
 	 * @since 3.2.0
 	 */
-	use Count;
+	use PathCount;

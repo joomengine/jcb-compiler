@@ -13,6 +13,7 @@
 ```uml
 @startuml
 class Grep << (F,LightGreen) >> #RoyalBlue {
+  # ?string $target
   # array $order
   # searchRemote(string $guid) : ?object
   # getRemote(object $path, string $guid) : ?object

@@ -54,6 +54,8 @@
 		return (new Container())
 			->registerServiceProvider(new Crypt())
 			->registerServiceProvider(new Server())
+			->registerServiceProvider(new Api())
+			->registerServiceProvider(new Network())
 			->registerServiceProvider(new Database())
 			->registerServiceProvider(new BaseModel())
 			->registerServiceProvider(new Data())

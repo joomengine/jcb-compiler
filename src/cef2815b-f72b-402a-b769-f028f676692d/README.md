@@ -12,6 +12,7 @@
 ```uml
 @startuml
 class Data  #Gold {
+  # array $data
   # Config $config
   # Event $event
   # Placeholder $placeholder

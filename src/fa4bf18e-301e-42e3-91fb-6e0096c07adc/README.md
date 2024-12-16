@@ -8,7 +8,7 @@
 ```
 # class Config (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler**
-> extends: **BaseConfig**
+> extends: **ComponentConfig**
 
 ```uml
 @startuml

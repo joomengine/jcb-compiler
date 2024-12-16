@@ -1,0 +1,24 @@
+{
+    "add_head": "0",
+    "add_licensing_template": "2",
+    "extends": "",
+    "guid": "286f7550-9c22-401c-9e5a-2f9426888133",
+    "implements": null,
+    "load_selection": null,
+    "name": "Url",
+    "power_version": "1.0.0",
+    "system_name": "Joomla.JCB.Network.Url",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fd3b25c3-cd49-404c-ae82-b6a125863f10",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Network.Url",
+    "description": "The Network Url\r\n\r\n@since 5.0.4",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

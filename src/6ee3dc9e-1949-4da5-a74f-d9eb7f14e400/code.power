@@ -21,5 +21,8 @@
 			->registerServiceProvider(new Data())
 			->registerServiceProvider(new Gitea())
 			->registerServiceProvider(new GiteaPower())
-			->registerServiceProvider(new GiteaUtilities());
+			->registerServiceProvider(new GiteaUtilities())
+			->registerServiceProvider(new Network())
+			->registerServiceProvider(new Api())
+			->registerServiceProvider(new Utilities());
 	}

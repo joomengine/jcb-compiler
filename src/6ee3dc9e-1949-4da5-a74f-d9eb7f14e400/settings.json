@@ -39,6 +39,18 @@
         "use_selection6": {
             "use": "6edf0cf3-c2b0-45c9-84d2-c6ef1c5d434c",
             "as": "GiteaUtilities"
+        },
+        "use_selection7": {
+            "use": "156f449b-ca6c-4a57-a925-be345e751614",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "3c7567d7-b079-4910-b325-7ed5c30cabff",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "facd1e1c-ff2f-4520-b735-075c45aa55ed",
+            "as": "default"
         }
     },
     "extendsinterfaces": null,

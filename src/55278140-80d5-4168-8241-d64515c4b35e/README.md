@@ -63,6 +63,7 @@ class Builders << (F,LightGreen) >> #RoyalBlue {
   + __construct(Config $config, Power $power, ...)
   + set(string $langLabel, string $langView, ...) : void
   - normalizeDatabaseValues(string $nameSingleCode, string $name, ...) : ?array
+  - setLinkerRelations(array $link) : ?array
 }
 
 note right of Builders::__construct
@@ -154,6 +155,16 @@ to types based on the 'length' field. It removes unnecessary fields from the res
     string $name
     string $uniquekey
     string $iskey
+end note
+
+note right of Builders::setLinkerRelations
+  Sets the linker relations for a field based on the provided link data.
+The method determines the type of link relation based on the presence of a table.
+If no table is provided, it assigns a type 2 with a null table, otherwise it assigns type 1.
+It also extracts additional values from the input array, such as component, entity, value, and key.
+
+  since: 5.0.3
+  return: ?array
 end note
  
 @enduml

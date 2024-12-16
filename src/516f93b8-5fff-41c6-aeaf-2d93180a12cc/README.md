@@ -19,11 +19,14 @@ class Utilities  #Gold {
   + getCounter(Container $container) : Counter
   + getPaths(Container $container) : Paths
   + getFiles(Container $container) : Files
-  + getConstantpaths(Container $container) : Constantpaths
   + getDynamicpath(Container $container) : Dynamicpath
   + getPathfix(Container $container) : Pathfix
   + getStructure(Container $container) : Structure
   + getXml(Container $container) : Xml
+  + getConstantpaths(Container $container) : Constantpaths
+  + getUri(Container $container) : Uri
+  + getHttp(Container $container) : Http
+  + getResponse(Container $container) : Response
 }
 
 note right of Utilities::register
@@ -75,6 +78,34 @@ note right of Utilities::getFiles
   return: Files
 end note
 
+note left of Utilities::getDynamicpath
+  Get the Compiler Dynamic Path
+
+  since: 3.2.0
+  return: Dynamicpath
+end note
+
+note right of Utilities::getPathfix
+  Get the Compiler Path Fixer
+
+  since: 3.2.0
+  return: Pathfix
+end note
+
+note left of Utilities::getStructure
+  Get the Compiler Structure Dynamic Builder
+
+  since: 3.2.0
+  return: Structure
+end note
+
+note right of Utilities::getXml
+  Get the Compiler Xml Helper
+
+  since: 3.2.0
+  return: Xml
+end note
+
 note left of Utilities::getConstantpaths
   Get the Constant Paths
 
@@ -82,32 +113,25 @@ note left of Utilities::getConstantpaths
   return: Constantpaths
 end note
 
-note right of Utilities::getDynamicpath
-  Get the Compiler Dynamic Path
+note right of Utilities::getUri
+  Get The Uri Class.
 
-  since: 3.2.0
-  return: Dynamicpath
+  since: 5.0.4
+  return: Uri
 end note
 
-note left of Utilities::getPathfix
-  Get the Compiler Path Fixer
+note left of Utilities::getHttp
+  Get The Http Class.
 
-  since: 3.2.0
-  return: Pathfix
+  since: 5.0.4
+  return: Http
 end note
 
-note right of Utilities::getStructure
-  Get the Compiler Structure Dynamic Builder
+note right of Utilities::getResponse
+  Get The Response Class.
 
-  since: 3.2.0
-  return: Structure
-end note
-
-note left of Utilities::getXml
-  Get the Compiler Xml Helper
-
-  since: 3.2.0
-  return: Xml
+  since: 5.0.4
+  return: Response
 end note
  
 @enduml

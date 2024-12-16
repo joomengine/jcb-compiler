@@ -1,0 +1,30 @@
+	/**
+	 * Registers the service provider with a DI container.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  void
+	 * @since   5.0.4
+	 */
+	public function register(Container $container)
+	{
+		$container->alias(Network::class, 'Api.Network')
+			->share('Api.Network', [$this, 'getNetwork'], true);
+	}
+
+	/**
+	 * Get The Network Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Network
+	 * @since   5.0.4
+	 */
+	public function getNetwork(Container $container): Network
+	{
+		return new Network(
+			$container->get('Utilities.Http'),
+			$container->get('Utilities.Uri'),
+			$container->get('Utilities.Response')
+		);
+	}

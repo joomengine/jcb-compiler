@@ -1,0 +1,21 @@
+	/**
+	 * Constructor.
+	 *
+	 * @since   5.0.4
+	 * @throws  \InvalidArgumentException
+	 **/
+	public function __construct()
+	{
+		// setup config
+		$config = [
+			'userAgent' => 'JCB/5.0',
+			'headers' => [
+				'Content-Type' => 'application/json'
+			]
+		];
+
+		$options = new Registry($config);
+
+		// run parent constructor
+		parent::__construct($options);
+	}

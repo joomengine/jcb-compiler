@@ -6,22 +6,27 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# abstract class BaseConfig (Details)
+# abstract class Api (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Abstraction**
-> extends: **ExtendingBaseConfig**
 
 ```uml
 @startuml
-abstract BaseConfig  #Orange {
-  # Input $input
-  # JoomlaRegistry $params
-  + __construct(?Input $input = null, ?JoomlaRegistry $params = null)
+abstract Api  #Orange {
+  # Http $http
+  # Uri $uri
+  # Response $response
+  + __construct(Http $http, Uri $uri, ...)
 }
 
-note right of BaseConfig::__construct
-  Constructor
+note right of Api::__construct
+  Constructor.
 
-  since: 3.2.0
+  since: 5.0.4
+  
+  arguments:
+    Http $http
+    Uri $uri
+    Response $response
 end note
  
 @enduml
@@ -37,7 +42,7 @@ To add this specific Power to your project in JCB:
 
 > simply use this SPK
 ```
-Super---9769f3b2_17bf_4f20_b54b_3a4ebe572b36---Power
+Super---85e0b652_21b9_4ff7_ba27_dbd72256f0f2---Power
 ```
 > remember to replace the `---` with `___` to activate this Power in your code
 

@@ -164,6 +164,17 @@
         "spk": "Super---071c7cff_4c88_4b80_bd99_066c572dcb71---Power",
         "guid": "071c7cff-4c88-4b80-bd99-066c572dcb71"
     },
+    "07ca003e-368c-451d-a3d3-ba24e50c7287": {
+        "name": "Network",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Api",
+        "code": "src\/07ca003e-368c-451d-a3d3-ba24e50c7287\/code.php",
+        "power": "src\/07ca003e-368c-451d-a3d3-ba24e50c7287\/code.power",
+        "settings": "src\/07ca003e-368c-451d-a3d3-ba24e50c7287\/settings.json",
+        "path": "src\/07ca003e-368c-451d-a3d3-ba24e50c7287",
+        "spk": "Super---07ca003e_368c_451d_a3d3_ba24e50c7287---Power",
+        "guid": "07ca003e-368c-451d-a3d3-ba24e50c7287"
+    },
     "0a524af3-f647-4f62-a422-d7d36ebe749b": {
         "name": "ConfigFieldsets",
         "type": "final class",
@@ -351,6 +362,17 @@
         "spk": "Super---15615db0_02b9_454f_a82e_1ab39ae5e6a9---Power",
         "guid": "15615db0-02b9-454f-a82e-1ab39ae5e6a9"
     },
+    "156f449b-ca6c-4a57-a925-be345e751614": {
+        "name": "Network",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Service",
+        "code": "src\/156f449b-ca6c-4a57-a925-be345e751614\/code.php",
+        "power": "src\/156f449b-ca6c-4a57-a925-be345e751614\/code.power",
+        "settings": "src\/156f449b-ca6c-4a57-a925-be345e751614\/settings.json",
+        "path": "src\/156f449b-ca6c-4a57-a925-be345e751614",
+        "spk": "Super---156f449b_ca6c_4a57_a925_be345e751614---Power",
+        "guid": "156f449b-ca6c-4a57-a925-be345e751614"
+    },
     "15b4addf-bf6b-4691-9c92-858c7de9c2c1": {
         "name": "SiteFieldData",
         "type": "final class",
@@ -471,6 +493,17 @@
         "path": "src\/1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
         "spk": "Super---1bd48df2_4f7e_4581_9fe9_4b54e59105e3---Power",
         "guid": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3"
+    },
+    "1c5bf656-f73a-46ec-bb9d-aa3932d5b3de": {
+        "name": "Uri",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Utilities",
+        "code": "src\/1c5bf656-f73a-46ec-bb9d-aa3932d5b3de\/code.php",
+        "power": "src\/1c5bf656-f73a-46ec-bb9d-aa3932d5b3de\/code.power",
+        "settings": "src\/1c5bf656-f73a-46ec-bb9d-aa3932d5b3de\/settings.json",
+        "path": "src\/1c5bf656-f73a-46ec-bb9d-aa3932d5b3de",
+        "spk": "Super---1c5bf656_f73a_46ec_bb9d_aa3932d5b3de---Power",
+        "guid": "1c5bf656-f73a-46ec-bb9d-aa3932d5b3de"
     },
     "1cef0266-99e2-40d8-919f-c2ce32226b0a": {
         "name": "External",
@@ -735,6 +768,17 @@
         "path": "src\/274a78d1-24c2-4486-b560-b86e9ae72872",
         "spk": "Super---274a78d1_24c2_4486_b560_b86e9ae72872---Power",
         "guid": "274a78d1-24c2-4486-b560-b86e9ae72872"
+    },
+    "286f7550-9c22-401c-9e5a-2f9426888133": {
+        "name": "Url",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Network",
+        "code": "src\/286f7550-9c22-401c-9e5a-2f9426888133\/code.php",
+        "power": "src\/286f7550-9c22-401c-9e5a-2f9426888133\/code.power",
+        "settings": "src\/286f7550-9c22-401c-9e5a-2f9426888133\/settings.json",
+        "path": "src\/286f7550-9c22-401c-9e5a-2f9426888133",
+        "spk": "Super---286f7550_9c22_401c_9e5a_2f9426888133---Power",
+        "guid": "286f7550-9c22-401c-9e5a-2f9426888133"
     },
     "28c8eed4-58cf-4d40-9053-ad77b6edfa9d": {
         "name": "Extension",
@@ -1208,6 +1252,17 @@
         "path": "src\/3b6895da-d9eb-4164-90b1-4632a4cc2474",
         "spk": "Super---3b6895da_d9eb_4164_90b1_4632a4cc2474---Power",
         "guid": "3b6895da-d9eb-4164-90b1-4632a4cc2474"
+    },
+    "3c7567d7-b079-4910-b325-7ed5c30cabff": {
+        "name": "Api",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Service",
+        "code": "src\/3c7567d7-b079-4910-b325-7ed5c30cabff\/code.php",
+        "power": "src\/3c7567d7-b079-4910-b325-7ed5c30cabff\/code.power",
+        "settings": "src\/3c7567d7-b079-4910-b325-7ed5c30cabff\/settings.json",
+        "path": "src\/3c7567d7-b079-4910-b325-7ed5c30cabff",
+        "spk": "Super---3c7567d7_b079_4910_b325_7ed5c30cabff---Power",
+        "guid": "3c7567d7-b079-4910-b325-7ed5c30cabff"
     },
     "3f83fe11-1ef6-4020-bd73-f3bb58cefe3a": {
         "name": "OtherOrder",
@@ -2243,6 +2298,17 @@
         "spk": "Super---7f75b300_534c_4f63_a368_6f4abc4cea58---Power",
         "guid": "7f75b300-534c-4f63-a368-6f4abc4cea58"
     },
+    "809d3077-c105-4e9c-8ac5-8fbee10cf9fc": {
+        "name": "Status",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Network",
+        "code": "src\/809d3077-c105-4e9c-8ac5-8fbee10cf9fc\/code.php",
+        "power": "src\/809d3077-c105-4e9c-8ac5-8fbee10cf9fc\/code.power",
+        "settings": "src\/809d3077-c105-4e9c-8ac5-8fbee10cf9fc\/settings.json",
+        "path": "src\/809d3077-c105-4e9c-8ac5-8fbee10cf9fc",
+        "spk": "Super---809d3077_c105_4e9c_8ac5_8fbee10cf9fc---Power",
+        "guid": "809d3077-c105-4e9c-8ac5-8fbee10cf9fc"
+    },
     "81212121-ad5c-43c5-b046-f2650864f690": {
         "name": "AccessSwitchList",
         "type": "final class",
@@ -2275,6 +2341,17 @@
         "path": "src\/82505f3f-297f-4d75-a581-929ab3e93689",
         "spk": "Super---82505f3f_297f_4d75_a581_929ab3e93689---Power",
         "guid": "82505f3f-297f-4d75-a581-929ab3e93689"
+    },
+    "825ecce9-72ef-4257-bc32-4b05a4c226e9": {
+        "name": "Core",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Network",
+        "code": "src\/825ecce9-72ef-4257-bc32-4b05a4c226e9\/code.php",
+        "power": "src\/825ecce9-72ef-4257-bc32-4b05a4c226e9\/code.power",
+        "settings": "src\/825ecce9-72ef-4257-bc32-4b05a4c226e9\/settings.json",
+        "path": "src\/825ecce9-72ef-4257-bc32-4b05a4c226e9",
+        "spk": "Super---825ecce9_72ef_4257_bc32_4b05a4c226e9---Power",
+        "guid": "825ecce9-72ef-4257-bc32-4b05a4c226e9"
     },
     "84c11075-570a-4907-9be0-9305e0fabe3c": {
         "name": "ConfigFieldsetsUikit",
@@ -2330,6 +2407,17 @@
         "path": "src\/85cddb24-7ee6-4d86-a0db-615f443e1aec",
         "spk": "Super---85cddb24_7ee6_4d86_a0db_615f443e1aec---Power",
         "guid": "85cddb24-7ee6-4d86-a0db-615f443e1aec"
+    },
+    "85e0b652-21b9-4ff7-ba27-dbd72256f0f2": {
+        "name": "Api",
+        "type": "abstract class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Abstraction",
+        "code": "src\/85e0b652-21b9-4ff7-ba27-dbd72256f0f2\/code.php",
+        "power": "src\/85e0b652-21b9-4ff7-ba27-dbd72256f0f2\/code.power",
+        "settings": "src\/85e0b652-21b9-4ff7-ba27-dbd72256f0f2\/settings.json",
+        "path": "src\/85e0b652-21b9-4ff7-ba27-dbd72256f0f2",
+        "spk": "Super---85e0b652_21b9_4ff7_ba27_dbd72256f0f2---Power",
+        "guid": "85e0b652-21b9-4ff7-ba27-dbd72256f0f2"
     },
     "86ac0760-26f5-4746-9c7f-ce77860f80f8": {
         "name": "Serverinterface",
@@ -2716,17 +2804,6 @@
         "spk": "Super---97698747_c2ce_4e09_a470_acf6d8e86281---Power",
         "guid": "97698747-c2ce-4e09-a470-acf6d8e86281"
     },
-    "9769f3b2-17bf-4f20-b54b-3a4ebe572b36": {
-        "name": "BaseConfig",
-        "type": "abstract class",
-        "namespace": "VDM\\Joomla\\Componentbuilder\\Abstraction",
-        "code": "src\/9769f3b2-17bf-4f20-b54b-3a4ebe572b36\/code.php",
-        "power": "src\/9769f3b2-17bf-4f20-b54b-3a4ebe572b36\/code.power",
-        "settings": "src\/9769f3b2-17bf-4f20-b54b-3a4ebe572b36\/settings.json",
-        "path": "src\/9769f3b2-17bf-4f20-b54b-3a4ebe572b36",
-        "spk": "Super---9769f3b2_17bf_4f20_b54b_3a4ebe572b36---Power",
-        "guid": "9769f3b2-17bf-4f20-b54b-3a4ebe572b36"
-    },
     "98419ff3-6628-4539-8365-37f88378bced": {
         "name": "Request",
         "type": "final class",
@@ -2869,6 +2946,17 @@
         "path": "src\/a090a472-eb3d-4086-a6d5-4215e1b1851f",
         "spk": "Super---a090a472_eb3d_4086_a6d5_4215e1b1851f---Power",
         "guid": "a090a472-eb3d-4086-a6d5-4215e1b1851f"
+    },
+    "a0c143af-3d7d-4c19-91c4-f72060b4c361": {
+        "name": "Resolve",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Network",
+        "code": "src\/a0c143af-3d7d-4c19-91c4-f72060b4c361\/code.php",
+        "power": "src\/a0c143af-3d7d-4c19-91c4-f72060b4c361\/code.power",
+        "settings": "src\/a0c143af-3d7d-4c19-91c4-f72060b4c361\/settings.json",
+        "path": "src\/a0c143af-3d7d-4c19-91c4-f72060b4c361",
+        "spk": "Super---a0c143af_3d7d_4c19_91c4_f72060b4c361---Power",
+        "guid": "a0c143af-3d7d-4c19-91c4-f72060b4c361"
     },
     "a0f032db-2242-41df-8e4a-5e9e6f88201d": {
         "name": "Layout",
@@ -3618,6 +3706,17 @@
         "spk": "Super---c9700450_4f44_4455_bc86_6a7660daadee---Power",
         "guid": "c9700450-4f44-4455-bc86-6a7660daadee"
     },
+    "c99e85a0-d120-4f25-bcbf-0940dd7b773b": {
+        "name": "Response",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Utilities",
+        "code": "src\/c99e85a0-d120-4f25-bcbf-0940dd7b773b\/code.php",
+        "power": "src\/c99e85a0-d120-4f25-bcbf-0940dd7b773b\/code.power",
+        "settings": "src\/c99e85a0-d120-4f25-bcbf-0940dd7b773b\/settings.json",
+        "path": "src\/c99e85a0-d120-4f25-bcbf-0940dd7b773b",
+        "spk": "Super---c99e85a0_d120_4f25_bcbf_0940dd7b773b---Power",
+        "guid": "c99e85a0-d120-4f25-bcbf-0940dd7b773b"
+    },
     "ca111518-e47c-4049-b1b2-cb010f23866f": {
         "name": "Reverse",
         "type": "class",
@@ -3936,6 +4035,17 @@
         "path": "src\/d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
         "spk": "Super---d910d8b8_4c23_4f3e_8cda_438f2d2bd7ac---Power",
         "guid": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac"
+    },
+    "d9ee00d6-eeed-4fc4-af8a-7b5547f508ba": {
+        "name": "Http",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Utilities",
+        "code": "src\/d9ee00d6-eeed-4fc4-af8a-7b5547f508ba\/code.php",
+        "power": "src\/d9ee00d6-eeed-4fc4-af8a-7b5547f508ba\/code.power",
+        "settings": "src\/d9ee00d6-eeed-4fc4-af8a-7b5547f508ba\/settings.json",
+        "path": "src\/d9ee00d6-eeed-4fc4-af8a-7b5547f508ba",
+        "spk": "Super---d9ee00d6_eeed_4fc4_af8a_7b5547f508ba---Power",
+        "guid": "d9ee00d6-eeed-4fc4-af8a-7b5547f508ba"
     },
     "dba0776e-e582-4f73-af3e-e7ed17bc34b3": {
         "name": "FootableScripts",
@@ -4520,6 +4630,17 @@
         "spk": "Super---fa8c1125_d370_4cb6_a7ff_eb32193c198c---Power",
         "guid": "fa8c1125-d370-4cb6-a7ff-eb32193c198c"
     },
+    "facd1e1c-ff2f-4520-b735-075c45aa55ed": {
+        "name": "Utilities",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Service",
+        "code": "src\/facd1e1c-ff2f-4520-b735-075c45aa55ed\/code.php",
+        "power": "src\/facd1e1c-ff2f-4520-b735-075c45aa55ed\/code.power",
+        "settings": "src\/facd1e1c-ff2f-4520-b735-075c45aa55ed\/settings.json",
+        "path": "src\/facd1e1c-ff2f-4520-b735-075c45aa55ed",
+        "spk": "Super---facd1e1c_ff2f_4520_b735_075c45aa55ed---Power",
+        "guid": "facd1e1c-ff2f-4520-b735-075c45aa55ed"
+    },
     "fcbd0dd7-1f26-472e-abd3-56265f4999f2": {
         "name": "Item",
         "type": "final class",
@@ -4541,6 +4662,17 @@
         "path": "src\/fcf42c53-0967-4c87-9699-a4d86adfdadf",
         "spk": "Super---fcf42c53_0967_4c87_9699_a4d86adfdadf---Power",
         "guid": "fcf42c53-0967-4c87-9699-a4d86adfdadf"
+    },
+    "fd3b25c3-cd49-404c-ae82-b6a125863f10": {
+        "name": "ParsedUrls",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Network",
+        "code": "src\/fd3b25c3-cd49-404c-ae82-b6a125863f10\/code.php",
+        "power": "src\/fd3b25c3-cd49-404c-ae82-b6a125863f10\/code.power",
+        "settings": "src\/fd3b25c3-cd49-404c-ae82-b6a125863f10\/settings.json",
+        "path": "src\/fd3b25c3-cd49-404c-ae82-b6a125863f10",
+        "spk": "Super---fd3b25c3_cd49_404c_ae82_b6a125863f10---Power",
+        "guid": "fd3b25c3-cd49-404c-ae82-b6a125863f10"
     },
     "fd885c23-88dd-440a-9b05-d02a2b2962f9": {
         "name": "OtherWhere",

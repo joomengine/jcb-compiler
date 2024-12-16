@@ -1,0 +1,7 @@
+	/**
+	 * Path separator
+	 *
+	 * @var    string|null
+	 * @since 3.2.0
+	 */
+	protected ?string $separator = '|';
