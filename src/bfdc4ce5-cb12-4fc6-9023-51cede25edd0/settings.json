@@ -1,6 +1,6 @@
 {
-    "add_head": "0",
-    "add_licensing_template": "2",
+    "add_head": 0,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "bfdc4ce5-cb12-4fc6-9023-51cede25edd0",
     "implements": null,
@@ -10,10 +10,6 @@
     "system_name": "JCB.Compiler.Model.Joomlamodules",
     "type": "class",
     "use_selection": {
-        "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
         "use_selection1": {
             "use": "cb11e8d9-69c2-4095-831c-59908ea402e7",
             "as": "Module"

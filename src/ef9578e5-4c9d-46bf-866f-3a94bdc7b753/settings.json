@@ -1,6 +1,6 @@
 {
-    "add_head": "1",
-    "add_licensing_template": "2",
+    "add_head": 1,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "ef9578e5-4c9d-46bf-866f-3a94bdc7b753",
     "implements": null,
@@ -11,106 +11,102 @@
     "type": "final class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
-            "as": "default"
+            "as": "Event"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
             "as": "ComponentPlaceholder"
         },
-        "use_selection5": {
+        "use_selection4": {
             "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection5": {
             "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection6": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection7": {
             "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
             "as": "Field"
         },
-        "use_selection9": {
+        "use_selection8": {
             "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
             "as": "FieldName"
         },
-        "use_selection10": {
+        "use_selection9": {
             "use": "8c018533-e967-4bf2-9bd9-9e92966fcb5e",
             "as": "default"
         },
-        "use_selection11": {
+        "use_selection10": {
             "use": "f4578c04-a81e-4218-b80d-b0612196eaf0",
             "as": "default"
         },
-        "use_selection12": {
+        "use_selection11": {
             "use": "17a728e9-d6cf-4060-9efb-241b0ff2f981",
             "as": "default"
         },
-        "use_selection13": {
+        "use_selection12": {
             "use": "af5beb21-214a-44f6-9090-7ea24c22e649",
             "as": "default"
         },
-        "use_selection14": {
+        "use_selection13": {
             "use": "e50cbac5-9c9d-4fd4-aa7a-5e830719ed26",
             "as": "default"
         },
-        "use_selection15": {
+        "use_selection14": {
             "use": "cebdcccb-24c5-46db-92de-63453852dcb8",
             "as": "default"
         },
-        "use_selection16": {
+        "use_selection15": {
             "use": "e0075978-315d-4807-8507-ce9c6922a885",
             "as": "default"
         },
-        "use_selection17": {
+        "use_selection16": {
             "use": "e0e24173-a808-4dd5-8e26-de971d014f86",
             "as": "default"
         },
-        "use_selection18": {
+        "use_selection17": {
             "use": "1d0fd857-12ec-4f47-ab1c-124d85748e24",
             "as": "default"
         },
-        "use_selection19": {
+        "use_selection18": {
             "use": "bfdc4ce5-cb12-4fc6-9023-51cede25edd0",
             "as": "default"
         },
-        "use_selection20": {
+        "use_selection19": {
             "use": "ef97b03e-1018-447a-8d7e-30401b0257bb",
             "as": "default"
         },
-        "use_selection21": {
+        "use_selection20": {
             "use": "402239e6-ceec-4ee0-af62-22d462417bf6",
             "as": "default"
         },
-        "use_selection22": {
+        "use_selection21": {
             "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         },
-        "use_selection23": {
+        "use_selection22": {
             "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
             "as": "default"
         },
-        "use_selection24": {
+        "use_selection23": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         },
-        "use_selection25": {
+        "use_selection24": {
             "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
             "as": "default"
         }

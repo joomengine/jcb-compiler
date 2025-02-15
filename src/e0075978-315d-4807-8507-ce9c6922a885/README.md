@@ -14,7 +14,7 @@
 class Siteviews  #Gold {
   # Customview $site
   # Config $config
-  + __construct(?Customview $site = null, ?Config $config = null)
+  + __construct(Customview $site, Config $config)
   + set(object $item) : void
 }
 

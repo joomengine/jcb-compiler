@@ -15,9 +15,11 @@ class Groups << (F,LightGreen) >> #RoyalBlue {
   # $db
   + __construct()
   + check(string $type, string $option = 'default') : bool
-  + types(array $groups = []) : ?array
+  + types(array $groups = [], string $key = 'id') : ?array
   + typesIds(array $groups = []) : ?array
   + spacerIds() : ?array
+  + typesGuids(array $groups = []) : ?array
+  + spacerGuids() : ?array
 }
 
 note right of Groups::__construct
@@ -34,7 +36,7 @@ note right of Groups::check
 end note
 
 note right of Groups::types
-  get the field types id -> name of a group or groups
+  get the field types $key -> name of a group or groups
 
   since: 3.2.0
   return: ?array
@@ -51,6 +53,20 @@ note right of Groups::spacerIds
   get the spacer IDs
 
   since: 3.2.0
+  return: ?array
+end note
+
+note right of Groups::typesGuids
+  get the field types Guid's of a group or groups
+
+  since: 5.0.4
+  return: ?array
+end note
+
+note right of Groups::spacerGuids
+  get the spacer Guid's
+
+  since: 5.0.4
   return: ?array
 end note
  

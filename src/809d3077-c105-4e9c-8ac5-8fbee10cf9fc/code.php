@@ -79,7 +79,7 @@ final class Status
 	public function get(string $target, string $domain, string $repository, string $organization = 'joomla'): int
 	{
 		try {
-			$repo = $this->network($target, $repository, $organization, $domain);
+			$repo = $this->network($target, $domain, $organization, $repository);
 
 			if ($repo === null)
 			{
@@ -164,7 +164,7 @@ final class Status
 	 * @throws \Exception If an error occurs during the network call or if the result contains an 'error' key.
 	 * @since  5.0.4
 	 */
-	public function network(string $target, ?string $domain = null, ?string $organization = null, ?string $repository): ?object
+	public function network(string $target, ?string $domain = null, ?string $organization = null, ?string $repository = null): ?object
 	{
 		$networkData = $this->fetchNetworkData($target);
 

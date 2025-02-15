@@ -19,7 +19,7 @@ class Set << (F,LightGreen) >> #RoyalBlue {
   # Insert $insert
   # Update $update
   + __construct(Config $config, Language $language, ...)
-  + execute(array $strings, int $target_id, ...) : void
+  + execute(array $strings, string $target_guid, ...) : void
   # processString(string $string, array $strings, ...) : void
   # updateOrInsertString(string $string, $multiLangString, ...) : void
   # getTargets(array $multiLangString, string $target, ...) : array
@@ -48,7 +48,7 @@ This method inserts or updates language strings in the database based on the cur
   
   arguments:
     array $strings
-    int $target_id
+    string $target_guid
     string $target = 'components'
 end note
 
@@ -65,7 +65,7 @@ note right of Set::processString
     string $placeholder
     $multiLangString
     string $target
-    int $target_id
+    string $target_guid
     string $today
     $counterInsert
     $counterUpdate
@@ -81,7 +81,7 @@ note right of Set::updateOrInsertString
     string $string
     $multiLangString
     string $target
-    int $target_id
+    string $target_guid
     string $today
     $counterInsert
     $counterUpdate
@@ -96,7 +96,7 @@ note right of Set::getTargets
   arguments:
     array $multiLangString
     string $target
-    int $target_id
+    string $target_guid
 end note
  
 @enduml

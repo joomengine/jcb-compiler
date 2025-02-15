@@ -13,6 +13,7 @@
 @startuml
 class Data  #Gold {
   # array $fields
+  # array $index
   # Config $config
   # Event $event
   # History $history
@@ -22,7 +23,11 @@ class Data  #Gold {
   # Rule $rule
   # $db
   + __construct(Config $config, Event $event, ...)
-  + get(int $id, ?string $singleViewName = null, ...) : ?object
+  + get(mixed $field, ?string $singleViewName = null, ...) : ?object
+  - getFieldData(int $id, ?string $singleViewName = null, ...) : ?object
+  - set(mixed $field) : void
+  - getQuery(mixed $value, string $key = 'id') : string
+  - getData(string $query) : ?object
 }
 
 note right of Data::__construct
@@ -47,9 +52,42 @@ note right of Data::get
   return: ?object
   
   arguments:
+    mixed $field
+    ?string $singleViewName = null
+    ?string $listViewName = null
+end note
+
+note right of Data::getFieldData
+  Set Field Data
+
+  since: 3.2.0
+  return: ?object
+  
+  arguments:
     int $id
     ?string $singleViewName = null
     ?string $listViewName = null
+end note
+
+note right of Data::set
+  Set the field
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::getQuery
+  get current field data query
+
+  since: 5.0.4
+  return: string
+end note
+
+note right of Data::getData
+  get field data
+
+  since: 5.0.4
+  return: ?object
 end note
  
 @enduml

@@ -66,7 +66,7 @@ Otherwise, it fetches the data from the Network, caches it, and returns it.
     string $target
     ?string $domain = null
     ?string $organization = null
-    ?string $repository
+    ?string $repository = null
 end note
 
 note right of Status::getDomainData

@@ -13,6 +13,7 @@
 @startuml
 class Data  #Gold {
   # array $data
+  # array $index
   # Config $config
   # Event $event
   # Placeholder $placeholder
@@ -37,7 +38,14 @@ class Data  #Gold {
   # SiteEditView $siteeditview
   # $db
   + __construct(Config $config, Event $event, ...)
-  + get(int $id) : ?object
+  + get(mixed $view) : ?object
+  - set(mixed $view) : void
+  - getQuery(mixed $value, string $key = 'id') : string
+  - getData(string $query) : ?object
+  - setCodeNames(object $view, int $id) : void
+  - setAssetsTableFix(object $view) : void
+  - setPlaceholders(object $view) : void
+  - clearPlaceholders() : void
 }
 
 note right of Data::__construct
@@ -70,11 +78,60 @@ note right of Data::__construct
     SiteEditView $siteeditview
 end note
 
-note right of Data::get
+note left of Data::get
   Get Admin View Data
 
   since: 3.2.0
   return: ?object
+end note
+
+note right of Data::set
+  Set the admin view
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::getQuery
+  get current admin view data query
+
+  since: 5.0.4
+  return: string
+end note
+
+note right of Data::getData
+  get admin view data
+
+  since: 5.0.4
+  return: ?object
+end note
+
+note left of Data::setCodeNames
+  Sets code names for this view.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setAssetsTableFix
+  Sets code names for this view.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setPlaceholders
+  Sets the placeholders for this view
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::clearPlaceholders
+  Clear the placeholders for this view
+
+  since: 5.0.4
+  return: void
 end note
  
 @enduml

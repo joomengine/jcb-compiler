@@ -22,6 +22,7 @@ class Attributes << (F,LightGreen) >> #RoyalBlue {
   # FieldGroups $fieldgroups
   - int $title
   - int $alias
+  - object $settings
   - array $properties
   - array $php
   - array $attributes

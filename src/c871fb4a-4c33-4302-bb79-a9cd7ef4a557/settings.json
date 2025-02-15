@@ -1,6 +1,6 @@
 {
-    "add_head": "0",
-    "add_licensing_template": "2",
+    "add_head": 0,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "c871fb4a-4c33-4302-bb79-a9cd7ef4a557",
     "implements": null,
@@ -10,31 +10,31 @@
     "system_name": "JCB.Compiler.Field.Rule",
     "type": "class",
     "use_selection": {
-        "use_selection3": {
+        "use_selection0": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection1": {
             "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection2": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection3": {
             "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection4": {
             "use": "b9f05dc4-d23a-499a-a826-9749b81818ed",
             "as": "CoreRule"
         },
-        "use_selection1": {
+        "use_selection5": {
             "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection6": {
             "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
             "as": "default"
         }

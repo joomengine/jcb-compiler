@@ -13,16 +13,16 @@
 @startuml
 class Data << (F,LightGreen) >> #RoyalBlue {
   # Config $config
-  # EventInterface $event
+  # Event $event
   # Placeholder $placeholder
-  # ComponentPlaceholder $componentPlaceholder
+  # ComponentPlaceholder $componentplaceholder
   # Dispenser $dispenser
   # Customcode $customcode
   # Gui $gui
   # Field $field
-  # FieldName $fieldName
-  # UniqueName $uniqueName
-  # Filesfolders $filesFolders
+  # FieldName $fieldname
+  # UniqueName $uniquename
+  # Filesfolders $filesfolders
   # Historycomponent $history
   # Whmcs $whmcs
   # Sqltweaking $sqltweaking
@@ -34,44 +34,329 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   # Joomlaplugins $plugins
   # Router $router
   # $db
-  + __construct(?Config $config = null, ?EventInterface $event = null, ...)
+  + __construct(Config $config, Event $event, ...)
   + get() : ?object
+  - getQuery() : string
+  - energize(object $component) : void
+  - setComponentNames(object $component) : void
+  - setVersion(object $component) : void
+  - setImagePath(object $component) : void
+  - setGlobalConfig(object $component) : void
+  - setFilesFolders(object $component) : void
+  - setUiKit(object $component) : void
+  - setWhmcs(object $component) : void
+  - setFootable(object $component) : void
+  - setCustomMenus(object $component) : void
+  - setSqlTweaks(object $component) : void
+  - setViews(object $component) : void
+  - setConfigData(object $component) : void
+  - setContributors(object $component) : void
+  - setUpdateServer(object $component) : void
+  - setBuildDate(object $component) : void
+  - setHistory(object $component) : void
+  - setDispenserConfigs(object $component) : void
+  - initializeGuiMapper() : array
+  - configureJavaScript(object $component, array $guiMapper) : void
+  - configureGlobalCss(object $component) : void
+  - configurePhpScripts(object $component, array $guiMapper) : void
+  - configurePhpHelpers(object $component, array $guiMapper) : void
+  - configureAdminAndSiteEvents(object $component, array $guiMapper) : void
+  - setSql(object $component) : void
+  - setBom(object $component) : void
+  - setReadMe(object $component) : void
+  - setDashboardMethods(object $component) : void
+  - setServers(object $component) : void
+  - setIgnoreFolders(object $component) : void
+  - setModules(object $component) : void
+  - setPlugins(object $component) : void
+  - setRouter(object $component) : void
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?EventInterface $event = null
-    ?Placeholder $placeholder = null
-    ?ComponentPlaceholder $componentPlaceholder = null
-    ?Dispenser $dispenser = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Field $field = null
-    ?FieldName $fieldName = null
-    ?UniqueName $uniqueName = null
-    ?Filesfolders $filesFolders = null
-    ?Historycomponent $history = null
-    ?Whmcs $whmcs = null
-    ?Sqltweaking $sqltweaking = null
-    ?Adminviews $adminviews = null
-    ?Siteviews $siteviews = null
-    ?Customadminviews $customadminviews = null
-    ?Updateserver $updateserver = null
-    ?Joomlamodules $modules = null
-    ?Joomlaplugins $plugins = null
-    ?Router $router = null
+    Config $config
+    Event $event
+    Placeholder $placeholder
+    ComponentPlaceholder $componentplaceholder
+    Dispenser $dispenser
+    Customcode $customcode
+    Gui $gui
+    Field $field
+    FieldName $fieldname
+    UniqueName $uniquename
+    Filesfolders $filesfolders
+    Historycomponent $historycomponent
+    Whmcs $whmcs
+    Sqltweaking $sqltweaking
+    Adminviews $adminviews
+    Siteviews $siteviews
+    Customadminviews $customadminviews
+    Updateserver $updateserver
+    Joomlamodules $joomlamodules
+    Joomlaplugins $joomlaplugins
+    Router $router
 end note
 
-note right of Data::get
+note left of Data::get
   get current component data
 
   since: 3.2.0
   return: ?object
+end note
+
+note right of Data::getQuery
+  get current component data query
+
+  since: 5.0.4
+  return: string
+end note
+
+note left of Data::energize
+  Transform the current component data by loading all children.
+This method orchestrates various transformations and settings
+on the `$component` object. Since objects in PHP are passed
+by reference, all changes to `$component` inside helper
+methods directly update the same instance.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setComponentNames
+  Sets the sales name and name code of the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setVersion
+  Ensures the component version naming is correct.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setImagePath
+  Ensures the image field contains only the image path.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setGlobalConfig
+  Sets the global configuration for the project website and author.
+Defaults are provided if the website or author fields are not set.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setFilesFolders
+  Sets the files and folders configuration for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setUiKit
+  Configures the UIkit switch for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setWhmcs
+  Configures WHMCS links for the component if applicable.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setFootable
+  Configures Footable settings for the component.
+If `addfootable` is greater than 0, Footable is enabled, and its version
+is set to either 2 or 3 based on the value of `addfootable`.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setCustomMenus
+  Configures custom menus for the component.
+If `addcustommenus` is a valid JSON string, it is decoded and set as
+an array in the `custommenus` property. Otherwise, it is unset.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setSqlTweaks
+  Applies SQL tweaking configurations to the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setViews
+  Configures admin, site, and custom admin views for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setConfigData
+  Processes additional configuration data for the component.
+If `addconfig` is a valid JSON string, it is decoded and stored in the `config` property.
+Fields are processed and validated, and unique names are set for each field.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setContributors
+  Processes and sets contributors for the component.
+If `addcontributors` is a valid JSON string, it is decoded and stored in the `contributors` property.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setUpdateServer
+  Configures the update server details for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setBuildDate
+  Sets the build date for the component based on creation or modification date.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setHistory
+  Applies the history configuration to the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setDispenserConfigs
+  Configures dispenser settings for the component.
+This includes settings for JavaScript, CSS, PHP, and SQL files.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::initializeGuiMapper
+  Initializes the GUI mapper configuration.
+
+  since: 5.0.4
+  return: array
+end note
+
+note right of Data::configureJavaScript
+  Configures JavaScript settings for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::configureGlobalCss
+  Configures global CSS settings for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::configurePhpScripts
+  Configures PHP script settings for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::configurePhpHelpers
+  Configures PHP helper settings for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::configureAdminAndSiteEvents
+  Configures admin and site events for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setSql
+  Processes the SQL for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setBom
+  Processes the bom for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setReadMe
+  Processes the readme for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setDashboardMethods
+  Processes dashboard-related methods and configurations for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setServers
+  Configures the servers for update and sales handling.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setIgnoreFolders
+  Configures the list of folders to ignore for the repository.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setModules
+  Configures all modules for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setPlugins
+  Configures all plugins for the component.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setRouter
+  Configures the site router for the component.
+
+  since: 5.0.4
+  return: void
 end note
  
 @enduml

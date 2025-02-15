@@ -15,29 +15,30 @@ class Data  #Gold {
   # array $guiMapper
   # Config $config
   # Registry $registry
-  # EventInterface $event
+  # Event $event
   # Customcode $customcode
   # Dispenser $dispenser
   # Gui $gui
   # Dynamicget $dynamic
   # $db
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
-  + get(array $ids, string $view_code, ...) : ?array
+  + __construct(Config $config, Registry $registry, ...)
+  + get(array $keys, string $view_code, ...) : ?array
+  - getKeyTypes(array $keys) : array
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?EventInterface $event = null
-    ?Customcode $customcode = null
-    ?Dispenser $dispenser = null
-    ?Gui $gui = null
-    ?Dynamicget $dynamic = null
+    Config $config
+    Registry $registry
+    Event $event
+    Customcode $customcode
+    Dispenser $dispenser
+    Gui $gui
+    Dynamicget $dynamicget
 end note
 
 note right of Data::get
@@ -47,9 +48,16 @@ note right of Data::get
   return: ?array
   
   arguments:
-    array $ids
+    array $keys
     string $view_code
     string $context
+end note
+
+note right of Data::getKeyTypes
+  Get the key types
+
+  since: 5.0.4
+  return: array
 end note
  
 @enduml

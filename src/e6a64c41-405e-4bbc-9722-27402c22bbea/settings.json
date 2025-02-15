@@ -1,6 +1,6 @@
 {
-    "add_head": "1",
-    "add_licensing_template": "2",
+    "add_head": 1,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "e6a64c41-405e-4bbc-9722-27402c22bbea",
     "implements": null,
@@ -38,11 +38,11 @@
             "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
             "as": "FieldName"
         },
-        "use_selection8": {
+        "use_selection7": {
             "use": "12df35ad-2d44-4c4c-a7d5-a3350932a520",
             "as": "FieldGroups"
         },
-        "use_selection7": {
+        "use_selection8": {
             "use": "b80296eb-4718-4ed3-894d-69f3ac293733",
             "as": "default"
         },

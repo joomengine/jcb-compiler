@@ -34,7 +34,7 @@ note right of Sqldump::get
   arguments:
     array $tables
     string $view
-    int $view_id
+    string $view_guid
 end note
 
 note right of Sqldump::escape

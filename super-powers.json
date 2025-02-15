@@ -1627,6 +1627,17 @@
         "spk": "Super---52de0ac8_bb9d_4a45_bd2a_a44c48c17ffe---Power",
         "guid": "52de0ac8-bb9d-4a45-bd2a-a44c48c17ffe"
     },
+    "533e3273-eca7-45ed-8b3d-263f1fc361bf": {
+        "name": "Search",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Table",
+        "code": "src\/533e3273-eca7-45ed-8b3d-263f1fc361bf\/code.php",
+        "power": "src\/533e3273-eca7-45ed-8b3d-263f1fc361bf\/code.power",
+        "settings": "src\/533e3273-eca7-45ed-8b3d-263f1fc361bf\/settings.json",
+        "path": "src\/533e3273-eca7-45ed-8b3d-263f1fc361bf",
+        "spk": "Super---533e3273_eca7_45ed_8b3d_263f1fc361bf---Power",
+        "guid": "533e3273-eca7-45ed-8b3d-263f1fc361bf"
+    },
     "53cf9828-7ad4-4856-aac1-7c4c67bd3121": {
         "name": "Createdate",
         "type": "class",
@@ -3486,6 +3497,17 @@
         "spk": "Super---bcf1e767_1566_440d_9f67_5c1bada934fa---Power",
         "guid": "bcf1e767-1566-440d-9f67-5c1bada934fa"
     },
+    "bd1dc5d0-eabc-4432-b284-17a76f8763ce": {
+        "name": "Data",
+        "type": "class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Service",
+        "code": "src\/bd1dc5d0-eabc-4432-b284-17a76f8763ce\/code.php",
+        "power": "src\/bd1dc5d0-eabc-4432-b284-17a76f8763ce\/code.power",
+        "settings": "src\/bd1dc5d0-eabc-4432-b284-17a76f8763ce\/settings.json",
+        "path": "src\/bd1dc5d0-eabc-4432-b284-17a76f8763ce",
+        "spk": "Super---bd1dc5d0_eabc_4432_b284_17a76f8763ce---Power",
+        "guid": "bd1dc5d0-eabc-4432-b284-17a76f8763ce"
+    },
     "bdb74844-7cba-4227-a01c-355eba5fd031": {
         "name": "AllowEditViews",
         "type": "final class",
@@ -4420,6 +4442,17 @@
         "path": "src\/ed314bd8-c995-4282-bcaa-5e0a68ac401b",
         "spk": "Super---ed314bd8_c995_4282_bcaa_5e0a68ac401b---Power",
         "guid": "ed314bd8-c995-4282-bcaa-5e0a68ac401b"
+    },
+    "ed363901-31cf-43fa-aab9-5430f2e89522": {
+        "name": "Guid",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Data\\Migrator",
+        "code": "src\/ed363901-31cf-43fa-aab9-5430f2e89522\/code.php",
+        "power": "src\/ed363901-31cf-43fa-aab9-5430f2e89522\/code.power",
+        "settings": "src\/ed363901-31cf-43fa-aab9-5430f2e89522\/settings.json",
+        "path": "src\/ed363901-31cf-43fa-aab9-5430f2e89522",
+        "spk": "Super---ed363901_31cf_43fa_aab9_5430f2e89522---Power",
+        "guid": "ed363901-31cf-43fa-aab9-5430f2e89522"
     },
     "ed9591cb-0a03-400a-bf47-eaf78ab19b9d": {
         "name": "Extension",

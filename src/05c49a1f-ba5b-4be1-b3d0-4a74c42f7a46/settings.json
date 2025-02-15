@@ -1,6 +1,6 @@
 {
-    "add_head": "1",
-    "add_licensing_template": "2",
+    "add_head": 1,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46",
     "implements": null,
@@ -11,43 +11,43 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
-            "as": "default"
+            "as": "Event"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection4": {
             "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection5": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection6": {
             "use": "79740ee8-4d10-4b51-9ff5-18e1386ec1c6",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection7": {
             "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection8": {
             "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
             "as": "default"
         }
     },

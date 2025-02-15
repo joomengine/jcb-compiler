@@ -1,6 +1,6 @@
 {
-    "add_head": "0",
-    "add_licensing_template": "2",
+    "add_head": 0,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "e0e24173-a808-4dd5-8e26-de971d014f86",
     "implements": null,
@@ -10,10 +10,6 @@
     "system_name": "JCB.Compiler.Model.Customadminviews",
     "type": "class",
     "use_selection": {
-        "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
         "use_selection1": {
             "use": "3b6895da-d9eb-4164-90b1-4632a4cc2474",
             "as": "Customview"

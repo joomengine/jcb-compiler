@@ -74,7 +74,7 @@ final class Resolve
 			$status = $this->status->get($target, $domain, $repository, $organisation);
 
 			// If the API is inactive, attempt to find another active URL
-			if ($status === 0)
+			if ($status == 0)
 			{
 				$this->resolve($target, $domain, $organisation, $repository);
 			}
@@ -95,6 +95,7 @@ final class Resolve
 	 * @param string   &$repository   The repository name (passed by reference).
 	 *
 	 * @return void
+	 * @throws \Exception
 	 * @since  5.0.4
 	 */
 	private function resolve(string $target, string &$domain, string &$organisation, string &$repository): void

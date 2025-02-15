@@ -14,21 +14,21 @@
 abstract FilterHelper  #Orange {
   + {static} extensions() : string
   + {static} names(string $type, ?string $limiter = null) : ?array
-  + {static} linked(int $id, string $method) : ?array
+  + {static} linked(string $guid, string $method) : ?array
   + {static} namespaces() : ?array
   + {static} namegroup(string $namespace) : ?array
-  + {static} translation(int $extension, string $type) : ?array
-  + {static} translations($language, $translated = true) : ?array
+  + {static} translation(string $extension, string $type) : ?array
+  + {static} translations(string $language, bool $translated = true) : ?array
   + {static} languages() : ?array
   + {static} paths(string $path) : ?array
   + {static} repositories(int $target) : ?array
-  - {static} joomla_component_admin_views(int $id) : ?array
-  - {static} joomla_component_custom_admin_views(int $id) : ?array
-  - {static} joomla_component_site_views(int $id) : ?array
-  - {static} joomla_component(int $id) : ?array
-  - {static} joomla_module(int $id) : ?array
-  - {static} joomla_plugin(int $id) : ?array
-  - {static} admin_view(int $id) : ?array
+  - {static} joomla_component_admin_views(string $guid) : ?array
+  - {static} joomla_component_custom_admin_views(string $guid) : ?array
+  - {static} joomla_component_site_views(string $guid) : ?array
+  - {static} joomla_component(string $guid) : ?array
+  - {static} joomla_module(string $guid) : ?array
+  - {static} joomla_plugin(string $guid) : ?array
+  - {static} admin_view(string $guid) : ?array
 }
 
 note right of FilterHelper::extensions
@@ -39,14 +39,14 @@ note right of FilterHelper::extensions
 end note
 
 note left of FilterHelper::names
-  Get by type the ids and system names
+  Get by type the guids and system names
 
   since: 3.2.0
   return: ?array
 end note
 
 note right of FilterHelper::linked
-  get any area linked IDs
+  get any area linked GUIDs
 
   since: 3.2.0
   return: ?array
@@ -67,7 +67,7 @@ note right of FilterHelper::namegroup
 end note
 
 note left of FilterHelper::translation
-  get translation extension ids
+  get translation extension guids
 
   since: 3.2.0
   return: ?array
@@ -102,49 +102,49 @@ note left of FilterHelper::repositories
 end note
 
 note right of FilterHelper::joomla_component_admin_views
-  Get a component admin views IDs
+  Get a component admin views GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note left of FilterHelper::joomla_component_custom_admin_views
-  get a component custom admin views IDs
+  get a component custom admin views GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note right of FilterHelper::joomla_component_site_views
-  get a component site views IDs
+  get a component site views GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note left of FilterHelper::joomla_component
-  get a component fields IDs
+  get a component fields GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note right of FilterHelper::joomla_module
-  get a module fields IDs
+  get a module fields GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note left of FilterHelper::joomla_plugin
-  get a plugin fields IDs
+  get a plugin fields GUIDs
 
   since: 3.2.0
   return: ?array
 end note
 
 note right of FilterHelper::admin_view
-  get an admin view fields IDs
+  get an admin view fields GUIDs
 
   since: 3.2.0
   return: ?array

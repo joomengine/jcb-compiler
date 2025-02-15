@@ -1,0 +1,24 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 1,
+    "extends": "",
+    "guid": "ed363901-31cf-43fa-aab9-5430f2e89522",
+    "implements": null,
+    "load_selection": null,
+    "name": "Guid",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Data.Migrator.Guid",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "0b746305-d34e-4c21-bc20-898c4aeac376",
+            "as": "Migrator"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Data.Migrator.Guid",
+    "description": "Migrator To Globally Unique Identifier\r\n\r\n@since  5.0.4",
+    "licensing_template": "",
+    "head": "use Joomla\\CMS\\Factory;",
+    "composer": ""
+}

@@ -20,7 +20,7 @@ class Data  #Gold {
   # Filesfolders $filesFolders
   # $db
   + __construct(?Config $config = null, ?Registry $registry = null, ...)
-  + get(int $id) : object|bool
+  + get(string $guid) : object|bool
 }
 
 note right of Data::__construct

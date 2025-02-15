@@ -1,6 +1,6 @@
 {
-    "add_head": "1",
-    "add_licensing_template": "2",
+    "add_head": 1,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "a6e1227c-1efe-407d-84ef-03c6989a6a88",
     "implements": null,
@@ -10,19 +10,19 @@
     "system_name": "JCB.Compiler.Model.Sqldump",
     "type": "class",
     "use_selection": {
-        "use_selection1": {
+        "use_selection0": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         }

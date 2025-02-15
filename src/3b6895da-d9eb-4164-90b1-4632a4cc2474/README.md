@@ -13,49 +13,79 @@
 @startuml
 class Data  #Gold {
   # array $data
+  # array $index
   # Config $config
-  # EventInterface $event
+  # Event $event
   # Customcode $customcode
   # Gui $gui
   # Libraries $libraries
-  # Templatelayout $templateLayout
+  # Templatelayout $templatelayout
   # Dynamicget $dynamic
   # Loader $loader
   # Javascriptcustomview $javascript
   # Csscustomview $css
   # Phpcustomview $php
-  # Custombuttons $custombuttons
   # Ajaxcustomview $ajax
+  # Custombuttons $custombuttons
   # $db
-  + __construct(?Config $config = null, ?EventInterface $event = null, ...)
-  + get(int $id, string $table = 'site_view') : ?object
+  + __construct(Config $config, Event $event, ...)
+  + get(mixed $view, string $table = 'site_view') : ?object
+  - set(mixed $view, string $table) : void
+  - getQuery(mixed $value, string $table, ...) : string
+  - getData(string $query, string $table) : ?object
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?EventInterface $event = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Libraries $libraries = null
-    ?Templatelayout $templateLayout = null
-    ?Dynamicget $dynamic = null
-    ?Loader $loader = null
-    ?Javascriptcustomview $javascript = null
-    ?Csscustomview $css = null
-    ?Phpcustomview $php = null
-    ?Ajaxcustomview $ajax = null
-    ?Custombuttons $custombuttons = null
+    Config $config
+    Event $event
+    Customcode $customcode
+    Gui $gui
+    Libraries $libraries
+    Templatelayout $templatelayout
+    Dynamicget $dynamicget
+    Loader $loader
+    Javascriptcustomview $javascriptcustomview
+    Csscustomview $csscustomview
+    Phpcustomview $phpcustomview
+    Ajaxcustomview $ajaxcustomview
+    Custombuttons $custombuttons
 end note
 
 note right of Data::get
-  Get all Custom View Data
+  Get Custom/Site View Data
 
   since: 3.2.0
+  return: ?object
+end note
+
+note right of Data::set
+  Set the admin view
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::getQuery
+  get current custom/site view data query
+
+  since: 5.0.4
+  return: string
+  
+  arguments:
+    mixed $value
+    string $table
+    string $key = 'id'
+end note
+
+note right of Data::getData
+  get custom/site view data
+
+  since: 5.0.4
   return: ?object
 end note
  

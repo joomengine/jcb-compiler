@@ -14,7 +14,7 @@
 class Customadminviews  #Gold {
   # Customview $customadmin
   # Config $config
-  + __construct(?Customview $customadmin = null, ?Config $config = null)
+  + __construct(Customview $customadmin, Config $config)
   + set(object $item) : void
 }
 

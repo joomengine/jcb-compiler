@@ -15,7 +15,7 @@ class Purge << (F,LightGreen) >> #RoyalBlue {
   # Update $update
   # $db
   + __construct(Update $update)
-  + execute(array $values, int $targetId, ...) : void
+  + execute(array $values, string $targetGuid, ...) : void
   # handleUnlinkedString(array $item, array $targetTypes, ...) : void
   # removeExitingLangString(int $id) : void
 }
@@ -38,7 +38,7 @@ conditions.
   
   arguments:
     array $values
-    int $targetId
+    string $targetGuid
     string $target = 'components'
 end note
 

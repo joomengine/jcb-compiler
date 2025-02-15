@@ -38,6 +38,7 @@ class CustomFieldTypeFile << (F,LightGreen) >> #RoyalBlue {
   # string $rawType
   # bool $customTypeWasSet
   # string $extends
+  # string $jprefix
   + __construct(Config $config, Content $content, ...)
   + set(array $data, string $nameListCode, ...) : void
   - setTypeName(array $data) : void

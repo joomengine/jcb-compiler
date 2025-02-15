@@ -237,6 +237,20 @@ class Config extends ComponentConfig
 	}
 
 	/**
+	 * get active component guid
+	 *
+	 * @return  string  Component guid
+	 * @since 3.2.0
+	 */
+	protected function getComponentguid(): string
+	{
+		// get components guid
+		return GetHelper::var(
+			'joomla_component', $this->component_id, 'id', 'guid'
+		);
+	}
+
+	/**
 	 * get component version
 	 *
 	 * @return  string  Component version

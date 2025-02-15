@@ -1,6 +1,6 @@
 {
-    "add_head": "0",
-    "add_licensing_template": "2",
+    "add_head": 0,
+    "add_licensing_template": 2,
     "extends": "",
     "guid": "d4b418a7-bf9b-4768-969d-e07c36916fd2",
     "implements": null,
@@ -10,11 +10,11 @@
     "system_name": "JCB.Compiler.Model.Sql",
     "type": "class",
     "use_selection": {
-        "use_selection1": {
+        "use_selection0": {
             "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "a6e1227c-1efe-407d-84ef-03c6989a6a88",
             "as": "default"
         }

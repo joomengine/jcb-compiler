@@ -12,9 +12,9 @@
 ```uml
 @startuml
 interface PluginDataInterface  #Lavender {
-  + get(int $id = null) : object|array|null
-  + exists(int $id = null) : bool
-  + set(int $id) : bool
+  + get(int|string|null $plugin = null) : object|array|null
+  + exists(int|string|null $plugin = null) : bool
+  + set(int|string|null $plugin) : bool
 }
 
 note right of PluginDataInterface::get
@@ -32,9 +32,9 @@ note right of PluginDataInterface::exists
 end note
 
 note right of PluginDataInterface::set
-  Set the Joomla Plugin
+  Set the plugin
 
-  since: 3.2.0
+  since: 5.0.4
   return: bool
 end note
  

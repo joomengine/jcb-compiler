@@ -25,7 +25,7 @@ note right of FieldsetExtension::__construct
 end note
 
 note right of FieldsetExtension::get
-  build field set for an extention
+  build field set for an extension
 
   since: 5.0.2
   return: string

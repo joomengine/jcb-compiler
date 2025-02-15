@@ -15,7 +15,7 @@
 	 */
 	public function __construct(?Module $module = null)
 	{
-		$this->module = $module ?: Compiler::_('Joomlamodule.Data');
+		$this->module = $module;
 	}
 
 	/**

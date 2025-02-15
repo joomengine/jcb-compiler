@@ -12,6 +12,8 @@
 ```uml
 @startuml
 class Data  #Gold {
+  # array $index
+  # array $allowedTables
   # Config $config
   # Registry $registry
   # Customcode $customcode
@@ -19,23 +21,24 @@ class Data  #Gold {
   # Loader $loader
   # Libraries $libraries
   # $db
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, Registry $registry, ...)
   + get(string $alias, string $table, ...) : ?array
-  # set(string $table) : void
+  # getAliasId(string $alias, string $table) : ?int
+  # set(string $table) : bool
 }
 
 note right of Data::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Customcode $customcode = null
-    ?Gui $gui = null
-    ?Loader $loader = null
-    ?Libraries $libraries = null
+    Config $config
+    Registry $registry
+    Customcode $customcode
+    Gui $gui
+    Loader $loader
+    Libraries $libraries
 end note
 
 note right of Data::get
@@ -50,11 +53,18 @@ note right of Data::get
     string $view
 end note
 
+note right of Data::getAliasId
+  Get the id of this alias
+
+  since: 5.0.4
+  return: ?int
+end note
+
 note right of Data::set
   Load all alias and ID's of a table
 
   since: 3.2.0
-  return: void
+  return: bool
 end note
  
 @enduml

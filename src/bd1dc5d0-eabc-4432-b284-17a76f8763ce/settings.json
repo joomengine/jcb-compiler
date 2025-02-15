@@ -1,0 +1,27 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "bd1dc5d0-eabc-4432-b284-17a76f8763ce",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "Data",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Service.Data",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "ed363901-31cf-43fa-aab9-5430f2e89522",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Service.Data",
+    "description": "The [[[Component]]] Data Service\r\n\r\n@since 5.0.4",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    GetBible\r\n *\r\n * @created    30th May, 2023\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        GetBible <https:\/\/git.vdm.dev\/getBible>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

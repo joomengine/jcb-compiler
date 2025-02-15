@@ -13,6 +13,7 @@
 @startuml
 class Data << (F,LightGreen) >> #RoyalBlue {
   # array $data
+  # array $index
   # Config $config
   # Customcode $customcode
   # Gui $gui
@@ -23,9 +24,15 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   # Filesfolders $filesfolders
   # $db
   + __construct(Config $config, Customcode $customcode, ...)
-  + get(int $id = null) : object|array|null
-  + exists(int $id = null) : bool
-  + set(int $id) : bool
+  + get(int|string|null $plugin = null) : object|array|null
+  + exists(int|string|null $plugin = null) : bool
+  + set(int|string|null $plugin) : bool
+  - getQuery(mixed $value, string $key = 'id') : string
+  - getData(string $query) : ?object
+  - setReadme(object $plugin) : void
+  - setDescription(object $plugin) : void
+  - setPlaceholders(object $plugin) : void
+  - clearPlaceholders() : void
 }
 
 note right of Data::__construct
@@ -44,7 +51,7 @@ note right of Data::__construct
     Filesfolders $filesfolders
 end note
 
-note right of Data::get
+note left of Data::get
   Get the Joomla Plugin/s
 
   since: 3.2.0
@@ -58,11 +65,53 @@ note right of Data::exists
   return: bool
 end note
 
-note right of Data::set
-  Set the Joomla Plugin
+note left of Data::set
+  Set the plugin
 
-  since: 3.2.0
+  since: 5.0.4
   return: bool
+end note
+
+note right of Data::getQuery
+  get current plugin data query
+
+  since: 5.0.4
+  return: string
+end note
+
+note left of Data::getData
+  get plugin data
+
+  since: 5.0.4
+  return: ?object
+end note
+
+note right of Data::setReadme
+  Sets plugin readme.
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::setDescription
+  Sets plugin description.
+
+  since: 5.0.4
+  return: void
+end note
+
+note right of Data::setPlaceholders
+  Sets the placeholders for this view
+
+  since: 5.0.4
+  return: void
+end note
+
+note left of Data::clearPlaceholders
+  Clear the placeholders for this plugin
+
+  since: 5.0.4
+  return: void
 end note
  
 @enduml

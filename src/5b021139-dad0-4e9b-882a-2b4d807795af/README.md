@@ -19,7 +19,7 @@ class Selection  #Gold {
   # $db
   + __construct(Config $config, GetAsLookup $getaslookup, ...)
   + get(string $methodKey, string $viewCode, ...) : ?array
-  # name(int $id) : string
+  # name(mixed $value) : string
 }
 
 note right of Selection::__construct

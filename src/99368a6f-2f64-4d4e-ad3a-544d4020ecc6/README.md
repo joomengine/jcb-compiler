@@ -15,7 +15,7 @@ class DatabaseName  #Gold {
   # Lists $lists
   # Registry $registry
   + __construct(Lists $lists, Registry $registry)
-  + get(string $nameListCode, int $fieldId, ...) : ?string
+  + get(string $nameListCode, mixed $field, ...) : ?string
 }
 
 note right of DatabaseName::__construct
@@ -32,7 +32,7 @@ note right of DatabaseName::get
   
   arguments:
     string $nameListCode
-    int $fieldId
+    mixed $field
     string $targetArea = 'builder.list'
 end note
  
