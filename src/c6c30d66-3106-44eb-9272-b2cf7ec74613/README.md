@@ -20,6 +20,7 @@ class Field  #Gold {
   + getGroups(Container $container) : Groups
   + getAttributes(Container $container) : Attributes
   + getName(Container $container) : Name
+  + getModalSelect(Container $container) : ModalSelect
   + getTypeName(Container $container) : TypeName
   + getUniqueName(Container $container) : UniqueName
   + getRule(Container $container) : Rule
@@ -77,91 +78,98 @@ note left of Field::getName
   return: Name
 end note
 
-note right of Field::getTypeName
+note right of Field::getModalSelect
+  Get The ModalSelect Class.
+
+  since: 5.2.1
+  return: ModalSelect
+end note
+
+note left of Field::getTypeName
   Get The TypeName Class.
 
   since: 3.2.0
   return: TypeName
 end note
 
-note left of Field::getUniqueName
+note right of Field::getUniqueName
   Get The UniqueName Class.
 
   since: 3.2.0
   return: UniqueName
 end note
 
-note right of Field::getRule
+note left of Field::getRule
   Get The Rule Class.
 
   since: 3.2.0
   return: Rule
 end note
 
-note left of Field::getCustomcode
+note right of Field::getCustomcode
   Get The Customcode Class.
 
   since: 3.2.0
   return: Customcode
 end note
 
-note right of Field::getDatabaseName
+note left of Field::getDatabaseName
   Get The DatabaseName Class.
 
   since: 3.2.0
   return: DatabaseName
 end note
 
-note left of Field::getJ3CoreField
+note right of Field::getJ3CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J3CoreField
 end note
 
-note right of Field::getJ4CoreField
+note left of Field::getJ4CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J4CoreField
 end note
 
-note left of Field::getJ5CoreField
+note right of Field::getJ5CoreField
   Get The CoreField Class.
 
   since: 3.2.0
   return: J5CoreField
 end note
 
-note right of Field::getJ3InputButton
+note left of Field::getJ3InputButton
   Get The J3InputButton Class.
 
   since: 3.2.0
   return: J3InputButton
 end note
 
-note left of Field::getJ4InputButton
+note right of Field::getJ4InputButton
   Get The J4InputButton Class.
 
   since: 3.2.0
   return: J4InputButton
 end note
 
-note right of Field::getJ5InputButton
+note left of Field::getJ5InputButton
   Get The J5InputButton Class.
 
   since: 3.2.0
   return: J5InputButton
 end note
 
-note left of Field::getCoreField
+note right of Field::getCoreField
   Get The CoreFieldInterface Class.
 
   since: 3.2.0
   return: CoreField
 end note
 
-note right of Field::getInputButton
+note left of Field::getInputButton
   Get The InputButton Class.
 
   since: 3.2.0

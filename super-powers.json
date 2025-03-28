@@ -1528,6 +1528,17 @@
         "spk": "Super---4f575bd6_de97_41f8_80d6_259c8a6dd9ad---Power",
         "guid": "4f575bd6-de97-41f8-80d6-259c8a6dd9ad"
     },
+    "4fc020dc-3137-478d-8d42-0571a75b77b5": {
+        "name": "ModalSelect",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Field",
+        "code": "src\/4fc020dc-3137-478d-8d42-0571a75b77b5\/code.php",
+        "power": "src\/4fc020dc-3137-478d-8d42-0571a75b77b5\/code.power",
+        "settings": "src\/4fc020dc-3137-478d-8d42-0571a75b77b5\/settings.json",
+        "path": "src\/4fc020dc-3137-478d-8d42-0571a75b77b5",
+        "spk": "Super---4fc020dc_3137_478d_8d42_0571a75b77b5---Power",
+        "guid": "4fc020dc-3137-478d-8d42-0571a75b77b5"
+    },
     "500f3a7f-c16d-4dd4-81b2-2df6776b5388": {
         "name": "Placefix",
         "type": "abstract class",

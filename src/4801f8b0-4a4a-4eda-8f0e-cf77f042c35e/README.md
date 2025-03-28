@@ -15,6 +15,7 @@ class FieldDynamic << (F,LightGreen) >> #RoyalBlue {
   # Name $name
   # TypeName $typename
   # Attributes $attributes
+  # ModalSelect $modalselect
   # Groups $groups
   # FieldNames $fieldnames
   # Field $field
@@ -33,6 +34,7 @@ note right of FieldDynamic::__construct
     Name $name
     TypeName $typename
     Attributes $attributes
+    ModalSelect $modalselect
     Groups $groups
     FieldNames $fieldnames
     Field $field

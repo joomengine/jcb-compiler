@@ -16,8 +16,8 @@ class Updatesql  #Gold {
   # Registry $registry
   + __construct(Registry $registry)
   + set(mixed $old, mixed $new, ...) : void
-  # add(string $type, int $item, ...) : void
-  # name(int $id) : string
+  # add(string $type, int|string $item, ...) : void
+  # name(int|string $value) : string
 }
 
 note right of Updatesql::__construct
@@ -48,7 +48,7 @@ note right of Updatesql::add
   
   arguments:
     string $type
-    int $item
+    int|string $item
     mixed $key = null
 end note
 

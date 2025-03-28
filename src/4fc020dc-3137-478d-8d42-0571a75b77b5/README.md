@@ -6,64 +6,30 @@
 ██║     ╚██████╔╝╚███╔███╔╝███████╗██║  ██║
 ╚═╝      ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝
 ```
-# final class FieldXML (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Creator**
+# final class ModalSelect (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Field**
 
 ```uml
 @startuml
-class FieldXML << (F,LightGreen) >> #RoyalBlue {
-  # Config $config
-  # Language $language
-  # Field $field
-  # Groups $groups
-  # Name $name
-  # TypeName $typename
-  # Attributes $attributes
-  # ModalSelect $modalselect
-  # Xml $xml
-  # CustomFieldTypeFile $customfieldtypefile
-  # Counter $counter
-  + __construct(Config $config, Language $language, ...)
-  + get(string $setType, array $fieldAttributes, ...) : \stdClass
+class ModalSelect << (F,LightGreen) >> #RoyalBlue {
+  # Structure $structure
+  # ContentMulti $contentmulti
+  # bool $addedFix
+  + __construct(Structure $structure, ContentMulti $contentmulti)
+  + extract(array $fieldAttributes) : array
 }
 
-note right of FieldXML::__construct
+note right of ModalSelect::__construct
   Constructor.
 
-  since: 3.2.0
-  
-  arguments:
-    Config $config
-    Language $language
-    Field $field
-    Groups $groups
-    Name $name
-    TypeName $typename
-    Attributes $attributes
-    ModalSelect $modalselect
-    Xml $xml
-    CustomFieldTypeFile $customfieldtypefile
-    Counter $counter
+  since: 5.2.1
 end note
 
-note right of FieldXML::get
-  Create a field with simpleXMLElement class
+note right of ModalSelect::extract
+  Extracts component and view details from field attributes for a Modal Select field.
 
-  since: 3.2.0
-  return: \stdClass
-  
-  arguments:
-    string $setType
-    array $fieldAttributes
-    string $name
-    string $typeName
-    string $langView
-    string $nameSingleCode
-    string $nameListCode
-    array $placeholders
-    array|null $optionArray
-    ?array $custom = null
-    string $taber = ''
+  since: 5.1.2
+  return: array
 end note
  
 @enduml
@@ -79,7 +45,7 @@ To add this specific Power to your project in JCB:
 
 > simply use this SPK
 ```
-Super---ac691a05_5630_4002_b166_dedec3fb0fcb---Power
+Super---4fc020dc_3137_478d_8d42_0571a75b77b5---Power
 ```
 > remember to replace the `---` with `___` to activate this Power in your code
 

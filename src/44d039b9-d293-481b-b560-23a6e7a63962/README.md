@@ -19,6 +19,7 @@ class FieldString << (F,LightGreen) >> #RoyalBlue {
   # Name $name
   # TypeName $typename
   # Attributes $attributes
+  # ModalSelect $modalselect
   # CustomFieldTypeFile $customfieldtypefile
   # Counter $counter
   + __construct(Config $config, Language $language, ...)
@@ -38,6 +39,7 @@ note right of FieldString::__construct
     Name $name
     TypeName $typename
     Attributes $attributes
+    ModalSelect $modalselect
     CustomFieldTypeFile $customfieldtypefile
     Counter $counter
 end note
