@@ -15,8 +15,14 @@ class Dashboard << (F,LightGreen) >> #RoyalBlue {
   # Registry $registry
   # Component $component
   # CMSApplication $app
-  + __construct(?Registry $registry = null, ?Component $component = null, ...)
+  + __construct(Registry $registry, Component $component, ...)
   + set() : void
+  # isDynamicDashboardEnabled() : bool
+  # isValidDashboardFormat(string $dashboard) : bool
+  # handleDashboardTarget(string $key, string $identifier, ...) : void
+  # findViewByIdentifier(array $views, string $field, ...) : ?array
+  # notifyInvalidDashboard(string $dashboard) : void
+  # notifyDashboardNotFound(string $name, string $dashboard, ...) : void
 }
 
 note right of Dashboard::__construct
@@ -25,16 +31,73 @@ note right of Dashboard::__construct
   since: 3.2.0
   
   arguments:
-    ?Registry $registry = null
-    ?Component $component = null
+    Registry $registry
+    Component $component
     ?CMSApplication $app = null
 end note
 
-note right of Dashboard::set
+note left of Dashboard::set
   Set the Dynamic Dashboard
 
   since: 3.2.0
   return: void
+end note
+
+note right of Dashboard::isDynamicDashboardEnabled
+  Check if dynamic dashboard is enabled.
+
+  since: 5.1.1
+  return: bool
+end note
+
+note left of Dashboard::isValidDashboardFormat
+  Validate the dashboard format (e.g., "A_23" or "C_abcd1234").
+
+  since: 5.1.1
+  return: bool
+end note
+
+note right of Dashboard::handleDashboardTarget
+  Process the dashboard target and attempt to set it in the registry.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    string $key
+    string $identifier
+    string $rawDashboard
+end note
+
+note left of Dashboard::findViewByIdentifier
+  Find a matching view by numeric ID or GUID.
+
+  since: 5.1.1
+  return: ?array
+  
+  arguments:
+    array $views
+    string $field
+    string $identifier
+end note
+
+note right of Dashboard::notifyInvalidDashboard
+  Notify that the dashboard configuration is invalid.
+
+  since: 5.1.1
+  return: void
+end note
+
+note left of Dashboard::notifyDashboardNotFound
+  Notify that the configured dashboard target is not found.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    string $name
+    string $dashboard
+    string $typeKey
 end note
  
 @enduml

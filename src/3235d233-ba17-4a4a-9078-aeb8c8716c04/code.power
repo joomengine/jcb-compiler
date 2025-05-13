@@ -1,7 +1,0 @@
-	/**
-	 * Table Name
-	 *
-	 * @var    string
-	 * @since 5.0.3
-	 */
-	protected string $table = 'fieldtype';

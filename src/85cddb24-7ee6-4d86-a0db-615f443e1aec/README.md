@@ -13,11 +13,8 @@
 ```uml
 @startuml
 class Set << (F,LightGreen) >> #RoyalBlue {
-  # string $table
-  # string $area
-  # array $map
   # updateItem(object $item, object $existing, ...) : bool
-  # createItem(object $item, object $repo) : void
+  # createItem(object $item, object $repo) : bool
   # updateItemReadme(object $item, object $existing, ...) : void
   # createItemReadme(object $item, object $repo) : void
 }
@@ -38,7 +35,7 @@ note right of Set::createItem
   create a new item
 
   since: 3.2.2
-  return: void
+  return: bool
 end note
 
 note right of Set::updateItemReadme

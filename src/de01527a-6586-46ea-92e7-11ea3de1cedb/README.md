@@ -14,6 +14,8 @@
 class Power  #Gold {
   + register(Container $container) : void
   + getPowers(Container $container) : Powers
+  + getPowerTable(Container $container) : Table
+  + getRemoteConfig(Container $container) : Config
   + getRemoteGet(Container $container) : Get
   + getGrep(Container $container) : Grep
   + getAutoloader(Container $container) : Autoloader
@@ -39,6 +41,20 @@ note left of Power::getPowers
 
   since: 3.2.0
   return: Powers
+end note
+
+note right of Power::getPowerTable
+  Get The Power Table Class.
+
+  since: 5.1.1
+  return: Table
+end note
+
+note left of Power::getRemoteConfig
+  Get The Remote Config Class.
+
+  since: 5.1.1
+  return: Config
 end note
 
 note right of Power::getRemoteGet

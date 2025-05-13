@@ -1,12 +1,4 @@
 	/**
-	 * All areas/views/tables with their field details
-	 *
-	 * @var     array
-	 * @since 5.1.0
-	 **/
-	protected array $tables = ###ALL_COMPONENT_FIELDS###;
-
-	/**
 	 * Loops over the $tables array and builds a new array with:
 	 *  - 'search': an array of field names where type is "text", "textarea", or "editor"
 	 *  - 'name': the field name whose 'title' property is true,

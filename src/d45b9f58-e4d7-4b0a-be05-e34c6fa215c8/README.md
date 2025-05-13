@@ -13,11 +13,8 @@
 ```uml
 @startuml
 class Set << (F,LightGreen) >> #RoyalBlue {
-  # string $table
-  # string $area
-  # array $map
   # updateItem(object $item, object $existing, ...) : bool
-  # createItem(object $item, object $repo) : void
+  # createItem(object $item, object $repo) : bool
   # updateItemReadme(object $item, object $existing, ...) : void
   # createItemReadme(object $item, object $repo) : void
   # index_map_IndexName(object $item) : ?string
@@ -40,7 +37,7 @@ note right of Set::createItem
   create a new item
 
   since: 5.0.3
-  return: void
+  return: bool
 end note
 
 note right of Set::updateItemReadme
@@ -65,7 +62,7 @@ end note
 note right of Set::index_map_IndexName
   Get the item name for the index values
 
-  since: 5.0.3
+  since: 3.2.2
   return: ?string
 end note
 

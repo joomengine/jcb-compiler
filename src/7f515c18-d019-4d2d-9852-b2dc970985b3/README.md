@@ -65,6 +65,7 @@ class Attributes << (F,LightGreen) >> #RoyalBlue {
   - removeButtonRepeatable() : string
   - getButton() : ?string
   - removeRequired() : string
+  - getSqlTitleKey() : ?string
   - setReadonly(string $name) : string
   - getMultiple(string $name) : string
   - getClass() : string
@@ -286,28 +287,36 @@ note left of Attributes::removeRequired
   return: string
 end note
 
-note right of Attributes::setReadonly
+note right of Attributes::getSqlTitleKey
+  get sql title key value
+and set the [data-key-name] if the key is not an [id]
+
+  since: 5.1.1
+  return: ?string
+end note
+
+note left of Attributes::setReadonly
   set the readonly switch
 
   since: 3.2.0
   return: string
 end note
 
-note left of Attributes::getMultiple
+note right of Attributes::getMultiple
   set the multiple switch
 
   since: 3.2.0
   return: string
 end note
 
-note right of Attributes::getClass
+note left of Attributes::getClass
   get class value
 
   since: 3.2.0
   return: string
 end note
 
-note left of Attributes::initialise
+note right of Attributes::initialise
   Initialise the attributes and other global values
 
   since: 3.2.0

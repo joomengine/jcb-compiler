@@ -60,10 +60,30 @@ class Builders << (F,LightGreen) >> #RoyalBlue {
   # Filter $filter
   # ComponentFields $componentfields
   # CMSApplication $app
+  # int $id
+  # string $guid
+  # array $field
+  # object $settings
+  # array $view
   + __construct(Config $config, Power $power, ...)
   + set(string $langLabel, string $langView, ...) : void
+  - applyTagBehaviour(string $typeName, string $nameSingleCode) : void
+  - determineDbPersistence() : bool
+  - configureDatabaseSchema(string $table, string $column, ...) : array
+  - appearsInList() : bool
+  - applyHistoryFlag(string $table) : void
+  - applyAliasAndTitleFlags(bool $dbSwitch, string $table, ...) : void
+  - resolveLangAndFieldNames(string $langLabel, string $langView, ...) : array
+  - configureListsAndJoins(string $typeName, bool $listSwitch, ...) : void
+  - synchroniseFieldRelations(string $nameListCode, string $typeName, ...) : void
+  - applyTypeSpecificBuilders(bool $dbSwitch, string $typeName, ...) : ?string
+  - handleStoreBehaviour(string $typeName, string $table, ...) : ?string
+  - configureCategoryField(string $nameListCode, string $nameSingleCode, ...) : void
+  - configureSortSearchFilter(bool $dbSwitch, string $typeName, ...) : void
+  - configureLayoutAndComponentField(bool $dbSwitch, string $nameSingleCode, ...) : void
   - normalizeDatabaseValues(string $nameSingleCode, string $name, ...) : ?array
   - setLinkerRelations(array $link) : ?array
+  - init(array $view, array $field) : void
 }
 
 note right of Builders::__construct
@@ -122,8 +142,10 @@ note right of Builders::__construct
     ?CMSApplication $app = null
 end note
 
-note right of Builders::set
-  set Builders
+note left of Builders::set
+  Configure a field, its database schema, list/view behaviour,
+multilingual labels and every other builder that depends on the
+field definition.
 
   since: 3.2.0
   return: void
@@ -142,6 +164,200 @@ note right of Builders::set
     ?array $options = null
 end note
 
+note right of Builders::applyTagBehaviour
+  Add Tags-builder entry if the field type is “tag”.
+
+  since: 5.1.1
+  return: void
+end note
+
+note left of Builders::determineDbPersistence
+  Decide whether the field should be persisted to the database table.
+Fields explicitly marked with 'list' = 2 are excluded from persistence.
+All other cases (including when 'list' is not set) result in persistence.
+
+  since: 5.1.1
+  return: bool
+end note
+
+note right of Builders::configureDatabaseSchema
+  Populate $this->databasetables, unique/key builders and numeric defaults.
+
+  since: 5.1.1
+  return: array
+  
+  arguments:
+    string $table
+    string $column
+    string $typeName
+end note
+
+note left of Builders::appearsInList
+  Check whether a field should appear in the list view.
+
+  since: 5.1.1
+  return: bool
+end note
+
+note right of Builders::applyHistoryFlag
+  Activate history tracking for a view when enabled.
+
+  since: 5.1.1
+  return: void
+end note
+
+note left of Builders::applyAliasAndTitleFlags
+  Ensure view-singleton alias/title markers are registered once.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    bool $dbSwitch
+    string $table
+    string $column
+end note
+
+note right of Builders::resolveLangAndFieldNames
+  Resolve list-language key and human-readable field name, inserting
+translation entries when necessary.
+
+  since: 5.1.1
+  return: array
+  
+  arguments:
+    string $langLabel
+    string $langView
+    string $name
+    string $nameListCode
+    string $nameSingleCode
+    string $typeName
+end note
+
+note left of Builders::configureListsAndJoins
+  Populate list-, customlist- and listjoin-builders.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    string $typeName
+    bool $listSwitch
+    bool $listJoin
+    string $nameListCode
+    string $nameSingleCode
+    string $name
+    string $listLangName
+    bool $multiple
+    ?array $custom
+    ?array $options
+end note
+
+note right of Builders::synchroniseFieldRelations
+  Update $this->fieldrelations after full meta is known.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    string $nameListCode
+    string $typeName
+    string $name
+    ?array $custom
+end note
+
+note left of Builders::applyTypeSpecificBuilders
+  Register hidden/int/dynamic/editor/media/checkbox/custom/JSON/encryption
+builders and ItemMethods housekeeping.
+
+  since: 5.1.1
+  return: ?string
+  
+  arguments:
+    bool $dbSwitch
+    string $typeName
+    string $listLangName
+    string $nameListCode
+    string $nameSingleCode
+    string $column
+    ?array $custom
+    bool $multiple
+    bool $listSwitch
+    bool $listJoin
+    ?array $options
+end note
+
+note right of Builders::handleStoreBehaviour
+  Handle storage-mode specific behaviour (JSON, Base64, encryption, expert).
+
+  since: 5.1.1
+  return: ?string
+  
+  arguments:
+    string $typeName
+    string $table
+    string $column
+    ?array $custom
+    bool $inList
+    ?array $options
+end note
+
+note left of Builders::configureCategoryField
+  Validate category field attributes, show mismatch warning and
+populate category builders.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    string $nameListCode
+    string $nameSingleCode
+    string $column
+    string $listLangName
+end note
+
+note right of Builders::configureSortSearchFilter
+  Build sort, search, filter options and associated language strings.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    bool $dbSwitch
+    string $typeName
+    bool $multiple
+    bool $listSwitch
+    bool $listJoin
+    string $langLabel
+    string $listLangName
+    string $listFieldName
+    string $nameSingleCode
+    string $nameListCode
+    string $column
+    ?array $custom
+    ?array $options
+end note
+
+note left of Builders::configureLayoutAndComponentField
+  Decide tab placement, push data into $this->layout and finalise
+$this->componentfields map.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    bool $dbSwitch
+    string $nameSingleCode
+    string $column
+    string $typeName
+    bool $uniqueKey
+    bool $key
+    string $langLabel
+    string $nameListCode
+    ?string $storeString
+    ?array $custom
+end note
+
 note right of Builders::normalizeDatabaseValues
   Normalizes database values by adjusting the 'length' and 'default' fields based on specific conditions.
 This function modifies the database values by replacing placeholder texts and appending specifications
@@ -157,7 +373,7 @@ to types based on the 'length' field. It removes unnecessary fields from the res
     string $iskey
 end note
 
-note right of Builders::setLinkerRelations
+note left of Builders::setLinkerRelations
   Sets the linker relations for a field based on the provided link data.
 The method determines the type of link relation based on the presence of a table.
 If no table is provided, it assigns a type 2 with a null table, otherwise it assigns type 1.
@@ -165,6 +381,13 @@ It also extracts additional values from the input array, such as component, enti
 
   since: 5.0.3
   return: ?array
+end note
+
+note right of Builders::init
+  Initialise this field
+
+  since: 5.1.1
+  return: void
 end note
  
 @enduml

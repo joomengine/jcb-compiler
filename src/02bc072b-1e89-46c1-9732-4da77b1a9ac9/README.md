@@ -14,8 +14,10 @@
 class Power  #Gold {
   + register(Container $container) : void
   + getConfig(Container $container) : Config
-  + getTable(Container $container) : Table
+  + getPowerTable(Container $container) : Table
+  + getMessageBus(Container $container) : MessageBus
   + getGrep(Container $container) : Grep
+  + getRemoteConfig(Container $container) : RemoteConfig
   + getRemoteGet(Container $container) : Get
   + getRemoteSet(Container $container) : Set
   + getItemReadme(Container $container) : ItemReadme
@@ -38,18 +40,32 @@ note left of Power::getConfig
   return: Config
 end note
 
-note right of Power::getTable
-  Get The Table Class.
+note right of Power::getPowerTable
+  Get The Power Table Class.
 
-  since: 3.2.0
+  since: 5.1.1
   return: Table
 end note
 
-note left of Power::getGrep
+note left of Power::getMessageBus
+  Get The Message Bus Class.
+
+  since: 5.2.1
+  return: MessageBus
+end note
+
+note right of Power::getGrep
   Get The Grep Class.
 
   since: 3.2.0
   return: Grep
+end note
+
+note left of Power::getRemoteConfig
+  Get The Remote Config Class.
+
+  since: 5.1.1
+  return: RemoteConfig
 end note
 
 note right of Power::getRemoteGet

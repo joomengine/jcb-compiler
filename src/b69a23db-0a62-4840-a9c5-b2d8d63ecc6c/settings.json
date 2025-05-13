@@ -11,42 +11,38 @@
     "type": "final class",
     "use_selection": {
         "use_selection0": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection1": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "5f44e66a-31d0-45ff-92b3-b7372dc57ae9",
             "as": "Settings"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection4": {
             "use": "53cf9828-7ad4-4856-aac1-7c4c67bd3121",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection5": {
             "use": "9127e428-5dee-46cb-b3a9-ab5b91ea6df3",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection6": {
             "use": "1efdded5-d6c8-452c-8f37-0374483a7b3f",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection7": {
             "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection8": {
             "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
             "as": "default"
         }

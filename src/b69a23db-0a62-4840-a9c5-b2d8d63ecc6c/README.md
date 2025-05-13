@@ -19,12 +19,13 @@ class Structuremultiple << (F,LightGreen) >> #RoyalBlue {
   # Createdate $createdate
   # Modifieddate $modifieddate
   # Structure $structure
-  + __construct(?Config $config = null, ?Registry $registry = null, ...)
+  + __construct(Config $config, Registry $registry, ...)
   + build() : bool
   # admin() : bool
   # site() : bool
   # custom() : bool
   - isValidAdminView(array $view, array $config) : bool
+  - hasModal(array $view) : int
   - hasApi(array $view) : int
   - isValidView(array $view, array $config) : bool
   - buildAdminView(array $view, array $config) : void
@@ -33,18 +34,18 @@ class Structuremultiple << (F,LightGreen) >> #RoyalBlue {
 }
 
 note right of Structuremultiple::__construct
-  Constructor
+  Constructor.
 
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Registry $registry = null
-    ?Settings $settings = null
-    ?Component $component = null
-    ?Createdate $createdate = null
-    ?Modifieddate $modifieddate = null
-    ?Structure $structure = null
+    Config $config
+    Registry $registry
+    Settings $settings
+    Component $component
+    Createdate $createdate
+    Modifieddate $modifieddate
+    Structure $structure
 end note
 
 note left of Structuremultiple::build
@@ -82,28 +83,35 @@ note left of Structuremultiple::isValidAdminView
   return: bool
 end note
 
-note right of Structuremultiple::hasApi
+note right of Structuremultiple::hasModal
+  Check if the view has an Modal
+
+  since: 5.1.1
+  return: int
+end note
+
+note left of Structuremultiple::hasApi
   Check if the view has an API
 
   since: 5.0.2
   return: int
 end note
 
-note left of Structuremultiple::isValidView
+note right of Structuremultiple::isValidView
   Check if the view is a valid view
 
   since: 3.2.0
   return: bool
 end note
 
-note right of Structuremultiple::buildAdminView
+note left of Structuremultiple::buildAdminView
   Build the admin view
 
   since: 3.2.0
   return: void
 end note
 
-note left of Structuremultiple::buildApi
+note right of Structuremultiple::buildApi
   Build the api
 
   since: 5.0.2
@@ -115,7 +123,7 @@ note left of Structuremultiple::buildApi
     int $targetArea
 end note
 
-note right of Structuremultiple::buildView
+note left of Structuremultiple::buildView
   Build the custom view
 
   since: 3.2.0

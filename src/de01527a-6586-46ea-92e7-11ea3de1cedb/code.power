@@ -11,6 +11,12 @@
 		$container->alias(Powers::class, 'Power')
 			->share('Power', [$this, 'getPowers'], true);
 
+		$container->alias(Table::class, 'Power.Table')
+			->share('Power.Table', [$this, 'getPowerTable'], true);
+
+		$container->alias(Config::class, 'Power.Remote.Config')
+			->share('Power.Remote.Config', [$this, 'getRemoteConfig'], true);
+
 		$container->alias(Get::class, 'Power.Remote.Get')
 			->share('Power.Remote.Get', [$this, 'getRemoteGet'], true);
 
@@ -65,6 +71,34 @@
 	}
 
 	/**
+	 * Get The Power Table Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Table
+	 * @since  5.1.1
+	 */
+	public function getPowerTable(Container $container): Table
+	{
+		return new Table();
+	}
+
+	/**
+	 * Get The Remote Config Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Config
+	 * @since  5.1.1
+	 */
+	public function getRemoteConfig(Container $container): Config
+	{
+		return new Config(
+			$container->get('Power.Table')
+		);
+	}
+
+	/**
 	 * Get The Remote Get Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -75,6 +109,7 @@
 	public function getRemoteGet(Container $container): Get
 	{
 		return new Get(
+			$container->get('Power.Remote.Config'),
 			$container->get('Power.Grep'),
 			$container->get('Data.Item')
 		);
@@ -91,6 +126,7 @@
 	public function getGrep(Container $container): Grep
 	{
 		return new Grep(
+			$container->get('Power.Remote.Config'),
 			$container->get('Gitea.Repository.Contents'),
 			$container->get('Network.Resolve'),
 			$container->get('Config')->approved_paths,

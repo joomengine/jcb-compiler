@@ -41,7 +41,7 @@ class JoomlaPower << (F,LightGreen) >> #RoyalBlue {
   - getPowerData(string $guid) : ?object
   - getCleanNamespace(string $namespace) : string
   - getUseNamespace(string $namespace, string $as = 'default') : string
-  - setSuperPowers(string $guid) : void
+  - setSuperPowers(string $guid) : bool
 }
 
 note right of JoomlaPower::__construct
@@ -163,10 +163,10 @@ note left of JoomlaPower::getUseNamespace
 end note
 
 note right of JoomlaPower::setSuperPowers
-  Set the super powers of this power
+  Set the super power of this power
 
-  since: 3.2.1
-  return: void
+  since: 5.1.1
+  return: bool
 end note
  
 @enduml

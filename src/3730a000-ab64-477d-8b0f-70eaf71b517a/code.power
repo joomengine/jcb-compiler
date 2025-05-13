@@ -343,7 +343,7 @@
 	 */
 	private function handlePowerNotFound(string $guid): bool
 	{
-		if (empty($this->retry[$guid]) && $this->superpower->item($guid, ['remote', 'local']))
+		if (empty($this->retry[$guid]) && $this->setSuperPowers($guid))
 		{
 			// Retry loading the power
 			unset($this->state[$guid]);
@@ -493,14 +493,14 @@
 	}
 
 	/**
-	 * Set the super powers of this power
+	 * Set the super power of this power
 	 *
 	 * @param string  $guid   The global unique id of the power
 	 *
-	 * @return void
-	 * @since 3.2.1
+	 * @return bool
+	 * @since  5.1.1
 	 */
-	private function setSuperPowers(string $guid): void
+	private function setSuperPowers(string $guid): bool
 	{
-		// soon
+		return $this->superpower->item($guid, ['remote', 'local']);
 	}

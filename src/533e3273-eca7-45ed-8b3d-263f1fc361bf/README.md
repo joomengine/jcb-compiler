@@ -8,7 +8,7 @@
 ```
 # final class Search (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Table**
-> extends: **BaseTable**
+> extends: **Table**
 
 ```uml
 @startuml

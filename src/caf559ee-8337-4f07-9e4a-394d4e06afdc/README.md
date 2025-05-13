@@ -13,21 +13,18 @@
 ```uml
 @startuml
 class Set << (F,LightGreen) >> #RoyalBlue {
-  # string $table
-  # string $area
-  # array $map
   # ?Parser $parser
-  + __construct(array $repos, Grep $grep, ...)
-  # mapItemValue_extends(array $item, $power) : void
-  # mapItemValue_extendsinterfaces(array $item, $power) : void
-  # mapItemValue_use_selection(array $item, $power) : void
-  # mapItemValue_load_selection(array $item, $power) : void
-  # mapItemValue_composer(array $item, $power) : void
-  # mapItemValue_implements(array $item, $power) : void
+  + __construct(Config $config, Grep $grep, ...)
+  # mapItemValue_extends(object $item, array $power) : void
+  # mapItemValue_extendsinterfaces(object $item, array $power) : void
+  # mapItemValue_use_selection(object $item, array $power) : void
+  # mapItemValue_load_selection(object $item, array $power) : void
+  # mapItemValue_composer(object $item, array $power) : void
+  # mapItemValue_implements(object $item, array $power) : void
   # updateItem(object $item, object $existing, ...) : bool
   # updatePower(object $item, object $existing, ...) : bool
-  # createItem(object $item, object $repo) : void
-  # createPower(object $item, object $repo) : void
+  # createItem(object $item, object $repo) : bool
+  # createPower(object $item, object $repo) : bool
   # updateItemReadme(object $item, object $existing, ...) : void
   # createItemReadme(object $item, object $repo) : void
   # targetRepo(object $item, object $repo) : bool
@@ -46,16 +43,18 @@ note right of Set::__construct
   since: 3.2.2
   
   arguments:
-    array $repos
+    Config $config
     Grep $grep
     Items $items
     ItemReadme $itemReadme
     MainReadme $mainReadme
     Git $git
+    MessageBus $messages
+    Parser $parser
+    array $repos
     ?string $table = null
     ?string $settingsPath = null
-    ?string $settingsIndexPath = null
-    ?Parser $parser = null
+    ?string $indexPath = null
 end note
 
 note left of Set::mapItemValue_extends
@@ -128,14 +127,14 @@ note left of Set::createItem
   create a new item
 
   since: 5.0.3
-  return: void
+  return: bool
 end note
 
 note right of Set::createPower
   create a new power
 
   since: 5.0.3
-  return: void
+  return: bool
 end note
 
 note left of Set::updateItemReadme

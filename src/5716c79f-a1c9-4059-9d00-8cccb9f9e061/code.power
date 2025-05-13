@@ -11,6 +11,9 @@
 		$container->alias(Powers::class, 'Joomla.Power')
 			->share('Joomla.Power', [$this, 'getPowers'], true);
 
+		$container->alias(Config::class, 'Joomla.Power.Remote.Config')
+			->share('Joomla.Power.Remote.Config', [$this, 'getRemoteConfig'], true);
+
 		$container->alias(Get::class, 'Joomla.Power.Remote.Get')
 			->share('Joomla.Power.Remote.Get', [$this, 'getRemoteGet'], true);
 
@@ -44,6 +47,21 @@
 	}
 
 	/**
+	 * Get The Remote Config Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  Config
+	 * @since  5.1.1
+	 */
+	public function getRemoteConfig(Container $container): Config
+	{
+		return new Config(
+			$container->get('Power.Table')
+		);
+	}
+
+	/**
 	 * Get the Remote Get
 	 *
 	 * @param   Container  $container  The DI container.
@@ -54,6 +72,7 @@
 	public function getRemoteGet(Container $container): Get
 	{
 		return new Get(
+			$container->get('Joomla.Power.Remote.Config'),
 			$container->get('Joomla.Power.Grep'),
 			$container->get('Data.Item')
 		);
@@ -70,6 +89,7 @@
 	public function getGrep(Container $container): Grep
 	{
 		return new Grep(
+			$container->get('Joomla.Power.Remote.Config'),
 			$container->get('Gitea.Repository.Contents'),
 			$container->get('Network.Resolve'),
 			$container->get('Config')->approved_joomla_paths

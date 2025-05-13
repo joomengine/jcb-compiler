@@ -14,6 +14,7 @@
 class JoomlaPower  #Gold {
   + register(Container $container) : void
   + getPowers(Container $container) : Powers
+  + getRemoteConfig(Container $container) : Config
   + getRemoteGet(Container $container) : Get
   + getGrep(Container $container) : Grep
   + getExtractor(Container $container) : Extractor
@@ -32,6 +33,13 @@ note right of JoomlaPower::getPowers
 
   since: 3.2.0
   return: Powers
+end note
+
+note right of JoomlaPower::getRemoteConfig
+  Get The Remote Config Class.
+
+  since: 5.1.1
+  return: Config
 end note
 
 note right of JoomlaPower::getRemoteGet

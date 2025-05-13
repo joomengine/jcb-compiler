@@ -426,7 +426,6 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class Main** | [Details](src/927fc3eb-9332-43ec-b903-ce16dcf6df09) | [Code](src/927fc3eb-9332-43ec-b903-ce16dcf6df09/code.php) | [Settings](src/927fc3eb-9332-43ec-b903-ce16dcf6df09/settings.json) | SPK: `Super---927fc3eb_9332_43ec_b903_ce16dcf6df09---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Fieldtype\Remote](#vdm-joomla-componentbuilder-fieldtype-remote)
 
-  - **final class Get** | [Details](src/3235d233-ba17-4a4a-9078-aeb8c8716c04) | [Code](src/3235d233-ba17-4a4a-9078-aeb8c8716c04/code.php) | [Settings](src/3235d233-ba17-4a4a-9078-aeb8c8716c04/settings.json) | SPK: `Super---3235d233_ba17_4a4a_9078_aeb8c8716c04---Power`
   - **final class Set** | [Details](src/d45b9f58-e4d7-4b0a-be05-e34c6fa215c8) | [Code](src/d45b9f58-e4d7-4b0a-be05-e34c6fa215c8/code.php) | [Settings](src/d45b9f58-e4d7-4b0a-be05-e34c6fa215c8/settings.json) | SPK: `Super---d45b9f58_e4d7_4b0a_be05_e34c6fa215c8---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Fieldtype\Service](#vdm-joomla-componentbuilder-fieldtype-service)
 
@@ -441,7 +440,6 @@ This repository contains an index (see below) of all the approved powers within 
   - **final class Main** | [Details](src/aca1e57d-6fe8-4bad-bd39-7ebac333ac6e) | [Code](src/aca1e57d-6fe8-4bad-bd39-7ebac333ac6e/code.php) | [Settings](src/aca1e57d-6fe8-4bad-bd39-7ebac333ac6e/settings.json) | SPK: `Super---aca1e57d_6fe8_4bad_bd39_7ebac333ac6e---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Remote](#vdm-joomla-componentbuilder-joomlapower-remote)
 
-  - **final class Get** | [Details](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad) | [Code](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad/code.php) | [Settings](src/39a75870-a7f7-45fd-937d-5ba97b85b8ad/settings.json) | SPK: `Super---39a75870_a7f7_45fd_937d_5ba97b85b8ad---Power`
   - **final class Set** | [Details](src/85cddb24-7ee6-4d86-a0db-615f443e1aec) | [Code](src/85cddb24-7ee6-4d86-a0db-615f443e1aec/code.php) | [Settings](src/85cddb24-7ee6-4d86-a0db-615f443e1aec/settings.json) | SPK: `Super---85cddb24_7ee6_4d86_a0db_615f443e1aec---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\JoomlaPower\Service](#vdm-joomla-componentbuilder-joomlapower-service)
 

@@ -13,7 +13,6 @@
 ```uml
 @startuml
 class Get << (F,LightGreen) >> #RoyalBlue {
-  # string $table
 }
  
 @enduml

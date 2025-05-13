@@ -14,8 +14,10 @@
 class Fieldtype  #Gold {
   + register(Container $container) : void
   + getConfig(Container $container) : Config
-  + getTable(Container $container) : Table
+  + getPowerTable(Container $container) : Table
+  + getMessageBus(Container $container) : MessageBus
   + getGrep(Container $container) : Grep
+  + getRemoteConfig(Container $container) : RemoteConfig
   + getRemoteGet(Container $container) : Get
   + getRemoteSet(Container $container) : Set
   + getItemReadme(Container $container) : ItemReadme
@@ -36,18 +38,32 @@ note left of Fieldtype::getConfig
   return: Config
 end note
 
-note right of Fieldtype::getTable
-  Get The Table Class.
+note right of Fieldtype::getPowerTable
+  Get The Power Table Class.
 
-  since: 3.2.1
+  since: 5.2.1
   return: Table
 end note
 
-note left of Fieldtype::getGrep
+note left of Fieldtype::getMessageBus
+  Get The Message Bus Class.
+
+  since: 5.2.1
+  return: MessageBus
+end note
+
+note right of Fieldtype::getGrep
   Get The Grep Class.
 
   since: 3.2.1
   return: Grep
+end note
+
+note left of Fieldtype::getRemoteConfig
+  Get The Remote Config Class.
+
+  since: 5.2.1
+  return: RemoteConfig
 end note
 
 note right of Fieldtype::getRemoteGet
