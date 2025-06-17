@@ -40,7 +40,7 @@
 	public function create(string $path, bool $addHtml = true)
 	{
 		// check if the path exist
-		if (!JoomlaFolder::exists($path))
+		if (!is_dir($path))
 		{
 			// create the path
 			JoomlaFolder::create(
@@ -71,7 +71,7 @@
 	 */
 	public function remove(string $path, ?array $ignore = null): bool
 	{
-		if (!JoomlaFolder::exists($path))
+		if (!is_dir($path))
 		{
 			return false;
 		}

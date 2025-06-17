@@ -309,7 +309,7 @@
 	 */
 	protected function modulePath(object &$module): void
 	{
-		$module->folder_path = $this->config->get('compiler_path', JPATH_COMPONENT_ADMINISTRATOR . '/compiler') . '/'
+		$module->folder_path = $this->config->get('compiler_path', JPATH_ADMINISTRATOR . '/components/com_[[[component]]]/compiler') . '/'
 			. $module->folder_name;
 	}
 

@@ -172,7 +172,7 @@
 		}
 
 		// setup the folder
-		if (!Folder::exists($path))
+		if (!is_dir($path))
 		{
 			Folder::create($path);
 			$this->file->html($zip_path);
@@ -183,7 +183,7 @@
 
 		$new_name = $this->getNewName($details, $item, $name, $fileName);
 
-		if (!JoomlaFile::exists($path . '/' . $new_name))
+		if (!is_file($path . '/' . $new_name))
 		{
 			// move the file to its place
 			JoomlaFile::copy(

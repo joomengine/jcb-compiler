@@ -120,7 +120,7 @@
 			);
 
 			// creat the main component folder
-			if (!JoomlaFolder::exists($this->paths->component_path))
+			if (!is_dir($this->paths->component_path))
 			{
 				JoomlaFolder::create($this->paths->component_path);
 

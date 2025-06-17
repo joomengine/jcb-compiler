@@ -74,7 +74,7 @@
 	private function set(string $path): void
 	{
 		// Check if the path exists
-		if (!Folder::exists($path))
+		if (!is_dir($path))
 		{
 			return;
 		}

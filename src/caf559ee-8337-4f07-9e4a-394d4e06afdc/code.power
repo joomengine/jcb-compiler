@@ -15,6 +15,7 @@
 	 * @param ItemReadme   $itemReadme          The Item Readme Class.
 	 * @param MainReadme   $mainReadme          The Main Readme Class.
 	 * @param Git          $git                 The Contents Class.
+	 * @param Tracker      $tracker             The Tracker Class.
 	 * @param MessageBus   $messages            The MessageBus Class.
 	 * @param Parser       $parser              The Parser Class.
 	 * @param array        $repos               The active repos.
@@ -25,11 +26,11 @@
 	 * @since 3.2.2
 	 */
 	public function __construct(Config $config, Grep $grep, Items $items, ItemReadme $itemReadme,
-		MainReadme $mainReadme, Git $git, MessageBus $messages, Parser $parser, array $repos,
-		?string $table = null, ?string $settingsPath = null, ?string $indexPath = null)
+		MainReadme $mainReadme, Git $git, Tracker $tracker, MessageBus $messages, Parser $parser,
+		array $repos, ?string $table = null, ?string $settingsPath = null, ?string $indexPath = null)
 	{
 		parent::__construct($config, $grep, $items, $itemReadme, $mainReadme,
-			$git, $messages, $repos, $table, $settingsPath, $indexPath);
+			$git, $tracker, $messages, $repos, $table, $settingsPath, $indexPath);
 
 		$this->parser = $parser;
 	}

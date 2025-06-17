@@ -73,6 +73,13 @@ abstract class RepoHelper
 				$item->placeholders = self::setPlaceholders($item->addplaceholders ?? '');
 				unset($item->addplaceholders);
 
+				$item->target = self::setTarget((int) ($item->type ?? 1));
+
+				if ($item->target === 'github')
+				{
+					$item->base = 'https://api.github.com';
+				}
+
 				$path = $item->organisation . '/' . $item->repository;
 				$options[$path] =  $item;
 			}
@@ -106,6 +113,19 @@ abstract class RepoHelper
 			}
 		}
 		return $bucket;
+	}
+
+	/**
+	 * Determine the repository system target name from its type identifier.
+	 *
+	 * @param int   $type   The repository system type identifier.
+	 *
+	 * @return string  The resolved target name ('gitea' or 'github').
+	 * @since  5.1.1
+	 **/
+	protected static function setTarget(int $type): string
+	{
+		return $type === 1 ? 'gitea' : 'github';
 	}
 }
 

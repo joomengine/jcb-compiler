@@ -501,7 +501,7 @@
 
 						$path = "{$plugin->folder_path}/language/{$tag}/";
 
-						if (!Folder::exists($path))
+						if (!is_dir($path))
 						{
 							Folder::create($path);
 							$this->counter->folder++;

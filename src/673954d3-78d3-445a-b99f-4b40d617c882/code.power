@@ -371,7 +371,7 @@
 
 			return false;
 		}
-		elseif ($details->type === 'folder' && !Folder::exists($this->currentFullPath))
+		elseif ($details->type === 'folder' && !is_dir($this->currentFullPath))
 		{
 			$this->app->enqueueMessage(
 				Text::_('<hr /><h3>Folder Path Error</h3>'),
@@ -435,7 +435,7 @@
 		);
 
 		// check if path exist, if not creat it
-		if (!Folder::exists($packageFullPath0nly))
+		if (!is_dir($packageFullPath0nly))
 		{
 			Folder::create($packageFullPath0nly);
 		}

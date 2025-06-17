@@ -17,34 +17,26 @@
             "as": "default"
         },
         "use_selection1": {
-            "use": "13a32ed6-d969-42c1-b81a-7b807f953464",
-            "as": "default"
-        },
-        "use_selection8": {
-            "use": "dcb893ed-9a9f-426d-b1fd-3707a0be98c0",
-            "as": "default"
-        },
-        "use_selection2": {
             "use": "355bf21a-f859-4528-9110-bcd2c6d05ea7",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "5520dcad-6730-478d-a1d0-6b56012bed66",
             "as": "RemoteConfig"
         },
-        "use_selection4": {
+        "use_selection3": {
             "use": "3ab0eba9-f37b-4b37-aec1-2e78067f2aff",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection4": {
             "use": "85cddb24-7ee6-4d86-a0db-615f443e1aec",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection5": {
             "use": "fcbd0dd7-1f26-472e-abd3-56265f4999f2",
             "as": "ItemReadme"
         },
-        "use_selection7": {
+        "use_selection6": {
             "use": "aca1e57d-6fe8-4bad-bd39-7ebac333ac6e",
             "as": "MainReadme"
         }

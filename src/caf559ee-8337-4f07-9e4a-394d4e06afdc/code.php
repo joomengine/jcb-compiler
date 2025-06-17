@@ -19,6 +19,7 @@ use VDM\Joomla\Interfaces\Data\ItemsInterface as Items;
 use VDM\Joomla\Interfaces\Readme\ItemInterface as ItemReadme;
 use VDM\Joomla\Interfaces\Readme\MainInterface as MainReadme;
 use VDM\Joomla\Interfaces\Git\Repository\ContentsInterface as Git;
+use VDM\Joomla\Componentbuilder\Package\Dependency\Tracker;
 use VDM\Joomla\Componentbuilder\Package\MessageBus;
 use VDM\Joomla\Componentbuilder\Power\Parser;
 use VDM\Joomla\Utilities\String\NamespaceHelper;
@@ -54,6 +55,7 @@ final class Set extends ExtendingSet implements SetInterface
 	 * @param ItemReadme   $itemReadme          The Item Readme Class.
 	 * @param MainReadme   $mainReadme          The Main Readme Class.
 	 * @param Git          $git                 The Contents Class.
+	 * @param Tracker      $tracker             The Tracker Class.
 	 * @param MessageBus   $messages            The MessageBus Class.
 	 * @param Parser       $parser              The Parser Class.
 	 * @param array        $repos               The active repos.
@@ -64,11 +66,11 @@ final class Set extends ExtendingSet implements SetInterface
 	 * @since 3.2.2
 	 */
 	public function __construct(Config $config, Grep $grep, Items $items, ItemReadme $itemReadme,
-		MainReadme $mainReadme, Git $git, MessageBus $messages, Parser $parser, array $repos,
-		?string $table = null, ?string $settingsPath = null, ?string $indexPath = null)
+		MainReadme $mainReadme, Git $git, Tracker $tracker, MessageBus $messages, Parser $parser,
+		array $repos, ?string $table = null, ?string $settingsPath = null, ?string $indexPath = null)
 	{
 		parent::__construct($config, $grep, $items, $itemReadme, $mainReadme,
-			$git, $messages, $repos, $table, $settingsPath, $indexPath);
+			$git, $tracker, $messages, $repos, $table, $settingsPath, $indexPath);
 
 		$this->parser = $parser;
 	}
