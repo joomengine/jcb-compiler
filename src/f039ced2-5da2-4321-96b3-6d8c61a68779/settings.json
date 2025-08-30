@@ -1,0 +1,119 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "f039ced2-5da2-4321-96b3-6d8c61a68779",
+    "implements": [
+        "-1"
+    ],
+    "load_selection": null,
+    "name": "ArchitectureModule",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Service.ArchitectureModule",
+    "type": "class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "62d1453b-a390-4589-91de-0a0551a9fea5",
+            "as": "Library"
+        },
+        "use_selection1": {
+            "use": "c5922614-e607-4a04-b3fe-04a0566c84fb",
+            "as": "J5Library"
+        },
+        "use_selection2": {
+            "use": "20a042f8-2b8d-41ef-b751-dd7da4dcc32b",
+            "as": "J4Library"
+        },
+        "use_selection3": {
+            "use": "ee9fcbcc-0ccb-49ef-bd15-ef776094d7f2",
+            "as": "J3Library"
+        },
+        "use_selection4": {
+            "use": "fe20ad8c-9b2d-40e2-8bc0-aa648d027464",
+            "as": "Template"
+        },
+        "use_selection5": {
+            "use": "838731a8-9ad1-4261-9c4f-af51a0dcc3e7",
+            "as": "J5Template"
+        },
+        "use_selection6": {
+            "use": "c38a3325-cc91-4517-94da-249ea3751417",
+            "as": "J4Template"
+        },
+        "use_selection7": {
+            "use": "93ae7f99-b695-4584-a162-e0094deac927",
+            "as": "J3Template"
+        },
+        "use_selection24": {
+            "use": "445355be-f34a-453e-aca8-8af4246ced6f",
+            "as": "Helper"
+        },
+        "use_selection23": {
+            "use": "f0e68fe0-e6fa-4d5a-a710-794dd91957a2",
+            "as": "J5Helper"
+        },
+        "use_selection22": {
+            "use": "de4d3375-9b36-427e-9546-0eb2e875507d",
+            "as": "J4Helper"
+        },
+        "use_selection8": {
+            "use": "940be46a-3891-4e9b-adf1-31a3fd8ab230",
+            "as": "J3Helper"
+        },
+        "use_selection9": {
+            "use": "cb905c5e-0295-4ff6-9576-90e073bf36b3",
+            "as": "Dispatcher"
+        },
+        "use_selection10": {
+            "use": "5123306a-0cbf-408c-8fee-9be0339abe2d",
+            "as": "J5Dispatcher"
+        },
+        "use_selection11": {
+            "use": "64fa9f18-74dc-4307-9ac7-ca18eb457c93",
+            "as": "J4Dispatcher"
+        },
+        "use_selection12": {
+            "use": "5f2edca9-9380-4c7b-9db9-4d8d80d08876",
+            "as": "J3Dispatcher"
+        },
+        "use_selection13": {
+            "use": "d7795edd-9256-4993-bbdd-848724814e08",
+            "as": "Provider"
+        },
+        "use_selection14": {
+            "use": "c111a19b-e5d3-4253-82d3-fe4fcdf86ddb",
+            "as": "J5Provider"
+        },
+        "use_selection15": {
+            "use": "2967fccf-d2f8-409a-ae55-41c93ac13c07",
+            "as": "J4Provider"
+        },
+        "use_selection16": {
+            "use": "69c2a90b-a0d5-4c0f-b3af-4db8041db9d4",
+            "as": "J3Provider"
+        },
+        "use_selection17": {
+            "use": "1a820de9-b890-4958-9ee8-5a88ad207573",
+            "as": "MainXML"
+        },
+        "use_selection18": {
+            "use": "ff1d177c-6c41-4033-b6ba-460b444ff67a",
+            "as": "J5MainXML"
+        },
+        "use_selection19": {
+            "use": "9f746220-4d0f-4e1e-a910-28f2f428ae65",
+            "as": "J4MainXML"
+        },
+        "use_selection20": {
+            "use": "39f0faf8-1a32-4c3c-ba29-08ea1702b2fb",
+            "as": "J3MainXML"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Service.ArchitectureModule",
+    "description": "Architecture Module Service Provider\r\n\r\n@since 5.1.2",
+    "implements_custom": "ServiceProviderInterface",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\DI\\Container;\r\nuse Joomla\\DI\\ServiceProviderInterface;",
+    "composer": ""
+}

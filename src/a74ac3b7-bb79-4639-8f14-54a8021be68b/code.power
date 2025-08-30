@@ -49,7 +49,8 @@
 			$container->get('Language.Extractor'),
 			$container->get('Power.Extractor'),
 			$container->get('Joomla.Power.Extractor'),
-			$container->get('Customcode.External')
+			$container->get('Customcode.External'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -64,7 +65,8 @@
 	public function getExternal(Container $container): External
 	{
 		return new External(
-			$container->get('Placeholder')
+			$container->get('Placeholder'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -80,7 +82,9 @@
 	{
 		return new Gui(
 			$container->get('Config'),
-			$container->get('Placeholder.Reverse')
+			$container->get('Placeholder.Reverse'),
+			$container->get('Power.Parser'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -148,7 +152,8 @@
 			$container->get('Placeholder'),
 			$container->get('Component.Placeholder'),
 			$container->get('Customcode'),
-			$container->get('Language.Extractor')
+			$container->get('Language.Extractor'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -168,6 +173,7 @@
 			$container->get('Customcode.Extractor.Paths'),
 			$container->get('Placeholder.Reverse'),
 			$container->get('Component.Placeholder'),
-			$container->get('Utilities.Pathfix')
+			$container->get('Utilities.Pathfix'),
+			$container->get('Joomla.Database')
 		);
 	}

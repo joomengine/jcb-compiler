@@ -30,7 +30,7 @@ class Data  #Gold {
   # Sql $sql
   # Mysqlsettings $mysqlsettings
   # SiteEditView $siteeditview
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Event $event, ...)
   + get(mixed $view) : ?object
   - set(mixed $view) : void
@@ -70,6 +70,7 @@ note right of Data::__construct
     Sql $sql
     Mysqlsettings $mysqlsettings
     SiteEditView $siteeditview
+    DatabaseInterface $db
 end note
 
 note left of Data::get

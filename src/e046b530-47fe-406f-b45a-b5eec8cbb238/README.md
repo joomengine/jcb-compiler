@@ -7,6 +7,7 @@
 @startuml
 
 class PermissionDashboard << (F,LightGreen) >> #RoyalBlue {
+  # array $viewAccess
   + __construct()
   + build() : string
 }
@@ -18,7 +19,7 @@ note right of PermissionDashboard::__construct
 end note
 
 note right of PermissionDashboard::build
-  Get the build permission dashboard code
+  Get the build permission dashboard code.
 
   since: 3.2.0
   return: string

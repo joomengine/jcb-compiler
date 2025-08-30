@@ -9,10 +9,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule;
+namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree;
 
 
-use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\Data as Module;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\ModuleDataInterface as Module;
 use VDM\Joomla\Componentbuilder\Compiler\Component;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Registry;
@@ -30,6 +30,7 @@ use VDM\Joomla\Utilities\ArrayHelper;
 use VDM\Joomla\Utilities\ObjectHelper;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Utilities\FileHelper;
+use VDM\Joomla\Componentbuilder\Interfaces\Module\StructureInterface;
 
 
 /**
@@ -37,7 +38,7 @@ use VDM\Joomla\Utilities\FileHelper;
  * 
  * @since 3.2.0
  */
-class Structure
+class Structure implements StructureInterface
 {
 	/**
 	 * The Data Class.
@@ -203,8 +204,8 @@ class Structure
 					// create the main module file
 					$this->setMainModFile($module);
 
-					// creat the custom get file
-					$this->setCustomGet($module);
+					// create the dynamic gets file
+					$this->setDynamicGets($module);
 
 					// set helper file
 					$this->setHelperFile($module);
@@ -388,14 +389,14 @@ class Structure
 	}
 
 	/**
-	 * Set the custom get file
+	 * Set the dynamic gets file
 	 *
 	 * @param object $module
 	 *
 	 * @return void
 	 * @since 3.2.0
 	 */
-	protected function setCustomGet(object $module): void
+	protected function setDynamicGets(object $module): void
 	{
 		if ($module->custom_get)
 		{

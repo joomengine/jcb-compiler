@@ -9,6 +9,8 @@ class Library  #Gold {
   + register(Container $container) : void
   + getData(Container $container) : Data
   + getStructure(Container $container) : Structure
+  + getDocument(Container $container) : Document
+  + getIncludeHelper(Container $container) : IncludeHelper
 }
 
 note right of Library::register
@@ -30,6 +32,20 @@ note right of Library::getStructure
 
   since: 3.2.0
   return: Structure
+end note
+
+note right of Library::getDocument
+  Get The Document Class.
+
+  since: 5.1.2
+  return: Document
+end note
+
+note right of Library::getIncludeHelper
+  Get The IncludeHelper Class.
+
+  since: 5.1.2
+  return: IncludeHelper
 end note
 
 @enduml

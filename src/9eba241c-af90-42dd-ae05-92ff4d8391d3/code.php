@@ -126,7 +126,8 @@ class Joomlaplugin implements ServiceProviderInterface
 			$container->get('Language'),
 			$container->get('Field'),
 			$container->get('Field.Name'),
-			$container->get('Model.Filesfolders')
+			$container->get('Model.Filesfolders'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -148,7 +149,8 @@ class Joomlaplugin implements ServiceProviderInterface
 			$container->get('Language'),
 			$container->get('Field'),
 			$container->get('Field.Name'),
-			$container->get('Model.Filesfolders')
+			$container->get('Model.Filesfolders'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -170,7 +172,8 @@ class Joomlaplugin implements ServiceProviderInterface
 			$container->get('Language'),
 			$container->get('Field'),
 			$container->get('Field.Name'),
-			$container->get('Model.Filesfolders')
+			$container->get('Model.Filesfolders'),
+			$container->get('Joomla.Database')
 		);
 	}
 

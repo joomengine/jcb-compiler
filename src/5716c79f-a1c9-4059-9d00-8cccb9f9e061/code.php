@@ -17,7 +17,7 @@ use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\JoomlaPower as Powers;
 use VDM\Joomla\Componentbuilder\JoomlaPower\Grep;
 use VDM\Joomla\Componentbuilder\JoomlaPower\Remote\Config;
-use VDM\Joomla\Componentbuilder\Power\Remote\Get;
+use VDM\Joomla\Componentbuilder\Remote\Get;
 use VDM\Joomla\Componentbuilder\Compiler\JoomlaPower\Extractor;
 use VDM\Joomla\Componentbuilder\Compiler\JoomlaPower\Injector;
 
@@ -73,7 +73,8 @@ class JoomlaPower implements ServiceProviderInterface
 			$container->get('Placeholder'),
 			$container->get('Customcode'),
 			$container->get('Customcode.Gui'),
-			$container->get('Joomla.Power.Remote.Get')
+			$container->get('Joomla.Power.Remote.Get'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -141,6 +142,7 @@ class JoomlaPower implements ServiceProviderInterface
 	public function getExtractor(Container $container): Extractor
 	{
 		return new Extractor(
+			$container->get('Joomla.Database'),
 			$container->get('Config')->joomla_version
 		);
 	}

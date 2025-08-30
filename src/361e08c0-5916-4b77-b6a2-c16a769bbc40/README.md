@@ -16,7 +16,7 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   # Field $field
   # FieldName $fieldname
   # Filesfolders $filesfolders
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Customcode $customcode, ...)
   + get(int|string|null $plugin = null) : object|array|null
   + exists(int|string|null $plugin = null) : bool
@@ -43,6 +43,7 @@ note right of Data::__construct
     Field $field
     FieldName $fieldname
     Filesfolders $filesfolders
+    DatabaseInterface $db
 end note
 
 note left of Data::get

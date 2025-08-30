@@ -6,8 +6,8 @@
 @startuml
 
 class Multilingual << (F,LightGreen) >> #RoyalBlue {
-  # $db
-  + __construct()
+  # DatabaseInterface $db
+  + __construct(DatabaseInterface $db)
   + get(array $values) : ?array
 }
 

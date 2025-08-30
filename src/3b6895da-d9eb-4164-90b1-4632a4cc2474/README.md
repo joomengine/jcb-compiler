@@ -21,7 +21,7 @@ class Data  #Gold {
   # Phpcustomview $php
   # Ajaxcustomview $ajax
   # Custombuttons $custombuttons
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Event $event, ...)
   + get(mixed $view, string $table = 'site_view') : ?object
   - set(mixed $view, string $table) : void
@@ -48,6 +48,7 @@ note right of Data::__construct
     Phpcustomview $phpcustomview
     Ajaxcustomview $ajaxcustomview
     Custombuttons $custombuttons
+    DatabaseInterface $db
 end note
 
 note right of Data::get

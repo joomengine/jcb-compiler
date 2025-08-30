@@ -9,11 +9,12 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule;
+namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree;
 
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Filter\OutputFilter;
+use Joomla\Database\DatabaseInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode;
 use VDM\Joomla\Componentbuilder\Compiler\Customcode\Gui;
@@ -31,6 +32,7 @@ use VDM\Joomla\Utilities\JsonHelper;
 use VDM\Joomla\Utilities\StringHelper;
 use VDM\Joomla\Utilities\GetHelper;
 use VDM\Joomla\Utilities\GuidHelper;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\ModuleDataInterface;
 
 
 /**
@@ -38,7 +40,7 @@ use VDM\Joomla\Utilities\GuidHelper;
  * 
  * @since 3.2.0
  */
-class Data
+class Data implements ModuleDataInterface
 {
 	/**
 	 * Compiler Joomla Plugins Data
@@ -145,26 +147,28 @@ class Data
 	protected Templatelayout $templatelayout;
 
 	/**
-	 * The Database Class.
+	 * Joomla Database Class.
 	 *
-	 * @since 3.2.0
-	 */
-	protected $db;
+	 * @var   DatabaseInterface
+	 * @since 5.1.2
+	 **/
+	protected DatabaseInterface $db;
 
 	/**
 	 * Constructor.
 	 *
-	 * @param Config           $config           The Config Class.
-	 * @param Customcode       $customcode       The Customcode Class.
-	 * @param Gui              $gui              The Gui Class.
-	 * @param Placeholder      $placeholder      The Placeholder Class.
-	 * @param Language         $language         The Language Class.
-	 * @param Field            $field            The Field Class.
-	 * @param Fieldname        $fieldname        The Name Class.
-	 * @param Filesfolders     $filesfolders     The Filesfolders Class.
-	 * @param Libraries        $libraries        The Libraries Class.
-	 * @param Dynamicget       $dynamicget       The Data Class.
-	 * @param Templatelayout   $templatelayout   The Data Class.
+	 * @param Config             $config           The Config Class.
+	 * @param Customcode         $customcode       The Customcode Class.
+	 * @param Gui                $gui              The Gui Class.
+	 * @param Placeholder        $placeholder      The Placeholder Class.
+	 * @param Language           $language         The Language Class.
+	 * @param Field              $field            The Field Class.
+	 * @param Fieldname          $fieldname        The Name Class.
+	 * @param Filesfolders       $filesfolders     The Filesfolders Class.
+	 * @param Libraries          $libraries        The Libraries Class.
+	 * @param Dynamicget         $dynamicget       The Data Class.
+	 * @param Templatelayout     $templatelayout   The Data Class.
+	 * @param DatabaseInterface  $db               The Joomla Database Class.
 	 *
 	 * @since 3.2.0
 	 */
@@ -172,7 +176,8 @@ class Data
 		Placeholder $placeholder, Language $language,
 		Field $field, Fieldname $fieldname,
 		Filesfolders $filesfolders, Libraries $libraries,
-		Dynamicget $dynamicget, Templatelayout $templatelayout)
+		Dynamicget $dynamicget, Templatelayout $templatelayout,
+		DatabaseInterface $db)
 	{
 		$this->config = $config;
 		$this->customcode = $customcode;
@@ -185,7 +190,7 @@ class Data
 		$this->libraries = $libraries;
 		$this->dynamicget = $dynamicget;
 		$this->templatelayout = $templatelayout;
-		$this->db = Factory::getDbo();
+		$this->db = $db;
 	}
 
 	/**

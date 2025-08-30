@@ -1,0 +1,36 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "f33e56d5-e6a4-40ba-a55b-2e2e0a60fe3b",
+    "implements": null,
+    "load_selection": null,
+    "name": "QueryOrder",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Dynamicget.QueryOrder",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "3f83fe11-1ef6-4020-bd73-f3bb58cefe3a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "17fa7789-a7d1-465e-b733-8c8d53f5ca1b",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Dynamicget.QueryOrder",
+    "description": "Dynamic Get Query Order\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

@@ -33,6 +33,7 @@ class BuilderAJ  #Gold {
   + getDatabaseUniqueGuid(Container $container) : DatabaseUniqueGuid
   + getDatabaseUniqueKeys(Container $container) : DatabaseUniqueKeys
   + getDatabaseUninstall(Container $container) : DatabaseUninstall
+  + getEventDispatcher(Container $container) : EventDispatcher
   + getDoNotEscape(Container $container) : DoNotEscape
   + getDynamicFields(Container $container) : DynamicFields
   + getExtensionCustomFields(Container $container) : ExtensionCustomFields
@@ -247,161 +248,168 @@ note right of BuilderAJ::getDatabaseUninstall
   return: DatabaseUninstall
 end note
 
-note left of BuilderAJ::getDoNotEscape
+note left of BuilderAJ::getEventDispatcher
+  Get The EventDispatcher Class.
+
+  since: 5.1.2
+  return: EventDispatcher
+end note
+
+note right of BuilderAJ::getDoNotEscape
   Get The DoNotEscape Class.
 
   since: 3.2.0
   return: DoNotEscape
 end note
 
-note right of BuilderAJ::getDynamicFields
+note left of BuilderAJ::getDynamicFields
   Get The DynamicFields Class.
 
   since: 3.2.0
   return: DynamicFields
 end note
 
-note left of BuilderAJ::getExtensionCustomFields
+note right of BuilderAJ::getExtensionCustomFields
   Get The ExtensionCustomFields Class.
 
   since: 3.2.0
   return: ExtensionCustomFields
 end note
 
-note right of BuilderAJ::getExtensionsParams
+note left of BuilderAJ::getExtensionsParams
   Get The ExtensionsParams Class.
 
   since: 3.2.0
   return: ExtensionsParams
 end note
 
-note left of BuilderAJ::getFieldGroupControl
+note right of BuilderAJ::getFieldGroupControl
   Get The FieldGroupControl Class.
 
   since: 3.2.0
   return: FieldGroupControl
 end note
 
-note right of BuilderAJ::getFieldNames
+note left of BuilderAJ::getFieldNames
   Get The FieldNames Class.
 
   since: 3.2.0
   return: FieldNames
 end note
 
-note left of BuilderAJ::getFieldRelations
+note right of BuilderAJ::getFieldRelations
   Get The FieldRelations Class.
 
   since: 3.2.0
   return: FieldRelations
 end note
 
-note right of BuilderAJ::getFilter
+note left of BuilderAJ::getFilter
   Get The Filter Class.
 
   since: 3.2.0
   return: Filter
 end note
 
-note left of BuilderAJ::getFootableScripts
+note right of BuilderAJ::getFootableScripts
   Get The FootableScripts Class.
 
   since: 3.2.0
   return: FootableScripts
 end note
 
-note right of BuilderAJ::getFrontendParams
+note left of BuilderAJ::getFrontendParams
   Get The FrontendParams Class.
 
   since: 3.2.0
   return: FrontendParams
 end note
 
-note left of BuilderAJ::getGetAsLookup
+note right of BuilderAJ::getGetAsLookup
   Get The GetAsLookup Class.
 
   since: 3.2.0
   return: GetAsLookup
 end note
 
-note right of BuilderAJ::getGetModule
+note left of BuilderAJ::getGetModule
   Get The GetModule Class.
 
   since: 3.2.0
   return: GetModule
 end note
 
-note left of BuilderAJ::getGoogleChart
+note right of BuilderAJ::getGoogleChart
   Get The GoogleChart Class.
 
   since: 3.2.0
   return: GoogleChart
 end note
 
-note right of BuilderAJ::getHasMenuGlobal
+note left of BuilderAJ::getHasMenuGlobal
   Get The HasMenuGlobal Class.
 
   since: 3.2.0
   return: HasMenuGlobal
 end note
 
-note left of BuilderAJ::getHasPermissions
+note right of BuilderAJ::getHasPermissions
   Get The HasPermissions Class.
 
   since: 3.2.0
   return: HasPermissions
 end note
 
-note right of BuilderAJ::getHiddenFields
+note left of BuilderAJ::getHiddenFields
   Get The HiddenFields Class.
 
   since: 3.2.0
   return: HiddenFields
 end note
 
-note left of BuilderAJ::getHistory
+note right of BuilderAJ::getHistory
   Get The History Class.
 
   since: 3.2.0
   return: History
 end note
 
-note right of BuilderAJ::getIntegerFields
+note left of BuilderAJ::getIntegerFields
   Get The IntegerFields Class.
 
   since: 3.2.0
   return: IntegerFields
 end note
 
-note left of BuilderAJ::getItemsMethodEximportString
+note right of BuilderAJ::getItemsMethodEximportString
   Get The ItemsMethodEximportString Class.
 
   since: 3.2.0
   return: ItemsMethodEximportString
 end note
 
-note right of BuilderAJ::getItemsMethodListString
+note left of BuilderAJ::getItemsMethodListString
   Get The ItemsMethodListString Class.
 
   since: 3.2.0
   return: ItemsMethodListString
 end note
 
-note left of BuilderAJ::getJsonItem
+note right of BuilderAJ::getJsonItem
   Get The JsonItem Class.
 
   since: 3.2.0
   return: JsonItem
 end note
 
-note right of BuilderAJ::getJsonItemArray
+note left of BuilderAJ::getJsonItemArray
   Get The JsonItemArray Class.
 
   since: 3.2.0
   return: JsonItemArray
 end note
 
-note left of BuilderAJ::getJsonString
+note right of BuilderAJ::getJsonString
   Get The JsonString Class.
 
   since: 3.2.0

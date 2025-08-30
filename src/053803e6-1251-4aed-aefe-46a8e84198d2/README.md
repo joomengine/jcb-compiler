@@ -12,8 +12,8 @@ class Paths  #Gold {
   # Placeholder $placeholder
   # Customcode $customcode
   # Extractor $extractor
-  # $db
-  + __construct(?Config $config = null, ?Placeholder $placeholder = null, ...)
+  # DatabaseInterface $db
+  + __construct(Config $config, Placeholder $placeholder, ...)
   # load() : void
   # getModuleIDs() : mixed
   # getModulePath($id) : mixed
@@ -27,11 +27,12 @@ note right of Paths::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Placeholder $placeholder = null
-    ?ComponentPlaceholder $componentPlaceholder = null
-    ?Customcode $customcode = null
-    ?Extractor $extractor = null
+    Config $config
+    Placeholder $placeholder
+    ComponentPlaceholder $componentPlaceholder
+    Customcode $customcode
+    Extractor $extractor
+    DatabaseInterface $db
 end note
 
 note right of Paths::load

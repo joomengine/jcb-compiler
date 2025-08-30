@@ -15,7 +15,7 @@ class Data  #Gold {
   # Customcode $customcode
   # FieldCustomcode $fieldcustomcode
   # Rule $rule
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Event $event, ...)
   + get(mixed $field, ?string $singleViewName = null, ...) : ?object
   - getFieldData(int $id, ?string $singleViewName = null, ...) : ?object
@@ -37,6 +37,7 @@ note right of Data::__construct
     Customcode $customcode
     FieldCustomcode $fieldcustomcode
     Rule $rule
+    DatabaseInterface $db
 end note
 
 note right of Data::get

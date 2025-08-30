@@ -20,10 +20,10 @@ class Extractor  #Gold {
   # Reverse $reverse
   # Placeholder $componentPlaceholder
   # Pathfix $pathfix
+  # DatabaseInterface $db
   # $user
-  # $db
   # $app
-  + __construct(?Config $config = null, ?Gui $gui = null, ...)
+  + __construct(Config $config, Gui $gui, ...)
   + run() : void
   # searchFileContent(string $file, $target) : array
   # insert(int $when = 1) : void
@@ -39,12 +39,13 @@ note right of Extractor::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Gui $gui = null
-    ?Paths $paths = null
-    ?Reverse $reverse = null
-    ?Placeholder $placeholder = null
-    ?Pathfix $pathfix = null
+    Config $config
+    Gui $gui
+    Paths $paths
+    Reverse $reverse
+    Placeholder $placeholder
+    Pathfix $pathfix
+    DatabaseInterface $db
 end note
 
 note left of Extractor::run

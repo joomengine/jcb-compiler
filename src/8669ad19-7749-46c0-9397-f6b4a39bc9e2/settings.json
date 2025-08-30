@@ -1,0 +1,19 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "8669ad19-7749-46c0-9397-f6b4a39bc9e2",
+    "implements": null,
+    "load_selection": null,
+    "name": "InfusionInterface",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Interfaces.Module.InfusionInterface",
+    "type": "interface",
+    "use_selection": null,
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Interfaces.Module.InfusionInterface",
+    "description": "Module Infusion Interface\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

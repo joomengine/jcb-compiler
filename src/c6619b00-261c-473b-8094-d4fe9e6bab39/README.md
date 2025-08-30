@@ -7,6 +7,7 @@
 
 abstract RepoHelper  #Orange {
   + {static} get(int $target) : ?array
+  # {static} modelRepoDetails($item) : void
   # {static} setPlaceholders(string $placeholders) : array
   # {static} setTarget(int $type) : string
 }
@@ -16,6 +17,13 @@ note right of RepoHelper::get
 
   since: 3.2.0
   return: ?array
+end note
+
+note right of RepoHelper::modelRepoDetails
+  Model the repo details
+
+  since: 5.1.1
+  return: void
 end note
 
 note right of RepoHelper::setPlaceholders

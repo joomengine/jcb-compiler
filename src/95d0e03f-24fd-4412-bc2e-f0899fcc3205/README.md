@@ -24,6 +24,7 @@ class Parser << (F,LightGreen) >> #RoyalBlue {
   - extractDeprecatedVersion(?string $comment) : ?string
   - removeWhiteSpaceFromComment(string $comment) : string
   - mergeArgumentTypes(array $argTypesFromDeclaration, ?array $argTypesFromComments) : array
+  - normalizeCode(string $code) : string
 }
 
 note right of Parser::code
@@ -150,6 +151,16 @@ note left of Parser::mergeArgumentTypes
 
   since: 3.2.0
   return: array
+end note
+
+note right of Parser::normalizeCode
+  Normalize input PHP code to ensure cross-platform compatibility.
+This method removes the UTF-8 BOM (Byte Order Mark) if present and converts
+all line endings to LF (`\n`). This ensures consistent parsing behavior across
+operating systems, including Linux, macOS, and Windows.
+
+  since: 5.1.2
+  return: string
 end note
 
 @enduml

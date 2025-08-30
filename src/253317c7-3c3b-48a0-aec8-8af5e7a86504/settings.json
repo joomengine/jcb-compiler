@@ -19,6 +19,14 @@
         "use_selection1": {
             "use": "d3ce5763-4d00-4245-a175-54fc2e80e9b7",
             "as": "default"
+        },
+        "use_selection3": {
+            "use": "0d3c74ed-2fec-4be9-9e31-3096e059c17a",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "b8f243a0-e889-4abc-be44-5b7afb85a9cd",
+            "as": "default"
         }
     },
     "extendsinterfaces": null,

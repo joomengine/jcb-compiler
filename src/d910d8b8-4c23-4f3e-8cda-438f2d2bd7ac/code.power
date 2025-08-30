@@ -86,6 +86,7 @@
 			->registerServiceProvider(new ArchitectureComHelperClass())
 			->registerServiceProvider(new ArchitectureController())
 			->registerServiceProvider(new ArchitectureModel())
+			->registerServiceProvider(new ArchitectureModule())
 			->registerServiceProvider(new ArchitecturePlugin())
 			->registerServiceProvider(new Git())
 			->registerServiceProvider(new Github())

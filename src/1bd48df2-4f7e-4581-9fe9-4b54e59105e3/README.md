@@ -9,9 +9,9 @@ class Gui  #Gold {
   # Config $config
   # Reverse $reverse
   # Parser $parser
-  # $db
+  # DatabaseInterface $db
   # $app
-  + __construct(?Config $config = null, ?Reverse $reverse = null, ...)
+  + __construct(Config $config, Reverse $reverse, ...)
   + set(string $string, array $config) : string
   + search(string $file, array $placeholders, ...) : void
   # check(string $code) : bool
@@ -23,9 +23,10 @@ note right of Gui::__construct
   since: 3.2.0
   
   arguments:
-    ?Config $config = null
-    ?Reverse $reverse = null
-    ?Parser $parser = null
+    Config $config
+    Reverse $reverse
+    Parser $parser
+    DatabaseInterface $db
 end note
 
 note right of Gui::set

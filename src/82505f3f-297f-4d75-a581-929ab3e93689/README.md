@@ -9,7 +9,7 @@
 class Extractor << (F,LightGreen) >> #RoyalBlue {
   # string $table
   # $targetVersion
-  + __construct(int $targetVersion)
+  + __construct(DatabaseInterface $db, int $targetVersion)
   # namespaces(array $guids) : ?array
 }
 

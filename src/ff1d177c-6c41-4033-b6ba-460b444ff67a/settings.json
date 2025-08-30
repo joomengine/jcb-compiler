@@ -1,0 +1,90 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "ff1d177c-6c41-4033-b6ba-460b444ff67a",
+    "implements": [
+        "1a820de9-b890-4958-9ee8-5a88ad207573"
+    ],
+    "load_selection": null,
+    "name": "MainXML",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J5.Module.MainXML",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "058cfcd7-1f84-4cc6-8bcc-7672f316881d",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "0b0e574c-aab4-4eaf-96d8-d7210d8ed93e",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "344d36be-3949-4848-8cb0-e3d3d9d05c36",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "263f0227-3cc2-4a88-9818-edb20081c30c",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection7": {
+            "use": "23f459a4-7c2a-4cbf-b0a6-8a11954140a9",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "7526a39a-ada3-4499-8d75-81beff33f949",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "a8c6158a-6fd2-476b-a5ea-c81f1ecd2356",
+            "as": "BuilderMultilingual"
+        },
+        "use_selection11": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "5c75b455-3d4c-452a-867e-e90424a64c88",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaFive.Module.MainXML",
+    "description": "Joomla 5 Module Main XML Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\Filesystem\\Folder;",
+    "composer": ""
+}

@@ -1,0 +1,56 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "0d3c74ed-2fec-4be9-9e31-3096e059c17a",
+    "implements": null,
+    "load_selection": null,
+    "name": "Document",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Library.Document",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "b8f243a0-e889-4abc-be44-5b7afb85a9cd",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Library.Document",
+    "description": "Document Include Library Helper\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Application\\CMSApplication;",
+    "composer": ""
+}

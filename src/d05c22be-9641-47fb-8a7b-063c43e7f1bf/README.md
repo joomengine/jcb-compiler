@@ -1,11 +1,11 @@
 ### JCB! Power
-# class Structure (Details)
+# final class Structure (Details)
 > namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaFive**
 
 ```uml
 @startuml
 
-class Structure  #Gold {
+class Structure << (F,LightGreen) >> #RoyalBlue {
   # Plugin $plugin
   # Component $component
   # Config $config

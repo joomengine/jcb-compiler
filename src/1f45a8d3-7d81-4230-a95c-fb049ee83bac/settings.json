@@ -1,0 +1,60 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "1f45a8d3-7d81-4230-a95c-fb049ee83bac",
+    "implements": null,
+    "load_selection": null,
+    "name": "ListQuery",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Dynamicget.ListQuery",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "8593257c-5471-41eb-8429-ba1fdb0775fb",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "5683a72a-96ef-4918-8e0f-c963a77ea922",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "f878bf2b-c099-45aa-ba22-c0aae9b44e35",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "f33e56d5-e6a4-40ba-a55b-2e2e0a60fe3b",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "33e8182a-382e-4516-9e01-f9cd80f8a82b",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Dynamicget.ListQuery",
+    "description": "Dynamic Get List Query\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

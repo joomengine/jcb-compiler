@@ -88,7 +88,8 @@ class History implements ServiceProviderInterface
 	public function getJ3History(Container $container): J3History
 	{
 		return new J3History(
-			$container->get('Config')
+			$container->get('Config'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -103,7 +104,8 @@ class History implements ServiceProviderInterface
 	public function getJ4History(Container $container): J4History
 	{
 		return new J4History(
-			$container->get('Config')
+			$container->get('Config'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -118,7 +120,8 @@ class History implements ServiceProviderInterface
 	public function getJ5History(Container $container): J5History
 	{
 		return new J5History(
-			$container->get('Config')
+			$container->get('Config'),
+			$container->get('Joomla.Database')
 		);
 	}
 }

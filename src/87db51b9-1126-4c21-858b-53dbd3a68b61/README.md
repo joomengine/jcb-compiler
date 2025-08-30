@@ -8,8 +8,8 @@
 class History << (F,LightGreen) >> #RoyalBlue {
   # ?object $tmp
   # Config $config
-  # $db
-  + __construct(?Config $config = null)
+  # DatabaseInterface $db
+  + __construct(Config $config, DatabaseInterface $db)
   + get(string $type, int $id) : ?object
   # set(object $object, int $action) : bool
 }

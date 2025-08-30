@@ -162,8 +162,8 @@
 					// create the main module file
 					$this->setMainModFile($module);
 
-					// creat the custom get file
-					$this->setCustomGet($module);
+					// create the dynamic gets file
+					$this->setDynamicGets($module);
 
 					// set helper file
 					$this->setHelperFile($module);
@@ -347,14 +347,14 @@
 	}
 
 	/**
-	 * Set the custom get file
+	 * Set the dynamic gets file
 	 *
 	 * @param object $module
 	 *
 	 * @return void
 	 * @since 3.2.0
 	 */
-	protected function setCustomGet(object $module): void
+	protected function setDynamicGets(object $module): void
 	{
 		if ($module->custom_get)
 		{

@@ -7,8 +7,8 @@
 
 class Insert << (F,LightGreen) >> #RoyalBlue {
   # array $items
-  # $db
-  + __construct()
+  # DatabaseInterface $db
+  + __construct(DatabaseInterface $db)
   + set(string $target, int $counter, ...) : void
   + execute(string $target, int $when = 1) : void
 }

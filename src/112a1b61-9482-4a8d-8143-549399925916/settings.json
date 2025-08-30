@@ -1,0 +1,90 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "112a1b61-9482-4a8d-8143-549399925916",
+    "implements": [
+        "4cf299c0-e580-4985-8808-b0cab6228105"
+    ],
+    "load_selection": null,
+    "name": "Data",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Joomlamodule.J4.Data",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "313b43c4-98c3-4f62-9177-2d73ec8eba31",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "9387215f-a965-4421-acf3-5e8f9d11382f",
+            "as": "Fieldname"
+        },
+        "use_selection7": {
+            "use": "f4578c04-a81e-4218-b80d-b0612196eaf0",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "59895f37-50c8-4af3-9dad-230e18841953",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "05c49a1f-ba5b-4be1-b3d0-4a74c42f7a46",
+            "as": "Dynamicget"
+        },
+        "use_selection10": {
+            "use": "39ea8150-f124-4e47-909d-641bf1c96d5e",
+            "as": "Templatelayout"
+        },
+        "use_selection11": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "30c5b4c2-f75f-4d15-869a-f8bfedd87358",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "9c513baf-b279-43fd-ae29-a585c8cbc4f0",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Joomlamodule.JoomlaFour.Data",
+    "description": "Joomla Module Data Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Filter\\OutputFilter;\r\nuse Joomla\\Database\\DatabaseInterface;",
+    "composer": ""
+}

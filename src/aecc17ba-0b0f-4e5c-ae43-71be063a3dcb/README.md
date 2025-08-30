@@ -8,8 +8,8 @@
 class Placeholder << (F,LightGreen) >> #RoyalBlue {
   # $placeholders
   # $config
-  # $db
-  + __construct(?Config $config = null)
+  # DatabaseInterface $db
+  + __construct(Config $config, DatabaseInterface $db)
   + get() : array
 }
 

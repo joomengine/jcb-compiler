@@ -16,7 +16,7 @@ class Customcode  #Gold {
   # Power $power
   # JoomlaPower $joomla
   # External $external
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Placeholder $placeholder, ...)
   + update(string $string, int $debug) : string
   + set(string $string, int $debug, ...) : string
@@ -38,6 +38,7 @@ note right of Customcode::__construct
     Power $power
     JoomlaPower $joomla
     External $external
+    DatabaseInterface $db
 end note
 
 note right of Customcode::update

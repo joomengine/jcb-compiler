@@ -1,0 +1,30 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "de4d3375-9b36-427e-9546-0eb2e875507d",
+    "implements": [
+        "445355be-f34a-453e-aca8-8af4246ced6f"
+    ],
+    "load_selection": null,
+    "name": "Helper",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J4.Module.Helper",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaFour.Module.Helper",
+    "description": "Module Helper Code Joomla 4\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

@@ -1,0 +1,52 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "8593257c-5471-41eb-8429-ba1fdb0775fb",
+    "implements": null,
+    "load_selection": null,
+    "name": "Queries",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Dynamicget.Queries",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "9e74f8f4-7696-47e2-ac71-99fce221b212",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "ec0682ee-9166-48f8-951b-9b763792c1d1",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "74595661-236d-4aa1-99f3-358d093000be",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Dynamicget.Queries",
+    "description": "Dynamic Get Queries\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

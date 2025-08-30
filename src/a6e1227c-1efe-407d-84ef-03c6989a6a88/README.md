@@ -7,10 +7,15 @@
 
 class Sqldump  #Gold {
   # Registry $registry
-  # $db
-  + __construct(Registry $registry)
+  # JoomlaDatabase $db
+  + __construct(Registry $registry, ?JoomlaDatabase $db = null)
   + get(array $tables, string $view, ...) : ?string
-  # escape(string|array $value) : string|array
+  # shouldBuildDump(string $viewGuid) : bool
+  # applyWhereFilter($query, string $viewGuid) : void
+  # parseFieldMappings(string $map, string $alias) : array
+  # applyJoins($query, string $table, ...) : void
+  # buildSqlDump(string $view, array $data) : string
+  # escape(mixed $value) : mixed
 }
 
 note right of Sqldump::__construct
@@ -19,8 +24,8 @@ note right of Sqldump::__construct
   since: 3.2.0
 end note
 
-note right of Sqldump::get
-  Get SQL Dump
+note left of Sqldump::get
+  Generate SQL dump for given view data.
 
   since: 3.2.0
   return: ?string
@@ -28,14 +33,55 @@ note right of Sqldump::get
   arguments:
     array $tables
     string $view
-    string $view_guid
+    string $viewGuid
 end note
 
-note right of Sqldump::escape
-  Escape the values for a SQL dump
+note right of Sqldump::shouldBuildDump
+  Determine if a dump should be built.
+
+  since: 5.1.1
+  return: bool
+end note
+
+note left of Sqldump::applyWhereFilter
+  Apply optional WHERE clause if set in registry.
+
+  since: 5.1.1
+  return: void
+end note
+
+note right of Sqldump::parseFieldMappings
+  Parse sourcemap lines into SELECT and JOIN definitions.
+
+  since: 5.1.1
+  return: array
+end note
+
+note left of Sqldump::applyJoins
+  Apply JOINs to the query.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    $query
+    string $table
+    string $alias
+    array $joins
+end note
+
+note right of Sqldump::buildSqlDump
+  Build the SQL INSERT DUMP statement from data.
+
+  since: 5.1.1
+  return: string
+end note
+
+note left of Sqldump::escape
+  Escape SQL value for safe dump using strict quoting rules.
 
   since: 3.2.0
-  return: string|array
+  return: mixed
 end note
 
 @enduml

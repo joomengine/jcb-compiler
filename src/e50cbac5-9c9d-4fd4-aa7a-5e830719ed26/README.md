@@ -10,6 +10,7 @@ class Sqltweaking  #Gold {
   + __construct(Registry $registry)
   + set(object $item) : void
   # tweak(array $settings) : void
+  - normalizeIds(string $ids) : array
 }
 
 note right of Sqltweaking::__construct
@@ -26,10 +27,18 @@ note right of Sqltweaking::set
 end note
 
 note right of Sqltweaking::tweak
-  To limit the SQL Demo data build in the views
+  Limit the SQL Demo data build in the views by applying tweak settings.
 
   since: 3.2.0
   return: void
+end note
+
+note right of Sqltweaking::normalizeIds
+  Normalize a comma-separated string of IDs or ID ranges into a unique, sorted array.
+Supports individual IDs (e.g., "1,3,5") and ranges (e.g., "10 => 12").
+
+  since: 5.1.1
+  return: array
 end note
 
 @enduml

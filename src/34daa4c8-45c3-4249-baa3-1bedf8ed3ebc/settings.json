@@ -10,7 +10,7 @@
     "name": "Structure",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Joomlaplugin.J4.Structure",
-    "type": "class",
+    "type": "final class",
     "use_selection": {
         "use_selection0": {
             "use": "8cc85656-a925-4a46-a49b-83c72167fd6a",

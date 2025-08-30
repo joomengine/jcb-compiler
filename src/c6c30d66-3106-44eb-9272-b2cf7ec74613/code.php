@@ -162,7 +162,8 @@ class Field implements ServiceProviderInterface
 			$container->get('Placeholder'),
 			$container->get('Customcode'),
 			$container->get('Field.Customcode'),
-			$container->get('Field.Rule')
+			$container->get('Field.Rule'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -176,7 +177,9 @@ class Field implements ServiceProviderInterface
 	 */
 	public function getGroups(Container $container): Groups
 	{
-		return new Groups();
+		return new Groups(
+			$container->get('Joomla.Database')
+		);
 	}
 
 	/**

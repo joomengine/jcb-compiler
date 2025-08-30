@@ -9,10 +9,10 @@ class External  #Gold {
   # array $code
   # array $cutter
   # Placeholder $placeholder
-  # $db
+  # DatabaseInterface $db
   # $user
   # $app
-  + __construct(?Placeholder $placeholder = null)
+  + __construct(Placeholder $placeholder, DatabaseInterface $db)
   + set(string $string, int $debug) : string
   # getCode(string $target, array $bucket) : void
   # cut(string $string, string $sequence, ...) : string

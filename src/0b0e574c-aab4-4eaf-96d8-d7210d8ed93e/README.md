@@ -7,8 +7,8 @@
 
 class Purge << (F,LightGreen) >> #RoyalBlue {
   # Update $update
-  # $db
-  + __construct(Update $update)
+  # DatabaseInterface $db
+  + __construct(Update $update, DatabaseInterface $db)
   + execute(array $values, string $targetGuid, ...) : void
   # handleUnlinkedString(array $item, array $otherTypes, ...) : void
   # removeLanguageString(int $id) : void

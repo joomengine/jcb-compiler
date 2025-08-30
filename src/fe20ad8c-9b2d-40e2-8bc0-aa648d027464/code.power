@@ -1,0 +1,20 @@
+	/**
+	 * Get the updated placeholder default template content for the given module.
+	 *
+	 * @param  object  $module   The module object containing the necessary data.
+	 * @param  string  $key      The dispenser key for this given module.
+	 *
+	 * @return string  The updated placeholder content.
+	 * @since  5.1.2
+	 */
+	public function default(object $module, string $key): string;
+
+	/**
+	 * Get the updated placeholder extra template content for the given module.
+	 *
+	 * @param  object  $module   The module object containing the necessary data.
+	 *
+	 * @return void
+	 * @since  5.1.2
+	 */
+	public function extra(object $module): void;

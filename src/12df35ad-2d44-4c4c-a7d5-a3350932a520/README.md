@@ -6,8 +6,8 @@
 @startuml
 
 class Groups << (F,LightGreen) >> #RoyalBlue {
-  # $db
-  + __construct()
+  # DatabaseInterface $db
+  + __construct(DatabaseInterface $db)
   + check(string $type, string $option = 'default') : bool
   + types(array $groups = [], string $key = 'id') : ?array
   + typesIds(array $groups = []) : ?array

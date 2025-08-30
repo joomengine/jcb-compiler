@@ -14,7 +14,7 @@ class Data  #Gold {
   # Gui $gui
   # Loader $loader
   # Libraries $libraries
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Registry $registry, ...)
   + get(string $alias, string $table, ...) : ?array
   # getAliasId(string $alias, string $table) : ?int
@@ -33,6 +33,7 @@ note right of Data::__construct
     Gui $gui
     Loader $loader
     Libraries $libraries
+    DatabaseInterface $db
 end note
 
 note right of Data::get

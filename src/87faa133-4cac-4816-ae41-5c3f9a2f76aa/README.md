@@ -10,6 +10,23 @@ class Customview  #Gold {
   + getCustomviewData(Container $container) : CustomviewData
   + getDynamicgetData(Container $container) : DynamicgetData
   + getDynamicgetSelection(Container $container) : DynamicgetSelection
+  + getMethods(Container $container) : Methods
+  + getGetItems(Container $container) : GetItems
+  + getGetItem(Container $container) : GetItem
+  + getListQuery(Container $container) : ListQuery
+  + getCustomGetMethods(Container $container) : CustomGetMethods
+  + getQueries(Container $container) : Queries
+  + getQueryFilter(Container $container) : QueryFilter
+  + getQueryWhere(Container $container) : QueryWhere
+  + getQueryOrder(Container $container) : QueryOrder
+  + getQueryGroup(Container $container) : QueryGroup
+  + getUikitLoader(Container $container) : UikitLoader
+  + getGlobals(Container $container) : Globals
+  + getCustomJoin(Container $container) : CustomJoin
+  + getJoinStructure(Container $container) : JoinStructure
+  + getDecodeColumn(Container $container) : DecodeColumn
+  + getFilterColumn(Container $container) : FilterColumn
+  + getFieldonContentPrepare(Container $container) : FieldonContentPrepare
 }
 
 note right of Customview::register
@@ -19,7 +36,7 @@ note right of Customview::register
   return: void
 end note
 
-note right of Customview::getCustomviewData
+note left of Customview::getCustomviewData
   Get the Compiler Customview Data
 
   since: 3.2.0
@@ -33,11 +50,130 @@ note right of Customview::getDynamicgetData
   return: DynamicgetData
 end note
 
-note right of Customview::getDynamicgetSelection
+note left of Customview::getDynamicgetSelection
   Get the Compiler Dynamicget Selection
 
   since: 3.2.0
   return: DynamicgetSelection
+end note
+
+note right of Customview::getMethods
+  Get The Methods Class.
+
+  since: 5.1.2
+  return: Methods
+end note
+
+note left of Customview::getGetItems
+  Get The GetItems Class.
+
+  since: 5.1.2
+  return: GetItems
+end note
+
+note right of Customview::getGetItem
+  Get The GetItem Class.
+
+  since: 5.1.2
+  return: GetItem
+end note
+
+note left of Customview::getListQuery
+  Get The ListQuery Class.
+
+  since: 5.1.2
+  return: ListQuery
+end note
+
+note right of Customview::getCustomGetMethods
+  Get The CustomGetMethods Class.
+
+  since: 5.1.2
+  return: CustomGetMethods
+end note
+
+note left of Customview::getQueries
+  Get The Queries Class.
+
+  since: 5.1.2
+  return: Queries
+end note
+
+note right of Customview::getQueryFilter
+  Get The QueryFilter Class.
+
+  since: 5.1.2
+  return: QueryFilter
+end note
+
+note left of Customview::getQueryWhere
+  Get The QueryWhere Class.
+
+  since: 5.1.2
+  return: QueryWhere
+end note
+
+note right of Customview::getQueryOrder
+  Get The QueryOrder Class.
+
+  since: 5.1.2
+  return: QueryOrder
+end note
+
+note left of Customview::getQueryGroup
+  Get The QueryGroup Class.
+
+  since: 5.1.2
+  return: QueryGroup
+end note
+
+note right of Customview::getUikitLoader
+  Get The UikitLoader Class.
+
+  since: 5.1.2
+  return: UikitLoader
+end note
+
+note left of Customview::getGlobals
+  Get The Globals Class.
+
+  since: 5.1.2
+  return: Globals
+end note
+
+note right of Customview::getCustomJoin
+  Get The CustomJoin Class.
+
+  since: 5.1.2
+  return: CustomJoin
+end note
+
+note left of Customview::getJoinStructure
+  Get The JoinStructure Class.
+
+  since: 5.1.2
+  return: JoinStructure
+end note
+
+note right of Customview::getDecodeColumn
+  Get The DecodeColumn Class.
+
+  since: 5.1.2
+  return: DecodeColumn
+end note
+
+note left of Customview::getFilterColumn
+  Get The FilterColumn Class.
+
+  since: 5.1.2
+  return: FilterColumn
+end note
+
+note right of Customview::getFieldonContentPrepare
+  Get The FieldonContentPrepare Class.
+
+  since: 5.1.2
+  return: FieldonContentPrepare
 end note
 
 @enduml

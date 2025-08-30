@@ -1,0 +1,44 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "f878bf2b-c099-45aa-ba22-c0aae9b44e35",
+    "implements": null,
+    "load_selection": null,
+    "name": "QueryWhere",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Dynamicget.QueryWhere",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "fd885c23-88dd-440a-9b05-d02a2b2962f9",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "17fa7789-a7d1-465e-b733-8c8d53f5ca1b",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Dynamicget.QueryWhere",
+    "description": "Dynamic Get Query Where\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

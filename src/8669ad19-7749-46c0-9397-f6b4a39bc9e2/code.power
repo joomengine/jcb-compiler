@@ -1,0 +1,11 @@
+	/**
+	 * Infuse the module data into the content.
+	 *
+	 * This method processes each module in the data set, triggering events
+	 * before and after infusion, setting placeholders, and adding content
+	 * such as headers, classes, and XML configurations.
+	 *
+	 * @return void
+	 * @since  5.1.2
+	 */
+	public function set(): void;

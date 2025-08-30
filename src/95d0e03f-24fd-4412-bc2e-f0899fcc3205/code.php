@@ -31,6 +31,8 @@ final class Parser
 	 */
 	public function code(string $code): array
 	{
+		$code = $this->normalizeCode($code);
+
 		return [
 			'properties' => $this->properties($code),
 			'methods' => $this->methods($code)
@@ -47,6 +49,8 @@ final class Parser
 	 **/
 	public function getClassCode(string $code): ?string
 	{
+		$code = $this->normalizeCode($code);
+
 		// Match class, final class, abstract class, interface, and trait
 		$pattern = '/(?:class|final class|abstract class|interface|trait)\s+[a-zA-Z0-9_]+\s*(?:extends\s+[a-zA-Z0-9_]+\s*)?(?:implements\s+[a-zA-Z0-9_]+(?:\s*,\s*[a-zA-Z0-9_]+)*)?\s*\{/s';
 
@@ -88,6 +92,8 @@ final class Parser
 	 **/
 	public function getClassLicense(string $code): ?string
 	{
+		$code = $this->normalizeCode($code);
+
 		// Check if the file starts with '<?php'
 		if (substr($code, 0, 5) !== '<?php')
 		{
@@ -127,6 +133,8 @@ final class Parser
 	 */
 	public function getUseStatements(string $code): ?array
 	{
+		$code = $this->normalizeCode($code);
+
 		// Match class, final class, abstract class, interface, and trait
 		$pattern = '/(?:class|final class|abstract class|interface|trait)\s+[a-zA-Z0-9_]+\s*(?:extends\s+[a-zA-Z0-9_]+\s*)?(?:implements\s+[a-zA-Z0-9_]+(?:\s*,\s*[a-zA-Z0-9_]+)*)?\s*\{/s';
 
@@ -168,6 +176,8 @@ final class Parser
 	 */
 	public function getTraits(string $code): ?array
 	{
+		$code = $this->normalizeCode($code);
+
 		// regex to target trait use statements
 		$traitPattern = '/^\s*use\s+[\p{L}0-9\\\\_]+(?:\s*,\s*[\p{L}0-9\\\\_]+)*\s*;/mu';
 
@@ -640,5 +650,33 @@ final class Parser
 		return $mergedArguments;
 	}
 
+	/**
+	 * Normalize input PHP code to ensure cross-platform compatibility.
+	 *
+	 * This method removes the UTF-8 BOM (Byte Order Mark) if present and converts
+	 * all line endings to LF (`\n`). This ensures consistent parsing behavior across
+	 * operating systems, including Linux, macOS, and Windows.
+	 *
+	 * @param string $code The raw PHP code as a string
+	 *
+	 * @return string The normalized PHP code string with consistent line endings and no BOM
+	 * @since 5.1.2
+	 */
+	private function normalizeCode(string $code): string
+	{
+		// UTF-8 BOM sequence
+		static $BOM = "\xEF\xBB\xBF";
+
+		// Remove UTF-8 BOM if present
+		if (strncmp($code, $BOM, 3) === 0)
+		{
+			$code = substr($code, 3);
+		}
+
+		// Normalize line endings to LF in two fast passes
+		$code = str_replace(["\r\n", "\r"], "\n", $code);
+
+		return $code;
+	}
 }
 

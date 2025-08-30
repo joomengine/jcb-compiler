@@ -1,0 +1,7 @@
+	/**
+	 * Build the Modules files, folders, url's and config
+	 *
+	 * @return  void
+	 * @since   5.1.2
+	 */
+	public function build();

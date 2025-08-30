@@ -13,27 +13,23 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
             "as": "default"
         },
         "use_selection1": {
-            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         },
         "use_selection2": {
-            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         },
         "use_selection3": {
-            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
             "as": "default"
         },
         "use_selection4": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection5": {
-            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
             "as": "default"
         }
     },
@@ -41,6 +37,6 @@
     "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Customcode.External",
     "description": "Compiler External Custom Code\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
-    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Filesystem\\Path;",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Filesystem\\Path;\r\nuse Joomla\\Database\\DatabaseInterface;",
     "composer": ""
 }

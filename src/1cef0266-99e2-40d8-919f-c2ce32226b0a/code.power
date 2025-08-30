@@ -23,11 +23,12 @@
 	protected Placeholder $placeholder;
 
 	/**
-	 * Database object to query local DB
+	 * Joomla Database Class.
 	 *
-	 * @since 3.2.0
+	 * @var   DatabaseInterface
+	 * @since 5.1.2
 	 **/
-	protected $db;
+	protected DatabaseInterface $db;
 
 	/**
 	 * User object
@@ -46,17 +47,19 @@
 	/**
 	 * Constructor.
 	 *
-	 * @param Placeholder|null        $placeholder   The compiler placeholder object.
+	 * @param Placeholder        $placeholder   The compiler placeholder object.
+	 * @param DatabaseInterface  $db            The Joomla Database Class.
 	 *
 	 * @throws \Exception
 	 * @since 3.2.0
 	 */
-	public function __construct(?Placeholder $placeholder = null)
+	public function __construct(Placeholder $placeholder, DatabaseInterface $db)
 	{
-		$this->placeholder = $placeholder ?: Compiler::_('Placeholder');
-		$this->db = Factory::getDbo();
-		$this->user = Factory::getUser();
+		$this->placeholder = $placeholder;
+		$this->db = $db;
+
 		$this->app = Factory::getApplication();
+		$this->user = $this->app->getIdentity();
 	}
 
 	/**

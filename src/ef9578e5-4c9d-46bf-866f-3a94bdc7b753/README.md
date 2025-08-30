@@ -27,7 +27,7 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   # Joomlamodules $modules
   # Joomlaplugins $plugins
   # Router $router
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Event $event, ...)
   + get() : ?object
   - getQuery() : string
@@ -93,6 +93,7 @@ note right of Data::__construct
     Joomlamodules $joomlamodules
     Joomlaplugins $joomlaplugins
     Router $router
+    DatabaseInterface $db
 end note
 
 note left of Data::get

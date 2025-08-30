@@ -351,7 +351,9 @@ final class Set extends ExtendingSet implements SetInterface
 				json_encode($settings_item, JSON_PRETTY_PRINT), // The file content.
 				'Update ' . $item->system_name . ' settings', // The commit message.
 				$sha, // The blob SHA of the old file.
-				$repo->write_branch // The branch name.
+				$repo->write_branch, // The branch name.
+				$repo->author_name, // The author name.
+				$repo->author_email // The author email.
 			);
 		}
 
@@ -404,7 +406,9 @@ final class Set extends ExtendingSet implements SetInterface
 			$power, // The file content.
 			'Update ' . $item->system_name . ' code', // The commit message.
 			$sha, // The blob SHA of the old file.
-			$repo->write_branch // The branch name.
+			$repo->write_branch, // The branch name.
+			$repo->author_name, // The author name.
+			$repo->author_email // The author email.
 		);
 
 		return is_object($result);
@@ -432,7 +436,9 @@ final class Set extends ExtendingSet implements SetInterface
 			$this->index_map_IndexSettingsPath($item), // The file path.
 			json_encode($settings_item, JSON_PRETTY_PRINT), // The file content.
 			'Create ' . $item->system_name . ' settings', // The commit message.
-			$repo->write_branch // The branch name.
+			$repo->write_branch, // The branch name.
+			$repo->author_name, // The author name.
+			$repo->author_email // The author email.
 		);
 
 		return $this->createPower($item, $repo) && is_object($result);
@@ -455,7 +461,9 @@ final class Set extends ExtendingSet implements SetInterface
 			$this->index_map_PowerPath($item), // The file path.
 			$item->main_class_code, // The file content.
 			'Create ' . $item->system_name . ' code', // The commit message.
-			$repo->write_branch // The branch name.
+			$repo->write_branch, // The branch name.
+			$repo->author_name, // The author name.
+			$repo->author_email // The author email.
 		);
 
 		return is_object($result);
@@ -503,7 +511,9 @@ final class Set extends ExtendingSet implements SetInterface
 			$readme, // The file content.
 			'Update ' . $item->system_name . ' readme file', // The commit message.
 			$sha, // The blob SHA of the old file.
-			$repo->write_branch // The branch name.
+			$repo->write_branch, // The branch name.
+			$repo->author_name, // The author name.
+			$repo->author_email // The author email.
 		);
 	}
 
@@ -531,7 +541,9 @@ final class Set extends ExtendingSet implements SetInterface
 			$this->index_map_IndexPath($item) . '/README.md', // The file path.
 			$this->itemReadme->get($item), // The file content.
 			'Create ' . $item->system_name . ' readme file', // The commit message.
-			$repo->write_branch // The branch name.
+			$repo->write_branch, // The branch name.
+			$repo->author_name, // The author name.
+			$repo->author_email // The author email.
 		);
 	}
 

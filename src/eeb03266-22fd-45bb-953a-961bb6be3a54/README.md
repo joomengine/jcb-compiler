@@ -8,8 +8,8 @@
 class Extractor  #Gold {
   # string $table
   # array $powers
-  # $db
-  + __construct()
+  # DatabaseInterface $db
+  + __construct(DatabaseInterface $db)
   + get_() : ?array
   + get(string $code) : ?array
   + reverse(string $code) : ?array

@@ -1,0 +1,124 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "914ba905-ff0e-4ef5-bef4-294a18aeef07",
+    "implements": null,
+    "load_selection": null,
+    "name": "GetItem",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Dynamicget.GetItem",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "c0e46033-5ade-4829-88b7-ca160d36a4d1",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "8eee7df5-2775-41a9-9372-c46c5939a252",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "33f5131e-4a5b-414b-95dd-d22227c2666d",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "d393c946-4481-43fa-b737-449119dd0a63",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "3468b447-a929-4c28-84a1-f2c3a27e3127",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "f62e9397-7b11-4d42-bc44-deeae0dd895d",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "d5ad92aa-9271-4717-b035-b3acca03005d",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "81b49755-b4b8-4468-8b80-8671de4fc4e4",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "30c57409-6a29-4ad0-bb76-b7347e391aa7",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "e06142b6-d776-45b1-9ba5-45375ed55bbf",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "1a3896bf-05e1-4259-b7ee-52b48df7cda4",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "d843e033-40bf-46f5-a433-b23d82bae1f3",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "8593257c-5471-41eb-8429-ba1fdb0775fb",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "5683a72a-96ef-4918-8e0f-c963a77ea922",
+            "as": "default"
+        },
+        "use_selection17": {
+            "use": "f878bf2b-c099-45aa-ba22-c0aae9b44e35",
+            "as": "default"
+        },
+        "use_selection18": {
+            "use": "f33e56d5-e6a4-40ba-a55b-2e2e0a60fe3b",
+            "as": "default"
+        },
+        "use_selection19": {
+            "use": "33e8182a-382e-4516-9e01-f9cd80f8a82b",
+            "as": "default"
+        },
+        "use_selection20": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection21": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection22": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection23": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection24": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection25": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Dynamicget.GetItem",
+    "description": "Dynamic Get GetItem\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

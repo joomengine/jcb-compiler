@@ -10,15 +10,15 @@
     "system_name": "JCB.Compiler.Model.Joomlamodules",
     "type": "class",
     "use_selection": {
-        "use_selection1": {
-            "use": "cb11e8d9-69c2-4095-831c-59908ea402e7",
+        "use_selection0": {
+            "use": "4cf299c0-e580-4985-8808-b0cab6228105",
             "as": "Module"
         },
-        "use_selection2": {
+        "use_selection1": {
             "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
             "as": "default"
         },
-        "use_selection3": {
+        "use_selection2": {
             "use": "4b225c51-d293-48e4-b3f6-5136cf5c3f18",
             "as": "default"
         }

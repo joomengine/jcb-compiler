@@ -1,0 +1,9 @@
+	/**
+	 * Generates the main XML for the module.
+	 *
+	 * @param object $module The module object.
+	 *
+	 * @return string The generated XML.
+	 * @since  5.1.2
+	 */
+	public function get(object $module): string;

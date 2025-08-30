@@ -194,7 +194,8 @@ class Component implements ServiceProviderInterface
 	public function getPlaceholder(Container $container): Placeholder
 	{
 		return new Placeholder(
-			$container->get('Config')
+			$container->get('Config'),
+			$container->get('Joomla.Database')
 		);
 	}
 
@@ -229,7 +230,8 @@ class Component implements ServiceProviderInterface
 			$container->get('Model.Updateserver'),
 			$container->get('Model.Joomlamodules'),
 			$container->get('Model.Joomlaplugins'),
-			$container->get('Model.Router')
+			$container->get('Model.Router'),
+			$container->get('Joomla.Database')
 		);
 	}
 

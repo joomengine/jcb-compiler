@@ -6,30 +6,111 @@
 @startuml
 
 class Joomlamodule  #Gold {
+  # $targetVersion
   + register(Container $container) : void
   + getData(Container $container) : Data
+  + getJ3Data(Container $container) : J3Data
+  + getJ4Data(Container $container) : J4Data
+  + getJ5Data(Container $container) : J5Data
   + getStructure(Container $container) : Structure
+  + getJ3Structure(Container $container) : J3Structure
+  + getJ4Structure(Container $container) : J4Structure
+  + getJ5Structure(Container $container) : J5Structure
+  + getInfusion(Container $container) : Infusion
+  + getJ3Infusion(Container $container) : J3Infusion
+  + getJ4Infusion(Container $container) : J4Infusion
+  + getJ5Infusion(Container $container) : J5Infusion
 }
 
 note right of Joomlamodule::register
   Registers the service provider with a DI container.
 
-  since: 3.2.0
+  since: 5.1.2
   return: void
 end note
 
-note right of Joomlamodule::getData
-  Get The Data Class.
+note left of Joomlamodule::getData
+  Get The ModuleDataInterface Class.
 
-  since: 3.2.0
+  since: 5.1.2
   return: Data
 end note
 
-note right of Joomlamodule::getStructure
+note right of Joomlamodule::getJ3Data
+  Get The Data Class.
+
+  since: 5.1.2
+  return: J3Data
+end note
+
+note left of Joomlamodule::getJ4Data
+  Get The Data Class.
+
+  since: 5.1.2
+  return: J4Data
+end note
+
+note right of Joomlamodule::getJ5Data
+  Get The Data Class.
+
+  since: 5.1.2
+  return: J5Data
+end note
+
+note left of Joomlamodule::getStructure
+  Get The StructureInterface Class.
+
+  since: 5.1.2
+  return: Structure
+end note
+
+note right of Joomlamodule::getJ3Structure
   Get The Structure Class.
 
-  since: 3.2.0
-  return: Structure
+  since: 5.1.2
+  return: J3Structure
+end note
+
+note left of Joomlamodule::getJ4Structure
+  Get The Structure Class.
+
+  since: 5.1.2
+  return: J4Structure
+end note
+
+note right of Joomlamodule::getJ5Structure
+  Get The Structure Class.
+
+  since: 5.1.2
+  return: J5Structure
+end note
+
+note left of Joomlamodule::getInfusion
+  Get The InfusionInterface Class.
+
+  since: 5.1.2
+  return: Infusion
+end note
+
+note right of Joomlamodule::getJ3Infusion
+  Get The Infusion Class.
+
+  since: 5.1.2
+  return: J3Infusion
+end note
+
+note left of Joomlamodule::getJ4Infusion
+  Get The Infusion Class.
+
+  since: 5.1.2
+  return: J4Infusion
+end note
+
+note right of Joomlamodule::getJ5Infusion
+  Get The Infusion Class.
+
+  since: 5.1.2
+  return: J5Infusion
 end note
 
 @enduml

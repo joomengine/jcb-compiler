@@ -17,7 +17,15 @@ class Dynamicget  #Gold {
   # Placeholder $placeholder
   # Selection $selection
   + __construct(Config $config, SiteDynamicGet $sitedynamicget, ...)
-  + set(object $item, string $view_code, ...) : void
+  + set(object $item, string $viewCode, ...) : void
+  - configureViewSource(object $item, string $viewCode, ...) : void
+  - configureDbSource(object $item, string $viewCode, ...) : void
+  - configureCustomSource(object $item, string $viewCode, ...) : void
+  - processFilters(object $item) : void
+  - processWhere(object $item) : void
+  - processOrderGroupGlobal(object $item) : void
+  - processJoins(object $item, string $viewCode, ...) : void
+  - processJoinGroup(object $item, string $viewCode, ...) : void
 }
 
 note right of Dynamicget::__construct
@@ -35,7 +43,7 @@ note right of Dynamicget::__construct
     Selection $selection
 end note
 
-note right of Dynamicget::set
+note left of Dynamicget::set
   Set Dynamic Get
 
   since: 3.2.0
@@ -43,8 +51,91 @@ note right of Dynamicget::set
   
   arguments:
     object $item
-    string $view_code
+    string $viewCode
     string $context
+end note
+
+note right of Dynamicget::configureViewSource
+  Configure the main_get using view-based data.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    object $item
+    string $viewCode
+    string $context
+end note
+
+note left of Dynamicget::configureDbSource
+  Configure the main_get using database-table data.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    object $item
+    string $viewCode
+    string $context
+end note
+
+note right of Dynamicget::configureCustomSource
+  Configure the main_get using a custom PHP query.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    object $item
+    string $viewCode
+    string $context
+end note
+
+note left of Dynamicget::processFilters
+  Process filter statements on the item.
+
+  since: 5.1.1
+  return: void
+end note
+
+note right of Dynamicget::processWhere
+  Process where clause on the item.
+
+  since: 5.1.1
+  return: void
+end note
+
+note left of Dynamicget::processOrderGroupGlobal
+  Process order, group, and global JSON attributes on the item.
+
+  since: 5.1.1
+  return: void
+end note
+
+note right of Dynamicget::processJoins
+  Process join logic for both view and db tables.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    object $item
+    string $viewCode
+    string $context
+end note
+
+note left of Dynamicget::processJoinGroup
+  Internal helper to process individual join groups.
+
+  since: 5.1.1
+  return: void
+  
+  arguments:
+    object $item
+    string $viewCode
+    string $context
+    string $joinKey
+    string $sourceType
 end note
 
 @enduml

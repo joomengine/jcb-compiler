@@ -1,6 +1,6 @@
 ### JCB! Power
 # class Structure (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlamodule**
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree**
 
 ```uml
 @startuml
@@ -23,7 +23,7 @@ class Structure  #Gold {
   # getCustomScriptField(array $fieldScriptBucket) : string
   # modulePath(object $module) : void
   # setMainModFile(object $module) : void
-  # setCustomGet(object $module) : void
+  # setDynamicGets(object $module) : void
   # setHelperFile(object $module) : void
   # setMainXmlFile(object $module) : void
   # setDefaultFile(object $module) : void
@@ -94,8 +94,8 @@ note left of Structure::setMainModFile
   return: void
 end note
 
-note right of Structure::setCustomGet
-  Set the custom get file
+note right of Structure::setDynamicGets
+  Set the dynamic gets file
 
   since: 3.2.0
   return: void

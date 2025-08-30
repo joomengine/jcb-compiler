@@ -17,7 +17,7 @@ class JoomlaPower << (F,LightGreen) >> #RoyalBlue {
   # Customcode $customcode
   # Gui $gui
   # Superpower $superpower
-  # $db
+  # DatabaseInterface $db
   # $app
   + __construct(Config $config, Placeholder $placeholder, ...)
   + load(array $guids) : void
@@ -49,6 +49,7 @@ note right of JoomlaPower::__construct
     Customcode $customcode
     Gui $gui
     Superpower $superpower
+    DatabaseInterface $db
 end note
 
 note left of JoomlaPower::load

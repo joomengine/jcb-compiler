@@ -39,20 +39,21 @@
 	protected array $powers = [];
 
 	/**
-	 * Database object to query local DB
+	 * Joomla Database Class.
 	 *
-	 * @since 3.2.0
+	 * @var   DatabaseInterface
+	 * @since 5.1.2
 	 **/
-	protected $db;
+	protected DatabaseInterface $db;
 
 	/**
 	 * Constructor
 	 *
 	 * @since 3.2.0
 	 */
-	public function __construct()
+	public function __construct(DatabaseInterface $db)
 	{
-		$this->db = Factory::getDbo();
+		$this->db = $db;
 	}
 
 	/**

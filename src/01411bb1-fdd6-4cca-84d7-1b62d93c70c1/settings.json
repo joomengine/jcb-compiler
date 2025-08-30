@@ -13,43 +13,39 @@
     "type": "class",
     "use_selection": {
         "use_selection0": {
-            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
-            "as": "default"
-        },
-        "use_selection1": {
-            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
-            "as": "default"
-        },
-        "use_selection2": {
-            "use": "d910d8b8-4c23-4f3e-8cda-438f2d2bd7ac",
-            "as": "Compiler"
-        },
-        "use_selection3": {
             "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
             "as": "default"
         },
-        "use_selection4": {
+        "use_selection1": {
             "use": "1bd48df2-4f7e-4581-9fe9-4b54e59105e3",
             "as": "default"
         },
-        "use_selection5": {
+        "use_selection2": {
             "use": "053803e6-1251-4aed-aefe-46a8e84198d2",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection3": {
             "use": "ca111518-e47c-4049-b1b2-cb010f23866f",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection4": {
             "use": "aecc17ba-0b0f-4e5c-ae43-71be063a3dcb",
             "as": "default"
         },
-        "use_selection8": {
+        "use_selection5": {
             "use": "cdc9b06d-8333-4fa7-ab4d-b810dd90f95f",
             "as": "default"
         },
-        "use_selection9": {
+        "use_selection6": {
             "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
             "as": "default"
         }
     },
@@ -57,6 +53,6 @@
     "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Customcode.Extractor",
     "description": "Compiler Custom Code Extractor\r\n\r\nThe custom script placeholders - we use the (xxx) to avoid detection it should be (***)\r\n##################################--->  PHP\/JS  ---####################################\r\n\r\nNew Insert Code        = \/xxx[INSERT>$$$$]xxx\/                \/xxx[\/INSERT>$$$$]xxx\/\r\nNew Replace Code    = \/xxx[REPLACE>$$$$]xxx\/               \/xxx[\/REPLACE>$$$$]xxx\/\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ when JCB adds it back \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nJCB Add Inserted Code    = \/xxx[INSERTED$$$$]xxx\/\/xx23xx\/          \/xxx[\/INSERTED$$$$]xxx\/\r\nJCB Add Replaced Code    = \/xxx[REPLACED$$$$]xxx\/\/xx25xx\/          \/xxx[\/REPLACED$$$$]xxx\/\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ changeing existing custom code \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nUpdate Inserted Code    = \/xxx[INSERTED>$$$$]xxx\/\/xx23xx\/        \/xxx[\/INSERTED>$$$$]xxx\/\r\nUpdate Replaced Code    = \/xxx[REPLACED>$$$$]xxx\/\/xx25xx\/        \/xxx[\/REPLACED>$$$$]xxx\/\r\n\r\nThe custom script placeholders - we use the (==) to avoid detection it should be (--)\r\n###################################--->  HTML  ---#####################################\r\n\r\nNew Insert Code        = !==[INSERT>$$$$]==>                 !==[\/INSERT>$$$$]==>\r\nNew Replace Code    = !==[REPLACE>$$$$]==>                !==[\/REPLACE>$$$$]==>\r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ when JCB adds it back \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nJCB Add Inserted Code    =         \r\nJCB Add Replaced Code    =         \r\n\r\n\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ changeing existing custom code \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\r\nUpdate Inserted Code    = !==[INSERTED>$$$$]==>      !==[\/INSERTED>$$$$]==>\r\nUpdate Replaced Code    = !==[REPLACED>$$$$]==>      !==[\/REPLACED>$$$$]==>\r\n\r\n\/\/\/\/\/\/\/\/23 is the ID of the code in the system don't change it!!!!!!!!!!!!!!!!!!!!!!!!!!\r\n\r\nMore info read: https:\/\/git.vdm.dev\/joomla\/Component-Builder\/wiki\/TIPS:-Custom-Code\r\n\r\n@since 3.2.0",
     "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
-    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\Filesystem\\Folder;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Version;",
+    "head": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\User\\User;\r\nuse Joomla\\CMS\\Application\\CMSApplication;\r\nuse Joomla\\CMS\\Language\\Text;\r\nuse Joomla\\CMS\\Version;\r\nuse Joomla\\Database\\DatabaseInterface;\r\nuse Joomla\\Filesystem\\Folder;",
     "composer": ""
 }

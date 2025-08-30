@@ -14,7 +14,7 @@ class Data  #Gold {
   # Dispenser $dispenser
   # Gui $gui
   # Dynamicget $dynamic
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Registry $registry, ...)
   + get(array $keys, string $view_code, ...) : ?array
   - getKeyTypes(array $keys) : array
@@ -33,6 +33,7 @@ note right of Data::__construct
     Dispenser $dispenser
     Gui $gui
     Dynamicget $dynamicget
+    DatabaseInterface $db
 end note
 
 note right of Data::get

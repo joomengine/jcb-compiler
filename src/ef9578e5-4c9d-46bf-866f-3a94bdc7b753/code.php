@@ -12,7 +12,7 @@
 namespace VDM\Joomla\Componentbuilder\Compiler\Component;
 
 
-use Joomla\CMS\Factory;
+use Joomla\Database\DatabaseInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Config;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\EventInterface as Event;
 use VDM\Joomla\Componentbuilder\Compiler\Placeholder;
@@ -216,11 +216,12 @@ final class Data
 	protected Router $router;
 
 	/**
-	 * Database object to query local DB
+	 * Joomla Database Class.
 	 *
-	 * @since 3.2.0
+	 * @var   DatabaseInterface
+	 * @since 5.1.2
 	 **/
-	protected $db;
+	protected DatabaseInterface $db;
 
 	/**
 	 * Constructor.
@@ -246,6 +247,7 @@ final class Data
 	 * @param Joomlamodules          $joomlamodules          The Joomlamodules Class.
 	 * @param Joomlaplugins          $joomlaplugins          The Joomlaplugins Class.
 	 * @param Router                 $router                 The Router Class.
+	 * @param DatabaseInterface      $db                     The Joomla Database Class.
 	 *
 	 * @since 3.2.0
 	 */
@@ -258,7 +260,7 @@ final class Data
 		Sqltweaking $sqltweaking, Adminviews $adminviews,
 		Siteviews $siteviews, Customadminviews $customadminviews,
 		Updateserver $updateserver, Joomlamodules $joomlamodules,
-		Joomlaplugins $joomlaplugins, Router $router)
+		Joomlaplugins $joomlaplugins, Router $router, DatabaseInterface $db)
 	{
 		$this->config = $config;
 		$this->event = $event;
@@ -281,7 +283,7 @@ final class Data
 		$this->modules = $joomlamodules;
 		$this->plugins = $joomlaplugins;
 		$this->router = $router;
-		$this->db = Factory::getDbo();
+		$this->db = $db;
 	}
 
 	/**

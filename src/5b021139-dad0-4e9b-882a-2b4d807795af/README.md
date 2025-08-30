@@ -10,7 +10,7 @@ class Selection  #Gold {
   # Config $config
   # GetAsLookup $getaslookup
   # SiteFields $sitefields
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, GetAsLookup $getaslookup, ...)
   + get(string $methodKey, string $viewCode, ...) : ?array
   # name(mixed $value) : string
@@ -25,6 +25,7 @@ note right of Selection::__construct
     Config $config
     GetAsLookup $getaslookup
     SiteFields $sitefields
+    DatabaseInterface $db
 end note
 
 note right of Selection::get

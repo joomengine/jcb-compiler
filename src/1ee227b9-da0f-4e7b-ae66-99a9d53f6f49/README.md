@@ -17,12 +17,14 @@ class Header << (F,LightGreen) >> #RoyalBlue {
   # Filter $filter
   # Tags $tags
   # array $headers
+  # array $disallowedContexts
   # string $NamespacePrefix
   # string $ComponentName
   # string $ComponentNamespace
   + __construct(Config $config, Event $event, ...)
   + get(string $context, string $codeName) : string
   # getHeaders(string $context) : array
+  # isAllowedContext(string $context) : bool
 }
 
 note right of Header::__construct
@@ -55,6 +57,15 @@ note right of Header::getHeaders
 
   since: 3.2.0
   return: array
+end note
+
+note right of Header::isAllowedContext
+  Determine if the given context is allowed.
+Returns true if the context is not in the disallowed list,
+false if the context is disallowed.
+
+  since: 5.1.2
+  return: bool
 end note
 
 @enduml

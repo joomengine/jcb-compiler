@@ -1,6 +1,6 @@
 ### JCB! Power
 # class Data (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlamodule**
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree**
 
 ```uml
 @startuml
@@ -19,7 +19,7 @@ class Data  #Gold {
   # Libraries $libraries
   # Dynamicget $dynamicget
   # Templatelayout $templatelayout
-  # $db
+  # DatabaseInterface $db
   + __construct(Config $config, Customcode $customcode, ...)
   + get(int|string|null $module = null) : object|array|null
   + exists(int|string|null $module = null) : bool
@@ -45,6 +45,7 @@ note right of Data::__construct
     Libraries $libraries
     Dynamicget $dynamicget
     Templatelayout $templatelayout
+    DatabaseInterface $db
 end note
 
 note right of Data::get

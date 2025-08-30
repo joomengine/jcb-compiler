@@ -7,9 +7,9 @@
 
 class Update << (F,LightGreen) >> #RoyalBlue {
   # array $items
-  # $db
+  # DatabaseInterface $db
   # $user
-  + __construct()
+  + __construct(DatabaseInterface $db)
   + set(int $id, string $target, ...) : void
   + execute(int $when = 1) : void
 }

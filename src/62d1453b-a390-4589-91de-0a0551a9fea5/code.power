@@ -1,0 +1,9 @@
+	/**
+	 * Get the module's library loading code.
+	 *
+	 * @param   object  $module  The module object
+	 *
+	 * @return  string The generated code to load libraries into the document.
+	 * @since   5.1.2
+	 */
+	public function get(object $module): string;

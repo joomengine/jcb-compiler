@@ -1,0 +1,19 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "b8f243a0-e889-4abc-be44-5b7afb85a9cd",
+    "implements": null,
+    "load_selection": null,
+    "name": "IncludeHelper",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Library.IncludeHelper",
+    "type": "final class",
+    "use_selection": null,
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Library.IncludeHelper",
+    "description": "Library Include Helper\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}
