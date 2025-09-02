@@ -22,6 +22,10 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model\CanEditSt
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model\CanEditState as J5ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model\CanEditState as J4ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model\CanEditState as J3ModelCanEditState;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model\CheckInNowInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model\CheckInNow as J5CheckInNow;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model\CheckInNow as J4CheckInNow;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model\CheckInNow as J3CheckInNow;
 
 
 /**
@@ -72,6 +76,18 @@ class ArchitectureModel implements ServiceProviderInterface
 
 		$container->alias(CanEditStateInterface::class, 'Architecture.Model.CanEditState')
 			->share('Architecture.Model.CanEditState', [$this, 'getModelCanEditState'], true);
+
+		$container->alias(CheckInNowInterface::class, 'Architecture.Model.CheckInNow')
+			->share('Architecture.Model.CheckInNow', [$this, 'getCheckInNow'], true);
+
+		$container->alias(J5CheckInNow::class, 'Architecture.Model.J5.CheckInNow')
+			->share('Architecture.Model.J5.CheckInNow', [$this, 'getJ5CheckInNow'], true);
+
+		$container->alias(J4CheckInNow::class, 'Architecture.Model.J4.CheckInNow')
+			->share('Architecture.Model.J4.CheckInNow', [$this, 'getJ4CheckInNow'], true);
+
+		$container->alias(J3CheckInNow::class, 'Architecture.Model.J3.CheckInNow')
+			->share('Architecture.Model.J3.CheckInNow', [$this, 'getJ3CheckInNow'], true);
 	}
 
 	/**
@@ -204,6 +220,63 @@ class ArchitectureModel implements ServiceProviderInterface
 			$container->get('Config'),
 			$container->get('Compiler.Creator.Permission')
 		);
+	}
+
+	/**
+	 * Get The Model CanDelete Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  CheckInNowInterface
+	 * @since   5.1.2
+	 */
+	public function getCheckInNow(Container $container): CheckInNowInterface
+	{
+		if (empty($this->targetVersion))
+		{
+			$this->targetVersion = $container->get('Config')->joomla_version;
+		}
+
+		return $container->get('Architecture.Model.J' . $this->targetVersion . '.CheckInNow');
+	}
+
+	/**
+	 * Get The Model CheckInNow Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J5CheckInNow
+	 * @since   5.1.2
+	 */
+	public function getJ5CheckInNow(Container $container): J5CheckInNow
+	{
+		return new J5CheckInNow();
+	}
+
+	/**
+	 * Get The Model CheckInNow Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J4CheckInNow
+	 * @since   5.1.2
+	 */
+	public function getJ4CheckInNow(Container $container): J4CheckInNow
+	{
+		return new J4CheckInNow();
+	}
+
+	/**
+	 * Get The Model CheckInNow Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J3CheckInNow
+	 * @since   5.1.2
+	 */
+	public function getJ3CheckInNow(Container $container): J3CheckInNow
+	{
+		return new J3CheckInNow();
 	}
 }
 

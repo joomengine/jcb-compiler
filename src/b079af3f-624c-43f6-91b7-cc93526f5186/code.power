@@ -1,0 +1,18 @@
+	/**
+	 * Get the generated call snippet that invokes the check-in method.
+	 *
+	 * @return string  The code that calls the generated method.
+	 * @since  5.1.2
+	 */
+	public function getCall(): string;
+
+	/**
+	 * Build the full `checkInNow()` method code for the given view/table.
+	 *
+	 * @param  string  $view       The view/table suffix (e.g. 'items').
+	 * @param  string  $component  The component name (without 'com_').
+	 *
+	 * @return string  The full method code as a string.
+	 * @since  5.1.2
+	 */
+	public function getMethod($view, $component): string;

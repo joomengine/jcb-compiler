@@ -16,33 +16,49 @@
             "use": "e00a7d1d-6d80-41c5-bf13-32d41bc5bf91",
             "as": "default"
         },
-        "use_selection6": {
+        "use_selection1": {
             "use": "34df20ec-67db-4e7e-be61-fb94d360c408",
             "as": "J5ModelCanDelete"
         },
-        "use_selection1": {
+        "use_selection2": {
             "use": "2a69a8ab-cea0-4c75-92d5-9495cb740e0f",
             "as": "J4ModelCanDelete"
         },
-        "use_selection2": {
+        "use_selection3": {
             "use": "23766738-d0a4-4d0a-8555-7e4c97c0cddd",
             "as": "J3ModelCanDelete"
         },
-        "use_selection3": {
+        "use_selection4": {
             "use": "600515b1-493f-4448-96fe-018e54e087c8",
             "as": "default"
         },
-        "use_selection7": {
+        "use_selection5": {
             "use": "318a98a3-bb6f-42cb-a000-352d4c848b51",
             "as": "J5ModelCanEditState"
         },
-        "use_selection4": {
+        "use_selection6": {
             "use": "cb2a82a5-aa49-4d46-b765-9b3feb118208",
             "as": "J4ModelCanEditState"
         },
-        "use_selection5": {
+        "use_selection7": {
             "use": "bce9ac2b-9f46-413f-b046-9e8af3f7dfbe",
             "as": "J3ModelCanEditState"
+        },
+        "use_selection8": {
+            "use": "b079af3f-624c-43f6-91b7-cc93526f5186",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "d8d495cc-883c-4b94-bf50-8ac01a396487",
+            "as": "J5CheckInNow"
+        },
+        "use_selection10": {
+            "use": "ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6",
+            "as": "J4CheckInNow"
+        },
+        "use_selection11": {
+            "use": "6cbdf390-fe4f-49b6-88e1-e415c3a7ece6",
+            "as": "J3CheckInNow"
         }
     },
     "extendsinterfaces": null,

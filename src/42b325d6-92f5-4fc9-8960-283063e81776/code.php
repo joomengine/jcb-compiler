@@ -13,6 +13,7 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFour;
 
 
 use VDM\Joomla\Componentbuilder\Compiler\Config;
+use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Module\ProviderInterface as Provider;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Module\DispatcherInterface as Dispatcher;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Module\TemplateInterface as Template;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Module\HelperInterface as Helper;

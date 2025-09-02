@@ -2210,6 +2210,17 @@
         "spk": "Super---6c89c663_78f5_4078_9fac_7047f2eaaf96---Power",
         "guid": "6c89c663-78f5-4078-9fac-7047f2eaaf96"
     },
+    "6cbdf390-fe4f-49b6-88e1-e415c3a7ece6": {
+        "name": "CheckInNow",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaThree\\Model",
+        "code": "src\/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6\/code.php",
+        "power": "src\/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6\/code.power",
+        "settings": "src\/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6\/settings.json",
+        "path": "src\/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6",
+        "spk": "Super---6cbdf390_fe4f_49b6_88e1_e415c3a7ece6---Power",
+        "guid": "6cbdf390-fe4f-49b6-88e1-e415c3a7ece6"
+    },
     "6d179307-b6e5-4f50-962b-5b6360d0759e": {
         "name": "AccessSectionsCategory",
         "type": "final class",
@@ -3607,6 +3618,17 @@
         "spk": "Super---b0779b26_8a35_42eb_a335_b0d59aff3633---Power",
         "guid": "b0779b26-8a35-42eb-a335-b0d59aff3633"
     },
+    "b079af3f-624c-43f6-91b7-cc93526f5186": {
+        "name": "CheckInNowInterface",
+        "type": "interface",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Interfaces\\Architecture\\Model",
+        "code": "src\/b079af3f-624c-43f6-91b7-cc93526f5186\/code.php",
+        "power": "src\/b079af3f-624c-43f6-91b7-cc93526f5186\/code.power",
+        "settings": "src\/b079af3f-624c-43f6-91b7-cc93526f5186\/settings.json",
+        "path": "src\/b079af3f-624c-43f6-91b7-cc93526f5186",
+        "spk": "Super---b079af3f_624c_43f6_91b7_cc93526f5186---Power",
+        "guid": "b079af3f-624c-43f6-91b7-cc93526f5186"
+    },
     "b0b26749-5e2c-4b56-8982-48172f2531fa": {
         "name": "ModelMediumField",
         "type": "final class",
@@ -4080,6 +4102,17 @@
         "spk": "Super---c99e85a0_d120_4f25_bcbf_0940dd7b773b---Power",
         "guid": "c99e85a0-d120-4f25-bcbf-0940dd7b773b"
     },
+    "ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6": {
+        "name": "CheckInNow",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaFour\\Model",
+        "code": "src\/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6\/code.php",
+        "power": "src\/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6\/code.power",
+        "settings": "src\/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6\/settings.json",
+        "path": "src\/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6",
+        "spk": "Super---ca0ca89b_1d5a_42b4_8d1c_d7b6f4f5bcb6---Power",
+        "guid": "ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6"
+    },
     "ca111518-e47c-4049-b1b2-cb010f23866f": {
         "name": "Reverse",
         "type": "class",
@@ -4409,6 +4442,17 @@
         "path": "src\/d843e033-40bf-46f5-a433-b23d82bae1f3",
         "spk": "Super---d843e033_40bf_46f5_a433_b23d82bae1f3---Power",
         "guid": "d843e033-40bf-46f5-a433-b23d82bae1f3"
+    },
+    "d8d495cc-883c-4b94-bf50-8ac01a396487": {
+        "name": "CheckInNow",
+        "type": "final class",
+        "namespace": "VDM\\Joomla\\Componentbuilder\\Compiler\\Architecture\\JoomlaFive\\Model",
+        "code": "src\/d8d495cc-883c-4b94-bf50-8ac01a396487\/code.php",
+        "power": "src\/d8d495cc-883c-4b94-bf50-8ac01a396487\/code.power",
+        "settings": "src\/d8d495cc-883c-4b94-bf50-8ac01a396487\/settings.json",
+        "path": "src\/d8d495cc-883c-4b94-bf50-8ac01a396487",
+        "spk": "Super---d8d495cc_883c_4b94_bf50_8ac01a396487---Power",
+        "guid": "d8d495cc-883c-4b94-bf50-8ac01a396487"
     },
     "d8e46d2c-d63e-4b92-80a2-d17638a7ae9e": {
         "name": "SelectionTranslation",

@@ -1,116 +1,27 @@
 ### JCB! Power
-# class ArchitectureModel (Details)
-> namespace: **VDM\Joomla\Componentbuilder\Compiler\Service**
+# final class CheckInNow (Details)
+> namespace: **VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model**
 
 ```uml
 @startuml
 
-class ArchitectureModel  #Gold {
-  # $targetVersion
-  + register(Container $container) : void
-  + getModelCanDelete(Container $container) : CanDeleteInterface
-  + getJ5ModelCanDelete(Container $container) : J5ModelCanDelete
-  + getJ4ModelCanDelete(Container $container) : J4ModelCanDelete
-  + getJ3ModelCanDelete(Container $container) : J3ModelCanDelete
-  + getModelCanEditState(Container $container) : CanEditStateInterface
-  + getJ5ModelCanEditState(Container $container) : J5ModelCanEditState
-  + getJ4ModelCanEditState(Container $container) : J4ModelCanEditState
-  + getJ3ModelCanEditState(Container $container) : J3ModelCanEditState
-  + getCheckInNow(Container $container) : CheckInNowInterface
-  + getJ5CheckInNow(Container $container) : J5CheckInNow
-  + getJ4CheckInNow(Container $container) : J4CheckInNow
-  + getJ3CheckInNow(Container $container) : J3CheckInNow
+class CheckInNow << (F,LightGreen) >> #RoyalBlue {
+  + getCall() : string
+  + getMethod(string $view, string $component) : string
 }
 
-note right of ArchitectureModel::register
-  Registers the service provider with a DI container.
-
-  since: 3.2.0
-  return: void
-end note
-
-note left of ArchitectureModel::getModelCanDelete
-  Get The Model CanDelete Class.
-
-  since: 3.2.0
-  return: CanDeleteInterface
-end note
-
-note right of ArchitectureModel::getJ5ModelCanDelete
-  Get The Model CanDelete Class.
-
-  since: 3.2.0
-  return: J5ModelCanDelete
-end note
-
-note left of ArchitectureModel::getJ4ModelCanDelete
-  Get The Model CanDelete Class.
-
-  since: 3.2.0
-  return: J4ModelCanDelete
-end note
-
-note right of ArchitectureModel::getJ3ModelCanDelete
-  Get The Model CanDelete Class.
-
-  since: 3.2.0
-  return: J3ModelCanDelete
-end note
-
-note left of ArchitectureModel::getModelCanEditState
-  Get The Model Can Edit State Class.
-
-  since: 3.2.0
-  return: CanEditStateInterface
-end note
-
-note right of ArchitectureModel::getJ5ModelCanEditState
-  Get The Model Can Edit State Class.
-
-  since: 3.2.0
-  return: J5ModelCanEditState
-end note
-
-note left of ArchitectureModel::getJ4ModelCanEditState
-  Get The Model Can Edit State Class.
-
-  since: 3.2.0
-  return: J4ModelCanEditState
-end note
-
-note right of ArchitectureModel::getJ3ModelCanEditState
-  Get The Model Can Edit State Class.
-
-  since: 3.2.0
-  return: J3ModelCanEditState
-end note
-
-note left of ArchitectureModel::getCheckInNow
-  Get The Model CanDelete Class.
+note right of CheckInNow::getCall
+  Get the generated call snippet that invokes the check-in method.
 
   since: 5.1.2
-  return: CheckInNowInterface
+  return: string
 end note
 
-note right of ArchitectureModel::getJ5CheckInNow
-  Get The Model CheckInNow Class.
+note right of CheckInNow::getMethod
+  Build the full `checkInNow()` method code for the given view/table.
 
   since: 5.1.2
-  return: J5CheckInNow
-end note
-
-note left of ArchitectureModel::getJ4CheckInNow
-  Get The Model CheckInNow Class.
-
-  since: 5.1.2
-  return: J4CheckInNow
-end note
-
-note right of ArchitectureModel::getJ3CheckInNow
-  Get The Model CheckInNow Class.
-
-  since: 5.1.2
-  return: J3CheckInNow
+  return: string
 end note
 
 @enduml
@@ -135,7 +46,7 @@ To add this specific Power to your project in JCB:
 
 > Simply use this SPK:
 ```
-Super---bbd36fbf_d905_47e8_8e67_9ea6ec734712---Power
+Super---6cbdf390_fe4f_49b6_88e1_e415c3a7ece6---Power
 ```
 > Remember to replace the `---` with `___` to activate this Power in your code.
 

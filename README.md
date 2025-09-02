@@ -623,6 +623,7 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 
   - **final class CanDelete** | [Details](src/34df20ec-67db-4e7e-be61-fb94d360c408) | [Raw](src/34df20ec-67db-4e7e-be61-fb94d360c408/code.power) | [Settings](src/34df20ec-67db-4e7e-be61-fb94d360c408/settings.json) | SPK: `Super---34df20ec_67db_4e7e_be61_fb94d360c408---Power`
   - **final class CanEditState** | [Details](src/318a98a3-bb6f-42cb-a000-352d4c848b51) | [Raw](src/318a98a3-bb6f-42cb-a000-352d4c848b51/code.power) | [Settings](src/318a98a3-bb6f-42cb-a000-352d4c848b51/settings.json) | SPK: `Super---318a98a3_bb6f_42cb_a000_352d4c848b51---Power`
+  - **final class CheckInNow** | [Details](src/d8d495cc-883c-4b94-bf50-8ac01a396487) | [Raw](src/d8d495cc-883c-4b94-bf50-8ac01a396487/code.power) | [Settings](src/d8d495cc-883c-4b94-bf50-8ac01a396487/settings.json) | SPK: `Super---d8d495cc_883c_4b94_bf50_8ac01a396487---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Module](#vdm-joomla-componentbuilder-compiler-architecture-joomlafive-module)
 
   - **final class Dispatcher** | [Details](src/5123306a-0cbf-408c-8fee-9be0339abe2d) | [Raw](src/5123306a-0cbf-408c-8fee-9be0339abe2d/code.power) | [Settings](src/5123306a-0cbf-408c-8fee-9be0339abe2d/settings.json) | SPK: `Super---5123306a_0cbf_408c_8fee_9be0339abe2d---Power`
@@ -648,6 +649,7 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 
   - **final class CanDelete** | [Details](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f) | [Raw](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/code.power) | [Settings](src/2a69a8ab-cea0-4c75-92d5-9495cb740e0f/settings.json) | SPK: `Super---2a69a8ab_cea0_4c75_92d5_9495cb740e0f---Power`
   - **final class CanEditState** | [Details](src/cb2a82a5-aa49-4d46-b765-9b3feb118208) | [Raw](src/cb2a82a5-aa49-4d46-b765-9b3feb118208/code.power) | [Settings](src/cb2a82a5-aa49-4d46-b765-9b3feb118208/settings.json) | SPK: `Super---cb2a82a5_aa49_4d46_b765_9b3feb118208---Power`
+  - **final class CheckInNow** | [Details](src/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6) | [Raw](src/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6/code.power) | [Settings](src/ca0ca89b-1d5a-42b4-8d1c-d7b6f4f5bcb6/settings.json) | SPK: `Super---ca0ca89b_1d5a_42b4_8d1c_d7b6f4f5bcb6---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Module](#vdm-joomla-componentbuilder-compiler-architecture-joomlafour-module)
 
   - **final class Dispatcher** | [Details](src/64fa9f18-74dc-4307-9ac7-ca18eb457c93) | [Raw](src/64fa9f18-74dc-4307-9ac7-ca18eb457c93/code.power) | [Settings](src/64fa9f18-74dc-4307-9ac7-ca18eb457c93/settings.json) | SPK: `Super---64fa9f18_74dc_4307_9ac7_ca18eb457c93---Power`
@@ -673,6 +675,7 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 
   - **final class CanDelete** | [Details](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd) | [Raw](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/code.power) | [Settings](src/23766738-d0a4-4d0a-8555-7e4c97c0cddd/settings.json) | SPK: `Super---23766738_d0a4_4d0a_8555_7e4c97c0cddd---Power`
   - **final class CanEditState** | [Details](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe) | [Raw](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe/code.power) | [Settings](src/bce9ac2b-9f46-413f-b046-9e8af3f7dfbe/settings.json) | SPK: `Super---bce9ac2b_9f46_413f_b046_9e8af3f7dfbe---Power`
+  - **final class CheckInNow** | [Details](src/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6) | [Raw](src/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6/code.power) | [Settings](src/6cbdf390-fe4f-49b6-88e1-e415c3a7ece6/settings.json) | SPK: `Super---6cbdf390_fe4f_49b6_88e1_e415c3a7ece6---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Module](#vdm-joomla-componentbuilder-compiler-architecture-joomlathree-module)
 
   - **final class Dispatcher** | [Details](src/5f2edca9-9380-4c7b-9db9-4d8d80d08876) | [Raw](src/5f2edca9-9380-4c7b-9db9-4d8d80d08876/code.power) | [Settings](src/5f2edca9-9380-4c7b-9db9-4d8d80d08876/settings.json) | SPK: `Super---5f2edca9_9380_4c7b_9db9_4d8d80d08876---Power`
@@ -698,6 +701,7 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 
   - **interface CanDeleteInterface** | [Details](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91) | [Raw](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/code.power) | [Settings](src/e00a7d1d-6d80-41c5-bf13-32d41bc5bf91/settings.json) | SPK: `Super---e00a7d1d_6d80_41c5_bf13_32d41bc5bf91---Power`
   - **interface CanEditStateInterface** | [Details](src/600515b1-493f-4448-96fe-018e54e087c8) | [Raw](src/600515b1-493f-4448-96fe-018e54e087c8/code.power) | [Settings](src/600515b1-493f-4448-96fe-018e54e087c8/settings.json) | SPK: `Super---600515b1_493f_4448_96fe_018e54e087c8---Power`
+  - **interface CheckInNowInterface** | [Details](src/b079af3f-624c-43f6-91b7-cc93526f5186) | [Raw](src/b079af3f-624c-43f6-91b7-cc93526f5186/code.power) | [Settings](src/b079af3f-624c-43f6-91b7-cc93526f5186/settings.json) | SPK: `Super---b079af3f_624c_43f6_91b7_cc93526f5186---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Module](#vdm-joomla-componentbuilder-compiler-interfaces-architecture-module)
 
   - **interface DispatcherInterface** | [Details](src/cb905c5e-0295-4ff6-9576-90e073bf36b3) | [Raw](src/cb905c5e-0295-4ff6-9576-90e073bf36b3/code.power) | [Settings](src/cb905c5e-0295-4ff6-9576-90e073bf36b3/settings.json) | SPK: `Super---cb905c5e_0295_4ff6_9576_90e073bf36b3---Power`
