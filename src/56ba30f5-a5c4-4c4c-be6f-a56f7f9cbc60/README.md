@@ -9,14 +9,17 @@ class ArchitectureController  #Gold {
   # $targetVersion
   + register(Container $container) : void
   + getAllowAdd(Container $container) : AllowAddInterface
+  + getJ6ControllerAllowAdd(Container $container) : J6ControllerAllowAdd
   + getJ5ControllerAllowAdd(Container $container) : J5ControllerAllowAdd
   + getJ4ControllerAllowAdd(Container $container) : J4ControllerAllowAdd
   + getJ3ControllerAllowAdd(Container $container) : J3ControllerAllowAdd
   + getAllowEdit(Container $container) : AllowEditInterface
+  + getJ6ControllerAllowEdit(Container $container) : J6ControllerAllowEdit
   + getJ5ControllerAllowEdit(Container $container) : J5ControllerAllowEdit
   + getJ4ControllerAllowEdit(Container $container) : J4ControllerAllowEdit
   + getJ3ControllerAllowEdit(Container $container) : J3ControllerAllowEdit
   + getAllowEditViews(Container $container) : AllowEditViewsInterface
+  + getJ6ControllerAllowEditViews(Container $container) : J6ControllerAllowEditViews
   + getJ5ControllerAllowEditViews(Container $container) : J5ControllerAllowEditViews
   + getJ4ControllerAllowEditViews(Container $container) : J4ControllerAllowEditViews
   + getJ3ControllerAllowEditViews(Container $container) : J3ControllerAllowEditViews
@@ -36,32 +39,46 @@ note left of ArchitectureController::getAllowAdd
   return: AllowAddInterface
 end note
 
-note right of ArchitectureController::getJ5ControllerAllowAdd
+note right of ArchitectureController::getJ6ControllerAllowAdd
+  Get The AllowAdd Class.
+
+  since: 5.1.2
+  return: J6ControllerAllowAdd
+end note
+
+note left of ArchitectureController::getJ5ControllerAllowAdd
   Get The AllowAdd Class.
 
   since: 3.2.0
   return: J5ControllerAllowAdd
 end note
 
-note left of ArchitectureController::getJ4ControllerAllowAdd
+note right of ArchitectureController::getJ4ControllerAllowAdd
   Get The AllowAdd Class.
 
   since: 3.2.0
   return: J4ControllerAllowAdd
 end note
 
-note right of ArchitectureController::getJ3ControllerAllowAdd
+note left of ArchitectureController::getJ3ControllerAllowAdd
   Get The AllowAdd Class.
 
   since: 3.2.0
   return: J3ControllerAllowAdd
 end note
 
-note left of ArchitectureController::getAllowEdit
+note right of ArchitectureController::getAllowEdit
   Get The AllowEditInterface Class.
 
   since: 3.2.0
   return: AllowEditInterface
+end note
+
+note left of ArchitectureController::getJ6ControllerAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.2
+  return: J6ControllerAllowEdit
 end note
 
 note right of ArchitectureController::getJ5ControllerAllowEdit
@@ -92,21 +109,28 @@ note left of ArchitectureController::getAllowEditViews
   return: AllowEditViewsInterface
 end note
 
-note right of ArchitectureController::getJ5ControllerAllowEditViews
+note right of ArchitectureController::getJ6ControllerAllowEditViews
+  Get The AllowEditViews Class.
+
+  since: 5.1.2
+  return: J6ControllerAllowEditViews
+end note
+
+note left of ArchitectureController::getJ5ControllerAllowEditViews
   Get The AllowEditViews Class.
 
   since: 5.0.2
   return: J5ControllerAllowEditViews
 end note
 
-note left of ArchitectureController::getJ4ControllerAllowEditViews
+note right of ArchitectureController::getJ4ControllerAllowEditViews
   Get The AllowEditViews Class.
 
   since: 5.0.2
   return: J4ControllerAllowEditViews
 end note
 
-note right of ArchitectureController::getJ3ControllerAllowEditViews
+note left of ArchitectureController::getJ3ControllerAllowEditViews
   Get The AllowEditViews Class.
 
   since: 5.0.2

@@ -24,6 +24,10 @@
             "use": "174f5c9c-5e03-4261-94ca-279ca76c710d",
             "as": "J5PluginData"
         },
+        "use_selection12": {
+            "use": "9759ea59-1f59-4e1e-bef9-6efed17b930f",
+            "as": "J6PluginData"
+        },
         "use_selection3": {
             "use": "8cc85656-a925-4a46-a49b-83c72167fd6a",
             "as": "PluginData"
@@ -40,6 +44,10 @@
             "use": "d05c22be-9641-47fb-8a7b-063c43e7f1bf",
             "as": "J5Structure"
         },
+        "use_selection13": {
+            "use": "661ccda8-c97d-415f-aa96-910c0b1a1530",
+            "as": "J6Structure"
+        },
         "use_selection7": {
             "use": "ef66b17c-ffae-414a-9067-20a63ba2bec5",
             "as": "Structure"
@@ -55,6 +63,10 @@
         "use_selection10": {
             "use": "7f75b300-534c-4f63-a368-6f4abc4cea58",
             "as": "J5Infusion"
+        },
+        "use_selection14": {
+            "use": "9e6f14ae-5e4f-4533-9b17-796f1f03d2e5",
+            "as": "J6Infusion"
         },
         "use_selection11": {
             "use": "40e17114-2193-4a61-9233-47b5f4193665",

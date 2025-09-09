@@ -18,14 +18,17 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\ModuleDataInterface as Data;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree\Data as J3Data;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFour\Data as J4Data;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFive\Data as J5Data;
+use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaSix\Data as J6Data;
 use VDM\Joomla\Componentbuilder\Interfaces\Module\StructureInterface as Structure;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree\Structure as J3Structure;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFour\Structure as J4Structure;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFive\Structure as J5Structure;
+use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaSix\Structure as J6Structure;
 use VDM\Joomla\Componentbuilder\Interfaces\Module\InfusionInterface as Infusion;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree\Infusion as J3Infusion;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFour\Infusion as J4Infusion;
 use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaFive\Infusion as J5Infusion;
+use VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaSix\Infusion as J6Infusion;
 
 
 /**
@@ -65,6 +68,9 @@ class Joomlamodule implements ServiceProviderInterface
 		$container->alias(J5Data::class, 'Joomlamodule.J5.Data')
 			->share('Joomlamodule.J5.Data', [$this, 'getJ5Data'], true);
 
+		$container->alias(J6Data::class, 'Joomlamodule.J6.Data')
+			->share('Joomlamodule.J6.Data', [$this, 'getJ6Data'], true);
+
 		$container->alias(Structure::class, 'Joomlamodule.Structure')
 			->share('Joomlamodule.Structure', [$this, 'getStructure'], true);
 
@@ -77,6 +83,9 @@ class Joomlamodule implements ServiceProviderInterface
 		$container->alias(J5Structure::class, 'Joomlamodule.J5.Structure')
 			->share('Joomlamodule.J5.Structure', [$this, 'getJ5Structure'], true);
 
+		$container->alias(J6Structure::class, 'Joomlamodule.J6.Structure')
+			->share('Joomlamodule.J6.Structure', [$this, 'getJ6Structure'], true);
+
 		$container->alias(Infusion::class, 'Joomlamodule.Infusion')
 			->share('Joomlamodule.Infusion', [$this, 'getInfusion'], true);
 
@@ -88,6 +97,9 @@ class Joomlamodule implements ServiceProviderInterface
 
 		$container->alias(J5Infusion::class, 'Joomlamodule.J5.Infusion')
 			->share('Joomlamodule.J5.Infusion', [$this, 'getJ5Infusion'], true);
+
+		$container->alias(J6Infusion::class, 'Joomlamodule.J6.Infusion')
+			->share('Joomlamodule.J6.Infusion', [$this, 'getJ6Infusion'], true);
 	}
 
 	/**
@@ -171,6 +183,32 @@ class Joomlamodule implements ServiceProviderInterface
 	public function getJ5Data(Container $container): J5Data
 	{
 		return new J5Data(
+			$container->get('Config'),
+			$container->get('Customcode'),
+			$container->get('Customcode.Gui'),
+			$container->get('Placeholder'),
+			$container->get('Language'),
+			$container->get('Field'),
+			$container->get('Field.Name'),
+			$container->get('Model.Filesfolders'),
+			$container->get('Model.Libraries'),
+			$container->get('Dynamicget.Data'),
+			$container->get('Templatelayout.Data'),
+			$container->get('Joomla.Database')
+		);
+	}
+
+	/**
+	 * Get The Data Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Data
+	 * @since   5.1.2
+	 */
+	public function getJ6Data(Container $container): J6Data
+	{
+		return new J6Data(
 			$container->get('Config'),
 			$container->get('Customcode'),
 			$container->get('Customcode.Gui'),
@@ -282,6 +320,32 @@ class Joomlamodule implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get The Structure Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Structure
+	 * @since   5.1.2
+	 */
+	public function getJ6Structure(Container $container): J6Structure
+	{
+		return new J6Structure(
+			$container->get('Joomlamodule.Data'),
+			$container->get('Component'),
+			$container->get('Config'),
+			$container->get('Registry'),
+			$container->get('Customcode.Dispenser'),
+			$container->get('Event'),
+			$container->get('Utilities.Counter'),
+			$container->get('Utilities.Folder'),
+			$container->get('Utilities.File'),
+			$container->get('Utilities.Files'),
+			$container->get('Compiler.Builder.Template.Data'),
+			$container->get('Placeholder')
+		);
+	}
+
+	/**
 	 * Get The InfusionInterface Class.
 	 *
 	 * @param   Container  $container  The DI container.
@@ -363,6 +427,33 @@ class Joomlamodule implements ServiceProviderInterface
 	public function getJ5Infusion(Container $container): J5Infusion
 	{
 		return new J5Infusion(
+			$container->get('Config'),
+			$container->get('Architecture.Module.Provider'),
+			$container->get('Architecture.Module.Dispatcher'),
+			$container->get('Architecture.Module.Template'),
+			$container->get('Architecture.Module.Helper'),
+			$container->get('Architecture.Module.MainXML'),
+			$container->get('Joomlamodule.Data'),
+			$container->get('Header'),
+			$container->get('Event'),
+			$container->get('Extension.InstallScript'),
+			$container->get('Compiler.Builder.Content.Multi'),
+			$container->get('Compiler.Creator.Fieldset.Extension'),
+			$container->get('Dynamicget.Methods')
+		);
+	}
+
+	/**
+	 * Get The Infusion Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Infusion
+	 * @since   5.1.2
+	 */
+	public function getJ6Infusion(Container $container): J6Infusion
+	{
+		return new J6Infusion(
 			$container->get('Config'),
 			$container->get('Architecture.Module.Provider'),
 			$container->get('Architecture.Module.Dispatcher'),

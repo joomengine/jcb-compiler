@@ -16,6 +16,10 @@
             "use": "5247cc17-b620-4cf3-9a1e-d0589b36ab35",
             "as": "default"
         },
+        "use_selection4": {
+            "use": "3a324dbf-a7c8-4a1f-a646-a244a76ffb84",
+            "as": "J6CreateUser"
+        },
         "use_selection1": {
             "use": "0b02ece5-4968-4e65-bf71-5999c4d8c4aa",
             "as": "J5CreateUser"

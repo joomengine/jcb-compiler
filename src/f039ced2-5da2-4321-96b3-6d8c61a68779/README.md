@@ -9,26 +9,32 @@ class ArchitectureModule  #Gold {
   # int $targetVersion
   + register(Container $container) : void
   + getLibrary(Container $container) : Library
+  + getJ6Library(Container $container) : J6Library
   + getJ5Library(Container $container) : J5Library
   + getJ4Library(Container $container) : J4Library
   + getJ3Library(Container $container) : J3Library
   + getTemplate(Container $container) : Template
+  + getJ6Template(Container $container) : J6Template
   + getJ5Template(Container $container) : J5Template
   + getJ4Template(Container $container) : J4Template
   + getJ3Template(Container $container) : J3Template
   + getHelper(Container $container) : Helper
+  + getJ6Helper(Container $container) : J6Helper
   + getJ5Helper(Container $container) : J5Helper
   + getJ4Helper(Container $container) : J4Helper
   + getJ3Helper(Container $container) : J3Helper
   + getDispatcher(Container $container) : Dispatcher
+  + getJ6Dispatcher(Container $container) : J6Dispatcher
   + getJ5Dispatcher(Container $container) : J5Dispatcher
   + getJ4Dispatcher(Container $container) : J4Dispatcher
   + getJ3Dispatcher(Container $container) : J3Dispatcher
   + getProvider(Container $container) : Provider
+  + getJ6Provider(Container $container) : J6Provider
   + getJ5Provider(Container $container) : J5Provider
   + getJ4Provider(Container $container) : J4Provider
   + getJ3Provider(Container $container) : J3Provider
   + getMainXML(Container $container) : MainXML
+  + getJ6MainXML(Container $container) : J6MainXML
   + getJ5MainXML(Container $container) : J5MainXML
   + getJ4MainXML(Container $container) : J4MainXML
   + getJ3MainXML(Container $container) : J3MainXML
@@ -48,32 +54,46 @@ note left of ArchitectureModule::getLibrary
   return: Library
 end note
 
-note right of ArchitectureModule::getJ5Library
+note right of ArchitectureModule::getJ6Library
+  Get The Library Class.
+
+  since: 5.1.2
+  return: J6Library
+end note
+
+note left of ArchitectureModule::getJ5Library
   Get The Library Class.
 
   since: 5.1.2
   return: J5Library
 end note
 
-note left of ArchitectureModule::getJ4Library
+note right of ArchitectureModule::getJ4Library
   Get The Library Class.
 
   since: 5.1.2
   return: J4Library
 end note
 
-note right of ArchitectureModule::getJ3Library
+note left of ArchitectureModule::getJ3Library
   Get The Library Class.
 
   since: 5.1.2
   return: J3Library
 end note
 
-note left of ArchitectureModule::getTemplate
+note right of ArchitectureModule::getTemplate
   Get The Template Class.
 
   since: 5.1.2
   return: Template
+end note
+
+note left of ArchitectureModule::getJ6Template
+  Get The Template Class.
+
+  since: 5.1.2
+  return: J6Template
 end note
 
 note right of ArchitectureModule::getJ5Template
@@ -104,32 +124,46 @@ note left of ArchitectureModule::getHelper
   return: Helper
 end note
 
-note right of ArchitectureModule::getJ5Helper
+note right of ArchitectureModule::getJ6Helper
+  Get The Helper Class.
+
+  since: 5.1.2
+  return: J6Helper
+end note
+
+note left of ArchitectureModule::getJ5Helper
   Get The Helper Class.
 
   since: 5.1.2
   return: J5Helper
 end note
 
-note left of ArchitectureModule::getJ4Helper
+note right of ArchitectureModule::getJ4Helper
   Get The Helper Class.
 
   since: 5.1.2
   return: J4Helper
 end note
 
-note right of ArchitectureModule::getJ3Helper
+note left of ArchitectureModule::getJ3Helper
   Get The Helper Class.
 
   since: 5.1.2
   return: J3Helper
 end note
 
-note left of ArchitectureModule::getDispatcher
+note right of ArchitectureModule::getDispatcher
   Get The Dispatcher Class.
 
   since: 5.1.2
   return: Dispatcher
+end note
+
+note left of ArchitectureModule::getJ6Dispatcher
+  Get The Dispatcher Class.
+
+  since: 5.1.2
+  return: J6Dispatcher
 end note
 
 note right of ArchitectureModule::getJ5Dispatcher
@@ -160,32 +194,46 @@ note left of ArchitectureModule::getProvider
   return: Provider
 end note
 
-note right of ArchitectureModule::getJ5Provider
+note right of ArchitectureModule::getJ6Provider
+  Get The Provider Class.
+
+  since: 5.1.2
+  return: J6Provider
+end note
+
+note left of ArchitectureModule::getJ5Provider
   Get The Provider Class.
 
   since: 5.1.2
   return: J5Provider
 end note
 
-note left of ArchitectureModule::getJ4Provider
+note right of ArchitectureModule::getJ4Provider
   Get The Provider Class.
 
   since: 5.1.2
   return: J4Provider
 end note
 
-note right of ArchitectureModule::getJ3Provider
+note left of ArchitectureModule::getJ3Provider
   Get The Provider Class.
 
   since: 5.1.2
   return: J3Provider
 end note
 
-note left of ArchitectureModule::getMainXML
+note right of ArchitectureModule::getMainXML
   Get The MainXML Class.
 
   since: 5.1.2
   return: MainXML
+end note
+
+note left of ArchitectureModule::getJ6MainXML
+  Get The MainXML Class.
+
+  since: 5.1.2
+  return: J6MainXML
 end note
 
 note right of ArchitectureModule::getJ5MainXML

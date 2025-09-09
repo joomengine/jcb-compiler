@@ -71,7 +71,7 @@ final class CheckInNow implements CheckInNowInterface
 
 		$checkin .= PHP_EOL . Indent::_(3) . "\$query->where(\$db->quoteName('checked_out') . ' != 0');";
 
-		Indent::_(3) . "//" . Line::_(__Line__, __Class__) . " Query only to see if we have a rows";
+		$checkin .= PHP_EOL . Indent::_(3) . "//" . Line::_(__Line__, __Class__) . " Query only to see if we have a rows";
 		$checkin .= PHP_EOL . Indent::_(3) . "\$db->setQuery(\$query, 0, 1);";
 		$checkin .= PHP_EOL . Indent::_(3) . "\$db->execute();";
 		$checkin .= PHP_EOL . Indent::_(3) . "if (\$db->getNumRows())";

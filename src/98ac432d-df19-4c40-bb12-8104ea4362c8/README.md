@@ -9,14 +9,17 @@ class ArchitecturePlugin  #Gold {
   # int $targetVersion
   + register(Container $container) : void
   + getExtension(Container $container) : Extension
+  + getJ6Extension(Container $container) : J6Extension
   + getJ5Extension(Container $container) : J5Extension
   + getJ4Extension(Container $container) : J4Extension
   + getJ3Extension(Container $container) : J3Extension
   + getProvider(Container $container) : Provider
+  + getJ6Provider(Container $container) : J6Provider
   + getJ5Provider(Container $container) : J5Provider
   + getJ4Provider(Container $container) : J4Provider
   + getJ3Provider(Container $container) : J3Provider
   + getMainXML(Container $container) : MainXML
+  + getJ6MainXML(Container $container) : J6MainXML
   + getJ5MainXML(Container $container) : J5MainXML
   + getJ4MainXML(Container $container) : J4MainXML
   + getJ3MainXML(Container $container) : J3MainXML
@@ -36,32 +39,46 @@ note left of ArchitecturePlugin::getExtension
   return: Extension
 end note
 
-note right of ArchitecturePlugin::getJ5Extension
+note right of ArchitecturePlugin::getJ6Extension
+  Get The Extension Class.
+
+  since: 5.1.2
+  return: J6Extension
+end note
+
+note left of ArchitecturePlugin::getJ5Extension
   Get The Extension Class.
 
   since: 5.0.2
   return: J5Extension
 end note
 
-note left of ArchitecturePlugin::getJ4Extension
+note right of ArchitecturePlugin::getJ4Extension
   Get The Extension Class.
 
   since: 5.0.2
   return: J4Extension
 end note
 
-note right of ArchitecturePlugin::getJ3Extension
+note left of ArchitecturePlugin::getJ3Extension
   Get The Extension Class.
 
   since: 5.0.2
   return: J3Extension
 end note
 
-note left of ArchitecturePlugin::getProvider
+note right of ArchitecturePlugin::getProvider
   Get The ProviderInterface Class.
 
   since: 5.0.2
   return: Provider
+end note
+
+note left of ArchitecturePlugin::getJ6Provider
+  Get The Provider Class.
+
+  since: 5.1.2
+  return: J6Provider
 end note
 
 note right of ArchitecturePlugin::getJ5Provider
@@ -92,21 +109,28 @@ note left of ArchitecturePlugin::getMainXML
   return: MainXML
 end note
 
-note right of ArchitecturePlugin::getJ5MainXML
+note right of ArchitecturePlugin::getJ6MainXML
+  Get The MainXML Class.
+
+  since: 5.1.2
+  return: J6MainXML
+end note
+
+note left of ArchitecturePlugin::getJ5MainXML
   Get The MainXML Class.
 
   since: 5.0.2
   return: J5MainXML
 end note
 
-note left of ArchitecturePlugin::getJ4MainXML
+note right of ArchitecturePlugin::getJ4MainXML
   Get The MainXML Class.
 
   since: 5.0.2
   return: J4MainXML
 end note
 
-note right of ArchitecturePlugin::getJ3MainXML
+note left of ArchitecturePlugin::getJ3MainXML
   Get The MainXML Class.
 
   since: 5.0.2

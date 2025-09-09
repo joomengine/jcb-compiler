@@ -16,6 +16,10 @@
             "use": "62d1453b-a390-4589-91de-0a0551a9fea5",
             "as": "Library"
         },
+        "use_selection24": {
+            "use": "8ef9aec6-c83d-4f73-9155-6f091aff5149",
+            "as": "J6Library"
+        },
         "use_selection1": {
             "use": "c5922614-e607-4a04-b3fe-04a0566c84fb",
             "as": "J5Library"
@@ -32,6 +36,10 @@
             "use": "fe20ad8c-9b2d-40e2-8bc0-aa648d027464",
             "as": "Template"
         },
+        "use_selection25": {
+            "use": "370b87a8-0086-4ae5-9da3-0e80ab697800",
+            "as": "J6Template"
+        },
         "use_selection5": {
             "use": "838731a8-9ad1-4261-9c4f-af51a0dcc3e7",
             "as": "J5Template"
@@ -44,67 +52,83 @@
             "use": "93ae7f99-b695-4584-a162-e0094deac927",
             "as": "J3Template"
         },
-        "use_selection24": {
+        "use_selection8": {
             "use": "445355be-f34a-453e-aca8-8af4246ced6f",
             "as": "Helper"
         },
-        "use_selection23": {
+        "use_selection26": {
+            "use": "a29cd3b2-f11c-4fc5-866b-852872371b78",
+            "as": "J6Helper"
+        },
+        "use_selection9": {
             "use": "f0e68fe0-e6fa-4d5a-a710-794dd91957a2",
             "as": "J5Helper"
         },
-        "use_selection22": {
+        "use_selection10": {
             "use": "de4d3375-9b36-427e-9546-0eb2e875507d",
             "as": "J4Helper"
         },
-        "use_selection8": {
+        "use_selection11": {
             "use": "940be46a-3891-4e9b-adf1-31a3fd8ab230",
             "as": "J3Helper"
         },
-        "use_selection9": {
+        "use_selection12": {
             "use": "cb905c5e-0295-4ff6-9576-90e073bf36b3",
             "as": "Dispatcher"
         },
-        "use_selection10": {
+        "use_selection27": {
+            "use": "aa586424-abd1-4fc9-8013-41fb8c5b473b",
+            "as": "J6Dispatcher"
+        },
+        "use_selection13": {
             "use": "5123306a-0cbf-408c-8fee-9be0339abe2d",
             "as": "J5Dispatcher"
         },
-        "use_selection11": {
+        "use_selection14": {
             "use": "64fa9f18-74dc-4307-9ac7-ca18eb457c93",
             "as": "J4Dispatcher"
         },
-        "use_selection12": {
+        "use_selection15": {
             "use": "5f2edca9-9380-4c7b-9db9-4d8d80d08876",
             "as": "J3Dispatcher"
         },
-        "use_selection13": {
+        "use_selection16": {
             "use": "d7795edd-9256-4993-bbdd-848724814e08",
             "as": "Provider"
         },
-        "use_selection14": {
+        "use_selection28": {
+            "use": "e7c34873-50f8-42ab-8add-b22b6502682a",
+            "as": "J6Provider"
+        },
+        "use_selection17": {
             "use": "c111a19b-e5d3-4253-82d3-fe4fcdf86ddb",
             "as": "J5Provider"
         },
-        "use_selection15": {
+        "use_selection18": {
             "use": "2967fccf-d2f8-409a-ae55-41c93ac13c07",
             "as": "J4Provider"
         },
-        "use_selection16": {
+        "use_selection19": {
             "use": "69c2a90b-a0d5-4c0f-b3af-4db8041db9d4",
             "as": "J3Provider"
         },
-        "use_selection17": {
+        "use_selection20": {
             "use": "1a820de9-b890-4958-9ee8-5a88ad207573",
             "as": "MainXML"
         },
-        "use_selection18": {
+        "use_selection29": {
+            "use": "6f070429-23ed-4913-ab70-b55e59635f80",
+            "as": "J6MainXML"
+        },
+        "use_selection21": {
             "use": "ff1d177c-6c41-4033-b6ba-460b444ff67a",
             "as": "J5MainXML"
         },
-        "use_selection19": {
+        "use_selection22": {
             "use": "9f746220-4d0f-4e1e-a910-28f2f428ae65",
             "as": "J4MainXML"
         },
-        "use_selection20": {
+        "use_selection23": {
             "use": "39f0faf8-1a32-4c3c-ba29-08ea1702b2fb",
             "as": "J3MainXML"
         }

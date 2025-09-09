@@ -27,6 +27,10 @@
         "use_selection3": {
             "use": "8ab6fe75-ba5a-4316-9ef8-1eccceec813f",
             "as": "J5History"
+        },
+        "use_selection4": {
+            "use": "0c8f0cc3-25f7-45be-8db9-a1a3b9ae96c3",
+            "as": "J6History"
         }
     },
     "extendsinterfaces": null,

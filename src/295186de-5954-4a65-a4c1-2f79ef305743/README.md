@@ -12,14 +12,17 @@ class Joomlamodule  #Gold {
   + getJ3Data(Container $container) : J3Data
   + getJ4Data(Container $container) : J4Data
   + getJ5Data(Container $container) : J5Data
+  + getJ6Data(Container $container) : J6Data
   + getStructure(Container $container) : Structure
   + getJ3Structure(Container $container) : J3Structure
   + getJ4Structure(Container $container) : J4Structure
   + getJ5Structure(Container $container) : J5Structure
+  + getJ6Structure(Container $container) : J6Structure
   + getInfusion(Container $container) : Infusion
   + getJ3Infusion(Container $container) : J3Infusion
   + getJ4Infusion(Container $container) : J4Infusion
   + getJ5Infusion(Container $container) : J5Infusion
+  + getJ6Infusion(Container $container) : J6Infusion
 }
 
 note right of Joomlamodule::register
@@ -57,32 +60,46 @@ note right of Joomlamodule::getJ5Data
   return: J5Data
 end note
 
-note left of Joomlamodule::getStructure
+note left of Joomlamodule::getJ6Data
+  Get The Data Class.
+
+  since: 5.1.2
+  return: J6Data
+end note
+
+note right of Joomlamodule::getStructure
   Get The StructureInterface Class.
 
   since: 5.1.2
   return: Structure
 end note
 
-note right of Joomlamodule::getJ3Structure
+note left of Joomlamodule::getJ3Structure
   Get The Structure Class.
 
   since: 5.1.2
   return: J3Structure
 end note
 
-note left of Joomlamodule::getJ4Structure
+note right of Joomlamodule::getJ4Structure
   Get The Structure Class.
 
   since: 5.1.2
   return: J4Structure
 end note
 
-note right of Joomlamodule::getJ5Structure
+note left of Joomlamodule::getJ5Structure
   Get The Structure Class.
 
   since: 5.1.2
   return: J5Structure
+end note
+
+note right of Joomlamodule::getJ6Structure
+  Get The Structure Class.
+
+  since: 5.1.2
+  return: J6Structure
 end note
 
 note left of Joomlamodule::getInfusion
@@ -111,6 +128,13 @@ note right of Joomlamodule::getJ5Infusion
 
   since: 5.1.2
   return: J5Infusion
+end note
+
+note left of Joomlamodule::getJ6Infusion
+  Get The Infusion Class.
+
+  since: 5.1.2
+  return: J6Infusion
 end note
 
 @enduml

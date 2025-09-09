@@ -28,6 +28,10 @@
             "use": "28b0fb92-fb37-4064-ad56-21535f4feb99",
             "as": "J5Data"
         },
+        "use_selection12": {
+            "use": "9dfdd640-dfa7-4b1c-bba5-3d3d0f50596f",
+            "as": "J6Data"
+        },
         "use_selection4": {
             "use": "564399e2-a782-4956-b6c6-9ae78a5aa26e",
             "as": "Structure"
@@ -44,6 +48,10 @@
             "use": "2e0cec59-e34c-4382-a40c-dce1a5b7885f",
             "as": "J5Structure"
         },
+        "use_selection13": {
+            "use": "d195ca0e-e995-4645-9434-d92d2f3e939c",
+            "as": "J6Structure"
+        },
         "use_selection8": {
             "use": "8669ad19-7749-46c0-9397-f6b4a39bc9e2",
             "as": "Infusion"
@@ -59,6 +67,10 @@
         "use_selection11": {
             "use": "6260818a-6e06-4b8d-b920-b4c0c8c58262",
             "as": "J5Infusion"
+        },
+        "use_selection14": {
+            "use": "ec69ad13-c081-4eff-bd03-405c09c77f2e",
+            "as": "J6Infusion"
         }
     },
     "extendsinterfaces": null,

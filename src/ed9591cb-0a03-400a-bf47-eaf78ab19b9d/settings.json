@@ -27,6 +27,10 @@
         "use_selection3": {
             "use": "73183d13-9b2e-4879-b05a-52298d5b31f7",
             "as": "J5InstallScript"
+        },
+        "use_selection4": {
+            "use": "7f4fc1c2-ebcc-4979-8712-209c9736a96f",
+            "as": "J6InstallScript"
         }
     },
     "extendsinterfaces": null,

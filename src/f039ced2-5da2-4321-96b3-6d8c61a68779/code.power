@@ -19,6 +19,9 @@
 		$container->alias(Library::class, 'Architecture.Module.Library')
 			->share('Architecture.Module.Library', [$this, 'getLibrary'], true);
 
+		$container->alias(J6Library::class, 'Architecture.Module.J6.Library')
+			->share('Architecture.Module.J6.Library', [$this, 'getJ6Library'], true);
+
 		$container->alias(J5Library::class, 'Architecture.Module.J5.Library')
 			->share('Architecture.Module.J5.Library', [$this, 'getJ5Library'], true);
 
@@ -30,6 +33,9 @@
 
 		$container->alias(Template::class, 'Architecture.Module.Template')
 			->share('Architecture.Module.Template', [$this, 'getTemplate'], true);
+
+		$container->alias(J6Template::class, 'Architecture.Module.J6.Template')
+			->share('Architecture.Module.J6.Template', [$this, 'getJ6Template'], true);
 
 		$container->alias(J5Template::class, 'Architecture.Module.J5.Template')
 			->share('Architecture.Module.J5.Template', [$this, 'getJ5Template'], true);
@@ -43,6 +49,9 @@
 		$container->alias(Helper::class, 'Architecture.Module.Helper')
 			->share('Architecture.Module.Helper', [$this, 'getHelper'], true);
 
+		$container->alias(J6Helper::class, 'Architecture.Module.J6.Helper')
+			->share('Architecture.Module.J6.Helper', [$this, 'getJ6Helper'], true);
+
 		$container->alias(J5Helper::class, 'Architecture.Module.J5.Helper')
 			->share('Architecture.Module.J5.Helper', [$this, 'getJ5Helper'], true);
 
@@ -54,6 +63,9 @@
 
 		$container->alias(Dispatcher::class, 'Architecture.Module.Dispatcher')
 			->share('Architecture.Module.Dispatcher', [$this, 'getDispatcher'], true);
+
+		$container->alias(J6Dispatcher::class, 'Architecture.Module.J6.Dispatcher')
+			->share('Architecture.Module.J6.Dispatcher', [$this, 'getJ6Dispatcher'], true);
 
 		$container->alias(J5Dispatcher::class, 'Architecture.Module.J5.Dispatcher')
 			->share('Architecture.Module.J5.Dispatcher', [$this, 'getJ5Dispatcher'], true);
@@ -67,6 +79,9 @@
 		$container->alias(Provider::class, 'Architecture.Module.Provider')
 			->share('Architecture.Module.Provider', [$this, 'getProvider'], true);
 
+		$container->alias(J6Provider::class, 'Architecture.Module.J6.Provider')
+			->share('Architecture.Module.J6.Provider', [$this, 'getJ6Provider'], true);
+
 		$container->alias(J5Provider::class, 'Architecture.Module.J5.Provider')
 			->share('Architecture.Module.J5.Provider', [$this, 'getJ5Provider'], true);
 
@@ -78,6 +93,9 @@
 
 		$container->alias(MainXML::class, 'Architecture.Module.MainXML')
 			->share('Architecture.Module.MainXML', [$this, 'getMainXML'], true);
+
+		$container->alias(J6MainXML::class, 'Architecture.Module.J6.MainXML')
+			->share('Architecture.Module.J6.MainXML', [$this, 'getJ6MainXML'], true);
 
 		$container->alias(J5MainXML::class, 'Architecture.Module.J5.MainXML')
 			->share('Architecture.Module.J5.MainXML', [$this, 'getJ5MainXML'], true);
@@ -105,6 +123,25 @@
 		}
 
 		return $container->get('Architecture.Module.J' . $this->targetVersion . '.Library');
+	}
+
+	/**
+	 * Get The Library Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Library
+	 * @since   5.1.2
+	 */
+	public function getJ6Library(Container $container): J6Library
+	{
+		return new J6Library(
+			$container->get('Compiler.Builder.Library.Manager'),
+			$container->get('Library.Document'),
+			$container->get('Registry'),
+			$container->get('Placeholder'),
+			$container->get('Compiler.Builder.Content.One')
+		);
 	}
 
 	/**
@@ -180,6 +217,27 @@
 		}
 
 		return $container->get('Architecture.Module.J' . $this->targetVersion . '.Template');
+	}
+
+	/**
+	 * Get The Template Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Template
+	 * @since   5.1.2
+	 */
+	public function getJ6Template(Container $container): J6Template
+	{
+		return new J6Template(
+			$container->get('Config'),
+			$container->get('Header'),
+			$container->get('Customcode.Dispenser'),
+			$container->get('Compiler.Builder.Template.Data'),
+			$container->get('Placeholder'),
+			$container->get('Compiler.Builder.Content.One'),
+			$container->get('Compiler.Builder.Content.Multi')
+		);
 	}
 
 	/**
@@ -267,6 +325,22 @@
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
+	 * @return  J6Helper
+	 * @since   5.1.2
+	 */
+	public function getJ6Helper(Container $container): J6Helper
+	{
+		return new J6Helper(
+			$container->get('Placeholder'),
+			$container->get('Compiler.Builder.Content.One')
+		);
+	}
+
+	/**
+	 * Get The Helper Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
 	 * @return  J5Helper
 	 * @since   5.1.2
 	 */
@@ -326,6 +400,23 @@
 		}
 
 		return $container->get('Architecture.Module.J' . $this->targetVersion . '.Dispatcher');
+	}
+
+	/**
+	 * Get The Dispatcher Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Dispatcher
+	 * @since   5.1.2
+	 */
+	public function getJ6Dispatcher(Container $container): J6Dispatcher
+	{
+		return new J6Dispatcher(
+			$container->get('Placeholder'),
+			$container->get('Compiler.Builder.Content.One'),
+			$container->get('Architecture.Module.Library')
+		);
 	}
 
 	/**
@@ -402,6 +493,22 @@
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
+	 * @return  J6Provider
+	 * @since   5.1.2
+	 */
+	public function getJ6Provider(Container $container): J6Provider
+	{
+		return new J6Provider(
+			$container->get('Placeholder'),
+			$container->get('Compiler.Builder.Content.One')
+		);
+	}
+
+	/**
+	 * Get The Provider Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
 	 * @return  J5Provider
 	 * @since   5.1.2
 	 */
@@ -461,6 +568,33 @@
 		}
 
 		return $container->get('Architecture.Module.J' . $this->targetVersion . '.MainXML');
+	}
+
+	/**
+	 * Get The MainXML Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6MainXML
+	 * @since   5.1.2
+	 */
+	public function getJ6MainXML(Container $container): J6MainXML
+	{
+		return new J6MainXML(
+			$container->get('Config'),
+			$container->get('Language'),
+			$container->get('Language.Set'),
+			$container->get('Language.Purge'),
+			$container->get('Language.Translation'),
+			$container->get('Language.Multilingual'),
+			$container->get('Event'),
+			$container->get('Compiler.Creator.Fieldset.Extension'),
+			$container->get('Compiler.Builder.Content.One'),
+			$container->get('Compiler.Builder.Languages'),
+			$container->get('Compiler.Builder.Multilingual'),
+			$container->get('Utilities.Counter'),
+			$container->get('Utilities.File')
+		);
 	}
 
 	/**

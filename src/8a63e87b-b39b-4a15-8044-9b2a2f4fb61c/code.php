@@ -18,6 +18,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Component as CompilerComponent;
 use VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaThree\Settings as J3Settings;
 use VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaFour\Settings as J4Settings;
 use VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaFive\Settings as J5Settings;
+use VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaSix\Settings as J6Settings;
 use VDM\Joomla\Componentbuilder\Compiler\Component\Dashboard;
 use VDM\Joomla\Componentbuilder\Compiler\Component\Placeholder;
 use VDM\Joomla\Componentbuilder\Compiler\Component\Data;
@@ -63,6 +64,9 @@ class Component implements ServiceProviderInterface
 
 		$container->alias(J5Settings::class, 'Component.J5.Settings')
 			->share('Component.J5.Settings', [$this, 'getJ5Settings'], true);
+
+		$container->alias(J6Settings::class, 'Component.J6.Settings')
+			->share('Component.J6.Settings', [$this, 'getJ6Settings'], true);
 
 		$container->alias(Dashboard::class, 'Component.Dashboard')
 			->share('Component.Dashboard', [$this, 'getDashboard'], true);
@@ -156,6 +160,28 @@ class Component implements ServiceProviderInterface
 	public function getJ5Settings(Container $container): J5Settings
 	{
 		return new J5Settings(
+			$container->get('Config'),
+			$container->get('Registry'),
+			$container->get('Event'),
+			$container->get('Placeholder'),
+			$container->get('Component'),
+			$container->get('Utilities.Paths'),
+			$container->get('Utilities.Dynamicpath'),
+			$container->get('Utilities.Pathfix')
+		);
+	}
+
+	/**
+	 * Get The Settings Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6Settings
+	 * @since   5.1.2
+	 */
+	public function getJ6Settings(Container $container): J6Settings
+	{
+		return new J6Settings(
 			$container->get('Config'),
 			$container->get('Registry'),
 			$container->get('Event'),

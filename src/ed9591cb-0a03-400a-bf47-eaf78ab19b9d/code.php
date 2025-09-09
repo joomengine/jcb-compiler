@@ -18,6 +18,7 @@ use VDM\Joomla\Componentbuilder\Compiler\Interfaces\GetScriptInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaThree\InstallScript as J3InstallScript;
 use VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaFour\InstallScript as J4InstallScript;
 use VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaFive\InstallScript as J5InstallScript;
+use VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaSix\InstallScript as J6InstallScript;
 
 
 /**
@@ -56,6 +57,9 @@ class Extension implements ServiceProviderInterface
 
 		$container->alias(J5InstallScript::class, 'J5.Extension.InstallScript')
 			->share('J5.Extension.InstallScript', [$this, 'getJ5ExtensionInstallScript'], true);
+
+		$container->alias(J6InstallScript::class, 'J6.Extension.InstallScript')
+			->share('J6.Extension.InstallScript', [$this, 'getJ6ExtensionInstallScript'], true);
 	}
 
 	/**
@@ -98,6 +102,19 @@ class Extension implements ServiceProviderInterface
 	}
 
 	/**
+	 * Get the Joomla 6 Extension Install Script
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6InstallScript
+	 * @since   5.1.2
+	 */
+	public function getJ6ExtensionInstallScript(Container $container): J6InstallScript
+	{
+		return new J6InstallScript();
+	}
+
+	/**
 	 * Get the Joomla Extension Install Script
 	 *
 	 * @param   Container  $container  The DI container.
@@ -114,6 +131,5 @@ class Extension implements ServiceProviderInterface
 
 		return $container->get('J' . $this->targetVersion . '.Extension.InstallScript');
 	}
-
 }
 

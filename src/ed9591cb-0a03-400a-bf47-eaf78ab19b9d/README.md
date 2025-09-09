@@ -11,6 +11,7 @@ class Extension  #Gold {
   + getJ3ExtensionInstallScript(Container $container) : J3InstallScript
   + getJ4ExtensionInstallScript(Container $container) : J4InstallScript
   + getJ5ExtensionInstallScript(Container $container) : J5InstallScript
+  + getJ6ExtensionInstallScript(Container $container) : J6InstallScript
   + getExtensionInstallScript(Container $container) : GetScriptInterface
 }
 
@@ -40,6 +41,13 @@ note right of Extension::getJ5ExtensionInstallScript
 
   since: 3.2.0
   return: J5InstallScript
+end note
+
+note right of Extension::getJ6ExtensionInstallScript
+  Get the Joomla 6 Extension Install Script
+
+  since: 5.1.2
+  return: J6InstallScript
 end note
 
 note right of Extension::getExtensionInstallScript

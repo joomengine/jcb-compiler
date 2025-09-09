@@ -11,6 +11,7 @@ class CoreRules  #Gold {
   + getJ3CoreRule(Container $container) : J3CoreRule
   + getJ4CoreRule(Container $container) : J4CoreRule
   + getJ5CoreRule(Container $container) : J5CoreRule
+  + getJ6CoreRule(Container $container) : J6CoreRule
   + getCoreRule(Container $container) : CoreRule
 }
 
@@ -40,6 +41,13 @@ note right of CoreRules::getJ5CoreRule
 
   since: 3.2.0
   return: J5CoreRule
+end note
+
+note right of CoreRules::getJ6CoreRule
+  Get The CoreRule Class.
+
+  since: 5.1.2
+  return: J6CoreRule
 end note
 
 note right of CoreRules::getCoreRule

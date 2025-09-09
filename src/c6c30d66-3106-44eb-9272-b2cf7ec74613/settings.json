@@ -68,6 +68,10 @@
             "use": "4c143764-1b84-4b9f-86c5-8de119b26f1a",
             "as": "J5CoreField"
         },
+        "use_selection19": {
+            "use": "8bfc8566-40c2-4ad7-b894-7fcbfaed9f5e",
+            "as": "J6CoreField"
+        },
         "use_selection14": {
             "use": "2bc33733-e900-4a9c-8cb3-c537aa9db785",
             "as": "J3InputButton"
@@ -79,6 +83,10 @@
         "use_selection16": {
             "use": "163fa7ca-21bd-4e7f-a618-26fe10b870fe",
             "as": "J5InputButton"
+        },
+        "use_selection20": {
+            "use": "43850a3d-af15-4a40-b6f3-5e4dcf2b97de",
+            "as": "J6InputButton"
         },
         "use_selection17": {
             "use": "e2f5fddf-cbc8-44ee-836c-7f3fb08d8900",

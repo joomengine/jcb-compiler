@@ -15,14 +15,17 @@ namespace VDM\Joomla\Componentbuilder\Compiler\Service;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model\CanDeleteInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Model\CanDelete as J6ModelCanDelete;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model\CanDelete as J5ModelCanDelete;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model\CanDelete as J4ModelCanDelete;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model\CanDelete as J3ModelCanDelete;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model\CanEditStateInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Model\CanEditState as J6ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model\CanEditState as J5ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model\CanEditState as J4ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model\CanEditState as J3ModelCanEditState;
 use VDM\Joomla\Componentbuilder\Compiler\Interfaces\Architecture\Model\CheckInNowInterface;
+use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Model\CheckInNow as J6CheckInNow;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFive\Model\CheckInNow as J5CheckInNow;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaFour\Model\CheckInNow as J4CheckInNow;
 use VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\Model\CheckInNow as J3CheckInNow;
@@ -62,6 +65,9 @@ class ArchitectureModel implements ServiceProviderInterface
 		$container->alias(J5ModelCanDelete::class, 'Architecture.Model.J5.CanDelete')
 			->share('Architecture.Model.J5.CanDelete', [$this, 'getJ5ModelCanDelete'], true);
 
+		$container->alias(J6ModelCanDelete::class, 'Architecture.Model.J6.CanDelete')
+			->share('Architecture.Model.J6.CanDelete', [$this, 'getJ6ModelCanDelete'], true);
+
 		$container->alias(CanDeleteInterface::class, 'Architecture.Model.CanDelete')
 			->share('Architecture.Model.CanDelete', [$this, 'getModelCanDelete'], true);
 
@@ -74,11 +80,17 @@ class ArchitectureModel implements ServiceProviderInterface
 		$container->alias(J5ModelCanEditState::class, 'Architecture.Model.J5.CanEditState')
 			->share('Architecture.Model.J5.CanEditState', [$this, 'getJ5ModelCanEditState'], true);
 
+		$container->alias(J6ModelCanEditState::class, 'Architecture.Model.J6.CanEditState')
+			->share('Architecture.Model.J6.CanEditState', [$this, 'getJ6ModelCanEditState'], true);
+
 		$container->alias(CanEditStateInterface::class, 'Architecture.Model.CanEditState')
 			->share('Architecture.Model.CanEditState', [$this, 'getModelCanEditState'], true);
 
 		$container->alias(CheckInNowInterface::class, 'Architecture.Model.CheckInNow')
 			->share('Architecture.Model.CheckInNow', [$this, 'getCheckInNow'], true);
+
+		$container->alias(J6CheckInNow::class, 'Architecture.Model.J6.CheckInNow')
+			->share('Architecture.Model.J6.CheckInNow', [$this, 'getJ6CheckInNow'], true);
 
 		$container->alias(J5CheckInNow::class, 'Architecture.Model.J5.CheckInNow')
 			->share('Architecture.Model.J5.CheckInNow', [$this, 'getJ5CheckInNow'], true);
@@ -106,6 +118,22 @@ class ArchitectureModel implements ServiceProviderInterface
 		}
 
 		return $container->get('Architecture.Model.J' . $this->targetVersion . '.CanDelete');
+	}
+
+	/**
+	 * Get The Model CanDelete Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6ModelCanDelete
+	 * @since   5.1.2
+	 */
+	public function getJ6ModelCanDelete(Container $container): J6ModelCanDelete
+	{
+		return new J6ModelCanDelete(
+			$container->get('Config'),
+			$container->get('Compiler.Creator.Permission')
+		);
 	}
 
 	/**
@@ -179,6 +207,22 @@ class ArchitectureModel implements ServiceProviderInterface
 	 *
 	 * @param   Container  $container  The DI container.
 	 *
+	 * @return  J6ModelCanEditState
+	 * @since  5.1.2
+	 */
+	public function getJ6ModelCanEditState(Container $container): J6ModelCanEditState
+	{
+		return new J6ModelCanEditState(
+			$container->get('Config'),
+			$container->get('Compiler.Creator.Permission')
+		);
+	}
+
+	/**
+	 * Get The Model Can Edit State Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
 	 * @return  J5ModelCanEditState
 	 * @since 3.2.0
 	 */
@@ -239,6 +283,20 @@ class ArchitectureModel implements ServiceProviderInterface
 
 		return $container->get('Architecture.Model.J' . $this->targetVersion . '.CheckInNow');
 	}
+
+	/**
+	 * Get The Model CheckInNow Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6CheckInNow
+	 * @since   5.1.2
+	 */
+	public function getJ6CheckInNow(Container $container): J6CheckInNow
+	{
+		return new J6CheckInNow();
+	}
+
 
 	/**
 	 * Get The Model CheckInNow Class.

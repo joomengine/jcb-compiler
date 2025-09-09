@@ -93,13 +93,24 @@
 				// build decoder string
 				if (empty($runplugins))
 				{
-					$runplugins = PHP_EOL . $tab . Indent::_(1) . "//"
-						. Line::_(__Line__, __Class__)
-						. " Load the JEvent Dispatcher";
-					$runplugins .= PHP_EOL . $tab . Indent::_(1)
-						. "PluginHelper::importPlugin('content');";
-					$runplugins .= PHP_EOL . $tab . Indent::_(1)
-						. '$this->_dispatcher = Joomla__'.'_39403062_84fb_46e0_bac4_0023f766e827___Power::getApplication();';
+					if ($this->config->get('joomla_version', 3) == 3)
+					{
+						$runplugins = PHP_EOL . $tab . Indent::_(1) . "//"
+							. Line::_(__Line__, __Class__)
+							. " Load the Event Dispatcher";
+						$runplugins .= PHP_EOL . $tab . Indent::_(1)
+							. "Joomla__" . "_7934665b_e432_4ec6_b38d_27bf32730eb9___Power::importPlugin('content');";
+						$runplugins .= PHP_EOL . $tab . Indent::_(1)
+							. '$this->_dispatcher = Joomla__'.'_39403062_84fb_46e0_bac4_0023f766e827___Power::getApplication();';
+					}
+					else
+					{
+						$runplugins = PHP_EOL . $tab . Indent::_(1) . "//"
+							. Line::_(__Line__, __Class__)
+							. " Load the Event Dispatcher";
+						$runplugins .= PHP_EOL . $tab . Indent::_(1)
+							. "Joomla__" . "_7934665b_e432_4ec6_b38d_27bf32730eb9___Power::importPlugin('content');";
+					}
 				}
 
 				if (!$params)
@@ -131,10 +142,28 @@
 					. "//" . Line::_(__Line__, __Class__)
 					. " Since all values are now in text (Joomla Limitation), we also add the field name ("
 					. $field . ") to context";
-				$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1)
-					. '$this->_dispatcher->triggerEvent("onContentPrepare", array(\''
-					. $context . '.' . $field . '\', &$_' . $field
-					. ', &$params, 0));';
+				if ($this->config->get('joomla_version', 3) == 3)
+				{
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1)
+						. '$this->_dispatcher->triggerEvent("onContentPrepare", array(\''
+						. $context . '.' . $field . '\', &$_' . $field
+						. ', &$params, 0));';
+				}
+				else
+				{
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1) . "//" . Line::_(__Line__, __Class__) . " onContentPrepare Event Trigger";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1) . "\$this->getDispatcher()->dispatch('onContentPrepare',";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(2) . "new Joomla__" . "_6ee61914_64ed_4a3a_b156_dfc4891ae00d___Power(";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(3) . "'onContentPrepare',";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(3) . "[";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(4) . "'context' => '{$context}.{$field}',";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(4) . "'subject' => \$_{$field},";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(4) . "'params' => \$params,";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(4) . "'page' => 0";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(3) . "]";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(2) . ")";
+					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1) . ");";
+				}
 			}
 		}
 

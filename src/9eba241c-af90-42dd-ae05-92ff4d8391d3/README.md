@@ -12,14 +12,17 @@ class Joomlaplugin  #Gold {
   + getJ3PluginData(Container $container) : J3PluginData
   + getJ4PluginData(Container $container) : J4PluginData
   + getJ5PluginData(Container $container) : J5PluginData
+  + getJ6PluginData(Container $container) : J6PluginData
   + getStructure(Container $container) : Structure
   + getJ3Structure(Container $container) : J3Structure
   + getJ4Structure(Container $container) : J4Structure
   + getJ5Structure(Container $container) : J5Structure
+  + getJ6Structure(Container $container) : J6Structure
   + getInfusion(Container $container) : Infusion
   + getJ3Infusion(Container $container) : J3Infusion
   + getJ4Infusion(Container $container) : J4Infusion
   + getJ5Infusion(Container $container) : J5Infusion
+  + getJ6Infusion(Container $container) : J6Infusion
 }
 
 note right of Joomlaplugin::register
@@ -57,32 +60,46 @@ note right of Joomlaplugin::getJ5PluginData
   return: J5PluginData
 end note
 
-note left of Joomlaplugin::getStructure
+note left of Joomlaplugin::getJ6PluginData
+  Get The PluginData Class.
+
+  since: 5.1.2
+  return: J6PluginData
+end note
+
+note right of Joomlaplugin::getStructure
   Get the Joomla Plugin Structure Builder
 
   since: 3.2.0
   return: Structure
 end note
 
-note right of Joomlaplugin::getJ3Structure
+note left of Joomlaplugin::getJ3Structure
   Get the Joomla 3 Plugin Structure Builder
 
   since: 5.0.2
   return: J3Structure
 end note
 
-note left of Joomlaplugin::getJ4Structure
+note right of Joomlaplugin::getJ4Structure
   Get the Joomla 4 Plugin Structure Builder
 
   since: 5.0.2
   return: J4Structure
 end note
 
-note right of Joomlaplugin::getJ5Structure
+note left of Joomlaplugin::getJ5Structure
   Get the Joomla 5 Plugin Structure Builder
 
   since: 5.0.2
   return: J5Structure
+end note
+
+note right of Joomlaplugin::getJ6Structure
+  Get the Joomla 6 Plugin Structure Builder
+
+  since: 5.1.2
+  return: J6Structure
 end note
 
 note left of Joomlaplugin::getInfusion
@@ -111,6 +128,13 @@ note right of Joomlaplugin::getJ5Infusion
 
   since: 5.0.2
   return: J5Infusion
+end note
+
+note left of Joomlaplugin::getJ6Infusion
+  Get The Infusion Class.
+
+  since: 5.1.2
+  return: J6Infusion
 end note
 
 @enduml

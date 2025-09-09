@@ -24,6 +24,10 @@
             "use": "8b56b62d-b960-4823-b9bb-c71675a71b85",
             "as": "J5CoreRule"
         },
+        "use_selection4": {
+            "use": "24362319-d4bf-477a-95c5-518631be747b",
+            "as": "J6CoreRule"
+        },
         "use_selection3": {
             "use": "b9f05dc4-d23a-499a-a826-9749b81818ed",
             "as": "CoreRule"

@@ -9,6 +9,7 @@ class ArchitectureComHelperClass  #Gold {
   # $targetVersion
   + register(Container $container) : void
   + getCreateUser(Container $container) : CreateUserInterface
+  + getJ6CreateUser(Container $container) : J6CreateUser
   + getJ5CreateUser(Container $container) : J5CreateUser
   + getJ4CreateUser(Container $container) : J4CreateUser
   + getJ3CreateUser(Container $container) : J3CreateUser
@@ -26,6 +27,13 @@ note right of ArchitectureComHelperClass::getCreateUser
 
   since: 5.0.2
   return: CreateUserInterface
+end note
+
+note right of ArchitectureComHelperClass::getJ6CreateUser
+  Get The CreateUser Class.
+
+  since: 5.1.2
+  return: J6CreateUser
 end note
 
 note right of ArchitectureComHelperClass::getJ5CreateUser

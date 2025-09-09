@@ -9,14 +9,17 @@ class ArchitectureModel  #Gold {
   # $targetVersion
   + register(Container $container) : void
   + getModelCanDelete(Container $container) : CanDeleteInterface
+  + getJ6ModelCanDelete(Container $container) : J6ModelCanDelete
   + getJ5ModelCanDelete(Container $container) : J5ModelCanDelete
   + getJ4ModelCanDelete(Container $container) : J4ModelCanDelete
   + getJ3ModelCanDelete(Container $container) : J3ModelCanDelete
   + getModelCanEditState(Container $container) : CanEditStateInterface
+  + getJ6ModelCanEditState(Container $container) : J6ModelCanEditState
   + getJ5ModelCanEditState(Container $container) : J5ModelCanEditState
   + getJ4ModelCanEditState(Container $container) : J4ModelCanEditState
   + getJ3ModelCanEditState(Container $container) : J3ModelCanEditState
   + getCheckInNow(Container $container) : CheckInNowInterface
+  + getJ6CheckInNow(Container $container) : J6CheckInNow
   + getJ5CheckInNow(Container $container) : J5CheckInNow
   + getJ4CheckInNow(Container $container) : J4CheckInNow
   + getJ3CheckInNow(Container $container) : J3CheckInNow
@@ -36,32 +39,46 @@ note left of ArchitectureModel::getModelCanDelete
   return: CanDeleteInterface
 end note
 
-note right of ArchitectureModel::getJ5ModelCanDelete
+note right of ArchitectureModel::getJ6ModelCanDelete
+  Get The Model CanDelete Class.
+
+  since: 5.1.2
+  return: J6ModelCanDelete
+end note
+
+note left of ArchitectureModel::getJ5ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J5ModelCanDelete
 end note
 
-note left of ArchitectureModel::getJ4ModelCanDelete
+note right of ArchitectureModel::getJ4ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J4ModelCanDelete
 end note
 
-note right of ArchitectureModel::getJ3ModelCanDelete
+note left of ArchitectureModel::getJ3ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J3ModelCanDelete
 end note
 
-note left of ArchitectureModel::getModelCanEditState
+note right of ArchitectureModel::getModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 3.2.0
   return: CanEditStateInterface
+end note
+
+note left of ArchitectureModel::getJ6ModelCanEditState
+  Get The Model Can Edit State Class.
+
+  since: 5.1.2
+  return: J6ModelCanEditState
 end note
 
 note right of ArchitectureModel::getJ5ModelCanEditState
@@ -92,21 +109,28 @@ note left of ArchitectureModel::getCheckInNow
   return: CheckInNowInterface
 end note
 
-note right of ArchitectureModel::getJ5CheckInNow
+note right of ArchitectureModel::getJ6CheckInNow
+  Get The Model CheckInNow Class.
+
+  since: 5.1.2
+  return: J6CheckInNow
+end note
+
+note left of ArchitectureModel::getJ5CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
   return: J5CheckInNow
 end note
 
-note left of ArchitectureModel::getJ4CheckInNow
+note right of ArchitectureModel::getJ4CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
   return: J4CheckInNow
 end note
 
-note right of ArchitectureModel::getJ3CheckInNow
+note left of ArchitectureModel::getJ3CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2

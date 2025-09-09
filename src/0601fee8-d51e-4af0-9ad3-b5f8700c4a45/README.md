@@ -42,6 +42,7 @@ class Model  #Gold {
   + getCustomtabsJ3(Container $container) : CustomtabsJ3
   + getCustomtabsJ4(Container $container) : CustomtabsJ4
   + getCustomtabsJ5(Container $container) : CustomtabsJ5
+  + getCustomtabsJ6(Container $container) : CustomtabsJ6
   + getAdminviews(Container $container) : Adminviews
   + getSqltweaking(Container $container) : Sqltweaking
   + getSqldump(Container $container) : Sqldump
@@ -298,63 +299,70 @@ note right of Model::getCustomtabsJ5
   return: CustomtabsJ5
 end note
 
-note left of Model::getAdminviews
+note left of Model::getCustomtabsJ6
+  Get The CustomtabsJ6 Class.
+
+  since: 5.1.2
+  return: CustomtabsJ6
+end note
+
+note right of Model::getAdminviews
   Get The Adminviews Class.
 
   since: 3.2.0
   return: Adminviews
 end note
 
-note right of Model::getSqltweaking
+note left of Model::getSqltweaking
   Get The Sqltweaking Class.
 
   since: 3.2.0
   return: Sqltweaking
 end note
 
-note left of Model::getSqldump
+note right of Model::getSqldump
   Get The Sqldump Class.
 
   since: 3.2.0
   return: Sqldump
 end note
 
-note right of Model::getWhmcs
+note left of Model::getWhmcs
   Get The Whmcs Class.
 
   since: 3.2.0
   return: Whmcs
 end note
 
-note left of Model::getFilesfolders
+note right of Model::getFilesfolders
   Get The Filesfolders Class.
 
   since: 3.2.0
   return: Filesfolders
 end note
 
-note right of Model::getModifieddate
+note left of Model::getModifieddate
   Get The Modifieddate Class.
 
   since: 3.2.0
   return: Modifieddate
 end note
 
-note left of Model::getCreatedate
+note right of Model::getCreatedate
   Get The Createdate Class.
 
   since: 3.2.0
   return: Createdate
 end note
 
-note right of Model::getRouter
+note left of Model::getRouter
   Get The Router Class.
 
   since: 3.2.0
   return: Router
 end note
 
-note left of Model::getUpdateserver
+note right of Model::getUpdateserver
   Get The Updateserver Class.
 
   since: 3.2.0

@@ -23,9 +23,11 @@ class Field  #Gold {
   + getJ3CoreField(Container $container) : J3CoreField
   + getJ4CoreField(Container $container) : J4CoreField
   + getJ5CoreField(Container $container) : J5CoreField
+  + getJ6CoreField(Container $container) : J6CoreField
   + getJ3InputButton(Container $container) : J3InputButton
   + getJ4InputButton(Container $container) : J4InputButton
   + getJ5InputButton(Container $container) : J5InputButton
+  + getJ6InputButton(Container $container) : J6InputButton
   + getCoreField(Container $container) : CoreField
   + getInputButton(Container $container) : InputButton
 }
@@ -135,25 +137,39 @@ note right of Field::getJ5CoreField
   return: J5CoreField
 end note
 
-note left of Field::getJ3InputButton
+note left of Field::getJ6CoreField
+  Get The CoreField Class.
+
+  since: 5.1.2
+  return: J6CoreField
+end note
+
+note right of Field::getJ3InputButton
   Get The J3InputButton Class.
 
   since: 3.2.0
   return: J3InputButton
 end note
 
-note right of Field::getJ4InputButton
+note left of Field::getJ4InputButton
   Get The J4InputButton Class.
 
   since: 3.2.0
   return: J4InputButton
 end note
 
-note left of Field::getJ5InputButton
+note right of Field::getJ5InputButton
   Get The J5InputButton Class.
 
   since: 3.2.0
   return: J5InputButton
+end note
+
+note left of Field::getJ6InputButton
+  Get The J6InputButton Class.
+
+  since: 5.1.2
+  return: J6InputButton
 end note
 
 note right of Field::getCoreField

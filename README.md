@@ -339,6 +339,11 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 
   - **final class Extractor** | [Details](src/82505f3f-297f-4d75-a581-929ab3e93689) | [Raw](src/82505f3f-297f-4d75-a581-929ab3e93689/code.power) | [Settings](src/82505f3f-297f-4d75-a581-929ab3e93689/settings.json) | SPK: `Super---82505f3f_297f_4d75_a581_929ab3e93689---Power`
   - **final class Injector** | [Details](src/a6052fe9-0d2b-4b36-b3e7-03b47c483542) | [Raw](src/a6052fe9-0d2b-4b36-b3e7-03b47c483542/code.power) | [Settings](src/a6052fe9-0d2b-4b36-b3e7-03b47c483542/settings.json) | SPK: `Super---a6052fe9_0d2b_4b36_b3e7_03b47c483542---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\JoomlaSix](#vdm-joomla-componentbuilder-compiler-joomlasix)
+
+  - **final class Header** | [Details](src/236b5f2b-a1a7-40d8-89de-d7190af1cff0) | [Raw](src/236b5f2b-a1a7-40d8-89de-d7190af1cff0/code.power) | [Settings](src/236b5f2b-a1a7-40d8-89de-d7190af1cff0/settings.json) | SPK: `Super---236b5f2b_a1a7_40d8_89de_d7190af1cff0---Power`
+  - **final class History** | [Details](src/0c8f0cc3-25f7-45be-8db9-a1a3b9ae96c3) | [Raw](src/0c8f0cc3-25f7-45be-8db9-a1a3b9ae96c3/code.power) | [Settings](src/0c8f0cc3-25f7-45be-8db9-a1a3b9ae96c3/settings.json) | SPK: `Super---0c8f0cc3_25f7_45be_8db9_a1a3b9ae96c3---Power`
+  - **class Event** | [Details](src/b7d959c1-433d-4f54-ba84-b3fa58ccf77a) | [Raw](src/b7d959c1-433d-4f54-ba84-b3fa58ccf77a/code.power) | [Settings](src/b7d959c1-433d-4f54-ba84-b3fa58ccf77a/settings.json) | SPK: `Super---b7d959c1_433d_4f54_ba84_b3fa58ccf77a---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\JoomlaThree](#vdm-joomla-componentbuilder-compiler-joomlathree)
 
   - **final class Event** | [Details](src/4b86f62e-ce41-4325-a11a-08148807d0df) | [Raw](src/4b86f62e-ce41-4325-a11a-08148807d0df/code.power) | [Settings](src/4b86f62e-ce41-4325-a11a-08148807d0df/settings.json) | SPK: `Super---4b86f62e_ce41_4325_a11a_08148807d0df---Power`
@@ -505,6 +510,9 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaFour](#vdm-joomla-componentbuilder-compiler-component-joomlafour)
 
   - **final class Settings** | [Details](src/e7fff971-b031-42bf-8009-ef554e30854d) | [Raw](src/e7fff971-b031-42bf-8009-ef554e30854d/code.power) | [Settings](src/e7fff971-b031-42bf-8009-ef554e30854d/settings.json) | SPK: `Super---e7fff971_b031_42bf_8009_ef554e30854d---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaSix](#vdm-joomla-componentbuilder-compiler-component-joomlasix)
+
+  - **final class Settings** | [Details](src/01770b27-e745-491e-8de7-376e812ac80a) | [Raw](src/01770b27-e745-491e-8de7-376e812ac80a/code.power) | [Settings](src/01770b27-e745-491e-8de7-376e812ac80a/settings.json) | SPK: `Super---01770b27_e745_491e_8de7_376e812ac80a---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Component\JoomlaThree](#vdm-joomla-componentbuilder-compiler-component-joomlathree)
 
   - **final class Settings** | [Details](src/63dabe82-0f4a-4ade-9851-8518ade23de2) | [Raw](src/63dabe82-0f4a-4ade-9851-8518ade23de2/code.power) | [Settings](src/63dabe82-0f4a-4ade-9851-8518ade23de2/settings.json) | SPK: `Super---63dabe82_0f4a_4ade_9851_8518ade23de2---Power`
@@ -517,6 +525,9 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaFour](#vdm-joomla-componentbuilder-compiler-extension-joomlafour)
 
   - **final class InstallScript** | [Details](src/d42e1fac-3c05-4a22-8878-2abd43019811) | [Raw](src/d42e1fac-3c05-4a22-8878-2abd43019811/code.power) | [Settings](src/d42e1fac-3c05-4a22-8878-2abd43019811/settings.json) | SPK: `Super---d42e1fac_3c05_4a22_8878_2abd43019811---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaSix](#vdm-joomla-componentbuilder-compiler-extension-joomlasix)
+
+  - **final class InstallScript** | [Details](src/7f4fc1c2-ebcc-4979-8712-209c9736a96f) | [Raw](src/7f4fc1c2-ebcc-4979-8712-209c9736a96f/code.power) | [Settings](src/7f4fc1c2-ebcc-4979-8712-209c9736a96f/settings.json) | SPK: `Super---7f4fc1c2_ebcc_4979_8712_209c9736a96f---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Extension\JoomlaThree](#vdm-joomla-componentbuilder-compiler-extension-joomlathree)
 
   - **final class InstallScript** | [Details](src/1d929017-a5de-4e0f-9b5a-838934857e26) | [Raw](src/1d929017-a5de-4e0f-9b5a-838934857e26/code.power) | [Settings](src/1d929017-a5de-4e0f-9b5a-838934857e26/settings.json) | SPK: `Super---1d929017_a5de_4e0f_9b5a_838934857e26---Power`
@@ -530,6 +541,11 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
   - **final class CoreField** | [Details](src/c6818275-cdf7-4fce-a365-90d95a77a71c) | [Raw](src/c6818275-cdf7-4fce-a365-90d95a77a71c/code.power) | [Settings](src/c6818275-cdf7-4fce-a365-90d95a77a71c/settings.json) | SPK: `Super---c6818275_cdf7_4fce_a365_90d95a77a71c---Power`
   - **final class CoreRule** | [Details](src/43f46bb2-ab6d-47c7-9fd9-f1745a3576fb) | [Raw](src/43f46bb2-ab6d-47c7-9fd9-f1745a3576fb/code.power) | [Settings](src/43f46bb2-ab6d-47c7-9fd9-f1745a3576fb/settings.json) | SPK: `Super---43f46bb2_ab6d_47c7_9fd9_f1745a3576fb---Power`
   - **final class InputButton** | [Details](src/1b8a40e9-7847-4341-8a8e-dfdc2d531bbe) | [Raw](src/1b8a40e9-7847-4341-8a8e-dfdc2d531bbe/code.power) | [Settings](src/1b8a40e9-7847-4341-8a8e-dfdc2d531bbe/settings.json) | SPK: `Super---1b8a40e9_7847_4341_8a8e_dfdc2d531bbe---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaSix](#vdm-joomla-componentbuilder-compiler-field-joomlasix)
+
+  - **final class CoreField** | [Details](src/8bfc8566-40c2-4ad7-b894-7fcbfaed9f5e) | [Raw](src/8bfc8566-40c2-4ad7-b894-7fcbfaed9f5e/code.power) | [Settings](src/8bfc8566-40c2-4ad7-b894-7fcbfaed9f5e/settings.json) | SPK: `Super---8bfc8566_40c2_4ad7_b894_7fcbfaed9f5e---Power`
+  - **final class CoreRule** | [Details](src/24362319-d4bf-477a-95c5-518631be747b) | [Raw](src/24362319-d4bf-477a-95c5-518631be747b/code.power) | [Settings](src/24362319-d4bf-477a-95c5-518631be747b/settings.json) | SPK: `Super---24362319_d4bf_477a_95c5_518631be747b---Power`
+  - **final class InputButton** | [Details](src/43850a3d-af15-4a40-b6f3-5e4dcf2b97de) | [Raw](src/43850a3d-af15-4a40-b6f3-5e4dcf2b97de/code.power) | [Settings](src/43850a3d-af15-4a40-b6f3-5e4dcf2b97de/settings.json) | SPK: `Super---43850a3d_af15_4a40_b6f3_5e4dcf2b97de---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Field\JoomlaThree](#vdm-joomla-componentbuilder-compiler-field-joomlathree)
 
   - **final class CoreField** | [Details](src/e6683873-b74e-4b54-8466-69f8a9282033) | [Raw](src/e6683873-b74e-4b54-8466-69f8a9282033/code.power) | [Settings](src/e6683873-b74e-4b54-8466-69f8a9282033/settings.json) | SPK: `Super---e6683873_b74e_4b54_8466_69f8a9282033---Power`
@@ -576,6 +592,11 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
   - **final class Data** | [Details](src/112a1b61-9482-4a8d-8143-549399925916) | [Raw](src/112a1b61-9482-4a8d-8143-549399925916/code.power) | [Settings](src/112a1b61-9482-4a8d-8143-549399925916/settings.json) | SPK: `Super---112a1b61_9482_4a8d_8143_549399925916---Power`
   - **final class Infusion** | [Details](src/42b325d6-92f5-4fc9-8960-283063e81776) | [Raw](src/42b325d6-92f5-4fc9-8960-283063e81776/code.power) | [Settings](src/42b325d6-92f5-4fc9-8960-283063e81776/settings.json) | SPK: `Super---42b325d6_92f5_4fc9_8960_283063e81776---Power`
   - **final class Structure** | [Details](src/a2d2c170-c733-4ac8-a2d3-77c50ad0bac6) | [Raw](src/a2d2c170-c733-4ac8-a2d3-77c50ad0bac6/code.power) | [Settings](src/a2d2c170-c733-4ac8-a2d3-77c50ad0bac6/settings.json) | SPK: `Super---a2d2c170_c733_4ac8_a2d3_77c50ad0bac6---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaSix](#vdm-joomla-componentbuilder-compiler-joomlamodule-joomlasix)
+
+  - **final class Data** | [Details](src/9dfdd640-dfa7-4b1c-bba5-3d3d0f50596f) | [Raw](src/9dfdd640-dfa7-4b1c-bba5-3d3d0f50596f/code.power) | [Settings](src/9dfdd640-dfa7-4b1c-bba5-3d3d0f50596f/settings.json) | SPK: `Super---9dfdd640_dfa7_4b1c_bba5_3d3d0f50596f---Power`
+  - **final class Infusion** | [Details](src/ec69ad13-c081-4eff-bd03-405c09c77f2e) | [Raw](src/ec69ad13-c081-4eff-bd03-405c09c77f2e/code.power) | [Settings](src/ec69ad13-c081-4eff-bd03-405c09c77f2e/settings.json) | SPK: `Super---ec69ad13_c081_4eff_bd03_405c09c77f2e---Power`
+  - **final class Structure** | [Details](src/d195ca0e-e995-4645-9434-d92d2f3e939c) | [Raw](src/d195ca0e-e995-4645-9434-d92d2f3e939c/code.power) | [Settings](src/d195ca0e-e995-4645-9434-d92d2f3e939c/settings.json) | SPK: `Super---d195ca0e_e995_4645_9434_d92d2f3e939c---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlamodule\JoomlaThree](#vdm-joomla-componentbuilder-compiler-joomlamodule-joomlathree)
 
   - **final class Infusion** | [Details](src/ba9b302f-b5f3-45ad-bb19-f2a9235c25ce) | [Raw](src/ba9b302f-b5f3-45ad-bb19-f2a9235c25ce/code.power) | [Settings](src/ba9b302f-b5f3-45ad-bb19-f2a9235c25ce/settings.json) | SPK: `Super---ba9b302f_b5f3_45ad_bb19_f2a9235c25ce---Power`
@@ -591,6 +612,11 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
   - **final class Data** | [Details](src/361e08c0-5916-4b77-b6a2-c16a769bbc40) | [Raw](src/361e08c0-5916-4b77-b6a2-c16a769bbc40/code.power) | [Settings](src/361e08c0-5916-4b77-b6a2-c16a769bbc40/settings.json) | SPK: `Super---361e08c0_5916_4b77_b6a2_c16a769bbc40---Power`
   - **final class Infusion** | [Details](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f) | [Raw](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f/code.power) | [Settings](src/84fe58db-d64d-42c6-9b41-f80bcff34c7f/settings.json) | SPK: `Super---84fe58db_d64d_42c6_9b41_f80bcff34c7f---Power`
   - **final class Structure** | [Details](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc) | [Raw](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc/code.power) | [Settings](src/34daa4c8-45c3-4249-baa3-1bedf8ed3ebc/settings.json) | SPK: `Super---34daa4c8_45c3_4249_baa3_1bedf8ed3ebc---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaSix](#vdm-joomla-componentbuilder-compiler-joomlaplugin-joomlasix)
+
+  - **final class Data** | [Details](src/9759ea59-1f59-4e1e-bef9-6efed17b930f) | [Raw](src/9759ea59-1f59-4e1e-bef9-6efed17b930f/code.power) | [Settings](src/9759ea59-1f59-4e1e-bef9-6efed17b930f/settings.json) | SPK: `Super---9759ea59_1f59_4e1e_bef9_6efed17b930f---Power`
+  - **final class Infusion** | [Details](src/9e6f14ae-5e4f-4533-9b17-796f1f03d2e5) | [Raw](src/9e6f14ae-5e4f-4533-9b17-796f1f03d2e5/code.power) | [Settings](src/9e6f14ae-5e4f-4533-9b17-796f1f03d2e5/settings.json) | SPK: `Super---9e6f14ae_5e4f_4533_9b17_796f1f03d2e5---Power`
+  - **final class Structure** | [Details](src/661ccda8-c97d-415f-aa96-910c0b1a1530) | [Raw](src/661ccda8-c97d-415f-aa96-910c0b1a1530/code.power) | [Settings](src/661ccda8-c97d-415f-aa96-910c0b1a1530/settings.json) | SPK: `Super---661ccda8_c97d_415f_aa96_910c0b1a1530---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Joomlaplugin\JoomlaThree](#vdm-joomla-componentbuilder-compiler-joomlaplugin-joomlathree)
 
   - **final class Data** | [Details](src/766a9524-37df-4604-91a7-b98a6150ee26) | [Raw](src/766a9524-37df-4604-91a7-b98a6150ee26/code.power) | [Settings](src/766a9524-37df-4604-91a7-b98a6150ee26/settings.json) | SPK: `Super---766a9524_37df_4604_91a7_b98a6150ee26---Power`
@@ -602,6 +628,9 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaFour](#vdm-joomla-componentbuilder-compiler-model-joomlafour)
 
   - **final class Customtabs** | [Details](src/42648fb4-dfdc-4986-a180-69e5726a25c4) | [Raw](src/42648fb4-dfdc-4986-a180-69e5726a25c4/code.power) | [Settings](src/42648fb4-dfdc-4986-a180-69e5726a25c4/settings.json) | SPK: `Super---42648fb4_dfdc_4986_a180_69e5726a25c4---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaSix](#vdm-joomla-componentbuilder-compiler-model-joomlasix)
+
+  - **final class Customtabs** | [Details](src/5a801da9-2f3b-412c-9aa9-75d189a31981) | [Raw](src/5a801da9-2f3b-412c-9aa9-75d189a31981/code.power) | [Settings](src/5a801da9-2f3b-412c-9aa9-75d189a31981/settings.json) | SPK: `Super---5a801da9_2f3b_412c_9aa9_75d189a31981---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Model\JoomlaThree](#vdm-joomla-componentbuilder-compiler-model-joomlathree)
 
   - **final class Customtabs** | [Details](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c) | [Raw](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/code.power) | [Settings](src/fa8c1125-d370-4cb6-a7ff-eb32193c198c/settings.json) | SPK: `Super---fa8c1125_d370_4cb6_a7ff_eb32193c198c---Power`
@@ -663,6 +692,32 @@ This makes your logic both **reusable** and **component-aware**, without hardcod
   - **final class Extension** | [Details](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa) | [Raw](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa/code.power) | [Settings](src/ec808f55-6703-46c0-8a6d-33c9d4e0e9fa/settings.json) | SPK: `Super---ec808f55_6703_46c0_8a6d_33c9d4e0e9fa---Power`
   - **final class MainXML** | [Details](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786) | [Raw](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786/code.power) | [Settings](src/af6d0e6a-61d2-4250-9e2f-bed5591e2786/settings.json) | SPK: `Super---af6d0e6a_61d2_4250_9e2f_bed5591e2786---Power`
   - **final class Provider** | [Details](src/60c3ccc5-36dc-4480-b5c4-252c37212f61) | [Raw](src/60c3ccc5-36dc-4480-b5c4-252c37212f61/code.power) | [Settings](src/60c3ccc5-36dc-4480-b5c4-252c37212f61/settings.json) | SPK: `Super---60c3ccc5_36dc_4480_b5c4_252c37212f61---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\ComHelperClass](#vdm-joomla-componentbuilder-compiler-architecture-joomlasix-comhelperclass)
+
+  - **final class CreateUser** | [Details](src/3a324dbf-a7c8-4a1f-a646-a244a76ffb84) | [Raw](src/3a324dbf-a7c8-4a1f-a646-a244a76ffb84/code.power) | [Settings](src/3a324dbf-a7c8-4a1f-a646-a244a76ffb84/settings.json) | SPK: `Super---3a324dbf_a7c8_4a1f_a646_a244a76ffb84---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Controller](#vdm-joomla-componentbuilder-compiler-architecture-joomlasix-controller)
+
+  - **final class AllowAdd** | [Details](src/d4fc2f82-cae4-47e3-9c55-2b1e9f6a88ff) | [Raw](src/d4fc2f82-cae4-47e3-9c55-2b1e9f6a88ff/code.power) | [Settings](src/d4fc2f82-cae4-47e3-9c55-2b1e9f6a88ff/settings.json) | SPK: `Super---d4fc2f82_cae4_47e3_9c55_2b1e9f6a88ff---Power`
+  - **final class AllowEdit** | [Details](src/d6637e65-5043-445c-bd96-15f7fe55840a) | [Raw](src/d6637e65-5043-445c-bd96-15f7fe55840a/code.power) | [Settings](src/d6637e65-5043-445c-bd96-15f7fe55840a/settings.json) | SPK: `Super---d6637e65_5043_445c_bd96_15f7fe55840a---Power`
+  - **final class AllowEditViews** | [Details](src/aff13107-1fab-4124-8104-2b9fd8cb495e) | [Raw](src/aff13107-1fab-4124-8104-2b9fd8cb495e/code.power) | [Settings](src/aff13107-1fab-4124-8104-2b9fd8cb495e/settings.json) | SPK: `Super---aff13107_1fab_4124_8104_2b9fd8cb495e---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Model](#vdm-joomla-componentbuilder-compiler-architecture-joomlasix-model)
+
+  - **final class CanDelete** | [Details](src/3fd9c225-3cdb-465f-9852-f07108f215ec) | [Raw](src/3fd9c225-3cdb-465f-9852-f07108f215ec/code.power) | [Settings](src/3fd9c225-3cdb-465f-9852-f07108f215ec/settings.json) | SPK: `Super---3fd9c225_3cdb_465f_9852_f07108f215ec---Power`
+  - **final class CanEditState** | [Details](src/fda40d40-296f-49da-984a-8e71568f23b2) | [Raw](src/fda40d40-296f-49da-984a-8e71568f23b2/code.power) | [Settings](src/fda40d40-296f-49da-984a-8e71568f23b2/settings.json) | SPK: `Super---fda40d40_296f_49da_984a_8e71568f23b2---Power`
+  - **final class CheckInNow** | [Details](src/24e66635-75a9-4539-ac44-877a1d3c5dd9) | [Raw](src/24e66635-75a9-4539-ac44-877a1d3c5dd9/code.power) | [Settings](src/24e66635-75a9-4539-ac44-877a1d3c5dd9/settings.json) | SPK: `Super---24e66635_75a9_4539_ac44_877a1d3c5dd9---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Module](#vdm-joomla-componentbuilder-compiler-architecture-joomlasix-module)
+
+  - **final class Dispatcher** | [Details](src/aa586424-abd1-4fc9-8013-41fb8c5b473b) | [Raw](src/aa586424-abd1-4fc9-8013-41fb8c5b473b/code.power) | [Settings](src/aa586424-abd1-4fc9-8013-41fb8c5b473b/settings.json) | SPK: `Super---aa586424_abd1_4fc9_8013_41fb8c5b473b---Power`
+  - **final class Helper** | [Details](src/a29cd3b2-f11c-4fc5-866b-852872371b78) | [Raw](src/a29cd3b2-f11c-4fc5-866b-852872371b78/code.power) | [Settings](src/a29cd3b2-f11c-4fc5-866b-852872371b78/settings.json) | SPK: `Super---a29cd3b2_f11c_4fc5_866b_852872371b78---Power`
+  - **final class Library** | [Details](src/8ef9aec6-c83d-4f73-9155-6f091aff5149) | [Raw](src/8ef9aec6-c83d-4f73-9155-6f091aff5149/code.power) | [Settings](src/8ef9aec6-c83d-4f73-9155-6f091aff5149/settings.json) | SPK: `Super---8ef9aec6_c83d_4f73_9155_6f091aff5149---Power`
+  - **final class MainXML** | [Details](src/6f070429-23ed-4913-ab70-b55e59635f80) | [Raw](src/6f070429-23ed-4913-ab70-b55e59635f80/code.power) | [Settings](src/6f070429-23ed-4913-ab70-b55e59635f80/settings.json) | SPK: `Super---6f070429_23ed_4913_ab70_b55e59635f80---Power`
+  - **final class Provider** | [Details](src/e7c34873-50f8-42ab-8add-b22b6502682a) | [Raw](src/e7c34873-50f8-42ab-8add-b22b6502682a/code.power) | [Settings](src/e7c34873-50f8-42ab-8add-b22b6502682a/settings.json) | SPK: `Super---e7c34873_50f8_42ab_8add_b22b6502682a---Power`
+  - **final class Template** | [Details](src/370b87a8-0086-4ae5-9da3-0e80ab697800) | [Raw](src/370b87a8-0086-4ae5-9da3-0e80ab697800/code.power) | [Settings](src/370b87a8-0086-4ae5-9da3-0e80ab697800/settings.json) | SPK: `Super---370b87a8_0086_4ae5_9da3_0e80ab697800---Power`
+- **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Plugin](#vdm-joomla-componentbuilder-compiler-architecture-joomlasix-plugin)
+
+  - **final class Extension** | [Details](src/fc17d93d-4a96-4e51-8c0f-5d5da1f4e033) | [Raw](src/fc17d93d-4a96-4e51-8c0f-5d5da1f4e033/code.power) | [Settings](src/fc17d93d-4a96-4e51-8c0f-5d5da1f4e033/settings.json) | SPK: `Super---fc17d93d_4a96_4e51_8c0f_5d5da1f4e033---Power`
+  - **final class MainXML** | [Details](src/a6059e21-a980-48cf-b037-8fb4f3334cbb) | [Raw](src/a6059e21-a980-48cf-b037-8fb4f3334cbb/code.power) | [Settings](src/a6059e21-a980-48cf-b037-8fb4f3334cbb/settings.json) | SPK: `Super---a6059e21_a980_48cf_b037_8fb4f3334cbb---Power`
+  - **final class Provider** | [Details](src/e07941dd-0ed1-40aa-80f7-90240554fa7f) | [Raw](src/e07941dd-0ed1-40aa-80f7-90240554fa7f/code.power) | [Settings](src/e07941dd-0ed1-40aa-80f7-90240554fa7f/settings.json) | SPK: `Super---e07941dd_0ed1_40aa_80f7_90240554fa7f---Power`
 - **Namespace**: [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaThree\ComHelperClass](#vdm-joomla-componentbuilder-compiler-architecture-joomlathree-comhelperclass)
 
   - **final class CreateUser** | [Details](src/8c7abe76-516e-4c4f-97c1-244ca43b7726) | [Raw](src/8c7abe76-516e-4c4f-97c1-244ca43b7726/code.power) | [Settings](src/8c7abe76-516e-4c4f-97c1-244ca43b7726/settings.json) | SPK: `Super---8c7abe76_516e_4c4f_97c1_244ca43b7726---Power`

@@ -12,6 +12,7 @@ class Event  #Gold {
   + getJ3Event(Container $container) : J3Event
   + getJ4Event(Container $container) : J4Event
   + getJ5Event(Container $container) : J5Event
+  + getJ6Event(Container $container) : J6Event
 }
 
 note right of Event::register
@@ -47,6 +48,13 @@ note right of Event::getJ5Event
 
   since: 3.2.0
   return: J5Event
+end note
+
+note right of Event::getJ6Event
+  Get the Joomla 6 Event
+
+  since: 5.1.2
+  return: J6Event
 end note
 
 @enduml

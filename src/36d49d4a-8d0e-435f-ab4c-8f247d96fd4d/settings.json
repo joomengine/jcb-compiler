@@ -27,6 +27,10 @@
         "use_selection3": {
             "use": "95deb809-5f43-400b-939f-f9ceef720b13",
             "as": "J5Header"
+        },
+        "use_selection4": {
+            "use": "236b5f2b-a1a7-40d8-89de-d7190af1cff0",
+            "as": "J6Header"
         }
     },
     "extendsinterfaces": null,

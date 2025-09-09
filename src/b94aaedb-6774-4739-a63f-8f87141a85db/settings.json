@@ -27,6 +27,10 @@
         "use_selection3": {
             "use": "77224dc6-8024-47eb-896e-18ec3aa23420",
             "as": "J5Event"
+        },
+        "use_selection4": {
+            "use": "b7d959c1-433d-4f54-ba84-b3fa58ccf77a",
+            "as": "J6Event"
         }
     },
     "extendsinterfaces": null,

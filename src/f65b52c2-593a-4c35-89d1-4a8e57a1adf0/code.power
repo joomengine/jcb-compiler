@@ -25,6 +25,9 @@
 		$container->alias(J5CoreRule::class, 'J5.Field.Core.Rule')
 			->share('J5.Field.Core.Rule', [$this, 'getJ5CoreRule'], true);
 
+		$container->alias(J6CoreRule::class, 'J6.Field.Core.Rule')
+			->share('J6.Field.Core.Rule', [$this, 'getJ6CoreRule'], true);
+
 		$container->alias(CoreRule::class, 'Field.Core.Rule')
 			->share('Field.Core.Rule', [$this, 'getCoreRule'], true);
 	}
@@ -66,6 +69,19 @@
 	public function getJ5CoreRule(Container $container): J5CoreRule
 	{
 		return new J5CoreRule();
+	}
+
+	/**
+	 * Get The CoreRule Class.
+	 *
+	 * @param   Container  $container  The DI container.
+	 *
+	 * @return  J6CoreRule
+	 * @since   5.1.2
+	 */
+	public function getJ6CoreRule(Container $container): J6CoreRule
+	{
+		return new J6CoreRule();
 	}
 
 	/**

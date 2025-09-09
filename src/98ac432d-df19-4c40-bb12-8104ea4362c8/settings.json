@@ -16,6 +16,10 @@
             "use": "914db7f5-82d8-4d3b-a1c1-eb476b1898c2",
             "as": "Extension"
         },
+        "use_selection12": {
+            "use": "fc17d93d-4a96-4e51-8c0f-5d5da1f4e033",
+            "as": "J6Extension"
+        },
         "use_selection1": {
             "use": "28c8eed4-58cf-4d40-9053-ad77b6edfa9d",
             "as": "J5Extension"
@@ -32,6 +36,10 @@
             "use": "d6ae90a5-44b4-4ce4-aedc-86c90a242912",
             "as": "Provider"
         },
+        "use_selection13": {
+            "use": "e07941dd-0ed1-40aa-80f7-90240554fa7f",
+            "as": "J6Provider"
+        },
         "use_selection5": {
             "use": "63865266-62e0-40bd-820c-e95449d12982",
             "as": "J5Provider"
@@ -47,6 +55,10 @@
         "use_selection8": {
             "use": "97177ca9-a51a-4d24-81e1-8747b6e7d76c",
             "as": "MainXML"
+        },
+        "use_selection14": {
+            "use": "a6059e21-a980-48cf-b037-8fb4f3334cbb",
+            "as": "J6MainXML"
         },
         "use_selection9": {
             "use": "a7124f78-21c5-400e-984d-4c5463cb2315",

@@ -28,6 +28,10 @@
             "use": "69d2b980-a665-48cd-96f8-757bf3810b41",
             "as": "J5Settings"
         },
+        "use_selection11": {
+            "use": "01770b27-e745-491e-8de7-376e812ac80a",
+            "as": "J6Settings"
+        },
         "use_selection4": {
             "use": "cfe62a32-8818-4bfb-8751-2f1e109b5336",
             "as": "default"
