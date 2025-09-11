@@ -107,6 +107,8 @@ final class FieldonContentPrepare
 		// load params builder only once
 		$params = false;
 
+		$target_version = $this->config->get('joomla_version', 3);
+
 		foreach ($checker as $field => $array)
 		{
 			// build load counter
@@ -121,7 +123,7 @@ final class FieldonContentPrepare
 				// build decoder string
 				if (empty($runplugins))
 				{
-					if ($this->config->get('joomla_version', 3) == 3)
+					if ($target_version == 3 || $target_version == 4)
 					{
 						$runplugins = PHP_EOL . $tab . Indent::_(1) . "//"
 							. Line::_(__Line__, __Class__)
@@ -170,7 +172,8 @@ final class FieldonContentPrepare
 					. "//" . Line::_(__Line__, __Class__)
 					. " Since all values are now in text (Joomla Limitation), we also add the field name ("
 					. $field . ") to context";
-				if ($this->config->get('joomla_version', 3) == 3)
+
+				if ($target_version == 3 || $target_version == 4)
 				{
 					$fieldPrepare .= PHP_EOL . Indent::_(1) . $tab . Indent::_(1)
 						. '$this->_dispatcher->triggerEvent("onContentPrepare", array(\''
