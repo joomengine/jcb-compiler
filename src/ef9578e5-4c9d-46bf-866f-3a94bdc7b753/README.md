@@ -60,6 +60,10 @@ class Data << (F,LightGreen) >> #RoyalBlue {
   - setReadMe(object $component) : void
   - setDashboardMethods(object $component) : void
   - setServers(object $component) : void
+  - normalizeServerUrls(object $component) : void
+  - configureServerProtocols(object $component) : void
+  - extractXmlFilename(string $url) : ?string
+  - stripXmlExtension(string $filename) : string
   - setIgnoreFolders(object $component) : void
   - setModules(object $component) : void
   - setPlugins(object $component) : void
@@ -320,10 +324,56 @@ note right of Data::setDashboardMethods
 end note
 
 note left of Data::setServers
-  Configures the servers for update and sales handling.
+  Configure the component's server settings.
+This method coordinates URL validation (including XML filename extraction)
+and protocol configuration for update, changelog, and sales servers.
 
-  since: 5.0.4
+  since: 5.2.1
   return: void
+end note
+
+note right of Data::normalizeServerUrls
+  Validate and normalize the update and changelog server URLs.
+- Ensures URLs are well-formed (contain 'http' and pass StringHelper::check()).
+- If valid, extracts the XML filename using extractXmlFilename().
+- If invalid, resets the URL, target, and add flags appropriately.
+
+  since: 5.2.1
+  return: void
+end note
+
+note left of Data::configureServerProtocols
+  Configure protocols for update, changelog, and sales servers.
+- If the server ID is numeric and > 0, fetches its protocol using GetHelper::var().
+- Otherwise, resets the server ID and protocol to 0.
+- For the sales server, also resets the "add_sales_server" flag.
+
+  since: 5.2.1
+  return: void
+end note
+
+note right of Data::extractXmlFilename
+  Extract the XML filename from a given update server URL.
+This method:
+- Parses the URL using parse_url().
+- First looks for any query parameter whose value ends with ".xml" (case-insensitive).
+- If none is found, it falls back to the last path segment if it ends with ".xml".
+- Ignores query strings, fragments, and trailing slashes safely.
+- Returns the filename with its original case preserved.
+
+  since: 5.2.1
+  return: ?string
+end note
+
+note left of Data::stripXmlExtension
+  Strip the ".xml" extension from a filename.
+This method:
+- Only strips the extension if it ends with ".xml" (case-insensitive).
+- Preserves the original case of the filename.
+- Safely handles filenames without ".xml" (returns unchanged).
+
+  since: 5.2.1
+  return: string
 end note
 
 note right of Data::setIgnoreFolders

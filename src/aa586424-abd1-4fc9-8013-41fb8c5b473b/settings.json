@@ -1,0 +1,42 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "aa586424-abd1-4fc9-8013-41fb8c5b473b",
+    "implements": [
+        "cb905c5e-0295-4ff6-9576-90e073bf36b3"
+    ],
+    "load_selection": null,
+    "name": "Dispatcher",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J6.Module.Dispatcher",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "Builder"
+        },
+        "use_selection2": {
+            "use": "62d1453b-a390-4589-91de-0a0551a9fea5",
+            "as": "Library"
+        },
+        "use_selection3": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaSix.Module.Dispatcher",
+    "description": "Module Dispatcher Class for Joomla 6\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

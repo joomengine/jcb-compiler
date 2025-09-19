@@ -1,0 +1,106 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "d195ca0e-e995-4645-9434-d92d2f3e939c",
+    "implements": [
+        "564399e2-a782-4956-b6c6-9ae78a5aa26e"
+    ],
+    "load_selection": null,
+    "name": "Structure",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Joomlamodule.J6.Structure",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "4cf299c0-e580-4985-8808-b0cab6228105",
+            "as": "Module"
+        },
+        "use_selection1": {
+            "use": "e2472b22-a329-44d8-b4a2-ae3ba99e17a0",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "f1dc6430-fb54-452e-aa53-ce32ae93db88",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection6": {
+            "use": "e6d871a6-bbe7-497d-af01-68f6bb9a87f4",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "6bbb6ffe-3f09-4c21-aa9d-c93159afa1e1",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "5c75b455-3d4c-452a-867e-e90424a64c88",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "500f3a7f-c16d-4dd4-81b2-2df6776b5388",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "8591f6db-dd3c-4a63-9b3f-574c0ec74ade",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection17": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        },
+        "use_selection18": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        },
+        "use_selection19": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection20": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Joomlamodule.JoomlaSix.Structure",
+    "description": "Joomla 6 Module Structure Builder Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

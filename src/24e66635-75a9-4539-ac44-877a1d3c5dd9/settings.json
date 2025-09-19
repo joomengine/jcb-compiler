@@ -1,0 +1,30 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "24e66635-75a9-4539-ac44-877a1d3c5dd9",
+    "implements": [
+        "b079af3f-624c-43f6-91b7-cc93526f5186"
+    ],
+    "load_selection": null,
+    "name": "CheckInNow",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Architecture.J6.Model.CheckInNow",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "a68c010b-e92e-47d5-8a44-d23cfddeb6c6",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "4e6ff11d-bebf-42f5-8fd7-b2f882857222",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Architecture.JoomlaSix.Model.CheckInNow",
+    "description": "Check In Now Method for Joomla 6\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

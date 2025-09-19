@@ -1,0 +1,78 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "9e6f14ae-5e4f-4533-9b17-796f1f03d2e5",
+    "implements": [
+        "40e17114-2193-4a61-9233-47b5f4193665"
+    ],
+    "load_selection": null,
+    "name": "Infusion",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Joomlaplugin.J6.Infusion",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "06453ada-e370-49f0-b262-e3f5a8ed0c2c",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "3a777d70-52ad-49ec-9016-6f7438608613",
+            "as": "Header"
+        },
+        "use_selection3": {
+            "use": "20ed72b0-fcac-4344-aee1-8a65e3bf221d",
+            "as": "Event"
+        },
+        "use_selection4": {
+            "use": "8cc85656-a925-4a46-a49b-83c72167fd6a",
+            "as": "Data"
+        },
+        "use_selection5": {
+            "use": "2e6731ba-3a03-4836-b2c2-4e50e38cb890",
+            "as": "InstallScript"
+        },
+        "use_selection6": {
+            "use": "914db7f5-82d8-4d3b-a1c1-eb476b1898c2",
+            "as": "Extension"
+        },
+        "use_selection7": {
+            "use": "d6ae90a5-44b4-4ce4-aedc-86c90a242912",
+            "as": "Provider"
+        },
+        "use_selection8": {
+            "use": "97177ca9-a51a-4d24-81e1-8747b6e7d76c",
+            "as": "MainXML"
+        },
+        "use_selection9": {
+            "use": "5f57ff1a-c196-45b1-a2ac-33766b44fb95",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "adfbe68a-6d22-43e5-aee8-2787e8c47e75",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "23f459a4-7c2a-4cbf-b0a6-8a11954140a9",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "91004529-94a9-4590-b842-e7c6b624ecf5",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Joomlaplugin.JoomlaSix.Infusion",
+    "description": "Joomla 6 Plugin Infusion Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}

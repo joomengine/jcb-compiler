@@ -8,6 +8,9 @@
 class Updateserver  #Gold {
   + set(object $item) : void
   # changelog(object $item) : void
+  # getChangelogXml(array $bucket, string $element) : string
+  # sanitizeChangelogLine(string $line) : string
+  # classifyChangelogTag(string $line) : string
 }
 
 note right of Updateserver::set
@@ -18,10 +21,33 @@ note right of Updateserver::set
 end note
 
 note right of Updateserver::changelog
-  Set changelog values to component changelog
+  Set changelog values to component changelog.
 
   since: 3.2.0
   return: void
+end note
+
+note right of Updateserver::getChangelogXml
+  Build the changelog XML string from the bucket data.
+
+  since: 5.2.1
+  return: string
+end note
+
+note right of Updateserver::sanitizeChangelogLine
+  Sanitize a changelog line by stripping Markdown-style list markers and trimming whitespace.
+
+  since: 5.2.1
+  return: string
+end note
+
+note right of Updateserver::classifyChangelogTag
+  Classify which changelog tag a line belongs to.
+Order of priority:
+security > fix > language > addition > change > remove > note (default)
+
+  since: 5.2.1
+  return: string
 end note
 
 @enduml

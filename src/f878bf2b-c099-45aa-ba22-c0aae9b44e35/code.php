@@ -89,7 +89,7 @@ final class QueryWhere
 
 		foreach ($where as $whe)
 		{
-			if (empty($whe['table_key']) || empty($whe['value_key']))
+			if (empty($whe['table_key']) || trim($whe['value_key']) == "")
 			{
 				continue;
 			}
