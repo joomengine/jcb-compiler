@@ -226,14 +226,14 @@ final class MainXML implements MainXMLInterface
 
 		$dbKey = 'yyy';
 		$addScriptsField = true;
+		$add_scripts_field = $module->add_scripts_field ?? null;
 
 		foreach ($module->config_fields as $fieldName => $fieldsets)
 		{
 			foreach ($fieldsets as $fieldset => $fields)
 			{
 				$xmlFields = $this->fieldsetextension->get($module, $fields, $dbKey);
-
-				if ($addScriptsField && $module->add_scripts_field)
+				if ($addScriptsField && $add_scripts_field)
 				{
 					$xmlFields .= PHP_EOL . Indent::_(2) . '<field type="modadminvvvvvvvdm" />';
 					$addScriptsField = false;
@@ -425,15 +425,20 @@ final class MainXML implements MainXMLInterface
 	 */
 	protected function generateConfigXml(object $module, array $configFields, bool $addComponentPath): string
 	{
-		if (!isset($module->config_fields) || !ArrayHelper::check($configFields))
-		{
-			return '';
-		}
-
 		$xml = PHP_EOL . PHP_EOL . Indent::_(1) . '<!--' . Line::_(
 			__LINE__, __CLASS__
 		) . ' Config parameters -->';
 		$xml .= $addComponentPath ? PHP_EOL . Indent::_(1) . '<config' : PHP_EOL . Indent::_(1) . '<config>';
+
+		if (!isset($module->config_fields) || !ArrayHelper::check($configFields))
+		{
+			$xml .= PHP_EOL . Indent::_(1) . '<fields name="params">';
+			$xml .= $this->setAdvanceConfigXml($module);
+			$xml .= PHP_EOL . Indent::_(1) . '</fields>';
+			$xml .= PHP_EOL . Indent::_(1) . '</config>';
+
+			return $xml;
+		}
 
 		if ($addComponentPath)
 		{
@@ -443,12 +448,18 @@ final class MainXML implements MainXMLInterface
 			$xml .= PHP_EOL . Indent::_(1) . '>';
 		}
 
+		$advance = false;
 		foreach ($module->config_fields as $fieldName => $fieldsets)
 		{
 			$xml .= PHP_EOL . Indent::_(1) . "<fields name=\"{$fieldName}\">";
 
 			foreach ($fieldsets as $fieldset => $fields)
 			{
+				if ($fieldset === 'advance' && $fieldName === 'params')
+				{
+					$advance = true;
+				}
+
 				$label = $module->fieldsets_label["{$fieldName}{$fieldset}"] ?? $fieldset;
 
 				$xml .= PHP_EOL . Indent::_(1) . "<fieldset name=\"{$fieldset}\" label=\"{$label}\">";
@@ -461,12 +472,76 @@ final class MainXML implements MainXMLInterface
 				$xml .= PHP_EOL . Indent::_(1) . '</fieldset>';
 			}
 
+			if ($fieldName === 'params' && !$advance)
+			{
+				$advance = true;
+				$xml .= $this->setAdvanceConfigXml($module);
+			}
+
+			$xml .= PHP_EOL . Indent::_(1) . '</fields>';
+		}
+
+		if (!$advance)
+		{
+			$xml .= PHP_EOL . Indent::_(1) . '<fields name="params">';
+			$xml .= $this->setAdvanceConfigXml($module);
 			$xml .= PHP_EOL . Indent::_(1) . '</fields>';
 		}
 
 		$xml .= PHP_EOL . Indent::_(1) . '</config>';
 
 		return $xml;
+	}
+
+	/**
+	 * Build the advance field set for the config area of a module
+	 *
+	 * @param object $module     The module object.
+	 *
+	 * @return string The XML for advance configuration fields.
+	 * @since  5.1.2
+	 */
+	protected function setAdvanceConfigXml(object $module): string
+	{
+		$fieldset = PHP_EOL . Indent::_(2) . '<fieldset name="advanced">';
+		$fieldset .= PHP_EOL . Indent::_(3) . '<field';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'name="layout"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'type="modulelayout"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'label="JFIELD_ALT_LAYOUT_LABEL"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'class="form-select"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'validate="moduleLayout"';
+		$fieldset .= PHP_EOL . Indent::_(3) . '/>';
+
+		$fieldset .= PHP_EOL . Indent::_(3) . '<field';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'name="moduleclass_sfx"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'type="textarea"';
+		$fieldset .= PHP_EOL . Indent::_(4) . "label=\"{$module->moduleclass_sfx_label}\"";
+		$fieldset .= PHP_EOL . Indent::_(4) . 'rows="3"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'validate="CssIdentifier"';
+		$fieldset .= PHP_EOL . Indent::_(3) . '/>';
+
+		$fieldset .= PHP_EOL . Indent::_(3) . '<field';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'name="owncache"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'type="list"';
+		$fieldset .= PHP_EOL . Indent::_(4) . "label=\"{$module->caching_label}\"";
+		$fieldset .= PHP_EOL . Indent::_(4) . 'default="1"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'filter="integer"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'validate="options"';
+		$fieldset .= PHP_EOL . Indent::_(4) . '>';
+		$fieldset .= PHP_EOL . Indent::_(4) . '<option value="1">JGLOBAL_USE_GLOBAL</option>';
+		$fieldset .= PHP_EOL . Indent::_(4) . "<option value=\"0\">{$module->value_nocaching}</option>";
+		$fieldset .= PHP_EOL . Indent::_(3) . '</field>';
+
+		$fieldset .= PHP_EOL . Indent::_(3) . '<field';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'name="cache_time"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'type="number"';
+		$fieldset .= PHP_EOL . Indent::_(4) . "label=\"{$module->cache_time_label}\"";
+		$fieldset .= PHP_EOL . Indent::_(4) . 'default="900"';
+		$fieldset .= PHP_EOL . Indent::_(4) . 'filter="integer"';
+		$fieldset .= PHP_EOL . Indent::_(3) . '/>';
+		$fieldset .= PHP_EOL . Indent::_(2) . '</fieldset>';
+
+		return $fieldset;
 	}
 
 	/**

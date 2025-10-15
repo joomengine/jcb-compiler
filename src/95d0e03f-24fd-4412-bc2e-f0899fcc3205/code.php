@@ -651,30 +651,36 @@ final class Parser
 	}
 
 	/**
-	 * Normalize input PHP code to ensure cross-platform compatibility.
+	 * Normalize input PHP code for cross-platform consistency.
 	 *
-	 * This method removes the UTF-8 BOM (Byte Order Mark) if present and converts
-	 * all line endings to LF (`\n`). This ensures consistent parsing behavior across
-	 * operating systems, including Linux, macOS, and Windows.
+	 * - Always removes the UTF-8 BOM (Byte Order Mark) if present.
+	 * - Always normalizes line endings to the platform's native PHP_EOL.
 	 *
-	 * @param string $code The raw PHP code as a string
+	 * This ensures consistent behavior across Linux, macOS, and Windows,
+	 * prevents BOM-related PHP output errors, and preserves clean hashes.
 	 *
-	 * @return string The normalized PHP code string with consistent line endings and no BOM
-	 * @since 5.1.2
+	 * @param  string  $code  The raw PHP code as a string.
+	 *
+	 * @return string  The normalized PHP code string.
+	 * @since  5.1.2
 	 */
 	private function normalizeCode(string $code): string
 	{
 		// UTF-8 BOM sequence
 		static $BOM = "\xEF\xBB\xBF";
 
-		// Remove UTF-8 BOM if present
+		// Always remove UTF-8 BOM if present
 		if (strncmp($code, $BOM, 3) === 0)
 		{
 			$code = substr($code, 3);
 		}
 
-		// Normalize line endings to LF in two fast passes
-		$code = str_replace(["\r\n", "\r"], "\n", $code);
+		// Universal line ending normalization in two passes
+		// 1. Replace all known newline variants with a temporary token
+		$php_eol_tmp = '#' . '#' . '#' . 'JCB_EOL' . '#' . '#' . '#';
+		// 2. Replace that token with the system-native PHP_EOL
+		$code = str_replace(["\r\n", "\n", "\r"], $php_eol_tmp, $code);
+		$code = str_replace($php_eol_tmp, PHP_EOL, $code);
 
 		return $code;
 	}

@@ -1,0 +1,10 @@
+	/**
+	 * Move the field and its associated rules.
+	 *
+	 * @param   array   $field  The field data.
+	 * @param   string  $path   The target path to move to.
+	 *
+	 * @return  void
+	 * @since   5.1.2
+	 */
+	public function move(array $field, string $path): void;

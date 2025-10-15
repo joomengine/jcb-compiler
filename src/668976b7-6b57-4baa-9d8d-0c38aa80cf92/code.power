@@ -1,0 +1,9 @@
+	/**
+	 * Update all files
+	 *
+	 * @param string   $bom   The header details [BOM] of the file
+	 *
+	 * @return  void
+	 * @since 5.1.2
+	 */
+	public function update(string $bom): void;

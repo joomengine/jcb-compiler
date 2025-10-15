@@ -226,6 +226,7 @@ final class MainXML implements MainXMLInterface
 
 		$dbKey = 'yyy';
 		$addScriptsField = true;
+		$add_scripts_field = $module->add_scripts_field ?? null;
 
 		foreach ($module->config_fields as $fieldName => $fieldsets)
 		{
@@ -233,7 +234,7 @@ final class MainXML implements MainXMLInterface
 			{
 				$xmlFields = $this->fieldsetextension->get($module, $fields, $dbKey);
 
-				if ($addScriptsField && $module->add_scripts_field)
+				if ($addScriptsField && $add_scripts_field)
 				{
 					$xmlFields .= PHP_EOL . Indent::_(2) . '<field type="modadminvvvvvvvdm" />';
 					$addScriptsField = false;

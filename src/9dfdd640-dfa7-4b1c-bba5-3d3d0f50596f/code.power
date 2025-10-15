@@ -654,6 +654,24 @@
 				$module->default = '<h1>No Tmpl set</h1>';
 			}
 
+			// set advance config field languages strings
+			$module->moduleclass_sfx_label = $module->lang_prefix . '_FIELD_MODULECLASS_SFX_LABEL';
+			$this->language->set(
+				$module->key, $module->moduleclass_sfx_label, 'Module Class'
+			);
+			$module->caching_label = $module->lang_prefix . '_FIELD_CACHING_LABEL';
+			$this->language->set(
+				$module->key, $module->caching_label, 'Caching'
+			);
+			$module->value_nocaching = $module->lang_prefix . '_FIELD_VALUE_NOCACHING';
+			$this->language->set(
+				$module->key, $module->value_nocaching, 'No caching'
+			);
+			$module->cache_time_label = $module->lang_prefix . '_FIELD_CACHE_TIME_LABEL';
+			$this->language->set(
+				$module->key, $module->cache_time_label, 'Cache Time'
+			);
+
 			// start the config array
 			$module->config_fields = [];
 			// create the form arrays

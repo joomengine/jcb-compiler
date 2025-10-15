@@ -8,11 +8,23 @@
 class Extension  #Gold {
   # $targetVersion
   + register(Container $container) : void
+  + getExtensionInstallScript(Container $container) : GetScriptInterface
   + getJ3ExtensionInstallScript(Container $container) : J3InstallScript
   + getJ4ExtensionInstallScript(Container $container) : J4InstallScript
   + getJ5ExtensionInstallScript(Container $container) : J5InstallScript
   + getJ6ExtensionInstallScript(Container $container) : J6InstallScript
-  + getExtensionInstallScript(Container $container) : GetScriptInterface
+  + getMoveFieldsRules(Container $container) : MoveFieldsRules
+  + getJ3MoveFieldsRules(Container $container) : J3MoveFieldsRules
+  + getJ4MoveFieldsRules(Container $container) : J4MoveFieldsRules
+  + getJ5MoveFieldsRules(Container $container) : J5MoveFieldsRules
+  + getJ6MoveFieldsRules(Container $container) : J6MoveFieldsRules
+  + getUpdater(Container $container) : Updater
+  + getFileContent(Container $container) : FileContent
+  + getStaticFiles(Container $container) : StaticFiles
+  + getDynamic(Container $container) : Dynamic
+  + getModule(Container $container) : Module
+  + getPlugin(Container $container) : Plugin
+  + getPower(Container $container) : Power
 }
 
 note right of Extension::register
@@ -22,6 +34,13 @@ note right of Extension::register
   return: void
 end note
 
+note left of Extension::getExtensionInstallScript
+  Get the Joomla Extension Install Script
+
+  since: 3.2.0
+  return: GetScriptInterface
+end note
+
 note right of Extension::getJ3ExtensionInstallScript
   Get the Joomla 3 Extension Install Script
 
@@ -29,7 +48,7 @@ note right of Extension::getJ3ExtensionInstallScript
   return: J3InstallScript
 end note
 
-note right of Extension::getJ4ExtensionInstallScript
+note left of Extension::getJ4ExtensionInstallScript
   Get the Joomla 4 Extension Install Script
 
   since: 3.2.0
@@ -43,18 +62,95 @@ note right of Extension::getJ5ExtensionInstallScript
   return: J5InstallScript
 end note
 
-note right of Extension::getJ6ExtensionInstallScript
+note left of Extension::getJ6ExtensionInstallScript
   Get the Joomla 6 Extension Install Script
 
   since: 5.1.2
   return: J6InstallScript
 end note
 
-note right of Extension::getExtensionInstallScript
-  Get the Joomla Extension Install Script
+note right of Extension::getMoveFieldsRules
+  Get The Move Fields Rules Class.
 
-  since: 3.2.0
-  return: GetScriptInterface
+  since: 5.1.2
+  return: MoveFieldsRules
+end note
+
+note left of Extension::getJ3MoveFieldsRules
+  Get The Move Fields Rules Class.
+
+  since: 5.1.2
+  return: J3MoveFieldsRules
+end note
+
+note right of Extension::getJ4MoveFieldsRules
+  Get The Move Fields Rules Class.
+
+  since: 5.1.2
+  return: J4MoveFieldsRules
+end note
+
+note left of Extension::getJ5MoveFieldsRules
+  Get The Move Fields Rules Class.
+
+  since: 5.1.2
+  return: J5MoveFieldsRules
+end note
+
+note right of Extension::getJ6MoveFieldsRules
+  Get The Move Fields Rules Class.
+
+  since: 5.1.2
+  return: J6MoveFieldsRules
+end note
+
+note left of Extension::getUpdater
+  Get The Updater Class.
+
+  since: 5.1.2
+  return: Updater
+end note
+
+note right of Extension::getFileContent
+  Get The FileContent Class.
+
+  since: 5.1.2
+  return: FileContent
+end note
+
+note left of Extension::getStaticFiles
+  Get The StaticFiles Class.
+
+  since: 5.1.2
+  return: StaticFiles
+end note
+
+note right of Extension::getDynamic
+  Get The Dynamic Class.
+
+  since: 5.1.2
+  return: Dynamic
+end note
+
+note left of Extension::getModule
+  Get The Module Class.
+
+  since: 5.1.2
+  return: Module
+end note
+
+note right of Extension::getPlugin
+  Get The Plugin Class.
+
+  since: 5.1.2
+  return: Plugin
+end note
+
+note left of Extension::getPower
+  Get The Power Class.
+
+  since: 5.1.2
+  return: Power
 end note
 
 @enduml

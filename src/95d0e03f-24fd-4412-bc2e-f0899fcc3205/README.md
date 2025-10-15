@@ -154,10 +154,11 @@ note left of Parser::mergeArgumentTypes
 end note
 
 note right of Parser::normalizeCode
-  Normalize input PHP code to ensure cross-platform compatibility.
-This method removes the UTF-8 BOM (Byte Order Mark) if present and converts
-all line endings to LF (`\n`). This ensures consistent parsing behavior across
-operating systems, including Linux, macOS, and Windows.
+  Normalize input PHP code for cross-platform consistency.
+- Always removes the UTF-8 BOM (Byte Order Mark) if present.
+- Always normalizes line endings to the platform's native PHP_EOL.
+This ensures consistent behavior across Linux, macOS, and Windows,
+prevents BOM-related PHP output errors, and preserves clean hashes.
 
   since: 5.1.2
   return: string

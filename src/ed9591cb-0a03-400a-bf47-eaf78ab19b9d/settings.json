@@ -31,6 +31,54 @@
         "use_selection4": {
             "use": "7f4fc1c2-ebcc-4979-8712-209c9736a96f",
             "as": "J6InstallScript"
+        },
+        "use_selection5": {
+            "use": "36773ed8-a021-4392-a98e-f1b6e7d6bf1f",
+            "as": "MoveFieldsRules"
+        },
+        "use_selection6": {
+            "use": "46282389-1ebb-40af-8c04-a61babe0b7c3",
+            "as": "J3MoveFieldsRules"
+        },
+        "use_selection7": {
+            "use": "f7a54ba2-c5b0-4024-967e-1893d710fe05",
+            "as": "J4MoveFieldsRules"
+        },
+        "use_selection8": {
+            "use": "500f0a7c-eff2-42b5-9259-14fd16af7ccd",
+            "as": "J5MoveFieldsRules"
+        },
+        "use_selection9": {
+            "use": "ee585f8c-c55d-4501-9181-1f2a2b5c15e5",
+            "as": "J6MoveFieldsRules"
+        },
+        "use_selection10": {
+            "use": "0afb7584-1550-40a8-bd18-dafc391c55b9",
+            "as": "default"
+        },
+        "use_selection11": {
+            "use": "bbcaa126-9764-4c0a-9d37-058a311a032f",
+            "as": "default"
+        },
+        "use_selection12": {
+            "use": "fe111908-2ff4-46be-a7c0-9c929f09dc15",
+            "as": "default"
+        },
+        "use_selection13": {
+            "use": "efb8f1f4-0fe3-4c38-b626-0fcda53b10b3",
+            "as": "default"
+        },
+        "use_selection14": {
+            "use": "7d272e93-8c56-429a-8276-9388623e42e3",
+            "as": "default"
+        },
+        "use_selection15": {
+            "use": "bf341a9b-6d10-4fbd-896f-fa31864c0726",
+            "as": "default"
+        },
+        "use_selection16": {
+            "use": "39c7da2c-b852-4628-af22-6b3c7936c705",
+            "as": "default"
         }
     },
     "extendsinterfaces": null,

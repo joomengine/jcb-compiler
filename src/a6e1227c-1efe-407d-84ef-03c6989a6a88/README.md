@@ -15,6 +15,7 @@ class Sqldump  #Gold {
   # parseFieldMappings(string $map, string $alias) : array
   # applyJoins($query, string $table, ...) : void
   # buildSqlDump(string $view, array $data) : string
+  # determineOptimalChunkSize(int $totalRows) : int
   # escape(mixed $value) : mixed
 }
 
@@ -72,12 +73,21 @@ end note
 
 note right of Sqldump::buildSqlDump
   Build the SQL INSERT DUMP statement from data.
+Automatically chunks large data sets into multiple INSERT statements
+to improve database import performance and avoid query size limits.
 
-  since: 5.1.1
+  since: 5.1.2
   return: string
 end note
 
-note left of Sqldump::escape
+note left of Sqldump::determineOptimalChunkSize
+  Determine optimal chunk size for SQL insert batching.
+
+  since: 5.1.2
+  return: int
+end note
+
+note right of Sqldump::escape
   Escape SQL value for safe dump using strict quoting rules.
 
   since: 3.2.0

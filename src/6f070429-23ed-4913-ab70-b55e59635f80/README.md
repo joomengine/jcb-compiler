@@ -27,6 +27,7 @@ class MainXML << (F,LightGreen) >> #RoyalBlue {
   # generateLanguageXml(object $module, array $languageFiles) : string
   # generateFileXml(object $module, array $languageFiles) : string
   # generateConfigXml(object $module, array $configFields, ...) : string
+  # setAdvanceConfigXml(object $module) : string
   # generateUpdateServerXml(object $module) : string
   # generateLanguageFiles(object $module) : array
 }
@@ -106,14 +107,21 @@ note left of MainXML::generateConfigXml
     bool $addComponentPath
 end note
 
-note right of MainXML::generateUpdateServerXml
+note right of MainXML::setAdvanceConfigXml
+  Build the advance field set for the config area of a module
+
+  since: 5.1.2
+  return: string
+end note
+
+note left of MainXML::generateUpdateServerXml
   Generate XML for update servers.
 
   since: 5.1.2
   return: string
 end note
 
-note left of MainXML::generateLanguageFiles
+note right of MainXML::generateLanguageFiles
   Generate language files.
 
   since: 5.1.2

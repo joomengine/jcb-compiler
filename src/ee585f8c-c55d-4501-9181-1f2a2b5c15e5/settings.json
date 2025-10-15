@@ -1,0 +1,50 @@
+{
+    "add_head": 1,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "ee585f8c-c55d-4501-9181-1f2a2b5c15e5",
+    "implements": [
+        "36773ed8-a021-4392-a98e-f1b6e7d6bf1f"
+    ],
+    "load_selection": null,
+    "name": "MoveFieldsRules",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Extension.J6.MoveFieldsRules",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "e5d9804f-0eb0-4ee9-b406-ad4e8cdbc1f6",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "d7ba2d5d-10b6-470d-978d-9f91ea65ee75",
+            "as": "default"
+        },
+        "use_selection2": {
+            "use": "e9b6b06b-f600-4f9d-984d-79c70ae7ae92",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "6f20369a-8536-4870-a1a3-cda254c939c8",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "db87c339-5bb6-4291-a7ef-2c48ea1b06bc",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "0a59c65c-9daf-4bc9-baf4-e063ff9e6a8a",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "1f28cb53-60d9-4db1-b517-3c7dc6b429ef",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Extension.JoomlaSix.MoveFieldsRules",
+    "description": "Move Fields & Rules Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "use Joomla\\Filesystem\\File;",
+    "composer": ""
+}

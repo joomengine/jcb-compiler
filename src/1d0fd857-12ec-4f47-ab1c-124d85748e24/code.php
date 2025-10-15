@@ -213,7 +213,7 @@ class Updateserver
 			return 'addition';
 		}
 
-		if (str_contains($l, 'change'))
+		if (str_contains($l, 'change') || str_contains($l, 'refactor') || str_contains($l, 'update'))
 		{
 			return 'change';
 		}

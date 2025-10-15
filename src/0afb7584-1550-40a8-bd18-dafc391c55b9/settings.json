@@ -1,0 +1,64 @@
+{
+    "add_head": 0,
+    "add_licensing_template": 2,
+    "extends": "",
+    "guid": "0afb7584-1550-40a8-bd18-dafc391c55b9",
+    "implements": null,
+    "load_selection": null,
+    "name": "Updater",
+    "power_version": "1.0.0",
+    "system_name": "JCB.Compiler.Extension.Files.Updater",
+    "type": "final class",
+    "use_selection": {
+        "use_selection0": {
+            "use": "fa4bf18e-301e-42e3-91fb-6e0096c07adc",
+            "as": "default"
+        },
+        "use_selection1": {
+            "use": "b836c1b1-b6b1-44f7-b8a2-9a763a4185b1",
+            "as": "CompilerPower"
+        },
+        "use_selection2": {
+            "use": "eeb03266-22fd-45bb-953a-961bb6be3a54",
+            "as": "default"
+        },
+        "use_selection3": {
+            "use": "6e64917c-d687-4ef3-a655-811319f5a81e",
+            "as": "default"
+        },
+        "use_selection4": {
+            "use": "1d967151-7c20-4ca7-9400-65233cdcd4db",
+            "as": "default"
+        },
+        "use_selection5": {
+            "use": "fe111908-2ff4-46be-a7c0-9c929f09dc15",
+            "as": "default"
+        },
+        "use_selection6": {
+            "use": "efb8f1f4-0fe3-4c38-b626-0fcda53b10b3",
+            "as": "default"
+        },
+        "use_selection7": {
+            "use": "7d272e93-8c56-429a-8276-9388623e42e3",
+            "as": "default"
+        },
+        "use_selection8": {
+            "use": "bf341a9b-6d10-4fbd-896f-fa31864c0726",
+            "as": "default"
+        },
+        "use_selection9": {
+            "use": "39c7da2c-b852-4628-af22-6b3c7936c705",
+            "as": "default"
+        },
+        "use_selection10": {
+            "use": "a223b31e-ea1d-4cdf-92ae-5f9becffaff0",
+            "as": "default"
+        }
+    },
+    "extendsinterfaces": null,
+    "namespace": "[[[NamespacePrefix]]]\\Joomla\\[[[ComponentNamespace]]].Compiler.Extension.Files.Updater",
+    "description": "Files Updater Class\r\n\r\n@since 5.1.2",
+    "licensing_template": "\/**\r\n * @package    Joomla.Component.Builder\r\n *\r\n * @created    4th September, 2022\r\n * @author     Llewellyn van der Merwe <https:\/\/dev.vdm.io>\r\n * @git        Joomla Component Builder <https:\/\/git.vdm.dev\/joomla\/Component-Builder>\r\n * @copyright  Copyright (C) 2015 Vast Development Method. All rights reserved.\r\n * @license    GNU General Public License version 2 or later; see LICENSE.txt\r\n *\/\r\n",
+    "head": "",
+    "composer": ""
+}
