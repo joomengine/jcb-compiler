@@ -6,7 +6,23 @@
     "implements": [
         "caf33c5d-858c-4f9a-894f-ab302ec5445a"
     ],
-    "load_selection": null,
+    "load_selection": {
+        "load_selection0": {
+            "load": "d78bee89-6f7e-42b6-917e-17f05b238490"
+        },
+        "load_selection1": {
+            "load": "884eca78-281f-4eab-b962-d97e355af16d"
+        },
+        "load_selection2": {
+            "load": "ff8d5fdb-2d1f-4178-bd18-a43b8efd1068"
+        },
+        "load_selection3": {
+            "load": "85321deb-5c3a-401b-9ce1-039a746add51"
+        },
+        "load_selection4": {
+            "load": "0fb58adc-60dd-42f4-9060-b782a5fd0537"
+        }
+    },
     "name": "Factory",
     "power_version": "1.0.0",
     "system_name": "JCB.Compiler.Factory",
@@ -156,59 +172,59 @@
             "use": "98ac432d-df19-4c40-bb12-8104ea4362c8",
             "as": "default"
         },
-        "use_selection37": {
+        "use_selection36": {
             "use": "f8f14b43-d36b-4ded-b428-ec1bf494b56c",
             "as": "default"
         },
-        "use_selection38": {
+        "use_selection37": {
             "use": "77971f16-2e1d-4821-9997-2d7621443a37",
             "as": "default"
         },
-        "use_selection39": {
+        "use_selection38": {
             "use": "10b51583-a80e-49f4-b832-e15ddce6c160",
             "as": "GithubUtilities"
         },
-        "use_selection40": {
+        "use_selection39": {
             "use": "71acf8d6-32b8-4173-8277-eb9cda29fd64",
             "as": "default"
         },
-        "use_selection41": {
+        "use_selection40": {
             "use": "6edf0cf3-c2b0-45c9-84d2-c6ef1c5d434c",
             "as": "GiteaUtilities"
         },
-        "use_selection42": {
+        "use_selection41": {
             "use": "f4d00907-c94a-49b7-8727-d64c1fa74cf5",
             "as": "GiteaSettings"
         },
-        "use_selection43": {
+        "use_selection42": {
             "use": "3d25ea99-4f33-489a-934c-0e42027e6114",
             "as": "GiteaOrg"
         },
-        "use_selection44": {
+        "use_selection43": {
             "use": "0a69cfc5-3223-4afb-8c9a-75f4bacf3c0e",
             "as": "GiteaUser"
         },
-        "use_selection45": {
+        "use_selection44": {
             "use": "0bb2b72f-ebcd-46fe-844b-ac5fe715c230",
             "as": "GiteaRepo"
         },
-        "use_selection46": {
+        "use_selection45": {
             "use": "808da4eb-b467-46cf-a767-e7e714f46b5a",
             "as": "GiteaPackage"
         },
-        "use_selection47": {
+        "use_selection46": {
             "use": "44396eb8-e14c-47d9-9bdc-8205c0fd2bba",
             "as": "GiteaIssue"
         },
-        "use_selection48": {
+        "use_selection47": {
             "use": "be57f70f-1214-4d69-8d33-7cd4e312ff70",
             "as": "GiteNotifi"
         },
-        "use_selection49": {
+        "use_selection48": {
             "use": "012af7d0-3436-4cae-b856-be49bdc39a3e",
             "as": "GiteaMisc"
         },
-        "use_selection50": {
+        "use_selection49": {
             "use": "ddced4c5-667d-4559-873d-d716c17fd85b",
             "as": "GiteaAdmin"
         }
