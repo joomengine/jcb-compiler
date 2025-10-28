@@ -8,6 +8,11 @@
 class ArchitectureModel  #Gold {
   # $targetVersion
   + register(Container $container) : void
+  + getModelAllowEdit(Container $container) : AllowEditInterface
+  + getJ6ModelAllowEdit(Container $container) : J6ModelAllowEdit
+  + getJ5ModelAllowEdit(Container $container) : J5ModelAllowEdit
+  + getJ4ModelAllowEdit(Container $container) : J4ModelAllowEdit
+  + getJ3ModelAllowEdit(Container $container) : J3ModelAllowEdit
   + getModelCanDelete(Container $container) : CanDeleteInterface
   + getJ6ModelCanDelete(Container $container) : J6ModelCanDelete
   + getJ5ModelCanDelete(Container $container) : J5ModelCanDelete
@@ -32,105 +37,140 @@ note right of ArchitectureModel::register
   return: void
 end note
 
-note left of ArchitectureModel::getModelCanDelete
+note left of ArchitectureModel::getModelAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.4
+  return: AllowEditInterface
+end note
+
+note right of ArchitectureModel::getJ6ModelAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.4
+  return: J6ModelAllowEdit
+end note
+
+note left of ArchitectureModel::getJ5ModelAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.4
+  return: J5ModelAllowEdit
+end note
+
+note right of ArchitectureModel::getJ4ModelAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.4
+  return: J4ModelAllowEdit
+end note
+
+note left of ArchitectureModel::getJ3ModelAllowEdit
+  Get The AllowEdit Class.
+
+  since: 5.1.4
+  return: J3ModelAllowEdit
+end note
+
+note right of ArchitectureModel::getModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: CanDeleteInterface
 end note
 
-note right of ArchitectureModel::getJ6ModelCanDelete
+note left of ArchitectureModel::getJ6ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 5.1.2
   return: J6ModelCanDelete
 end note
 
-note left of ArchitectureModel::getJ5ModelCanDelete
+note right of ArchitectureModel::getJ5ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J5ModelCanDelete
 end note
 
-note right of ArchitectureModel::getJ4ModelCanDelete
+note left of ArchitectureModel::getJ4ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J4ModelCanDelete
 end note
 
-note left of ArchitectureModel::getJ3ModelCanDelete
+note right of ArchitectureModel::getJ3ModelCanDelete
   Get The Model CanDelete Class.
 
   since: 3.2.0
   return: J3ModelCanDelete
 end note
 
-note right of ArchitectureModel::getModelCanEditState
+note left of ArchitectureModel::getModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 3.2.0
   return: CanEditStateInterface
 end note
 
-note left of ArchitectureModel::getJ6ModelCanEditState
+note right of ArchitectureModel::getJ6ModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 5.1.2
   return: J6ModelCanEditState
 end note
 
-note right of ArchitectureModel::getJ5ModelCanEditState
+note left of ArchitectureModel::getJ5ModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 3.2.0
   return: J5ModelCanEditState
 end note
 
-note left of ArchitectureModel::getJ4ModelCanEditState
+note right of ArchitectureModel::getJ4ModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 3.2.0
   return: J4ModelCanEditState
 end note
 
-note right of ArchitectureModel::getJ3ModelCanEditState
+note left of ArchitectureModel::getJ3ModelCanEditState
   Get The Model Can Edit State Class.
 
   since: 3.2.0
   return: J3ModelCanEditState
 end note
 
-note left of ArchitectureModel::getCheckInNow
+note right of ArchitectureModel::getCheckInNow
   Get The Model CanDelete Class.
 
   since: 5.1.2
   return: CheckInNowInterface
 end note
 
-note right of ArchitectureModel::getJ6CheckInNow
+note left of ArchitectureModel::getJ6CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
   return: J6CheckInNow
 end note
 
-note left of ArchitectureModel::getJ5CheckInNow
+note right of ArchitectureModel::getJ5CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
   return: J5CheckInNow
 end note
 
-note right of ArchitectureModel::getJ4CheckInNow
+note left of ArchitectureModel::getJ4CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
   return: J4CheckInNow
 end note
 
-note left of ArchitectureModel::getJ3CheckInNow
+note right of ArchitectureModel::getJ3CheckInNow
   Get The Model CheckInNow Class.
 
   since: 5.1.2
